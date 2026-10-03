@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>울산 광역 행정구역 디버거</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101010; --panel:#191919; --panel2:#202020; --line:#383838; --text:#ededed; --muted:#a0a0a0; --soft:#707070; --white:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:14px/1.45 "Segoe UI", "Malgun Gothic", sans-serif; }
+    button, input { font:inherit; }
+    button { color:var(--text); background:#292929; border:1px solid #484848; border-radius:6px; padding:8px 11px; cursor:pointer; }
+    button:hover { background:#363636; border-color:#777; }
+    button:focus-visible, input:focus-visible { outline:2px solid #c8c8c8; outline-offset:2px; }
+    input { color:var(--text); background:#101010; border:1px solid var(--line); border-radius:5px; padding:7px 8px; min-width:0; }
+    .topbar { min-height:62px; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 18px; border-bottom:1px solid var(--line); background:#151515; }
+    .brand { display:flex; align-items:center; gap:12px; min-width:0; }
+    .brand-mark { width:28px; height:28px; border:1px solid #aaa; border-radius:5px; display:grid; place-items:center; font-weight:700; }
+    h1 { margin:0; font-size:16px; font-weight:650; }
+    .subtitle { color:var(--muted); font-size:12px; }
+    .top-actions { display:flex; align-items:center; gap:8px; }
+    .status { color:var(--muted); font-size:12px; white-space:nowrap; }
+    .layout { display:grid; grid-template-columns:minmax(0,1fr) 340px; min-height:calc(100vh - 62px); }
+    .map-column { display:flex; flex-direction:column; min-width:0; padding:14px; gap:10px; }
+    .toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:8px; }
+    .toolbar .spacer { flex:1; }
+    .canvas-wrap { position:relative; flex:1; min-height:500px; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:#0b0b0b; }
+    canvas { display:block; width:100%; height:100%; min-height:500px; touch-action:none; cursor:crosshair; }
+    .map-hint { position:absolute; left:12px; bottom:10px; color:#b7b7b7; background:#111d; border:1px solid #383838; border-radius:5px; padding:5px 8px; font-size:11px; pointer-events:none; }
+    .scale { position:absolute; right:14px; bottom:14px; color:#ddd; font:11px monospace; pointer-events:none; }
+    .scale-line { width:80px; height:8px; border-left:1px solid #ddd; border-right:1px solid #ddd; border-bottom:1px solid #ddd; }
+    aside { padding:14px; background:var(--panel); border-left:1px solid var(--line); overflow:auto; }
+    .section { padding:0 0 14px; margin:0 0 14px; border-bottom:1px solid var(--line); }
+    .section:last-child { border-bottom:0; }
+    h2 { margin:0 0 10px; color:#d8d8d8; font-size:12px; letter-spacing:.04em; text-transform:uppercase; }
+    .section-head { display:flex; justify-content:space-between; align-items:center; gap:8px; }
+    .section-head h2 { margin:0 0 10px; }
+    .level-list { display:grid; gap:7px; }
+    .level-row { display:flex; align-items:center; gap:9px; color:#d0d0d0; font-size:13px; }
+    .level-row input { accent-color:#d8d8d8; }
+    .level-tag { width:34px; color:var(--muted); font:11px monospace; }
+    .level-count { margin-left:auto; color:var(--muted); font:12px monospace; }
+    .count-grid { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:10px; }
+    .count-card { background:var(--panel2); padding:8px; border-radius:5px; }
+    .count-card span { display:block; color:var(--muted); font-size:11px; }
+    .count-card strong { font:600 16px monospace; }
+    .field-row { display:grid; grid-template-columns:1fr 1fr auto; gap:6px; align-items:end; }
+    .field label { display:block; color:var(--muted); font-size:11px; margin-bottom:4px; }
+    .field input { width:100%; font-family:monospace; }
+    .hierarchy { min-height:52px; background:#111; border:1px solid var(--line); border-radius:6px; padding:10px; color:#eee; }
+    .hierarchy.empty { color:var(--muted); }
+    .match-list { display:grid; gap:5px; margin-top:8px; max-height:205px; overflow:auto; }
+    .match-row { display:grid; grid-template-columns:36px minmax(0,1fr) auto; align-items:center; gap:8px; padding:7px 8px; border:1px solid #343434; border-radius:5px; background:#1d1d1d; cursor:pointer; }
+    .match-row:hover, .match-row.active { background:#2b2b2b; border-color:#777; }
+    .match-level { color:#aaa; font:11px monospace; }
+    .match-name { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .match-code { color:#999; font:10px monospace; }
+    .detail-grid { display:grid; grid-template-columns:100px 1fr; gap:5px 8px; font-size:12px; }
+    .detail-grid dt { color:var(--muted); }
+    .detail-grid dd { margin:0; overflow-wrap:anywhere; font-family:monospace; }
+    .notice { color:var(--muted); font-size:12px; }
+    .error { color:#e0b6b6; }
+    .search-wrap { display:flex; gap:6px; margin-top:9px; }
+    .search-wrap input { flex:1; }
+    .footer { color:#888; font-size:11px; }
+    .hidden { display:none !important; }
+    @media (max-width:900px) { .layout { grid-template-columns:1fr; } aside { border-left:0; border-top:1px solid var(--line); } .canvas-wrap, canvas { min-height:58vh; } }
+    @media (max-width:520px) { .topbar { align-items:flex-start; flex-direction:column; } .top-actions { width:100%; justify-content:space-between; } .layout { min-height:0; } .map-column { padding:9px; } .field-row { grid-template-columns:1fr 1fr; } .field-row button { grid-column:1/-1; } }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">행</div>
+      <div><h1>광역 행정구역 디버거</h1><div class="subtitle">게임 월드 좌표 · 중첩 행정경계 · 위치 판정</div></div>
+    </div>
+    <div class="top-actions">
+      <span id="loadStatus" class="status" role="status">데이터를 불러오는 중</span>
+      <button id="loadButton" type="button">경계 파일 열기</button>
+      <button id="exportButton" type="button" disabled>진단 저장</button>
+      <input id="fileInput" type="file" accept=".json,application/json" class="hidden" aria-label="행정경계 JSON 선택">
+    </div>
+  </header>
+  <main class="layout">
+    <section class="map-column" aria-label="행정경계 지도">
+      <div class="toolbar">
+        <button id="fitButton" type="button">전체 보기</button>
+        <button id="zoomOutButton" type="button" aria-label="축소">−</button>
+        <button id="zoomInButton" type="button" aria-label="확대">+</button>
+        <span id="zoomLabel" class="status">100%</span>
+        <span class="spacer"></span>
+        <span id="cursorLabel" class="status">X 0 · Z 0</span>
+      </div>
+      <div class="canvas-wrap" id="canvasWrap">
+        <canvas id="map" role="img" aria-label="울산 광역 맵의 행정구역 경계. 지도를 클릭하면 해당 위치의 행정단위를 검사합니다."></canvas>
+        <div class="map-hint">클릭: 위치 검사 · 드래그: 이동 · 휠: 확대/축소</div>
+        <div class="scale"><div id="scaleLine" class="scale-line"></div><span id="scaleText">10 km</span></div>
+      </div>
+    </section>
+    <aside>
+      <section class="section">
+        <div class="section-head"><h2>표시 레이어</h2><button id="allLayersButton" type="button">모두 켜기</button></div>
+        <div id="layerList" class="level-list"></div>
+        <div class="count-grid">
+          <div class="count-card"><span>전체 폴리곤</span><strong id="totalCount">0</strong></div>
+          <div class="count-card"><span>현재 표시</span><strong id="visibleCount">0</strong></div>
+        </div>
+      </section>
+      <section class="section">
+        <h2>게임 좌표 검사</h2>
+        <div class="field-row">
+          <div class="field"><label for="probeX">X (m)</label><input id="probeX" type="number" step="1" value="0"></div>
+          <div class="field"><label for="probeZ">Z (m)</label><input id="probeZ" type="number" step="1" value="0"></div>
+          <button id="probeButton" type="button">검사</button>
+        </div>
+        <div id="hierarchy" class="hierarchy empty" aria-live="polite">지도 위치를 클릭하거나 좌표를 입력하세요.</div>
+        <div id="matchList" class="match-list"></div>
+      </section>
+      <section class="section">
+        <h2>선택 경계</h2>
+        <dl id="featureDetails" class="detail-grid"><dt>상태</dt><dd>선택 없음</dd></dl>
+        <div class="search-wrap">
+          <input id="searchInput" type="search" placeholder="행정구역명 검색" aria-label="행정구역명 검색">
+          <button id="searchButton" type="button">찾기</button>
+        </div>
+        <div id="searchResults" class="match-list"></div>
+      </section>
+      <section class="section">
+        <h2>범위 및 자료</h2>
+        <dl id="mapDetails" class="detail-grid">
+          <dt>월드 범위</dt><dd>−40,000 ~ +40,000 m</dd>
+          <dt>자료</dt><dd>real_districts.json</dd>
+          <dt>계층</dt><dd>시도 · 시군구 · 읍면동 · 리</dd>
+        </dl>
+      </section>
+      <div class="footer">© 통계청 SGIS · 행정안전부 · CC BY 4.0</div>
+    </aside>
+  </main>
+  <script>
+    (() => {
+      "use strict";
+      const LEVELS = [
+        { id: 4, name: "시도", color: "#dedede", width: 2.1, dash: [] },
+        { id: 6, name: "시군구", color: "#aaa", width: 1.45, dash: [] },
+        { id: 8, name: "읍면동", color: "#777", width: 0.9, dash: [5, 3] },
+        { id: 10, name: "리", color: "#4b4b4b", width: 0.65, dash: [2, 3] }
+      ];
+      const $ = id => document.getElementById(id);
+      const canvas = $("map");
+      const ctx = canvas.getContext("2d");
+      let features = [];
+      let metadata = null;
+      let selected = null;
+      let probe = { x: 0, z: 0 };
+      let zoom = 1;
+      let pan = { x: 0, y: 0 };
+      let drag = null;
+      const visibleLevels = new Set(LEVELS.map(level => level.id));
+      const levelCounts = new Map(LEVELS.map(level => [level.id, 0]));
+
+      function setStatus(message, isError = false) {
+        const status = $("loadStatus");
+        status.textContent = message;
+        status.classList.toggle("error", isError);
+      }
+
+      function featureName(feature) {
+        return feature.admin_name || feature.name_ko || "이름 없음";
+      }
+
+      function levelName(level) {
+        return LEVELS.find(item => item.id === Number(level))?.name || `레벨 ${level}`;
+      }
+
+      function sizeCanvas() {
+        const rect = canvas.getBoundingClientRect();
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = Math.max(1, Math.round(rect.width * ratio));
+        canvas.height = Math.max(1, Math.round(rect.height * ratio));
+        ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+        draw();
+      }
+
+      function mapScale() {
+        const rect = canvas.getBoundingClientRect();
+        return Math.min(rect.width, rect.height) / (metadata?.world_size_meters || 80000) * zoom;
+      }
+
+      function toScreen(point) {
+        const rect = canvas.getBoundingClientRect();
+        const scale = mapScale();
+        return { x: rect.width / 2 + point[0] * scale + pan.x, y: rect.height / 2 + point[1] * scale + pan.y };
+      }
+
+      function toWorld(screenX, screenY) {
+        const rect = canvas.getBoundingClientRect();
+        const scale = mapScale();
+        return { x: (screenX - rect.width / 2 - pan.x) / scale, z: (screenY - rect.height / 2 - pan.y) / scale };
+      }
+
+      function drawGrid(width, height) {
+        const scale = mapScale();
+        ctx.save();
+        ctx.strokeStyle = "#232323";
+        ctx.lineWidth = 1;
+        ctx.setLineDash([2, 6]);
+        for (let meter = -(metadata?.world_size_meters || 80000) / 2; meter <= (metadata?.world_size_meters || 80000) / 2; meter += 10000) {
+          const x = width / 2 + meter * scale + pan.x;
+          const y = height / 2 + meter * scale + pan.y;
+          ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, height); ctx.stroke();
+          ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(width, y); ctx.stroke();
+        }
+        ctx.setLineDash([]);
+        const left = toScreen([-(metadata?.world_size_meters || 80000) / 2, 0]).x;
+        const right = toScreen([(metadata?.world_size_meters || 80000) / 2, 0]).x;
+        const top = toScreen([0, -(metadata?.world_size_meters || 80000) / 2]).y;
+        const bottom = toScreen([0, (metadata?.world_size_meters || 80000) / 2]).y;
+        ctx.strokeStyle = "#5a5a5a";
+        ctx.lineWidth = 1;
+        ctx.strokeRect(left, top, right - left, bottom - top);
+        ctx.strokeStyle = "#343434";
+        ctx.beginPath(); ctx.moveTo(width / 2 + pan.x - 7, height / 2 + pan.y); ctx.lineTo(width / 2 + pan.x + 7, height / 2 + pan.y); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(width / 2 + pan.x, height / 2 + pan.y - 7); ctx.lineTo(width / 2 + pan.x, height / 2 + pan.y + 7); ctx.stroke();
+        ctx.restore();
+      }
+
+      function drawPolygon(feature, style, highlight = false) {
+        const polygon = feature.polygon;
+        if (!Array.isArray(polygon) || polygon.length < 3) return;
+        ctx.beginPath();
+        polygon.forEach((point, index) => {
+          const p = toScreen(point);
+          if (index === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+        });
+        ctx.closePath();
+        if (highlight) {
+          ctx.fillStyle = "rgba(235,235,235,0.13)";
+          ctx.fill();
+        }
+        ctx.strokeStyle = highlight ? "#fff" : style.color;
+        ctx.lineWidth = highlight ? 2.6 : style.width;
+        ctx.setLineDash(style.dash);
+        ctx.stroke();
+        ctx.setLineDash([]);
+      }
+
+      function draw() {
+        if (!ctx) return;
+        const rect = canvas.getBoundingClientRect();
+        const width = rect.width;
+        const height = rect.height;
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = "#0b0b0b";
+        ctx.fillRect(0, 0, width, height);
+        drawGrid(width, height);
+        for (const level of LEVELS) {
+          if (!visibleLevels.has(level.id)) continue;
+          for (const feature of features) {
+            if (Number(feature.admin_level) === level.id && feature !== selected) drawPolygon(feature, level);
+          }
+        }
+        if (selected && visibleLevels.has(Number(selected.admin_level))) {
+          drawPolygon(selected, LEVELS.find(item => item.id === Number(selected.admin_level)) || LEVELS[0], true);
+        }
+        const marker = toScreen([probe.x, probe.z]);
+        ctx.save();
+        ctx.strokeStyle = "#fff";
+        ctx.fillStyle = "#111";
+        ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(marker.x, marker.y, 5, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(marker.x - 9, marker.y); ctx.lineTo(marker.x + 9, marker.y); ctx.moveTo(marker.x, marker.y - 9); ctx.lineTo(marker.x, marker.y + 9); ctx.stroke();
+        ctx.restore();
+        updateScale();
+      }
+
+      function updateScale() {
+        const scale = mapScale();
+        const tenKmPixels = 10000 * scale;
+        const shownKm = tenKmPixels > 140 ? 10 : tenKmPixels > 70 ? 5 : tenKmPixels > 28 ? 2 : 1;
+        $("scaleLine").style.width = `${shownKm * 1000 * scale}px`;
+        $("scaleText").textContent = `${shownKm} km`;
+        $("zoomLabel").textContent = `${Math.round(zoom * 100)}%`;
+      }
+
+      function pointInPolygon(point, polygon) {
+        let inside = false;
+        for (let i = 0, j = polygon.length - 1; i < polygon.length; j = i++) {
+          const a = polygon[i], b = polygon[j];
+          const crosses = ((a[1] > point.z) !== (b[1] > point.z)) && (point.x < (b[0] - a[0]) * (point.z - a[1]) / (b[1] - a[1]) + a[0]);
+          if (crosses) inside = !inside;
+        }
+        return inside;
+      }
+
+      function matchesAt(point) {
+        return features.filter(feature => Number.isFinite(Number(feature.admin_level)) && Array.isArray(feature.polygon) && pointInPolygon(point, feature.polygon))
+          .sort((a, b) => Number(a.admin_level) - Number(b.admin_level));
+      }
+
+      function hierarchyFor(matches) {
+        const names = [];
+        for (const feature of matches) {
+          const name = featureName(feature);
+          if (names[names.length - 1] !== name) names.push(name);
+        }
+        return names;
+      }
+
+      function inspect(point, fromMap = false) {
+        probe = { x: Math.round(point.x), z: Math.round(point.z) };
+        $("probeX").value = probe.x;
+        $("probeZ").value = probe.z;
+        const matches = matchesAt(probe);
+        selected = matches.length ? matches[matches.length - 1] : null;
+        const hierarchy = hierarchyFor(matches);
+        const hierarchyBox = $("hierarchy");
+        hierarchyBox.classList.toggle("empty", !matches.length);
+        hierarchyBox.textContent = matches.length ? hierarchy.join(" > ") : "이 위치에 포함되는 행정경계가 없습니다.";
+        $("matchList").replaceChildren(...matches.map(feature => makeMatchRow(feature, feature === selected)));
+        $("cursorLabel").textContent = `X ${probe.x.toLocaleString()} · Z ${probe.z.toLocaleString()}`;
+        if (selected) showDetails(selected);
+        else $("featureDetails").innerHTML = "<dt>상태</dt><dd>포함된 행정경계 없음</dd>";
+        if (fromMap) draw(); else draw();
+      }
+
+      function makeMatchRow(feature, active = false) {
+        const row = document.createElement("button");
+        row.type = "button";
+        row.className = `match-row${active ? " active" : ""}`;
+        row.setAttribute("aria-label", `${levelName(feature.admin_level)} ${featureName(feature)}`);
+        row.innerHTML = `<span class="match-level">${feature.admin_level}</span><span class="match-name"></span><span class="match-code"></span>`;
+        row.children[1].textContent = featureName(feature);
+        row.children[2].textContent = feature.boundary_id || "";
+        row.addEventListener("click", () => { selected = feature; showDetails(feature); draw(); });
+        return row;
+      }
+
+      function showDetails(feature) {
+        const points = feature.polygon || [];
+        const xs = points.map(point => Number(point[0]));
+        const zs = points.map(point => Number(point[1]));
+        const rows = [
+          ["행정단위", levelName(feature.admin_level)],
+          ["명칭", featureName(feature)],
+          ["경계 ID", feature.boundary_id || "-"],
+          ["코드", feature.id || "-"],
+          ["정점 수", points.length.toLocaleString()],
+          ["월드 범위", xs.length ? `${Math.round(Math.min(...xs))}…${Math.round(Math.max(...xs))} / ${Math.round(Math.min(...zs))}…${Math.round(Math.max(...zs))} m` : "-"],
+          ["출처", feature.source || "-"],
+          ["라이선스", feature.license || "-"],
+          ["랜드마크", (feature.landmarks || []).join(", ") || "-"],
+        ];
+        const list = $("featureDetails");
+        list.replaceChildren(...rows.flatMap(([label, value]) => {
+          const dt = document.createElement("dt"), dd = document.createElement("dd");
+          dt.textContent = label; dd.textContent = value;
+          return [dt, dd];
+        }));
+      }
+
+      function renderLayers() {
+        const root = $("layerList");
+        root.replaceChildren(...LEVELS.map(level => {
+          const label = document.createElement("label");
+          label.className = "level-row";
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox"; checkbox.checked = visibleLevels.has(level.id);
+          checkbox.addEventListener("change", () => {
+            if (checkbox.checked) visibleLevels.add(level.id); else visibleLevels.delete(level.id);
+            draw(); updateCounts();
+          });
+          const levelLabel = document.createElement("span"); levelLabel.className = "level-tag"; levelLabel.textContent = level.id;
+          const name = document.createElement("span"); name.textContent = level.name;
+          const count = document.createElement("span"); count.className = "level-count"; count.textContent = (levelCounts.get(level.id) || 0).toLocaleString();
+          label.append(checkbox, levelLabel, name, count);
+          return label;
+        }));
+      }
+
+      function updateCounts() {
+        $("totalCount").textContent = features.length.toLocaleString();
+        $("visibleCount").textContent = features.filter(feature => visibleLevels.has(Number(feature.admin_level))).length.toLocaleString();
+      }
+
+      function acceptData(payload, label = "파일") {
+        const incoming = Array.isArray(payload) ? payload : payload.features;
+        if (!Array.isArray(incoming)) throw new Error("행정경계 배열 또는 GeoJSON FeatureCollection이 아닙니다.");
+        const normalized = incoming.map(item => {
+          if (item.type === "Feature") {
+            const p = item.properties || {};
+            const ring = item.geometry?.type === "Polygon" ? item.geometry.coordinates[0] : item.geometry?.coordinates?.[0]?.[0];
+            return { ...p, admin_name: p.admin_name || p.name_ko || p.name || "이름 없음", admin_level: Number(p.admin_level), polygon: (ring || []).map(([lon, lat]) => [lon, lat]) };
+          }
+          return item;
+        }).filter(item => Array.isArray(item.polygon) && item.polygon.length >= 3);
+        if (!normalized.length) throw new Error("표시 가능한 polygon 경계가 없습니다.");
+        features = normalized;
+        for (const level of LEVELS) levelCounts.set(level.id, features.filter(feature => Number(feature.admin_level) === level.id).length);
+        selected = null;
+        probe = { x: 0, z: 0 };
+        $("probeX").value = "0"; $("probeZ").value = "0";
+        renderLayers(); updateCounts(); draw();
+        $("exportButton").disabled = false;
+        setStatus(`${label} · ${features.length.toLocaleString()}개 경계`);
+        $("featureDetails").innerHTML = "<dt>상태</dt><dd>경계 지도에서 위치를 선택하세요.</dd>";
+        inspect(probe);
+      }
+
+      async function autoLoad() {
+        const mapId = new URLSearchParams(location.search).get("map") === "ulsan_metro_60km" ? "ulsan_metro_60km" : "ulsan_metro_80km";
+        const base = `../../godot_project/assets/maps/${mapId}/`;
+        try {
+          const response = await fetch(`${base}real_districts.json`, { cache: "no-store" });
+          if (!response.ok) throw new Error(`경계 파일 응답 ${response.status}`);
+          const data = await response.json();
+          try {
+            const metaResponse = await fetch(`${base}map_meta.json`, { cache: "no-store" });
+            if (metaResponse.ok) metadata = await metaResponse.json();
+          } catch (_) { /* 선택 데이터만으로도 작동 */ }
+          acceptData(data, "게임 자산 자동 연결");
+          if (metadata?.world_size_meters) $("mapDetails").children[1].textContent = `±${Number(metadata.world_size_meters / 2).toLocaleString()} m`;
+        } catch (error) {
+          setStatus("경계 파일을 열어주세요", true);
+        }
+      }
+
+      $("loadButton").addEventListener("click", () => $("fileInput").click());
+      $("fileInput").addEventListener("change", async event => {
+        const file = event.target.files?.[0];
+        if (!file) return;
+        try { acceptData(JSON.parse(await file.text()), file.name); }
+        catch (error) { setStatus(error.message, true); }
+      });
+      $("probeButton").addEventListener("click", () => inspect({ x: Number($("probeX").value) || 0, z: Number($("probeZ").value) || 0 }));
+      $("probeX").addEventListener("keydown", event => { if (event.key === "Enter") $("probeButton").click(); });
+      $("probeZ").addEventListener("keydown", event => { if (event.key === "Enter") $("probeButton").click(); });
+      $("allLayersButton").addEventListener("click", () => {
+        if (visibleLevels.size === LEVELS.length) visibleLevels.clear(); else LEVELS.forEach(level => visibleLevels.add(level.id));
+        renderLayers(); updateCounts(); draw();
+      });
+      $("fitButton").addEventListener("click", () => { zoom = 1; pan = { x: 0, y: 0 }; draw(); });
+      $("zoomInButton").addEventListener("click", () => { zoom = Math.min(zoom * 1.25, 12); draw(); });
+      $("zoomOutButton").addEventListener("click", () => { zoom = Math.max(zoom / 1.25, 0.15); draw(); });
+      canvas.addEventListener("pointerdown", event => {
+        canvas.setPointerCapture(event.pointerId);
+        drag = { x: event.clientX, y: event.clientY, panX: pan.x, panY: pan.y, moved: false };
+      });
+      canvas.addEventListener("pointermove", event => {
+        if (drag) {
+          const dx = event.clientX - drag.x, dy = event.clientY - drag.y;
+          if (Math.abs(dx) + Math.abs(dy) > 3) drag.moved = true;
+          pan = { x: drag.panX + dx, y: drag.panY + dy };
+          draw();
+        } else {
+          const rect = canvas.getBoundingClientRect();
+          const world = toWorld(event.clientX - rect.left, event.clientY - rect.top);
+          $("cursorLabel").textContent = `X ${Math.round(world.x).toLocaleString()} · Z ${Math.round(world.z).toLocaleString()}`;
+        }
+      });
+      canvas.addEventListener("pointerup", event => {
+        if (!drag) return;
+        const wasDrag = drag.moved;
+        drag = null;
+        if (!wasDrag) {
+          const rect = canvas.getBoundingClientRect();
+          inspect(toWorld(event.clientX - rect.left, event.clientY - rect.top), true);
+        }
+      });
+      canvas.addEventListener("wheel", event => {
+        event.preventDefault();
+        const rect = canvas.getBoundingClientRect();
+        const before = toWorld(event.clientX - rect.left, event.clientY - rect.top);
+        zoom = Math.max(0.15, Math.min(12, zoom * (event.deltaY < 0 ? 1.12 : 1 / 1.12)));
+        const after = toScreen([before.x, before.z]);
+        pan.x += event.clientX - rect.left - after.x;
+        pan.y += event.clientY - rect.top - after.y;
+        draw();
+      }, { passive: false });
+      $("searchButton").addEventListener("click", searchFeatures);
+      $("searchInput").addEventListener("keydown", event => { if (event.key === "Enter") searchFeatures(); });
+
+      function searchFeatures() {
+        const query = $("searchInput").value.trim().toLocaleLowerCase();
+        const results = query ? features.filter(feature => `${featureName(feature)} ${feature.id || ""} ${feature.boundary_id || ""}`.toLocaleLowerCase().includes(query)).slice(0, 40) : [];
+        const root = $("searchResults");
+        root.replaceChildren(...results.map(feature => {
+          const row = makeMatchRow(feature, feature === selected);
+          row.addEventListener("click", () => { selected = feature; showDetails(feature); draw(); }, { once: true });
+          return row;
+        }));
+        if (!query) root.textContent = "검색어를 입력하세요.";
+        else if (!results.length) root.textContent = "일치하는 행정구역이 없습니다.";
+      }
+
+      $("exportButton").addEventListener("click", () => {
+        const matches = matchesAt(probe);
+        const report = {
+          map: metadata?.id || "ulsan_metro_80km",
+          probe_world_xz_m: probe,
+          hierarchy: hierarchyFor(matches),
+          matches: matches.map(feature => ({ admin_level: feature.admin_level, admin_name: featureName(feature), boundary_id: feature.boundary_id, id: feature.id, vertex_count: feature.polygon.length })),
+          generated_at: new Date().toISOString()
+        };
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(new Blob([JSON.stringify(report, null, 2)], { type: "application/json" }));
+        link.download = "admin-boundary-diagnostic.json";
+        link.click(); URL.revokeObjectURL(link.href);
+      });
+
+      renderLayers();
+      new ResizeObserver(sizeCanvas).observe(canvas);
+      autoLoad();
+    })();
+  </script>
+</body>
+</html>
+

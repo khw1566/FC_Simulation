@@ -1,0 +1,295 @@
+[
+  {
+    "id": "busan_coastal_metro",
+    "name_ko": "부산광역시 해양 마천루 및 항만 권역",
+    "name_en": "Busan Metropolitan Maritime & Port District",
+    "admin_level": "city",
+    "prefecture": "부산광역시",
+    "city": "해운대/남구/중구/영도",
+    "polygon": [
+      [
+        -15000.0,
+        32000.0
+      ],
+      [
+        22000.0,
+        32000.0
+      ],
+      [
+        22000.0,
+        68000.0
+      ],
+      [
+        -15000.0,
+        68000.0
+      ]
+    ],
+    "center": [
+      5000.0,
+      50000.0
+    ],
+    "landmarks": [
+      "해운대 엘시티",
+      "광안대교",
+      "부산항 북항/신항",
+      "부산항대교",
+      "센텀시티",
+      "영도 태종대"
+    ]
+  },
+  {
+    "id": "busan_west_gadeok",
+    "name_ko": "부산 강서 가덕도 신공항 및 낙동강 하구",
+    "name_en": "Busan West Gadeok Airport & Nakdong Estuary",
+    "admin_level": "city",
+    "prefecture": "부산광역시",
+    "city": "강서구/사하구",
+    "polygon": [
+      [
+        -38000.0,
+        40000.0
+      ],
+      [
+        -15000.0,
+        40000.0
+      ],
+      [
+        -15000.0,
+        68000.0
+      ],
+      [
+        -38000.0,
+        68000.0
+      ]
+    ],
+    "center": [
+      -25000.0,
+      54000.0
+    ],
+    "landmarks": [
+      "가덕도 신공항 예정지",
+      "을숙도 철새도래지",
+      "다대포해수욕장",
+      "명지국제도시"
+    ]
+  },
+  {
+    "id": "ulsan_industrial_capital",
+    "name_ko": "울산광역시 산업 수도 및 태화강 일대",
+    "name_en": "Ulsan Industrial Capital & Taehwa River",
+    "admin_level": "city",
+    "prefecture": "울산광역시",
+    "city": "남구/중구/동구/북구",
+    "polygon": [
+      [
+        -5000.0,
+        -12000.0
+      ],
+      [
+        30000.0,
+        -12000.0
+      ],
+      [
+        30000.0,
+        22000.0
+      ],
+      [
+        -5000.0,
+        22000.0
+      ]
+    ],
+    "center": [
+      12000.0,
+      5000.0
+    ],
+    "landmarks": [
+      "현대자동차 울산공장",
+      "HD현대중공업 조선소",
+      "태화강 국가정원",
+      "온산국가산업단지",
+      "울산대학교/과학대"
+    ]
+  },
+  {
+    "id": "pohang_yeongil_bay",
+    "name_ko": "포항시 영일만 신항 및 POSCO 제철단지",
+    "name_en": "Pohang Yeongil Bay & POSCO Steelworks",
+    "admin_level": "city",
+    "prefecture": "경상북도",
+    "city": "포항시 남구/북구",
+    "polygon": [
+      [
+        -2000.0,
+        -68000.0
+      ],
+      [
+        32000.0,
+        -68000.0
+      ],
+      [
+        32000.0,
+        -32000.0
+      ],
+      [
+        -2000.0,
+        -32000.0
+      ]
+    ],
+    "center": [
+      15000.0,
+      -50000.0
+    ],
+    "landmarks": [
+      "POSCO 포항제철소",
+      "영일만 신항",
+      "영일대 해수욕장/해상누각",
+      "포항공과대학교(POSTECH)",
+      "형산강 하구"
+    ]
+  },
+  {
+    "id": "homigot_sunrise_cape",
+    "name_ko": "호미곶 호랑이 꼬리 해맞이 곶",
+    "name_en": "Homigot Sunrise Cape & Coastal Cliffs",
+    "admin_level": "subdistrict",
+    "prefecture": "경상북도",
+    "city": "포항시 남구 호미곶면",
+    "polygon": [
+      [
+        32000.0,
+        -60000.0
+      ],
+      [
+        60000.0,
+        -60000.0
+      ],
+      [
+        60000.0,
+        -38000.0
+      ],
+      [
+        32000.0,
+        -38000.0
+      ]
+    ],
+    "center": [
+      45000.0,
+      -48000.0
+    ],
+    "landmarks": [
+      "호미곶 상생의 손",
+      "호미곶 등대",
+      "구룡포항 일본인가옥거리",
+      "동해면 해안단애"
+    ]
+  },
+  {
+    "id": "gyeongju_historic_valley",
+    "name_ko": "경주시 천년고도 및 보문/토함산 권역",
+    "name_en": "Gyeongju Historic Capital & Bomun/Tohamsan",
+    "admin_level": "city",
+    "prefecture": "경상북도",
+    "city": "경주시",
+    "polygon": [
+      [
+        -20000.0,
+        -35000.0
+      ],
+      [
+        12000.0,
+        -35000.0
+      ],
+      [
+        12000.0,
+        -10000.0
+      ],
+      [
+        -20000.0,
+        -10000.0
+      ]
+    ],
+    "center": [
+      -4000.0,
+      -22000.0
+    ],
+    "landmarks": [
+      "불국사/석굴암",
+      "보문호 관광단지",
+      "첨성대/대릉원",
+      "토함산(745m)"
+    ]
+  },
+  {
+    "id": "yeongnam_alps_ridge",
+    "name_ko": "영남알프스 1,000m급 영봉 산악지대",
+    "name_en": "Yeongnam Alps High Mountain Ridge",
+    "admin_level": "mountain",
+    "prefecture": "울산/밀양/양산/청도",
+    "city": "울주군 상북/삼남",
+    "polygon": [
+      [
+        -45000.0,
+        -20000.0
+      ],
+      [
+        -15000.0,
+        -20000.0
+      ],
+      [
+        -15000.0,
+        18000.0
+      ],
+      [
+        -45000.0,
+        18000.0
+      ]
+    ],
+    "center": [
+      -30000.0,
+      -1000.0
+    ],
+    "landmarks": [
+      "가지산(1,241m)",
+      "신불산(1,159m)",
+      "간월재 억새평원",
+      "통도사",
+      "KTX울산역"
+    ]
+  },
+  {
+    "id": "gimhae_yangsan_corridor",
+    "name_ko": "김해 평야 및 양산 천성산 회랑",
+    "name_en": "Gimhae Plain & Yangsan Cheonseongsan Corridor",
+    "admin_level": "city",
+    "prefecture": "경상남도",
+    "city": "김해시/양산시",
+    "polygon": [
+      [
+        -55000.0,
+        15000.0
+      ],
+      [
+        -20000.0,
+        15000.0
+      ],
+      [
+        -20000.0,
+        45000.0
+      ],
+      [
+        -55000.0,
+        45000.0
+      ]
+    ],
+    "center": [
+      -38000.0,
+      30000.0
+    ],
+    "landmarks": [
+      "김해국제공항",
+      "천성산(922m)",
+      "낙동강 물금나루",
+      "가야유적지"
+    ]
+  }
+]

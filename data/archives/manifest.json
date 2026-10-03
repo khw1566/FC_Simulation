@@ -1,0 +1,38 @@
+{
+  "restore_command": "powershell -File pipeline/indexer/compact_map_sources.ps1 -Restore",
+  "created_date": "2026-10-03",
+  "archives": [
+    {
+      "original_path": "godot_project/assets/maps/ulsan_metro_60km",
+      "original_bytes": 435770086.0,
+      "file_count": 3867,
+      "archive": "data/archives/ulsan_metro_60km_source.zip",
+      "sha256": "a23bc333e683c5eb5160b4933d5ff41ff4bf7ea171269f67095d1b4d53756aea",
+      "archive_bytes": 110519118
+    },
+    {
+      "original_path": "godot_project/assets/maps/ulsan_metro_80km/buildings_cache",
+      "original_bytes": 191503638.0,
+      "file_count": 1521,
+      "archive": "data/archives/ulsan_80km_collection_cache.zip",
+      "sha256": "9c2f9a185871752355719906c545ebf22dc9fd36ed56e0fcf17446882fc57301",
+      "archive_bytes": 35591915
+    },
+    {
+      "original_path": "data/raw/ulsan_metro_80km/buildings",
+      "original_bytes": 280976222.0,
+      "file_count": 1,
+      "archive": "data/archives/ulsan_80km_merged_source.zip",
+      "sha256": "7b15d1947dbb8df0067fe4d1090f211c26d3d14527ebf960741af841219fe67a",
+      "archive_bytes": 49676124
+    },
+    {
+      "original_path": "godot_project/assets/maps/shimonoseki_port_3km",
+      "original_bytes": 1429142.0,
+      "file_count": 14,
+      "archive": "data/archives/shimonoseki_port_3km_source.zip",
+      "sha256": "dea6ea764a1ab35a0cf05863c082c17aa4b3088141532fb3dea4bfb83285d139",
+      "archive_bytes": 1065682
+    }
+  ]
+}

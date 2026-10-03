@@ -1,0 +1,62 @@
+{
+  "id": "ulsan_metro_80km",
+  "name_ko": "울산광역시 80km",
+  "name_en": "Ulsan Metropolitan Area 80km",
+  "description_ko": "울산을 중심으로 한 80km 지형입니다. 60km 코어와 80km 외곽 건물, 도로, 울산공항을 포함합니다.",
+  "description_en": "80km terrain with retained 60km buildings, roads and airport; outer terrain derived from the cached 140km map.",
+  "administrative_boundaries": {
+    "hierarchy": [
+      "시도",
+      "시군구",
+      "읍면동",
+      "리"
+    ],
+    "data_date": "2026-07",
+    "source": "통계청 SGIS, 행정안전부; mapcn-kr / vuski-admdongkor",
+    "source_url": "https://github.com/DevMinGeonPark/mapcn-kr",
+    "license": "CC BY 4.0"
+  },
+  "preview_image": "res://assets/maps/ulsan_metro_80km/ulsan_metro_80km_tactical_map.png",
+  "world_size_meters": 80000,
+  "min_elevation": -30.0,
+  "max_elevation": 1300,
+  "sea_level": 0.0,
+  "spawn_position": [
+    0.0,
+    600.0,
+    0.0
+  ],
+  "bbox": {
+    "south": 35.1841,
+    "north": 35.9049,
+    "west": 128.81256666666667,
+    "east": 129.69843333333336
+  },
+  "assets": {
+    "airport_placement": "res://assets/generated/airport/placement.json",
+    "heightmap": "res://assets/maps/ulsan_metro_80km/hydro/coastal_heightmap_16bit.png",
+    "watermask": "res://assets/maps/ulsan_metro_80km/hydro/water_mask.png",
+    "tactical_map": "res://assets/maps/ulsan_metro_80km/tactical_atlas.png",
+    "districts": "res://assets/maps/ulsan_metro_80km/real_districts.json",
+    "buildings_roads": "res://assets/maps/ulsan_metro_80km/buildings_and_roads.json",
+    "sea_mask": "res://assets/maps/ulsan_metro_80km/hydro/sea_mask.png",
+    "river_mask": "res://assets/maps/ulsan_metro_80km/hydro/river_mask.png",
+    "lake_mask": "res://assets/maps/ulsan_metro_80km/hydro/lake_mask.png"
+  },
+  "coverage": {
+    "terrain_km": 80,
+    "administrative_km": 80,
+    "detailed_vectors_source": "VWorld LT_C_SPBD: 울산 60km 코어 + 80km 외곽",
+    "outer_buildings_roads_collected": true,
+    "seam_blend_outside_core_m": 1000
+  },
+  "tactical_atlas": {
+    "contour_interval_m": 50,
+    "road_count": 6614,
+    "water_source": "res://assets/maps/ulsan_metro_80km/hydro/water_mask.png",
+    "detail_note": "도로는 기존 수집 범위에 한함"
+  },
+  "hydro_source_heightmap": "res://assets/maps/ulsan_metro_80km/ulsan_metro_80km_heightmap_16bit.png",
+  "coastal_heightmap_corrected": true,
+  "category": "korea"
+}

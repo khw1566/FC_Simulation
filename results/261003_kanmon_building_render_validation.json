@@ -1,0 +1,30 @@
+{
+  "failures": [],
+  "passed": true,
+  "regions": {
+    "kokura": {
+      "fps": 60,
+      "loaded_building_batches": 1121,
+      "nearby_source_buildings": 39323,
+      "resident_buildings": 70325
+    },
+    "mojiko": {
+      "fps": 60,
+      "loaded_building_batches": 1122,
+      "nearby_source_buildings": 15054,
+      "resident_buildings": 69536
+    },
+    "north_shimonoseki": {
+      "fps": 60,
+      "loaded_building_batches": 1315,
+      "nearby_source_buildings": 20301,
+      "resident_buildings": 81253
+    },
+    "shimonoseki": {
+      "fps": 60,
+      "loaded_building_batches": 1621,
+      "nearby_source_buildings": 28667,
+      "resident_buildings": 100628
+    }
+  }
+}

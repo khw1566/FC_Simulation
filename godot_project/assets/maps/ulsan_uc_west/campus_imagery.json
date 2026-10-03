@@ -1,0 +1,25 @@
+{
+  "source": "VWorld Satellite WMTS",
+  "zoom": 17,
+  "tile_count": 49,
+  "bbox": {
+    "west": 129.246116,
+    "east": 129.262676,
+    "north": 35.55215,
+    "south": 35.53685
+  },
+  "resolution": [
+    2048,
+    2048
+  ],
+  "world_rect_xz": [
+    -850,
+    -850,
+    1500,
+    1700
+  ],
+  "capture_date": "unknown",
+  "native_pixel_spacing_approx_m": 0.97,
+  "purpose": "local_modeling_reference",
+  "attribution": "국토교통부 브이월드"
+}

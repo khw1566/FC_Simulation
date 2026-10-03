@@ -1,0 +1,262 @@
+[gd_scene load_steps=4 format=3 uid="uid://weather_details_hud_v1"]
+
+[ext_resource type="Script" path="res://scripts/views/weather_details_hud_view.gd" id="1_view"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.06, 0.06, 0.06, 0.92)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.65, 0.65, 0.65, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sep"]
+bg_color = Color(0.35, 0.35, 0.35, 1)
+
+[node name="WeatherDetailsHUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_view")
+
+[node name="RootPanel" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -380.0
+offset_top = 70.0
+offset_right = -20.0
+offset_bottom = 490.0
+grow_horizontal = 0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="RootPanel"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 16
+
+[node name="VBox" type="VBoxContainer" parent="RootPanel/Margin"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="RootPanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="RootPanel/Margin/VBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 14
+text = "대기역학 및 고도 기상 제원 [TAB]"
+
+[node name="WeatherStateVal" type="Label" parent="RootPanel/Margin/VBox/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.85, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "구름 조금"
+
+[node name="Sep1" type="Panel" parent="RootPanel/Margin/VBox"]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sep")
+
+[node name="Grid" type="VBoxContainer" parent="RootPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="RowAlt" type="HBoxContainer" parent="RootPanel/Margin/VBox/Grid"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/Grid/RowAlt"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "비행 고도 (ALT)"
+
+[node name="ValM" type="Label" parent="RootPanel/Margin/VBox/Grid/RowAlt"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "  350 m"
+
+[node name="ValFt" type="Label" parent="RootPanel/Margin/VBox/Grid/RowAlt"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
+theme_override_font_sizes/font_size = 11
+text = "(  1148 ft)"
+
+[node name="RowTemp" type="HBoxContainer" parent="RootPanel/Margin/VBox/Grid"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/Grid/RowTemp"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "외기 기온 (OAT)"
+
+[node name="ValTemp" type="Label" parent="RootPanel/Margin/VBox/Grid/RowTemp"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "+15.2 ℃"
+
+[node name="ValDew" type="Label" parent="RootPanel/Margin/VBox/Grid/RowTemp"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
+theme_override_font_sizes/font_size = 11
+text = "(이슬점:  +4.8 ℃)"
+
+[node name="RowPress" type="HBoxContainer" parent="RootPanel/Margin/VBox/Grid"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/Grid/RowPress"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "기압 / 공기밀도"
+
+[node name="ValPress" type="Label" parent="RootPanel/Margin/VBox/Grid/RowPress"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "975.4 hPa"
+
+[node name="ValDensity" type="Label" parent="RootPanel/Margin/VBox/Grid/RowPress"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 11
+text = "1.182 kg/m³"
+
+[node name="RowHumidity" type="HBoxContainer" parent="RootPanel/Margin/VBox/Grid"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/Grid/RowHumidity"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "상대 습도 (RH)"
+
+[node name="ValHumidity" type="Label" parent="RootPanel/Margin/VBox/Grid/RowHumidity"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = " 52.4 %"
+
+[node name="RowWind" type="HBoxContainer" parent="RootPanel/Margin/VBox/Grid"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/Grid/RowWind"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "바람 (풍속/풍향)"
+
+[node name="ValSpeed" type="Label" parent="RootPanel/Margin/VBox/Grid/RowWind"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = " 6.5 m/s ( 13 kt)"
+
+[node name="ValDir" type="Label" parent="RootPanel/Margin/VBox/Grid/RowWind"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 11
+text = "045° [NE]"
+
+[node name="Sep2" type="Panel" parent="RootPanel/Margin/VBox"]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sep")
+
+[node name="SectionFM" type="Label" parent="RootPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_font_sizes/font_size = 11
+text = "[비행 모델(FM) 공기역학 지표]"
+
+[node name="RowMach" type="HBoxContainer" parent="RootPanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/RowMach"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "마하수 (Mach)"
+
+[node name="ValMach" type="Label" parent="RootPanel/Margin/VBox/RowMach"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+theme_override_font_sizes/font_size = 13
+text = "Mach  0.72"
+
+[node name="ValSound" type="Label" parent="RootPanel/Margin/VBox/RowMach"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
+theme_override_font_sizes/font_size = 11
+text = "(음속:  339 m/s)"
+
+[node name="RowAirspeed" type="HBoxContainer" parent="RootPanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/RowAirspeed"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "진대기속도 (TAS)"
+
+[node name="ValTAS" type="Label" parent="RootPanel/Margin/VBox/RowAirspeed"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "  875 km/h"
+
+[node name="ValIAS" type="Label" parent="RootPanel/Margin/VBox/RowAirspeed"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.55, 0.55, 1)
+theme_override_font_sizes/font_size = 11
+text = "(지시대기속도:   860 km/h)"
+
+[node name="RowDynamicPressure" type="HBoxContainer" parent="RootPanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="Lbl" type="Label" parent="RootPanel/Margin/VBox/RowDynamicPressure"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.65, 0.65, 0.65, 1)
+theme_override_font_sizes/font_size = 12
+text = "동압 (Dyn. Press)"
+
+[node name="ValQ" type="Label" parent="RootPanel/Margin/VBox/RowDynamicPressure"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "34850.5 Pa"

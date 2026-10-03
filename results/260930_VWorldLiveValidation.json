@@ -1,0 +1,41 @@
+{
+  "time": "2026-09-30T14:50:18.987594+09:00",
+  "planned_cells": 760,
+  "max_cell_area_km2": 1.9365806090296869,
+  "page_size": 1000,
+  "domain": "없습니다",
+  "city_probe": {
+    "status": "OK",
+    "record": {
+      "total": "75",
+      "current": "75"
+    },
+    "returned_features": 75,
+    "first_geometry_type": "MultiPolygon",
+    "building_id_present": true
+  },
+  "validation_cells": [
+    {
+      "cell_id": "phase1_80km_outer_north_2km2_y00_x00",
+      "completed": true,
+      "stats": {
+        "feature_count": 2135,
+        "pages": 3,
+        "sha256": "3d39ee0c6cef0532d5ccdd3a4e0e8327d173b4b50f5fa7a0765e6d5d30dafc74",
+        "area_km2": 1.78618
+      }
+    },
+    {
+      "cell_id": "phase1_80km_outer_north_2km2_y00_x01",
+      "completed": true,
+      "stats": {
+        "feature_count": 632,
+        "pages": 1,
+        "sha256": "3f0ec785fcacb3eb82ea8a4d87484ec6b5a14e28e2ecf1887c8e4e558a062b18",
+        "area_km2": 1.78618
+      }
+    }
+  ],
+  "daily_calls": 12,
+  "total_unique_buildings": 2767
+}

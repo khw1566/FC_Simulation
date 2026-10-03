@@ -1,0 +1,97 @@
+{
+  "indexed_at": "2026-09-28 14:12:23",
+  "map_id": "southeast_mega_140km",
+  "name_ko": "동남권 메가리전: 포항-울산-부산 (140km x 140km)",
+  "name_en": "Southeast Mega Region: Pohang-Ulsan-Busan (140km x 140km)",
+  "world_size_meters": 140000.0,
+  "min_elevation": -30.0,
+  "max_elevation": 1300.0,
+  "sea_level": 0.0,
+  "bbox": {
+    "south": 34.9494,
+    "north": 36.2106,
+    "west": 128.4496,
+    "east": 130.0004
+  },
+  "assets": {
+    "buildings_and_roads.json": {
+      "category": "buildings_and_roads",
+      "file_name": "buildings_and_roads.json",
+      "extension": ".json",
+      "size_bytes": 76283371,
+      "sha256": "c62f54a8581644768b480f3f6a0d5d7240c26e339baed029ae7015f2488fe868"
+    },
+    "real_districts.json": {
+      "category": "districts",
+      "file_name": "real_districts.json",
+      "extension": ".json",
+      "size_bytes": 6025,
+      "sha256": "251b593e8bb4ee0d0b3e790ca35b7a7cbd2ab42ebd2d2a3626f4833772503129"
+    },
+    "southeast_mega_140km_heightmap_16bit.png": {
+      "category": "heightmap",
+      "file_name": "southeast_mega_140km_heightmap_16bit.png",
+      "extension": ".png",
+      "size_bytes": 14154611,
+      "sha256": "8137382c53505879a54abd36f3641994c6e41800b929597986373d1d9e5f814c"
+    },
+    "southeast_mega_140km_tactical_map.png": {
+      "category": "tactical_map",
+      "file_name": "southeast_mega_140km_tactical_map.png",
+      "extension": ".png",
+      "size_bytes": 275958,
+      "sha256": "35c6980b2b101d963b3a1fc1f209a72c43254e84c20eceb93f7db4bfecd860cf"
+    },
+    "southeast_mega_140km_watermask_8bit.png": {
+      "category": "watermask",
+      "file_name": "southeast_mega_140km_watermask_8bit.png",
+      "extension": ".png",
+      "size_bytes": 286305,
+      "sha256": "15fb93a99277dea4b435b5b75b37881d11552a140a2d35ea50a1f8d7190b7a65"
+    },
+    "southeast_mega_140km_vector_stream": {
+      "file_path": "res://assets/maps/southeast_mega_140km/vector_stream/index.json",
+      "sha256": "2119a0e47883dbe13b87b58f7acc2188fcb16b4e6b3296d2c907e9f0df3cf8fa",
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1300.0
+      },
+      "resolution": {
+        "type": "spatial_vector_batches",
+        "batches": 1533,
+        "counts": {
+          "buildings": 87189,
+          "roads": 512
+        }
+      },
+      "metadata": {
+        "source_sha256": "c62f54a8581644768b480f3f6a0d5d7240c26e339baed029ae7015f2488fe868",
+        "batch_hashes": "각 배치의 SHA-256은 인덱스에 기록"
+      }
+    },
+    "map_meta.json": {
+      "file_path": "res://assets/maps/southeast_mega_140km/map_meta.json",
+      "sha256": "a08e594a43e40b57436cdb0bf0f4f632210da3d7ce8289e9cfeff7f783f7a7a6",
+      "size_bytes": 1437,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation": {
+        "max_meters": 1300.0,
+        "min_meters": -30.0
+      },
+      "resolution": {
+        "type": "map_metadata"
+      }
+    }
+  }
+}

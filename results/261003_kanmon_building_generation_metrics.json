@@ -1,0 +1,148 @@
+{
+  "osm_valid": 37514,
+  "gsi_raw_fragments": 371956,
+  "gsi_exact_unique": 348735,
+  "gsi_fragment_groups": 320525,
+  "gsi_duplicates_with_osm": 36435,
+  "generated_buildings": 321584,
+  "height_quality": {
+    "default_estimate": 321081,
+    "osm_height": 19,
+    "osm_levels_estimate": 484
+  },
+  "rejected": {
+    "below_sea_level": 3
+  },
+  "grid_6x5": [
+    {
+      "x": 0,
+      "z": 0,
+      "buildings": 4
+    },
+    {
+      "x": 0,
+      "z": 1,
+      "buildings": 276
+    },
+    {
+      "x": 0,
+      "z": 2,
+      "buildings": 13256
+    },
+    {
+      "x": 0,
+      "z": 3,
+      "buildings": 39733
+    },
+    {
+      "x": 0,
+      "z": 4,
+      "buildings": 2219
+    },
+    {
+      "x": 1,
+      "z": 1,
+      "buildings": 541
+    },
+    {
+      "x": 1,
+      "z": 2,
+      "buildings": 5612
+    },
+    {
+      "x": 1,
+      "z": 3,
+      "buildings": 41983
+    },
+    {
+      "x": 1,
+      "z": 4,
+      "buildings": 32006
+    },
+    {
+      "x": 2,
+      "z": 0,
+      "buildings": 14039
+    },
+    {
+      "x": 2,
+      "z": 1,
+      "buildings": 33437
+    },
+    {
+      "x": 2,
+      "z": 2,
+      "buildings": 21175
+    },
+    {
+      "x": 2,
+      "z": 3,
+      "buildings": 16139
+    },
+    {
+      "x": 2,
+      "z": 4,
+      "buildings": 34709
+    },
+    {
+      "x": 3,
+      "z": 0,
+      "buildings": 14270
+    },
+    {
+      "x": 3,
+      "z": 1,
+      "buildings": 10746
+    },
+    {
+      "x": 3,
+      "z": 2,
+      "buildings": 11142
+    },
+    {
+      "x": 3,
+      "z": 3,
+      "buildings": 11210
+    },
+    {
+      "x": 3,
+      "z": 4,
+      "buildings": 8353
+    },
+    {
+      "x": 4,
+      "z": 0,
+      "buildings": 5094
+    },
+    {
+      "x": 4,
+      "z": 1,
+      "buildings": 509
+    },
+    {
+      "x": 4,
+      "z": 2,
+      "buildings": 1637
+    },
+    {
+      "x": 4,
+      "z": 3,
+      "buildings": 61
+    },
+    {
+      "x": 4,
+      "z": 4,
+      "buildings": 283
+    },
+    {
+      "x": 5,
+      "z": 0,
+      "buildings": 3150
+    }
+  ],
+  "roads_preserved": 1157,
+  "output": "C:\\Users\\work\\Desktop\\가상현실 렌더링\\godot_project\\assets\\maps\\kanmon_straits\\buildings_20261003\\buildings_and_roads.json",
+  "relation_polygons": 50,
+  "duplicate_polygons_replaced": 67,
+  "buildings_with_courtyards": 284
+}

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "name_ko": "월성 원자력발전소 1~4호기 외관 에셋",
+  "units": "meters",
+  "up_axis": "Y",
+  "georeferenced": false,
+  "basis": "공개 시설 소개 참고, 치수와 로컬 배치는 예술적 근사",
+  "sources": [
+    "https://cms.khnp.co.kr/eng/contents.do?key=2001"
+  ],
+  "assets": {
+    "wolsong_npp_glb": {
+      "file_path": "res://assets/generated/wolsong/wolsong_npp.glb",
+      "sha256": "69f11e196dbcd84d63592fa67c36f9fd2892321a20fdc2314757388a2880e81e",
+      "size_bytes": 476132,
+      "bbox": null,
+      "min_elevation": -3.0,
+      "max_elevation": 58.0,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 6552
+      },
+      "aabb_min_m": [
+        -165.0,
+        -3.0,
+        -360.0
+      ],
+      "aabb_max_m": [
+        165.0,
+        58.0,
+        360.0
+      ],
+      "surveyed": false
+    },
+    "wolsong_npp_tscn": {
+      "file_path": "res://assets/generated/wolsong/wolsong_npp.tscn",
+      "sha256": "7a578530e9561935a44e60667b15a1d913da011979faf6a995871386029860ab",
+      "size_bytes": 388,
+      "bbox": null,
+      "min_elevation": -3.0,
+      "max_elevation": 58.0,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 6552
+      },
+      "aabb_min_m": [
+        -165.0,
+        -3.0,
+        -360.0
+      ],
+      "aabb_max_m": [
+        165.0,
+        58.0,
+        360.0
+      ],
+      "surveyed": false
+    }
+  }
+}

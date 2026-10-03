@@ -1,0 +1,58 @@
+{
+  "mode": "imagery_guided_artistic_draft",
+  "measured_accuracy": false,
+  "building_candidate_count": 106,
+  "named_candidate_count": 75,
+  "imagery_zone_added_candidate_count": 31,
+  "candidate_membership_verified": false,
+  "college_approximate_work_zone_xz": [
+    [
+      -620,
+      -850
+    ],
+    [
+      -210,
+      -850
+    ],
+    [
+      -210,
+      -600
+    ],
+    [
+      -380,
+      -560
+    ],
+    [
+      -610,
+      -600
+    ]
+  ],
+  "pad_buffer_m": 3.0,
+  "floor_spacing_m": 3.6,
+  "window_spacing_m": 3.2,
+  "roof_parapet_height_m": 0.7,
+  "ground_elevation_source": "existing_COP30_heightmap",
+  "height_policy": "preserve_positive_source_height",
+  "features": [
+    "windows",
+    "parapets",
+    "roof_equipment",
+    "canopies",
+    "estimated_steps",
+    "paved_pads",
+    "retaining_skirts"
+  ],
+  "not_modeled_in_3d": [
+    "sports_fields",
+    "parking_markings",
+    "landscaping"
+  ],
+  "bbox": {
+    "west": 129.246116,
+    "east": 129.262676,
+    "north": 35.55215,
+    "south": 35.53685
+  },
+  "min_elevation": -10,
+  "max_elevation": 450
+}

@@ -1,0 +1,107 @@
+{
+  "batched_meshes": 6,
+  "collision_hit": true,
+  "lamp_count": 287,
+  "light_batches": 5,
+  "passed": true,
+  "runway_checks": [
+    {
+      "ground_clearance_m": 0.59998046807474,
+      "station_m": 10,
+      "valid": true,
+      "x": -20
+    },
+    {
+      "ground_clearance_m": 0.59999886802165,
+      "station_m": 10,
+      "valid": true,
+      "x": 0
+    },
+    {
+      "ground_clearance_m": 0.598069834996359,
+      "station_m": 10,
+      "valid": true,
+      "x": 20
+    },
+    {
+      "ground_clearance_m": 0.600000913718247,
+      "station_m": 500,
+      "valid": true,
+      "x": -20
+    },
+    {
+      "ground_clearance_m": 0.600000375341622,
+      "station_m": 500,
+      "valid": true,
+      "x": 0
+    },
+    {
+      "ground_clearance_m": 0.606369178637593,
+      "station_m": 500,
+      "valid": true,
+      "x": 20
+    },
+    {
+      "ground_clearance_m": 0.599999389894066,
+      "station_m": 1000,
+      "valid": true,
+      "x": -20
+    },
+    {
+      "ground_clearance_m": 0.599999947657345,
+      "station_m": 1000,
+      "valid": true,
+      "x": 0
+    },
+    {
+      "ground_clearance_m": 0.600038034411625,
+      "station_m": 1000,
+      "valid": true,
+      "x": 20
+    },
+    {
+      "ground_clearance_m": 0.600000058349679,
+      "station_m": 1500,
+      "valid": true,
+      "x": -20
+    },
+    {
+      "ground_clearance_m": 0.599999519973068,
+      "station_m": 1500,
+      "valid": true,
+      "x": 0
+    },
+    {
+      "ground_clearance_m": 0.599998981596436,
+      "station_m": 1500,
+      "valid": true,
+      "x": 20
+    },
+    {
+      "ground_clearance_m": 0.600000469529768,
+      "station_m": 1990,
+      "valid": true,
+      "x": -20
+    },
+    {
+      "ground_clearance_m": 0.59999993115315,
+      "station_m": 1990,
+      "valid": true,
+      "x": 0
+    },
+    {
+      "ground_clearance_m": 0.637762463787915,
+      "station_m": 1990,
+      "valid": true,
+      "x": 20
+    }
+  ],
+  "scope": "실제 높이맵 정지·배치·건물 및 활주로 충돌·등화 그룹 검사. 전체 게임 수동 비행은 별도.",
+  "serialized_light_positions_valid": true,
+  "triangles": 2760,
+  "world_anchor": [
+    9068.6337890625,
+    19.9934864044189,
+    -5352.94140625
+  ]
+}

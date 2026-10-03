@@ -1,0 +1,23 @@
+# 로컬 인증정보
+.env
+.env.*
+!.env.example
+data/api_keys.json
+**/credentials.json
+
+# 개발환경 및 엔진 캐시
+.venv*/
+venv/
+**/__pycache__/
+*.pyc
+**/.godot/
+tools/godot/
+*.log
+.godot_check.txt
+
+# 재수집 가능한 원본 및 로컬 백업
+data/raw/
+data/archives/*.zip
+기초 미가공데이터/
+**/.DS_Store
+**/Thumbs.db

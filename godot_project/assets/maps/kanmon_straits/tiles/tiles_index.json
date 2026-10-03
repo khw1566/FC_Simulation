@@ -1,0 +1,121 @@
+{
+  "tiles_x": 4,
+  "tiles_y": 4,
+  "tile_res": 1024,
+  "min_meters": -50.0,
+  "max_meters": 750.0,
+  "tiles": [
+    {
+      "tile_x": 0,
+      "tile_y": 0,
+      "file_name": "tile_0_0.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 1,
+      "tile_y": 0,
+      "file_name": "tile_1_0.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 2,
+      "tile_y": 0,
+      "file_name": "tile_2_0.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 3,
+      "tile_y": 0,
+      "file_name": "tile_3_0.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 0,
+      "tile_y": 1,
+      "file_name": "tile_0_1.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 1,
+      "tile_y": 1,
+      "file_name": "tile_1_1.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 2,
+      "tile_y": 1,
+      "file_name": "tile_2_1.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 3,
+      "tile_y": 1,
+      "file_name": "tile_3_1.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 0,
+      "tile_y": 2,
+      "file_name": "tile_0_2.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 1,
+      "tile_y": 2,
+      "file_name": "tile_1_2.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 2,
+      "tile_y": 2,
+      "file_name": "tile_2_2.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 3,
+      "tile_y": 2,
+      "file_name": "tile_3_2.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 0,
+      "tile_y": 3,
+      "file_name": "tile_0_3.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 1,
+      "tile_y": 3,
+      "file_name": "tile_1_3.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 2,
+      "tile_y": 3,
+      "file_name": "tile_2_3.png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "tile_x": 3,
+      "tile_y": 3,
+      "file_name": "tile_3_3.png",
+      "width": 1024,
+      "height": 1024
+    }
+  ]
+}

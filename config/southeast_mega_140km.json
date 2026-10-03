@@ -1,0 +1,29 @@
+{
+  "region_name": "southeast_mega_140km",
+  "display_name": "Southeast Mega Region: Pohang-Ulsan-Busan (140km x 140km)",
+  "name_ko": "동남권 광역 메가리전: 포항-울산-부산 (140km x 140km)",
+  "center": {
+    "lat": 35.5800,
+    "lon": 129.2250
+  },
+  "area_km": 140.0,
+  "world_size_meters": 140000.0,
+  "bbox": {
+    "south": 34.9494,
+    "north": 36.2106,
+    "west": 128.4496,
+    "east": 130.0004
+  },
+  "dem": {
+    "dataset": "COP30",
+    "output_format": "GTiff"
+  },
+  "resolution": {
+    "target_width": 4096,
+    "target_height": 4096
+  },
+  "elevation_range": {
+    "min_meters": -30.0,
+    "max_meters": 1300.0
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "archive": "C:\\Users\\work\\Desktop\\가상현실 렌더링\\data\\archives\\kanmon_building_sources_20261003.zip",
+  "original_bytes": 166049240,
+  "archive_bytes": 33952787,
+  "source_sha256": {
+    "kanmon_straits_buildings_20261003.json": "fa656e6c91bf2e19f72b41ec29f208ee69b6f10c67b28e852ce4a6baa5aec2d5",
+    "kanmon_gsi_buildings_20261003.json": "c6b115b3f170e7bcdfe75f3a82e3975f1d2a8c7b0b99d3e50a0956ef74c07f72"
+  },
+  "restore_read": "BuildingSourceStore.read / digest가 압축 원본을 직접 읽음"
+}

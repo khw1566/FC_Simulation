@@ -1,0 +1,34 @@
+{
+  "region_name": "ulsan_metro_60km",
+  "display_name": "Ulsan Metropolitan Wide Area (60km x 60km)",
+  "name_ko": "울산광역시 광역권 (60km x 60km)",
+  "center": {
+    "lat": 35.5445,
+    "lon": 129.2555
+  },
+  "area_km": 60.0,
+  "world_size_meters": 60000.0,
+  "bbox": {
+    "south": 35.2742,
+    "north": 35.8148,
+    "west": 128.9233,
+    "east": 129.5877
+  },
+  "dem": {
+    "dataset": "COP30",
+    "output_format": "GTiff"
+  },
+  "resolution": {
+    "target_width": 4096,
+    "target_height": 4096
+  },
+  "elevation_range": {
+    "min_meters": -30.0,
+    "max_meters": 1250.0
+  },
+  "quota_limits": {
+    "daily_vworld_calls": 3000,
+    "daily_overpass_slots": 2,
+    "cell_step_deg": 0.05
+  }
+}

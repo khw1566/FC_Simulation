@@ -1,0 +1,201 @@
+[
+  {
+    "id": "ulsan_college_west_campus",
+    "name_ko": "울산과학대학교 서부캠퍼스",
+    "name_en": "Ulsan College West Campus",
+    "admin_level": "campus",
+    "prefecture": "울산광역시",
+    "city": "남구 무거동",
+    "polygon": [
+      [-650.0, 300.0],
+      [150.0, 300.0],
+      [150.0, 950.0],
+      [-650.0, 950.0]
+    ],
+    "center": [-250.0, 625.0],
+    "landmarks": [
+      "청운국제관",
+      "융합기술관(창의혁신관)",
+      "산학협력관",
+      "인조잔디 종합운동장",
+      "아산체육관"
+    ]
+  },
+  {
+    "id": "ulsan_university_campus",
+    "name_ko": "울산대학교 메인캠퍼스",
+    "name_en": "University of Ulsan Main Campus",
+    "admin_level": "campus",
+    "prefecture": "울산광역시",
+    "city": "남구 무거동",
+    "polygon": [
+      [-1350.0, 350.0],
+      [-650.0, 350.0],
+      [-650.0, 1150.0],
+      [-1350.0, 1150.0]
+    ],
+    "center": [-1000.0, 750.0],
+    "landmarks": [
+      "울산대학교 본관/중앙도서관",
+      "해송홀/학생회관",
+      "자연과학관/공학관 클러스터",
+      "아산스포츠센터",
+      "울산대 정문 잔디광장"
+    ]
+  },
+  {
+    "id": "mugeo_dong_central",
+    "name_ko": "무거동 중심 상업 및 주거 권역",
+    "name_en": "Mugeo-dong Central Urban District",
+    "admin_level": "8",
+    "prefecture": "울산광역시",
+    "city": "남구",
+    "polygon": [
+      [-650.0, -100.0],
+      [950.0, -100.0],
+      [950.0, 950.0],
+      [150.0, 950.0],
+      [150.0, 300.0],
+      [-650.0, 300.0]
+    ],
+    "center": [150.0, 425.0],
+    "landmarks": [
+      "신복교차로/신복로터리(복합교통허브)",
+      "바보사거리 대학로 청년문화거리",
+      "무거동 주민센터",
+      "삼호시영/주거단지 클러스터"
+    ]
+  },
+  {
+    "id": "munsu_sports_complex",
+    "name_ko": "울산 문수체육공원 권역",
+    "name_en": "Munsu Sports Complex District",
+    "admin_level": "facility",
+    "prefecture": "울산광역시",
+    "city": "남구 옥동",
+    "polygon": [
+      [-500.0, 950.0],
+      [1450.0, 950.0],
+      [1450.0, 2450.0],
+      [-500.0, 2450.0]
+    ],
+    "center": [475.0, 1700.0],
+    "landmarks": [
+      "울산 문수축구경기장(빅크라운)",
+      "문수야구장",
+      "문수실내수영장",
+      "문수호반광장 및 옥동저수지",
+      "문수테니스장"
+    ]
+  },
+  {
+    "id": "taehwa_river_national_garden_west",
+    "name_ko": "태화강 생태수변 및 국가정원 서부 권역",
+    "name_en": "Taehwa River Ecological Corridor (West)",
+    "admin_level": "river",
+    "prefecture": "울산광역시",
+    "city": "남구 삼호동 / 중구 다운동",
+    "polygon": [
+      [-2450.0, -2450.0],
+      [2450.0, -2450.0],
+      [2450.0, -750.0],
+      [-2450.0, -750.0]
+    ],
+    "center": [0.0, -1600.0],
+    "landmarks": [
+      "태화강 본류 유로(강폭 250m)",
+      "삼호대숲 및 백로 서식지",
+      "삼호교 / 신삼호교",
+      "태화강 둔치 억새단지 및 자전거길",
+      "다운동 생태수변공원"
+    ]
+  },
+  {
+    "id": "gulhwa_cheonshang_gateway",
+    "name_ko": "굴화·천상 서부 관문 권역",
+    "name_en": "Gulhwa & Cheonsang Western Gateway",
+    "admin_level": "8",
+    "prefecture": "울산광역시",
+    "city": "울주군 범서읍",
+    "polygon": [
+      [-2450.0, -750.0],
+      [-650.0, -750.0],
+      [-650.0, 600.0],
+      [-1350.0, 600.0],
+      [-1350.0, 1150.0],
+      [-2450.0, 1150.0]
+    ],
+    "center": [-1550.0, -75.0],
+    "landmarks": [
+      "울산고속도로 기점(울산TG)",
+      "국도 24호선 우회고속화도로",
+      "굴화주공/강변초록마을 주거단지",
+      "범서생활체육공원"
+    ]
+  },
+  {
+    "id": "okdong_academic_quarter",
+    "name_ko": "옥동 교육연구 및 공원 녹지 권역",
+    "name_en": "Ok-dong Educational & Forest Zone",
+    "admin_level": "8",
+    "prefecture": "울산광역시",
+    "city": "남구 옥동",
+    "polygon": [
+      [950.0, -100.0],
+      [2450.0, -100.0],
+      [2450.0, 1450.0],
+      [1450.0, 1450.0],
+      [1450.0, 950.0],
+      [950.0, 950.0]
+    ],
+    "center": [1700.0, 675.0],
+    "landmarks": [
+      "울산대공원 서문 게이트웨이",
+      "옥동 교육 학원가 클러스터",
+      "남산근린공원 등산로",
+      "문수로 복합 메디컬존"
+    ]
+  },
+  {
+    "id": "daun_dong_residential",
+    "name_ko": "다운동 주거 및 중구 접속 권역",
+    "name_en": "Daun-dong Northern Residential District",
+    "admin_level": "8",
+    "prefecture": "울산광역시",
+    "city": "중구 다운동",
+    "polygon": [
+      [-1200.0, -2450.0],
+      [2450.0, -2450.0],
+      [2450.0, -1250.0],
+      [-1200.0, -1250.0]
+    ],
+    "center": [625.0, -1850.0],
+    "landmarks": [
+      "다운동 아파트 단지 밀집지구",
+      "다운초등학교 / 다운고등학교",
+      "척과천 합류부 수변공원",
+      "울산 테크노파크 북부 진입로"
+    ]
+  },
+  {
+    "id": "munsu_mountain_ridge",
+    "name_ko": "문수산·영취산 자연보존 산림 권역",
+    "name_en": "Munsu Mountain Ecological Ridge",
+    "admin_level": "mountain",
+    "prefecture": "울산광역시",
+    "city": "울주군 청량읍 / 남구",
+    "polygon": [
+      [-2450.0, 1150.0],
+      [-500.0, 1150.0],
+      [-500.0, 2450.0],
+      [-2450.0, 2450.0]
+    ],
+    "center": [-1475.0, 1800.0],
+    "landmarks": [
+      "문수산 등산로(해발 600m 능선)",
+      "문수사 고찰",
+      "영취산 생태보존림",
+      "남암산 조망 포인트"
+    ]
+  }
+]

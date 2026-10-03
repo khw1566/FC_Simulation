@@ -1,0 +1,35 @@
+{
+  "region_name": "kyushu_yamaguchi_wide",
+  "display_name": "Kyushu All & Yamaguchi West (Kanmon Straits Wide)",
+  "bbox": {
+    "south": 30.9000,
+    "north": 34.5000,
+    "west": 129.5000,
+    "east": 132.0000
+  },
+  "tile_grid": {
+    "tiles_x": 4,
+    "tiles_y": 4,
+    "tile_resolution": 1024
+  },
+  "sub_regions": {
+    "kanmon_core": {
+      "display_name": "Kanmon Straits & Kokura Core (Ultra High-Res)",
+      "south": 33.8000,
+      "north": 34.0500,
+      "west": 130.8000,
+      "east": 131.1000,
+      "target_width": 4096,
+      "target_height": 4096,
+      "world_size_meters": 30000.0
+    }
+  },
+  "dem": {
+    "dataset": "COP30",
+    "output_format": "GTiff"
+  },
+  "elevation_range": {
+    "min_meters": -50.0,
+    "max_meters": 1980.0
+  }
+}

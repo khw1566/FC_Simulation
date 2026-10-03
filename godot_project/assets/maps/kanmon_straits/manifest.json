@@ -1,0 +1,226 @@
+{
+  "indexed_at": "2026-09-23 10:39:59",
+  "map_id": "kanmon_straits",
+  "name_ko": "칸몬 해협 (시모노세키 - 고쿠라)",
+  "name_en": "Kanmon Straits (Shimonoseki - Kokura)",
+  "assets": {
+    "buildings_and_roads.json": {
+      "category": "buildings_and_roads",
+      "file_name": "buildings_and_roads.json",
+      "extension": ".json",
+      "size_bytes": 25756327,
+      "sha256": "802e9b0af1fa7f640a9c1da7f51716ac58c182fb4fdd8b96cdd28a966a906b61"
+    },
+    "building_footprints.svg": {
+      "category": "metadata",
+      "file_name": "building_footprints.svg",
+      "extension": ".svg",
+      "size_bytes": 9341081,
+      "sha256": "4bddc62ee27cdeafbbdae6c144938894fd6fb071c3a3516fadd0973082379c17"
+    },
+    "building_footprints_index.json": {
+      "category": "metadata",
+      "file_name": "building_footprints_index.json",
+      "extension": ".json",
+      "size_bytes": 7931458,
+      "sha256": "8c49bf7bc1ec0cb538e63d74bdcc627fa0607314745fe3064de0e8c55f595460"
+    },
+    "coastlines_and_waterways.json": {
+      "category": "metadata",
+      "file_name": "coastlines_and_waterways.json",
+      "extension": ".json",
+      "size_bytes": 1199194,
+      "sha256": "8157c274e58a0b230397ad4e9ab9755d561d4ab9caa5de4c3ca342508c33e70c"
+    },
+    "kanmon_heightmap_16bit.png": {
+      "category": "heightmap",
+      "file_name": "kanmon_heightmap_16bit.png",
+      "extension": ".png",
+      "size_bytes": 10302146,
+      "sha256": "8df5feb0d9a3ed38be668a692583077403d7cd02cb0fa8b2ce8c364020dffa48"
+    },
+    "kanmon_splatmap_rgba.png": {
+      "category": "splatmap",
+      "file_name": "kanmon_splatmap_rgba.png",
+      "extension": ".png",
+      "size_bytes": 317064,
+      "sha256": "43c29e741708340f670c4db7c2f229e8697b2df8df85c34c4d2eb087fe568453"
+    },
+    "kanmon_vector_tactical_map.png": {
+      "category": "tactical_map",
+      "file_name": "kanmon_vector_tactical_map.png",
+      "extension": ".png",
+      "size_bytes": 1109052,
+      "sha256": "200c7cdeaf050fbf13557b46ea3193ebb65a64ad4ef407da47060e4d5a3e2c9e"
+    },
+    "kanmon_watermask_8bit.png": {
+      "category": "watermask",
+      "file_name": "kanmon_watermask_8bit.png",
+      "extension": ".png",
+      "size_bytes": 73179,
+      "sha256": "79a5e7b4f606c5df63c05316f1054854d70676459479a58970a2f01f1435c8bf"
+    },
+    "landmarks.json": {
+      "category": "landmarks",
+      "file_name": "landmarks.json",
+      "extension": ".json",
+      "size_bytes": 1147,
+      "sha256": "0956d07d642ccc0f034bdfb6d96a7b7e116d40448bc6c8bfb3f2b5df6753a9c1"
+    },
+    "real_districts.json": {
+      "category": "districts",
+      "file_name": "real_districts.json",
+      "extension": ".json",
+      "size_bytes": 596102,
+      "sha256": "8f621ff1aef74f2d346577375869f1c2c957a32aab14c870af1969337e03cfdd"
+    },
+    "road_metadata.json": {
+      "bbox": {
+        "south": 33.8,
+        "north": 34.05,
+        "west": 130.8,
+        "east": 131.1
+      },
+      "size_bytes": 338120,
+      "file_path": "res://assets/maps/kanmon_straits/road_metadata.json",
+      "elevation": {
+        "min_meters": -50.0,
+        "max_meters": 750.0
+      },
+      "sha256": "4e0eeecbac044132ed6cd1c82b83445363feb2aaeb1871c31820f81f102938d5",
+      "resolution": {
+        "type": "metadata"
+      }
+    },
+    "north_kyushu_sea_mask": {
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation": {
+        "max_meters": 0.35,
+        "min_meters": -50
+      },
+      "file_path": "res://assets/maps/kanmon_straits/north_kyushu_sea_mask.png",
+      "method": "DEM sea-level flood fill from raster boundary",
+      "resolution": {
+        "height": 2048,
+        "width": 2048
+      },
+      "sha256": "37687bc2ba078e5214db4339613ef4cb68957109c64a2dcdbfacbc214623a7b3",
+      "source": "res://assets/maps/kanmon_straits/kanmon_heightmap_16bit.png"
+    },
+    "map_meta.json": {
+      "elevation": {
+        "min_meters": -50,
+        "max_meters": 750
+      },
+      "sha256": "6d43766363fcb2b9dfaa430c05c82f27d27fe7ff0e1ca0024da5e2375d6d0232",
+      "file_path": "res://assets/maps/kanmon_straits/map_meta.json",
+      "size_bytes": 1846,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "resolution": {
+        "type": "map_metadata"
+      }
+    },
+    "kanmon_buildings_20261003": {
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation": {
+        "min_meters": -1.83,
+        "max_meters": 537.12
+      },
+      "file_path": "res://assets/maps/kanmon_straits/buildings_20261003/buildings_and_roads.json",
+      "sha256": "cb729d63f417efbdee7662a1a8bac5ea76b09826f4ee0568585c021a7bfdb837",
+      "size_bytes": 112302061,
+      "resolution": {
+        "type": "building_footprints",
+        "buildings": 321584
+      }
+    },
+    "kanmon_buildings_stream_20261003": {
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation": {
+        "min_meters": -1.83,
+        "max_meters": 537.12
+      },
+      "file_path": "res://assets/maps/kanmon_straits/buildings_20261003/vector_stream/index.json",
+      "sha256": "6de962d0b29255e0c7090f02219ba2fe91889bfa9c366f51257d391e2915a5ed",
+      "size_bytes": 1071465,
+      "resolution": {
+        "type": "spatial_vector_batches",
+        "batches": 5371,
+        "counts": {
+          "buildings": 321584,
+          "roads": 1157,
+          "breakwaters": 4
+        }
+      },
+      "source_sha256": "cb729d63f417efbdee7662a1a8bac5ea76b09826f4ee0568585c021a7bfdb837",
+      "batch_hashes": "각 배치 SHA-256은 인덱스에 기록"
+    },
+    "kanmon_buildings_road_metadata": {
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation": {
+        "min_meters": -1.83,
+        "max_meters": 537.12
+      },
+      "file_path": "res://assets/maps/kanmon_straits/buildings_20261003/road_metadata.json",
+      "sha256": "4e0eeecbac044132ed6cd1c82b83445363feb2aaeb1871c31820f81f102938d5",
+      "size_bytes": 338120,
+      "resolution": {
+        "type": "road_metadata",
+        "roads": 1157
+      }
+    },
+    "kanmon_map_meta": {
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation": {
+        "min_meters": -1.83,
+        "max_meters": 537.12
+      },
+      "file_path": "res://assets/maps/kanmon_straits/map_meta.json",
+      "sha256": "6d43766363fcb2b9dfaa430c05c82f27d27fe7ff0e1ca0024da5e2375d6d0232",
+      "size_bytes": 1846,
+      "resolution": {
+        "type": "map_metadata"
+      }
+    }
+  },
+  "world_size_meters": 28000,
+  "min_elevation": -50,
+  "max_elevation": 750,
+  "sea_level": 0,
+  "bbox": {
+    "east": 131.1,
+    "north": 34.05,
+    "south": 33.8,
+    "west": 130.8
+  }
+}

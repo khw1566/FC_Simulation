@@ -1,0 +1,47 @@
+[
+  {
+    "id": "kanmon_bridge",
+    "name_ko": "간몬대교 (Kanmon Bridge)",
+    "name_en": "Kanmon Bridge",
+    "lat": 33.962,
+    "lon": 130.963,
+    "altitude_meters": 65.0,
+    "pole_height": 140.0
+  },
+  {
+    "id": "shimonoseki_port",
+    "name_ko": "시모노세키항 국제여객터미널",
+    "name_en": "Shimonoseki Port Terminal",
+    "lat": 33.9485,
+    "lon": 130.926,
+    "altitude_meters": 5.2,
+    "pole_height": 80.0
+  },
+  {
+    "id": "mojiko_station",
+    "name_ko": "모지코역 (Mojiko Station)",
+    "name_en": "Mojiko Station",
+    "lat": 33.94314,
+    "lon": 130.961758,
+    "altitude_meters": 5.95,
+    "pole_height": 90.0
+  },
+  {
+    "id": "kokura_station",
+    "name_ko": "고쿠라역 (Kokura Station)",
+    "name_en": "Kokura Station",
+    "lat": 33.888342,
+    "lon": 130.88477,
+    "altitude_meters": 7.81,
+    "pole_height": 120.0
+  },
+  {
+    "id": "hinoyama_summit",
+    "name_ko": "히노야마 산 정상 전망대",
+    "name_en": "Mt. Hinoyama Summit",
+    "lat": 33.97436,
+    "lon": 130.96125,
+    "altitude_meters": 271.72,
+    "pole_height": 70.0
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "region_name": "kanmon_straits",
+  "display_name": "Shimonoseki - Kokura (Kanmon Straits)",
+  "bbox": {
+    "south": 33.8000,
+    "north": 34.0500,
+    "west": 130.8000,
+    "east": 131.1000
+  },
+  "dem": {
+    "dataset": "COP30",
+    "output_format": "GTiff"
+  },
+  "resolution": {
+    "target_width": 4096,
+    "target_height": 4096
+  },
+  "elevation_range": {
+    "min_meters": -50.0,
+    "max_meters": 750.0
+  }
+}

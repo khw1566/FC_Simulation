@@ -1,0 +1,1181 @@
+{
+  "metadata": {
+    "project": "간몬 해협 및 울산 광역 가상 지형 비행 렌더링 시스템",
+    "created_date": "2026-09-27",
+    "description": "프로젝트 전체 소스 코드 모듈 인덱스 및 단일 책임 기능별 색인 명세서",
+    "architecture_rules": [
+      "Single Responsibility Principle (단일 책임 원칙)",
+      "Anti-Monolith (모놀리식 코드 엄격 금지, 800라인 상한)",
+      "Modular Indexing (전체 모듈 인덱스 유지 의무)"
+    ]
+  },
+  "domains": {
+    "terrain": {
+      "description": "지형 청크, 높이맵 파싱, 해안선 절토, 도로/건물/방파제 3D 지오메트리 빌드 계층",
+      "modules": [
+        {
+          "class_name": "TerrainChunkManager",
+          "path": "godot_project/scripts/terrain/terrain_chunk_manager.gd",
+          "responsibility": "지형 청크 그리드 생성, 거리 기반 동적 LOD 갱신, 셰이더 머티리얼 관리 및 영구 지하지반판 배치",
+          "key_methods": [
+            "_init_from_map_selection()",
+            "_load_heightmap()",
+            "_build_all_chunks()",
+            "_update_chunks_lod()",
+            "get_terrain_elevation()",
+            "get_water_mask()"
+          ],
+          "lines": 344
+        },
+        {
+          "class_name": "TerrainChunk",
+          "path": "godot_project/scripts/terrain/terrain_chunk.gd",
+          "responsibility": "단일 지형 청크 타일의 메쉬 생성, LOD별 버텍스 그리드 해상도(128/64/32) 리빌드 및 콜리전 관리",
+          "key_methods": [
+            "init_chunk()",
+            "update_lod()",
+            "_rebuild_mesh()",
+            "_sample_bilinear()"
+          ],
+          "lines": 159
+        },
+        {
+          "class_name": "CoastlineWaterCarver",
+          "path": "godot_project/scripts/terrain/coastline_water_carver.gd",
+          "responsibility": "수계 마스크 기반 해안선 거리 밴드 절토(BFS Distance Map) 및 지형 표고 정밀 바이리니어 샘플링 전담",
+          "key_methods": [
+            "apply_coastline_carving()",
+            "sample_elevation_bilinear()"
+          ],
+          "lines": 154
+        },
+        {
+          "class_name": "BuildingRoadManager",
+          "path": "godot_project/scripts/terrain/building_road_manager.gd",
+          "responsibility": "대규모 건물/도로 공간 분할과 고도 컬링, 포장도로·보행로·비포장로 재질별 지형 밀착 렌더링 오케스트레이션",
+          "key_methods": [
+            "load_and_render_all()",
+            "_update_chunk_culling()",
+            "_render_buildings_batched()",
+            "_render_roads_and_tunnels_batched()",
+            "is_point_in_tunnel()"
+          ],
+          "lines": 576
+        },
+        {
+          "class_name": "RoadMeshBuilder",
+          "path": "godot_project/scripts/terrain/road_mesh_builder.gd",
+          "responsibility": "연속 마이터 리본 메쉬 생성(급커브 틈새/파편화 방지), 곡률 적응형 세분화, 범용 교량 및 산악 터널 3D 지오메트리 빌드 전담",
+          "key_methods": [
+            "subdivide_polyline()",
+            "build_surface_road()",
+            "build_universal_bridge()",
+            "build_mountain_tunnel()",
+            "build_bridge_pier()",
+            "build_tunnel_portal()"
+          ],
+          "lines": 304
+        },
+        {
+          "class_name": "BuildingMeshBuilder",
+          "path": "godot_project/scripts/terrain/building_mesh_builder.gd",
+          "responsibility": "폴리곤 돌출 빌딩 삼각화, 저층 결측 건물 높이 복원 휴리스틱, 경사지 하부 접지 스커트 및 박스 빌딩 3D 지오메트리 빌드 전담",
+          "key_methods": [
+            "build_chunk_buildings_mesh()",
+            "_add_quad()"
+          ],
+          "lines": 223
+        },
+        {
+          "class_name": "BreakwaterLighthouseRenderer",
+          "path": "godot_project/scripts/terrain/breakwater_lighthouse_renderer.gd",
+          "responsibility": "선형 방파제 경사 마운드, 포장 상판 및 방파제 말단 적/백 등대 탑/랜턴 렌더링",
+          "key_methods": [
+            "render_breakwaters()",
+            "_build_breakwater_body()",
+            "_build_lighthouse()",
+            "_add_cylinder_truncated()",
+            "_add_box()"
+          ],
+          "lines": 265
+        },
+        {
+          "class_name": "LandmarkManager",
+          "path": "godot_project/scripts/terrain/landmark_manager.gd",
+          "responsibility": "주요 도시/해협 랜드마크 비콘 기둥 및 거리 텍스트 3D 공간 스폰 및 플레이어 추적",
+          "key_methods": [
+            "_load_landmarks()",
+            "_spawn_landmark_beacon()"
+          ],
+          "lines": 67
+        },
+        {
+          "class_name": "AirportMeshBuilder",
+          "path": "godot_project/scripts/terrain/airport_mesh_builder.gd",
+          "responsibility": "울산공항 청사·관제탑·부속동 메시 및 충돌 형상 생성과 재질별 배칭",
+          "lines": 154
+        },
+        {
+          "class_name": "AirportLandmarkManager",
+          "path": "godot_project/scripts/terrain/airport_landmark_manager.gd",
+          "responsibility": "선택 맵 좌표 변환, 공항 지형 접지와 일반 건물 중복 제외",
+          "lines": 81
+        },
+        {
+          "name": "airport_preview.gd",
+          "path": "godot_project/scripts/terrain/airport_preview.gd",
+          "responsibility": "공항 모델 회전·확대 미리보기와 렌더 이미지 저장",
+          "lines": 111
+        },
+        {
+          "name": "airport_integration_check.gd",
+          "path": "godot_project/scripts/terrain/airport_integration_check.gd",
+          "responsibility": "실제 높이맵 배치·중복 제외·메시·충돌 통합 검사",
+          "lines": 80
+        },
+        {
+          "responsibility": "공식 시단 좌표를 게임 좌표로 변환하고 활주로·유도로·계류장 공통 형상 및 높이 정의",
+          "path": "godot_project/scripts/terrain/airfield_layout.gd",
+          "class_name": "AirfieldLayout",
+          "lines": 45
+        },
+        {
+          "responsibility": "공항 포장면 아래 런타임 높이맵 정지와 주변 지형 완만한 접속",
+          "path": "godot_project/scripts/terrain/airfield_terrain_grader.gd",
+          "class_name": "AirfieldTerrainGrader",
+          "lines": 38
+        },
+        {
+          "responsibility": "활주로·유도로·계류장 포장, 도색과 착륙 충돌 메시 생성",
+          "path": "godot_project/scripts/terrain/airfield_surface_builder.gd",
+          "class_name": "AirfieldSurfaceBuilder",
+          "lines": 113
+        },
+        {
+          "responsibility": "활주로 백색·시단 녹색·종단 적색·유도로 청색·진입등 MultiMesh 생성",
+          "path": "godot_project/scripts/terrain/airfield_light_builder.gd",
+          "class_name": "AirfieldLightBuilder",
+          "lines": 77
+        },
+        {
+          "name": "airfield_light.gdshader",
+          "responsibility": "방향성 시단·종단 등화와 거리별 광점 시각화",
+          "path": "godot_project/shaders/airfield_light.gdshader",
+          "lines": 24
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_segment_classifier.gd",
+          "class_name": "RoadSegmentClassifier",
+          "responsibility": "태그 우선 도로·교량·터널 선분 판정과 역방향 완전중복 키 생성",
+          "lines": 51
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_terrain_tessellator.gd",
+          "class_name": "RoadTerrainTessellator",
+          "responsibility": "도로 포장면·옆면을 실제 지형 격자 및 삼각형 경계에서 분할",
+          "lines": 68
+        },
+        {
+          "path": "godot_project/shaders/road_surface.gdshader",
+          "responsibility": "현재 지형 LOD의 삼각형 표면과 도로 높이를 GPU에서 동기화",
+          "name": "road_surface.gdshader",
+          "lines": 51
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_render_regression.gd",
+          "responsibility": "도로 LOD 렌더링·교량 분류·분할 면적 보존·실제 속성 적용 회귀 검사",
+          "name": "road_render_regression.gd",
+          "lines": 133
+        },
+        {
+          "class_name": "CampusBuildingPolicy",
+          "path": "godot_project/scripts/terrain/campus_building_policy.gd",
+          "responsibility": "대학 건물 후보의 기존 높이를 보존하고 과도한 높이 추정을 방지",
+          "key_methods": [
+            "is_campus_candidate()",
+            "preserve_height()"
+          ],
+          "lines": 26
+        }
+      ]
+    },
+    "water": {
+      "description": "수면 메시 생성, 조류 유동 셰이더 및 호안 석축 제방 제어 계층",
+      "modules": [
+        {
+          "class_name": "KanmonWaterManager",
+          "path": "godot_project/scripts/water/kanmon_water_manager.gd",
+          "responsibility": "해수면(Y=0.0) 광역 평면 메쉬 배치 및 조류/파도 수면 머티리얼 관리",
+          "key_methods": [
+            "_init_from_map_selection()",
+            "_create_water_plane()"
+          ],
+          "lines": 55
+        },
+        {
+          "class_name": "CoastlineWaterwayManager",
+          "path": "godot_project/scripts/water/coastline_waterway_manager.gd",
+          "responsibility": "수계 경계선 기반 호안 제방 석축 및 해안선 보강 장식 오브젝트 렌더링",
+          "key_methods": [
+            "load_and_render_waterways()",
+            "_build_waterway_embankment()"
+          ],
+          "lines": 216
+        }
+      ]
+    },
+    "player": {
+      "description": "플레이어 비행 역학, 시야 조작 및 물리 시뮬레이션 계층",
+      "modules": [
+        {
+          "class_name": "PlayerFlightController",
+          "path": "godot_project/scripts/player/player_flight_controller.gd",
+          "responsibility": "6자유도 비행 물리 역학, 속도 기어 스텝(1~8), 롤/피치/요 각속도 및 마우스 룩 제어",
+          "key_methods": [
+            "_physics_process()",
+            "_handle_flight_input()",
+            "_apply_flight_physics()",
+            "set_gear()",
+            "adjust_accel_step()"
+          ],
+          "lines": 385
+        }
+      ]
+    },
+    "weather": {
+      "description": "동적 기상 시스템, 볼류메트릭 구름 클러스터, 강우 및 뇌우 이펙트 계층",
+      "modules": [
+        {
+          "class_name": "WeatherManager",
+          "path": "godot_project/scripts/weather/weather_manager.gd",
+          "responsibility": "날씨 프리셋(Clear, Cirrus, PartlyCloudy, Overcast, Foggy, Rain, Storm) 환경광 및 안개 전환 오케스트레이션",
+          "key_methods": [
+            "apply_weather()",
+            "set_weather_system_enabled()",
+            "set_cloud_quality()"
+          ],
+          "lines": 200
+        },
+        {
+          "class_name": "CloudClusterManager",
+          "path": "godot_project/scripts/weather/cloud_cluster_manager.gd",
+          "responsibility": "볼류메트릭 구름 클러스터 절차적 스폰, 플레이어 추적 및 퀄리티 LOD 제어",
+          "key_methods": [
+            "generate_cloud_presets()",
+            "_update_cluster_positions()",
+            "set_cloud_quality()"
+          ],
+          "lines": 265
+        },
+        {
+          "class_name": "RainParticleController",
+          "path": "godot_project/scripts/weather/rain_particle_controller.gd",
+          "responsibility": "강우 강도에 따른 GPU 파티클 방출량 및 빗줄기 연출 제어",
+          "key_methods": [
+            "set_rain_intensity()"
+          ],
+          "lines": 89
+        },
+        {
+          "class_name": "LightningController",
+          "path": "godot_project/scripts/weather/lightning_controller.gd",
+          "responsibility": "뇌우 날씨 시 절차적 번개 섬광 효과, 태양광 급변 및 썬더볼트 사운드 제어",
+          "key_methods": [
+            "trigger_lightning()",
+            "_update_lightning_flash()"
+          ],
+          "lines": 124
+        }
+      ]
+    },
+    "services": {
+      "description": "전역 서비스, 맵 레지스트리, 행정구역 공간 쿼리 및 사용자 설정 영속화 계층",
+      "modules": [
+        {
+          "class_name": "MapSelectionService",
+          "path": "godot_project/scripts/services/map_selection_service.gd",
+          "responsibility": "맵 레지스트리(maps_registry.json) 파싱, 활성 맵 인스턴스 전환 및 다국어 상태 관리",
+          "key_methods": [
+            "load_all_maps()",
+            "select_map_by_id()",
+            "toggle_language()"
+          ],
+          "lines": 82
+        },
+        {
+          "class_name": "DistrictService",
+          "path": "godot_project/scripts/services/district_service.gd",
+          "responsibility": "행정구역 GeoJSON 로드, Point-in-Polygon 2D 공간 쿼리를 통한 현재 비행 구역 판정",
+          "key_methods": [
+            "load_districts()",
+            "get_district_at_position()"
+          ],
+          "lines": 100
+        },
+        {
+          "class_name": "UserSettingsService",
+          "path": "godot_project/scripts/services/user_settings_service.gd",
+          "responsibility": "사용자 그래픽 옵션, 조작 감도, 가속도 설정 영속화(user://settings.cfg)",
+          "key_methods": [
+            "load_settings()",
+            "save_settings()",
+            "apply_to_engine()"
+          ],
+          "lines": 84
+        },
+        {
+          "path": "godot_project/scripts/services/center_object_probe.gd",
+          "responsibility": "화면 중앙 물리 충돌 및 메시 교차 후보 조사",
+          "lines": 59
+        },
+        {
+          "class_name": "DayNightCycleService",
+          "path": "godot_project/scripts/services/day_night_cycle_service.gd",
+          "responsibility": "태양 궤적, 주야간 광량/광색 및 하늘 셰이더 시간대 파라미터 갱신 서비스",
+          "key_methods": [
+            "set_time_hours()",
+            "set_time_progression()",
+            "set_time_speed_multiplier()",
+            "set_weather_light_scale()",
+            "get_formatted_time_string()"
+          ],
+          "lines": 183
+        },
+        {
+          "class_name": "CelestialBodyManager",
+          "path": "godot_project/scripts/services/celestial_body_manager.gd",
+          "responsibility": "실제 별 카탈로그와 관측지·날짜·시간 기반 천구 계산을 통한 별·달·금성 배치",
+          "key_methods": [
+            "set_night_weight()",
+            "_equatorial_to_world()",
+            "_moon_direction()",
+            "_sun_direction()"
+          ],
+          "lines": 254
+        },
+        {
+          "name": "night_sky.gdshader",
+          "path": "godot_project/shaders/night_sky.gdshader",
+          "responsibility": "지형에 가려지지 않은 하늘 배경에 별 카탈로그와 달 위상·금성 렌더링",
+          "lines": 61
+        }
+      ]
+    },
+    "controllers_and_views": {
+      "description": "HUD 뷰 및 UI/UX 인터랙션 컨트롤러 계층",
+      "modules": [
+        {
+          "class_name": "PauseSettingsController",
+          "path": "godot_project/scripts/controllers/pause_settings_controller.gd",
+          "responsibility": "ESC 일시정지 메뉴 열기/닫기, 그래픽 프리셋(노트북 저사양/데스크탑) 원클릭 전환 및 설정 연동",
+          "key_methods": [
+            "_on_laptop_mode_requested()",
+            "_on_shadows_toggled()",
+            "_on_cloud_quality_changed()"
+          ],
+          "lines": 352
+        },
+        {
+          "class_name": "MapHUDView",
+          "path": "godot_project/scripts/views/map_hud_view.gd",
+          "responsibility": "미니맵/전술 맵 렌더링, 플레이어 위치/방위각 실시간 표시 및 GPS 좌표 변환",
+          "key_methods": [
+            "update_player_position()",
+            "set_map_texture()"
+          ],
+          "lines": 350
+        },
+        {
+          "class_name": "FlightVectorHUDView",
+          "path": "godot_project/scripts/views/flight_vector_hud_view.gd",
+          "responsibility": "전투기 FPV HUD 스타일 비행 벡터 피치 래더, 헤딩 스케일 및 조향점 렌더링",
+          "key_methods": [
+            "update_vector()",
+            "set_hud_visible()"
+          ],
+          "lines": 176
+        }
+      ]
+    },
+    "pipeline_collectors": {
+      "description": "DEM, OSM, VWorld 등 외부 공간정보 자동 네트워크 수집 파이프라인",
+      "modules": [
+        {
+          "name": "vworld_building_collector.py",
+          "path": "pipeline/collectors/vworld_building_collector.py",
+          "responsibility": "VWorld 국토교통부 OpenAPI 건물 공간정보 배치 수집기",
+          "lines": 202
+        },
+        {
+          "name": "satellite_collector.py",
+          "path": "pipeline/collectors/satellite_collector.py",
+          "responsibility": "정밀 항공/위성 영상 타일 자동 수집 및 결합기",
+          "lines": 130
+        },
+        {
+          "name": "building_collector.py",
+          "path": "pipeline/collectors/building_collector.py",
+          "responsibility": "OSM Overpass API 기반 건물/도로 벡터 데이터 수집기",
+          "lines": 128
+        },
+        {
+          "name": "ulsan_admin_boundary_collector.py",
+          "path": "pipeline/collectors/ulsan_admin_boundary_collector.py",
+          "responsibility": "한국 행정구역 시도·시군구·읍면동·리 경계 데이터 수집기",
+          "lines": 41
+        },
+        {
+          "path": "pipeline/collectors/hydro_refresh.py",
+          "responsibility": "Overpass 수계 신규 수집",
+          "lines": 39
+        },
+        {
+          "class_name": "MetroBuildingPartitionCollector",
+          "path": "pipeline/collectors/metro_building_partition_collector.py",
+          "responsibility": "울산 단계별 건물 수집, 셀 재개, 일일 요청 상한 제어",
+          "lines": 201
+        },
+        {
+          "class_name": "Ulsan80kmBuildingCollector",
+          "path": "pipeline/collectors/ulsan_80km_building_collector.py",
+          "responsibility": "80km 맵 외곽 건물 셀 수집, 셀 면적 검증, 일일 요청 상한과 매니페스트 관리",
+          "lines": 249
+        },
+        {
+          "class_name": "UlsanDetailedRoadCollector",
+          "path": "pipeline/collectors/ulsan_detailed_road_collector.py",
+          "responsibility": "울산 생활도로·보행로·산악 임도의 셀 분할 수집, 재개 및 OSM 원본 중복 제거",
+          "lines": 159
+        }
+      ]
+    },
+    "pipeline_processors": {
+      "description": "원시 공간정보 데이터 가공, 래스터 변환, AI 지표 분류 및 JSON 매니페스트 생성 파이프라인",
+      "modules": [
+        {
+          "name": "heightmap_processor.py",
+          "path": "pipeline/processors/heightmap_processor.py",
+          "responsibility": "GeoTIFF DEM 원본 표고 데이터를 16-bit 무손실 고도맵 PNG로 변환 및 바운딩 박스 정규화",
+          "lines": 237
+        },
+        {
+          "name": "segformer_landcover_processor.py",
+          "path": "pipeline/processors/segformer_landcover_processor.py",
+          "responsibility": "SegFormer AI 기반 위성 영상 토지 피복(산림, 수역, 도심, 잔디) 4채널 스플랫맵 변환기",
+          "lines": 129
+        },
+        {
+          "name": "breakwater_processor.py",
+          "path": "pipeline/processors/breakwater_processor.py",
+          "responsibility": "수계 데이터에서 방파제/선착장 추출 및 선단 등대 좌표 산출 주입기",
+          "lines": 185
+        },
+        {
+          "name": "vworld_building_processor.py",
+          "path": "pipeline/processors/vworld_building_processor.py",
+          "responsibility": "VWorld 수집 건물 GeoJSON 파싱, DEM 높이 매핑 및 런타임 JSON 변환기",
+          "lines": 203
+        },
+        {
+          "name": "road_svg_processor.py",
+          "path": "pipeline/processors/road_svg_processor.py",
+          "responsibility": "도로망 벡터를 전술 미니맵 SVG 및 텍스처로 래스터 렌더링",
+          "lines": 434
+        },
+        {
+          "name": "building_road_processor.py",
+          "path": "pipeline/processors/building_road_processor.py",
+          "responsibility": "OSM 건물 및 도로 폴리라인 3D 공간 좌표계 투영 및 JSON 통합 패키징",
+          "lines": 312
+        },
+        {
+          "name": "ulsan_admin_boundary_processor.py",
+          "path": "pipeline/processors/ulsan_admin_boundary_processor.py",
+          "responsibility": "최신 행정경계를 60km Godot 좌표로 변환하고 권역 폴리곤 인덱스를 생성",
+          "lines": 166
+        },
+        {
+          "name": "build_ulsan_airport_asset.gd",
+          "path": "pipeline/processors/build_ulsan_airport_asset.gd",
+          "responsibility": "공항 설정을 독립 Godot 장면 자산과 배치 메타데이터로 생성",
+          "lines": 59
+        },
+        {
+          "path": "pipeline/processors/restore_road_metadata.gd",
+          "responsibility": "원본 OSM 캐시 전체 좌표 대조 후 도로 폭·차로·층 속성 보정 파일 생성",
+          "name": "restore_road_metadata.gd",
+          "lines": 74
+        },
+        {
+          "class_name": "UlsanMetroExpansion",
+          "path": "pipeline/processors/expand_ulsan_metro.py",
+          "responsibility": "기존 지형을 합성한 80km 울산 맵, 행정경계 및 자산 매니페스트 생성",
+          "lines": 136
+        },
+        {
+          "path": "pipeline/processors/build_tactical_atlas.py",
+          "class_name": "TacticalAtlasBuilder",
+          "responsibility": "M 지도용 등고선·수계·주요도로 합성 및 자산 색인",
+          "lines": 75
+        },
+        {
+          "path": "pipeline/processors/hydro_geometry.py",
+          "responsibility": "강·해안선·호수 분류와 관계 외곽·내곽 연결",
+          "lines": 79
+        },
+        {
+          "path": "pipeline/processors/rebuild_hydro_terrain.py",
+          "responsibility": "수계별 래스터와 해안 지형 후보정 생성",
+          "lines": 117
+        },
+        {
+          "class_name": "merge_and_export_metro_buildings",
+          "path": "pipeline/processors/merge_metro_cache.py",
+          "responsibility": "완료된 울산 셀 캐시 병합 및 런타임 건물 자산 생성",
+          "lines": 65
+        },
+        {
+          "class_name": "Ulsan80kmBuildingMerger",
+          "path": "pipeline/processors/merge_ulsan_80km_buildings.py",
+          "responsibility": "울산 60km 기존 건물·도로와 80km 외곽 셀을 80km DEM 기반 런타임 자산으로 변환·통합",
+          "lines": 180
+        }
+      ]
+    },
+    "developer_tools": {
+      "modules": [
+        {
+          "responsibility": "60km 광역맵 행정경계 렌더링, 레이어 필터, 좌표 클릭 조회, 런타임 포함 판정 확인 및 진단 내보내기",
+          "path": "tools/admin_boundary_debugger/index.html",
+          "name": "admin_boundary_debugger",
+          "lines": 517
+        },
+        {
+          "responsibility": "로컬 행정경계 디버거 정적 웹 서버 실행",
+          "path": "tools/admin_boundary_debugger/serve.py",
+          "name": "serve.py",
+          "lines": 21
+        }
+      ],
+      "description": "게임 내 행정구역을 시각화하고 런타임 판정을 점검하는 개발 도구"
+    },
+    "pipeline_indexer": {
+      "modules": [
+        {
+          "path": "pipeline/indexer/airport_asset_indexer.gd",
+          "responsibility": "공항 모델과 배치 자산의 해시·경계·상대 고도·해상도 매니페스트 등록",
+          "name": "airport_asset_indexer.gd",
+          "lines": 84
+        }
+      ],
+      "description": "생성 자산 무결성·경계·해상도 색인"
+    },
+    "views": {
+      "modules": [
+        {
+          "path": "godot_project/scripts/views/map_district_browser.gd",
+          "class_name": "MapDistrictBrowser",
+          "responsibility": "행정구역 검색과 레벨별 목록 탐색",
+          "lines": 47
+        },
+        {
+          "path": "godot_project/scripts/views/map_district_overlay.gd",
+          "class_name": "MapDistrictOverlay",
+          "responsibility": "선택 행정경계 지도 표시",
+          "lines": 17
+        },
+        {
+          "path": "godot_project/scripts/views/world_debug_overlay.gd",
+          "responsibility": "F10 좌표·중앙 대상·재질·수계 디버그 HUD",
+          "lines": 67
+        },
+        {
+          "path": "godot_project/scripts/views/performance_hud.gd",
+          "responsibility": "FPS 및 실제 평균·최대 프레임 시간 표시, F3 토글",
+          "lines": 56
+        },
+        {
+          "path": "godot_project/scripts/core/map_catalog_smoke.gd",
+          "responsibility": "6개 맵 분류·자산·선택 UI·언어 전환·공용 공항 검증",
+          "lines": 51
+        }
+      ]
+    },
+    "bridges": {
+      "description": "태화강 교량 모델 및 배치",
+      "modules": [
+        {
+          "class_name": "BridgeGeometry",
+          "path": "godot_project/scripts/terrain/bridge_geometry.gd",
+          "description": "교량 부재 재질별 메시 병합",
+          "lines": 37
+        },
+        {
+          "class_name": "BridgeLandmarkBuilder",
+          "path": "godot_project/scripts/terrain/bridge_landmark_builder.gd",
+          "description": "현수교·아치교·일반교·징검다리 모델 생성",
+          "lines": 144
+        },
+        {
+          "class_name": "BridgeLandmarkManager",
+          "path": "godot_project/scripts/terrain/bridge_landmark_manager.gd",
+          "description": "지도 좌표 배치 및 기존 OSM 교량 중복 대체",
+          "lines": 31
+        },
+        {
+          "class_name": "BridgeAssetExport",
+          "path": "godot_project/scripts/terrain/bridge_asset_export.gd",
+          "description": "독립 교량 씬 에셋 생성",
+          "lines": 41
+        },
+        {
+          "class_name": "TaehwaBridgeCatalog",
+          "path": "pipeline/processors/build_taehwa_bridge_catalog.py",
+          "description": "교량 배치 카탈로그 및 매니페스트 생성",
+          "lines": 60
+        },
+        {
+          "class_name": "TaehwaBridgeCollector",
+          "path": "pipeline/collectors/taehwa_bridge_collector.py",
+          "description": "교량 원본 OSM 데이터 수집",
+          "lines": 40
+        }
+      ]
+    },
+    "custom_object_debugger": {
+      "modules": [
+        {
+          "path": "godot_project/scripts/services/custom_asset_catalog.gd",
+          "description": "독립 커스텀 씬 목록 검색",
+          "lines": 43
+        },
+        {
+          "path": "godot_project/scripts/views/custom_asset_preview.gd",
+          "description": "별도 월드 미리보기와 궤도 카메라",
+          "lines": 132
+        },
+        {
+          "path": "godot_project/scripts/views/custom_asset_debugger.gd",
+          "description": "F9 목록 검색 및 부재 정보 UI",
+          "lines": 215
+        }
+      ],
+      "description": "게임 내 커스텀 오브젝트 열람"
+    },
+    "procedural_clouds": {
+      "description": "기상별 절차적 구름 혼합과 고정 성능 예산",
+      "modules": [
+        {
+          "path": "godot_project/scripts/weather/procedural_cloud_manager.gd",
+          "description": "현재 메인 월드 구름 관리자, 혼합 및 품질 상한",
+          "lines": 120
+        },
+        {
+          "path": "godot_project/scripts/weather/cloud_pool_factory.gd",
+          "description": "유형별 볼륨 풀과 공유 노이즈 초기 생성",
+          "lines": 51
+        },
+        {
+          "path": "godot_project/shaders/procedural_cloud_volume.gdshader",
+          "description": "유형별 밀도 함수, 전처리 지시문 없는 깊이 가림 및 볼륨 적분",
+          "lines": 113
+        }
+      ]
+    },
+    "heritage_landmarks": {
+      "modules": [
+        {
+          "class_name": "HeritageMeshBuilder",
+          "path": "godot_project/scripts/terrain/heritage_mesh_builder.gd",
+          "responsibility": "석축·기둥·기와지붕 형상과 재질별 메시 병합",
+          "lines": 121
+        },
+        {
+          "class_name": "HeritageModelBuilder",
+          "path": "godot_project/scripts/terrain/heritage_model_builder.gd",
+          "responsibility": "울산왜성·언양읍성 구성 및 영화루 문루 모델 조립",
+          "lines": 40
+        },
+        {
+          "class_name": "HeritageLandmarkManager",
+          "path": "godot_project/scripts/terrain/heritage_landmark_manager.gd",
+          "responsibility": "지도 범위별 성곽 배치, 지형 맞춤, 충돌, 겹친 일반 건물 제외",
+          "lines": 100
+        },
+        {
+          "class_name": "",
+          "path": "godot_project/scripts/terrain/heritage_preview.gd",
+          "responsibility": "실제 80km DEM 성곽 미리보기와 화면 저장",
+          "lines": 128
+        },
+        {
+          "class_name": "",
+          "path": "godot_project/scripts/terrain/heritage_integration_check.gd",
+          "responsibility": "60·80·140km 지도 성곽 배치·충돌·지형 접합 통합 검증",
+          "lines": 78
+        },
+        {
+          "class_name": "",
+          "path": "pipeline/processors/build_ulsan_heritage_assets.gd",
+          "responsibility": "커스텀 성곽 씬 저장 및 생성 자산 매니페스트 갱신",
+          "lines": 58
+        }
+      ],
+      "description": "울산 성곽 커스텀 모델"
+    },
+    "river_smoothing": {
+      "modules": [
+        {
+          "path": "godot_project/shaders/water_mask_filter.gdshaderinc",
+          "responsibility": "좁은 하천의 B-spline 마스크 보간과 원거리 밉맵 전환",
+          "lines": 23
+        },
+        {
+          "path": "godot_project/scripts/terrain/river_filter_preview.gd",
+          "responsibility": "1픽셀 하천 및 실제 울산 수계의 전후 렌더링 비교",
+          "lines": 75
+        }
+      ],
+      "description": "하천 경계 보간"
+    },
+    "map_streaming": {
+      "description": "지도 비동기 로딩 및 안정화",
+      "modules": [
+        {
+          "path": "pipeline/processors/vector_stream_cache.py",
+          "responsibility": "제한된 메모리로 공간별 건물·도로 캐시 생성 및 해시 인덱싱",
+          "lines": 146
+        },
+        {
+          "path": "godot_project/scripts/terrain/vector_data_stream.gd",
+          "responsibility": "주변 구역 이동 스트리밍, 원거리 건물 해제, 실행 중 2ms 생성 예산, 캐시 무결성 검사",
+          "lines": 197
+        },
+        {
+          "path": "godot_project/scripts/services/map_image_preloader.gd",
+          "responsibility": "백그라운드 이미지 읽기와 취소·중복 읽기 방지",
+          "lines": 44
+        },
+        {
+          "path": "godot_project/scripts/terrain/map_loading_smoke.gd",
+          "responsibility": "실제 80km 진입·중복 요청·취소 복구·프레임 지연 측정",
+          "lines": 76
+        }
+      ]
+    },
+    "source_archives": {
+      "description": "지도 수집 원본 압축 보관 및 검증 복원",
+      "modules": [
+        {
+          "path": "pipeline/indexer/compact_map_sources.ps1",
+          "responsibility": "프로젝트 내부 원본 ZIP 압축·파일별 SHA-256 검증·선택 복원",
+          "lines": 64
+        }
+      ]
+    },
+    "campus_indexing": {
+      "description": "캠퍼스 모델링 준비 색인",
+      "modules": [
+        {
+          "class_name": "CampusSiteIndexer",
+          "path": "pipeline/indexer/campus_site_indexer.py",
+          "responsibility": "두 캠퍼스 건물 윤곽과 미확보 부지 측량 항목의 색인 및 자산 해시 관리",
+          "key_methods": [
+            "run()",
+            "classify()",
+            "footprint()"
+          ],
+          "lines": 111
+        }
+      ]
+    },
+    "regional_airports": {
+      "modules": [
+        {
+          "class_name": "regional_airport_layout",
+          "lines": 30,
+          "path": "godot_project/scripts/terrain/regional_airport_layout.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "regional_airport_grader",
+          "lines": 27,
+          "path": "godot_project/scripts/terrain/regional_airport_grader.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "regional_airport_mesh_builder",
+          "lines": 141,
+          "path": "godot_project/scripts/terrain/regional_airport_mesh_builder.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "regional_airport_manager",
+          "lines": 32,
+          "path": "godot_project/scripts/terrain/regional_airport_manager.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "vector_map_projection",
+          "lines": 32,
+          "path": "godot_project/scripts/terrain/vector_map_projection.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "japan_airport_integration_check",
+          "lines": 93,
+          "path": "godot_project/scripts/core/japan_airport_integration_check.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "build_japan_airport_catalog",
+          "lines": 70,
+          "path": "pipeline/collectors/build_japan_airport_catalog.ps1",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "build_japan_airport_assets",
+          "lines": 46,
+          "path": "pipeline/processors/build_japan_airport_assets.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        },
+        {
+          "class_name": "prepare_japan_road_metadata",
+          "lines": 26,
+          "path": "pipeline/processors/prepare_japan_road_metadata.gd",
+          "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
+        }
+      ],
+      "description": "일본 공항 및 공유 벡터 데이터 보정"
+    },
+    "kyushu_tactical_map": {
+      "modules": [
+        {
+          "responsibility": "큐슈 전용 사용자 지도 합성·색인 및 M키 HUD 검증",
+          "path": "pipeline/processors/build_kyushu_tactical_map.gd",
+          "class_name": "build_kyushu_tactical_map",
+          "lines": 65
+        },
+        {
+          "responsibility": "큐슈 전용 사용자 지도 합성·색인 및 M키 HUD 검증",
+          "path": "pipeline/processors/kyushu_tactical_canvas.gd",
+          "class_name": "kyushu_tactical_canvas",
+          "lines": 60
+        },
+        {
+          "responsibility": "큐슈 전용 사용자 지도 합성·색인 및 M키 HUD 검증",
+          "path": "godot_project/scripts/core/kyushu_map_hud_check.gd",
+          "class_name": "kyushu_map_hud_check",
+          "lines": 43
+        }
+      ],
+      "description": "큐슈 M키 지도 생성"
+    },
+    "north_kyushu_alignment": {
+      "description": "원본 DEM 좌표 및 해수 일치",
+      "modules": [
+        {
+          "responsibility": "북큐슈 구현 범위의 DEM 기반 해수 분리·지형 교정·지도 음영",
+          "class_name": "sea_terrain_corrector",
+          "path": "godot_project/scripts/terrain/sea_terrain_corrector.gd",
+          "lines": 14
+        },
+        {
+          "responsibility": "북큐슈 구현 범위의 DEM 기반 해수 분리·지형 교정·지도 음영",
+          "class_name": "build_north_kyushu_sea",
+          "path": "pipeline/processors/build_north_kyushu_sea.gd",
+          "lines": 48
+        },
+        {
+          "responsibility": "북큐슈 구현 범위의 DEM 기반 해수 분리·지형 교정·지도 음영",
+          "class_name": "tactical_terrain_atlas",
+          "path": "godot_project/shaders/tactical_terrain_atlas.gdshader",
+          "lines": 16
+        }
+      ]
+    },
+    "campus_art_modeling": {
+      "description": "영상 정합, 창작 캠퍼스 건축 보강, 미리보기와 자산 색인",
+      "modules": [
+        {
+          "class_name": "CampusArchitectureBuilder",
+          "path": "godot_project/scripts/terrain/campus_architecture_builder.gd",
+          "lines": 94
+        },
+        {
+          "class_name": "CampusGroundOverlay",
+          "path": "godot_project/scripts/terrain/campus_ground_overlay.gd",
+          "lines": 33
+        },
+        {
+          "class_name": "CampusPreview",
+          "path": "godot_project/scripts/terrain/campus_preview.gd",
+          "lines": 111
+        },
+        {
+          "class_name": "CampusGeometryCheck",
+          "path": "godot_project/scripts/terrain/campus_geometry_check.gd",
+          "lines": 31
+        },
+        {
+          "class_name": "CampusBuildingPolicy",
+          "path": "godot_project/scripts/terrain/campus_building_policy.gd",
+          "lines": 26
+        },
+        {
+          "class_name": "CampusImageryCollector",
+          "path": "pipeline/collectors/campus_imagery_collector.py",
+          "lines": 75
+        },
+        {
+          "class_name": "CampusArtAssetIndexer",
+          "path": "pipeline/indexer/campus_art_asset_indexer.py",
+          "lines": 71
+        }
+      ]
+    },
+    "kanmon_building_generation": {
+      "modules": [
+        {
+          "lines": 59,
+          "class_name": "pmtiles_range_source",
+          "path": "pipeline/collectors/pmtiles_range_source.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 95,
+          "class_name": "gsi_building_collector",
+          "path": "pipeline/collectors/gsi_building_collector.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 47,
+          "class_name": "kanmon_building_geometry",
+          "path": "pipeline/processors/kanmon_building_geometry.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 135,
+          "class_name": "build_kanmon_buildings",
+          "path": "pipeline/processors/build_kanmon_buildings.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 77,
+          "class_name": "osm_multipolygon_buildings",
+          "path": "pipeline/processors/osm_multipolygon_buildings.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 27,
+          "class_name": "building_source_store",
+          "path": "pipeline/processors/building_source_store.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 72,
+          "class_name": "index_kanmon_buildings",
+          "path": "pipeline/indexer/index_kanmon_buildings.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 41,
+          "class_name": "compact_kanmon_building_sources",
+          "path": "pipeline/indexer/compact_kanmon_building_sources.py",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 27,
+          "class_name": "building_courtyard_builder",
+          "path": "godot_project/scripts/terrain/building_courtyard_builder.gd",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 91,
+          "class_name": "kanmon_building_coverage_check",
+          "path": "godot_project/scripts/core/kanmon_building_coverage_check.gd",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        },
+        {
+          "lines": 33,
+          "class_name": "kanmon_building_mesh_check",
+          "path": "godot_project/scripts/core/kanmon_building_mesh_check.gd",
+          "responsibility": "칸몬 건물 외곽선 수집·중복 제거·복합 건물·공간 캐시·검증 및 원본 보관"
+        }
+      ],
+      "description": "칸몬 건물 API 실측 및 생성"
+    },
+    "vessel_assets": {
+      "description": "게임용 독립 해상 선박 에셋 제작 파이프라인",
+      "modules": [
+        {
+          "path": "pipeline/processors/vessels/__init__.py",
+          "responsibility": "선박 모델 생성 모듈 공개 인터페이스",
+          "lines": 6
+        },
+        {
+          "path": "pipeline/processors/vessels/mesh.py",
+          "responsibility": "재질별 평면 법선 메시와 GLB 바이너리 생성",
+          "lines": 121
+        },
+        {
+          "path": "pipeline/processors/vessels/designs.py",
+          "responsibility": "선박 6종의 선체와 갑판 장비 설계",
+          "lines": 127
+        },
+        {
+          "path": "pipeline/processors/vessels/preview.py",
+          "responsibility": "생성 메시 기반 경량 직교 투영 미리보기",
+          "lines": 44
+        },
+        {
+          "path": "pipeline/processors/vessels/generate.py",
+          "responsibility": "독립 선박 모델과 씬, 자산 매니페스트 생성",
+          "lines": 79
+        }
+      ]
+    },
+    "vessel_preview": {
+      "description": "월드 데이터 없는 독립 선박 에셋 프리뷰",
+      "modules": [
+        {
+          "path": "godot_project/scripts/core/vessel_asset_preview.gd",
+          "responsibility": "독립 선박 에셋 프리뷰의 모델 선택 및 표시 구성",
+          "lines": 117
+        },
+        {
+          "path": "godot_project/scripts/player/vessel_preview_camera.gd",
+          "responsibility": "선박 프리뷰 카메라의 회전 확대 초기화",
+          "lines": 44
+        },
+        {
+          "path": "godot_project/scenes/vessel_asset_preview.tscn",
+          "responsibility": "선박 프리뷰 독립 진입 씬",
+          "lines": 6
+        }
+      ]
+    },
+    "ulsan_railways": {
+      "modules": [
+        {
+          "lines": 140,
+          "path": "godot_project/scripts/terrain/railway_world_manager.gd",
+          "class_name": "RailwayWorldManager",
+          "responsibility": "울산 실제 철도 자산 투영, 거리별 선로 청크 및 운행 서비스 구성"
+        },
+        {
+          "lines": 101,
+          "path": "godot_project/scripts/terrain/railway_track_builder.gd",
+          "class_name": "RailwayTrackBuilder",
+          "responsibility": "노선별 도상·레일·침목·전차선·교량 지지대 생성"
+        },
+        {
+          "lines": 40,
+          "path": "godot_project/scripts/terrain/railway_route.gd",
+          "class_name": "RailwayRoute",
+          "responsibility": "누적 거리 기반 경로 보간과 정차 지점 관리"
+        },
+        {
+          "lines": 46,
+          "path": "godot_project/scripts/terrain/railway_timetable.gd",
+          "class_name": "RailwayTimetable",
+          "responsibility": "가속·감속·역 정차 운행 단계 계산"
+        },
+        {
+          "lines": 118,
+          "path": "godot_project/scripts/terrain/railway_train_builder.gd",
+          "class_name": "RailwayTrainBuilder",
+          "responsibility": "동해선 4량·KTX 20량 모델 생성 및 공유 자산 캐시"
+        },
+        {
+          "lines": 87,
+          "path": "godot_project/scripts/terrain/railway_train_service.gd",
+          "class_name": "RailwayTrainService",
+          "responsibility": "양방향 주기 배차, 객차별 경로 이동 및 근거리 모델 풀 관리"
+        },
+        {
+          "lines": 81,
+          "path": "godot_project/scripts/terrain/railway_preview.gd",
+          "class_name": "RailwayPreview",
+          "responsibility": "전체 맵 없이 철도 외형 경량 렌더링"
+        },
+        {
+          "lines": 101,
+          "path": "godot_project/scripts/core/railway_regression_check.gd",
+          "class_name": "RailwayRegressionCheck",
+          "responsibility": "철도 실제 자산·정차·반복 배차·곡선 이동 회귀 검증"
+        },
+        {
+          "lines": 32,
+          "path": "pipeline/collectors/collect_ulsan_railways.ps1",
+          "class_name": "UlsanRailwayCollector",
+          "responsibility": "공개 OSM 철도 선형·역 좌표 수집"
+        },
+        {
+          "lines": 176,
+          "path": "pipeline/processors/build_ulsan_railways.gd",
+          "class_name": "UlsanRailwayProcessor",
+          "responsibility": "연결 그래프 양방향 경로 생성 및 자산 매니페스트 갱신"
+        },
+        {
+          "lines": 21,
+          "path": "pipeline/indexer/merge_railway_stations.ps1",
+          "class_name": "RailwayStationIndexer",
+          "responsibility": "OSM 원본 역 및 정차 노드의 이름별 인덱싱"
+        },
+        {
+          "lines": 10,
+          "class_name": "RailwayPipelineEntry",
+          "responsibility": "철도 원본 수집 선택 및 자산 재생성 진입점",
+          "path": "pipeline/run_railways.ps1"
+        }
+      ],
+      "description": "울산광역시 동해선·경부고속선 선로 및 주기 운행 열차"
+    },
+    "pedestrian_bridge_assets": {
+      "description": "독립 도보 징검다리, 선바위교 및 범용 육교 에셋",
+      "modules": [
+        {
+          "path": "godot_project/scripts/terrain/pedestrian_bridge_geometry.gd",
+          "responsibility": "교량 부재와 재질 공통 생성",
+          "lines": 51
+        },
+        {
+          "path": "godot_project/scripts/terrain/gulhwa_crossing_asset.gd",
+          "responsibility": "굴화리–다운동 저상 보행교 생성",
+          "lines": 26
+        },
+        {
+          "path": "godot_project/scripts/terrain/seonbawi_bridge_asset.gd",
+          "responsibility": "선바위교 근사 모델 생성",
+          "lines": 49
+        },
+        {
+          "path": "godot_project/scripts/terrain/pedestrian_overpass_asset.gd",
+          "responsibility": "범용 계단식 보행 육교 생성",
+          "lines": 37
+        },
+        {
+          "path": "godot_project/scripts/core/pedestrian_bridge_preview.gd",
+          "responsibility": "교량 3종 독립 선택 프리뷰",
+          "lines": 59
+        },
+        {
+          "path": "godot_project/scenes/pedestrian_bridge_preview.tscn",
+          "responsibility": "독립 교량 프리뷰 진입 씬",
+          "lines": 12
+        },
+        {
+          "path": "pipeline/processors/export_pedestrian_bridge_assets.gd",
+          "responsibility": "정적 교량 씬 저장 및 재로드 검증",
+          "lines": 65
+        },
+        {
+          "path": "pipeline/processors/build_pedestrian_bridge_assets.py",
+          "responsibility": "격리 생성 실행과 매니페스트 및 모듈 인덱스 갱신",
+          "lines": 77
+        }
+      ]
+    }
+  }
+}

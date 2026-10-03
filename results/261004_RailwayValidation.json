@@ -1,0 +1,76 @@
+{
+	"checks": 5316,
+	"failures": [],
+	"full_map_loaded": false,
+	"services": {
+		"donghae": {
+			"cars": 4,
+			"fixture_duration_seconds": 157.548130587756,
+			"length_m": 46349.3455958366,
+			"observed_max_speed": 30.0000000000011,
+			"opposite_vertices": 557,
+			"route_vertices": 570,
+			"stops": [
+				{
+					"name": "태화강",
+					"point_index": 569
+				},
+				{
+					"name": "좌천",
+					"point_index": 236
+				},
+				{
+					"name": "덕하",
+					"point_index": 480
+				},
+				{
+					"name": "일광",
+					"point_index": 158
+				},
+				{
+					"name": "서생",
+					"point_index": 316
+				},
+				{
+					"name": "개운포",
+					"point_index": 508
+				},
+				{
+					"name": "월내",
+					"point_index": 277
+				},
+				{
+					"name": "남창",
+					"point_index": 400
+				},
+				{
+					"name": "기장",
+					"point_index": 115
+				},
+				{
+					"name": "망양",
+					"point_index": 444
+				}
+			]
+		},
+		"ktx": {
+			"cars": 20,
+			"fixture_duration_seconds": 207.598917734188,
+			"length_m": 89311.7847948074,
+			"observed_max_speed": 24.5663649606138,
+			"opposite_vertices": 255,
+			"route_vertices": 254,
+			"stops": [
+				{
+					"name": "울산",
+					"point_index": 108
+				},
+				{
+					"name": "경주",
+					"point_index": 221
+				}
+			]
+		}
+	},
+	"tracks": 777
+}

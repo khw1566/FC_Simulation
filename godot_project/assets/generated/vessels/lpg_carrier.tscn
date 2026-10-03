@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/vessels/lpg_carrier.glb" id="1"]
+
+[node name="lpg_carrier" type="Node3D"]
+metadata/vessel_type = "lpg_carrier"
+metadata/length_m = 145.0
+metadata/beam_m = 24.0
+metadata/waterline_y_m = 0.0
+metadata/forward_axis = "-Z"
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="Bow" type="Marker3D" parent="."]
+position = Vector3(0, 0, -72.5)
+
+[node name="Stern" type="Marker3D" parent="."]
+position = Vector3(0, 0, 72.5)
+
+[node name="Waterline" type="Marker3D" parent="."]

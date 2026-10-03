@@ -1,0 +1,33 @@
+{
+  "id": "flat_testing",
+  "name_ko": "평지 맵",
+  "name_en": "Flat Testing Map",
+  "description_ko": "표고 50m 균일 평지 및 격자 기반 가속/비행/LOD 성능 검증 전용 테스트 맵입니다.",
+  "description_en": "Uniform 50m flat terrain for flight control, acceleration physics, and LOD benchmark testing.",
+  "preview_image": "res://assets/maps/flat_testing/flat_vector_tactical_map.png",
+  "world_size_meters": 6000.0,
+  "min_elevation": -50.0,
+  "max_elevation": 750.0,
+  "sea_level": 0.0,
+  "spawn_position": [
+    0.0,
+    70.0,
+    0.0
+  ],
+  "bbox": {
+    "south": 34.98,
+    "north": 35.02,
+    "west": 127.98,
+    "east": 128.02
+  },
+  "assets": {
+    "heightmap": "res://assets/maps/flat_testing/flat_heightmap_16bit.png",
+    "watermask": "res://assets/maps/flat_testing/flat_watermask_8bit.png",
+    "splatmap": "res://assets/maps/flat_testing/flat_splatmap_rgba.png",
+    "tactical_map": "res://assets/maps/flat_testing/flat_vector_tactical_map.png",
+    "districts": "res://assets/maps/flat_testing/real_districts.json",
+    "buildings_roads": "res://assets/maps/flat_testing/buildings_and_roads.json",
+    "landmarks": "res://assets/maps/flat_testing/landmarks.json"
+  },
+  "category": "testing"
+}

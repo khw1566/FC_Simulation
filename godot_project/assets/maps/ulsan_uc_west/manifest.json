@@ -1,0 +1,169 @@
+{
+  "indexed_at": "2026-09-28 13:38:00",
+  "map_id": "ulsan_uc_west",
+  "name_ko": "울산과학대학교 서부캠퍼스 (5km x 5km)",
+  "name_en": "Ulsan College West Campus (5km x 5km)",
+  "world_size_meters": 5000.0,
+  "min_elevation": -10.0,
+  "max_elevation": 450.0,
+  "sea_level": -999.0,
+  "bbox": {
+    "south": 35.522,
+    "north": 35.567,
+    "west": 129.2279,
+    "east": 129.2831
+  },
+  "assets": {
+    "buildings_and_roads.json": {
+      "category": "buildings_and_roads",
+      "file_name": "buildings_and_roads.json",
+      "extension": ".json",
+      "size_bytes": 8285646,
+      "sha256": "ebed7516fd16b01f734b9707e057781010161cfc3cf3bff7416d402486bab603"
+    },
+    "building_footprints.svg": {
+      "category": "metadata",
+      "file_name": "building_footprints.svg",
+      "extension": ".svg",
+      "size_bytes": 2353431,
+      "sha256": "ec0e0a2c1938b221f59fb835805790a639d7727d21fb2f65d6b437cf56900600"
+    },
+    "building_footprints_index.json": {
+      "category": "metadata",
+      "file_name": "building_footprints_index.json",
+      "extension": ".json",
+      "size_bytes": 1310516,
+      "sha256": "eee09a8c48e8f4f95b3e66d88afa2bfc6e538084f66ea207b5079138ca9b41de"
+    },
+    "real_districts.json": {
+      "category": "districts",
+      "file_name": "real_districts.json",
+      "extension": ".json",
+      "size_bytes": 5640,
+      "sha256": "cd53cf4d25a1c58b37aea8a5b5adfd97ffa707d8ab02760d3d77ed8e5cd05002"
+    },
+    "ulsan_heightmap_16bit.png": {
+      "category": "heightmap",
+      "file_name": "ulsan_heightmap_16bit.png",
+      "extension": ".png",
+      "size_bytes": 4560093,
+      "sha256": "6353e616e38badc6792fc0b4fb1fc92c0a206e0cdaa7ca20890de36297f8b3b7"
+    },
+    "ulsan_vector_tactical_map.png": {
+      "category": "tactical_map",
+      "file_name": "ulsan_vector_tactical_map.png",
+      "extension": ".png",
+      "size_bytes": 503127,
+      "sha256": "6862a87b9653c25e43a46e3056d035b0fe7540509df4e303b16fa6c34786baec"
+    },
+    "ulsan_watermask_8bit.png": {
+      "category": "watermask",
+      "file_name": "ulsan_watermask_8bit.png",
+      "extension": ".png",
+      "size_bytes": 29214,
+      "sha256": "4807dbb1a666050fe93edc9435546766f7a782da19cb343c173cea91653e79df"
+    },
+    "campus_details.json": {
+      "category": "campus_details",
+      "file_name": "campus_details.json",
+      "extension": ".json",
+      "size_bytes": 12281930,
+      "sha256": "cff56722b543e6b94b244834a31efd4bc6126f428ce3e155183a229f97c07340"
+    },
+    "campus_splatmap.png": {
+      "category": "splatmap",
+      "file_name": "campus_splatmap.png",
+      "extension": ".png",
+      "size_bytes": 21242,
+      "sha256": "cfa47041fa2da800c4a68d8f5b654fe5fe771bd7aaec5a7aba6d97c39833d190"
+    },
+    "map_meta.json": {
+      "file_path": "res://assets/maps/ulsan_uc_west/map_meta.json",
+      "sha256": "7b38c0ebbb8420f391f92bb6a09e80d172389417fe83c94ff57090a715a96e87",
+      "size_bytes": 1430,
+      "bbox": {
+        "south": 35.522,
+        "north": 35.567,
+        "west": 129.2279,
+        "east": 129.2831
+      },
+      "elevation": {
+        "max_meters": 450.0,
+        "min_meters": -10.0
+      },
+      "resolution": {
+        "type": "map_metadata"
+      }
+    },
+    "ulsan_campus_sites": {
+      "file_path": "res://assets/maps/ulsan_uc_west/campus_sites.json",
+      "sha256": "0fa11b980a98c13d827d52bb1d42df099de05ab033f23d3cb052731724c732e5",
+      "size_bytes": 98224,
+      "bbox": {
+        "south": 35.522,
+        "north": 35.567,
+        "west": 129.2279,
+        "east": 129.2831
+      },
+      "min_elevation": -10.0,
+      "max_elevation": 450.0,
+      "resolution": null,
+      "type": "campus_site_inventory",
+      "counts": {
+        "university_of_ulsan": 64,
+        "ulsan_college_west": 11
+      }
+    },
+    "campus_imagery.png": {
+      "file_path": "res://assets/maps/ulsan_uc_west/campus_imagery.png",
+      "sha256": "d715ee38ed0429e1543c6944b8e56448a583c035412132776400e626c499580a",
+      "size_bytes": 6429172,
+      "bbox": {
+        "west": 129.246116,
+        "east": 129.262676,
+        "north": 35.55215,
+        "south": 35.53685
+      },
+      "min_elevation": -10,
+      "max_elevation": 450,
+      "resolution": [
+        2048,
+        2048
+      ],
+      "type": "imagery_guided_artistic_model",
+      "surveyed": false
+    },
+    "campus_imagery.json": {
+      "file_path": "res://assets/maps/ulsan_uc_west/campus_imagery.json",
+      "sha256": "c9fb3538f973325e35b7b9fae49a7b38bcdab61e8cbb6b0b52f0b081f44eaf84",
+      "size_bytes": 474,
+      "bbox": {
+        "west": 129.246116,
+        "east": 129.262676,
+        "north": 35.55215,
+        "south": 35.53685
+      },
+      "min_elevation": -10,
+      "max_elevation": 450,
+      "resolution": null,
+      "type": "imagery_guided_artistic_model",
+      "surveyed": false
+    },
+    "campus_art_model.json": {
+      "file_path": "res://assets/maps/ulsan_uc_west/campus_art_model.json",
+      "sha256": "d2a8540c9448e8e8296a0a266bf662f4b8cf3486e6441d5a3c3b4bd7e4776a51",
+      "size_bytes": 1134,
+      "bbox": {
+        "west": 129.246116,
+        "east": 129.262676,
+        "north": 35.55215,
+        "south": 35.53685
+      },
+      "min_elevation": -10,
+      "max_elevation": 450,
+      "resolution": null,
+      "type": "imagery_guided_artistic_model",
+      "surveyed": false
+    }
+  }
+}

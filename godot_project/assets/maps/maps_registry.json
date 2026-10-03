@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "default_map_id": "kanmon_straits",
+  "maps": [
+    {
+      "id": "kanmon_straits",
+      "folder": "kanmon_straits",
+      "meta_file": "res://assets/maps/kanmon_straits/map_meta.json"
+    },
+    {
+      "id": "kyushu_wide",
+      "folder": "kyushu_wide",
+      "meta_file": "res://assets/maps/kyushu_wide/map_meta.json"
+    },
+    {
+      "id": "ulsan_uc_west",
+      "folder": "ulsan_uc_west",
+      "meta_file": "res://assets/maps/ulsan_uc_west/map_meta.json"
+    },
+    {
+      "id": "ulsan_metro_80km",
+      "folder": "ulsan_metro_80km",
+      "meta_file": "res://assets/maps/ulsan_metro_80km/map_meta.json"
+    },
+    {
+      "id": "southeast_mega_140km",
+      "folder": "southeast_mega_140km",
+      "meta_file": "res://assets/maps/southeast_mega_140km/map_meta.json"
+    },
+    {
+      "id": "flat_testing",
+      "folder": "flat_testing",
+      "meta_file": "res://assets/maps/flat_testing/map_meta.json"
+    }
+  ]
+}

@@ -1,0 +1,4680 @@
+{
+  "map_id": "ulsan_uc_west",
+  "source_sha256": "ebed7516fd16b01f734b9707e057781010161cfc3cf3bff7416d402486bab603",
+  "coordinate_system": "map_local_x_east_z_south_meters",
+  "bbox": {
+    "south": 35.522,
+    "north": 35.567,
+    "west": 129.2279,
+    "east": 129.2831
+  },
+  "world_size_meters": 5000.0,
+  "status": "inventory_only_not_surveyed_sites",
+  "buildings": [
+    {
+      "building_id": "3114010100107690001031694",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -245.7,
+          273.89
+        ],
+        [
+          -248.39,
+          274.79
+        ],
+        [
+          -250.22,
+          268.31
+        ],
+        [
+          -247.64,
+          267.58
+        ]
+      ],
+      "footprint_area_m2": 18.387,
+      "source_base_y_m": 74.09,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032254",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -145.7,
+          230.99
+        ],
+        [
+          -144.91,
+          233.33
+        ],
+        [
+          -141.04,
+          232.08
+        ],
+        [
+          -131.76,
+          263.5
+        ],
+        [
+          -131.01,
+          263.27
+        ],
+        [
+          -129.63,
+          268.74
+        ],
+        [
+          -130.49,
+          269.06
+        ],
+        [
+          -129.43,
+          272.38
+        ],
+        [
+          -130.21,
+          274.49
+        ],
+        [
+          -133.98,
+          275.57
+        ],
+        [
+          -133.68,
+          276.72
+        ],
+        [
+          -139.06,
+          278.24
+        ],
+        [
+          -138.8,
+          279.18
+        ],
+        [
+          -157.33,
+          284.84
+        ],
+        [
+          -159.88,
+          283.71
+        ],
+        [
+          -161.1,
+          279.08
+        ],
+        [
+          -162.51,
+          279.41
+        ],
+        [
+          -166.2,
+          267.19
+        ],
+        [
+          -159.09,
+          265.04
+        ],
+        [
+          -166.32,
+          240.11
+        ],
+        [
+          -151.28,
+          235.23
+        ],
+        [
+          -152.18,
+          232.86
+        ]
+      ],
+      "footprint_area_m2": 1347.186,
+      "source_base_y_m": 58.5,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107080003032242",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          31.93,
+          213.17
+        ],
+        [
+          36.5,
+          228.1
+        ],
+        [
+          -25.5,
+          247.55
+        ],
+        [
+          -27.7,
+          241.18
+        ],
+        [
+          -24.32,
+          240.24
+        ],
+        [
+          -29.14,
+          223.69
+        ],
+        [
+          -30.83,
+          224.43
+        ],
+        [
+          -34.39,
+          211.04
+        ],
+        [
+          -41.69,
+          213.24
+        ],
+        [
+          -42.32,
+          213.43
+        ],
+        [
+          -44.48,
+          206.29
+        ],
+        [
+          -47.49,
+          196.31
+        ],
+        [
+          -20.92,
+          188.15
+        ],
+        [
+          -16.09,
+          204.33
+        ],
+        [
+          -22.33,
+          206.43
+        ],
+        [
+          -15.83,
+          226.8
+        ]
+      ],
+      "footprint_area_m2": 1786.654,
+      "source_base_y_m": 45.71,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032240",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -137.55,
+          190.91
+        ],
+        [
+          -148.7,
+          194.71
+        ],
+        [
+          -151.25,
+          187.08
+        ],
+        [
+          -139.68,
+          183.94
+        ]
+      ],
+      "footprint_area_m2": 91.048,
+      "source_base_y_m": 63.07,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100109290000032255",
+      "name": "울산과학대학본관",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -99.6,
+          206.7
+        ],
+        [
+          -96.05,
+          218.0
+        ],
+        [
+          -61.85,
+          207.52
+        ],
+        [
+          -59.63,
+          214.73
+        ],
+        [
+          -55.7,
+          213.31
+        ],
+        [
+          -53.65,
+          220.72
+        ],
+        [
+          -57.43,
+          221.87
+        ],
+        [
+          -56.44,
+          225.09
+        ],
+        [
+          -101.37,
+          238.69
+        ],
+        [
+          -110.2,
+          209.63
+        ],
+        [
+          -144.59,
+          220.51
+        ],
+        [
+          -146.42,
+          214.54
+        ],
+        [
+          -150.14,
+          215.49
+        ],
+        [
+          -152.41,
+          208.3
+        ],
+        [
+          -148.67,
+          207.2
+        ],
+        [
+          -149.56,
+          204.29
+        ],
+        [
+          -93.15,
+          186.81
+        ],
+        [
+          -88.19,
+          203.23
+        ]
+      ],
+      "footprint_area_m2": 2050.179,
+      "source_base_y_m": 58.67,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107020000032243",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          26.62,
+          295.21
+        ],
+        [
+          -12.02,
+          307.05
+        ],
+        [
+          -12.44,
+          305.74
+        ],
+        [
+          -16.29,
+          306.59
+        ],
+        [
+          -18.51,
+          298.66
+        ],
+        [
+          -14.95,
+          297.64
+        ],
+        [
+          -17.14,
+          290.13
+        ],
+        [
+          11.25,
+          281.5
+        ],
+        [
+          11.26,
+          281.49
+        ],
+        [
+          7.1,
+          267.57
+        ],
+        [
+          17.22,
+          264.33
+        ]
+      ],
+      "footprint_area_m2": 900.796,
+      "source_base_y_m": 43.45,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032091",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -281.81,
+          -43.59
+        ],
+        [
+          -271.98,
+          -14.13
+        ],
+        [
+          -280.15,
+          -11.33
+        ],
+        [
+          -279.95,
+          -10.56
+        ],
+        [
+          -311.18,
+          -0.34
+        ],
+        [
+          -319.88,
+          2.51
+        ],
+        [
+          -329.77,
+          -28.35
+        ],
+        [
+          -311.1,
+          -34.58
+        ],
+        [
+          -290.54,
+          -41.44
+        ],
+        [
+          -290.4,
+          -40.84
+        ]
+      ],
+      "footprint_area_m2": 1630.659,
+      "source_base_y_m": 87.57,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032256",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -224.36,
+          247.7
+        ],
+        [
+          -220.82,
+          259.4
+        ],
+        [
+          -217.91,
+          258.59
+        ],
+        [
+          -215.9,
+          264.28
+        ],
+        [
+          -213.2,
+          263.3
+        ],
+        [
+          -205.11,
+          289.76
+        ],
+        [
+          -223.93,
+          295.5
+        ],
+        [
+          -226.11,
+          289.04
+        ],
+        [
+          -233.81,
+          291.17
+        ],
+        [
+          -234.39,
+          289.24
+        ],
+        [
+          -240.54,
+          290.82
+        ],
+        [
+          -251.13,
+          255.87
+        ]
+      ],
+      "footprint_area_m2": 1358.609,
+      "source_base_y_m": 75.74,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100106950001031707",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -15.14,
+          347.15
+        ],
+        [
+          -16.65,
+          350.93
+        ],
+        [
+          -21.89,
+          348.92
+        ],
+        [
+          -20.41,
+          345.03
+        ]
+      ],
+      "footprint_area_m2": 23.24,
+      "source_base_y_m": 43.36,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032093",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -128.26,
+          69.13
+        ],
+        [
+          -145.66,
+          72.3
+        ],
+        [
+          -155.57,
+          18.35
+        ],
+        [
+          -153.41,
+          17.87
+        ],
+        [
+          -153.8,
+          15.88
+        ],
+        [
+          -149.07,
+          15.07
+        ],
+        [
+          -138.6,
+          13.2
+        ],
+        [
+          -133.93,
+          38.47
+        ],
+        [
+          -133.95,
+          38.47
+        ],
+        [
+          -132.75,
+          44.88
+        ]
+      ],
+      "footprint_area_m2": 1000.043,
+      "source_base_y_m": 62.72,
+      "source_height_m": 23.6,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032097",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          21.84,
+          135.42
+        ],
+        [
+          0.03,
+          142.66
+        ],
+        [
+          -5.36,
+          126.41
+        ],
+        [
+          -18.66,
+          86.21
+        ],
+        [
+          3.34,
+          78.85
+        ],
+        [
+          18.91,
+          126.47
+        ]
+      ],
+      "footprint_area_m2": 1373.784,
+      "source_base_y_m": 43.91,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032094",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          67.92,
+          11.42
+        ],
+        [
+          69.17,
+          15.56
+        ],
+        [
+          71.82,
+          14.78
+        ],
+        [
+          73.73,
+          21.02
+        ],
+        [
+          71.03,
+          21.55
+        ],
+        [
+          73.54,
+          29.76
+        ],
+        [
+          38.84,
+          40.5
+        ],
+        [
+          -14.88,
+          57.12
+        ],
+        [
+          -17.3,
+          49.05
+        ],
+        [
+          -19.91,
+          49.84
+        ],
+        [
+          -21.67,
+          43.71
+        ],
+        [
+          -19.16,
+          42.97
+        ],
+        [
+          -20.5,
+          38.51
+        ]
+      ],
+      "footprint_area_m2": 1821.152,
+      "source_base_y_m": 41.98,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032098",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -104.51,
+          126.15
+        ],
+        [
+          -103.94,
+          128.17
+        ],
+        [
+          -101.45,
+          127.28
+        ],
+        [
+          -97.91,
+          138.96
+        ],
+        [
+          -95.99,
+          145.31
+        ],
+        [
+          -92.12,
+          158.09
+        ],
+        [
+          -100.1,
+          160.54
+        ],
+        [
+          -100.48,
+          159.28
+        ],
+        [
+          -102.35,
+          159.69
+        ],
+        [
+          -101.17,
+          163.88
+        ],
+        [
+          -127.04,
+          172.32
+        ],
+        [
+          -130.08,
+          162.69
+        ],
+        [
+          -132.36,
+          163.31
+        ],
+        [
+          -141.19,
+          133.91
+        ],
+        [
+          -114.83,
+          126.12
+        ],
+        [
+          -105.29,
+          123.32
+        ]
+      ],
+      "footprint_area_m2": 1545.202,
+      "source_base_y_m": 65.21,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032234",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -83.03,
+          29.12
+        ],
+        [
+          -82.46,
+          34.03
+        ],
+        [
+          -82.43,
+          34.02
+        ],
+        [
+          -79.22,
+          60.22
+        ],
+        [
+          -78.64,
+          65.29
+        ],
+        [
+          -78.6,
+          65.29
+        ],
+        [
+          -76.39,
+          83.29
+        ],
+        [
+          -93.44,
+          85.43
+        ],
+        [
+          -102.37,
+          13.59
+        ],
+        [
+          -85.22,
+          11.24
+        ]
+      ],
+      "footprint_area_m2": 1249.887,
+      "source_base_y_m": 48.94,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032096",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -48.77,
+          126.29
+        ],
+        [
+          -47.51,
+          130.4
+        ],
+        [
+          -47.49,
+          130.39
+        ],
+        [
+          -43.3,
+          143.92
+        ],
+        [
+          -76.77,
+          154.42
+        ],
+        [
+          -85.57,
+          126.2
+        ],
+        [
+          -87.2,
+          120.99
+        ],
+        [
+          -53.7,
+          110.35
+        ],
+        [
+          -49.5,
+          123.92
+        ]
+      ],
+      "footprint_area_m2": 1231.667,
+      "source_base_y_m": 54.16,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032099",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -108.35,
+          112.35
+        ],
+        [
+          -105.29,
+          123.32
+        ],
+        [
+          -114.83,
+          126.12
+        ],
+        [
+          -134.44,
+          131.87
+        ],
+        [
+          -136.34,
+          126.07
+        ],
+        [
+          -138.03,
+          120.9
+        ],
+        [
+          -142.23,
+          122.15
+        ],
+        [
+          -147.06,
+          106.46
+        ],
+        [
+          -108.54,
+          94.52
+        ],
+        [
+          -106.62,
+          100.91
+        ],
+        [
+          -106.9,
+          101.0
+        ],
+        [
+          -103.72,
+          111.13
+        ]
+      ],
+      "footprint_area_m2": 1024.926,
+      "source_base_y_m": 62.86,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032235",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -89.97,
+          4.94
+        ],
+        [
+          -98.25,
+          6.08
+        ],
+        [
+          -100.26,
+          -11.69
+        ],
+        [
+          -92.09,
+          -12.74
+        ]
+      ],
+      "footprint_area_m2": 148.049,
+      "source_base_y_m": 47.8,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032092",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -138.45,
+          -26.07
+        ],
+        [
+          -137.45,
+          -20.65
+        ],
+        [
+          -137.42,
+          -20.65
+        ],
+        [
+          -131.69,
+          9.54
+        ],
+        [
+          -138.86,
+          10.82
+        ],
+        [
+          -149.33,
+          12.68
+        ],
+        [
+          -164.82,
+          -70.61
+        ],
+        [
+          -140.37,
+          -75.53
+        ],
+        [
+          -133.73,
+          -39.01
+        ],
+        [
+          -140.66,
+          -37.73
+        ]
+      ],
+      "footprint_area_m2": 1774.584,
+      "source_base_y_m": 59.07,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032090",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -44.34,
+          129.38
+        ],
+        [
+          -47.49,
+          130.39
+        ],
+        [
+          -48.76,
+          126.29
+        ],
+        [
+          -49.5,
+          123.92
+        ],
+        [
+          -46.29,
+          122.93
+        ],
+        [
+          -45.28,
+          126.3
+        ]
+      ],
+      "footprint_area_m2": 22.482,
+      "source_base_y_m": 49.2,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032106",
+      "name": "대학로 93",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          191.18,
+          -7.38
+        ],
+        [
+          194.61,
+          3.9
+        ],
+        [
+          183.46,
+          7.55
+        ],
+        [
+          181.34,
+          1.84
+        ],
+        [
+          185.13,
+          0.61
+        ],
+        [
+          185.9,
+          -0.93
+        ],
+        [
+          185.74,
+          -1.46
+        ],
+        [
+          184.19,
+          -2.29
+        ],
+        [
+          180.68,
+          -1.32
+        ],
+        [
+          179.84,
+          -4.1
+        ]
+      ],
+      "footprint_area_m2": 128.618,
+      "source_base_y_m": 31.8,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107090001032101",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          110.15,
+          239.93
+        ],
+        [
+          105.26,
+          241.47
+        ],
+        [
+          106.23,
+          244.7
+        ],
+        [
+          107.7,
+          249.59
+        ],
+        [
+          95.24,
+          253.31
+        ],
+        [
+          95.84,
+          255.37
+        ],
+        [
+          87.71,
+          257.88
+        ],
+        [
+          53.99,
+          268.3
+        ],
+        [
+          49.11,
+          252.74
+        ],
+        [
+          81.62,
+          242.83
+        ],
+        [
+          82.19,
+          242.66
+        ],
+        [
+          85.48,
+          241.66
+        ],
+        [
+          85.06,
+          240.35
+        ],
+        [
+          85.29,
+          239.56
+        ],
+        [
+          85.67,
+          238.91
+        ],
+        [
+          86.31,
+          238.51
+        ],
+        [
+          87.15,
+          238.17
+        ],
+        [
+          87.76,
+          238.29
+        ],
+        [
+          88.07,
+          238.35
+        ],
+        [
+          88.89,
+          238.89
+        ],
+        [
+          89.07,
+          239.24
+        ],
+        [
+          89.42,
+          240.72
+        ],
+        [
+          90.15,
+          240.53
+        ],
+        [
+          87.77,
+          232.77
+        ],
+        [
+          86.59,
+          228.91
+        ],
+        [
+          87.78,
+          228.55
+        ],
+        [
+          110.26,
+          221.83
+        ],
+        [
+          115.32,
+          238.3
+        ]
+      ],
+      "footprint_area_m2": 1254.771,
+      "source_base_y_m": 42.92,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107300000032104",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          144.05,
+          71.14
+        ],
+        [
+          144.28,
+          72.87
+        ],
+        [
+          146.13,
+          72.62
+        ],
+        [
+          150.87,
+          88.11
+        ],
+        [
+          149.32,
+          88.61
+        ],
+        [
+          150.04,
+          90.74
+        ],
+        [
+          151.01,
+          90.33
+        ],
+        [
+          155.78,
+          106.95
+        ],
+        [
+          137.24,
+          112.69
+        ],
+        [
+          132.13,
+          96.18
+        ],
+        [
+          133.21,
+          95.6
+        ],
+        [
+          132.44,
+          93.8
+        ],
+        [
+          130.94,
+          94.09
+        ],
+        [
+          126.47,
+          78.54
+        ],
+        [
+          127.92,
+          78.06
+        ],
+        [
+          127.34,
+          75.92
+        ],
+        [
+          126.31,
+          76.27
+        ],
+        [
+          121.3,
+          59.57
+        ],
+        [
+          140.0,
+          54.02
+        ],
+        [
+          144.83,
+          70.84
+        ]
+      ],
+      "footprint_area_m2": 1089.365,
+      "source_base_y_m": 35.35,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107280000037274",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          360.05,
+          107.44
+        ],
+        [
+          359.73,
+          108.35
+        ],
+        [
+          339.21,
+          101.35
+        ],
+        [
+          341.52,
+          96.02
+        ],
+        [
+          361.54,
+          103.0
+        ],
+        [
+          360.76,
+          105.32
+        ]
+      ],
+      "footprint_area_m2": 122.67,
+      "source_base_y_m": 28.28,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107290002032325",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          208.07,
+          220.37
+        ],
+        [
+          160.51,
+          235.2
+        ],
+        [
+          160.05,
+          233.75
+        ],
+        [
+          150.42,
+          236.4
+        ],
+        [
+          148.92,
+          231.37
+        ],
+        [
+          141.66,
+          233.64
+        ],
+        [
+          140.52,
+          230.41
+        ],
+        [
+          135.24,
+          231.85
+        ],
+        [
+          130.06,
+          215.3
+        ],
+        [
+          152.78,
+          208.72
+        ],
+        [
+          156.26,
+          221.42
+        ],
+        [
+          203.96,
+          206.87
+        ]
+      ],
+      "footprint_area_m2": 1228.887,
+      "source_base_y_m": 43.67,
+      "source_height_m": 33.5,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032095",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          95.38,
+          -39.22
+        ],
+        [
+          96.97,
+          -38.51
+        ],
+        [
+          97.72,
+          -38.61
+        ],
+        [
+          100.97,
+          -36.99
+        ],
+        [
+          102.76,
+          -30.55
+        ],
+        [
+          99.74,
+          -24.69
+        ],
+        [
+          100.64,
+          -22.14
+        ],
+        [
+          107.36,
+          -24.07
+        ],
+        [
+          110.52,
+          -15.27
+        ],
+        [
+          111.08,
+          -15.4
+        ],
+        [
+          111.7,
+          -13.16
+        ],
+        [
+          132.88,
+          -19.62
+        ],
+        [
+          136.28,
+          -7.73
+        ],
+        [
+          101.52,
+          2.95
+        ],
+        [
+          99.88,
+          -1.87
+        ],
+        [
+          98.26,
+          -1.49
+        ],
+        [
+          97.65,
+          -0.93
+        ],
+        [
+          96.28,
+          -0.5
+        ],
+        [
+          95.94,
+          -1.43
+        ],
+        [
+          88.37,
+          0.75
+        ],
+        [
+          82.7,
+          2.38
+        ],
+        [
+          81.63,
+          -0.47
+        ],
+        [
+          79.11,
+          0.24
+        ],
+        [
+          70.9,
+          -25.82
+        ],
+        [
+          74.39,
+          -32.93
+        ],
+        [
+          80.82,
+          -34.78
+        ],
+        [
+          83.91,
+          -40.57
+        ],
+        [
+          88.48,
+          -41.89
+        ],
+        [
+          91.05,
+          -42.63
+        ],
+        [
+          95.07,
+          -40.6
+        ]
+      ],
+      "footprint_area_m2": 1568.558,
+      "source_base_y_m": 48.83,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107280000032012",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          329.65,
+          81.7
+        ],
+        [
+          327.06,
+          89.61
+        ],
+        [
+          317.0,
+          86.3
+        ],
+        [
+          319.65,
+          78.43
+        ]
+      ],
+      "footprint_area_m2": 87.756,
+      "source_base_y_m": 28.55,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107300000032015",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          292.8,
+          -3.79
+        ],
+        [
+          246.61,
+          10.36
+        ],
+        [
+          242.11,
+          -4.39
+        ],
+        [
+          273.59,
+          -14.18
+        ],
+        [
+          267.93,
+          -33.02
+        ],
+        [
+          282.62,
+          -37.58
+        ],
+        [
+          282.74,
+          -37.21
+        ]
+      ],
+      "footprint_area_m2": 1053.157,
+      "source_base_y_m": 30.84,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107270009034442",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          364.65,
+          106.71
+        ],
+        [
+          361.43,
+          116.19
+        ],
+        [
+          357.51,
+          114.74
+        ],
+        [
+          359.73,
+          108.35
+        ],
+        [
+          360.05,
+          107.44
+        ],
+        [
+          360.77,
+          105.34
+        ],
+        [
+          364.32,
+          106.59
+        ]
+      ],
+      "footprint_area_m2": 41.364,
+      "source_base_y_m": 27.71,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107280000032058",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          226.56,
+          134.05
+        ],
+        [
+          210.24,
+          138.91
+        ],
+        [
+          206.95,
+          127.69
+        ],
+        [
+          223.1,
+          122.76
+        ]
+      ],
+      "footprint_area_m2": 199.246,
+      "source_base_y_m": 35.52,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107280000034443",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          366.03,
+          102.14
+        ],
+        [
+          364.32,
+          106.59
+        ],
+        [
+          360.76,
+          105.32
+        ],
+        [
+          362.31,
+          100.87
+        ]
+      ],
+      "footprint_area_m2": 18.268,
+      "source_base_y_m": 27.37,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107420000034444",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          385.97,
+          46.58
+        ],
+        [
+          387.47,
+          46.63
+        ],
+        [
+          388.0,
+          46.82
+        ],
+        [
+          388.93,
+          47.33
+        ],
+        [
+          389.72,
+          48.18
+        ],
+        [
+          390.35,
+          49.56
+        ],
+        [
+          390.45,
+          50.83
+        ],
+        [
+          390.24,
+          52.05
+        ],
+        [
+          389.81,
+          53.06
+        ],
+        [
+          389.28,
+          53.8
+        ],
+        [
+          388.76,
+          54.24
+        ],
+        [
+          387.37,
+          54.79
+        ],
+        [
+          386.8,
+          54.85
+        ],
+        [
+          385.48,
+          54.74
+        ],
+        [
+          384.53,
+          54.32
+        ],
+        [
+          383.63,
+          53.78
+        ],
+        [
+          382.94,
+          53.15
+        ],
+        [
+          382.63,
+          52.4
+        ],
+        [
+          382.42,
+          51.5
+        ],
+        [
+          382.42,
+          50.18
+        ],
+        [
+          382.64,
+          49.33
+        ],
+        [
+          383.01,
+          48.48
+        ],
+        [
+          383.47,
+          47.85
+        ],
+        [
+          383.97,
+          47.41
+        ],
+        [
+          384.6,
+          47.0
+        ]
+      ],
+      "footprint_area_m2": 52.932,
+      "source_base_y_m": 26.9,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100110510005032405",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          371.68,
+          68.87
+        ],
+        [
+          367.43,
+          86.34
+        ],
+        [
+          352.16,
+          82.88
+        ],
+        [
+          354.71,
+          72.36
+        ],
+        [
+          352.26,
+          71.85
+        ],
+        [
+          354.13,
+          64.5
+        ]
+      ],
+      "footprint_area_m2": 302.733,
+      "source_base_y_m": 26.7,
+      "source_height_m": 33.5,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107280000032055",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          348.88,
+          130.8
+        ],
+        [
+          346.63,
+          137.17
+        ],
+        [
+          329.28,
+          131.43
+        ],
+        [
+          330.75,
+          127.28
+        ],
+        [
+          331.49,
+          125.19
+        ],
+        [
+          338.03,
+          127.3
+        ]
+      ],
+      "footprint_area_m2": 122.171,
+      "source_base_y_m": 33.4,
+      "source_height_m": 10.4,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100106680004037122",
+      "name": "울산대학교어학교육원",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          114.96,
+          291.25
+        ],
+        [
+          116.07,
+          295.12
+        ],
+        [
+          118.96,
+          294.16
+        ],
+        [
+          132.53,
+          338.98
+        ],
+        [
+          124.13,
+          341.76
+        ],
+        [
+          124.14,
+          341.77
+        ],
+        [
+          125.14,
+          345.07
+        ],
+        [
+          125.83,
+          347.35
+        ],
+        [
+          87.45,
+          359.26
+        ],
+        [
+          81.11,
+          361.23
+        ],
+        [
+          78.3,
+          351.64
+        ],
+        [
+          81.42,
+          350.67
+        ],
+        [
+          80.45,
+          347.42
+        ],
+        [
+          85.0,
+          346.14
+        ],
+        [
+          86.95,
+          345.59
+        ],
+        [
+          86.97,
+          345.59
+        ],
+        [
+          86.05,
+          342.46
+        ],
+        [
+          87.49,
+          342.02
+        ],
+        [
+          120.17,
+          331.93
+        ],
+        [
+          116.2,
+          318.67
+        ],
+        [
+          100.74,
+          323.23
+        ],
+        [
+          94.14,
+          302.19
+        ],
+        [
+          97.57,
+          301.27
+        ],
+        [
+          95.94,
+          297.25
+        ]
+      ],
+      "footprint_area_m2": 1614.513,
+      "source_base_y_m": 42.08,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107290003032103",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          155.92,
+          151.94
+        ],
+        [
+          158.43,
+          160.59
+        ],
+        [
+          161.53,
+          159.65
+        ],
+        [
+          163.64,
+          167.25
+        ],
+        [
+          160.6,
+          168.13
+        ],
+        [
+          161.4,
+          170.87
+        ],
+        [
+          108.87,
+          187.06
+        ],
+        [
+          109.88,
+          190.17
+        ],
+        [
+          104.07,
+          191.79
+        ],
+        [
+          103.19,
+          188.75
+        ],
+        [
+          87.87,
+          193.49
+        ],
+        [
+          50.63,
+          205.01
+        ],
+        [
+          50.3,
+          203.91
+        ],
+        [
+          49.44,
+          204.07
+        ],
+        [
+          49.07,
+          202.5
+        ],
+        [
+          46.9,
+          203.05
+        ],
+        [
+          44.51,
+          195.78
+        ],
+        [
+          47.61,
+          194.92
+        ],
+        [
+          44.97,
+          185.89
+        ],
+        [
+          87.93,
+          172.74
+        ]
+      ],
+      "footprint_area_m2": 2367.248,
+      "source_base_y_m": 38.17,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107090001032100",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          111.12,
+          243.2
+        ],
+        [
+          106.23,
+          244.7
+        ],
+        [
+          105.26,
+          241.47
+        ],
+        [
+          110.15,
+          239.93
+        ]
+      ],
+      "footprint_area_m2": 17.367,
+      "source_base_y_m": 40.15,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100106660000032316",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          210.4,
+          261.84
+        ],
+        [
+          211.11,
+          263.85
+        ],
+        [
+          214.73,
+          262.85
+        ],
+        [
+          215.6,
+          265.83
+        ],
+        [
+          221.44,
+          264.05
+        ],
+        [
+          224.05,
+          273.18
+        ],
+        [
+          177.28,
+          287.34
+        ],
+        [
+          184.06,
+          308.83
+        ],
+        [
+          196.08,
+          304.98
+        ],
+        [
+          200.21,
+          318.31
+        ],
+        [
+          196.94,
+          319.18
+        ],
+        [
+          198.02,
+          323.11
+        ],
+        [
+          191.67,
+          324.96
+        ],
+        [
+          192.41,
+          327.97
+        ],
+        [
+          184.52,
+          330.4
+        ],
+        [
+          183.67,
+          327.38
+        ],
+        [
+          178.9,
+          328.7
+        ],
+        [
+          163.87,
+          279.79
+        ],
+        [
+          173.18,
+          277.1
+        ],
+        [
+          172.17,
+          273.74
+        ]
+      ],
+      "footprint_area_m2": 1466.511,
+      "source_base_y_m": 41.09,
+      "source_height_m": 13.7,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107290003031753",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          109.37,
+          166.08
+        ],
+        [
+          90.92,
+          171.81
+        ],
+        [
+          89.71,
+          168.72
+        ],
+        [
+          108.3,
+          163.03
+        ]
+      ],
+      "footprint_area_m2": 63.366,
+      "source_base_y_m": 36.12,
+      "source_height_m": 33.5,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107420000032013",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          294.58,
+          3.97
+        ],
+        [
+          290.43,
+          39.94
+        ],
+        [
+          275.6,
+          37.91
+        ],
+        [
+          276.28,
+          33.06
+        ],
+        [
+          284.58,
+          34.05
+        ],
+        [
+          288.58,
+          3.3
+        ]
+      ],
+      "footprint_area_m2": 269.225,
+      "source_base_y_m": 28.87,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032313",
+      "name": "대학로 93",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          163.47,
+          -22.81
+        ],
+        [
+          166.55,
+          -13.9
+        ],
+        [
+          174.83,
+          -16.44
+        ],
+        [
+          185.32,
+          18.08
+        ],
+        [
+          156.45,
+          26.76
+        ],
+        [
+          155.59,
+          24.16
+        ],
+        [
+          153.97,
+          24.78
+        ],
+        [
+          152.09,
+          19.68
+        ],
+        [
+          144.45,
+          21.67
+        ],
+        [
+          137.03,
+          -1.86
+        ],
+        [
+          138.01,
+          -2.19
+        ],
+        [
+          134.63,
+          -13.86
+        ]
+      ],
+      "footprint_area_m2": 1659.227,
+      "source_base_y_m": 38.63,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107420000034637",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          354.67,
+          72.41
+        ],
+        [
+          352.65,
+          80.51
+        ],
+        [
+          325.72,
+          73.73
+        ],
+        [
+          327.85,
+          63.44
+        ],
+        [
+          352.15,
+          69.32
+        ],
+        [
+          351.54,
+          71.77
+        ]
+      ],
+      "footprint_area_m2": 289.562,
+      "source_base_y_m": 27.14,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032241",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          30.89,
+          152.48
+        ],
+        [
+          31.95,
+          155.82
+        ],
+        [
+          37.64,
+          154.07
+        ],
+        [
+          42.48,
+          170.51
+        ],
+        [
+          23.21,
+          176.48
+        ],
+        [
+          22.4,
+          173.76
+        ],
+        [
+          21.53,
+          174.0
+        ],
+        [
+          21.74,
+          174.86
+        ],
+        [
+          16.25,
+          176.31
+        ],
+        [
+          9.91,
+          155.82
+        ],
+        [
+          17.1,
+          153.89
+        ],
+        [
+          17.42,
+          155.03
+        ],
+        [
+          20.21,
+          154.22
+        ],
+        [
+          20.65,
+          155.51
+        ]
+      ],
+      "footprint_area_m2": 546.747,
+      "source_base_y_m": 42.18,
+      "source_height_m": 13.7,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100106670000032107",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          165.91,
+          332.28
+        ],
+        [
+          145.54,
+          337.91
+        ],
+        [
+          138.47,
+          276.48
+        ],
+        [
+          147.72,
+          273.6
+        ]
+      ],
+      "footprint_area_m2": 943.155,
+      "source_base_y_m": 41.24,
+      "source_height_m": 13.7,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107300000032009",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          275.84,
+          33.59
+        ],
+        [
+          275.26,
+          37.65
+        ],
+        [
+          271.55,
+          37.31
+        ],
+        [
+          272.21,
+          33.16
+        ]
+      ],
+      "footprint_area_m2": 15.304,
+      "source_base_y_m": 27.09,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107300000032014",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          271.94,
+          32.39
+        ],
+        [
+          271.19,
+          37.2
+        ],
+        [
+          265.92,
+          36.44
+        ],
+        [
+          266.51,
+          31.95
+        ],
+        [
+          266.91,
+          31.64
+        ]
+      ],
+      "footprint_area_m2": 26.209,
+      "source_base_y_m": 27.11,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100110510005032008",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          293.2,
+          59.03
+        ],
+        [
+          295.67,
+          59.54
+        ],
+        [
+          296.66,
+          56.1
+        ],
+        [
+          323.97,
+          62.68
+        ],
+        [
+          321.36,
+          73.0
+        ],
+        [
+          294.14,
+          66.28
+        ],
+        [
+          295.12,
+          61.48
+        ],
+        [
+          294.61,
+          61.37
+        ],
+        [
+          293.8,
+          65.43
+        ],
+        [
+          267.7,
+          58.82
+        ],
+        [
+          269.89,
+          49.6
+        ],
+        [
+          294.11,
+          55.35
+        ]
+      ],
+      "footprint_area_m2": 550.966,
+      "source_base_y_m": 27.23,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107270009032406",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          357.57,
+          127.35
+        ],
+        [
+          354.49,
+          136.64
+        ],
+        [
+          350.65,
+          135.44
+        ],
+        [
+          353.19,
+          127.34
+        ],
+        [
+          353.65,
+          125.9
+        ],
+        [
+          357.59,
+          127.28
+        ]
+      ],
+      "footprint_area_m2": 40.744,
+      "source_base_y_m": 29.55,
+      "source_height_m": 33.5,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107280000032057",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          269.27,
+          131.36
+        ],
+        [
+          277.56,
+          158.07
+        ],
+        [
+          277.85,
+          158.07
+        ],
+        [
+          278.55,
+          160.67
+        ],
+        [
+          278.25,
+          161.76
+        ],
+        [
+          275.35,
+          162.75
+        ],
+        [
+          275.3,
+          162.47
+        ],
+        [
+          226.84,
+          177.4
+        ],
+        [
+          226.94,
+          177.66
+        ],
+        [
+          224.16,
+          178.66
+        ],
+        [
+          223.22,
+          178.08
+        ],
+        [
+          222.29,
+          175.28
+        ],
+        [
+          222.6,
+          175.18
+        ],
+        [
+          213.41,
+          144.88
+        ],
+        [
+          213.2,
+          144.88
+        ],
+        [
+          212.35,
+          142.09
+        ],
+        [
+          212.84,
+          141.0
+        ],
+        [
+          215.5,
+          140.23
+        ],
+        [
+          215.62,
+          140.44
+        ],
+        [
+          245.51,
+          131.3
+        ],
+        [
+          263.9,
+          125.68
+        ],
+        [
+          263.77,
+          125.42
+        ],
+        [
+          266.55,
+          124.48
+        ],
+        [
+          267.6,
+          124.91
+        ],
+        [
+          268.52,
+          127.87
+        ],
+        [
+          268.26,
+          128.1
+        ]
+      ],
+      "footprint_area_m2": 2222.934,
+      "source_base_y_m": 40.66,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032327",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -259.35,
+          -76.96
+        ],
+        [
+          -258.73,
+          -75.27
+        ],
+        [
+          -256.87,
+          -75.83
+        ],
+        [
+          -255.76,
+          -72.72
+        ],
+        [
+          -252.42,
+          -73.87
+        ],
+        [
+          -246.31,
+          -56.94
+        ],
+        [
+          -205.75,
+          -71.24
+        ],
+        [
+          -202.09,
+          -61.77
+        ],
+        [
+          -199.72,
+          -62.72
+        ],
+        [
+          -189.7,
+          -35.72
+        ],
+        [
+          -206.4,
+          -29.7
+        ],
+        [
+          -213.3,
+          -48.44
+        ],
+        [
+          -259.59,
+          -31.65
+        ],
+        [
+          -266.4,
+          -50.13
+        ],
+        [
+          -262.98,
+          -51.54
+        ],
+        [
+          -264.14,
+          -54.49
+        ],
+        [
+          -266.58,
+          -53.77
+        ],
+        [
+          -272.39,
+          -69.97
+        ],
+        [
+          -270.75,
+          -70.68
+        ],
+        [
+          -271.38,
+          -72.39
+        ]
+      ],
+      "footprint_area_m2": 2039.632,
+      "source_base_y_m": 74.85,
+      "source_height_m": 20.3,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032367",
+      "name": "대학로 57",
+      "campus_candidate": "ulsan_college_west",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -333.2,
+          -85.74
+        ],
+        [
+          -321.85,
+          -55.32
+        ],
+        [
+          -316.26,
+          -57.42
+        ],
+        [
+          -319.66,
+          -66.5
+        ],
+        [
+          -311.01,
+          -69.73
+        ],
+        [
+          -304.21,
+          -72.27
+        ],
+        [
+          -296.73,
+          -51.85
+        ],
+        [
+          -311.07,
+          -46.92
+        ],
+        [
+          -312.24,
+          -46.52
+        ],
+        [
+          -314.89,
+          -53.8
+        ],
+        [
+          -320.65,
+          -51.97
+        ],
+        [
+          -318.76,
+          -46.69
+        ],
+        [
+          -326.06,
+          -44.07
+        ],
+        [
+          -326.71,
+          -45.36
+        ],
+        [
+          -332.37,
+          -43.57
+        ],
+        [
+          -333.67,
+          -47.13
+        ],
+        [
+          -338.28,
+          -45.3
+        ],
+        [
+          -339.34,
+          -48.3
+        ],
+        [
+          -343.6,
+          -46.84
+        ],
+        [
+          -354.94,
+          -77.39
+        ],
+        [
+          -343.13,
+          -82.03
+        ],
+        [
+          -343.47,
+          -83.08
+        ],
+        [
+          -340.96,
+          -84.12
+        ],
+        [
+          -340.5,
+          -83.07
+        ]
+      ],
+      "footprint_area_m2": 1271.108,
+      "source_base_y_m": 81.31,
+      "source_height_m": 20.3,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032237",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -33.24,
+          -143.48
+        ],
+        [
+          -23.77,
+          -117.63
+        ],
+        [
+          -41.33,
+          -111.15
+        ],
+        [
+          -44.91,
+          -120.79
+        ],
+        [
+          -78.23,
+          -108.43
+        ],
+        [
+          -78.25,
+          -108.43
+        ],
+        [
+          -68.88,
+          -83.31
+        ],
+        [
+          -84.66,
+          -77.33
+        ],
+        [
+          -99.95,
+          -118.9
+        ]
+      ],
+      "footprint_area_m2": 1873.88,
+      "source_base_y_m": 51.34,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032208",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -332.74,
+          -292.26
+        ],
+        [
+          -362.55,
+          -271.88
+        ],
+        [
+          -365.9,
+          -276.78
+        ],
+        [
+          -336.46,
+          -297.76
+        ]
+      ],
+      "footprint_area_m2": 227.154,
+      "source_base_y_m": 83.89,
+      "source_height_m": 23.6,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032232",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          54.04,
+          -24.23
+        ],
+        [
+          45.26,
+          -20.91
+        ],
+        [
+          -4.5,
+          -2.08
+        ],
+        [
+          -12.72,
+          -24.24
+        ],
+        [
+          -0.21,
+          -28.78
+        ],
+        [
+          1.64,
+          -23.4
+        ],
+        [
+          32.42,
+          -34.44
+        ],
+        [
+          31.79,
+          -36.23
+        ],
+        [
+          47.27,
+          -42.06
+        ]
+      ],
+      "footprint_area_m2": 1199.828,
+      "source_base_y_m": 50.69,
+      "source_height_m": 10.4,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100106650000000001",
+      "name": "대학로 93",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -24.25,
+          -193.86
+        ],
+        [
+          -18.01,
+          -196.06
+        ],
+        [
+          11.03,
+          -205.77
+        ],
+        [
+          15.68,
+          -206.75
+        ],
+        [
+          15.82,
+          -206.75
+        ],
+        [
+          18.35,
+          -207.76
+        ],
+        [
+          20.75,
+          -208.65
+        ],
+        [
+          22.61,
+          -209.28
+        ],
+        [
+          42.98,
+          -215.43
+        ],
+        [
+          42.84,
+          -222.47
+        ],
+        [
+          42.12,
+          -232.52
+        ],
+        [
+          39.3,
+          -231.7
+        ],
+        [
+          34.43,
+          -247.27
+        ],
+        [
+          32.56,
+          -253.55
+        ],
+        [
+          18.96,
+          -248.48
+        ],
+        [
+          14.83,
+          -246.82
+        ],
+        [
+          5.09,
+          -243.87
+        ],
+        [
+          4.95,
+          -243.74
+        ],
+        [
+          5.47,
+          -241.67
+        ],
+        [
+          0.15,
+          -240.17
+        ],
+        [
+          0.4,
+          -239.91
+        ],
+        [
+          0.24,
+          -236.33
+        ],
+        [
+          -2.32,
+          -235.71
+        ],
+        [
+          -6.0,
+          -244.54
+        ],
+        [
+          -16.52,
+          -241.54
+        ],
+        [
+          -19.61,
+          -253.42
+        ],
+        [
+          -34.58,
+          -253.15
+        ],
+        [
+          -28.93,
+          -235.92
+        ],
+        [
+          -33.34,
+          -233.6
+        ],
+        [
+          -23.79,
+          -205.73
+        ],
+        [
+          -8.74,
+          -209.92
+        ],
+        [
+          -8.11,
+          -208.05
+        ],
+        [
+          -23.68,
+          -203.41
+        ]
+      ],
+      "footprint_area_m2": 2913.878,
+      "source_base_y_m": 58.46,
+      "source_height_m": 33.5,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107590000037470",
+      "name": "울산대학교기숙사",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          18.56,
+          -306.25
+        ],
+        [
+          24.39,
+          -305.7
+        ],
+        [
+          25.86,
+          -308.21
+        ],
+        [
+          61.88,
+          -288.56
+        ],
+        [
+          54.96,
+          -276.14
+        ],
+        [
+          53.46,
+          -276.7
+        ],
+        [
+          50.67,
+          -271.58
+        ],
+        [
+          48.4,
+          -273.01
+        ],
+        [
+          47.24,
+          -270.77
+        ],
+        [
+          20.65,
+          -285.19
+        ],
+        [
+          18.23,
+          -285.43
+        ],
+        [
+          -11.11,
+          -276.59
+        ],
+        [
+          -11.86,
+          -279.06
+        ],
+        [
+          -14.28,
+          -278.41
+        ],
+        [
+          -15.92,
+          -283.89
+        ],
+        [
+          -13.51,
+          -284.64
+        ],
+        [
+          -17.57,
+          -298.61
+        ],
+        [
+          17.74,
+          -309.03
+        ]
+      ],
+      "footprint_area_m2": 1726.506,
+      "source_base_y_m": 45.62,
+      "source_height_m": 10.4,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107760001032217",
+      "name": "울산대학교기숙사",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          13.61,
+          -339.42
+        ],
+        [
+          -0.34,
+          -321.6
+        ],
+        [
+          -5.08,
+          -325.22
+        ],
+        [
+          -7.27,
+          -322.57
+        ],
+        [
+          -9.96,
+          -319.29
+        ],
+        [
+          -14.18,
+          -322.75
+        ],
+        [
+          -12.05,
+          -325.16
+        ],
+        [
+          -14.57,
+          -327.09
+        ],
+        [
+          -9.49,
+          -333.52
+        ],
+        [
+          7.31,
+          -354.81
+        ],
+        [
+          19.05,
+          -348.15
+        ],
+        [
+          20.25,
+          -350.14
+        ],
+        [
+          55.61,
+          -330.44
+        ],
+        [
+          50.19,
+          -319.39
+        ]
+      ],
+      "footprint_area_m2": 1024.526,
+      "source_base_y_m": 46.35,
+      "source_height_m": 20.3,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032229",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -137.04,
+          -137.34
+        ],
+        [
+          -133.65,
+          -125.56
+        ],
+        [
+          -128.28,
+          -127.41
+        ],
+        [
+          -126.4,
+          -121.28
+        ],
+        [
+          -131.91,
+          -119.64
+        ],
+        [
+          -128.72,
+          -108.62
+        ],
+        [
+          -123.2,
+          -110.15
+        ],
+        [
+          -121.39,
+          -103.85
+        ],
+        [
+          -126.91,
+          -102.37
+        ],
+        [
+          -123.49,
+          -90.56
+        ],
+        [
+          -164.66,
+          -78.61
+        ],
+        [
+          -167.91,
+          -90.03
+        ],
+        [
+          -170.3,
+          -89.48
+        ],
+        [
+          -174.1,
+          -103.35
+        ],
+        [
+          -171.81,
+          -103.78
+        ],
+        [
+          -177.9,
+          -125.32
+        ]
+      ],
+      "footprint_area_m2": 2185.569,
+      "source_base_y_m": 60.64,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032218",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -35.96,
+          -69.91
+        ],
+        [
+          -64.72,
+          -59.64
+        ],
+        [
+          -68.67,
+          -69.9
+        ],
+        [
+          -40.1,
+          -80.79
+        ]
+      ],
+      "footprint_area_m2": 345.785,
+      "source_base_y_m": 48.21,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032209",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -337.74,
+          -299.49
+        ],
+        [
+          -367.24,
+          -279.17
+        ],
+        [
+          -370.43,
+          -283.52
+        ],
+        [
+          -340.94,
+          -304.48
+        ]
+      ],
+      "footprint_area_m2": 203.686,
+      "source_base_y_m": 87.74,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032233",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -2.18,
+          -59.51
+        ],
+        [
+          -78.39,
+          -30.99
+        ],
+        [
+          -79.83,
+          -34.78
+        ],
+        [
+          -82.48,
+          -33.99
+        ],
+        [
+          -84.22,
+          -39.47
+        ],
+        [
+          -81.78,
+          -40.26
+        ],
+        [
+          -84.48,
+          -47.56
+        ],
+        [
+          -80.22,
+          -49.17
+        ],
+        [
+          -83.43,
+          -57.7
+        ],
+        [
+          -70.52,
+          -62.51
+        ],
+        [
+          -67.12,
+          -54.09
+        ],
+        [
+          -8.48,
+          -76.13
+        ]
+      ],
+      "footprint_area_m2": 1581.827,
+      "source_base_y_m": 49.24,
+      "source_height_m": 17.0,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032238",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -12.16,
+          -74.81
+        ],
+        [
+          -25.08,
+          -69.92
+        ],
+        [
+          -30.52,
+          -83.61
+        ],
+        [
+          -17.66,
+          -88.38
+        ]
+      ],
+      "footprint_area_m2": 202.111,
+      "source_base_y_m": 47.82,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107690001032210",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          -341.82,
+          -305.35
+        ],
+        [
+          -371.39,
+          -285.05
+        ],
+        [
+          -374.8,
+          -289.78
+        ],
+        [
+          -345.51,
+          -310.38
+        ]
+      ],
+      "footprint_area_m2": 216.216,
+      "source_base_y_m": 91.9,
+      "source_height_m": 23.6,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032231",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          16.97,
+          -50.92
+        ],
+        [
+          5.02,
+          -83.33
+        ],
+        [
+          20.69,
+          -89.01
+        ],
+        [
+          26.78,
+          -72.91
+        ],
+        [
+          31.2,
+          -74.5
+        ],
+        [
+          32.5,
+          -71.0
+        ],
+        [
+          34.32,
+          -71.9
+        ],
+        [
+          38.91,
+          -59.04
+        ]
+      ],
+      "footprint_area_m2": 685.823,
+      "source_base_y_m": 49.26,
+      "source_height_m": 10.4,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032230",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          33.49,
+          -39.84
+        ],
+        [
+          23.47,
+          -36.16
+        ],
+        [
+          20.08,
+          -45.37
+        ],
+        [
+          29.91,
+          -49.2
+        ]
+      ],
+      "footprint_area_m2": 105.24,
+      "source_base_y_m": 49.83,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032236",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          6.58,
+          -38.52
+        ],
+        [
+          15.54,
+          -41.63
+        ],
+        [
+          18.58,
+          -33.59
+        ],
+        [
+          9.45,
+          -30.1
+        ]
+      ],
+      "footprint_area_m2": 84.192,
+      "source_base_y_m": 50.24,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107540002032016",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          350.15,
+          -71.75
+        ],
+        [
+          347.48,
+          -66.47
+        ],
+        [
+          336.28,
+          -71.99
+        ],
+        [
+          338.73,
+          -77.31
+        ]
+      ],
+      "footprint_area_m2": 74.125,
+      "source_base_y_m": 25.97,
+      "source_height_m": 33.5,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032105",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          160.79,
+          -31.38
+        ],
+        [
+          133.46,
+          -24.07
+        ],
+        [
+          132.27,
+          -26.7
+        ],
+        [
+          131.51,
+          -26.4
+        ],
+        [
+          130.99,
+          -28.42
+        ],
+        [
+          125.31,
+          -27.21
+        ],
+        [
+          124.35,
+          -34.39
+        ],
+        [
+          160.41,
+          -34.63
+        ]
+      ],
+      "footprint_area_m2": 247.052,
+      "source_base_y_m": 37.92,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107550001032017",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          240.98,
+          -138.77
+        ],
+        [
+          242.98,
+          -132.4
+        ],
+        [
+          249.11,
+          -134.11
+        ],
+        [
+          264.55,
+          -83.69
+        ],
+        [
+          258.4,
+          -81.82
+        ],
+        [
+          260.4,
+          -75.19
+        ],
+        [
+          255.63,
+          -73.79
+        ],
+        [
+          256.33,
+          -71.73
+        ],
+        [
+          230.05,
+          -63.55
+        ],
+        [
+          229.55,
+          -65.49
+        ],
+        [
+          224.84,
+          -64.42
+        ],
+        [
+          222.74,
+          -70.76
+        ],
+        [
+          216.57,
+          -68.88
+        ],
+        [
+          201.34,
+          -119.38
+        ],
+        [
+          207.33,
+          -121.4
+        ],
+        [
+          205.39,
+          -127.77
+        ]
+      ],
+      "footprint_area_m2": 3213.536,
+      "source_base_y_m": 32.01,
+      "source_height_m": 10.4,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107520003032538",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          210.05,
+          -204.89
+        ],
+        [
+          226.87,
+          -236.11
+        ],
+        [
+          236.58,
+          -230.97
+        ],
+        [
+          255.84,
+          -220.75
+        ],
+        [
+          239.9,
+          -189.92
+        ]
+      ],
+      "footprint_area_m2": 1160.968,
+      "source_base_y_m": 38.25,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107590000032223",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          24.83,
+          -309.48
+        ],
+        [
+          24.39,
+          -306.07
+        ],
+        [
+          18.56,
+          -306.63
+        ],
+        [
+          18.91,
+          -310.08
+        ]
+      ],
+      "footprint_area_m2": 20.38,
+      "source_base_y_m": 43.53,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107590000032222",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          67.58,
+          -268.2
+        ],
+        [
+          58.13,
+          -273.67
+        ],
+        [
+          55.05,
+          -275.46
+        ],
+        [
+          62.4,
+          -288.72
+        ],
+        [
+          47.88,
+          -296.81
+        ],
+        [
+          49.47,
+          -299.46
+        ],
+        [
+          76.18,
+          -284.71
+        ]
+      ],
+      "footprint_area_m2": 314.53,
+      "source_base_y_m": 45.23,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100110510001032239",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          7.01,
+          -150.74
+        ],
+        [
+          6.63,
+          -142.51
+        ],
+        [
+          3.47,
+          -142.78
+        ],
+        [
+          3.75,
+          -150.86
+        ]
+      ],
+      "footprint_area_m2": 26.242,
+      "source_base_y_m": 44.71,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107630001032007",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          287.26,
+          -39.21
+        ],
+        [
+          288.69,
+          -35.02
+        ],
+        [
+          283.84,
+          -33.93
+        ],
+        [
+          282.74,
+          -37.21
+        ],
+        [
+          282.63,
+          -37.58
+        ],
+        [
+          282.62,
+          -37.58
+        ],
+        [
+          282.41,
+          -38.21
+        ]
+      ],
+      "footprint_area_m2": 22.04,
+      "source_base_y_m": 27.46,
+      "source_height_m": 3.8,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107590000031999",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          138.86,
+          -276.37
+        ],
+        [
+          146.21,
+          -290.51
+        ],
+        [
+          160.83,
+          -282.8
+        ],
+        [
+          201.37,
+          -261.43
+        ],
+        [
+          193.53,
+          -246.35
+        ],
+        [
+          148.85,
+          -270.88
+        ]
+      ],
+      "footprint_area_m2": 1026.793,
+      "source_base_y_m": 41.53,
+      "source_height_m": 10.4,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    },
+    {
+      "building_id": "3114010100107590000034761",
+      "name": "울산대학교",
+      "campus_candidate": "university_of_ulsan",
+      "membership_verified": false,
+      "footprint_world_xz_m": [
+        [
+          123.62,
+          -253.86
+        ],
+        [
+          131.62,
+          -269.26
+        ],
+        [
+          137.62,
+          -266.03
+        ],
+        [
+          162.76,
+          -252.52
+        ],
+        [
+          154.65,
+          -237.18
+        ]
+      ],
+      "footprint_area_m2": 612.304,
+      "source_base_y_m": 43.07,
+      "source_height_m": 7.1,
+      "height_quality": "existing_source_not_survey_verified",
+      "base_quality": "coarse_dem_derived",
+      "site_boundary_world_xz_m": null,
+      "surveyed_finished_floor_y_m": null,
+      "vertical_datum": null,
+      "retaining_walls": null,
+      "stairs": null,
+      "entrances": null,
+      "replacement_model_path": null
+    }
+  ],
+  "rejected": [],
+  "counts": {
+    "university_of_ulsan": 64,
+    "ulsan_college_west": 11
+  }
+}

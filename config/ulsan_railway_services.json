@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "schedule_mode": "simulation_interval",
+  "schedule_note": "공식 시간표가 아닌 설정 가능한 반복 운행 시뮬레이션. 시간 단위는 시뮬레이션 초.",
+  "time_scale": 1.0,
+  "render_distance_m": 12000,
+  "services": [
+    {
+      "id": "donghae", "name": "동해선 광역전철", "track_names": ["동해선", "동해본선"],
+      "anchor_station": "태화강", "terminus_station": "태화강",
+      "station_names": ["기장", "일광", "좌천", "월내", "서생", "남창", "망양", "덕하", "개운포", "태화강"],
+      "interval_seconds": 120, "direction_offset_seconds": 60,
+      "speed_mps": 30, "acceleration_mps2": 0.8, "dwell_seconds": 25,
+      "cars": 4, "car_length_m": 19.5, "car_gap_m": 0.5,
+      "body_color": [0.82, 0.84, 0.86], "stripe_color": [0.12, 0.31, 0.67],
+      "track_bed": "ballast", "max_active_per_direction": 32
+    },
+    {
+      "id": "ktx", "name": "경부고속선 KTX", "track_names": ["경부고속선"],
+      "anchor_station": "울산", "terminus_station": "",
+      "station_names": ["울산", "경주"],
+      "interval_seconds": 180, "direction_offset_seconds": 90,
+      "speed_mps": 83.33, "acceleration_mps2": 0.5, "dwell_seconds": 40,
+      "cars": 20, "car_length_m": 18.7, "power_car_length_m": 22.6, "car_gap_m": 0.3,
+      "body_color": [0.91, 0.93, 0.94], "stripe_color": [0.05, 0.22, 0.46],
+      "track_bed": "slab", "max_active_per_direction": 32
+    }
+  ]
+}

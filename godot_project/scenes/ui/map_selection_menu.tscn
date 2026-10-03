@@ -1,0 +1,250 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6f3q3yvd5k8z"]
+
+[ext_resource type="Script" path="res://scripts/views/map_selection_view.gd" id="1_view"]
+[ext_resource type="Script" path="res://scripts/controllers/map_selection_controller.gd" id="2_ctrl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel_bg"]
+bg_color = Color(0.06, 0.06, 0.06, 0.95)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.25, 0.25, 0.25, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_enter"]
+bg_color = Color(0.9, 0.9, 0.9, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_lang"]
+bg_color = Color(0.15, 0.15, 0.15, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.4, 0.4, 0.4, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="MapSelectionMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_view")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.04, 0.04, 0.04, 1)
+
+[node name="RootMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 28
+
+[node name="MainLayout" type="VBoxContainer" parent="RootMargin"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="RootMargin/MainLayout"]
+layout_mode = 2
+
+[node name="HeaderLeft" type="VBoxContainer" parent="RootMargin/MainLayout/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TitleLabel" type="Label" parent="RootMargin/MainLayout/Header/HeaderLeft"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 24
+text = "가상 공간 지형 맵 선택 시스템"
+
+[node name="SubtitleLabel" type="Label" parent="RootMargin/MainLayout/Header/HeaderLeft"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 14
+text = "탐색할 지형 데이터를 선택하십시오"
+
+[node name="HeaderRight" type="HBoxContainer" parent="RootMargin/MainLayout/Header"]
+layout_mode = 2
+alignment = 2
+
+[node name="LangButton" type="Button" parent="RootMargin/MainLayout/Header/HeaderRight"]
+custom_minimum_size = Vector2(160, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn_lang")
+text = "언어 전환 (KO / EN)"
+
+[node name="HSeparator" type="HSeparator" parent="RootMargin/MainLayout"]
+layout_mode = 2
+
+[node name="BodyLayout" type="HBoxContainer" parent="RootMargin/MainLayout"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 24
+
+[node name="LeftPanel" type="PanelContainer" parent="RootMargin/MainLayout/BodyLayout"]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel_bg")
+
+[node name="ListMargin" type="MarginContainer" parent="RootMargin/MainLayout/BodyLayout/LeftPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ListScroll" type="ScrollContainer" parent="RootMargin/MainLayout/BodyLayout/LeftPanel/ListMargin"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="MapListVBox" type="VBoxContainer" parent="RootMargin/MainLayout/BodyLayout/LeftPanel/ListMargin/ListScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="RightPanel" type="PanelContainer" parent="RootMargin/MainLayout/BodyLayout"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel_bg")
+
+[node name="DetailMargin" type="MarginContainer" parent="RootMargin/MainLayout/BodyLayout/RightPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 20
+
+[node name="DetailVBox" type="VBoxContainer" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="DetailTitle" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+text = "맵 명칭"
+
+[node name="DetailDesc" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.75, 0.75, 0.75, 1)
+theme_override_font_sizes/font_size = 14
+text = "맵에 대한 설명"
+autowrap_mode = 3
+
+[node name="PreviewFrame" type="ColorRect" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox"]
+custom_minimum_size = Vector2(0, 220)
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.02, 0.02, 0.02, 1)
+
+[node name="PreviewTexture" type="TextureRect" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/PreviewFrame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StatsGrid" type="GridContainer" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox"]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 8
+columns = 2
+
+[node name="WorldSizeLabel" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "월드 스케일"
+
+[node name="WorldSizeValue" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 13
+text = "28.0 km x 28.0 km"
+
+[node name="ElevationLabel" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "표고 범위"
+
+[node name="ElevationValue" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 13
+text = "-50 m ~ 750 m"
+
+[node name="SeaLevelLabel" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "기준 해수면"
+
+[node name="SeaLevelValue" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 13
+text = "0.0 m"
+
+[node name="BBoxLabel" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "지리적 경계"
+
+[node name="BBoxValue" type="Label" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 13
+text = "33.80~34.05 N / 130.80~131.10 E"
+
+[node name="BottomActions" type="HBoxContainer" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="EnterButton" type="Button" parent="RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/BottomActions"]
+custom_minimum_size = Vector2(260, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.05, 0.05, 0.05, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn_enter")
+text = "선택한 맵으로 공간 진입"
+
+[node name="MapSelectionController" type="Node" parent="." node_paths=PackedStringArray("view_node")]
+script = ExtResource("2_ctrl")
+view_node = NodePath("..")

@@ -1,0 +1,1195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>브이월드</title>
+
+	<meta property="og:url" content="https://www.vworld.kr"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="브이월드"/>
+<meta property="og:description" content="공간정보 오픈플랫폼은 국가가 보유하고 있는 공개 가능한 공간정보를 모든 국민이 자유롭게 활용할 수 있도록 다양한 방법을 제공합니다."/>
+<meta property="og:image" content="https://www.vworld.kr/img/logo.png">
+<meta name="description" content="공간정보 오픈플랫폼은 국가가 보유하고 있는 공개 가능한 공간정보를 모든 국민이 자유롭게 활용할 수 있도록 다양한 방법을 제공합니다."/>
+<meta name="naver-site-verification" content="1f678c125bac40f073e2a87032b197c87cde5ab0" />
+<link rel="canonical" href="https://www.vworld.kr/v4po_main.do" /> 
+
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="/css/slick.css" />
+<link rel="stylesheet" type="text/css" href="/css/syntaxhighlighter_3.0.83/shCore.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/syntaxhighlighter_3.0.83/shThemeDefault.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/spectrum.min.css" />
+
+<link rel="stylesheet" type="text/css" href="/css/common.css?ver=2026072401" />
+<link rel="stylesheet" type="text/css" href="/css/content.css" />
+<link rel="stylesheet" type="text/css" href="/css/responsive.css?var=20240710" />
+<script type="text/javascript">
+var cmAppUrl = {
+	po : "https://www.vworld.kr"
+	, data : "https://www.vworld.kr"
+	, dev : "https://www.vworld.kr"
+	, user : "https://www.vworld.kr"
+	, desk : "https://www.vworld.kr"
+	, eng : "https://www.vworld.kr"
+	, map : "https://map.vworld.kr"
+	, apis : "https://apis.vworld.kr"
+	, api : "https://api.vworld.kr"
+}
+</script>
+<script type="text/javascript" src="/js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/js/dayjs/dayjs.min.js"></script>
+<script type="text/javascript" src="/js/dayjs/ko.js"></script>
+<script type="text/javascript" src="/js/dayjs/utc.js"></script>
+<script type="text/javascript" src="/js/slick.min.js"></script>
+<script type="text/javascript" src="/js/vue.min.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/js/common_fnc.js?var=20260622"></script>
+<script type="text/javascript" src="/js/common_login.js?var=20260622"></script>
+<script type="text/javascript" src="/js/common_msg.js"></script>
+<script type="text/javascript" src="/js/common_valid_msg.js"></script>
+<script type="text/javascript" src="/js/common_valid.js"></script>
+<script type="text/javascript" src="/js/common_menu.js?var=20260901"></script>
+<script type="text/javascript" src="/js/common_file.js"></script>
+<script type="text/javascript" src="/js/spectrum.min.js"></script>
+
+<script type="text/javascript" src="/js/wcslog.js"></script>
+<script type="text/javascript">
+var depth1=0
+var depth2=0
+var depth3=0
+var depth4=0
+var depth5=0
+
+$(window).on("load",function() {
+	if(!wcs_add) var wcs_add = {}; wcs_add["wa"] = "811b38780a3a60"; wcs_do();
+});
+
+// dayjs 플러그인 적용
+dayjs.extend(window.dayjs_plugin_utc);
+</script>
+
+
+</head>
+
+<body>
+	<div class="blind">
+		<a href="#sitemapMenu">전체메뉴 바로가기</a>
+		<a href="#headerMenu" class="mHide">메인메뉴 바로가기</a>
+		<a href="#section">본문 바로가기</a>
+	</div>
+	<div id="app" class="container">
+		<div class="template sub">
+			<header class="header">
+				﻿﻿<!-- 공장인허가 수정 소스 시작-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var anyidAdaptor = anyidAdaptor || {};
+        
+        /*이용기관 수정 영역 Start*/
+        anyidAdaptor.orgLogin = function(data){
+        	urlFnc.goLogin();
+            //window.location.href = "/dtkmap/vworldLogin.do";
+          //정부 통합인증SDK_연계가이드 4.4.1.3 이용기관 로그인(토글 off) 참조
+            //제공되는 라이브러리 메소드로 인증데이터 decrypt 이후 자체 로그인 로직 개발
+        }
+        /*이용기관 수정 영역 End*/
+        
+        
+        /*이용기관 문구수정 영역 Start*/
+        anyidAdaptor.JoinConfirm = function(portalJoinUri, memberData){
+            if(!confirm('Any-ID 사용자등록 하시겠습니까?')) {
+                anyidAdaptor.orgLogin();
+                return;
+            }else{
+                anyidAdaptor.receiveAnyIdJoin(portalJoinUri, memberData);
+            }
+        }
+        /*이용기관 문구수정 영역 End*/
+        
+        
+        anyidAdaptor.portalJoinUri = "null";
+        anyidAdaptor.certData = null;
+        anyidAdaptor.ssoByPass = "0";
+        anyidAdaptor.niRegYn = "null";
+        anyidAdaptor.agencyContextPath = "";
+        anyidAdaptor.anyIdSsoOn ="true";
+        if(!anyidAdaptor.anyIdSsoOn){
+        	anyidAdaptor.ssoByPass = 1;
+        }
+
+        anyidAdaptor.success = function(data){
+            if(anyidAdaptor.ssoByPass != 0 || !data.useSso) {
+                anyidAdaptor.orgLogin(data);
+            } else {
+                anyidAdaptor.certData = data;
+                anyidAdaptor.userCheck();
+            }  
+        }
+        
+        anyidAdaptor.userCheck = function(){
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", anyidAdaptor.agencyContextPath + "/oidc/userCheck", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    if (response.success) {
+                        anyidAdaptor.ssoLogin();
+                    } else {
+                        setTimeout(function() {
+                            anyidAdaptor.receiveAnyIdJoin(response.uri, response.data);
+                        }, 100);  
+                    }
+                }
+            };
+
+            let jsonObject = new Object();
+            jsonObject.txId = anyidAdaptor.certData.txId;
+            jsonObject.ssob = anyidAdaptor.certData.ssob;
+            jsonObject.userSeCd = anyidAdaptor.certData.userSeCd;
+            let jsonStr = JSON.stringify(jsonObject);
+            let encodedString = btoa(jsonStr);
+            
+            var data = "data=" + encodedString + "&txId=" + anyidAdaptor.certData.txId;
+            xhr.send(data);
+            
+        }
+
+
+      //anyid가입
+        anyidAdaptor.receiveAnyIdJoin = function(portalJoinUri, memberData){
+        
+            var url = portalJoinUri+encodeURIComponent(memberData);
+            anyidAdaptor.popup(url,"openAnyIdRegistUserIdv",700,740);
+
+            window.addEventListener("message", function(event) {
+                var result;
+                try {
+                    result = JSON.parse(event.data);
+                } catch (error) {
+                    console.error("Received message is not valid JSON:", error);
+                    return;
+                }
+                
+                if(!result.funcName || (result.funcName !== "trmsAgreComplete" && result.funcName !== "registUserComplete")) {
+                    return;
+                }
+                if(result.status === "success") {
+                    if(result.trmsAgreYn == "Y"){
+                        anyidAdaptor.ssoLogin();
+                    }else{
+                        anyidAdaptor.orgLogin();
+                    }
+                }else{
+                    
+                    anyidAdaptor.orgLogin();
+                }
+
+            }, false);
+        }
+
+     // 팝업 호출
+        anyidAdaptor.popup = function(url, name, width, height){
+            let left = (screen.width) ? (screen.width-width)/2 : 0;
+            let top = (screen.height) ? (screen.height-height)/2 : 0;
+            let popup=window.open(url, name ,"resizable=yes,toolbar=no,scrollbars=yes,location=no,top="+top+"px,left="+left+"px,width="+width+"px,height="+height+"px");
+            if(popup){
+                popup.focus();
+            }
+        }
+
+        anyidAdaptor.ssoLogin = function(){
+            let jsonObject = new Object();
+            jsonObject.txId = anyidAdaptor.certData.txId;
+            jsonObject.ssob = anyidAdaptor.certData.ssob;
+            jsonObject.userSeCd = anyidAdaptor.certData.userSeCd;
+            jsonObject.afData = anyidAdaptor.certData.afData;
+            let jsonStr = JSON.stringify(jsonObject);
+            let encodedString = btoa(jsonStr);
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogin";
+            var urlWithParams = baseUrl + "?data=" + encodedString;
+            window.location.href = urlWithParams;
+            
+        }
+        
+        anyidAdaptor.ssoLoginPageSub = function(baseUrl, endPoint, acrValues){
+            var subUrl = "";
+            
+            if (endPoint && endPoint.trim() !== "") {
+                subUrl = "?endPoint=" + encodeURIComponent(endPoint);
+            }
+            
+            if (!acrValues && acrValues.trim() == "") {
+            	acrValues = "3";
+            }
+            
+            if (acrValues && acrValues.trim() !== "") {
+                if(subUrl == ""){
+                    subUrl = "?";
+                }else{
+                    subUrl = subUrl + "&";
+                }
+                subUrl = subUrl + "acrValues=" + acrValues;
+            }
+            
+            window.location.replace(baseUrl+subUrl);
+        }
+        
+        /**/
+        anyidAdaptor.ssoLogout = function(endPoint) {
+            var subUrl = "";
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/ssoLogout";
+            
+            if (endPoint && endPoint.trim() !== "") {
+                subUrl = "?endPoint=" + encodeURIComponent(endPoint);
+            }
+            baseUrl = baseUrl + "?endPoint=" + encodeURIComponent(endPoint);
+// 			if(baseUrl.includes("%26")){ baseUrl = baseUrl.replaceAll("%26","%2526"); }
+            window.location.replace(baseUrl);
+        }
+        /**/
+        anyidAdaptor.reAuthLevel = function(endPoint, acrValues){
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/reAuthLevel";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues);
+
+        }
+        /**/
+        anyidAdaptor.ssoLoginPage = function(endPoint, acrValues){
+            endPoint = typeof endPoint !== 'undefined' ? endPoint : "/";
+            var baseUrl = window.location.origin + anyidAdaptor.agencyContextPath + "/oidc/auth";
+            anyidAdaptor.ssoLoginPageSub(baseUrl, endPoint, acrValues);
+        }
+        
+        /**/
+        anyidAdaptor.ssoSvcToSvc = function(url, endPoint){
+            /* var baseUrl = url + "/oidc/svcToSvc?endPoint=" + encodeURIComponent(endPoint);
+            window.open(baseUrl, "_blank"); */
+        	var baseUrl = url + "/oidc/svcToSvc?endPoint=" + encodeURIComponent(endPoint);
+        	var options = 'top=10, left=10, width=500, height=600, status=no, menubar=no, toolbar=no, resizable=no';
+        	window.open(baseUrl, "popup", options);
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+<!-- 공장인허가 수정 소스 끝 -->
+<script type="text/javascript">
+$(document).ready(function() {
+// 	2025-04-10 anyId login connect
+	var queryString = window.location.search;
+	var params = new URLSearchParams(queryString);
+	if(params.get('goMap')!=null){
+		var lcode = params.get('goMap');
+		if(lcode == 'Y'){ 
+// 			window.location.replace('http://localhost:8280/map/dtkmap.do');
+			window.location.replace('https://map.vworld.kr/map/dtkmap.do');
+		}
+	}
+	
+	
+	srchFnc.init("header_searchIdw", "header_searchBtn");
+	menuFnc.set();
+});
+</script>
+
+
+<h1 class="logo"><a href="javascript:urlFnc.goMain();" title="메인화면으로 이동" ><strong>V-world</strong>디지털트윈국토</a></h1>
+
+<nav class="gnb mHide" id="headerMenu">
+	
+</nav>			
+
+<div class="btns">
+	<div class="toggle one">
+			<button type="button" class="bt max ico only find" title="통합검색">통합검색</button>
+			<!-- 2023-11-28 -->
+			<div class="overbox rt">
+				<div class="set find">
+					<label for="header_searchIdw" class="blind">통합검색</label>
+					<input type="text" class="input validate[required]" id="header_searchIdw" name="searchIdw" value="" placeholder="통합검색" title="검색어">
+					<a href="javascript:void(0);" class="bt ico only find" id="header_searchBtn" >검색</a>
+					<button type="button" class="bt ico only close">취소</button>
+				</div>
+			</div>
+			<!--// 2023-11-28 -->
+		</div>
+	<div class="toggle one" id="login-before">
+		<button type="button" id="btLogin" class="bt max ico only lock customToggle" title="로그인" onclick="loginFnc.def(undefined,'Y');">로그인/회원가입</button>
+		<div class="dropbox">
+			<div class="headline">
+				<h4 class="title">로그인</h4>
+				<button type="button" class="bt ico only close">닫기</button>
+			</div>
+			<form class="field">
+				<label for="loginUsrIde" class="blind">아이디</label>
+				<input type="text" id="loginUsrIde" class="input validate[required]" placeholder="아이디" title="아이디" maxlength="18">
+				<label for="loginUsrPwd" class="blind">비밀번호</label>
+				<input type="password" id="loginUsrPwd" class="input validate[required]" placeholder="비밀번호" title="비밀번호" autocomplete="on" maxlength="18">
+				<div class="check"><input type="checkbox" id="chkUsrIde"><label for="chkUsrIde">아이디저장</label></div>
+			</form>
+			<div class="btns col">
+				<button type="button" class="bt bg primary" onClick="loginFnc.login('loginUsrIde','loginUsrPwd','chkUsrIde');">로그인</button>
+				<button type="button" class="bt bd primary" onClick="urlFnc.goJoin();">회원가입</button>
+			</div>
+			<div class="btns fs">
+				<a class="linktxt" onClick="urlFnc.goFindId();">아이디찾기</a>
+				<a class="linktxt" onClick="urlFnc.goFindPwd();">비밀번호찾기</a>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="bt max ico only menu" title="전체메뉴" aria-haspopup="dialog" aria-controls="pop-sitemap">전체메뉴열기</button>
+</div>
+</header>
+			<article class="sitemap hide" aria-hidden="true" id="pop-sitemap">
+	<div class="conWrap">
+		<div class="conHead">
+			<h2 class="blind">전체메뉴</h2>
+			<button type="button" class="bt max ico only home" title="메인화면 바로가기" onclick="urlFnc.goMain();">홈</button>
+			<!-- 로그인 전  -->
+			<p class="infotxt">로그인 후 디지털트윈국토의 모든 서비스를 이용해 보세요.</p>
+			<div class="btns ml">
+				<!-- 공장인허가 수정 소스 시작 -->
+<!-- 				 <a class="bt bd" href="javascript:urlFnc.goLogin();">로그인</a>  -->
+				<a class="bt bd" href="javascript:anyidAdaptor.ssoLoginPage(window.location.pathname+window.location.search,'3');">로그인</a>
+				<!-- 공장인허가 수정 소스 끝 -->
+				<a class="bt bd" href="javascript:urlFnc.goJoin();">회원가입</a>
+			</div>
+			<!--// 로그인 전 -->
+			<button type="button" class="bt max ico only close" title="전체메뉴 닫기">전체메뉴 닫기</button>
+		</div>
+		<div class="conBody">
+			<nav class="gnb" id="sitemapMenu">
+				
+			</nav>
+			<div class="note bg">
+				<ul>
+					<li><p class="bt ico bookmark on min">관심메뉴 설정</p> : 클릭 시 관심메뉴로 등록되어 마이포털에서 바로가기를 제공합니다. 지도메뉴의 관심설정은 지도 전체메뉴에서 설정해 주세요.</li>
+					<li><p class="bt ico lock min">회원전용 메뉴</p> : 자물쇠 표시가 있는 메뉴(하위 메뉴 포함)는 로그인 후 이용가능합니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</article><!--// sitemap --><section class="section" id="section">
+				<nav class="lnb">
+					<script type="text/javascript">
+$(document).ready(function() {
+	menuFnc.locationYn = "Y";
+});
+</script>
+<div class="inner" id="lnbMenu" >
+	
+</div></nav>
+				<aside class="location">
+					<div class="inner">
+	<div class="path" id="locationMenu"><span>홈</span></div>
+</div></aside>
+				<script>
+
+	$(document).ready(function() { 
+		
+	});
+	
+	$(function() {
+			
+	});
+	
+	var detailFnc = {
+		popEmdCd : function(){
+			var options = {
+	             params : {}
+	        };
+			cmFunction.popup.open("pop-coordinate", "읍면동(법정동) 코드 조회", "/dev/v4dv_emdcodepopup_s001.do", options)
+		}
+		, goList : function(){
+			cmFunction.submit("/dev/v4dv_2ddataguide2_s001.do",[{ name : 'refChk' , value : 'Y'},{ name : 'useChk' , value : 'Y'},{ name : 'apiVer' , value : '2.0'}]);
+		}
+		, goRealDataSearch : function(){
+			cmFunction.submit("/dev/v4dv_2ddataguide2_s003.do?svcIde=spbd",[{ name : 'refChk' , value : 'Y'},{ name : 'useChk' , value : 'Y'},{ name : 'apiVer' , value : '2.0'}]);
+		}
+		,scrollAttrInfo : function(id){
+			var topVal = document.querySelector('#'+id).offsetTop + document.querySelector('.headline.fix').offsetHeight;
+			if ((/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|windows ce|sonyericsson|samsung|mot|lg/i.test(navigator.userAgent.toLowerCase()))){
+				topVal = topVal - document.querySelector('aside.location').offsetHeight;
+			}
+			document.querySelector('.container').scrollTo({top: topVal});
+		}
+	}
+</script>
+
+<article class="article service api reference">
+	
+	<div class="headline fix">
+		<div class="inner">
+			<div class="item bd">
+				<h4 class="title">2D데이터 API 2.0 레퍼런스</h4>
+				<a href="/dev/v4dv_2ddataguide_s001.do" class="linktxt mr">버전 1.0</a>
+				<a href="javascript:detailFnc.goList();" class="bt ico back only ml">이전화면</a>
+			</div>
+		</div>
+	</div>
+	
+	<article class="content">
+		<div class="inner">
+			<div class="list view">
+				<ul>
+					<li class="th">
+						<div class="item">
+							<div class="br">
+								<h3 class="title">도로명주소 건물</h3>
+							</div>
+							<div class="txt">
+								<span>분류<em>일반행정</em></span>
+								<span>갱신일<em>2026-09-10</em></span>
+								<span>제공처<em>행정안전부</em></span>
+								<span>버전<em>2.0</em></span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="note bg">
+				<ul>
+					<li class="dot">도로명주소 체계의 건물정보</li>
+				</ul>	
+			</div>
+			<nav class="tabs fix" id="tabs">
+				<ul>
+					<li><a href="javascript:void(0);" class="tab on">API 레퍼런스 상세정보</a></li>
+					<li><a href="javascript:void(0);" class="tab" onclick="detailFnc.goRealDataSearch();">API 실데이터 검색</a></li>
+				</ul>
+			</nav>
+			<div class="tabcon view1 noO" id="tab1">
+				<div class="headline">
+					<h6 class="title">요청 URL</h6>
+				</div>
+				<div class="note bd">
+					<div class="codetxt">
+						<code>https://api.vworld.kr/req/data</code>
+					</div>
+					<p class="infotxt bold"><mark class="marker">주의! https나 Flex 등 웹뷰어가 아닌 브라우저에서의 API사용은 요청URL에 도메인정보를 추가하여 서비스를 이용합니다.</mark></p>
+					<ul>
+						<li>예) https://api.vworld.kr/req/data?service=data&amp;request=GetFeature&amp;data=LT_C_SPBD&amp;key=인증키<span class="red">&amp;domain=인증키 URL</span>&amp;[요청파라미터]</li>
+					</ul>
+				</div>
+				
+				<div class="headline">
+					<h6 class="title" id="responseItems">도로명주소 건물 속성정보</h6>
+				</div>
+				
+				<div class="grid">
+					<table>
+						<caption>도로명주소 건물 속성정보</caption>
+						<colgroup>
+							<col width="13%">
+							<col width="12%">
+							<col width="25%">				
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">속성명</th>
+								<th scope="col">단일검색*</th>
+								<th scope="col">샘플데이터</th>
+								<th scope="col">설명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>bd_mgt_sn</td>
+								<td>Y</td>
+								<td class="tl">1114016700100220008022804</td>
+								<td class="tl" style="white-space: pre-line;">건물관리번호
+- 생성 당시 기준의 PNU + 연번으로 구성되었으며 이후 행정구역이 변동되어도 관리번호는 반영이 안됨
+- 변경되지 않는 고유값</td>
+							</tr>
+							<tr>
+								<td>buld_nm</td>
+								<td>N</td>
+								<td class="tl">(주)디케이오스텍</td>
+								<td class="tl" style="white-space: pre-line;">건물명칭</td>
+							</tr>
+							<tr>
+								<td>bul_eng_nm</td>
+								<td>N</td>
+								<td class="tl">dkaustech</td>
+								<td class="tl" style="white-space: pre-line;">건물영문명칭</td>
+							</tr>
+							<tr>
+								<td>gro_flo_co</td>
+								<td>N</td>
+								<td class="tl">3</td>
+								<td class="tl" style="white-space: pre-line;">건물층수(지상)</td>
+							</tr>
+							<tr>
+								<td>ag_geom</td>
+								<td>N</td>
+								<td class="tl">POLYGON(...)</td>
+								<td class="tl" style="white-space: pre-line;">GEOMETRY 데이터</td>
+							</tr>
+							<tr>
+								<td>buld_nm_dc</td>
+								<td>N</td>
+								<td class="tl">A동</td>
+								<td class="tl" style="white-space: pre-line;">건물부명칭</td>
+							</tr>
+							<tr>
+								<td>sido</td>
+								<td>N</td>
+								<td class="tl">부산광역시</td>
+								<td class="tl" style="white-space: pre-line;">시도명</td>
+							</tr>
+							<tr>
+								<td>sigungu</td>
+								<td>N</td>
+								<td class="tl">기장군</td>
+								<td class="tl" style="white-space: pre-line;">시군구명</td>
+							</tr>
+							<tr>
+								<td>rd_nm</td>
+								<td>N</td>
+								<td class="tl">농공길</td>
+								<td class="tl" style="white-space: pre-line;">도로명</td>
+							</tr>
+							<tr>
+								<td>buld_no</td>
+								<td>N</td>
+								<td class="tl">23</td>
+								<td class="tl" style="white-space: pre-line;">건물번호</td>
+							</tr>
+							<tr>
+								<td>gu</td>
+								<td>N</td>
+								<td class="tl">정관면</td>
+								<td class="tl" style="white-space: pre-line;">읍면명칭</td>
+							</tr>
+							</tbody>
+					</table>
+				</div>
+				<p class="infotxt bold"><mark class="marker">단일검색=Y</mark>: geomFilter 없이도 해당속성명(pnu)이 포함된 attrFilter만으로 검색 가능</p>
+				<div class="headline">
+					<h6 class="title">오퍼레이션</h6>
+				</div>
+				
+				<div class="grid">
+					<table>
+						<caption>오퍼레이션</caption>
+						<colgroup>
+							<col width="25%">
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">오퍼레이션</th>
+								<th scope="col">설명</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>GetFeature</td>
+								<td class="tl">도로명주소 건물의 도형, 속성 정보를 조회<br/>WFS보다 간결한 형태의 데이터 조회 기능을 제공하며, 복잡한 Query가 필요할 경우 WFS를 사용하도록 권고함</td>
+							</tr>
+							<tr>
+								<td>GetFeatureType</td>
+								<td class="tl">도로명주소 건물 데이터의 타입(스키마)을 조회 <strong class="red">(서비스 예정)</strong></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="headline">
+					<h6 class="title">요청파라미터</h6>
+				</div>
+				<div class="grid">
+					<table>
+						<caption>요청파라미터</caption>
+						<colgroup>
+							<col width="13%">
+							<col width="12%">
+							<col width="*">
+							<col width="21%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">파라미터</th>
+								<th scope="col">선택</th>
+								<th scope="col">설명</th>
+								<th scope="col">유효값</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>service</td>
+								<td>O/1</td>
+								<td class="tl">요청 서비스명</td>
+								<td class="tl">data(기본값)</td>
+							</tr>
+							<tr>
+								<td>version</td>
+								<td>O/1</td>
+								<td class="tl">요청 서비스 버전</td>
+								<td class="tl">2.0(기본값)</td>
+							</tr>
+							<tr>
+								<td>request</td>
+								<td>M/1</td>
+								<td class="tl">요청 서비스 오퍼레이션</td>
+								<td class="tl">GetFeature, GetFeatureType</td>
+							</tr>
+							<tr>
+								<td>key</td>
+								<td>M/1</td>
+								<td class="tl"> 발급받은 api key</td>
+								<td class="tl"></td>
+							</tr>
+							<tr>
+								<td>format</td>
+								<td>O/1</td>
+								<td class="tl"> 응답결과 포맷</td>
+								<td class="tl">json(기본값), xml</td>
+							</tr>
+							<tr>
+								<td>errorFormat</td>
+								<td>O/1</td>
+								<td class="tl"> 에러 응답결과 포맷, 생략 시 format파라미터에 지정된 포맷으로 설정</td>
+								<td class="tl">json, xml</td>
+							</tr>
+							<tr>
+								<td>size</td>
+								<td>O/1</td>
+								<td class="tl"> 한 페이지에 출력될 응답결과 건수</td>
+								<td class="tl">숫자, default(10), min(1), max(1000)</td>
+							</tr>
+							<tr>
+								<td>page</td>
+								<td>O/1</td>
+								<td class="tl"> 응답결과 페이지 번호</td>
+								<td class="tl">숫자
+								<br/>기본값 : 1</td>
+							</tr>
+							<tr>
+								<td>data</td>
+								<td>M/1</td>
+								<td class="tl"> 조회할 데이터</td>
+								<td class="tl">LT_C_SPBD</td>
+							</tr>
+							<tr>
+								<td>geomFilter</td>
+								<td>M/1</td>
+								<td class="tl"> 지오메트리 필터<br/>
+								<br/>포맷
+								<br/>&nbsp;- POINT(x y)
+								<br/>&nbsp;- LINESTRING(x1 y1,x2 y2 [,xn yn])
+								<br/>&nbsp;- POLYGON((x1 y1,x2 y2[,xn yn]))
+								<br/>&nbsp;- MULTIPOLYGON(((x1 y1,x2 y2[,xn yn]))[,((x1 y1,x2 y2 [,xn yn]))])
+								<br/>&nbsp;- BOX(minx,miny,maxx,maxy)	
+								<br/>
+								<br/><span class="red">※ 대량 데이터 요청 제한
+								<br/>&nbsp;&nbsp;- polygon, multipolygon, box 경우, 면적이 2km²를 넘지 말아야 한다.</span></td>
+								<td class="tl"></td>
+							</tr>
+							<tr>
+								<td>attrFilter</td>
+								<td>O/n</td>
+								<td class="tl"> 속성조회를 위한 조건검색을 정의
+								<br/>포맷 : 속성명A:연산자A:비교값A|속성명B:연산자B:비교값B
+								<br/>- 여러 조건은 [|](Shift+\)로 구분하며, 한 조건의 내부는 [:]로 구분함
+								<br/>속성명 : 연산 대상이 되는 필드명
+								<br/>연산자 : =, &gt;=, &lt;=, &lt;, &gt;, &lt;&gt;, BETWEEN(포맷 : min,max), LIKE, IN(포맷 : 값1,값2)
+								<br/><span class="blue">예) attrFilter=uname:like:제2종일반|dyear:between:2000,2015|emdCd:=:41173102</span>
+								<br/>단, 단일검색=Y가 있는 경우에는 해당속성명(bd_mgt_sn)을 포함할 경우 geomFilter없이 attrFilter만으로 검색 가능 <br/><span class="blue">예) attrFilter=bd_mgt_sn:=:검색값</span>
+								</td>
+								<td class="tl">
+									단일검색=Y도 없고 geomFilter도 없을 경우, emdCd(읍면동코드) 필수
+									<br/><button type="button" class="bt bg ico find primary min" onclick="detailFnc.popEmdCd();">읍면동코드 조회</button>
+								</td>
+							</tr>
+							<tr>
+								<td>columns</td>
+								<td>O/1</td>
+								<td class="tl"> 응답결과로 받기를 원하는 컬럼, 생략 시 전체 컬럼 반환</td>
+								<td class="tl"><a href="#" onclick="detailFnc.scrollAttrInfo('responseItems');return false;">도로명주소 건물 속성정보</a></td>
+							</tr>
+							<tr>
+								<td>geometry</td>
+								<td>O/1</td>
+								<td class="tl"> 지오메트리 반환 여부</td>
+								<td class="tl">true(기본값), false</td>
+							</tr>
+							<tr>
+								<td>attribute</td>
+								<td>O/1</td>
+								<td class="tl"> 속성 반환 여부</td>
+								<td class="tl">true(기본값), false</td>
+							</tr>
+							<tr>
+								<td>buffer</td>
+								<td>O/1</td>
+								<td class="tl">geomFilter파라미터에 입력한 feature를 buffer(거리, 단위:m)만큼 확장</td>
+								<td class="tl">숫자, 기본값:0</td>
+							</tr>
+							<tr>
+								<td>crs</td>
+								<td>O/1</td>
+								<td class="tl"> 응답결과 좌표계</td>
+								<td class="tl"><a href="#"onclick="detailFnc.scrollAttrInfo('supportCcoordinateSystem');return false;" class="linktxt">지원좌표계</a> 참고,
+								<br/>EPSG:4326(기본값)</td>
+							</tr>
+							<tr>
+								<td>callback</td>
+								<td>O/1</td>
+								<td class="tl">format값이 json일 경우 callback함수를 지원합니다. </td>
+								<td class="tl"></td>
+							</tr>
+							<tr>
+								<td>domain</td>
+								<td>O/1</td>
+								<td class="tl">https나 Flex 등 웹뷰어가 아닌 브라우저에서의 API사용할 경우
+								<br/>인증키 발급 시 입력한 url을 입력합니다.</td>
+								<td class="tl"></td>
+							</tr>
+						</tbody>
+					</table>
+					
+				</div>
+				<div class="note bg">
+					<ul>
+						<li class="dot"><mark class="marker">M/1</mark> : 필수 입력, 값은 1개만 입력가능</li> 
+						<li class="dot"><mark class="marker">O/1</mark> : 선택 입력(입력안하면 기본값 설정), 값은 1개만 입력가능</li>
+						<li class="dot"><mark class="marker">O/n</mark> : 선택 입력, 쉼표(,)로 구분된 여러개의 값입력 가능. 예)category=1134,112829,11284</li>
+					</ul>
+				</div>
+	
+				<div class="headline">
+					<h6 class="title">응답결과</h6>
+				</div>
+
+				<div class="grid">
+					<table>
+						<caption>응답결과</caption>
+						<colgroup>
+							<col width="5%">
+							<col width="15%">
+							<col width="12%">
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col" colspan="2" >항목명</th>
+								<th scope="col">타입</th>
+								<th scope="col">설명</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="tl" colspan="2"><b>service</b></td>
+								<td>&nbsp;</td>
+								<td class="tl">요청 서비스 정보 Root</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">name</td>
+								<td>문자</td>
+								<td class="tl">요청 서비스명</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">version</td>
+								<td>숫자</td>
+								<td class="tl">요청 서비스 버전</td>
+							</tr>
+							<tr> 
+								<td class="tl">&nbsp;</td>
+								<td class="tl">operation</td>
+								<td>문자</td>
+								<td class="tl">요청 서비스 오퍼레이션 이름</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">time</td>
+								<td>숫자</td>
+								<td class="tl">응답결과 생성 시간</td>
+							</tr>
+							<tr>
+								<td class="tl" colspan="2"><b>status</b></td>
+								<td>문자</td>
+								<td class="tl">처리 결과의 상태 표시, 유효값 : OK(성공), NOT_FOUND(결과없음), ERROR(에러)</td>
+							</tr>
+							<tr>
+								<td class="tl" colspan="2"><b>record</b></td>
+								<td>&nbsp;</td>
+								<td class="tl">응답결과 건수 정보 Root</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">total</td>
+								<td>숫자</td>
+								<td class="tl">전체 결과 건수</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">current</td>
+								<td>숫자</td>
+								<td class="tl">현재 반환된 결과 건수</td>
+							</tr>
+							<tr>
+								<td class="tl" colspan="2"><b>page</b></td>
+								<td>&nbsp;</td>
+								<td class="tl">응답결과 페이지 정보 Root</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">total</td>
+								<td>숫자</td>
+								<td class="tl">전체 페이지 수</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">current</td>
+								<td>숫자</td>
+								<td class="tl">현재 페이지 번호</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">size</td>
+								<td>숫자</td>
+								<td class="tl">페이지 당 반환되는 결과 건수</td>
+							</tr>
+							<tr>
+								<td class="tl" colspan="2"><b>result</b></td>
+								<td>&nbsp;</td>
+								<td class="tl">응답결과 Root</td>
+							</tr>
+							<tr>
+								<td class="tl">&nbsp;</td>
+								<td class="tl">도로명주소 건물  속성정보</td>
+								<td>문자</td>
+								<td class="tl">format이 xml일 경우 GML로, json일 경우 geojson으로 표현</td>
+							</tr>					
+						</tbody>
+					</table>
+				</div>
+				<div class="headline" id="supportCcoordinateSystem">
+	<h6 class="title">지원좌표계</h6>
+</div>
+<div class="grid">
+	<table>
+		<caption>지원좌표계</caption>
+		<colgroup>
+			<col width="25%">
+			<col width="*">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">좌표계</th>
+				<th scope="col">설명</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>WGS84 경위도</td>
+				<td class="tl">EPSG:4326</td>
+			</tr>
+			<tr>
+				<td>GRS80 경위도</td>
+				<td class="tl">EPSG:4019</td>
+			</tr>
+			<tr>
+				<td>Google Mercator</td>
+				<td class="tl">EPSG:3857, EPSG:900913</td>
+			</tr>
+			<tr>
+				<td>서부원점(GRS80)</td>
+				<td class="tl">EPSG:5180(50만), EPSG:5185</td>
+			</tr>
+			<tr>
+				<td>중부원점(GRS80)</td>
+				<td class="tl">EPSG:5181(50만), EPSG:5186</td>
+			</tr>
+			<tr>
+				<td>제주원점(GRS80, 55만)</td>
+				<td class="tl">EPSG:5182</td></tr>
+			<tr>
+				<td>동부원점(GRS80)</td>
+				<td class="tl">EPSG:5183(50만), EPSG:5187</td>
+			</tr>
+			<tr>
+				<td>동해(울릉)원점(GRS80)</td>
+				<td class="tl">EPSG:5184(50만), EPSG:5188</td>
+			</tr>
+			<tr>
+				<td>UTM-K(GRS80)</td>
+				<td class="tl">EPSG:5179</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="headline">
+	<h6 class="title">오류 응답결과</h6>
+</div>
+<div class="grid">
+   	<table class="opn2dmapguide">
+   		<caption>오류 응답결과</caption>
+		<colgroup>
+			<col width="5%">
+			<col width="15%">
+			<col width="12%">
+			<col width="*">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col" colspan="2" >항목명</th>
+				<th scope="col">타입</th>
+				<th scope="col">설명</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td colspan="2" class="tl"><b>service</b></td>
+				<td>문자</td>
+				<td class="tl">요청 서비스 정보 Root</td>
+			</tr>
+			<tr>
+				<td class="tl">&nbsp;</td>
+				<td class="tl">name</td>
+				<td>문자</td>
+				<td class="tl">요청 서비스명</td>
+			</tr>
+			<tr>
+				<td class="tl">&nbsp;</td>
+				<td class="tl">version</td>
+				<td>숫자</td>
+				<td class="tl">요청 서비스 버전</td>
+			</tr>
+			<tr>
+				<td class="tl">&nbsp;</td>
+				<td class="tl">operation</td>
+				<td>문자</td>
+				<td class="tl">요청 서비스 오퍼레이션 이름</td>
+			</tr>
+			<tr>
+				<td class="tl">&nbsp;</td>
+				<td class="tl">time</td>
+				<td>숫자</td>
+				<td class="tl">응답결과 생성 시간</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="tl"><b>status</b></td>
+				<td>문자</td>
+				<td class="tl">처리 결과의 상태 표시, 유효값 : OK(성공), NOT_FOUND(결과없음), ERROR(에러)</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="tl"><b>error</b></td>
+				<td>문자</td>
+				<td class="tl">에러 정보 Root</td>
+			</tr>
+			<tr>
+				<td class="tl">&nbsp;</td>
+				<td class="tl">level</td>
+				<td>숫자</td>
+				<td class="tl">에러 레벨</td>
+			</tr>
+			<tr>
+				<td class="tl">&nbsp;</td>
+				<td class="tl">code</td>
+				<td>문자</td>
+				<td class="tl">에러 코드</td>
+			</tr>
+			<tr>
+				<td class="tl">&nbsp;</td>
+				<td class="tl">text</td>
+				<td>문자</td>
+				<td class="tl">에러 메시지</td>
+			</tr>						
+		</tbody>
+	</table>
+</div>
+<div class="headline">
+	<h6 class="title">오류메세지</h6>
+</div>
+<div class="grid">
+   	<table class="opn2dmapguide">
+   	<caption>오류메세지</caption>
+	<colgroup>
+		<col width="20%">
+		<col width="10%">
+		<col width="*">
+		<col width="30%">
+	</colgroup>
+	<thead>
+		<tr>
+			<th scope="col">코드</th>
+			<th scope="col">레벨</th>
+			<th scope="col">메세지</th>
+			<th scope="col">비고</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>PARAM_REQUIRED</td>
+			<td>1</td>
+			<td class="tl">필수 파라미터인 <strong>&lt;%S1&gt;</strong>가 없어서 요청을 처리할수 없습니다.</td>
+			<td class="tl"><strong>%S1</strong> : 파라미터 이름</td>
+		</tr>
+		<tr>
+			<td>INVALID_TYPE</td>
+			<td>1</td>
+			<td class="tl">
+				<strong>&lt;%S1&gt;</strong> 파라미터 타입이 유효하지 않습니다.
+				<br/>유효한 파라미터 타입 : <strong>&lt;%S2&gt;</strong>
+				<br/>입력한 파라미터 값 : <strong>&lt;%S3&gt;</strong>
+			</td>
+			<td class="tl"><strong>%S1</strong> : 파라미터 이름
+				<br/><strong>%S2</strong> : 유효한 파라미터 값의 유형
+				<br/><strong>%S3</strong> : 입력한 파라미터 값
+			</td>
+		</tr>
+		<tr>
+			<td>INVALID_RANGE</td>
+			<td>1</td>
+			<td class="tl"><strong>&lt;%S1&gt;</strong> 파라미터의 값이 유효한 범위를 넘었습니다.
+				<br/>유효한 파라미터 타입 : <strong>&lt;%S2&gt;</strong>
+				<br/>입력한 파라미터 값 : <strong>&lt;%S3&gt;</strong>
+			</td>
+			<td class="tl"><strong>%S1</strong> : 파라미터 이름
+				<br/><strong>%S2</strong> : 유효한 파라미터 값의 범위
+				<br/><strong>%S3</strong> : 입력한 파라미터 값
+			</td>
+		</tr>
+		<tr>
+			<td>INVALID_KEY</td>
+			<td>2</td>
+			<td class="tl">등록되지 않은 인증키입니다.</td>
+			<td class="tl">&nbsp </td>
+		</tr>
+		<tr>
+			<td>INCORRECT_KEY</td>
+			<td>2</td>
+			<td class="tl">인증키 정보가 올바르지 않습니다.
+			<br/>(ex. 인증키 발급 시 입력한 도메인이 다를경우)
+			</td>
+			<td class="tl">&nbsp </td>
+		</tr>
+		<tr>
+			<td>UNAVAILABLE_KEY</td>
+			<td>2</td>
+			<td class="tl">임시로 인증키를 사용할 수 없는 상태입니다.</td>
+			<td class="tl">&nbsp; </td>
+		</tr>
+		<tr>
+			<td>OVER_REQUEST_LIMIT</td>
+			<td>2</td>
+			<td class="tl">서비스 사용량이 일일 제한량을 초과하여 더 이상 서비스를 사용할 수 없습니다.</td>
+			<td class="tl">&nbsp; </td>
+		</tr>
+		<tr>
+			<td>SYSTEM_ERROR</td>
+			<td>3</td>
+			<td class="tl">시스템 에러가 발생하였습니다.</td>
+			<td class="tl">&nbsp; </td>
+		</tr>
+		<tr>
+			<td>UNKNOWN_ERROR</td>
+			<td>3</td>
+			<td class="tl">알 수 없는 에러가 발생하였습니다.</td>
+			<td class="tl">&nbsp; </td>
+		</tr>
+				
+	</tbody>
+</table>
+</div><div class="btns fe">
+					<a href="javascript:detailFnc.goList();" class="linktxt">목록 돌아가기</a>
+				</div>
+			</div>
+		</div>
+	</article>
+</article></section>
+			<footer class="footer">
+				<script type="text/javascript">
+var footerObj = {
+		move : function(){
+			if($("#footerPageMove").val() == ""){
+				msgFnc.alert({text : "이동할 사이트를 선택해주세요."
+					, callBackConfirmFnc : function(){
+						$("#footerPageMove").focus();
+					}
+				});
+				return;
+			}
+			window.open($("#footerPageMove").val(), '_blank');
+		}
+}
+</script>
+
+<nav class="nav">
+	<ul>
+		<li><a href="javascript:urlFnc.goAgree();" class="menu">이용약관</a></li>
+		<li><a href="javascript:urlFnc.goPrivacy();" class="menu"><strong>개인정보처리방침</strong></a></li>
+		<li><a href="javascript:urlFnc.goUnauthEmail();" class="menu">이메일무단수집거부</a></li>
+		<li><a href="javascript:urlFnc.goCpyrht();" class="menu">저작권정책</a></li>
+		<li><a href="javascript:urlFnc.goIntrcn();" class="menu">브이월드소개</a></li>
+		<li><a href="https://data.molit.go.kr/systemQuality/list?system_id=S0023" onclick="window.open(this.href, '품질오류신고 및 확인'); return false;" class="menu">품질오류신고 및 확인</a></li>
+	</ul>
+</nav>
+<div class="cscenter">
+<!-- 2024-08-30 국토부 요청으로  footer style 변경 -->
+<!-- 	<h6 class="title">고객센터<em>평일 09:00 ~ 18:00 (중식 12:00 ~ 13:00) / 주말 및 공휴일 휴무</em></h6> -->
+<!-- 	<p class="infotxt">※ 공간정보 오픈플랫폼(V-World) 서비스 관련 궁금한 사항은 공간정보산업진흥원 고객센터로 문의해주시기 바랍니다.</p> -->
+<!-- 	<div class="btns"> -->
+<!-- 		<a href="tel:16610115" class="bt ico call bg">1661 - 0115</a> -->
+<!-- 		<a href="mailto:vworld@spacen.or.kr" class="bt ico mail bg">vworld@spacen.or.kr</a> -->
+<!-- 	</div> -->
+	<h6 class="title">고객센터
+	<em>
+		<div class="btns">
+			<a href="tel:16610115" class="bt ico call bg">1661 - 0115</a>
+			<a href="mailto:vworld@spacen.or.kr" class="bt ico mail bg">vworld@spacen.or.kr</a>
+		</div>
+	</em>
+	</h6>
+	<div class="btns"><em>평일 09:00 ~ 18:00 (중식 12:00 ~ 13:00) / 주말 및 공휴일 휴무</em></div>
+	<div class="spacen">
+		<div class="logo"><strong>공간정보산업진흥원</strong></div>
+		<p class="address">[14055] 경기도 안양시 동안구 부림로170번길 41-4(디에스세미콘) 3층 공간정보산업진흥원</p>
+	</div>
+<!-- 2024-08-30 국토부 요청으로  footer style 변경 -->
+</div>
+<div class="organizer">
+	<div class="logo"><strong>V-world</strong>디지털트윈국토</div>
+	<p class="address">[30103] 세종특별자치시 도움6로 11 국토교통부</p>
+	<p class="copyright">Copyright (C) Ministry of Land, Infrastructure and Transport 2023. All Rights Reserved.</p>
+</div>
+<div class="set">
+	<label for="footerPageMove" class="blind">사이트 바로가기</label>
+	<select class="select" id="footerPageMove">
+		<option value="" selected>사이트 바로가기</option>
+		<option value="https://www.molit.go.kr/">국토교통부</option>
+		<option value="https://www.ngii.go.kr/">국토지리정보원</option>
+		<!-- option value="https://www.nsdi.go.kr/">국가공간정보포털</option-->
+		<option value="http://spacen.or.kr/">공간정보산업진흥원</option>
+		<option value="https://www.spacein.kr/">공간정보교육포털</option>
+		<option value="https://www.lx.or.kr/kor.do">한국국토정보공사</option>
+		<option value="http://www.siqms.or.kr">공간정보품질관리원</option>
+		<option value="https://www.kasm.or.kr">공간정보산업협회</option>
+		<option value="https://gsqm.lx.or.kr/index.do">공간정보표준통합지원시스템</option>
+	</select>
+	<button class="bt bg" onclick="footerObj.move();">이동</button>
+</div>
+<a href="#top" class="bt ico go only">맨위로 이동</a>
+</footer>
+		</div><!--//template-->
+	</div><!--//container-->
+</body>
+</html>

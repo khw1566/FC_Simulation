@@ -1,0 +1,202 @@
+[gd_scene load_steps=33 format=3 uid="uid://cql1v4mx67f8r"]
+
+[ext_resource type="Script" path="res://scripts/terrain/terrain_chunk_manager.gd" id="1_terrain"]
+[ext_resource type="Script" path="res://scripts/water/kanmon_water_manager.gd" id="2_water"]
+[ext_resource type="Script" path="res://scripts/player/player_flight_controller.gd" id="3_player"]
+[ext_resource type="Script" path="res://scripts/services/district_service.gd" id="4_dist_service"]
+[ext_resource type="PackedScene" uid="uid://bvsm2cx68y7t1" path="res://scenes/district_hud.tscn" id="5_hud_scene"]
+[ext_resource type="Script" path="res://scripts/controllers/district_hud_controller.gd" id="6_hud_ctrl"]
+[ext_resource type="PackedScene" uid="uid://c6f3q3yvd5k8x" path="res://scenes/map_hud.tscn" id="7_map_scene"]
+[ext_resource type="Script" path="res://scripts/controllers/map_hud_controller.gd" id="8_map_ctrl"]
+[ext_resource type="Script" path="res://scripts/terrain/landmark_manager.gd" id="9_landmark_mgr"]
+[ext_resource type="PackedScene" uid="uid://c6f3q3yvd5k8y" path="res://scenes/speed_hud.tscn" id="10_speed_scene"]
+[ext_resource type="Script" path="res://scripts/controllers/speed_hud_controller.gd" id="11_speed_ctrl"]
+[ext_resource type="Script" path="res://scripts/terrain/building_road_manager.gd" id="12_bldg_mgr"]
+[ext_resource type="Script" path="res://scripts/water/coastline_waterway_manager.gd" id="13_coast_mgr"]
+[ext_resource type="PackedScene" uid="uid://c7m2x8n5v9q4a" path="res://scenes/pause_settings_hud.tscn" id="14_pause_scene"]
+[ext_resource type="Script" path="res://scripts/controllers/pause_settings_controller.gd" id="15_pause_ctrl"]
+[ext_resource type="PackedScene" uid="uid://d3yq8v9p2m4x1" path="res://scenes/flight_vector_hud.tscn" id="16_vector_scene"]
+[ext_resource type="Script" path="res://scripts/weather/weather_manager.gd" id="17_weather_mgr"]
+[ext_resource type="Script" path="res://scripts/weather/procedural_cloud_manager.gd" id="18_cloud_mgr"]
+[ext_resource type="Script" path="res://scripts/weather/rain_particle_controller.gd" id="19_rain_ctrl"]
+[ext_resource type="Script" path="res://scripts/weather/lightning_controller.gd" id="20_lightning_ctrl"]
+[ext_resource type="PackedScene" uid="uid://help_overlay_hud_v1" path="res://scenes/help_overlay_hud.tscn" id="21_help_scene"]
+[ext_resource type="PackedScene" uid="uid://weather_details_hud_v1" path="res://scenes/weather_details_hud.tscn" id="22_weather_hud_scene"]
+[ext_resource type="Script" path="res://scripts/controllers/weather_details_hud_controller.gd" id="23_weather_hud_ctrl"]
+[ext_resource type="Script" path="res://scripts/views/world_debug_overlay.gd" id="24_debug_overlay"]
+[ext_resource type="Script" path="res://scripts/views/performance_hud.gd" id="29_performance"]
+[ext_resource type="Script" path="res://scripts/views/custom_asset_debugger.gd" id="25_asset_debugger"]
+[ext_resource type="Script" path="res://scripts/services/day_night_cycle_service.gd" id="26_day_night"]
+[ext_resource type="Script" path="res://scripts/services/celestial_body_manager.gd" id="27_celestial"]
+[ext_resource type="Shader" path="res://shaders/night_sky.gdshader" id="28_night_sky"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_night_sky"]
+shader = ExtResource("28_night_sky")
+shader_parameter/sky_top_color = Color(0.32, 0.52, 0.78, 1)
+shader_parameter/sky_horizon_color = Color(0.68, 0.75, 0.82, 1)
+shader_parameter/ground_color = Color(0.12, 0.15, 0.18, 1)
+shader_parameter/night_weight = 0.0
+
+[sub_resource type="Sky" id="Sky_env"]
+sky_material = SubResource("ShaderMaterial_night_sky")
+
+[sub_resource type="Environment" id="Environment_world"]
+background_mode = 2
+sky = SubResource("Sky_env")
+ambient_light_source = 3
+ambient_light_color = Color(0.35, 0.40, 0.45, 1)
+tonemap_mode = 2
+ssao_enabled = false
+fog_enabled = true
+fog_light_color = Color(0.65, 0.72, 0.80, 1)
+fog_density = 0.000028
+fog_sky_affect = 0.3
+
+[node name="MainWorld" type="Node3D"]
+
+[node name="PerformanceHUD" type="CanvasLayer" parent="."]
+script = ExtResource("29_performance")
+
+[node name="CustomAssetDebugger" type="CanvasLayer" parent="."]
+script = ExtResource("25_asset_debugger")
+
+[node name="WorldDebugOverlay" type="CanvasLayer" parent="."]
+script = ExtResource("24_debug_overlay")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_world")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, -0.353553, 0.353553, 0, 0.707107, 0.707107, -0.5, -0.612372, 0.612372, 0, 1000, 0)
+shadow_enabled = true
+directional_shadow_mode = 1
+directional_shadow_split_1 = 0.25
+directional_shadow_blend_splits = false
+directional_shadow_fade_start = 0.8
+directional_shadow_max_distance = 3500.0
+directional_shadow_pancake_size = 20.0
+shadow_bias = 0.1
+shadow_normal_bias = 2.0
+
+[node name="TerrainManager" type="Node3D" parent="." node_paths=PackedStringArray("player_node")]
+script = ExtResource("1_terrain")
+player_node = NodePath("../Player")
+
+[node name="WaterManager" type="Node3D" parent="."]
+script = ExtResource("2_water")
+
+[node name="Player" type="CharacterBody3D" parent="." node_paths=PackedStringArray("building_road_manager", "terrain_chunk_manager")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 350, 0)
+collision_layer = 1
+collision_mask = 1
+script = ExtResource("3_player")
+building_road_manager = NodePath("../BuildingRoadManager")
+terrain_chunk_manager = NodePath("../TerrainManager")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+current = true
+far = 75000.0
+
+[node name="DistrictService" type="Node" parent="."]
+script = ExtResource("4_dist_service")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DistrictHUD" parent="CanvasLayer" instance=ExtResource("5_hud_scene")]
+
+[node name="MapHUD" parent="CanvasLayer" instance=ExtResource("7_map_scene")]
+
+[node name="SpeedHUD" parent="CanvasLayer" instance=ExtResource("10_speed_scene")]
+
+[node name="FlightVectorHUD" parent="CanvasLayer" node_paths=PackedStringArray("player_node", "camera_node") instance=ExtResource("16_vector_scene")]
+player_node = NodePath("../../Player")
+camera_node = NodePath("../../Player/Camera3D")
+
+[node name="PauseSettingsHUD" parent="CanvasLayer" instance=ExtResource("14_pause_scene")]
+
+[node name="HelpOverlayHUD" parent="CanvasLayer" instance=ExtResource("21_help_scene")]
+
+[node name="WeatherDetailsHUD" parent="CanvasLayer" instance=ExtResource("22_weather_hud_scene")]
+
+[node name="WeatherDetailsHUDController" type="Node" parent="." node_paths=PackedStringArray("hud_view", "player_node", "weather_manager")]
+script = ExtResource("23_weather_hud_ctrl")
+hud_view = NodePath("../CanvasLayer/WeatherDetailsHUD")
+player_node = NodePath("../Player")
+weather_manager = NodePath("../WeatherManager")
+
+[node name="DistrictHUDController" type="Node" parent="." node_paths=PackedStringArray("district_service", "hud_view", "player_node")]
+script = ExtResource("6_hud_ctrl")
+district_service = NodePath("../DistrictService")
+hud_view = NodePath("../CanvasLayer/DistrictHUD")
+player_node = NodePath("../Player")
+
+[node name="MapHUDController" type="Node" parent="." node_paths=PackedStringArray("map_hud_view", "player_node", "weather_manager")]
+script = ExtResource("8_map_ctrl")
+map_hud_view = NodePath("../CanvasLayer/MapHUD")
+player_node = NodePath("../Player")
+weather_manager = NodePath("../WeatherManager")
+
+[node name="SpeedHUDController" type="Node" parent="." node_paths=PackedStringArray("speed_hud_view", "player_node")]
+script = ExtResource("11_speed_ctrl")
+speed_hud_view = NodePath("../CanvasLayer/SpeedHUD")
+player_node = NodePath("../Player")
+
+[node name="PauseSettingsController" type="Node" parent="." node_paths=PackedStringArray("pause_view", "player_node", "world_environment", "sun_light", "flight_vector_hud", "weather_manager", "help_overlay_hud", "day_night_service")]
+script = ExtResource("15_pause_ctrl")
+pause_view = NodePath("../CanvasLayer/PauseSettingsHUD")
+player_node = NodePath("../Player")
+world_environment = NodePath("../WorldEnvironment")
+sun_light = NodePath("../DirectionalLight3D")
+flight_vector_hud = NodePath("../CanvasLayer/FlightVectorHUD")
+weather_manager = NodePath("../WeatherManager")
+help_overlay_hud = NodePath("../CanvasLayer/HelpOverlayHUD")
+day_night_service = NodePath("../DayNightCycleService")
+
+[node name="DayNightCycleService" type="Node" parent="." node_paths=PackedStringArray("sun_light", "world_environment", "weather_manager")]
+script = ExtResource("26_day_night")
+sun_light = NodePath("../DirectionalLight3D")
+world_environment = NodePath("../WorldEnvironment")
+weather_manager = NodePath("../WeatherManager")
+
+[node name="CelestialBodyManager" type="Node3D" parent="." node_paths=PackedStringArray("player_camera", "cycle_service")]
+script = ExtResource("27_celestial")
+player_camera = NodePath("../Player/Camera3D")
+cycle_service = NodePath("../DayNightCycleService")
+
+[node name="WeatherManager" type="Node3D" parent="." node_paths=PackedStringArray("player_node", "world_environment", "sun_light", "cloud_manager", "rain_controller", "lightning_controller", "day_night_service")]
+script = ExtResource("17_weather_mgr")
+player_node = NodePath("../Player")
+world_environment = NodePath("../WorldEnvironment")
+sun_light = NodePath("../DirectionalLight3D")
+cloud_manager = NodePath("CloudClusterManager")
+rain_controller = NodePath("RainParticleController")
+lightning_controller = NodePath("LightningController")
+day_night_service = NodePath("../DayNightCycleService")
+
+[node name="CloudClusterManager" type="Node3D" parent="WeatherManager" node_paths=PackedStringArray("player_node")]
+script = ExtResource("18_cloud_mgr")
+player_node = NodePath("../../Player")
+
+[node name="RainParticleController" type="Node3D" parent="WeatherManager" node_paths=PackedStringArray("player_node")]
+script = ExtResource("19_rain_ctrl")
+player_node = NodePath("../../Player")
+
+[node name="LightningController" type="Node3D" parent="WeatherManager" node_paths=PackedStringArray("player_node", "sun_light", "world_environment")]
+script = ExtResource("20_lightning_ctrl")
+player_node = NodePath("../../Player")
+sun_light = NodePath("../../DirectionalLight3D")
+world_environment = NodePath("../../WorldEnvironment")
+
+[node name="LandmarkManager" type="Node3D" parent="." node_paths=PackedStringArray("player_node")]
+script = ExtResource("9_landmark_mgr")
+player_node = NodePath("../Player")
+
+[node name="BuildingRoadManager" type="Node3D" parent="." node_paths=PackedStringArray("terrain_manager", "player_node")]
+script = ExtResource("12_bldg_mgr")
+terrain_manager = NodePath("../TerrainManager")
+player_node = NodePath("../Player")
+
+[node name="CoastlineWaterwayManager" type="Node3D" parent="."]
+script = ExtResource("13_coast_mgr")

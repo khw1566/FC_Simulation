@@ -1,0 +1,42 @@
+{
+  "collected_date": "2026-09-30",
+  "description": "공식 문서 응답 본문을 UTF-8로 저장. 해시는 보관 파일 기준이며 HTTP 원시 바이트 기준이 아님.",
+  "sources": [
+    {
+      "url": "https://www.vworld.kr/dev/v4apiRefer.do",
+      "http_status": 200,
+      "file": "api_reference.html",
+      "sha256": "5ac69eae2b961116e0e8261e46559b382c642080d0df2a22ff2da95c70ed46cc",
+      "size_bytes": 32579,
+      "encoding": "UTF-8",
+      "saved_at": "2026-09-30T14:31:28.4931457+09:00"
+    },
+    {
+      "url": "https://www.vworld.kr/dev/v4dv_2ddataguide2_s001.do",
+      "http_status": 200,
+      "file": "data_api_list.html",
+      "sha256": "81fc2437425a02d01f69f6b206f1401a49e93ad2efa5ea6a5858c072e1c67f64",
+      "size_bytes": 34683,
+      "encoding": "UTF-8",
+      "saved_at": "2026-09-30T14:32:11.3324612+09:00"
+    },
+    {
+      "url": "https://www.vworld.kr/dev/v4dv_2ddataguide2_s002.do?svcIde=spbd&apiVer=2",
+      "http_status": 200,
+      "file": "building_api_detail.html",
+      "sha256": "612f00e83282266b4e5776d15d783ef2b6aab260b382aa24e1cb954f3ae2b327",
+      "size_bytes": 44249,
+      "encoding": "UTF-8",
+      "saved_at": "2026-09-30T14:48:14.7057490+09:00"
+    },
+    {
+      "url": "https://www.vworld.kr/dtna/dtna_apiSvcList_s001.do",
+      "http_status": 200,
+      "file": "national_priority_api_list.html",
+      "sha256": "b256aae6d66f62b03cb0db592a6558db62ca33cd4ad3dd7c5f639d9f6ad38139",
+      "size_bytes": 35192,
+      "encoding": "UTF-8",
+      "saved_at": "2026-09-30T14:32:11.9382727+09:00"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "resolution": 5632,
+  "meters_per_pixel": 14.207068016338129,
+  "sea_pixels": 10519977,
+  "max_raise_m": 1.8796294927597046,
+  "max_lower_m": -55.209232330322266,
+  "land_blend_m": 150,
+  "coast_target_m": 0,
+  "features": {
+    "coastline": 83,
+    "river": 1990,
+    "lake": 1742
+  },
+  "river_width_note": "OSM width 없는 중심선은 river 25m, stream/canal 6m 추정",
+  "marine_depth_note": "해저 -20m까지 시각화용 경사, 실측 수심 아님"
+}

@@ -1,0 +1,16 @@
+{
+  "failures": [],
+  "maps": {
+    "kanmon_straits": {
+      "airports": 2,
+      "fps": 60,
+      "load_seconds": 49.318
+    },
+    "kyushu_wide": {
+      "airports": 2,
+      "fps": 60,
+      "load_seconds": 49.07
+    }
+  },
+  "passed": true
+}

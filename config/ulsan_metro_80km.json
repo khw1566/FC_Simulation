@@ -1,0 +1,48 @@
+{
+  "region_name": "ulsan_metro_80km",
+  "display_name": "Ulsan Metropolitan 80km",
+  "name_ko": "울산광역시 광역권 (80km x 80km)",
+  "center": {
+    "lat": 35.5445,
+    "lon": 129.2555
+  },
+  "area_km": 80,
+  "world_size_meters": 80000,
+  "bbox": {
+    "south": 35.1841,
+    "north": 35.9049,
+    "west": 128.81256666666667,
+    "east": 129.69843333333336
+  },
+  "core_60km_bbox": {
+    "south": 35.2742,
+    "north": 35.8148,
+    "west": 128.9233,
+    "east": 129.5877
+  },
+  "dem": {
+    "dataset": "COP30",
+    "output_format": "GTiff"
+  },
+  "resolution": {
+    "target_width": 5632,
+    "target_height": 5632
+  },
+  "elevation_range": {
+    "min_meters": -30,
+    "max_meters": 1300
+  },
+  "quota_limits": {
+    "max_cell_area_km2": 2.0,
+    "cell_step_deg": 0.014,
+    "page_size": 1000
+  },
+  "vworld_request": {
+    "domain": "없습니다",
+    "reference": "https://www.vworld.kr/dev/v4dv_2ddataguide2_s002.do?svcIde=spbd&apiVer=2"
+  },
+  "terrain_sources": [
+    "ulsan_metro_60km",
+    "southeast_mega_140km"
+  ]
+}

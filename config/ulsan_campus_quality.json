@@ -1,0 +1,27 @@
+{
+  "map_id": "ulsan_uc_west",
+  "campuses": [
+    "울산대학교",
+    "울산과학대학교 서부캠퍼스"
+  ],
+  "status": "imagery_guided_artistic_draft",
+  "terrain_target_spacing_m": 0.5,
+  "near_building_target_spacing_m": 0.25,
+  "orthophoto_target_spacing_m": 0.1,
+  "boundary_blend_width_m": 20.0,
+  "source_requirements": {
+    "terrain": "좌표계와 수직 기준이 명시된 지면 DEM 또는 분류된 LiDAR",
+    "sites": "건물 윤곽과 별개인 부지 경계, 출입구 기준 고도, 옹벽 및 계단",
+    "buildings": "층수, 실측 높이, 지붕 형태와 입면 자료",
+    "surface": "사용 권한이 확인된 정사영상 또는 현장 사진"
+  },
+  "acceptance": {
+    "upsampling_is_not_survey_detail": true,
+    "building_footprint_is_not_site_boundary": true,
+    "unknown_vertical_datum_blocks_terrain_replacement": false,
+    "preserve_original_assets_until_validated": true
+  },
+  "mode": "visual_quality_prioritized_over_measured_accuracy",
+  "actual_native_imagery_spacing_approx_m": 0.97,
+  "target_spacings_are_future_goals_not_achieved_accuracy": true
+}

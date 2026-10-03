@@ -1,0 +1,72 @@
+[
+  {
+    "id": "shimonoseki_port",
+    "name_ko": "시모노세키 항만 구역",
+    "name_en": "Shimonoseki Port District",
+    "prefecture": "야마구치현",
+    "city": "시모노세키시",
+    "landmarks": ["간몬 터널(인도/철도)", "카라토 시장", "시모노세키 여객터미널"],
+    "world_bounds": {
+      "min_x": -9000.0,
+      "max_x": 0.0,
+      "min_z": -9000.0,
+      "max_z": -1500.0
+    }
+  },
+  {
+    "id": "hinoyama_park",
+    "name_ko": "히노야마 산악 공원 구역",
+    "name_en": "Hinoyama Mountain District",
+    "prefecture": "야마구치현",
+    "city": "시모노세키시",
+    "landmarks": ["히노야마 전망대", "간몬교 시모노세키 주탑", "단노우라 옛 전쟁터"],
+    "world_bounds": {
+      "min_x": 0.0,
+      "max_x": 9000.0,
+      "min_z": -9000.0,
+      "max_z": -1500.0
+    }
+  },
+  {
+    "id": "kanmon_strait_channel",
+    "name_ko": "간몬 해협 주항로 구역",
+    "name_en": "Kanmon Straits Main Channel",
+    "prefecture": "국토교통성 해상교통관제",
+    "city": "간몬 해로",
+    "landmarks": ["간몬교(현수교)", "간몬 국도 터널 수저구간", "하야토모 세토 급류지대"],
+    "world_bounds": {
+      "min_x": -9000.0,
+      "max_x": 9000.0,
+      "min_z": -1500.0,
+      "max_z": 1500.0
+    }
+  },
+  {
+    "id": "moji_port_retro",
+    "name_ko": "모지코 레트로 지구",
+    "name_en": "Mojiko Retro District",
+    "prefecture": "후쿠오카현",
+    "city": "기타큐슈시 모지구",
+    "landmarks": ["모지코역(국가중요문화재)", "간몬교 모지 주탑", "메카리 신사"],
+    "world_bounds": {
+      "min_x": 1000.0,
+      "max_x": 9000.0,
+      "min_z": 1500.0,
+      "max_z": 9000.0
+    }
+  },
+  {
+    "id": "kokura_urban_center",
+    "name_ko": "고쿠라 도심 및 공업 구역",
+    "name_en": "Kokura Urban & Industrial District",
+    "prefecture": "후쿠오카현",
+    "city": "기타큐슈시 고쿠라키타구",
+    "landmarks": ["고쿠라성", "기타큐슈 신일본제철 연안", "아다치산"],
+    "world_bounds": {
+      "min_x": -9000.0,
+      "max_x": 1000.0,
+      "min_z": 1500.0,
+      "max_z": 9000.0
+    }
+  }
+]

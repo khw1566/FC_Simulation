@@ -1,0 +1,104 @@
+{
+  "assets": {
+    "generic_pedestrian_overpass": {
+      "file_path": "res://assets/generated/pedestrian_bridges/generic_pedestrian_overpass.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          1.5349999666214,
+          7.43499946594238,
+          26.2000007629395
+        ],
+        "aabb_min_m": [
+          -1.5349999666214,
+          -0.11883449554443,
+          -26.2000007629395
+        ],
+        "accuracy": "특정 실물에 대응하지 않는 게임용 범용 모델. 길이는 중앙 경간 기준이며 계단 포함 길이는 49.6m.",
+        "bbox": null,
+        "deck_height_m": 6.2,
+        "elevation_max": 7.43499946594238,
+        "elevation_min": -0.11883449554443,
+        "label_ko": "범용 보행 육교",
+        "length_m": 28,
+        "placement_status": "asset_only",
+        "resolution": null,
+        "source_urls": [],
+        "triangles": 6132,
+        "width_m": 3
+      },
+      "sha256": "c198264f56106b74c4c08ec2e0744d3b27291cd5f89a16e85f51c644353a5586",
+      "size_bytes": 418749,
+      "type": "bridge_model"
+    },
+    "gulhwa_daun_crossing": {
+      "file_path": "res://assets/generated/pedestrian_bridges/gulhwa_daun_crossing.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          1.29999995231628,
+          0.649999976158142,
+          51.5
+        ],
+        "aabb_min_m": [
+          -1.29999995231628,
+          -0.35500001907349,
+          -51.5
+        ],
+        "accuracy": "2023년 보도 길이·폭 기반 근사. 하부 구조 및 높이는 제작 가정이며 현재 상태를 재현한 측량 모델이 아님.",
+        "bbox": null,
+        "deck_height_m": 0.65,
+        "elevation_max": 0.649999976158142,
+        "elevation_min": -0.35500001907349,
+        "label_ko": "굴화리–다운동 도보 징검다리",
+        "length_m": 100,
+        "placement_status": "asset_only",
+        "resolution": null,
+        "source_urls": [
+          "https://www.iusm.co.kr/news/articleView.html?idxno=1027634"
+        ],
+        "triangles": 1824,
+        "width_m": 1
+      },
+      "sha256": "ddb68a082580f88a92f4d661bb176a17aa3f0f857b849bf01bb634e34e4f4c02",
+      "size_bytes": 140606,
+      "type": "bridge_model"
+    },
+    "seonbawi_bridge": {
+      "file_path": "res://assets/generated/pedestrian_bridges/seonbawi_bridge.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          12.4499998092651,
+          13.0600004196167,
+          80.0325012207031
+        ],
+        "aabb_min_m": [
+          -12.4499998092651,
+          0,
+          -80.0325012207031
+        ],
+        "accuracy": "공개 제원 및 OSM 선형 길이에 맞춘 직선 근사. 교각 수·높이·차선 구성과 상세 부재는 제작 가정.",
+        "bbox": null,
+        "deck_height_m": 8,
+        "elevation_max": 13.0600004196167,
+        "elevation_min": 0,
+        "label_ko": "선바위교",
+        "length_m": 160,
+        "placement_status": "asset_only",
+        "resolution": null,
+        "source_urls": [
+          "https://krbridge.com/선바위교-울산광역시-울주군/",
+          "https://www.fnnews.com/news/202003261441461345",
+          "https://www.openstreetmap.org/way/153128115"
+        ],
+        "triangles": 12960,
+        "width_m": 24.9
+      },
+      "sha256": "1f03b339f166a57bf38354b5458431d267bb840872f8ace1e1358857566ad9ab",
+      "size_bytes": 811789,
+      "type": "bridge_model"
+    }
+  },
+  "version": 1
+}

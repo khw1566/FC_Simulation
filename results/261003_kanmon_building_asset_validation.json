@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "unique_ids": 321584,
+  "validated_batches": 5371,
+  "roads_unchanged": true,
+  "breakwaters_unchanged": true,
+  "bbox_valid": true,
+  "source_hashes": {
+    "kanmon_straits_buildings_20261003.json": "fa656e6c91bf2e19f72b41ec29f208ee69b6f10c67b28e852ce4a6baa5aec2d5",
+    "kanmon_gsi_buildings_20261003.json": "c6b115b3f170e7bcdfe75f3a82e3975f1d2a8c7b0b99d3e50a0956ef74c07f72"
+  },
+  "asset_sha256": "cb729d63f417efbdee7662a1a8bac5ea76b09826f4ee0568585c021a7bfdb837"
+}

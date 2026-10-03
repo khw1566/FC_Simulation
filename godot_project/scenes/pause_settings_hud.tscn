@@ -1,0 +1,342 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7m2x8n5v9q4a"]
+
+[ext_resource type="Script" path="res://scripts/views/pause_settings_view.gd" id="1_view"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_overlay"]
+bg_color = Color(0.04, 0.04, 0.04, 0.75)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_card"]
+bg_color = Color(0.08, 0.08, 0.08, 0.98)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.28, 0.28, 0.28, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn"]
+bg_color = Color(0.14, 0.14, 0.14, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.35, 0.35, 0.35, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tab_active"]
+bg_color = Color(0.22, 0.22, 0.22, 1)
+border_width_bottom = 2
+border_color = Color(0.9, 0.9, 0.9, 1)
+
+[node name="PauseSettingsHUD" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_view")
+
+[node name="DimOverlay" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_overlay")
+
+[node name="RootMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="MainLayout" type="CenterContainer" parent="RootMargin"]
+layout_mode = 2
+
+[node name="PausePanel" type="PanelContainer" parent="RootMargin/MainLayout"]
+custom_minimum_size = Vector2(440, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="Margin" type="MarginContainer" parent="RootMargin/MainLayout/PausePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 28
+
+[node name="VBox" type="VBoxContainer" parent="RootMargin/MainLayout/PausePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TitleLabel" type="Label" parent="RootMargin/MainLayout/PausePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 20
+text = "일시 정지 / 시스템 설정"
+horizontal_alignment = 1
+
+[node name="SubtitleLabel" type="Label" parent="RootMargin/MainLayout/PausePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_font_sizes/font_size = 12
+text = "시뮬레이션이 일시 중지되었습니다."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Buttons" type="VBoxContainer" parent="RootMargin/MainLayout/PausePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="BtnResume" type="Button" parent="RootMargin/MainLayout/PausePanel/Margin/VBox/Buttons"]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "계속하기 (Resume)"
+
+[node name="BtnSettings" type="Button" parent="RootMargin/MainLayout/PausePanel/Margin/VBox/Buttons"]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "환경 설정 (Settings)"
+
+[node name="BtnMainMenu" type="Button" parent="RootMargin/MainLayout/PausePanel/Margin/VBox/Buttons"]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "메인 화면 (Main Menu)"
+
+[node name="HintLabel" type="Label" parent="RootMargin/MainLayout/PausePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.45, 0.45, 0.45, 1)
+theme_override_font_sizes/font_size = 11
+text = "[Alt] 키를 누르는 동안 마우스 커서가 활성화됩니다."
+horizontal_alignment = 1
+
+[node name="SettingsPanel" type="PanelContainer" parent="RootMargin/MainLayout"]
+visible = false
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_card")
+
+[node name="Margin" type="MarginContainer" parent="RootMargin/MainLayout/SettingsPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="TitleLabel" type="Label" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 20
+text = "환경 설정"
+horizontal_alignment = 1
+
+[node name="TabHeader" type="HBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="BtnTabGeneral" type="Button" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/TabHeader"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "일반 / 컨트롤 (General)"
+
+[node name="BtnTabGraphics" type="Button" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/TabHeader"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "그래픽 / 성능 (Graphics)"
+
+[node name="GeneralContent" type="VBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="SensBox" type="VBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SensHBox" type="HBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/SensBox"]
+layout_mode = 2
+
+[node name="SensLabel" type="Label" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/SensBox/SensHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+text = "마우스 시야 감도"
+
+[node name="SensValLabel" type="Label" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/SensBox/SensHBox"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 13
+text = "0.003"
+horizontal_alignment = 2
+
+[node name="SensSlider" type="HSlider" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/SensBox"]
+layout_mode = 2
+min_value = 0.001
+max_value = 0.01
+step = 0.0005
+value = 0.003
+
+[node name="FlightVectorCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "비행 벡터 HUD (디버그 녹색 화살표)"
+
+[node name="WeatherCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "기후 시뮬레이션 시스템 (3D 구름/강우/낙뢰)"
+
+[node name="WeatherStateRow" type="HBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="WeatherStateLabel" type="Label" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/WeatherStateRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_font_sizes/font_size = 13
+text = "날씨 상태"
+
+[node name="WeatherStateOption" type="OptionButton" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/WeatherStateRow"]
+custom_minimum_size = Vector2(170, 32)
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+
+[node name="TimeBox" type="VBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="TimeHBox" type="HBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/TimeBox"]
+layout_mode = 2
+
+[node name="TimeLabel" type="Label" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/TimeBox/TimeHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+text = "시간대 변경 (00:00 ~ 24:00)"
+
+[node name="TimeValLabel" type="Label" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/TimeBox/TimeHBox"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 13
+text = "12:00"
+horizontal_alignment = 2
+
+[node name="TimeSlider" type="HSlider" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/TimeBox"]
+layout_mode = 2
+min_value = 0.0
+max_value = 24.0
+step = 0.1
+value = 12.0
+
+[node name="TimeProgressionCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "시간 자동 흐름 (태양 궤적 및 주야간 순환)"
+
+[node name="GraphicsContent" type="VBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox"]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="CloudQualityRow" type="HBoxContainer" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CloudQualityLabel" type="Label" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent/CloudQualityRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+text = "구름 렌더링 품질 (Cloud Quality)"
+
+[node name="CloudQualityOption" type="OptionButton" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent/CloudQualityRow"]
+custom_minimum_size = Vector2(170, 32)
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+
+[node name="BtnLaptopMode" type="Button" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent"]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "노트북 / 저사양 최적화 프리셋 적용 (Laptop Mode)"
+
+[node name="FpsCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent"]
+layout_mode = 2
+text = "FPS 및 프레임 시간 표시 [F3]"
+button_pressed = true
+
+[node name="MsaaCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "MSAA 안티앨리어싱 (2x)"
+
+[node name="FogCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "대기 안개 (Fog) 렌더링"
+
+[node name="ShadowCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GraphicsContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "실시간 태양 그림자"
+
+[node name="BtnBack" type="Button" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 14
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn")
+text = "돌아가기 (Back)"
+

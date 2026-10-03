@@ -1,0 +1,16 @@
+[
+  {
+    "id": "flat_district_center",
+    "name_ko": "평지 기준 테스트 구역",
+    "name_en": "Flat Proving Grounds",
+    "prefecture": "테스트",
+    "city": "시뮬레이션",
+    "landmarks": ["중앙 원점", "북측 마커", "동측 마커"],
+    "polygon": [
+      [-2500.0, -2500.0],
+      [2500.0, -2500.0],
+      [2500.0, 2500.0],
+      [-2500.0, 2500.0]
+    ]
+  }
+]

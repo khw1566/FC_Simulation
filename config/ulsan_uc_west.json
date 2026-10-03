@@ -1,0 +1,28 @@
+{
+  "region_name": "ulsan_uc_west",
+  "display_name": "Ulsan College West Campus 5km x 5km",
+  "name_ko": "울산과학대학교 서부캠퍼스 일대",
+  "center": {
+    "lat": 35.5445,
+    "lon": 129.2555
+  },
+  "area_km": 5.0,
+  "bbox": {
+    "south": 35.5220,
+    "north": 35.5670,
+    "west": 129.2279,
+    "east": 129.2831
+  },
+  "dem": {
+    "dataset": "COP30",
+    "output_format": "GTiff"
+  },
+  "resolution": {
+    "target_width": 2048,
+    "target_height": 2048
+  },
+  "elevation_range": {
+    "min_meters": -10.0,
+    "max_meters": 450.0
+  }
+}

@@ -1,0 +1,23 @@
+config_version=5
+
+[application]
+
+config/name="KanmonStraitsVirtualVR"
+run/main_scene="res://scenes/ui/map_selection_menu.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+UserSettingsService="*res://scripts/services/user_settings_service.gd"
+MapSelectionService="*res://scripts/services/map_selection_service.gd"
+LoadingManagerService="*res://scripts/services/loading_manager_service.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
+[rendering]
+
+anti_aliasing/quality/msaa_3d=2

@@ -1,0 +1,85 @@
+{
+  "indexed_at": "2026-09-22 14:13:50",
+  "map_id": "flat_testing",
+  "name_ko": "평지 성능 및 제어 테스팅 맵",
+  "name_en": "Flat Proving Grounds (Testing)",
+  "world_size_meters": 6000.0,
+  "min_elevation": -50.0,
+  "max_elevation": 750.0,
+  "sea_level": 0.0,
+  "bbox": {
+    "south": 34.98,
+    "north": 35.02,
+    "west": 127.98,
+    "east": 128.02
+  },
+  "assets": {
+    "buildings_and_roads.json": {
+      "category": "buildings_and_roads",
+      "file_name": "buildings_and_roads.json",
+      "extension": ".json",
+      "size_bytes": 619,
+      "sha256": "30db2c413d1e5a47a27a6e0bf46b78649b6ba50fc1af2fa1c726e6d914f732ae"
+    },
+    "flat_heightmap_16bit.png": {
+      "category": "heightmap",
+      "file_name": "flat_heightmap_16bit.png",
+      "extension": ".png",
+      "size_bytes": 1623,
+      "sha256": "d30e871898ccdf1789ff0a953696644c942d6e33b32f92ed54b2932ef3825c82"
+    },
+    "flat_splatmap_rgba.png": {
+      "category": "splatmap",
+      "file_name": "flat_splatmap_rgba.png",
+      "extension": ".png",
+      "size_bytes": 2199,
+      "sha256": "94237a1f276457dd6f93f56a0cf9a8b4e0d4453158b79a9b941a77f3bdc78f27"
+    },
+    "flat_vector_tactical_map.png": {
+      "category": "tactical_map",
+      "file_name": "flat_vector_tactical_map.png",
+      "extension": ".png",
+      "size_bytes": 2461,
+      "sha256": "bb2eef9311524f380fe2bb5e67a6a7d8f3acf78b074c44b002289474644f83e2"
+    },
+    "flat_watermask_8bit.png": {
+      "category": "watermask",
+      "file_name": "flat_watermask_8bit.png",
+      "extension": ".png",
+      "size_bytes": 334,
+      "sha256": "65795a5b91030a2a433dae510d1edf494082a9cfa1153cd94f3797759f68f257"
+    },
+    "landmarks.json": {
+      "category": "landmarks",
+      "file_name": "landmarks.json",
+      "extension": ".json",
+      "size_bytes": 556,
+      "sha256": "c45115c685ae8b1386ec580ce01514aaa4950fcab1ffdc2db8b45e1ef793a48f"
+    },
+    "real_districts.json": {
+      "category": "districts",
+      "file_name": "real_districts.json",
+      "extension": ".json",
+      "size_bytes": 388,
+      "sha256": "e0d778c550bdcea297ecf9b531a992e85173dc37c095192dd7ad95a8103cb85f"
+    },
+    "map_meta.json": {
+      "file_path": "res://assets/maps/flat_testing/map_meta.json",
+      "sha256": "1e3271d1335d3bcbd4b2f69835e38379806761f5617b04788d958e9f5da3dd51",
+      "size_bytes": 1270,
+      "bbox": {
+        "south": 34.98,
+        "north": 35.02,
+        "west": 127.98,
+        "east": 128.02
+      },
+      "elevation": {
+        "max_meters": 750.0,
+        "min_meters": -50.0
+      },
+      "resolution": {
+        "type": "map_metadata"
+      }
+    }
+  }
+}

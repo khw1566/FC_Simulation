@@ -1,0 +1,26 @@
+[
+  {
+    "id": "flat_center_hub",
+    "name_ko": "평지 테스트 중앙 원점 (0,0)",
+    "lat": 35.0000,
+    "lon": 128.0000,
+    "altitude_meters": 50.0,
+    "pole_height": 100.0
+  },
+  {
+    "id": "flat_north_beacon",
+    "name_ko": "북측 테스트 마커 (+2km)",
+    "lat": 35.0180,
+    "lon": 128.0000,
+    "altitude_meters": 50.0,
+    "pole_height": 80.0
+  },
+  {
+    "id": "flat_east_beacon",
+    "name_ko": "동측 테스트 마커 (+2km)",
+    "lat": 35.0000,
+    "lon": 128.0220,
+    "altitude_meters": 50.0,
+    "pole_height": 80.0
+  }
+]

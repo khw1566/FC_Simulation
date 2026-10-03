@@ -1,0 +1,14 @@
+{
+  "map_id": "ulsan_metro_80km",
+  "cache_files": 1620,
+  "input_unique_features": 428347,
+  "source_counts": {
+    "core_60km": 129215,
+    "outer_80km": 299132
+  },
+  "runtime_buildings": 428347,
+  "runtime_roads": 8878,
+  "sha256": "479858934e6ffc1f4ea5465ea44d29a663c373aea3329f81639c0b4ead29f7d5",
+  "size_bytes": 357124154,
+  "runtime_path": "res://assets/maps/ulsan_metro_80km/buildings_and_roads.json"
+}
