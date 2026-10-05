@@ -33,6 +33,8 @@ class PedestrianBridgeAssetPipeline:
                     target = stage / Path(relative).relative_to("godot_project")
                     target.parent.mkdir(parents=True, exist_ok=True)
                     shutil.copy2(root / relative, target)
+            (stage / "scripts/core").mkdir(exist_ok=True)
+            shutil.copy2(root / "godot_project/scripts/core/asset_marker_lighting.gd", stage / "scripts/core/asset_marker_lighting.gd")
             shutil.copy2(root / "godot_project/scripts/terrain/bridge_geometry.gd", stage / "scripts/terrain/bridge_geometry.gd")
             shutil.copy2(root / "config/pedestrian_bridge_assets.json", stage / "pedestrian_bridge_assets.json")
             shutil.copy2(root / "pipeline/processors/export_pedestrian_bridge_assets.gd", stage / "export.gd")
@@ -52,7 +54,9 @@ class PedestrianBridgeAssetPipeline:
             if len(manifest["assets"]) != 3:
                 raise RuntimeError("교량 3종 생성 확인 실패")
             for source in generated.iterdir():
-                shutil.copy2(source, output / source.name)
+                pending = output / (source.name + ".pending")
+                shutil.copy2(source, pending)
+                os.replace(pending, output / source.name)
             print(result.stdout.strip())
         manifest_path = output.parent / "manifest.json"
         master = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -61,7 +65,9 @@ class PedestrianBridgeAssetPipeline:
             if hashlib.sha256(data).hexdigest() != entry["sha256"]:
                 raise RuntimeError("교량 자산 해시 불일치: " + asset_id)
             master["assets"]["pedestrian_bridge_" + asset_id] = entry
-        manifest_path.write_text(json.dumps(master, ensure_ascii=False, indent=2), encoding="utf-8")
+        pending = manifest_path.with_suffix(".lighting.pending")
+        pending.write_text(json.dumps(master, ensure_ascii=False, indent=2), encoding="utf-8")
+        os.replace(pending, manifest_path)
         for relative in ["module_index.json", "godot_project/module_index.json"]:
             index_path = root / relative
             index = json.loads(index_path.read_text(encoding="utf-8"))

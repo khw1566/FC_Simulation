@@ -1,0 +1,8 @@
+{
+  "modules": [
+    {
+      "path": "verify.gd",
+      "responsibility": "양방향 객차 기울기, 접지 높이, 경사 경계 연속성 경량 확인"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "time_scale": 1.0,
+  "harbor_dwell_seconds": 90,
+  "offshore_dwell_seconds": 20,
+  "render_distance_m": 14000,
+  "note": "해수 마스크 기반 게임용 왕복 운항. 실제 AIS, 항로, 수심 또는 항만 접안 위치를 재현하는 데이터가 아님.",
+  "speeds_mps": {
+    "container_ship": 6.0,
+    "oil_tanker": 5.0,
+    "lpg_carrier": 6.0,
+    "tugboat": 2.5,
+    "fishing_boat": 3.0,
+    "motor_boat": 5.0
+  },
+  "harbors": [
+    {
+      "id": "ulsan_main",
+      "name_ko": "울산 본항 주변",
+      "lon": 129.389,
+      "lat": 35.5,
+      "offshore_lon": 129.455,
+      "offshore_lat": 35.48,
+      "types": [
+        "container_ship",
+        "oil_tanker",
+        "tugboat"
+      ]
+    },
+    {
+      "id": "onsan",
+      "name_ko": "온산항 주변",
+      "lon": 129.395,
+      "lat": 35.437,
+      "offshore_lon": 129.451,
+      "offshore_lat": 35.423,
+      "types": [
+        "lpg_carrier",
+        "oil_tanker",
+        "tugboat"
+      ]
+    },
+    {
+      "id": "bangeojin",
+      "name_ko": "방어진항 주변",
+      "lon": 129.421,
+      "lat": 35.482,
+      "offshore_lon": 129.45,
+      "offshore_lat": 35.472,
+      "types": [
+        "fishing_boat",
+        "motor_boat"
+      ]
+    },
+    {
+      "id": "jinha",
+      "name_ko": "진하항 주변",
+      "lon": 129.35,
+      "lat": 35.385,
+      "offshore_lon": 129.39,
+      "offshore_lat": 35.367,
+      "types": [
+        "fishing_boat",
+        "motor_boat"
+      ]
+    },
+    {
+      "id": "moji",
+      "name_ko": "모지항 주변",
+      "lon": 130.958,
+      "lat": 33.949,
+      "offshore_lon": 130.93,
+      "offshore_lat": 33.953,
+      "types": [
+        "container_ship",
+        "lpg_carrier",
+        "tugboat",
+        "motor_boat"
+      ]
+    },
+    {
+      "id": "shimonoseki",
+      "name_ko": "시모노세키항 주변",
+      "lon": 130.938,
+      "lat": 33.951,
+      "offshore_lon": 130.918,
+      "offshore_lat": 33.943,
+      "types": [
+        "oil_tanker",
+        "tugboat",
+        "fishing_boat"
+      ]
+    }
+  ],
+  "sailing_copies_per_type": 3,
+  "moored_copies_per_type": 2,
+  "wake_enabled": true,
+  "wake_max_lifetime_seconds": 65
+}

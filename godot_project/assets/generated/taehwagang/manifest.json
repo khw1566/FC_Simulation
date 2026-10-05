@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "name_ko": "태화강역 및 역전 구역",
+  "basis_ko": "2021년 신축 역사의 고래 형상과 공개 환승시설 자료를 참고한 비실측 외관 모델. 선로 수, 치수, 주변 건물과 도로 배치는 제작용 근사이며 기존 OSM 선로에 정합하지 않음.",
+  "sources": [
+    "https://www.yna.co.kr/view/AKR20210312072500063",
+    "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1117824&page=275&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+    "https://ulsan.go.kr/u/metro/transfer/alimi/complete/view.ulsan?mId=001008008002002000&nttNo=102",
+    "https://www.council.ulsan.kr/minutes/assembly/bbs2/writtenQnaandview.do?NTT_ID=F90217C791A68804E06595EADCB6391C&flag=all&keyword=&listCnt=10&list_style=&page=10&schwrd="
+  ],
+  "assets": {
+    "station": {
+      "file_path": "res://assets/generated/taehwagang/station.glb",
+      "sha256": "7b622cbbbf8be6646eaf7d70590bb197edd46a175b5ded4c39ce291d6affb4bc",
+      "size_bytes": 135548,
+      "type": "station_district_model",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 26.05808960222799,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1836
+        },
+        "aabb_min_m": [
+          -59.0,
+          0.0,
+          -39.5
+        ],
+        "aabb_max_m": [
+          59.0,
+          26.05808960222799,
+          34.00524109043984
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "station_scene": {
+      "file_path": "res://assets/generated/taehwagang/station.tscn",
+      "sha256": "92a34ddde473927a374816543dcf4dbef8114af57ea942827660eec7bae085ae",
+      "size_bytes": 619,
+      "type": "packed_scene",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 26.05808960222799,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1836
+        },
+        "aabb_min_m": [
+          -59.0,
+          0.0,
+          -39.5
+        ],
+        "aabb_max_m": [
+          59.0,
+          26.05808960222799,
+          34.00524109043984
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "rail_yard": {
+      "file_path": "res://assets/generated/taehwagang/rail_yard.glb",
+      "sha256": "e4ef2fe56d8e79582317bb36853bdd55bbf324b511eaab03de4923ec36ea3b4b",
+      "size_bytes": 680972,
+      "type": "station_district_model",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 8.049143609346716,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 9396
+        },
+        "aabb_min_m": [
+          -55.06,
+          0.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          55.06,
+          8.049143609346716,
+          -22.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "rail_yard_scene": {
+      "file_path": "res://assets/generated/taehwagang/rail_yard.tscn",
+      "sha256": "54382373cb032e9710fe1600a7fe11a8a1058850bae19ee7543b8246b2a0f7c8",
+      "size_bytes": 406,
+      "type": "packed_scene",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 8.049143609346716,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 9396
+        },
+        "aabb_min_m": [
+          -55.06,
+          0.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          55.06,
+          8.049143609346716,
+          -22.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "forecourt": {
+      "file_path": "res://assets/generated/taehwagang/forecourt.glb",
+      "sha256": "046fa9e84a75e0c6f68e61adb6eb620231ce877ad117b097c48bb9bbb3a117c5",
+      "size_bytes": 267648,
+      "type": "station_district_model",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 10.3,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3656
+        },
+        "aabb_min_m": [
+          -147.0,
+          0.0,
+          22.0
+        ],
+        "aabb_max_m": [
+          229.0,
+          10.3,
+          176.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "forecourt_scene": {
+      "file_path": "res://assets/generated/taehwagang/forecourt.tscn",
+      "sha256": "e33b2d6be799b803aaf910aa363262903b08b0e173279de40a83592b303c4f57",
+      "size_bytes": 406,
+      "type": "packed_scene",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 10.3,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3656
+        },
+        "aabb_min_m": [
+          -147.0,
+          0.0,
+          22.0
+        ],
+        "aabb_max_m": [
+          229.0,
+          10.3,
+          176.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "district": {
+      "file_path": "res://assets/generated/taehwagang/district.glb",
+      "sha256": "1d94dc392307577fdaf73dc7c669042d910a15c87fadd1d761fa886c78c6cbb3",
+      "size_bytes": 555064,
+      "type": "station_district_model",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": -2.0,
+        "elevation_max": 22.099999999999998,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 7648
+        },
+        "aabb_min_m": [
+          -240.0,
+          -2.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          240.0,
+          22.099999999999998,
+          290.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "district_scene": {
+      "file_path": "res://assets/generated/taehwagang/district.tscn",
+      "sha256": "25b7e7973681afce3603f537e0bb1e9df7b31f301298887161f88285e2cad744",
+      "size_bytes": 404,
+      "type": "packed_scene",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": -2.0,
+        "elevation_max": 22.099999999999998,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 7648
+        },
+        "aabb_min_m": [
+          -240.0,
+          -2.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          240.0,
+          22.099999999999998,
+          290.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "taehwagang_complete": {
+      "file_path": "res://assets/generated/taehwagang/taehwagang_complete.glb",
+      "sha256": "c664eb40b49f0824933c5dc47f5e16a0016f3e992753b52517210cc204af8c2d",
+      "size_bytes": 1627456,
+      "type": "station_district_model",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": -2.0,
+        "elevation_max": 26.05808960222799,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 22536
+        },
+        "aabb_min_m": [
+          -240.0,
+          -2.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          240.0,
+          26.05808960222799,
+          290.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "taehwagang_complete_scene": {
+      "file_path": "res://assets/generated/taehwagang/taehwagang_complete.tscn",
+      "sha256": "6030a29772a878b252c738599a8959260e0c7f32f5fbf6cc464afff8cb436376",
+      "size_bytes": 643,
+      "type": "packed_scene",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": -2.0,
+        "elevation_max": 26.05808960222799,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 22536
+        },
+        "aabb_min_m": [
+          -240.0,
+          -2.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          240.0,
+          26.05808960222799,
+          290.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "district_preview": {
+      "file_path": "res://assets/generated/taehwagang/district_preview.png",
+      "sha256": "4489db4a1cdf1e34141f18692f893869b8088867fe009c81e137ac6e161a2b29",
+      "size_bytes": 70701,
+      "type": "preview_image",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": -2.0,
+        "elevation_max": 26.05808960222799,
+        "resolution": {
+          "width_px": 1600,
+          "height_px": 1050
+        },
+        "aabb_min_m": [
+          -240.0,
+          -2.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          240.0,
+          26.05808960222799,
+          290.0
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "station_preview": {
+      "file_path": "res://assets/generated/taehwagang/station_preview.png",
+      "sha256": "b93c2d80908870b019ddd6736ed1c7189e18c86f2aa82b5b61b8eea7253a9f1a",
+      "size_bytes": 62633,
+      "type": "preview_image",
+      "metadata": {
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 26.05808960222799,
+        "resolution": {
+          "width_px": 1600,
+          "height_px": 1050
+        },
+        "aabb_min_m": [
+          -59.0,
+          0.0,
+          -39.5
+        ],
+        "aabb_max_m": [
+          59.0,
+          26.05808960222799,
+          34.00524109043984
+        ],
+        "units": "meters",
+        "georeferenced": false,
+        "surveyed": false
+      }
+    }
+  }
+}

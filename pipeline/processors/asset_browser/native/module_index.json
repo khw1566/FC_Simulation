@@ -1,0 +1,7 @@
+{
+  "launcher": "PreviewLauncher.cs",
+  "watcher": "SourceWatcher.cs",
+  "mirror": "SourceMirror.cs",
+  "importer": "ResourceImporter.cs",
+  "atomic_json": "JsonStore.cs"
+}

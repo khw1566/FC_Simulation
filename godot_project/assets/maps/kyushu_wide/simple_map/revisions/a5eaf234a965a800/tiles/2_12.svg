@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="512.0 3072.0 256.0 256.0">
+<rect x="512.0" y="3072.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+<path d="M554.67,3317.33 L544.00,3317.33 L544.00,3328.00 L554.67,3328.00 L554.67,3317.33 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/><path d="M544.00,3328.00 L533.33,3328.00" fill="none" stroke="#9c8867" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+<path d="M512.00,3285.33 L512.00,3264.00" fill="none" stroke="#9c8867" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+</g>
+<g id="rivers">
+<path d="M669.35,3229.63 L670.09,3229.81 L672.13,3228.24 L673.87,3227.96 L678.94,3229.53 L692.67,3230.09 L700.43,3232.02 L703.38,3234.23 L706.33,3234.23 L718.49,3229.99 L734.90,3222.70 L746.06,3220.77 L764.96,3209.69 L767.09,3207.23 L768.00,3206.56" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M754.54,3314.01 L756.67,3311.06 L761.46,3301.54 L768.00,3286.56" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+<path d="M639.31,3124.49 L660.08,3096.01 L672.33,3081.33 L681.45,3072.66 L682.39,3072.00" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M684.83,3072.00 L677.47,3078.00 L669.11,3086.91 L658.08,3100.89" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M739.43,3072.00 L742.40,3075.08 L744.96,3076.54 L748.99,3077.30 L760.32,3077.84 L768.00,3079.87" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

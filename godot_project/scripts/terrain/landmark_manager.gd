@@ -11,11 +11,17 @@ func _ready() -> void:
 	load_and_spawn_landmarks()
 
 func load_and_spawn_landmarks() -> void:
+	for beacon in beacons:
+		remove_child(beacon)
+		beacon.queue_free()
+	beacons.clear()
 	var path: String = ""
+	var selected_map = null
 	var root = get_tree().root
 	if root.has_node("MapSelectionService"):
 		var svc = root.get_node("MapSelectionService")
 		if svc and svc.selected_map:
+			selected_map = svc.selected_map
 			path = svc.selected_map.landmarks_path
 			GeoConverter.configure_bounds(
 				svc.selected_map.bbox_south,
@@ -25,7 +31,10 @@ func load_and_spawn_landmarks() -> void:
 				svc.selected_map.world_size_meters
 			)
 
-	if path.is_empty() or not FileAccess.file_exists(path):
+	# 선택된 맵의 자료 누락은 태그 없음으로 처리한다.
+	if selected_map != null and (path.is_empty() or not FileAccess.file_exists(path)):
+		return
+	if selected_map == null and (path.is_empty() or not FileAccess.file_exists(path)):
 		var default_path := "res://assets/maps/kanmon_straits/landmarks.json"
 		if FileAccess.file_exists(default_path):
 			path = default_path
@@ -37,6 +46,8 @@ func load_and_spawn_landmarks() -> void:
 		return
 
 	var file := FileAccess.open(path, FileAccess.READ)
+	if file == null:
+		return
 	var json_res = JSON.parse_string(file.get_as_text())
 	if typeof(json_res) != TYPE_ARRAY:
 		return
@@ -46,6 +57,8 @@ func load_and_spawn_landmarks() -> void:
 		var name_ko: String = item.get("name_ko", "")
 		var lat: float = float(item.get("lat", 0.0))
 		var lon: float = float(item.get("lon", 0.0))
+		if selected_map != null and (lat < selected_map.bbox_south or lat > selected_map.bbox_north or lon < selected_map.bbox_west or lon > selected_map.bbox_east):
+			continue
 		var alt: float = float(item.get("altitude_meters", 0.0))
 		var pole_h: float = float(item.get("pole_height", 100.0))
 

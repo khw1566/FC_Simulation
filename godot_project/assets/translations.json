@@ -39,7 +39,8 @@
     "settings_time_of_day": "시간대 변경 (00:00 ~ 24:00)",
     "settings_time_progression": "시간 자동 흐름 (태양 궤적 및 주야간 순환)",
     "settings_back": "돌아가기 (Back)",
-    "alt_cursor_hint": "[Alt] 키를 누르는 동안 마우스 커서가 활성화됩니다."
+    "alt_cursor_hint": "[Alt] 키를 누르는 동안 마우스 커서가 활성화됩니다.",
+    "settings_vessels": "선박 배치 및 운항"
   },
   "en": {
     "ui_district_title": "CURRENT DISTRICT",
@@ -81,6 +82,7 @@
     "settings_time_of_day": "Time of Day (00:00 ~ 24:00)",
     "settings_time_progression": "Dynamic Time Flow (Sun Path & Day/Night Cycle)",
     "settings_back": "BACK",
-    "alt_cursor_hint": "Hold [Alt] to release cursor for HUD interaction."
+    "alt_cursor_hint": "Hold [Alt] to release cursor for HUD interaction.",
+    "settings_vessels": "Vessel placement and navigation"
   }
 }

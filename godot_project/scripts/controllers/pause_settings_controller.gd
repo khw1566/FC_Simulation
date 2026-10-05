@@ -3,6 +3,7 @@ class_name PauseSettingsController
 
 ## 일시 정지 메뉴 및 시스템 설정 관리 컨트롤러
 
+@export var user_settings_service: Node
 @export var pause_view: Control
 @export var player_node: CharacterBody3D
 @export var world_environment: WorldEnvironment
@@ -71,6 +72,8 @@ func _connect_view_signals() -> void:
 		pause_view.shadows_toggled.connect(_on_shadows_toggled)
 	if pause_view.has_signal("flight_vector_toggled"):
 		pause_view.flight_vector_toggled.connect(_on_flight_vector_toggled)
+	pause_view.vessels_toggled.connect(_on_vessels_toggled)
+	pause_view.industrial_zones_toggled.connect(_on_industrial_zones_toggled)
 	if pause_view.has_signal("weather_toggled"):
 		pause_view.weather_toggled.connect(_on_weather_toggled)
 	if pause_view.has_signal("weather_state_changed"):
@@ -90,7 +93,7 @@ func _connect_view_signals() -> void:
 func _apply_initial_view_state() -> void:
 	var root = get_tree().root
 	var lang: String = "ko"
-	var settings = root.get_node_or_null("UserSettingsService")
+	var settings = user_settings_service if user_settings_service else root.get_node_or_null("UserSettingsService")
 
 	if settings:
 		lang = settings.current_language
@@ -141,7 +144,8 @@ func _apply_initial_view_state() -> void:
 			day_night_service.call("set_time_progression", _time_progression)
 
 	if pause_view and pause_view.has_method("set_initial_settings"):
-		pause_view.set_initial_settings(sens, msaa, fog, shadow, _flight_vector_enabled, _weather_enabled, _weather_state, cloud_q, _time_hours, _time_progression)
+		pause_view.set_initial_settings(sens, msaa, fog, shadow, _flight_vector_enabled, _weather_enabled, _weather_state, cloud_q, _time_hours, _time_progression, settings.vessels_enabled if settings else true)
+		pause_view.industrial_zones_check.set_pressed_no_signal(settings.industrial_zones_enabled if settings else true)
 
 	if flight_vector_hud and flight_vector_hud.has_method("set_hud_visible"):
 		flight_vector_hud.set_hud_visible(_flight_vector_enabled)
@@ -350,3 +354,13 @@ func _on_service_time_changed(hours: float, _time_str: String) -> void:
 	_time_hours = hours
 	if pause_view and pause_view.has_method("update_time_display"):
 		pause_view.call("update_time_display", hours)
+
+func _on_vessels_toggled(value: bool) -> void:
+	var settings = user_settings_service if user_settings_service else get_node_or_null("/root/UserSettingsService")
+	if settings:
+		settings.set_vessels_enabled(value)
+
+func _on_industrial_zones_toggled(value: bool) -> void:
+	var settings = user_settings_service if user_settings_service else get_node_or_null("/root/UserSettingsService")
+	if settings:
+		settings.set_industrial_zones_enabled(value)

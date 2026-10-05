@@ -12,6 +12,7 @@ const HeritageManager = preload("res://scripts/terrain/heritage_landmark_manager
 const RailwayManager = preload("res://scripts/terrain/railway_world_manager.gd")
 
 var _heritage_manager: Node3D
+var _railway_manager: Node3D
 const VectorStream = preload("res://scripts/terrain/vector_data_stream.gd")
 var load_complete := false
 var load_error := ""
@@ -91,6 +92,7 @@ func _load_railways() -> void:
 		return
 	load_status = "울산 철도 및 운행 열차 구성"
 	var manager := RailwayManager.new()
+	_railway_manager = manager
 	manager.name = "UlsanRailways"
 	add_child(manager)
 	await manager.setup(service.selected_map, terrain_manager, player_node)
@@ -334,6 +336,8 @@ func _render_buildings_batched(buildings: Array) -> Node3D:
 		if _airport_manager != null and _airport_manager.replaces_building(cx, cz):
 			continue
 		if _heritage_manager != null and _heritage_manager.replaces_building(cx, cz):
+			continue
+		if _railway_manager != null and _railway_manager.landmarks != null and _railway_manager.landmarks.replaces_building(cx,cz):
 			continue
 		var coord := Vector2i(int(floor(cx / chunk_size)), int(floor(cz / chunk_size)))
 		if not chunks_data.has(coord):

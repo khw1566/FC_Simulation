@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="2048.0 3072.0 256.0 256.0">
+<rect x="2048.0" y="3072.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+<path d="M2058.67,3168.00 L2048.00,3168.00 L2048.00,3178.67 L2069.33,3178.67 L2069.33,3157.33 L2058.67,3157.33 L2058.67,3168.00 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+</g>
+<g id="rivers">
+<path d="M2048.00,3134.10 L2053.06,3132.77 L2065.84,3131.37 L2069.01,3129.07 L2072.79,3129.12 L2085.81,3125.92 L2090.25,3126.14 L2098.00,3129.29 L2099.16,3130.36 L2099.24,3131.28 L2096.01,3133.07 L2095.25,3134.47 L2100.34,3140.06" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2056.86,3083.90 L2062.55,3081.09 L2064.80,3081.49" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.00,3090.16 L2048.39,3090.01 L2050.13,3087.44" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.00,3087.29 L2048.38,3087.49" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2050.22,3087.44 L2050.42,3087.46" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.97,3087.41 L2050.22,3087.44" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.38,3087.49 L2048.97,3087.41" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2050.42,3087.46 L2050.90,3087.25" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2050.90,3087.25 L2053.40,3085.02" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2053.40,3085.02 L2054.69,3084.37" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2054.69,3084.37 L2056.86,3083.90" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2070.05,3082.94 L2071.54,3083.50" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2064.80,3081.49 L2066.34,3080.31 L2070.05,3082.94" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.00,3081.04 L2049.67,3081.82 L2051.81,3081.59 L2051.85,3083.99 L2054.14,3084.37" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2054.14,3084.37 L2054.30,3084.47" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+</g>
+<g id="railways">
+<path d="M2066.94,3072.26 L2065.05,3075.80 L2062.50,3078.64 L2048.59,3087.51" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.51,3087.45 L2062.68,3078.31 L2064.95,3075.67 L2066.79,3072.22" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.00,3087.96 L2048.51,3087.45" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2048.59,3087.51 L2048.00,3088.17" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2066.79,3072.22 L2066.87,3072.00" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M2067.03,3072.00 L2066.94,3072.26" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

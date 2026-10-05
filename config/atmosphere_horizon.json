@@ -1,0 +1,21 @@
+{
+  "density_scale_height_m": 8000,
+  "aerosol_scale_height_m": 1200,
+  "earth_radius_m": 6371000,
+  "atmosphere_top_m": 100000,
+  "horizon_extension_m": 900000,
+  "edge_segments": 256,
+  "radial_rings": 256,
+  "atlas_resolution": 513,
+  "note": "실제 광역 DEM 원경: Web Mercator 표본, 지구 곡률, 상세 지형 경계 연결. 충돌·도로·건물은 원경에 생성하지 않음.",
+  "regional_resolution": 4096,
+  "regional_zoom": 8,
+  "regional_bbox": {
+    "west": 118,
+    "east": 143,
+    "south": 24,
+    "north": 45
+  },
+  "curvature_start_m": 12000,
+  "seam_blend_m": 6000
+}

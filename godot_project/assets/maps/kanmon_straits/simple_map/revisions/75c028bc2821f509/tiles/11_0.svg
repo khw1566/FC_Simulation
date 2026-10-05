@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="2816.0 0.0 256.0 256.0">
+<rect x="2816.0" y="0.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+<path d="M3072.00,10.67 L3061.33,10.67 L3061.33,5.33 L3045.33,5.33 L3045.33,16.00 L3066.67,16.00 L3066.67,21.33 L3072.00,21.33 L3072.00,16.00 L3072.00,10.67 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/><path d="M3072.00,122.67 L3066.67,122.67 L3066.67,117.33 L3056.00,117.33 L3056.00,122.67 L3050.67,122.67 L3050.67,128.00 L3045.33,128.00 L3045.33,133.33 L3040.00,133.33 L3040.00,138.67 L3034.67,138.67 L3034.67,144.00 L3029.33,144.00 L3029.33,149.33 L3024.00,149.33 L3024.00,154.67 L3018.67,154.67 L3018.67,160.00 L3013.33,160.00 L3013.33,176.00 L3018.67,176.00 L3018.67,181.33 L3024.00,181.33 L3024.00,192.00 L3029.33,192.00 L3029.33,197.33 L3034.67,197.33 L3034.67,202.67 L3040.00,202.67 L3040.00,208.00 L3045.33,208.00 L3045.33,213.33 L3050.67,213.33 L3050.67,218.67 L3056.00,218.67 L3056.00,224.00 L3066.67,224.00 L3066.67,218.67 L3072.00,218.67 L3072.00,213.33 L3072.00,128.00 L3072.00,122.67 Z M3061.33,197.33 L3066.67,197.33 L3066.67,208.00 L3061.33,208.00 L3061.33,197.33 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/><path d="M3061.33,234.67 L3061.33,240.00 L3050.67,240.00 L3050.67,234.67 L3045.33,234.67 L3045.33,240.00 L3029.33,240.00 L3029.33,245.33 L3024.00,245.33 L3024.00,256.00 L3072.00,256.00 L3072.00,234.67 L3061.33,234.67 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/><path d="M3072.00,229.33 L3072.00,234.67" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/><path d="M3024.00,256.00 L3013.33,256.00" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M3045.33,0.00 L3018.67,0.00 L3018.67,5.33 L3029.33,5.33 L3029.33,10.67 L3034.67,10.67 L3034.67,5.33 L3045.33,5.33 L3045.33,0.00 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/>
+<path d="M2965.33,256.00 L2960.00,256.00" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="mountains">
+</g>
+<g id="rivers">
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+</g>
+<g id="railways">
+<path d="M2875.65,256.00 L3005.25,0.98" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M3005.85,1.15 L2875.93,256.00" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="coastline">
+<path d="M3016.25,256.00 L3028.87,244.27 L3043.19,235.55 L3047.22,233.96 L3049.28,233.70 L3054.51,243.53 L3068.37,236.32 L3067.52,234.78 L3070.95,233.21 L3070.63,232.52 L3072.00,231.74" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

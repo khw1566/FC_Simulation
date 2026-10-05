@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "map_ids": [
+    "ulsan_metro_80km",
+    "southeast_mega_140km",
+    "ulsan_uc_west"
+  ],
+  "attribution": "OpenStreetMap contributors / ODbL",
+  "placements": [
+    {
+      "id": "seonbawi_bridge",
+      "name_ko": "선바위교",
+      "scene_path": "res://assets/generated/pedestrian_bridges/seonbawi_bridge.scn",
+      "markers": [
+        "RoadA",
+        "RoadB"
+      ],
+      "osm_ids": [
+        153128115
+      ],
+      "geometry": [
+        {
+          "lat": 35.5780551,
+          "lon": 129.2362271
+        },
+        {
+          "lat": 35.5780905,
+          "lon": 129.2344639
+        }
+      ],
+      "approaches": [
+        [
+          {
+            "lon": 129.23666895500233,
+            "lat": 35.57804622881858
+          },
+          {
+            "lat": 35.5780551,
+            "lon": 129.2362271
+          }
+        ],
+        [
+          {
+            "lat": 35.5780905,
+            "lon": 129.2344639
+          },
+          {
+            "lon": 129.2340220449977,
+            "lat": 35.57809937118142
+          }
+        ]
+      ],
+      "approach_width_m": 24.9,
+      "width_m": 24.9,
+      "clearance_m": 0.12,
+      "accuracy": "OSM 선바위교 양끝에 원본 에셋의 배치 기준점을 정렬. 직선 모델의 길이와 표고를 DEM에 맞추며 양안에 40m 지형 접속 램프를 추가."
+    },
+    {
+      "id": "gulhwa_daun_crossing",
+      "name_ko": "굴화리–다운동 도보 징검다리",
+      "scene_path": "res://assets/generated/pedestrian_bridges/gulhwa_daun_crossing.scn",
+      "markers": [
+        "BankA",
+        "BankB"
+      ],
+      "osm_ids": [
+        472077914
+      ],
+      "geometry": [
+        {
+          "lon": 129.26419,
+          "lat": 35.5580053
+        },
+        {
+          "lon": 129.2655512,
+          "lat": 35.5590942
+        }
+      ],
+      "approaches": [
+        [
+          {
+            "lon": 129.2639359,
+            "lat": 35.5576815
+          },
+          {
+            "lon": 129.2639081,
+            "lat": 35.5577599
+          },
+          {
+            "lon": 129.2640093,
+            "lat": 35.557848
+          },
+          {
+            "lon": 129.2641634,
+            "lat": 35.5579818
+          },
+          {
+            "lon": 129.26419,
+            "lat": 35.5580053
+          }
+        ],
+        [
+          {
+            "lon": 129.2655512,
+            "lat": 35.5590942
+          },
+          {
+            "lon": 129.2656999,
+            "lat": 35.5593591
+          }
+        ]
+      ],
+      "approach_width_m": 1.0,
+      "width_m": 1.0,
+      "clearance_m": 0.2,
+      "accuracy": "기사의 다운동–굴화 연결 위치와 OSM 보행로 472077914를 대조한 근사 배치. 중앙 직선 횡단 구간에 길이를 맞추며 양안 진입로를 유지. 원본 tunnel=yes 태그 대신 지상 저상 보행교로 표현."
+    }
+  ],
+  "unplaced_assets": [
+    {
+      "id": "generic_pedestrian_overpass",
+      "reason": "사용자 요청: 범용 육교는 보관만 함"
+    }
+  ]
+}

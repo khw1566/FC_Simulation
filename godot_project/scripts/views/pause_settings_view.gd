@@ -14,6 +14,8 @@ signal fps_toggled(enabled: bool)
 signal fog_toggled(enabled: bool)
 signal shadows_toggled(enabled: bool)
 signal flight_vector_toggled(enabled: bool)
+signal vessels_toggled(enabled: bool)
+signal industrial_zones_toggled(enabled: bool)
 signal weather_toggled(enabled: bool)
 signal weather_state_changed(state_index: int)
 signal cloud_quality_changed(quality_index: int)
@@ -44,6 +46,8 @@ signal time_progression_toggled(enabled: bool)
 @onready var sens_slider: HSlider = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/SensBox/SensSlider
 @onready var sens_val_label: Label = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/SensBox/SensHBox/SensValLabel
 @onready var flight_vector_check: CheckBox = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/FlightVectorCheck
+@onready var vessels_check: CheckBox = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/VesselsCheck
+@onready var industrial_zones_check: CheckBox = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/IndustrialZonesCheck
 @onready var weather_check: CheckBox = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/WeatherCheck
 @onready var weather_state_label: Label = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/WeatherStateRow/WeatherStateLabel
 @onready var weather_state_option: OptionButton = $RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent/WeatherStateRow/WeatherStateOption
@@ -128,6 +132,8 @@ func _init_button_events() -> void:
 		)
 	if flight_vector_check:
 		flight_vector_check.toggled.connect(func(b: bool): flight_vector_toggled.emit(b))
+	vessels_check.toggled.connect(func(value: bool): vessels_toggled.emit(value))
+	industrial_zones_check.toggled.connect(func(value: bool): industrial_zones_toggled.emit(value))
 	if weather_check:
 		weather_check.toggled.connect(func(b: bool):
 			weather_toggled.emit(b)
@@ -206,6 +212,8 @@ func update_localization(dict: Dictionary) -> void:
 		sens_label.text = dict["settings_mouse_sens"]
 	if flight_vector_check and dict.has("settings_flight_vector"):
 		flight_vector_check.text = dict["settings_flight_vector"]
+	if dict.has("settings_vessels"):
+		vessels_check.text = dict["settings_vessels"]
 	if weather_check and dict.has("settings_weather"):
 		weather_check.text = dict["settings_weather"]
 	if weather_state_label and dict.has("settings_weather_state"):
@@ -242,7 +250,8 @@ func update_time_display(hours: float) -> void:
 		var mins := total_minutes % 60
 		time_val_label.text = "%02d:%02d" % [hrs, mins]
 
-func set_initial_settings(sens: float, msaa: bool, fog: bool, shadow: bool, flight_vector: bool = true, weather: bool = true, weather_state: int = 1, cloud_quality: int = 1, time_hours: float = 12.0, time_progression: bool = true) -> void:
+func set_initial_settings(sens: float, msaa: bool, fog: bool, shadow: bool, flight_vector: bool = true, weather: bool = true, weather_state: int = 1, cloud_quality: int = 1, time_hours: float = 12.0, time_progression: bool = true, vessels: bool = true) -> void:
+	vessels_check.set_pressed_no_signal(vessels)
 	if sens_slider:
 		sens_slider.set_value_no_signal(sens)
 	if sens_val_label:

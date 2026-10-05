@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "track_marker_spacing_m": 120.0,
+  "track_marker_min_pixels": 2.0,
+  "track_marker_diameter_m": 0.45,
+  "track_light_spacing_m": 300.0,
+  "track_light_range_m": 6.0,
+  "track_light_fade_begin_m": 60.0,
+  "track_light_fade_end_m": 110.0,
+  "train_marker_visibility_m": 6000.0,
+  "train_headlight_min_pixels": 7.0,
+  "train_cabin_min_pixels": 4.0,
+  "train_headlight_range_m": 110.0,
+  "train_headlight_fade_begin_m": 180.0,
+  "train_headlight_fade_end_m": 320.0,
+  "window_emission_energy": 0.75,
+  "note_ko": "게임용 야간 식별 표시. 광원은 거리 페이드로 제한하며 발광 표시는 낮에도 유지한다. 원거리 최소 픽셀 크기는 고정 시각 보조이며 실제 철도 설비 배치를 의미하지 않는다.",
+  "track_light_energy": 0.35,
+  "track_marker_opacity": 0.6
+}

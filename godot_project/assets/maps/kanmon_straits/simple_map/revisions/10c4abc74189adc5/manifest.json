@@ -1,0 +1,6367 @@
+{
+  "version": 1,
+  "assets": {
+    "simple_maps/kanmon_straits/10c4abc74189adc5/map.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/map.svg",
+      "sha256": "50f85ee210b4729e168e4baeee5bb14ffe69b56fc91336c51a1b2bbd97307698",
+      "size_bytes": 589064,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/buildings.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/buildings.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/buildings.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/buildings.svg",
+      "sha256": "92cfa96c729fa94fb0fd9eb345132a8cdb526f8b86d0b10f795f2bfc068ff68a",
+      "size_bytes": 188,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/coastline.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/coastline.png",
+      "sha256": "023b2a8f47bb2eb4c65f85710a22c466328249c48cb44da8f0ad7a3d0af12fba",
+      "size_bytes": 11635,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/coastline.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/coastline.svg",
+      "sha256": "9d4bc154dd7311d69f3bb19213721a682958136afc14454838c37f361d86ae7f",
+      "size_bytes": 82484,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/harbors.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/harbors.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/harbors.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/harbors.svg",
+      "sha256": "6137b03cf9314d92192830d07eb812c86511180136114ea20d12c9002bd783f0",
+      "size_bytes": 186,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/lakes.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/lakes.png",
+      "sha256": "eed3a2f674057f26cb8a1af66438933afd0a6a9e46614d2cd8cb809bd8886ea6",
+      "size_bytes": 1316,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/lakes.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/lakes.svg",
+      "sha256": "d896e5e9daf3089d7b834f911cf3f91a6b2664312c4a971a7daef67ca3f6ec26",
+      "size_bytes": 3410,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/mountains.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/mountains.png",
+      "sha256": "6b81652c6a8e2a0ec2da99832eb4447f3bca4cf34c5fe2a90effcac9508795ca",
+      "size_bytes": 4734,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/mountains.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/mountains.svg",
+      "sha256": "2275de6f0c5a160db65dcb008952cd5d52fc75799b2b24e425d4d1922cf346db",
+      "size_bytes": 24592,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/railways.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/railways.png",
+      "sha256": "9b29ab7d3fdee384b1dab0fce0610a3bf98ecf378f0270c64631f2946ad57db1",
+      "size_bytes": 7294,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/railways.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/railways.svg",
+      "sha256": "a25bfa572cd05965776333fd97b1964d8a0717edf86c6e45b55218ecba4e33fb",
+      "size_bytes": 164685,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/rivers.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/rivers.png",
+      "sha256": "c127d03c598abd0c2700fff3507434bb5c57d2070cd3a3575fcfe62f0ae00d2d",
+      "size_bytes": 8391,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/rivers.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/rivers.svg",
+      "sha256": "9e8836f92b730e349660a4bc1156353784e6843e5773ef0dd0f4acc9059d0937",
+      "size_bytes": 88786,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/roads.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/roads.png",
+      "sha256": "023b29e4d82c6949523b1246c583e396c2567b28efcc65229287ae06ae6ce164",
+      "size_bytes": 12176,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/roads.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/roads.svg",
+      "sha256": "0c384dbe972f3555a135889c6c35b138b412e7f16f2cf55deff5f7f4d6f1e16d",
+      "size_bytes": 218925,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/sea.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/sea.png",
+      "sha256": "5784958bbc70191be8852e21ed7385cba4caa5c26873331463c9b6fedb594dc3",
+      "size_bytes": 1608,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/sea.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/sea.svg",
+      "sha256": "c100cfdd820e3d8d14d1b1b09e90560b91a986f4f36e17ae5b23311b386f6c6f",
+      "size_bytes": 7072,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/shipping_routes.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/shipping_routes.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/masks/shipping_routes.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/masks/shipping_routes.svg",
+      "sha256": "ba042d1424c6b8eea381ee9e075663f6ebf1b2e07854f3657c54aa32932a8481",
+      "size_bytes": 194,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/preview.png": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/preview.png",
+      "sha256": "fecaadca38a196499be5a0bee9ce4c4d34c5cb540a2eac08d821779ecc0de96f",
+      "size_bytes": 44123,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_0.svg",
+      "sha256": "9117c81142eb3e1b6015fdaab58c052bb2d0d3af2aa55e4f4a952ddce8a41ce2",
+      "size_bytes": 418,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_1.svg",
+      "sha256": "16d704bd6bb7af92072d8316289ee9b321406d23859568de78720603e2a4ebfc",
+      "size_bytes": 422,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_10.svg",
+      "sha256": "0f0588ef98784b71667b70985dc60121db118c0bf71a9f2a68d75ab56cded71a",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_11.svg",
+      "sha256": "d4c5aca30b8d6240a00681da38ef47bd8b590dfaef6f2d02b694ded22dc6b626",
+      "size_bytes": 730,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_12.svg",
+      "sha256": "37b4297174ceaf2e71bc734ecf8b6abdf73dd823f302e35b3e82906d4c39ae0f",
+      "size_bytes": 1190,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_13.svg",
+      "sha256": "4ecc6e12913dcdb51d5ed4b0347b60b405fcc8e46d1c5075929b742473fa7cf7",
+      "size_bytes": 1053,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_14.svg",
+      "sha256": "1b1d4175c60889bbb8fc66281c18e3f08f415d6a0ab1ea9d290a172abbf264f2",
+      "size_bytes": 1818,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_15.svg",
+      "sha256": "23dbc7b30af76ce720f0177895780c468d2422a5404905090c49248f41abc366",
+      "size_bytes": 1145,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_2.svg",
+      "sha256": "7373b4ac8391e8aa2cce2c6bf262ebc2ab8eb7d3388181dbb38707d10d3297ed",
+      "size_bytes": 422,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_3.svg",
+      "sha256": "64d8b801da2c655a80e96652b593c4e6ef5375d71faa2b5eaae5fea5f44fb2ca",
+      "size_bytes": 422,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_4.svg",
+      "sha256": "e898e30532ccd5857d644b261d369003dc5d927de9f64c1460ce847d5951da6f",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_5.svg",
+      "sha256": "2deb17d8c5771736f293cf7dda7129eb55ba1bd3e7c0bce5656de29874f880d0",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_6.svg",
+      "sha256": "2c9a2780df7dd1462ae89f2203c9980e04dbbd52739756166a6c7d375e5d079d",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_7.svg",
+      "sha256": "5d979010c4a99b6fbce652ae3fc4b019529361f5b3a04caba902a619b0d0e3a5",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_8.svg",
+      "sha256": "e8a8cdfb33d0df37d5aeee372a461ab8539cb2f034f234344feb42a57e8aea00",
+      "size_bytes": 561,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/0_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/0_9.svg",
+      "sha256": "76c8dbf3f69ee6eed423e541cbfd18eaba2840b9c135d4918096df7b4e103da6",
+      "size_bytes": 566,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_0.svg",
+      "sha256": "bc80e4e43a3cc767003f4f05592aa34c411e96fcfacb8ec609802f9c3413ed66",
+      "size_bytes": 1671,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_1.svg",
+      "sha256": "e57be62dc6f7ef112479b098734c89ea5a3dea5a90529e8218f641bcd3aced22",
+      "size_bytes": 3031,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_10.svg",
+      "sha256": "33b335ac741770bd0854b80bfdd5b2bf8fc27233a9ad7711ff642b1c205420f0",
+      "size_bytes": 3517,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_11.svg",
+      "sha256": "76629b5d284e9c3a08de880317009f7b4606e6ccb7bf7261239a2acc58eb41ab",
+      "size_bytes": 1129,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_12.svg",
+      "sha256": "e3b846d58a845ec9d6b690231611cfcf7c1a19777bfbe86dffdcef320161aae0",
+      "size_bytes": 704,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_13.svg",
+      "sha256": "28ee71a6f997148fac5e56a3aeefa8e8f1e0aed78fadc9ec46b571c8def46d19",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_14.svg",
+      "sha256": "16dfb6b3ffab4c8ce4ba974b1e26e17f3eb8a0b9aafd445f99f73d106fd93193",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_15.svg",
+      "sha256": "6c41bc48338e129107b853ec67ba1ccf26144d2d5f7803963f49e0d8a8d0b5bf",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_2.svg",
+      "sha256": "53a635107aa2e7cda1f82fbdfd538604169065543727a69dbe0a3f935e027980",
+      "size_bytes": 6198,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_3.svg",
+      "sha256": "d92ce6e56379f97a6bf0c25722e357937c8ca2d2fd7981169bf22d7fadf6ef4c",
+      "size_bytes": 5106,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_4.svg",
+      "sha256": "fbd67c6c9020bbdaed79ce87ed9c0764b0aa10eb71496b96009008ae8134edc1",
+      "size_bytes": 1477,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_5.svg",
+      "sha256": "f52521dfaee767ae3de6eae9daddc539bad53a66188dae56d20cd85f5fdbe233",
+      "size_bytes": 4875,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_6.svg",
+      "sha256": "f9519896d9762f91b40b24b83fab057b73cee54dacbfac981b8cf129a76afce7",
+      "size_bytes": 9601,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_7.svg",
+      "sha256": "b364112b4947543afb9da05510a6118222d4693b31f877d82471c6e7d039ec94",
+      "size_bytes": 13953,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_8.svg",
+      "sha256": "89e8f0e29fe394ef0a9256e463c27b8ec053c53a6683bc076d8ea9c9b1f5742a",
+      "size_bytes": 3672,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/10_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/10_9.svg",
+      "sha256": "163d06ac12e7658637fce9d7b7007de756992ddfc84e1439174c3e661dc616b4",
+      "size_bytes": 5595,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_0.svg",
+      "sha256": "6b38be61199d421d53426d1dd4d06c4f7a275e235dd9117559ef037c4251011f",
+      "size_bytes": 1176,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_1.svg",
+      "sha256": "2c3c0074c48b777f8a34b5f19fc1d3e8c77ee067240b1246f49bf408c622f861",
+      "size_bytes": 4285,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_10.svg",
+      "sha256": "75f19731d0003be56c7d3ede32d7cfe42b297fd2c8b25a014e0fdaa37df601bc",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_11.svg",
+      "sha256": "b63a8488cbc628521324f3353900b332735094a5a4f2c7dbabe57916db6be263",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_12.svg",
+      "sha256": "bc187382beaab6cc2b49e5a4f99f4bba2ef0293c4ddff5fd64df1dea8fe8b16b",
+      "size_bytes": 602,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_13.svg",
+      "sha256": "c23412526dc20184d37a4418d70dd1703f2ad929fa2dd8fbcc5d8d4f0f4e28ad",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_14.svg",
+      "sha256": "5a1be2521271f93852c93738b66f61e19471d96eecfd1fcbc8d3865ca37b757b",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_15.svg",
+      "sha256": "544f3596e89cd175a3dace498915d948dd828bb2a2b73ef6ef53dde9db6c5e37",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_2.svg",
+      "sha256": "7e186b0f9f8dafdd58d86eea10d9b526e72088c2586271b4be46025ac2764202",
+      "size_bytes": 1422,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_3.svg",
+      "sha256": "a7b47681f724ce3b77220b6b3f576b0fea36698605335d4624439e800f1dfeef",
+      "size_bytes": 2210,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_4.svg",
+      "sha256": "77bc52200f6e8509429f6dfcc6006f02209a15f9706904649a35667ce44fc4a8",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_5.svg",
+      "sha256": "c65d5732674a0205e56b60c16ac64742ceb3601582c23bea4a12d43766fdaaf3",
+      "size_bytes": 2229,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_6.svg",
+      "sha256": "0b924473fb17a4a6e87137f234e1b4d1e933fe73a8dafa93944f6ef55fba2d73",
+      "size_bytes": 3274,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_7.svg",
+      "sha256": "1c4cb91efd9379774843d6f203d63ec5ece93519b4b8c22008cd37525452fb21",
+      "size_bytes": 1883,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_8.svg",
+      "sha256": "ab4b5df81252e5e5f9ec30e9beb0e3c1517c5d610f36246465c1b3376550439d",
+      "size_bytes": 3175,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/11_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/11_9.svg",
+      "sha256": "f6152e374e85816c3d52501e50da0c8554d96a3fee1802b980bfcc360c866c5b",
+      "size_bytes": 791,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_0.svg",
+      "sha256": "de8a0bf04491dd5d8e16cb64f15a50c1d2c893b01800263d5efdf3e4bce2b5f6",
+      "size_bytes": 1028,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_1.svg",
+      "sha256": "63a2b18b36223c8fce55050bfc065cba11495254843aa3abfe820749228c498c",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_10.svg",
+      "sha256": "b40ba219ed6a46893b2801ccc139c0bedefcad0930887ee0d276f0b78f5ee03a",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_11.svg",
+      "sha256": "d817f41a4c078a0df18f0150d6d7079dcbc99c96e031212aa83f0dec45c2bc75",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_12.svg",
+      "sha256": "02372fc2fb42fc031b2da610a9476eadf84aadb0ea4ea6c3e7f1d0a46e1828cc",
+      "size_bytes": 789,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_13.svg",
+      "sha256": "e4c16a9b7254553ecca9cf59b97de34df6233696972be23fd72fffe0f5cb159e",
+      "size_bytes": 772,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_14.svg",
+      "sha256": "6aca12459ffecb6e3f9a1a44d59dbfcc7f63e7a2acf4b8a8bd69ce8c4583c33c",
+      "size_bytes": 908,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_15.svg",
+      "sha256": "6365575ff36d34716bafdbc805eee350763591acecf99418398892d5a1a7c169",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_2.svg",
+      "sha256": "ab653d60fd80f0aca5658b2861f0149e355ffecc78908ed3b1174857d94926c3",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_3.svg",
+      "sha256": "876461819562bbcdba27398554440be15be9ecd1ffbfb72901b973b93291fc4e",
+      "size_bytes": 1324,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_4.svg",
+      "sha256": "87143a215dedac0a6603f4076af5102d4a0c6eadef67327f7ed83be212cc76e3",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_5.svg",
+      "sha256": "f6c849ee56aab0d4a7f90798edcc14712fd5fb90415fa28e1544c48ba641d98e",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_6.svg",
+      "sha256": "80edf95eee7f3840b355bebf0fe51d7017e8e0c1e06f70271751b4cb696dffb4",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_7.svg",
+      "sha256": "f709749b781a2996fbe7f397dbd7d0086437d95d438aa3d5ab2ae42dda17fb1e",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_8.svg",
+      "sha256": "0f4914301afc751c39e4cec2c1fc495f4131932f0be2b51083a60abfab3dea5c",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/12_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/12_9.svg",
+      "sha256": "0e14d3fda90e371cde8bb3322fe78d716c8dbab4bb2f2c6d56333a5727b4e83e",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_0.svg",
+      "sha256": "98af6bd52726029eb7f0ba018fa19ed1bd5c0ac14db5e10d61a8609c20439698",
+      "size_bytes": 1101,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_1.svg",
+      "sha256": "c27f6c51dc780f6b46a043887637f21e8668af61664750dc2d88413648c2c6bb",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_10.svg",
+      "sha256": "269c4e0e13e66c8b7112e0628cfecbfa2200d2efdd33fe47ffd0acda58ec28eb",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_11.svg",
+      "sha256": "7979f2883b5c45e5d1a6649306a6a11cf2b0ce8db614af5aff0cabc36631a80d",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_12.svg",
+      "sha256": "da127c4a15fa34600f1ebbfc608426a9758d90f99c8af6489b6eb7a0f6c56b36",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_13.svg",
+      "sha256": "4c1a9020aa14829c21e948d7878fa1caaf099741a07da3926308f0f78b6caac1",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_14.svg",
+      "sha256": "68ab5dd0c72d04d8bb4bffe4792777810d041d6d3fcb0723a32ff77bf4795eac",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_15.svg",
+      "sha256": "bfd27caa3f825c2dd7c255c66103827c27ed027544875d6e003d4869807cd081",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_2.svg",
+      "sha256": "22dc0354aee63f088b28a0689ce32454168c8a1ae82432089ee659654b05bb82",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_3.svg",
+      "sha256": "b3debb88dd0194561c448f3e7355ba0d3cf46a39339942ba8b6be5760af1dc24",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_4.svg",
+      "sha256": "a7745c8a49994a0bcaeb03843022c2978b7cc4f82d42878e982f5f3a6e31b934",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_5.svg",
+      "sha256": "e75ba48565a42aaf8fc9dbfc3f569504c02b22add722f8d9d0bde47e91ba7c35",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_6.svg",
+      "sha256": "e4e398251c08243eef46db521f921ec6148aaf973f49bb0b84625a00011eeb31",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_7.svg",
+      "sha256": "316b6b71440f8aecb67f2dbc552c7f522dddf56aacc35332531267c38d5f3d1e",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_8.svg",
+      "sha256": "756b39f8125f5d5043ea8482b6d87c534b23ad8fd039073112bd46f7f7241792",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/13_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/13_9.svg",
+      "sha256": "f76bef06fc274e2f09327ef33c9c1205ccdd37b037bb662ed679381d3c3ec8e7",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_0.svg",
+      "sha256": "eea1e42b926426325e092b6120442a4fba2503a03528901d29385487e097ac72",
+      "size_bytes": 625,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_1.svg",
+      "sha256": "84ebe1dc382e12e37b4b1499ebdbbd63099303fabe69fedfb5d954068a8c36e2",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_10.svg",
+      "sha256": "c1f8adbdf67b8843bc9736ca73c7f4ae74aafb3be64bb3a7648c34d3421ca4f1",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_11.svg",
+      "sha256": "44485b26e05ab446477981959cc5cf33907a7220ca62d0a7b737e7627ba4a408",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_12.svg",
+      "sha256": "221eb9e7f7879e719040992d81485c16e7d7615e46a8ecf695fd8cee3c839dbe",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_13.svg",
+      "sha256": "95fd31aa616adb8e304192ff28044afaa5b20e25d5145e7691ebf674f2b4efa6",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_14.svg",
+      "sha256": "dbe16e6ebb57fea0cd33aa70a03fc75a28c64c6757dd97480c7bf22717f8e784",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_15.svg",
+      "sha256": "d3b059fa87c2c8e0b5d86e5faffa95d2ce0cc4f418ed35ed3c322cc9fe5a24de",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_2.svg",
+      "sha256": "a2302645a931b227d8d1b75ff7adbd82450534cfa9d6c29e1ca246dfadd856f5",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_3.svg",
+      "sha256": "c33f6189f44f33c917f17eed73b2bf1eb9d2b377c1a16ed30e18d762e913bf13",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_4.svg",
+      "sha256": "37c0dcd938c1d4226541bbe2b13b692563f5f3a7a4083e9e7b8b314b10e54f26",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_5.svg",
+      "sha256": "dddf93854f377e16f60ecfc57708dab73a174f8acf2b14c43684843e4c0fb00c",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_6.svg",
+      "sha256": "aea60f47dde542a56b2d66e5882f264eaad045d0ecfdbf5c7ecdfcc9f41ba0b0",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_7.svg",
+      "sha256": "ce705d5d599b5cfde1aaaa70ea3a5f62ce23bdfc22b7df09d55520f4d3c3200b",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_8.svg",
+      "sha256": "7639949695fdc6bfb825edba5b6179f686703a57bb823cc831eceb8e1366c5b9",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/14_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/14_9.svg",
+      "sha256": "7838a625f35310fb9cc949e927d4e69b2bd13c957e0d7530007144f77f922756",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_0.svg",
+      "sha256": "6f90da9662e7501746ffccb0d913d16855742c22190fb13d74b4d3e038259ee9",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_1.svg",
+      "sha256": "2d8566d548fe337d2dcd615bc37207c8f27b8986365c68a30e7bb1d701dddc62",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_10.svg",
+      "sha256": "47861b3167c6c86802fa20afa8183d7781193b79edd55de2636c63b51d42aea2",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_11.svg",
+      "sha256": "b7d665fcbc0479042eaf5f0a3df1d4734c024cce561b9d0e10b4d5585570f44f",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_12.svg",
+      "sha256": "9d187e0e98f5d9af30ba3b7c88def654b15e4ffc37950dfdc640185bf76b7f7d",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_13.svg",
+      "sha256": "92dee6f5d6e8f8041f046f0eb0026bbcf155dfb8f6787ef49677ad7501764168",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_14.svg",
+      "sha256": "a4acb593d8295d47aa1b1b784677b3cc4a25ad735d35dcd550ce8791e54c8970",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_15.svg",
+      "sha256": "31fd84b1ccad54d5e036c5275dfb1ec7d8299dfff0789717c5bfb6725a3bbd83",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_2.svg",
+      "sha256": "5ebb4f2bcf812e81b66939aa6d5c3a8ed1d9234a0ff024ce04017a08f8515d8b",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_3.svg",
+      "sha256": "14619a095487a7e23b45459a4883a5042a7a3366162332d5c4ca1187a3d915a4",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_4.svg",
+      "sha256": "ebf47b8a79e90f5aa4883f5f7cbd77d781ab2b862ea2f39f758731a92903eb4a",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_5.svg",
+      "sha256": "6261cde4a2c025651c0acabd2ec8fbbc60241b4a362b9de6bf8de46e6d73bf82",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_6.svg",
+      "sha256": "5ae89bc5020ce436b63c729835b74b03dbedd7122ef31003e96d50fdbbca3faa",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_7.svg",
+      "sha256": "062e25dc7fb2386b7689429b91b9e404d00302235acb6f83a06b92134ed61a71",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_8.svg",
+      "sha256": "c543667bb94fe317f844848bb48770841e598bed10f83124aba23bd84a62c189",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/15_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/15_9.svg",
+      "sha256": "734ac913f7bdff4f12a73bc83eee0d50920baeb69a22c2a101732c3339c0d1aa",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_0.svg",
+      "sha256": "d68ae4cb1fa0bfb56c7ec2395e5b16d96fefce2721b8d4fb8dab028656d871b7",
+      "size_bytes": 422,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_1.svg",
+      "sha256": "182962fca39886673961b9dadaabe4b5b794393c2782a04da6a27c39d60c445e",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_10.svg",
+      "sha256": "4f0be92426dabfdec056c9e08d1b6c2d69c5796e886c718521b634b7a41329a0",
+      "size_bytes": 894,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_11.svg",
+      "sha256": "1360dcad848214a3d38f11c4d1b6799be9d877e4aaa4720ca1c4b4ce2ccdb652",
+      "size_bytes": 878,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_12.svg",
+      "sha256": "80cf0bea9a059a40f371edd0f4339aebcd2969c3a7774834f0fe567ad150cea5",
+      "size_bytes": 605,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_13.svg",
+      "sha256": "a953498baaffb1e64c8d957912254c904784340ce40b0225c20e268b6674de71",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_14.svg",
+      "sha256": "7c8a0db968d0710a1cef472b45883258b884585a4586834ab7d9996b69c21981",
+      "size_bytes": 1197,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_15.svg",
+      "sha256": "7ae9ba823ecb452a1ece4a30d26dd1e6722b68a0215e9477af8f1007400aa49d",
+      "size_bytes": 750,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_2.svg",
+      "sha256": "ba1df0b88c3943dfc005d158cc8735c2f00de70fce150d97ed74bca0193f2a0f",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_3.svg",
+      "sha256": "bdd919c56b5edcb4a8e99a65901f629adec7c21b74e9363ad95bebf2766625ea",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_4.svg",
+      "sha256": "59a76784c105cb37c3a9ba22720afa4b9c5998567ddbaec6482463293244fc80",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_5.svg",
+      "sha256": "d228db70ac517b71a15d4e084895230d8c62bca41e1e42e88f655fb9d6a33a78",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_6.svg",
+      "sha256": "0ef3c37716895fbf1f37bd0a8918f74777b1f5b82d611f2a1022c9aad2e09713",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_7.svg",
+      "sha256": "7d767877a02ec02b0ed05831ff325165ea45c53b1ac485afe9afe107af8c3def",
+      "size_bytes": 581,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_8.svg",
+      "sha256": "911cebde7c5f61a6384239f72b7139c50d854bf5aae5b588c32c016a4b693562",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/1_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/1_9.svg",
+      "sha256": "45221dc38405c4568c3775a516715488a4b4c0481e8a1cd4f231d3d005980f8f",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_0.svg",
+      "sha256": "832b7b610866243d11a2ff85cae917a4abec82b3fd7100b4d3d8cc86bfde4b4e",
+      "size_bytes": 422,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_1.svg",
+      "sha256": "471696723473fc0f46fde2d9e2ac3adeaa5559e9a88c06c8db6d769e27e1d586",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_10.svg",
+      "sha256": "61a5598a4ed7fcc7243d37cf98cab876eec6897df5220b23c65f474fcb876ce6",
+      "size_bytes": 3555,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_11.svg",
+      "sha256": "e16efcbe0e20a9145e73dc87e19ccbdb1c9f6e396a479417abc95c172e8324d6",
+      "size_bytes": 5738,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_12.svg",
+      "sha256": "6276fd80ddf3c2f4d6e2c92ee67694c7c92161d73450ba1f79b7a3907fd44769",
+      "size_bytes": 1733,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_13.svg",
+      "sha256": "a260d61f0f4a959816e5be2e89d9bf55173f1c2576bc43eabea0e3a2eddebe41",
+      "size_bytes": 1200,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_14.svg",
+      "sha256": "1b700c1e53de1366d5625d5752a2ce2cecb7c46492f00725db70f714976cc92c",
+      "size_bytes": 584,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_15.svg",
+      "sha256": "07e6f474134bbcae58eb3b48bdeed4d73a8634135242bfcc6137711cb02a4b20",
+      "size_bytes": 605,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_2.svg",
+      "sha256": "ca23a5ff7d90d6340eb1756e89dd367ba64ed9dc091d4faeff985521c18ea252",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_3.svg",
+      "sha256": "f82af969d85507cbb56fb14c86b92c720a9a3ff3e1d623092f502a0b26ddacd9",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_4.svg",
+      "sha256": "7ec79bdeed6d86753d1e1648ba876e8db6e6c2a86106bc2b1283e8bdb453f67c",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_5.svg",
+      "sha256": "e5dec79cfb4427b513f2a25d5cd84785d6c53832747878f1e154ec36c0eb1170",
+      "size_bytes": 5673,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_6.svg",
+      "sha256": "f7a23c2177e80d98ec60c312c3c498f7dba3f70be377931a097ba77e3064a794",
+      "size_bytes": 798,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_7.svg",
+      "sha256": "be29dd88bfb2466312fa29c292b86d568f72b848aa62166c7e60bc2518f42639",
+      "size_bytes": 1239,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_8.svg",
+      "sha256": "8ab6e89b02c62cf847904769ec93db224904dc23c3bafef13a33dec75068c9d5",
+      "size_bytes": 1973,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/2_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/2_9.svg",
+      "sha256": "7190010667ecd755b741f1bcb44a77dcf9f42df401cc0191ce563559e18ca38a",
+      "size_bytes": 4542,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_0.svg",
+      "sha256": "91bd6c85eb9b3d1537e2d28ee7440ce13a2a33777356187789253ab3c0803eea",
+      "size_bytes": 422,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_1.svg",
+      "sha256": "6558997f4c3a9f1c89f91b603469ae7c1a51004963adcdbbb97fb29593c46150",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_10.svg",
+      "sha256": "2768f1e98744f026c5cbd42863cdf8b6cbd4b5ddc70eb29543ceefba4828d3fa",
+      "size_bytes": 29099,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_11.svg",
+      "sha256": "81dfa7e18581831514bc65a3682c196143b60c6252e7e109f2e8a7ff58ea5ada",
+      "size_bytes": 24206,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_12.svg",
+      "sha256": "3d1d5a2c68b0b06ed0727bf77f79865eae9fbb938d1597b8d016bc87a4006360",
+      "size_bytes": 4635,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_13.svg",
+      "sha256": "7e2ac58fe9cd60b96c68b9ad3c7dd0c18c01838981ce10f1b82fc5ac3fb09c9c",
+      "size_bytes": 1082,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_14.svg",
+      "sha256": "ba14a36f3e0e70aae1b36c14d0161e8c59f6bc9cea53933ec9e9b3b14aa0fc05",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_15.svg",
+      "sha256": "0525284a3792f5dec268f6d3edb2faadbd151830ec3c1de4006f251768517e8d",
+      "size_bytes": 1247,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_2.svg",
+      "sha256": "02b2db6fa81387c31c25dbb69b4d7cb2dcaf7709ef572c7327b4eafc4e6dd514",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_3.svg",
+      "sha256": "e01c348001def113cb903dc9a148b642663a93eb90a80543012ada507b29f358",
+      "size_bytes": 426,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_4.svg",
+      "sha256": "6281f0c4f798495ae35df9dbfa0c0b87ab8c7f9ae5902b0c3d62c7945447e95b",
+      "size_bytes": 3682,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_5.svg",
+      "sha256": "96643bbdd22ce8a84f5b317aa7b98410b06c39357c8a2b685bd97631e7d67c74",
+      "size_bytes": 4564,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_6.svg",
+      "sha256": "388cb475ffb072af0153d09753d266889f765a796a4c3412d1a0474b8cef289f",
+      "size_bytes": 2512,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_7.svg",
+      "sha256": "6389ca6cb34f07a523ae38cade6f67335cc317a1187b620eb9faee470390c390",
+      "size_bytes": 924,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_8.svg",
+      "sha256": "309516452a6d0a1a9f76c940d3135d84f28ce0fbe36a837582e8cdae91156873",
+      "size_bytes": 2118,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/3_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/3_9.svg",
+      "sha256": "ef2b805b5185ddfddb6568b14bff759591e056be93a3905e4bb1ca511f1fb2a2",
+      "size_bytes": 9170,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_0.svg",
+      "sha256": "b3428defe8d947cded580c0a9471ec026655dd287d404c2a615b0c5122740f77",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_1.svg",
+      "sha256": "6eb72d495c47270d97d4568db45d8ca280cf482265bc4d4357393f3eab01e786",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_10.svg",
+      "sha256": "8219c0254a7c6560b70d28235023e96f3c704e5c726674381e584d97239fe6d1",
+      "size_bytes": 34380,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_11.svg",
+      "sha256": "736a70dc17b7b477c093360a510d1847f5b3acca44f0f3ecaecd9c6086bda748",
+      "size_bytes": 11606,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_12.svg",
+      "sha256": "b57297404414bbdfa243f0251ec8b4934f0251d9fdb723b6aa9ec711f9ebf319",
+      "size_bytes": 13116,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_13.svg",
+      "sha256": "00cb68313cb4b5c62b5cd173b7d1d5860ef4397c9ea2e7ec21673f2d61f64a9c",
+      "size_bytes": 1392,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_14.svg",
+      "sha256": "654967a494953635f496d7a0b907025aaa150153f4d66a1dde54115fa5cbd9f8",
+      "size_bytes": 784,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_15.svg",
+      "sha256": "544aa7c15a6624635d1dd5bdfdb2348a2abf03a753527d3fc3e14709d2014068",
+      "size_bytes": 1180,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_2.svg",
+      "sha256": "1d28374558f4c424cf886dd1e33b61f6a2507f56b5e135155eb0f9e0ebdb3ef7",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_3.svg",
+      "sha256": "658fec1d2f75498d6149294bf914a239fac17e775ca649e3b572a8751dd782b5",
+      "size_bytes": 630,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_4.svg",
+      "sha256": "04b876eb9cb372a80c971b15591f35d700c8cbcb412642595de8cf19ab7eda52",
+      "size_bytes": 738,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_5.svg",
+      "sha256": "614714f7a1ca9164027e11ccb4969bb41fbc375459a8d4f1409cc5a2838521bf",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_6.svg",
+      "sha256": "e5ea73517e3922a7e9f612569ff986327c4c8c7cf9a430a83bcd4cc00960301e",
+      "size_bytes": 9386,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_7.svg",
+      "sha256": "56b5ccf18c99b9448b1e6feedcd2769a32a3e623d2b6597eb371366ee0263410",
+      "size_bytes": 1437,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_8.svg",
+      "sha256": "0f3536f5e13701f2459e7ea5500540ee2b2db843b7834817b37b018c6cf1291a",
+      "size_bytes": 602,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/4_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/4_9.svg",
+      "sha256": "b13e0d33868afce55fe9b6c1af39c96f9153de1672712de02e4e328408323814",
+      "size_bytes": 13281,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_0.svg",
+      "sha256": "44acaa7f1588284778564a20935966d4590a30ca5aee8531291938949d3b05d7",
+      "size_bytes": 424,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_1.svg",
+      "sha256": "3a069d4badfc66b92b51cc19dc93655d21a95c3eddc50dd730993e5557e398c2",
+      "size_bytes": 885,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_10.svg",
+      "sha256": "2f483a5f04d1adfe0572d2c0a1de4539d24f40c5b84bda75d87bc330ad0f7e04",
+      "size_bytes": 23325,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_11.svg",
+      "sha256": "f44ab15e7b121efd7b667c6b9d7d0bf3b4b78f91d5f9ecdc9e5eede11d373671",
+      "size_bytes": 2860,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_12.svg",
+      "sha256": "cf815aa503a9cb82f25a61184a465929167ff0c29b21f48631f0ae3e0cc37ee1",
+      "size_bytes": 2469,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_13.svg",
+      "sha256": "1ca4e08dd3a8411b43fefb6fa1087dad37237c6a806e68b9fe82d14b3ada940d",
+      "size_bytes": 1322,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_14.svg",
+      "sha256": "bb5ad47c5178615e7d7b5a73470df6099ec6a656469fc376138622954675b43e",
+      "size_bytes": 588,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_15.svg",
+      "sha256": "f9b924f128bfa3a3eeae7d2d636146ae6689819b4cde8d09b7270af999a37e2d",
+      "size_bytes": 1090,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_2.svg",
+      "sha256": "d5c4b1491cb31a4aad85ca34b690aa6ee9e42c23f464a72978886746fc9cf201",
+      "size_bytes": 428,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_3.svg",
+      "sha256": "48e7eaadd13bb0a18fedb3e657a4eca5b31c3947df48b45f9a9f9fb0b92889e9",
+      "size_bytes": 4345,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_4.svg",
+      "sha256": "314fca31fbc252f45fd17e8170c1d9a1375fa29411c4e91ca6406b5a49682a11",
+      "size_bytes": 1269,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_5.svg",
+      "sha256": "c89f284e7097ed4465d27456e9566abf4cae069ba63865e6887b67dc9ff9d9ee",
+      "size_bytes": 2429,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_6.svg",
+      "sha256": "f3ed362b017b3f9919ddbe5500704235516383f6c39026ede2cf0bfbb4efd3af",
+      "size_bytes": 5083,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_7.svg",
+      "sha256": "3efc2b1c17de4e429d7bd83e5ef669eaf49b1e229f63ed38cfd90429324d1df4",
+      "size_bytes": 1437,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_8.svg",
+      "sha256": "4fe512f917a79ec3879b1a69da8e3b8f2fd06c73aa0df0f0a777333d6ca20f88",
+      "size_bytes": 3103,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/5_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/5_9.svg",
+      "sha256": "b375ff36140f4031b3753b3497d54fb1e3db482efe389102fdcc65144e06623c",
+      "size_bytes": 857,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_0.svg",
+      "sha256": "1718e1c8270aaec9aaadfda34b79a9669212a6849a02ebb7cae6a9c2b0fc56c1",
+      "size_bytes": 1235,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_1.svg",
+      "sha256": "62360f26b6cad3d443b9f30ac701c3c18695901f9adbf20c3b5faece5f824f15",
+      "size_bytes": 1538,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_10.svg",
+      "sha256": "4e96106ebaf1390c64f860173d22f24c5124ad9f671eb6dd5ec9f3c6ed3b83bb",
+      "size_bytes": 23158,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_11.svg",
+      "sha256": "6df87a16124f181f640bb82c045de41d89239aa2b22b045f0b5414a5eb892ea4",
+      "size_bytes": 1010,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_12.svg",
+      "sha256": "000884a2b2fc896158b20882bcb4f65b75f41d94e0cf4aa932ddf2f7034ac621",
+      "size_bytes": 1436,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_13.svg",
+      "sha256": "336c9523fec100e95b56dc5a54fde4d86fa0a8434af56f6a0583e2a2868e554f",
+      "size_bytes": 2488,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_14.svg",
+      "sha256": "5bc756c68d8baf8d9da4d2d7e12fa3d1c33174db1c6dbcc001298c28b43aa622",
+      "size_bytes": 588,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_15.svg",
+      "sha256": "1c1d17552b26bd52b380ccddcc4a0e9139f31f8a7d3263b30e172f5ca509d83e",
+      "size_bytes": 1240,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_2.svg",
+      "sha256": "ce650fa65659b74d2c160705853e5c56511844a5ffae49c4a3ca426ecc93eb6f",
+      "size_bytes": 9011,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_3.svg",
+      "sha256": "da4d135e6244ab242028313286f2a7cefa6f0a1ff3f62f3b812c04c66de7f1e8",
+      "size_bytes": 6559,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_4.svg",
+      "sha256": "c807554688afd39181ad29fb4a87df4956bc6d24442ddb24241acc6b5817d8de",
+      "size_bytes": 18653,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_5.svg",
+      "sha256": "96e000f879aea3740a9ab286e77cc76a027574c3cc4c86ce9b3cc5921dc8c039",
+      "size_bytes": 9008,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_6.svg",
+      "sha256": "b173cdbbbe5d8d3dfda1f965920e33bfde229036f8ef1d41df857a6ab92ca231",
+      "size_bytes": 38665,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_7.svg",
+      "sha256": "08e589dce7d9ce26942d681ecf2910d485ac1fe9d0b8250818439dad4d03a962",
+      "size_bytes": 11321,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_8.svg",
+      "sha256": "e46c1cedce40e9299864de52b85f7fc25dd2d13b38e6a80110ed02395e1ccd39",
+      "size_bytes": 2153,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/6_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/6_9.svg",
+      "sha256": "f80470585b8ca41100cf082fa82f36a4d5cd17d42dbcf987ebc88e26de80983b",
+      "size_bytes": 21183,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_0.svg",
+      "sha256": "d3fbda6e024605ae9b6dc3c82a8dbff55ee93751998845dbb9e2d7ef41df267a",
+      "size_bytes": 2437,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_1.svg",
+      "sha256": "1b60d8658aeb4f48a7443cb3a2e749dec8806931911ff363dbb58f1f7873ecf0",
+      "size_bytes": 1017,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_10.svg",
+      "sha256": "0bedadb1668a6e130d011df313368b633dd556798c7aba00d928aa901c666d41",
+      "size_bytes": 5215,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_11.svg",
+      "sha256": "556d27cb03da269ac5122ae66bab248d00e0c274c9d475a50750f821d4506044",
+      "size_bytes": 2113,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_12.svg",
+      "sha256": "5abd8c92bdefd18810bd338b9bcce3116311372e6720c4ab5f60d5abf7c4b24c",
+      "size_bytes": 4001,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_13.svg",
+      "sha256": "473ad6da26a5c51a1ea3b9c51d67b59436f14da482bbf50dd3d878288d9a4991",
+      "size_bytes": 887,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_14.svg",
+      "sha256": "ed0b213d3391871175f1f382b16212312d9957b32090505d69dfb6fc39c90730",
+      "size_bytes": 1241,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_15.svg",
+      "sha256": "b2dce32ca0812c0462bb0c1a5efb22f3b319c13a8b0ac6251af37cc1f050674f",
+      "size_bytes": 852,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_2.svg",
+      "sha256": "5fe7b5f71bed195a87eb7fa1b7e12278388abcefa4f772b07ae5b55d7c794262",
+      "size_bytes": 8241,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_3.svg",
+      "sha256": "27151344ba294b1a1b3d5773ac1ec736ca457dc1b95848604bfc6d0ef648369e",
+      "size_bytes": 3923,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_4.svg",
+      "sha256": "0ae336a9ff10596a3981421691efe536ea7724b1d3ba0620ddb77093d43aca20",
+      "size_bytes": 11768,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_5.svg",
+      "sha256": "0ebd53d675c59a0c2bf6aba2f61ad93ecd0a901b054b1ddfdf19db14198028b6",
+      "size_bytes": 6374,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_6.svg",
+      "sha256": "b01d6b5c2726771902a46bc01a46b09a7155f7e7b48f5bdc548b543fda7d8dd1",
+      "size_bytes": 4855,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_7.svg",
+      "sha256": "b2976924dfd3ffa8a83e548cf537d627203cfbc1a7127284cd7977a4f3d173d2",
+      "size_bytes": 3750,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_8.svg",
+      "sha256": "b51b23f6f7b90999b87851abf030ab18b7a8a19a0cdc9e82942d79f6d793e179",
+      "size_bytes": 8794,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/7_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/7_9.svg",
+      "sha256": "4216d1533ebbb38e698c22603b244a93a1cc60b6a17f05b83ac94efe9f8ef5a1",
+      "size_bytes": 18926,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_0.svg",
+      "sha256": "518651cf950cf862f20a119d78c2206702e0242f52f63cb495a7b069b11b4b5a",
+      "size_bytes": 4506,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_1.svg",
+      "sha256": "15aea1142d26f8f5b5559f5397f4c1b8ee6f71f98e8ab046b5db76a97650dfda",
+      "size_bytes": 4410,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_10.svg",
+      "sha256": "1c362cfaad66480c4d89beec6c3a8c2ad7372c8bddd878c8fe4651e074126926",
+      "size_bytes": 6329,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_11.svg",
+      "sha256": "0c3012c3fe01dd9ccc4e1046080d860db4a39f64a2dae92d2d1eb65c0b122a43",
+      "size_bytes": 5512,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_12.svg",
+      "sha256": "bf4d813f440206dec6a4e4356b798d2f4b9b16b83c45000b454411fe51d7348a",
+      "size_bytes": 5086,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_13.svg",
+      "sha256": "1edf5f96862d21b3dbc515aee1b0c51aa7922548769f69d69dcfdbf6a3d81647",
+      "size_bytes": 653,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_14.svg",
+      "sha256": "d5445cbe62ed0b83a7ad160a763a827760825de863ddeaec1d2722c1a7f4faba",
+      "size_bytes": 1128,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_15.svg",
+      "sha256": "5c506098e92dae37d03cb8ed5b278a4d31214466ddad0a73f28baeb4536b73d7",
+      "size_bytes": 905,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_2.svg",
+      "sha256": "c2695ab02faef7d92a67e995e396af5447ec14fcd54dd3d4193b33c07f4bb081",
+      "size_bytes": 11671,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_3.svg",
+      "sha256": "b4a2f8c74fde27c559423660e4b520516b6b63ec1e4fac32d3d5e08296ae39aa",
+      "size_bytes": 5628,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_4.svg",
+      "sha256": "c6f3c87e352041da327244e409b267e5437f71199a140bbb9704afae7b9ea848",
+      "size_bytes": 14589,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_5.svg",
+      "sha256": "1a2db0e6c615b6caf907652a29940f277837a6463f3d0b8273218bd547b286ac",
+      "size_bytes": 12468,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_6.svg",
+      "sha256": "cb1b411335e5ae153c78098023b232da3a50d6b2697845a00e1364a04a86de3d",
+      "size_bytes": 16000,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_7.svg",
+      "sha256": "26ca0ca2d0bb0d966256c9df4fe4953fc71e0fca4b7e0f0057908b296b4008cc",
+      "size_bytes": 5250,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_8.svg",
+      "sha256": "c00cf6dffba5f9e08b4c2567ca3c85a2fb662ed7443bbb50396b1d2688792e49",
+      "size_bytes": 7060,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/8_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/8_9.svg",
+      "sha256": "c253264d96ee0e5d3808a6ee6f58c106eefe1abdf6c4d50ba2874f1b185baec2",
+      "size_bytes": 5663,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_0.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_0.svg",
+      "sha256": "3d9cca20743d9a78a7484ea2022847780b3609b3888229aba0d1253c42e4a91b",
+      "size_bytes": 2526,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_1.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_1.svg",
+      "sha256": "0ca8e586e002b679ba62c8a8624ec87c212821d5b3aa0ce20d46ba107eb77878",
+      "size_bytes": 2234,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_10.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_10.svg",
+      "sha256": "9dbac88aeedcd2ca75f9b8b3375b8a8bce859daac466243a209442b7fc573254",
+      "size_bytes": 9957,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_11.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_11.svg",
+      "sha256": "927c0d4d7fcbe7851071b2ff652fd30c1af3750854e0477727767d5c7d2de5ad",
+      "size_bytes": 7441,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_12.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_12.svg",
+      "sha256": "2df0e4f2d144ec74a8c2687249dfd27de7f8a496c8c405105ecebd4c21bfaff6",
+      "size_bytes": 3246,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_13.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_13.svg",
+      "sha256": "bc9123ae043c42b33cced4cd7ac91cfa823378220152ed26e8d7bb138c2f2809",
+      "size_bytes": 1075,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_14.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_14.svg",
+      "sha256": "1f98c69b9a33e7a62ea79cd95f9715aee68071e6cbd015db9d87cd4cc66ba198",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_15.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_15.svg",
+      "sha256": "da56aa9f0febb9cc64b32e7cc72969e67be58dab55e506895d2f143b2e28834a",
+      "size_bytes": 430,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_2.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_2.svg",
+      "sha256": "39da05156922330091f57de7bb7635bab8af0b20848f45652c112acffc798d9f",
+      "size_bytes": 4124,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_3.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_3.svg",
+      "sha256": "4341af627763d72ca33dab12011086f9c163adda958b26e46adc4a13a35e30d1",
+      "size_bytes": 3198,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_4.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_4.svg",
+      "sha256": "022220277f5f02e5262e340fe770848cafd8c38e87113a8d7625b83e93dbd13e",
+      "size_bytes": 4914,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_5.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_5.svg",
+      "sha256": "75380133be16894c7b329f4c14ae8bf000f7ff80ba8367b87237766561984c31",
+      "size_bytes": 4785,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_6.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_6.svg",
+      "sha256": "cd0acdbc56c53b11aec55181741c4b052be466c3a0737fd09844c1b44d83414a",
+      "size_bytes": 13734,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_7.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_7.svg",
+      "sha256": "d08d7a2cc3a01c703695361dc12c861ea24a4d780b24ac82d7c9980d93a6e104",
+      "size_bytes": 17243,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_8.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_8.svg",
+      "sha256": "328a3a61dafbc9540f6da3e6817d9d67bbfa7aa10672d9e07d5ceb3f3cecb5a2",
+      "size_bytes": 13088,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles/9_9.svg": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles/9_9.svg",
+      "sha256": "4d229c645e1748321b86ffe2fc53daa144bc5eb72eec957efa947b1ef2c31e81",
+      "size_bytes": 6451,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/kanmon_straits/10c4abc74189adc5/tiles.json": {
+      "file_path": "res://assets/maps/kanmon_straits/simple_map/revisions/10c4abc74189adc5/tiles.json",
+      "sha256": "6d8e715ffa3488c238a5a4c6374006f2732f3ab81a4616d3a012e48a78ae1384",
+      "size_bytes": 662,
+      "bbox": {
+        "east": 131.1,
+        "north": 34.05,
+        "south": 33.8,
+        "west": 130.8
+      },
+      "elevation_min": -50,
+      "elevation_max": 750,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "units": "meters",
+  "ground_y_m": 0,
+  "random_scale_range": [0.85, 1.15],
+  "placement_padding_m": 3,
+  "assets": {
+    "factory_gable": "박공지붕 공장",
+    "factory_sawtooth": "톱니지붕 공장",
+    "factory_flat": "평지붕 공장",
+    "distillation_tower": "증류탑",
+    "industrial_chimney": "대형 연통",
+    "liquid_storage_tank": "원통형 액체저장고",
+    "lpg_sphere": "구형 LPG저장고",
+    "pipeline_straight": "파이프라인 직선",
+    "pipeline_elbow": "파이프라인 곡관",
+    "pipeline_tee": "파이프라인 분기",
+    "transmission_tower": "송전탑",
+    "cooling_tower": "냉각탑",
+    "cooling_fan_bank": "냉각 팬 설비",
+    "shipbuilding_hangar": "조선용 대형 격납고",
+    "tower_crane": "타워 크레인",
+    "gantry_crane": "갠트리 크레인"
+  },
+  "note_ko": "범용 외관 절차 모델. 실제 공단, 설비 사양 또는 보안 비공개 배치를 재현하지 않음."
+}

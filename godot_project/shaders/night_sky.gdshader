@@ -1,4 +1,5 @@
 shader_type sky;
+#include "res://shaders/atmosphere_scattering.gdshaderinc"
 
 const int MAX_STARS = 72;
 
@@ -24,6 +25,8 @@ void sky() {
 	vec3 night_horizon = vec3(0.018, 0.026, 0.052);
 	vec3 day_color = mix(sky_horizon_color, sky_top_color, sky_blend);
 	vec3 night_color = mix(night_horizon, night_top, sky_blend);
+	day_color = altitude_scattered_color(day_color, ray, sun_direction);
+	night_color *= clamp(atmospheric_column(ray.y) / density_scale_height_m, 0.0, 1.0);
 	vec3 color = mix(day_color, night_color, night_weight);
 	float horizon_mask = smoothstep(-0.002, 0.002, ray.y);
 	float sun_angle = atan(length(cross(ray, sun_direction)), dot(ray, sun_direction));
@@ -32,6 +35,9 @@ void sky() {
 	color += vec3(1.0, 0.91, 0.72) * sun_disk * 6.0 * horizon_mask;
 	if (elevation < 0.0) {
 		float ground_blend = smoothstep(-0.24, -0.015, elevation);
+		// 지표에서 아래쪽 광학 경로가 땅에 막혀도 경계에 검은 띠를 만들지 않는다.
+		vec3 ground_haze = mix(sky_horizon_color, night_horizon, night_weight);
+		color = mix(color, ground_haze, air_density_ratio);
 		color = mix(ground_color, color, ground_blend);
 	}
 	float moon_angle = atan(length(cross(ray, moon_direction)), dot(ray, moon_direction));

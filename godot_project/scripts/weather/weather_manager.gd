@@ -41,9 +41,8 @@ func _apply_altitude_adjusted_fog() -> void:
 	var factor: float = 1.0
 	if player_node:
 		var alt: float = player_node.global_position.y
-		if alt > 1000.0:
-			# 1,000m ~ 15,000m 고도 상승에 따라 대기 밀도 감소 (최대 80% 희석, 최소 20% 잔존)
-			factor = clampf(1.0 - (alt - 1000.0) / 17500.0, 0.20, 1.0)
+		# 광학 대기와 동일한 밀도 감쇠. 고고도에 20% 안개를 남기지 않는다.
+		factor = exp(-maxf(alt, 0.0) / 8000.0)
 	world_environment.environment.fog_density = _base_fog_density * factor
 
 func set_weather_system_enabled(enabled: bool) -> void:

@@ -4,7 +4,7 @@
   "name_en": "Gyeongsang Region 140km",
   "description_ko": "부산 가덕도/해운대에서 울산 공업센터를 거쳐 포항 영일만/호미곶까지 아우르는 140km 정사각형 초광역 지형입니다. 최고속도 7단(마하 10) 초음속 비행에 최적화되었습니다.",
   "description_en": "Ultra-wide 140km square terrain encompassing Busan Harbor, Ulsan Industrial Center, and Pohang Yeongil Bay. Optimized for Mach 10 hypersonic flight.",
-  "preview_image": "res://assets/maps/southeast_mega_140km/southeast_mega_140km_tactical_map.png",
+  "preview_image": "res://assets/maps/southeast_mega_140km/simple_map/revisions/3a7dff4b3810e8fa/map.svg",
   "world_size_meters": 140000.0,
   "min_elevation": -30.0,
   "max_elevation": 1300.0,
@@ -23,9 +23,32 @@
   "assets": {
     "heightmap": "res://assets/maps/southeast_mega_140km/southeast_mega_140km_heightmap_16bit.png",
     "watermask": "res://assets/maps/southeast_mega_140km/southeast_mega_140km_watermask_8bit.png",
-    "tactical_map": "res://assets/maps/southeast_mega_140km/southeast_mega_140km_tactical_map.png",
+    "tactical_map": "res://assets/maps/southeast_mega_140km/simple_map/revisions/3a7dff4b3810e8fa/map.svg",
     "districts": "res://assets/maps/southeast_mega_140km/real_districts.json",
     "buildings_roads": "res://assets/maps/southeast_mega_140km/buildings_and_roads.json"
   },
-  "category": "korea"
+  "category": "korea",
+  "legacy_tactical_map": "res://assets/maps/southeast_mega_140km/southeast_mega_140km_tactical_map.png",
+  "simple_vector_map": {
+    "tiles_index": "res://assets/maps/southeast_mega_140km/simple_map/revisions/3a7dff4b3810e8fa/tiles.json",
+    "manual_refresh": true,
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로",
+    "counts": {
+      "sea": 18,
+      "mountains": 539,
+      "rivers": 4049,
+      "lakes": 36,
+      "buildings": 0,
+      "roads": 6692,
+      "railways": 1525,
+      "coastline": 25,
+      "shipping_routes": 0,
+      "harbors": 0
+    },
+    "navigation_status": "입력 GeoJSON이 없는 항구·항로는 빈 마스크",
+    "source_policy": "최신 로컬 원본을 수동으로 합성"
+  },
+  "tactical_atlas": {
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로 | 좌클릭: 위치 이동 · 우클릭 드래그: 이동 · 휠: 확대"
+  }
 }

@@ -1,0 +1,565 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" path="res://scripts/industrial_lighting/night_lighting.gd" id="1"]
+[ext_resource type="Shader" path="res://shaders/industrial_lamp_halo.gdshader" id="2"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_warm"]
+albedo_color = Color(1, 0.64, 0.3, 1)
+emission_enabled = true
+emission = Color(1, 0.64, 0.3, 1)
+emission_energy_multiplier = 2.5
+roughness = 0.5
+
+[sub_resource type="ShaderMaterial" id="Halo_warm"]
+shader = ExtResource("2")
+shader_parameter/tint = Color(1, 0.64, 0.3, 1)
+shader_parameter/strength = 0.55
+
+[sub_resource type="QuadMesh" id="HaloMesh_warm"]
+material = SubResource("Halo_warm")
+size = Vector2(2.4, 2.4)
+
+[sub_resource type="StandardMaterial3D" id="Mat_cool"]
+albedo_color = Color(0.55, 0.77, 1, 1)
+emission_enabled = true
+emission = Color(0.55, 0.77, 1, 1)
+emission_energy_multiplier = 2.5
+roughness = 0.5
+
+[sub_resource type="ShaderMaterial" id="Halo_cool"]
+shader = ExtResource("2")
+shader_parameter/tint = Color(0.55, 0.77, 1, 1)
+shader_parameter/strength = 0.55
+
+[sub_resource type="QuadMesh" id="HaloMesh_cool"]
+material = SubResource("Halo_cool")
+size = Vector2(2.4, 2.4)
+
+[sub_resource type="StandardMaterial3D" id="Mat_red"]
+albedo_color = Color(1, 0.12, 0.055, 1)
+emission_enabled = true
+emission = Color(1, 0.12, 0.055, 1)
+emission_energy_multiplier = 2.5
+roughness = 0.5
+
+[sub_resource type="ShaderMaterial" id="Halo_red"]
+shader = ExtResource("2")
+shader_parameter/tint = Color(1, 0.12, 0.055, 1)
+shader_parameter/strength = 0.55
+
+[sub_resource type="QuadMesh" id="HaloMesh_red"]
+material = SubResource("Halo_red")
+size = Vector2(2.4, 2.4)
+
+[sub_resource type="SphereMesh" id="Fixture0"]
+radius = 0.225
+height = 0.45
+radial_segments = 8
+rings = 4
+material = SubResource("Mat_warm")
+
+[sub_resource type="BoxMesh" id="Fixture1"]
+size = Vector3(0.18, 0.18, 2.925)
+material = SubResource("Mat_warm")
+
+[sub_resource type="SphereMesh" id="Fixture2"]
+radius = 0.225
+height = 0.45
+radial_segments = 8
+rings = 4
+material = SubResource("Mat_red")
+
+[sub_resource type="SphereMesh" id="Fixture3"]
+radius = 0.2
+height = 0.4
+radial_segments = 8
+rings = 4
+material = SubResource("Mat_cool")
+
+[sub_resource type="SphereMesh" id="Fixture4"]
+radius = 0.2
+height = 0.4
+radial_segments = 8
+rings = 4
+material = SubResource("Mat_warm")
+
+[node name="NightLighting" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Fixture0" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 9.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo0" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 9.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture1" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 9.8, 0.0)
+rotation = Vector3(0, -0.0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture2" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 9.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo2" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 9.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture3" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 9.8, 3.89711)
+rotation = Vector3(0, -1.0471975511965976, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture4" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 9.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo4" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 9.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture5" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 9.8, 3.89711)
+rotation = Vector3(0, -2.0943951023931953, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture6" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 9.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo6" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 9.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture7" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 9.8, 0.0)
+rotation = Vector3(0, -3.141592653589793, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture8" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 9.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo8" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 9.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture9" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 9.8, -3.89711)
+rotation = Vector3(0, -4.1887902047863905, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture10" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 9.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo10" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 9.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture11" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 9.8, -3.89711)
+rotation = Vector3(0, -5.235987755982989, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture12" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 19.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo12" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 19.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture13" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 19.8, 0.0)
+rotation = Vector3(0, -0.0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture14" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 19.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo14" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 19.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture15" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 19.8, 3.89711)
+rotation = Vector3(0, -1.0471975511965976, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture16" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 19.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo16" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 19.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture17" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 19.8, 3.89711)
+rotation = Vector3(0, -2.0943951023931953, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture18" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 19.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo18" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 19.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture19" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 19.8, 0.0)
+rotation = Vector3(0, -3.141592653589793, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture20" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 19.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo20" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 19.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture21" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 19.8, -3.89711)
+rotation = Vector3(0, -4.1887902047863905, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture22" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 19.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo22" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 19.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture23" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 19.8, -3.89711)
+rotation = Vector3(0, -5.235987755982989, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture24" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 29.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo24" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 29.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture25" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 29.8, 0.0)
+rotation = Vector3(0, -0.0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture26" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 29.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo26" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 29.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture27" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 29.8, 3.89711)
+rotation = Vector3(0, -1.0471975511965976, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture28" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 29.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo28" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 29.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture29" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 29.8, 3.89711)
+rotation = Vector3(0, -2.0943951023931953, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture30" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 29.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo30" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 29.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture31" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 29.8, 0.0)
+rotation = Vector3(0, -3.141592653589793, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture32" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 29.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo32" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 29.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture33" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 29.8, -3.89711)
+rotation = Vector3(0, -4.1887902047863905, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture34" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 29.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo34" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 29.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture35" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 29.8, -3.89711)
+rotation = Vector3(0, -5.235987755982989, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture36" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 38.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo36" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 38.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture37" type="MeshInstance3D" parent="."]
+position = Vector3(4.5, 38.8, 0.0)
+rotation = Vector3(0, -0.0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture38" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 38.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo38" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 38.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture39" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 38.8, 3.89711)
+rotation = Vector3(0, -1.0471975511965976, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture40" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 38.8, 3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo40" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 38.8, 3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture41" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 38.8, 3.89711)
+rotation = Vector3(0, -2.0943951023931953, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture42" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 38.8, 0.0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo42" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 38.8, 0.0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture43" type="MeshInstance3D" parent="."]
+position = Vector3(-4.5, 38.8, 0.0)
+rotation = Vector3(0, -3.141592653589793, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture44" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 38.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo44" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 38.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture45" type="MeshInstance3D" parent="."]
+position = Vector3(-2.25, 38.8, -3.89711)
+rotation = Vector3(0, -4.1887902047863905, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture46" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 38.8, -3.89711)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture0")
+
+[node name="Halo46" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 38.8, -3.89711)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Fixture47" type="MeshInstance3D" parent="."]
+position = Vector3(2.25, 38.8, -3.89711)
+rotation = Vector3(0, -5.235987755982989, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture1")
+
+[node name="Fixture48" type="MeshInstance3D" parent="."]
+position = Vector3(0, 41.2, 0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture2")
+
+[node name="Halo48" type="MeshInstance3D" parent="."]
+position = Vector3(0, 41.2, 0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_red")
+
+[node name="Fixture49" type="MeshInstance3D" parent="."]
+position = Vector3(5.7, 1.2, 0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture3")
+
+[node name="Halo49" type="MeshInstance3D" parent="."]
+position = Vector3(5.7, 1.2, 0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_cool")
+
+[node name="Fixture50" type="MeshInstance3D" parent="."]
+position = Vector3(-5.7, 1.2, 0)
+rotation = Vector3(0, 0, 0)
+cast_shadow = 0
+mesh = SubResource("Fixture4")
+
+[node name="Halo50" type="MeshInstance3D" parent="."]
+position = Vector3(-5.7, 1.2, 0)
+cast_shadow = 0
+mesh = SubResource("HaloMesh_warm")
+
+[node name="Light0" type="SpotLight3D" parent="."]
+position = Vector3(5.7, 1.3, 0)
+light_color = Color(0.55, 0.77, 1, 1)
+light_energy = 4.2
+shadow_enabled = false
+distance_fade_enabled = true
+distance_fade_begin = 350.0
+distance_fade_length = 200.0
+rotation = Vector3(1.33087, 1.5708, 0)
+spot_range = 53.0
+spot_angle = 44.0
+spot_attenuation = 0.7
+
+[node name="Light1" type="SpotLight3D" parent="."]
+position = Vector3(-5.7, 1.3, 0)
+light_color = Color(1, 0.64, 0.3, 1)
+light_energy = 4.2
+shadow_enabled = false
+distance_fade_enabled = true
+distance_fade_begin = 350.0
+distance_fade_length = 200.0
+rotation = Vector3(1.33087, -1.5708, 0)
+spot_range = 53.0
+spot_angle = 44.0
+spot_attenuation = 0.7
+
+[node name="Light2" type="OmniLight3D" parent="."]
+position = Vector3(0, 30, 5.0)
+light_color = Color(1, 0.64, 0.3, 1)
+light_energy = 1.3
+shadow_enabled = false
+distance_fade_enabled = true
+distance_fade_begin = 350.0
+distance_fade_length = 200.0
+omni_range = 12
+omni_attenuation = 0.8

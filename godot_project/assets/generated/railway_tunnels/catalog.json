@@ -1,0 +1,65 @@
+{
+  "models": [
+    {
+      "id": "hsr_tunnel_entry",
+      "inspection_only": false,
+      "name_ko": "고속철도용 복선 터널 입구",
+      "scene_path": "res://assets/generated/railway_tunnels/hsr_tunnel_entry.scn"
+    },
+    {
+      "id": "hsr_tunnel_body",
+      "inspection_only": false,
+      "name_ko": "고속철도용 복선 터널 반복 내부 구간",
+      "scene_path": "res://assets/generated/railway_tunnels/hsr_tunnel_body.scn"
+    },
+    {
+      "id": "hsr_tunnel_exit",
+      "inspection_only": false,
+      "name_ko": "고속철도용 복선 터널 출구",
+      "scene_path": "res://assets/generated/railway_tunnels/hsr_tunnel_exit.scn"
+    },
+    {
+      "id": "hsr_tunnel_set",
+      "inspection_only": false,
+      "name_ko": "고속철도용 복선 터널 연결 세트",
+      "scene_path": "res://assets/generated/railway_tunnels/hsr_tunnel_set.scn"
+    },
+    {
+      "id": "hsr_tunnel_inspection",
+      "inspection_only": true,
+      "name_ko": "고속철도용 복선 터널 내부 구조 확인용",
+      "scene_path": "res://assets/generated/railway_tunnels/hsr_tunnel_inspection.scn"
+    },
+    {
+      "id": "donghae_tunnel_entry",
+      "inspection_only": false,
+      "name_ko": "동해선용 복선 터널 입구",
+      "scene_path": "res://assets/generated/railway_tunnels/donghae_tunnel_entry.scn"
+    },
+    {
+      "id": "donghae_tunnel_body",
+      "inspection_only": false,
+      "name_ko": "동해선용 복선 터널 반복 내부 구간",
+      "scene_path": "res://assets/generated/railway_tunnels/donghae_tunnel_body.scn"
+    },
+    {
+      "id": "donghae_tunnel_exit",
+      "inspection_only": false,
+      "name_ko": "동해선용 복선 터널 출구",
+      "scene_path": "res://assets/generated/railway_tunnels/donghae_tunnel_exit.scn"
+    },
+    {
+      "id": "donghae_tunnel_set",
+      "inspection_only": false,
+      "name_ko": "동해선용 복선 터널 연결 세트",
+      "scene_path": "res://assets/generated/railway_tunnels/donghae_tunnel_set.scn"
+    },
+    {
+      "id": "donghae_tunnel_inspection",
+      "inspection_only": true,
+      "name_ko": "동해선용 복선 터널 내부 구조 확인용",
+      "scene_path": "res://assets/generated/railway_tunnels/donghae_tunnel_inspection.scn"
+    }
+  ],
+  "version": 1
+}

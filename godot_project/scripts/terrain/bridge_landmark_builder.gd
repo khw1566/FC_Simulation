@@ -1,6 +1,7 @@
 extends RefCounted
 class_name BridgeLandmarkBuilder
 
+const Lighting = preload("res://scripts/core/asset_marker_lighting.gd")
 const Geometry = preload("res://scripts/terrain/bridge_geometry.gd")
 
 ## 월드 좌표 경로를 사용하는 공통 교량/현수교/아치교/징검다리 생성기.
@@ -63,6 +64,18 @@ static func build(spec: Dictionary, route: Curve3D, terrain: Node3D) -> Node3D:
 				geometry.beam(Vector3(p.x, ground(terrain, p) - 3.0, p.z), Vector3(p.x, deck - 0.5, p.z), width * 0.65, 1.0)
 				d += spacing
 	geometry.finish(root)
+	var light_points := PackedVector3Array()
+	var lamp_count := mini(16, maxi(2, int(ceil(length / 120.0)) + 1))
+	for i in range(lamp_count):
+		var distance := length * i / (lamp_count - 1)
+		var point := deck_point(route, distance, deck, bank_a, bank_b, kind, tower_a, tower_b)
+		if kind == "stepping_stones":
+			point.y = float(spec.get("water_elevation_m", 0.0)) + 0.25
+		point.y += 0.8
+		var tangent := route.sample_baked(minf(length, distance + 0.5)) - route.sample_baked(maxf(0.0, distance - 0.5))
+		var side := Vector3(tangent.z, 0, -tangent.x).normalized()
+		light_points.append(point + side * width * 0.44)
+	Lighting.bridge(root, light_points)
 	root.set_meta("source_osm_ids", spec.get("osm_ids", []))
 	root.set_meta("dimensions_status", "공개 제원과 지도 선형 기반 근사 모델")
 	return root

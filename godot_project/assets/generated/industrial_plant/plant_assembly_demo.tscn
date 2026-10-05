@@ -1,0 +1,58 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/rack_straight.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/rack_tee.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/rack_elbow.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/stack_concrete.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/scrubber_tower.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/rack_riser.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/rack_double.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/stack_triple.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/process_column.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_plant/flare_lattice.tscn" id="10"]
+
+[node name="PlantAssemblyDemo" type="Node3D"]
+
+[node name="rack_straight_0" parent="." instance=ExtResource("1" )]
+position = Vector3(0, 0, 0)
+rotation = Vector3(0, 0, 0)
+
+[node name="rack_tee_1" parent="." instance=ExtResource("2" )]
+position = Vector3(24, 0, 0)
+rotation = Vector3(0, 0, 0)
+
+[node name="rack_elbow_2" parent="." instance=ExtResource("3" )]
+position = Vector3(48, 0, 0)
+rotation = Vector3(0, 0, 0)
+
+[node name="rack_straight_3" parent="." instance=ExtResource("1" )]
+position = Vector3(24, 0, 24)
+rotation = Vector3(0, -1.5707963267948966, 0)
+
+[node name="stack_concrete_4" parent="." instance=ExtResource("4" )]
+position = Vector3(24, 0, 48)
+rotation = Vector3(0, -1.5707963267948966, 0)
+
+[node name="scrubber_tower_5" parent="." instance=ExtResource("5" )]
+position = Vector3(48, 0, 24)
+rotation = Vector3(0, -1.5707963267948966, 0)
+
+[node name="rack_riser_6" parent="." instance=ExtResource("6" )]
+position = Vector3(-24, 0, 0)
+rotation = Vector3(0, 3.141592653589793, 0)
+
+[node name="rack_double_7" parent="." instance=ExtResource("7" )]
+position = Vector3(-48, 0, 0)
+rotation = Vector3(0, 0, 0)
+
+[node name="stack_triple_8" parent="." instance=ExtResource("8" )]
+position = Vector3(-24, 0, -28)
+rotation = Vector3(0, 0, 0)
+
+[node name="process_column_9" parent="." instance=ExtResource("9" )]
+position = Vector3(-48, 0, -28)
+rotation = Vector3(0, 0, 0)
+
+[node name="flare_lattice_10" parent="." instance=ExtResource("10" )]
+position = Vector3(0, 0, -36)
+rotation = Vector3(0, 0, 0)

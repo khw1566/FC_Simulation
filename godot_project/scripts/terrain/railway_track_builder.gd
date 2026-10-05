@@ -1,7 +1,9 @@
 extends RefCounted
 class_name RailwayTrackBuilder
 
-static func build(points: PackedVector3Array, profile: Dictionary, structure: Dictionary, view_distance: float) -> Node3D:
+const NightLighting = preload("res://scripts/terrain/railway_night_lighting.gd")
+
+static func build(points: PackedVector3Array, profile: Dictionary, structure: Dictionary, view_distance: float, terrain: Node3D = null) -> Node3D:
 	var root := Node3D.new()
 	if points.size() < 2:
 		return root
@@ -49,15 +51,23 @@ static func build(points: PackedVector3Array, profile: Dictionary, structure: Di
 		var arm: Transform3D = route.sample(index * 50.0, 1.25)
 		arm.origin.y += 5.4
 		arms.append(arm)
-		if bool(structure.get("bridge", false)):
+		if bool(structure.get("bridge", false)) and not bool(structure.get("custom_bridge",false)):
 			var support: Transform3D = route.sample(index * 50.0)
-			support.origin.y -= 4.0
+			var world := support.origin + points[0]
+			var ground: float = terrain.get_terrain_elevation(world.x,world.z) if terrain else world.y-8.0
+			var top := world.y-0.14
+			var bottom := minf(ground-1.0,top-0.5)
+			var height := top-bottom
+			support.basis = Basis.IDENTITY
+			support.basis.y = Vector3.UP*height
+			support.origin.y = (top+bottom)*0.5-points[0].y
 			supports.append(support)
 	_instances(root, Vector3(2.5, 0.16, 0.22), sleepers, concrete, 1800.0)
 	_instances(root, Vector3(0.18, 5.7, 0.18), poles, steel, 5000.0)
 	_instances(root, Vector3(2.7, 0.10, 0.12), arms, steel, 5000.0)
 	if not supports.is_empty():
-		_instances(root, Vector3(1.4, 8.0, 1.4), supports, concrete, view_distance)
+		_instances(root, Vector3(1.4, 1.0, 1.4), supports, concrete, view_distance)
+	NightLighting.track(root, route, view_distance)
 	return root
 
 static func _ribbon(st: SurfaceTool, a: Vector3, b: Vector3, width: float, height: float, offset: float) -> void:

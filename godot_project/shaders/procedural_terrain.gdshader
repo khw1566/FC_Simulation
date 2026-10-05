@@ -22,6 +22,8 @@ uniform sampler2D water_mask_texture : filter_linear_mipmap, repeat_disable;
 #include "res://shaders/water_mask_filter.gdshaderinc"
 uniform sampler2D coast_height_texture : filter_linear, repeat_disable;
 uniform bool has_coast_height = false;
+uniform sampler2D railway_tunnel_void_texture : filter_nearest, repeat_disable;
+uniform bool has_railway_tunnel_void = false;
 uniform bool has_splatmap = false;
 uniform sampler2D sea_mask_texture : filter_linear, repeat_disable;
 uniform sampler2D lake_mask_texture : filter_linear, repeat_disable;
@@ -71,6 +73,11 @@ void fragment() {
 	);
 
 	// 수계 마스크 샘플링 (하천 및 호수 물 표면)
+	if (has_railway_tunnel_void && world_uv.x>=0.0 && world_uv.x<=1.0 && world_uv.y>=0.0 && world_uv.y<=1.0) {
+		vec4 opening = texture(railway_tunnel_void_texture,world_uv);
+		float floor_y = mix(min_height,max_height,(opening.r*65280.0+opening.g*255.0)/65535.0);
+		if (opening.b>0.75 && v_world_y>=floor_y && v_world_y<=floor_y+opening.a*255.0) { discard; }
+	}
 	float water_mask = 0.0;
 	if (world_uv.x >= 0.0 && world_uv.x <= 1.0 && world_uv.y >= 0.0 && world_uv.y <= 1.0) {
 		water_mask = smooth_water_mask(water_mask_texture, world_uv);

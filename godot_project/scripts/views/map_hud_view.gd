@@ -187,6 +187,11 @@ func _load_runtime_textures() -> void:
 			if fs_map_tex:
 				fs_map_tex.texture = tex
 			print("[MapHUDView] Loaded tactical map texture: ", active_map_path)
+			var selection := get_node_or_null("/root/MapSelectionService")
+			if selection != null and selection.selected_map != null:
+				var vector_display = preload("res://scripts/services/vector_map_display.gd")
+				vector_display.attach(selection.selected_map.id, minimap_tex, minimap_clip)
+				vector_display.attach(selection.selected_map.id, fs_map_tex, fs_map_clip)
 
 	var needle_path := "res://assets/compass_needle.png"
 	if FileAccess.file_exists(needle_path):

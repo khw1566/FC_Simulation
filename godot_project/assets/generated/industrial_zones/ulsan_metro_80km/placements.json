@@ -1,0 +1,3528 @@
+{
+  "version": 1,
+  "map_id": "ulsan_metro_80km",
+  "settings": {
+    "enabled": true,
+    "detail_distance_m": 2600,
+    "render_distance_m": 9000,
+    "chunk_size_m": 600,
+    "creation_budget_per_frame": 2
+  },
+  "zones": [
+    {
+      "zone_id": 1,
+      "name_ko": "울산 본항 주변 절차 공단",
+      "profile": "general_factory",
+      "world_polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11055.99036724736,
+              2738.95671476156
+            ],
+            [
+              11055.99036724736,
+              3938.956714760934
+            ],
+            [
+              9855.990367248414,
+              3938.956714760934
+            ],
+            [
+              9855.990367248414,
+              2738.95671476156
+            ],
+            [
+              11055.99036724736,
+              2738.95671476156
+            ]
+          ]
+        ]
+      },
+      "center_xz": [
+        10455.990367247887,
+        3338.9567147612474
+      ],
+      "connection": {
+        "existing_road_id": "rd_metro_6166",
+        "point_xz": [
+          10246.682796808827,
+          3597.541003639367
+        ],
+        "entry_node_xz": [
+          10269.323700581395,
+          3525.6233814278094
+        ]
+      },
+      "connected_nodes": 6,
+      "component_count": 1,
+      "preserve_existing_buildings": true,
+      "asset_count": 29,
+      "road_count": 7
+    },
+    {
+      "zone_id": 2,
+      "name_ko": "온산항 주변 절차 공단",
+      "profile": "petrochemical",
+      "world_polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              10397.832630944991,
+              8531.187569367685
+            ],
+            [
+              10397.832630944991,
+              9731.187569367845
+            ],
+            [
+              9197.832630946039,
+              9731.187569367845
+            ],
+            [
+              9197.832630946039,
+              8531.187569367685
+            ],
+            [
+              10397.832630944991,
+              8531.187569367685
+            ]
+          ]
+        ]
+      },
+      "center_xz": [
+        9797.832630945517,
+        9131.187569367765
+      ],
+      "connection": {
+        "existing_road_id": "rd_metro_21",
+        "point_xz": [
+          10031.57462014491,
+          8998.965732254072
+        ],
+        "entry_node_xz": [
+          9984.499297612007,
+          8944.520902701071
+        ]
+      },
+      "connected_nodes": 3,
+      "component_count": 1,
+      "preserve_existing_buildings": true,
+      "asset_count": 14,
+      "road_count": 5
+    }
+  ],
+  "placements": [
+    {
+      "id": "zone_1_asset_0",
+      "zone_id": 1,
+      "parcel_id": 0,
+      "asset_type": "factory_flat",
+      "scene_path": "res://assets/generated/industrial/factory_flat.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_flat.glb",
+      "position": [
+        10163.377,
+        11.77,
+        3110.141
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.08341,
+      "aabb_min_m": [
+        -23.0,
+        0.0,
+        -31.0
+      ],
+      "aabb_max_m": [
+        23.0,
+        19.200000000000003,
+        34.2
+      ],
+      "footprint_xz": [
+        [
+          10129.791,
+          3085.223
+        ],
+        [
+          10200.429,
+          3085.223
+        ],
+        [
+          10200.429,
+          3135.06
+        ],
+        [
+          10129.791,
+          3135.06
+        ],
+        [
+          10129.791,
+          3085.223
+        ]
+      ],
+      "foundation_bottom_y": 8.68,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_flat.tscn",
+        "fixture_count": 26,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_flat"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10163.37650849494,
+          3110.1411305765714
+        ],
+        [
+          10269.323700581395,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_1",
+      "zone_id": 1,
+      "parcel_id": 1,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10399.856,
+        5.106,
+        3015.218
+      ],
+      "yaw_degrees": -270,
+      "scale": 0.88004,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10367.295,
+          2993.217
+        ],
+        [
+          10435.234,
+          2993.217
+        ],
+        [
+          10435.234,
+          3037.219
+        ],
+        [
+          10367.295,
+          3037.219
+        ],
+        [
+          10367.295,
+          2993.217
+        ]
+      ],
+      "foundation_bottom_y": 3.581,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10399.856028836686,
+          3015.2182577314366
+        ],
+        [
+          10399.856028836686,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_2",
+      "zone_id": 1,
+      "parcel_id": 1,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10500.359,
+        7.605,
+        3002.3
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.11922,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10458.948,
+          2974.319
+        ],
+        [
+          10545.352,
+          2974.319
+        ],
+        [
+          10545.352,
+          3030.28
+        ],
+        [
+          10458.948,
+          3030.28
+        ],
+        [
+          10458.948,
+          2974.319
+        ]
+      ],
+      "foundation_bottom_y": 3.608,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10500.358837028178,
+          3002.2998227878475
+        ],
+        [
+          10500.358837028178,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_3",
+      "zone_id": 1,
+      "parcel_id": 1,
+      "asset_type": "industrial_chimney",
+      "scene_path": "res://assets/generated/industrial/industrial_chimney.tscn",
+      "glb_path": "res://assets/generated/industrial/industrial_chimney.glb",
+      "position": [
+        10349.581,
+        4.57,
+        3039.883
+      ],
+      "yaw_degrees": -90,
+      "scale": 1.08864,
+      "aabb_min_m": [
+        -7.5,
+        0.0,
+        -7.5
+      ],
+      "aabb_max_m": [
+        7.5,
+        65,
+        7.5
+      ],
+      "footprint_xz": [
+        [
+          10357.746,
+          3048.048
+        ],
+        [
+          10341.416,
+          3048.048
+        ],
+        [
+          10341.416,
+          3031.718
+        ],
+        [
+          10357.746,
+          3031.718
+        ],
+        [
+          10357.746,
+          3048.048
+        ]
+      ],
+      "foundation_bottom_y": 3.604,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/industrial_chimney"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10349.581106112397,
+          3039.8827270778906
+        ],
+        [
+          10349.581106112397,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_4",
+      "zone_id": 1,
+      "parcel_id": 1,
+      "asset_type": "industrial_chimney",
+      "scene_path": "res://assets/generated/industrial/industrial_chimney.tscn",
+      "glb_path": "res://assets/generated/industrial/industrial_chimney.glb",
+      "position": [
+        10472.048,
+        5.28,
+        3072.515
+      ],
+      "yaw_degrees": -270,
+      "scale": 0.91094,
+      "aabb_min_m": [
+        -7.5,
+        0.0,
+        -7.5
+      ],
+      "aabb_max_m": [
+        7.5,
+        65,
+        7.5
+      ],
+      "footprint_xz": [
+        [
+          10465.216,
+          3065.683
+        ],
+        [
+          10478.88,
+          3065.683
+        ],
+        [
+          10478.88,
+          3079.347
+        ],
+        [
+          10465.216,
+          3079.347
+        ],
+        [
+          10465.216,
+          3065.683
+        ]
+      ],
+      "foundation_bottom_y": 4.017,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/industrial_chimney"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10472.047782636138,
+          3072.5146867674534
+        ],
+        [
+          10472.047782636138,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_5",
+      "zone_id": 1,
+      "parcel_id": 2,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10695.796,
+        6.825,
+        3078.83
+      ],
+      "yaw_degrees": -180,
+      "scale": 0.86539,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10674.161,
+          3110.849
+        ],
+        [
+          10674.161,
+          3044.041
+        ],
+        [
+          10717.431,
+          3044.041
+        ],
+        [
+          10717.431,
+          3110.849
+        ],
+        [
+          10674.161,
+          3110.849
+        ]
+      ],
+      "foundation_bottom_y": 2.697,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10695.796066513194,
+          3078.830023618612
+        ],
+        [
+          10695.796066513194,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_6",
+      "zone_id": 1,
+      "parcel_id": 4,
+      "asset_type": "factory_flat",
+      "scene_path": "res://assets/generated/industrial/factory_flat.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_flat.glb",
+      "position": [
+        10229.783,
+        8.762,
+        3406.816
+      ],
+      "yaw_degrees": -180,
+      "scale": 0.94681,
+      "aabb_min_m": [
+        -23.0,
+        0.0,
+        -31.0
+      ],
+      "aabb_max_m": [
+        23.0,
+        19.200000000000003,
+        34.2
+      ],
+      "footprint_xz": [
+        [
+          10208.006,
+          3436.167
+        ],
+        [
+          10208.006,
+          3374.435
+        ],
+        [
+          10251.56,
+          3374.435
+        ],
+        [
+          10251.56,
+          3436.167
+        ],
+        [
+          10208.006,
+          3436.167
+        ]
+      ],
+      "foundation_bottom_y": 6.117,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_flat.tscn",
+        "fixture_count": 26,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_flat"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10229.782995848978,
+          3406.815857714758
+        ],
+        [
+          10269.323700581395,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_7",
+      "zone_id": 1,
+      "parcel_id": 6,
+      "asset_type": "factory_sawtooth",
+      "scene_path": "res://assets/generated/industrial/factory_sawtooth.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_sawtooth.glb",
+      "position": [
+        10529.387,
+        6.88,
+        3409.621
+      ],
+      "yaw_degrees": 0,
+      "scale": 1.14437,
+      "aabb_min_m": [
+        -33.0,
+        0.0,
+        -45.0
+      ],
+      "aabb_max_m": [
+        33.0,
+        14.6,
+        48.2
+      ],
+      "footprint_xz": [
+        [
+          10567.152,
+          3358.124
+        ],
+        [
+          10567.152,
+          3464.779
+        ],
+        [
+          10491.623,
+          3464.779
+        ],
+        [
+          10491.623,
+          3358.124
+        ],
+        [
+          10567.152,
+          3358.124
+        ]
+      ],
+      "foundation_bottom_y": 4.238,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_sawtooth.tscn",
+        "fixture_count": 34,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_sawtooth"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10529.387370434913,
+          3409.620796459545
+        ],
+        [
+          10642.657033914378,
+          3409.620796459545
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_8",
+      "zone_id": 1,
+      "parcel_id": 6,
+      "asset_type": "industrial_chimney",
+      "scene_path": "res://assets/generated/industrial/industrial_chimney.tscn",
+      "glb_path": "res://assets/generated/industrial/industrial_chimney.glb",
+      "position": [
+        10489.714,
+        4.283,
+        3214.528
+      ],
+      "yaw_degrees": -180,
+      "scale": 0.97333,
+      "aabb_min_m": [
+        -7.5,
+        0.0,
+        -7.5
+      ],
+      "aabb_max_m": [
+        7.5,
+        65,
+        7.5
+      ],
+      "footprint_xz": [
+        [
+          10482.414,
+          3221.828
+        ],
+        [
+          10482.414,
+          3207.228
+        ],
+        [
+          10497.014,
+          3207.228
+        ],
+        [
+          10497.014,
+          3221.828
+        ],
+        [
+          10482.414,
+          3221.828
+        ]
+      ],
+      "foundation_bottom_y": 2.55,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/industrial_chimney"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10489.714277768713,
+          3214.527998483685
+        ],
+        [
+          10489.714277768713,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_9",
+      "zone_id": 1,
+      "parcel_id": 6,
+      "asset_type": "factory_flat",
+      "scene_path": "res://assets/generated/industrial/factory_flat.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_flat.glb",
+      "position": [
+        10547.059,
+        4.518,
+        3270.629
+      ],
+      "yaw_degrees": -90,
+      "scale": 1.03406,
+      "aabb_min_m": [
+        -23.0,
+        0.0,
+        -31.0
+      ],
+      "aabb_max_m": [
+        23.0,
+        19.200000000000003,
+        34.2
+      ],
+      "footprint_xz": [
+        [
+          10579.115,
+          3294.413
+        ],
+        [
+          10511.694,
+          3294.413
+        ],
+        [
+          10511.694,
+          3246.846
+        ],
+        [
+          10579.115,
+          3246.846
+        ],
+        [
+          10579.115,
+          3294.413
+        ]
+      ],
+      "foundation_bottom_y": 2.507,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_flat.tscn",
+        "fixture_count": 26,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_flat"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10547.059163288688,
+          3270.6290630563644
+        ],
+        [
+          10642.657033914378,
+          3270.6290630563644
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_10",
+      "zone_id": 1,
+      "parcel_id": 6,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10313.095,
+        8.601,
+        3256.597
+      ],
+      "yaw_degrees": -180,
+      "scale": 1.06981,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10286.35,
+          3296.18
+        ],
+        [
+          10286.35,
+          3213.591
+        ],
+        [
+          10339.841,
+          3213.591
+        ],
+        [
+          10339.841,
+          3296.18
+        ],
+        [
+          10286.35,
+          3296.18
+        ]
+      ],
+      "foundation_bottom_y": 6.179,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10313.095473456831,
+          3256.5970211168305
+        ],
+        [
+          10313.095473456831,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_11",
+      "zone_id": 1,
+      "parcel_id": 6,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10344.786,
+        6.884,
+        3455.854
+      ],
+      "yaw_degrees": 0,
+      "scale": 0.95673,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10368.704,
+          3420.455
+        ],
+        [
+          10368.704,
+          3494.315
+        ],
+        [
+          10320.868,
+          3494.315
+        ],
+        [
+          10320.868,
+          3420.455
+        ],
+        [
+          10368.704,
+          3420.455
+        ]
+      ],
+      "foundation_bottom_y": 3.559,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10344.78596408036,
+          3455.8541126970777
+        ],
+        [
+          10344.78596408036,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_12",
+      "zone_id": 1,
+      "parcel_id": 6,
+      "asset_type": "factory_sawtooth",
+      "scene_path": "res://assets/generated/industrial/factory_sawtooth.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_sawtooth.glb",
+      "position": [
+        10434.884,
+        6.884,
+        3269.55
+      ],
+      "yaw_degrees": -90,
+      "scale": 1.07388,
+      "aabb_min_m": [
+        -33.0,
+        0.0,
+        -45.0
+      ],
+      "aabb_max_m": [
+        33.0,
+        14.6,
+        48.2
+      ],
+      "footprint_xz": [
+        [
+          10483.209,
+          3304.988
+        ],
+        [
+          10383.123,
+          3304.988
+        ],
+        [
+          10383.123,
+          3234.112
+        ],
+        [
+          10483.209,
+          3234.112
+        ],
+        [
+          10483.209,
+          3304.988
+        ]
+      ],
+      "foundation_bottom_y": 3.631,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_sawtooth.tscn",
+        "fixture_count": 34,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_sawtooth"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10434.884241700682,
+          3269.54981261578
+        ],
+        [
+          10434.884241700682,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_13",
+      "zone_id": 1,
+      "parcel_id": 6,
+      "asset_type": "industrial_chimney",
+      "scene_path": "res://assets/generated/industrial/industrial_chimney.tscn",
+      "glb_path": "res://assets/generated/industrial/industrial_chimney.glb",
+      "position": [
+        10426.964,
+        5.73,
+        3425.809
+      ],
+      "yaw_degrees": -180,
+      "scale": 1.0414,
+      "aabb_min_m": [
+        -7.5,
+        0.0,
+        -7.5
+      ],
+      "aabb_max_m": [
+        7.5,
+        65,
+        7.5
+      ],
+      "footprint_xz": [
+        [
+          10419.154,
+          3433.619
+        ],
+        [
+          10419.154,
+          3417.998
+        ],
+        [
+          10434.775,
+          3417.998
+        ],
+        [
+          10434.775,
+          3433.619
+        ],
+        [
+          10419.154,
+          3433.619
+        ]
+      ],
+      "foundation_bottom_y": 4.501,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/industrial_chimney"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10426.96447044475,
+          3425.808538991758
+        ],
+        [
+          10426.96447044475,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_14",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10777.463,
+        10.963,
+        3428.006
+      ],
+      "yaw_degrees": 0,
+      "scale": 1.01173,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10802.757,
+          3390.572
+        ],
+        [
+          10802.757,
+          3468.678
+        ],
+        [
+          10752.17,
+          3468.678
+        ],
+        [
+          10752.17,
+          3390.572
+        ],
+        [
+          10802.757,
+          3390.572
+        ]
+      ],
+      "foundation_bottom_y": 6.867,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10777.463285294998,
+          3428.0058334875025
+        ],
+        [
+          10777.463285294998,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_15",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10799.764,
+        6.342,
+        3248.517
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.00083,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10762.733,
+          3223.497
+        ],
+        [
+          10839.997,
+          3223.497
+        ],
+        [
+          10839.997,
+          3273.538
+        ],
+        [
+          10762.733,
+          3273.538
+        ],
+        [
+          10762.733,
+          3223.497
+        ]
+      ],
+      "foundation_bottom_y": 3.355,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10799.76370470017,
+          3248.517418531678
+        ],
+        [
+          10799.76370470017,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_16",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "industrial_chimney",
+      "scene_path": "res://assets/generated/industrial/industrial_chimney.tscn",
+      "glb_path": "res://assets/generated/industrial/industrial_chimney.glb",
+      "position": [
+        10741.037,
+        10.695,
+        3491.741
+      ],
+      "yaw_degrees": -270,
+      "scale": 0.87337,
+      "aabb_min_m": [
+        -7.5,
+        0.0,
+        -7.5
+      ],
+      "aabb_max_m": [
+        7.5,
+        65,
+        7.5
+      ],
+      "footprint_xz": [
+        [
+          10734.487,
+          3485.191
+        ],
+        [
+          10747.587,
+          3485.191
+        ],
+        [
+          10747.587,
+          3498.292
+        ],
+        [
+          10734.487,
+          3498.292
+        ],
+        [
+          10734.487,
+          3485.191
+        ]
+      ],
+      "foundation_bottom_y": 9.134,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/industrial_chimney"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10741.03701997766,
+          3491.74142106587
+        ],
+        [
+          10741.03701997766,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_17",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "stack_steel",
+      "scene_path": "res://assets/generated/industrial_plant/stack_steel.tscn",
+      "glb_path": "res://assets/generated/industrial_plant/stack_steel.glb",
+      "position": [
+        10923.673,
+        6.661,
+        3296.918
+      ],
+      "yaw_degrees": 0,
+      "scale": 1.0,
+      "aabb_min_m": [
+        -36.0,
+        -0.04807619738204116,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        55,
+        8.0
+      ],
+      "footprint_xz": [
+        [
+          10931.673,
+          3288.918
+        ],
+        [
+          10931.673,
+          3304.918
+        ],
+        [
+          10887.673,
+          3304.918
+        ],
+        [
+          10887.673,
+          3288.918
+        ],
+        [
+          10931.673,
+          3288.918
+        ]
+      ],
+      "foundation_bottom_y": 3.371,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_steel.tscn",
+        "fixture_count": 39,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/stack_steel"
+      },
+      "attachments": [
+        {
+          "asset_type": "rack_straight",
+          "position_m": [
+            -24,
+            0,
+            0
+          ],
+          "glb_path": "res://assets/generated/industrial_plant/rack_straight.glb",
+          "night_lighting": {
+            "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+            "fixture_count": 4,
+            "local_light_count": 1,
+            "shadow_enabled": false,
+            "distance_fade_m": [
+              350,
+              550
+            ],
+            "automatic_time": true,
+            "fallback_night_factor": 1.0,
+            "source_asset": "industrial_plant/rack_straight"
+          },
+          "port_parent_m": [
+            -12,
+            5,
+            0
+          ],
+          "port_attachment_m": [
+            12,
+            5,
+            0
+          ]
+        }
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          55,
+          0
+        ]
+      ],
+      "driveway_xz": [
+        [
+          10923.67340930679,
+          3296.917998702794
+        ],
+        [
+          11015.99036724736,
+          3296.917998702794
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_18",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10927.737,
+        6.152,
+        3356.315
+      ],
+      "yaw_degrees": -270,
+      "scale": 0.9161,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10893.841,
+          3333.413
+        ],
+        [
+          10964.564,
+          3333.413
+        ],
+        [
+          10964.564,
+          3379.218
+        ],
+        [
+          10893.841,
+          3379.218
+        ],
+        [
+          10893.841,
+          3333.413
+        ]
+      ],
+      "foundation_bottom_y": 2.824,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10927.73659945435,
+          3356.3154502938964
+        ],
+        [
+          11015.99036724736,
+          3356.3154502938964
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_19",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10924.626,
+        5.103,
+        3223.978
+      ],
+      "yaw_degrees": -180,
+      "scale": 1.0787,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10897.659,
+          3263.89
+        ],
+        [
+          10897.659,
+          3180.614
+        ],
+        [
+          10951.593,
+          3180.614
+        ],
+        [
+          10951.593,
+          3263.89
+        ],
+        [
+          10897.659,
+          3263.89
+        ]
+      ],
+      "foundation_bottom_y": 2.637,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10924.626003733561,
+          3223.978150223255
+        ],
+        [
+          10924.626003733561,
+          3152.2900480946846
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_20",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10723.421,
+        7.107,
+        3293.96
+      ],
+      "yaw_degrees": -180,
+      "scale": 0.894,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10701.071,
+          3327.038
+        ],
+        [
+          10701.071,
+          3258.021
+        ],
+        [
+          10745.771,
+          3258.021
+        ],
+        [
+          10745.771,
+          3327.038
+        ],
+        [
+          10701.071,
+          3327.038
+        ]
+      ],
+      "foundation_bottom_y": 3.006,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10723.420791223092,
+          3293.9604013678213
+        ],
+        [
+          10642.657033914378,
+          3293.9604013678213
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_21",
+      "zone_id": 1,
+      "parcel_id": 7,
+      "asset_type": "factory_sawtooth",
+      "scene_path": "res://assets/generated/industrial/factory_sawtooth.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_sawtooth.glb",
+      "position": [
+        10938.967,
+        4.46,
+        3434.724
+      ],
+      "yaw_degrees": 0,
+      "scale": 0.94737,
+      "aabb_min_m": [
+        -33.0,
+        0.0,
+        -45.0
+      ],
+      "aabb_max_m": [
+        33.0,
+        14.6,
+        48.2
+      ],
+      "footprint_xz": [
+        [
+          10970.23,
+          3392.092
+        ],
+        [
+          10970.23,
+          3480.387
+        ],
+        [
+          10907.704,
+          3480.387
+        ],
+        [
+          10907.704,
+          3392.092
+        ],
+        [
+          10970.23,
+          3392.092
+        ]
+      ],
+      "foundation_bottom_y": 2.03,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_sawtooth.tscn",
+        "fixture_count": 34,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_sawtooth"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10938.966993539576,
+          3434.72359617205
+        ],
+        [
+          11015.99036724736,
+          3434.72359617205
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_22",
+      "zone_id": 1,
+      "parcel_id": 10,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10578.884,
+        5.748,
+        3575.783
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.08328,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10538.803,
+          3548.701
+        ],
+        [
+          10622.432,
+          3548.701
+        ],
+        [
+          10622.432,
+          3602.865
+        ],
+        [
+          10538.803,
+          3602.865
+        ],
+        [
+          10538.803,
+          3548.701
+        ]
+      ],
+      "foundation_bottom_y": 3.696,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10578.884033528337,
+          3575.782735805192
+        ],
+        [
+          10578.884033528337,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_23",
+      "zone_id": 1,
+      "parcel_id": 10,
+      "asset_type": "industrial_chimney",
+      "scene_path": "res://assets/generated/industrial/industrial_chimney.tscn",
+      "glb_path": "res://assets/generated/industrial/industrial_chimney.glb",
+      "position": [
+        10490.48,
+        6.276,
+        3600.397
+      ],
+      "yaw_degrees": -90,
+      "scale": 0.97231,
+      "aabb_min_m": [
+        -7.5,
+        0.0,
+        -7.5
+      ],
+      "aabb_max_m": [
+        7.5,
+        65,
+        7.5
+      ],
+      "footprint_xz": [
+        [
+          10497.772,
+          3607.69
+        ],
+        [
+          10483.187,
+          3607.69
+        ],
+        [
+          10483.187,
+          3593.105
+        ],
+        [
+          10497.772,
+          3593.105
+        ],
+        [
+          10497.772,
+          3607.69
+        ]
+      ],
+      "foundation_bottom_y": 4.813,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/industrial_chimney"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10490.479800279034,
+          3600.3974051346086
+        ],
+        [
+          10490.479800279034,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_24",
+      "zone_id": 1,
+      "parcel_id": 11,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10717.99,
+        6.056,
+        3664.546
+      ],
+      "yaw_degrees": 0,
+      "scale": 1.1181,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10745.942,
+          3623.177
+        ],
+        [
+          10745.942,
+          3709.494
+        ],
+        [
+          10690.037,
+          3709.494
+        ],
+        [
+          10690.037,
+          3623.177
+        ],
+        [
+          10745.942,
+          3623.177
+        ]
+      ],
+      "foundation_bottom_y": 2.554,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10717.989905847451,
+          3664.546190573341
+        ],
+        [
+          10717.989905847451,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_25",
+      "zone_id": 1,
+      "parcel_id": 11,
+      "asset_type": "cooling_fan_bank",
+      "scene_path": "res://assets/generated/industrial/cooling_fan_bank.tscn",
+      "glb_path": "res://assets/generated/industrial/cooling_fan_bank.glb",
+      "position": [
+        10868.214,
+        5.864,
+        3650.486
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.09341,
+      "aabb_min_m": [
+        -14.5,
+        0.0,
+        -8.5
+      ],
+      "aabb_max_m": [
+        14.5,
+        6.4,
+        8.5
+      ],
+      "footprint_xz": [
+        [
+          10858.92,
+          3634.631
+        ],
+        [
+          10877.508,
+          3634.631
+        ],
+        [
+          10877.508,
+          3666.34
+        ],
+        [
+          10858.92,
+          3666.34
+        ],
+        [
+          10858.92,
+          3634.631
+        ]
+      ],
+      "foundation_bottom_y": 4.088,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--cooling_fan_bank.tscn",
+        "fixture_count": 6,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/cooling_fan_bank"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10868.214374200665,
+          3650.485928550483
+        ],
+        [
+          10868.214374200665,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_26",
+      "zone_id": 1,
+      "parcel_id": 11,
+      "asset_type": "factory_gable",
+      "scene_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_gable.glb",
+      "position": [
+        10783.956,
+        7.518,
+        3590.946
+      ],
+      "yaw_degrees": -180,
+      "scale": 0.90507,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ],
+      "footprint_xz": [
+        [
+          10761.329,
+          3624.433
+        ],
+        [
+          10761.329,
+          3554.562
+        ],
+        [
+          10806.582,
+          3554.562
+        ],
+        [
+          10806.582,
+          3624.433
+        ],
+        [
+          10761.329,
+          3624.433
+        ]
+      ],
+      "foundation_bottom_y": 5.093,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+        "fixture_count": 30,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_gable"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10783.955594404786,
+          3590.9456846445933
+        ],
+        [
+          10783.955594404786,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_27",
+      "zone_id": 1,
+      "parcel_id": 11,
+      "asset_type": "cooling_fan_bank",
+      "scene_path": "res://assets/generated/industrial/cooling_fan_bank.tscn",
+      "glb_path": "res://assets/generated/industrial/cooling_fan_bank.glb",
+      "position": [
+        10964.334,
+        2.8,
+        3588.624
+      ],
+      "yaw_degrees": 0,
+      "scale": 1.06094,
+      "aabb_min_m": [
+        -14.5,
+        0.0,
+        -8.5
+      ],
+      "aabb_max_m": [
+        14.5,
+        6.4,
+        8.5
+      ],
+      "footprint_xz": [
+        [
+          10979.717,
+          3579.606
+        ],
+        [
+          10979.717,
+          3597.642
+        ],
+        [
+          10948.95,
+          3597.642
+        ],
+        [
+          10948.95,
+          3579.606
+        ],
+        [
+          10979.717,
+          3579.606
+        ]
+      ],
+      "foundation_bottom_y": 1.831,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--cooling_fan_bank.tscn",
+        "fixture_count": 6,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/cooling_fan_bank"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10964.33354197012,
+          3588.6235615980677
+        ],
+        [
+          10964.33354197012,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_1_asset_28",
+      "zone_id": 1,
+      "parcel_id": 11,
+      "asset_type": "factory_flat",
+      "scene_path": "res://assets/generated/industrial/factory_flat.tscn",
+      "glb_path": "res://assets/generated/industrial/factory_flat.glb",
+      "position": [
+        10917.757,
+        4.192,
+        3598.478
+      ],
+      "yaw_degrees": -180,
+      "scale": 0.95493,
+      "aabb_min_m": [
+        -23.0,
+        0.0,
+        -31.0
+      ],
+      "aabb_max_m": [
+        23.0,
+        19.200000000000003,
+        34.2
+      ],
+      "footprint_xz": [
+        [
+          10895.794,
+          3628.081
+        ],
+        [
+          10895.794,
+          3565.82
+        ],
+        [
+          10939.721,
+          3565.82
+        ],
+        [
+          10939.721,
+          3628.081
+        ],
+        [
+          10895.794,
+          3628.081
+        ]
+      ],
+      "foundation_bottom_y": 1.859,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_flat.tscn",
+        "fixture_count": 26,
+        "local_light_count": 4,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/factory_flat"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10917.757172452519,
+          3598.47824496375
+        ],
+        [
+          10917.757172452519,
+          3525.6233814278094
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_0",
+      "zone_id": 2,
+      "parcel_id": 0,
+      "asset_type": "stack_concrete",
+      "scene_path": "res://assets/generated/industrial_plant/stack_concrete.tscn",
+      "glb_path": "res://assets/generated/industrial_plant/stack_concrete.glb",
+      "position": [
+        10272.568,
+        9.0,
+        8553.961
+      ],
+      "yaw_degrees": -180,
+      "scale": 1.0,
+      "aabb_min_m": [
+        -36.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        90,
+        8.0
+      ],
+      "footprint_xz": [
+        [
+          10264.568,
+          8561.961
+        ],
+        [
+          10264.568,
+          8545.961
+        ],
+        [
+          10308.568,
+          8545.961
+        ],
+        [
+          10308.568,
+          8561.961
+        ],
+        [
+          10264.568,
+          8561.961
+        ]
+      ],
+      "foundation_bottom_y": 5.722,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_concrete.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/stack_concrete"
+      },
+      "attachments": [
+        {
+          "asset_type": "rack_straight",
+          "position_m": [
+            -24,
+            0,
+            0
+          ],
+          "glb_path": "res://assets/generated/industrial_plant/rack_straight.glb",
+          "night_lighting": {
+            "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+            "fixture_count": 4,
+            "local_light_count": 1,
+            "shadow_enabled": false,
+            "distance_fade_m": [
+              350,
+              550
+            ],
+            "automatic_time": true,
+            "fallback_night_factor": 1.0,
+            "source_asset": "industrial_plant/rack_straight"
+          },
+          "port_parent_m": [
+            -12,
+            5,
+            0
+          ],
+          "port_attachment_m": [
+            12,
+            5,
+            0
+          ]
+        }
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          90,
+          0
+        ]
+      ],
+      "driveway_xz": [
+        [
+          10272.568443066073,
+          8553.960654857117
+        ],
+        [
+          10357.832630944991,
+          8571.187569367685
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_1",
+      "zone_id": 2,
+      "parcel_id": 3,
+      "asset_type": "liquid_storage_tank",
+      "scene_path": "res://assets/generated/industrial/liquid_storage_tank.tscn",
+      "glb_path": "res://assets/generated/industrial/liquid_storage_tank.glb",
+      "position": [
+        10043.854,
+        8.838,
+        8891.525
+      ],
+      "yaw_degrees": 0,
+      "scale": 0.92887,
+      "aabb_min_m": [
+        -17.0,
+        0.0,
+        -17.0
+      ],
+      "aabb_max_m": [
+        19.0,
+        19.8,
+        17.0
+      ],
+      "footprint_xz": [
+        [
+          10061.503,
+          8875.735
+        ],
+        [
+          10061.503,
+          8907.316
+        ],
+        [
+          10028.063,
+          8907.316
+        ],
+        [
+          10028.063,
+          8875.735
+        ],
+        [
+          10061.503,
+          8875.735
+        ]
+      ],
+      "foundation_bottom_y": 5.849,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--liquid_storage_tank.tscn",
+        "fixture_count": 27,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/liquid_storage_tank"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10043.854049201997,
+          8891.525439803381
+        ],
+        [
+          10043.854049201997,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_2",
+      "zone_id": 2,
+      "parcel_id": 3,
+      "asset_type": "lpg_sphere",
+      "scene_path": "res://assets/generated/industrial/lpg_sphere.tscn",
+      "glb_path": "res://assets/generated/industrial/lpg_sphere.glb",
+      "position": [
+        10003.706,
+        8.553,
+        8892.928
+      ],
+      "yaw_degrees": -270,
+      "scale": 0.8971,
+      "aabb_min_m": [
+        -12.5,
+        0.0,
+        -12.5
+      ],
+      "aabb_max_m": [
+        12.5,
+        23.4,
+        12.5
+      ],
+      "footprint_xz": [
+        [
+          9992.492,
+          8881.714
+        ],
+        [
+          10014.92,
+          8881.714
+        ],
+        [
+          10014.92,
+          8904.142
+        ],
+        [
+          9992.492,
+          8904.142
+        ],
+        [
+          9992.492,
+          8881.714
+        ]
+      ],
+      "foundation_bottom_y": 6.02,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--lpg_sphere.tscn",
+        "fixture_count": 27,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/lpg_sphere"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10003.705849204947,
+          8892.927903884378
+        ],
+        [
+          10003.705849204947,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_3",
+      "zone_id": 2,
+      "parcel_id": 4,
+      "asset_type": "liquid_storage_tank",
+      "scene_path": "res://assets/generated/industrial/liquid_storage_tank.tscn",
+      "glb_path": "res://assets/generated/industrial/liquid_storage_tank.glb",
+      "position": [
+        9897.26,
+        7.349,
+        8990.889
+      ],
+      "yaw_degrees": -180,
+      "scale": 1.13498,
+      "aabb_min_m": [
+        -17.0,
+        0.0,
+        -17.0
+      ],
+      "aabb_max_m": [
+        19.0,
+        19.8,
+        17.0
+      ],
+      "footprint_xz": [
+        [
+          9875.695,
+          9010.183
+        ],
+        [
+          9875.695,
+          8971.594
+        ],
+        [
+          9916.555,
+          8971.594
+        ],
+        [
+          9916.555,
+          9010.183
+        ],
+        [
+          9875.695,
+          9010.183
+        ]
+      ],
+      "foundation_bottom_y": 5.106,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--liquid_storage_tank.tscn",
+        "fixture_count": 27,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/liquid_storage_tank"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          9897.260000880458,
+          8990.888819336173
+        ],
+        [
+          9984.499297612007,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_4",
+      "zone_id": 2,
+      "parcel_id": 4,
+      "asset_type": "cooling_tower",
+      "scene_path": "res://assets/generated/industrial/cooling_tower.tscn",
+      "glb_path": "res://assets/generated/industrial/cooling_tower.glb",
+      "position": [
+        9899.001,
+        6.77,
+        9044.054
+      ],
+      "yaw_degrees": -180,
+      "scale": 0.9674,
+      "aabb_min_m": [
+        -22.0,
+        0.0,
+        -22.0
+      ],
+      "aabb_max_m": [
+        22.0,
+        50.0,
+        22.0
+      ],
+      "footprint_xz": [
+        [
+          9877.718,
+          9065.336
+        ],
+        [
+          9877.718,
+          9022.771
+        ],
+        [
+          9920.284,
+          9022.771
+        ],
+        [
+          9920.284,
+          9065.336
+        ],
+        [
+          9877.718,
+          9065.336
+        ]
+      ],
+      "foundation_bottom_y": 5.06,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--cooling_tower.tscn",
+        "fixture_count": 50,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/cooling_tower"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          9899.001106923151,
+          9044.053558986945
+        ],
+        [
+          9997.168702916302,
+          8959.17366714784
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_5",
+      "zone_id": 2,
+      "parcel_id": 4,
+      "asset_type": "scrubber_tower",
+      "scene_path": "res://assets/generated/industrial_plant/scrubber_tower.tscn",
+      "glb_path": "res://assets/generated/industrial_plant/scrubber_tower.glb",
+      "position": [
+        9844.47,
+        7.943,
+        8965.706
+      ],
+      "yaw_degrees": 0,
+      "scale": 1.0,
+      "aabb_min_m": [
+        -36.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        38,
+        8.0
+      ],
+      "footprint_xz": [
+        [
+          9852.47,
+          8957.706
+        ],
+        [
+          9852.47,
+          8973.706
+        ],
+        [
+          9808.47,
+          8973.706
+        ],
+        [
+          9808.47,
+          8957.706
+        ],
+        [
+          9852.47,
+          8957.706
+        ]
+      ],
+      "foundation_bottom_y": 4.961,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--scrubber_tower.tscn",
+        "fixture_count": 39,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/scrubber_tower"
+      },
+      "attachments": [
+        {
+          "asset_type": "rack_straight",
+          "position_m": [
+            -24,
+            0,
+            0
+          ],
+          "glb_path": "res://assets/generated/industrial_plant/rack_straight.glb",
+          "night_lighting": {
+            "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+            "fixture_count": 4,
+            "local_light_count": 1,
+            "shadow_enabled": false,
+            "distance_fade_m": [
+              350,
+              550
+            ],
+            "automatic_time": true,
+            "fallback_night_factor": 1.0,
+            "source_asset": "industrial_plant/rack_straight"
+          },
+          "port_parent_m": [
+            -12,
+            5,
+            0
+          ],
+          "port_attachment_m": [
+            12,
+            5,
+            0
+          ]
+        }
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          38,
+          0
+        ]
+      ],
+      "driveway_xz": [
+        [
+          9844.470171059025,
+          8965.705777267607
+        ],
+        [
+          9984.499297612007,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_6",
+      "zone_id": 2,
+      "parcel_id": 5,
+      "asset_type": "liquid_storage_tank",
+      "scene_path": "res://assets/generated/industrial/liquid_storage_tank.tscn",
+      "glb_path": "res://assets/generated/industrial/liquid_storage_tank.glb",
+      "position": [
+        10311.284,
+        2.414,
+        8996.111
+      ],
+      "yaw_degrees": -90,
+      "scale": 0.8687,
+      "aabb_min_m": [
+        -17.0,
+        0.0,
+        -17.0
+      ],
+      "aabb_max_m": [
+        19.0,
+        19.8,
+        17.0
+      ],
+      "footprint_xz": [
+        [
+          10326.052,
+          9012.616
+        ],
+        [
+          10296.516,
+          9012.616
+        ],
+        [
+          10296.516,
+          8981.343
+        ],
+        [
+          10326.052,
+          8981.343
+        ],
+        [
+          10326.052,
+          9012.616
+        ]
+      ],
+      "foundation_bottom_y": 1.036,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--liquid_storage_tank.tscn",
+        "fixture_count": 27,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/liquid_storage_tank"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10311.283753765243,
+          8996.110812648007
+        ],
+        [
+          10311.283753765243,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_7",
+      "zone_id": 2,
+      "parcel_id": 5,
+      "asset_type": "stack_concrete",
+      "scene_path": "res://assets/generated/industrial_plant/stack_concrete.tscn",
+      "glb_path": "res://assets/generated/industrial_plant/stack_concrete.glb",
+      "position": [
+        10246.381,
+        1.825,
+        9028.177
+      ],
+      "yaw_degrees": -90,
+      "scale": 1.0,
+      "aabb_min_m": [
+        -36.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        90,
+        8.0
+      ],
+      "footprint_xz": [
+        [
+          10254.381,
+          9036.177
+        ],
+        [
+          10238.381,
+          9036.177
+        ],
+        [
+          10238.381,
+          8992.177
+        ],
+        [
+          10254.381,
+          8992.177
+        ],
+        [
+          10254.381,
+          9036.177
+        ]
+      ],
+      "foundation_bottom_y": 0.496,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_concrete.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/stack_concrete"
+      },
+      "attachments": [
+        {
+          "asset_type": "rack_straight",
+          "position_m": [
+            -24,
+            0,
+            0
+          ],
+          "glb_path": "res://assets/generated/industrial_plant/rack_straight.glb",
+          "night_lighting": {
+            "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+            "fixture_count": 4,
+            "local_light_count": 1,
+            "shadow_enabled": false,
+            "distance_fade_m": [
+              350,
+              550
+            ],
+            "automatic_time": true,
+            "fallback_night_factor": 1.0,
+            "source_asset": "industrial_plant/rack_straight"
+          },
+          "port_parent_m": [
+            -12,
+            5,
+            0
+          ],
+          "port_attachment_m": [
+            12,
+            5,
+            0
+          ]
+        }
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          90,
+          0
+        ]
+      ],
+      "driveway_xz": [
+        [
+          10246.381293573744,
+          9028.176857705534
+        ],
+        [
+          10246.381293573744,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_8",
+      "zone_id": 2,
+      "parcel_id": 5,
+      "asset_type": "liquid_storage_tank",
+      "scene_path": "res://assets/generated/industrial/liquid_storage_tank.tscn",
+      "glb_path": "res://assets/generated/industrial/liquid_storage_tank.glb",
+      "position": [
+        10153.623,
+        2.105,
+        9022.57
+      ],
+      "yaw_degrees": -90,
+      "scale": 0.99677,
+      "aabb_min_m": [
+        -17.0,
+        0.0,
+        -17.0
+      ],
+      "aabb_max_m": [
+        19.0,
+        19.8,
+        17.0
+      ],
+      "footprint_xz": [
+        [
+          10170.568,
+          9041.509
+        ],
+        [
+          10136.678,
+          9041.509
+        ],
+        [
+          10136.678,
+          9005.625
+        ],
+        [
+          10170.568,
+          9005.625
+        ],
+        [
+          10170.568,
+          9041.509
+        ]
+      ],
+      "foundation_bottom_y": 0.719,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--liquid_storage_tank.tscn",
+        "fixture_count": 27,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/liquid_storage_tank"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10153.623150785666,
+          9022.57013932979
+        ],
+        [
+          10153.623150785666,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_9",
+      "zone_id": 2,
+      "parcel_id": 5,
+      "asset_type": "liquid_storage_tank",
+      "scene_path": "res://assets/generated/industrial/liquid_storage_tank.tscn",
+      "glb_path": "res://assets/generated/industrial/liquid_storage_tank.glb",
+      "position": [
+        10036.415,
+        3.097,
+        9054.406
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.06377,
+      "aabb_min_m": [
+        -17.0,
+        0.0,
+        -17.0
+      ],
+      "aabb_max_m": [
+        19.0,
+        19.8,
+        17.0
+      ],
+      "footprint_xz": [
+        [
+          10018.331,
+          9034.194
+        ],
+        [
+          10054.499,
+          9034.194
+        ],
+        [
+          10054.499,
+          9072.49
+        ],
+        [
+          10018.331,
+          9072.49
+        ],
+        [
+          10018.331,
+          9034.194
+        ]
+      ],
+      "foundation_bottom_y": 1.368,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--liquid_storage_tank.tscn",
+        "fixture_count": 27,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/liquid_storage_tank"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10036.415005462715,
+          9054.405991140235
+        ],
+        [
+          10031.57462014491,
+          8998.965732254072
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_10",
+      "zone_id": 2,
+      "parcel_id": 5,
+      "asset_type": "scrubber_tower",
+      "scene_path": "res://assets/generated/industrial_plant/scrubber_tower.tscn",
+      "glb_path": "res://assets/generated/industrial_plant/scrubber_tower.glb",
+      "position": [
+        10110.068,
+        2.795,
+        9001.364
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.0,
+      "aabb_min_m": [
+        -36.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        38,
+        8.0
+      ],
+      "footprint_xz": [
+        [
+          10102.068,
+          8993.364
+        ],
+        [
+          10118.068,
+          8993.364
+        ],
+        [
+          10118.068,
+          9037.364
+        ],
+        [
+          10102.068,
+          9037.364
+        ],
+        [
+          10102.068,
+          8993.364
+        ]
+      ],
+      "foundation_bottom_y": 1.133,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--scrubber_tower.tscn",
+        "fixture_count": 39,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/scrubber_tower"
+      },
+      "attachments": [
+        {
+          "asset_type": "rack_straight",
+          "position_m": [
+            -24,
+            0,
+            0
+          ],
+          "glb_path": "res://assets/generated/industrial_plant/rack_straight.glb",
+          "night_lighting": {
+            "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+            "fixture_count": 4,
+            "local_light_count": 1,
+            "shadow_enabled": false,
+            "distance_fade_m": [
+              350,
+              550
+            ],
+            "automatic_time": true,
+            "fallback_night_factor": 1.0,
+            "source_asset": "industrial_plant/rack_straight"
+          },
+          "port_parent_m": [
+            -12,
+            5,
+            0
+          ],
+          "port_attachment_m": [
+            12,
+            5,
+            0
+          ]
+        }
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          38,
+          0
+        ]
+      ],
+      "driveway_xz": [
+        [
+          10110.067775875432,
+          9001.363706679806
+        ],
+        [
+          10110.067775875432,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_11",
+      "zone_id": 2,
+      "parcel_id": 5,
+      "asset_type": "scrubber_tower",
+      "scene_path": "res://assets/generated/industrial_plant/scrubber_tower.tscn",
+      "glb_path": "res://assets/generated/industrial_plant/scrubber_tower.glb",
+      "position": [
+        10219.678,
+        2.305,
+        8988.862
+      ],
+      "yaw_degrees": 0,
+      "scale": 1.0,
+      "aabb_min_m": [
+        -36.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        38,
+        8.0
+      ],
+      "footprint_xz": [
+        [
+          10227.678,
+          8980.862
+        ],
+        [
+          10227.678,
+          8996.862
+        ],
+        [
+          10183.678,
+          8996.862
+        ],
+        [
+          10183.678,
+          8980.862
+        ],
+        [
+          10227.678,
+          8980.862
+        ]
+      ],
+      "foundation_bottom_y": 0.94,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--scrubber_tower.tscn",
+        "fixture_count": 39,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/scrubber_tower"
+      },
+      "attachments": [
+        {
+          "asset_type": "rack_straight",
+          "position_m": [
+            -24,
+            0,
+            0
+          ],
+          "glb_path": "res://assets/generated/industrial_plant/rack_straight.glb",
+          "night_lighting": {
+            "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+            "fixture_count": 4,
+            "local_light_count": 1,
+            "shadow_enabled": false,
+            "distance_fade_m": [
+              350,
+              550
+            ],
+            "automatic_time": true,
+            "fallback_night_factor": 1.0,
+            "source_asset": "industrial_plant/rack_straight"
+          },
+          "port_parent_m": [
+            -12,
+            5,
+            0
+          ],
+          "port_attachment_m": [
+            12,
+            5,
+            0
+          ]
+        }
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          38,
+          0
+        ]
+      ],
+      "driveway_xz": [
+        [
+          10219.677862540997,
+          8988.861863115691
+        ],
+        [
+          10219.677862540997,
+          8944.520902701071
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_12",
+      "zone_id": 2,
+      "parcel_id": 5,
+      "asset_type": "lpg_sphere",
+      "scene_path": "res://assets/generated/industrial/lpg_sphere.tscn",
+      "glb_path": "res://assets/generated/industrial/lpg_sphere.glb",
+      "position": [
+        10131.808,
+        2.153,
+        9076.752
+      ],
+      "yaw_degrees": -90,
+      "scale": 1.00832,
+      "aabb_min_m": [
+        -12.5,
+        0.0,
+        -12.5
+      ],
+      "aabb_max_m": [
+        12.5,
+        23.4,
+        12.5
+      ],
+      "footprint_xz": [
+        [
+          10144.412,
+          9089.356
+        ],
+        [
+          10119.204,
+          9089.356
+        ],
+        [
+          10119.204,
+          9064.148
+        ],
+        [
+          10144.412,
+          9064.148
+        ],
+        [
+          10144.412,
+          9089.356
+        ]
+      ],
+      "foundation_bottom_y": 0.929,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial--lpg_sphere.tscn",
+        "fixture_count": 27,
+        "local_light_count": 2,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial/lpg_sphere"
+      },
+      "attachments": [],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10131.808219837296,
+          9076.752064449656
+        ],
+        [
+          10031.57462014491,
+          8998.965732254072
+        ]
+      ]
+    },
+    {
+      "id": "zone_2_asset_13",
+      "zone_id": 2,
+      "parcel_id": 6,
+      "asset_type": "process_column",
+      "scene_path": "res://assets/generated/industrial_plant/process_column.tscn",
+      "glb_path": "res://assets/generated/industrial_plant/process_column.glb",
+      "position": [
+        10380.894,
+        2.113,
+        9011.098
+      ],
+      "yaw_degrees": -270,
+      "scale": 1.0,
+      "aabb_min_m": [
+        -36.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        51.0,
+        8.0
+      ],
+      "footprint_xz": [
+        [
+          10372.894,
+          9003.098
+        ],
+        [
+          10388.894,
+          9003.098
+        ],
+        [
+          10388.894,
+          9047.098
+        ],
+        [
+          10372.894,
+          9047.098
+        ],
+        [
+          10372.894,
+          9003.098
+        ]
+      ],
+      "foundation_bottom_y": 0.848,
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--process_column.tscn",
+        "fixture_count": 63,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/process_column"
+      },
+      "attachments": [
+        {
+          "asset_type": "rack_straight",
+          "position_m": [
+            -24,
+            0,
+            0
+          ],
+          "glb_path": "res://assets/generated/industrial_plant/rack_straight.glb",
+          "night_lighting": {
+            "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+            "fixture_count": 4,
+            "local_light_count": 1,
+            "shadow_enabled": false,
+            "distance_fade_m": [
+              350,
+              550
+            ],
+            "automatic_time": true,
+            "fallback_night_factor": 1.0,
+            "source_asset": "industrial_plant/rack_straight"
+          },
+          "port_parent_m": [
+            -12,
+            5,
+            0
+          ],
+          "port_attachment_m": [
+            12,
+            5,
+            0
+          ]
+        }
+      ],
+      "smoke_outlets_m": [],
+      "driveway_xz": [
+        [
+          10380.89426282986,
+          9011.09763127153
+        ],
+        [
+          10357.832630944991,
+          8944.520902701071
+        ]
+      ]
+    }
+  ],
+  "roads_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/roads.json",
+  "regions_source_sha256": "7f8f98a76ae85f136da1671f7bc7c4595061e4c300f8396e43be03fdfd351110",
+  "source_policy": "게임용 후보와 고정 seed. 기존 건물·도로·철도·수계·공항·문화유산 보존."
+}

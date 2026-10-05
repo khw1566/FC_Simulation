@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0.0 2048.0 256.0 256.0">
+<rect x="0.0" y="2048.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+<path d="M181.33,2229.33 L192.00,2229.33 L192.00,2218.67 L181.33,2218.67 L181.33,2229.33 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+</g>
+<g id="rivers">
+<path d="M96.90,2275.55 L63.26,2297.99 L56.43,2304.00" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M182.30,2187.68 L167.62,2197.10 L155.51,2220.03 L140.83,2243.16 L124.94,2252.22 L96.90,2275.55" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M256.00,2199.91 L251.16,2201.66 L241.14,2206.30 L226.41,2207.48 L200.76,2194.58 L185.77,2188.43 L182.30,2187.68" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M207.13,2048.00 L206.27,2049.35 L207.25,2058.07 L206.34,2062.13 L204.61,2064.46 L197.40,2067.17 L185.14,2069.95 L176.64,2073.64 L170.18,2077.47 L164.09,2086.79 L162.96,2091.38 L163.79,2096.80 L164.54,2100.48 L168.00,2108.15 L171.15,2113.11 L185.82,2123.04 L189.65,2127.70 L194.01,2138.53 L193.19,2152.15 L182.30,2187.68" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M256.00,2209.35 L252.70,2204.48 L250.18,2202.11" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="lakes">
+<path d="M193.84,2283.81 L198.14,2286.67 L199.28,2282.20 L194.44,2281.28 L193.84,2283.81 Z" fill="#547bc1" fill-rule="evenodd" opacity="1"/>
+<path d="M204.09,2252.79 L205.60,2254.46 L208.97,2251.03 L209.62,2248.80 L208.70,2248.35 L204.09,2252.79 Z" fill="#547bc1" fill-rule="evenodd" opacity="1"/>
+<path d="M11.10,2245.89 L11.15,2245.35 L9.78,2243.95 L7.10,2244.63 L7.17,2245.82 L11.10,2245.89 Z" fill="#547bc1" fill-rule="evenodd" opacity="1"/>
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

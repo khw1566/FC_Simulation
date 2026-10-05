@@ -1,6 +1,7 @@
 extends RefCounted
 ## 양쪽 직선 계단과 난간을 갖춘 범용 육교.
 
+const Lighting = preload("res://scripts/core/asset_marker_lighting.gd")
 const Parts = preload("res://scripts/terrain/pedestrian_bridge_geometry.gd")
 
 static func build(spec: Dictionary) -> Node3D:
@@ -32,6 +33,11 @@ static func build(spec: Dictionary) -> Node3D:
 			g.rail(a + Vector3.UP * 0.4, b + Vector3.UP * 0.15)
 		g.box(Vector3(0, 0.12, end * (length * 0.5 + run + 0.7)), Vector3(width, 0.24, 1.4), "deck")
 	g.finish(root)
+	var light_points := PackedVector3Array()
+	var lamp_count := maxi(2, int(ceil(length / 120.0)) + 1)
+	for i in range(lamp_count):
+		light_points.append(Vector3(width * 0.44, top + 0.8, -length * 0.5 + length * i / (lamp_count - 1)))
+	Lighting.bridge(root, light_points)
 	Parts.marker(root, "EntranceA", Vector3(0, 0.24, -length * 0.5 - run - 1.4))
 	Parts.marker(root, "EntranceB", Vector3(0, 0.24, length * 0.5 + run + 1.4))
 	return root

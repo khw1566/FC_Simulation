@@ -21,3 +21,23 @@ data/archives/*.zip
 기초 미가공데이터/
 **/.DS_Store
 **/Thumbs.db
+previews/high_altitude_check/project/
+
+# 배포 산출물과 독립 프리뷰 캐시
+dist/
+.build/
+**/*.tmp
+previews/**/project/
+previews/**/live/
+previews/**/build_environment/
+previews/**/*.exe
+previews/**/*.pck
+previews/**/*.dll
+previews/**/*.zip
+data/processed/
+previews/**/environment/
+previews/**/images/
+previews/**/roaming/
+previews/**/local/
+previews/**/bin/
+previews/**/obj/

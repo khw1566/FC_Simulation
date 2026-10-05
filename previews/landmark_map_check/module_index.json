@@ -1,0 +1,12 @@
+{
+  "modules": [
+    {
+      "path": "verify.gd",
+      "responsibility": "맵별 태그 격리 경량 검사"
+    },
+    {
+      "path": "selection_stub.gd",
+      "responsibility": "맵 선택 대역"
+    }
+  ]
+}

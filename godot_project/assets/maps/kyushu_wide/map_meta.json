@@ -7,7 +7,7 @@
     "landmarks": "res://assets/maps/kanmon_straits/landmarks.json",
     "sea_mask": "res://assets/maps/kanmon_straits/north_kyushu_sea_mask.png",
     "splatmap": "res://assets/maps/kanmon_straits/kanmon_splatmap_rgba.png",
-    "tactical_map": "res://assets/maps/kyushu_wide/kyushu_tactical_map.png",
+    "tactical_map": "res://assets/maps/kyushu_wide/simple_map/revisions/a5eaf234a965a800/map.svg",
     "watermask": "res://assets/maps/kanmon_straits/kanmon_watermask_8bit.png"
   },
   "bbox": {
@@ -24,7 +24,7 @@
   "min_elevation": -50,
   "name_en": "Kyushu",
   "name_ko": "큐슈",
-  "preview_image": "res://assets/maps/kyushu_wide/kyushu_tactical_map.png",
+  "preview_image": "res://assets/maps/kyushu_wide/simple_map/revisions/a5eaf234a965a800/map.svg",
   "sea_level": 0,
   "spawn_position": [
     0,
@@ -34,11 +34,31 @@
   "tactical_atlas": {
     "airport_count": 2,
     "generated_date": "2026-10-03",
-    "legend": "북큐슈 구현 범위 28km · 원본 DEM / 수계 / 도로 · 공항 2곳 · 좌클릭: 위치 이동 · 휠: 확대",
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로 | 좌클릭: 위치 이동 · 우클릭 드래그: 이동 · 휠: 확대",
     "road_count": 1157,
     "source": "res://assets/maps/kanmon_straits/kanmon_heightmap_16bit.png",
     "terrain_note": "지도와 3D는 같은 원본 지형 범위·고도·해수 마스크를 사용"
   },
   "vector_source_meta": "res://assets/maps/kanmon_straits/map_meta.json",
-  "world_size_meters": 28000
+  "world_size_meters": 28000,
+  "legacy_tactical_map": "res://assets/maps/kyushu_wide/kyushu_tactical_map.png",
+  "simple_vector_map": {
+    "tiles_index": "res://assets/maps/kyushu_wide/simple_map/revisions/a5eaf234a965a800/tiles.json",
+    "manual_refresh": true,
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로",
+    "counts": {
+      "sea": 67,
+      "mountains": 75,
+      "rivers": 351,
+      "lakes": 7,
+      "buildings": 0,
+      "roads": 1157,
+      "railways": 907,
+      "coastline": 95,
+      "shipping_routes": 0,
+      "harbors": 0
+    },
+    "navigation_status": "입력 GeoJSON이 없는 항구·항로는 빈 마스크",
+    "source_policy": "최신 로컬 원본을 수동으로 합성"
+  }
 }

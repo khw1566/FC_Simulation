@@ -4,7 +4,7 @@
   "name_en": "Ulsan College West Campus 5km",
   "description_ko": "울산과학대 서부캠퍼스, 울산대학교, 문수경기장 및 태화강 일대를 포함하는 5km 지도입니다. COP30 기반 지형과 VWorld 건물 윤곽을 사용하며 정밀 캠퍼스 지형은 별도 원본이 필요합니다.",
   "description_en": "5km map covering Ulsan College West Campus and University of Ulsan, using COP30 terrain and VWorld building footprints. Survey-grade campus terrain requires separate source data.",
-  "preview_image": "res://assets/maps/ulsan_uc_west/ulsan_vector_tactical_map.png",
+  "preview_image": "res://assets/maps/ulsan_uc_west/simple_map/revisions/8929f8c9d80c11ad/map.svg",
   "world_size_meters": 5000.0,
   "min_elevation": -10.0,
   "max_elevation": 450.0,
@@ -23,12 +23,35 @@
   "assets": {
     "heightmap": "res://assets/maps/ulsan_uc_west/ulsan_heightmap_16bit.png",
     "watermask": "res://assets/maps/ulsan_uc_west/ulsan_watermask_8bit.png",
-    "tactical_map": "res://assets/maps/ulsan_uc_west/ulsan_vector_tactical_map.png",
+    "tactical_map": "res://assets/maps/ulsan_uc_west/simple_map/revisions/8929f8c9d80c11ad/map.svg",
     "buildings_roads": "res://assets/maps/ulsan_uc_west/buildings_and_roads.json",
     "building_footprints_svg": "res://assets/maps/ulsan_uc_west/building_footprints.svg",
     "building_footprints_index": "res://assets/maps/ulsan_uc_west/building_footprints_index.json",
     "districts": "res://assets/maps/ulsan_uc_west/real_districts.json",
     "campus_sites": "res://assets/maps/ulsan_uc_west/campus_sites.json"
   },
-  "category": "korea"
+  "category": "korea",
+  "legacy_tactical_map": "res://assets/maps/ulsan_uc_west/ulsan_vector_tactical_map.png",
+  "simple_vector_map": {
+    "tiles_index": "res://assets/maps/ulsan_uc_west/simple_map/revisions/8929f8c9d80c11ad/tiles.json",
+    "manual_refresh": true,
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로",
+    "counts": {
+      "sea": 0,
+      "mountains": 7,
+      "rivers": 41,
+      "lakes": 12,
+      "buildings": 8076,
+      "roads": 78,
+      "railways": 0,
+      "coastline": 0,
+      "shipping_routes": 0,
+      "harbors": 0
+    },
+    "navigation_status": "입력 GeoJSON이 없는 항구·항로는 빈 마스크",
+    "source_policy": "최신 로컬 원본을 수동으로 합성"
+  },
+  "tactical_atlas": {
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로 | 좌클릭: 위치 이동 · 우클릭 드래그: 이동 · 휠: 확대"
+  }
 }

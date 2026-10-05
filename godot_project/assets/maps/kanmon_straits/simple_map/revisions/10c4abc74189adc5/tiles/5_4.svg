@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="1280.0 1024.0 256.0 256.0">
+<rect x="1280.0" y="1024.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+</g>
+<g id="rivers">
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+<path d="M1511.31,1024.00 L1512.63,1025.93 L1515.17,1025.95 L1517.47,1027.83 L1519.06,1027.10 L1527.23,1031.78 L1536.00,1044.77" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1536.00,1061.97 L1535.88,1062.11 L1535.26,1064.67 L1531.82,1062.80 L1527.51,1065.55 L1528.12,1069.37 L1529.31,1070.01 L1531.00,1069.17 L1531.55,1071.20 L1533.19,1072.01 L1534.09,1075.99 L1533.46,1078.46 L1534.47,1080.39 L1532.49,1082.72 L1533.50,1085.82 L1534.36,1086.26 L1535.47,1085.15 L1536.00,1085.43" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1280.00,1061.19 L1342.57,1066.20 L1345.78,1024.00" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

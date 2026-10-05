@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="3840.0 1280.0 256.0 256.0">
+<rect x="3840.0" y="1280.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+</g>
+<g id="rivers">
+<path d="M3840.00,1291.82 L4010.72,1332.90 L4096.00,1381.53" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M4021.54,1408.91 L4066.55,1428.31 L4096.00,1445.26 L4096.00,1321.77 L4040.52,1292.30 L4012.09,1280.00 L3840.00,1280.00 L3840.00,1339.69 L4021.54,1408.91 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+<path d="M3840.00,1527.97 L3855.14,1536.00" fill="none" stroke="#e39a36" stroke-width="11.47" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="1536.0 256.0 256.0 256.0">
+<rect x="1536.0" y="256.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+<path d="M1552.00,410.67 L1552.00,421.33 L1546.67,421.33 L1546.67,426.67 L1536.00,426.67 L1536.00,512.00 L1594.67,512.00 L1594.67,485.33 L1589.33,485.33 L1589.33,474.67 L1584.00,474.67 L1584.00,458.67 L1578.67,458.67 L1578.67,448.00 L1573.33,448.00 L1573.33,442.67 L1568.00,442.67 L1568.00,432.00 L1557.33,432.00 L1557.33,410.67 L1552.00,410.67 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/><path d="M1536.00,426.67 L1536.00,421.33" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1562.67,410.67 L1562.67,405.33 L1557.33,405.33 L1557.33,410.67 L1562.67,410.67 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/>
+</g>
+<g id="mountains">
+</g>
+<g id="rivers">
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+<path d="M1602.38,483.76 L1602.35,496.15 L1601.56,512.00" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1600.35,512.00 L1600.70,505.16 L1600.40,483.88" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="railways">
+<path d="M1609.16,443.32 L1649.90,509.30" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1650.24,509.85 L1651.62,512.00" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1649.90,509.30 L1650.24,509.85" fill="none" stroke="#9559a4" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="coastline">
+<path d="M1536.00,430.19 L1541.26,433.65 L1546.80,422.11 L1551.81,423.36 L1548.17,431.39 L1557.80,435.54 L1563.12,440.21 L1576.38,460.09 L1580.66,468.90 L1584.63,479.50 L1587.92,500.80 L1589.21,512.00" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

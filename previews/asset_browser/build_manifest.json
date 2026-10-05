@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-10-04T00:20:49",
+  "entry_count": 18006,
+  "counts": {
+    "3D": 46,
+    "데이터": 17862,
+    "생성 모델": 7,
+    "셰이더": 11,
+    "이미지": 80
+  },
+  "pack_bytes": 1003442672,
+  "pack_sha256": "53d00dfad863106a88228569e2feea8b519c6cb9f6137ffee90595bfb5e91511",
+  "original_project_modified": false,
+  "live_refresh": true,
+  "source_access": "read_only",
+  "refresh_seconds": 3,
+  "runtime": "runtime/PreviewEngine.exe",
+  "cache": "project",
+  "single_writer": true
+}

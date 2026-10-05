@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="1536.0 3328.0 256.0 256.0">
+<rect x="1536.0" y="3328.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+<path d="M1584.00,3509.33 L1648.00,3509.33 L1648.00,3504.00 L1584.00,3504.00 L1584.00,3509.33 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/>
+<path d="M1722.67,3514.67 L1717.33,3514.67 L1717.33,3509.33 L1658.67,3509.33 L1658.67,3514.67 L1712.00,3514.67 L1712.00,3520.00 L1722.67,3520.00 L1722.67,3514.67 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/>
+<path d="M1722.67,3525.33 L1738.67,3525.33 L1738.67,3520.00 L1722.67,3520.00 L1722.67,3525.33 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/>
+<path d="M1792.00,3520.00 L1792.00,3525.33" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1781.33,3525.33 L1781.33,3530.67 L1776.00,3530.67 L1776.00,3525.33 L1744.00,3525.33 L1744.00,3530.67 L1754.67,3530.67 L1754.67,3536.00 L1786.67,3536.00 L1786.67,3530.67 L1792.00,3530.67 L1792.00,3525.33 L1781.33,3525.33 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/>
+</g>
+<g id="mountains">
+</g>
+<g id="rivers">
+<path d="M1673.83,3328.00 L1671.97,3338.40 L1673.48,3346.12 L1675.14,3347.86 L1678.25,3348.77 L1678.69,3349.64 L1679.11,3351.64 L1678.24,3354.69 L1669.93,3357.54 L1668.36,3357.39 L1665.58,3355.02 L1664.20,3354.90 L1658.21,3357.98 L1654.47,3362.65 L1644.63,3366.37 L1643.03,3367.68 L1638.60,3382.17 L1637.27,3383.64 L1633.03,3386.16 L1632.97,3395.21 L1631.07,3400.81 L1628.90,3404.73 L1626.26,3406.18 L1623.55,3409.00 L1618.60,3410.90 L1616.21,3414.61 L1609.37,3420.44 L1606.77,3427.67 L1607.93,3432.23 L1606.98,3434.62 L1604.84,3437.39 L1596.58,3444.47 L1591.28,3454.29 L1588.13,3466.68 L1581.88,3479.49 L1580.57,3484.79 L1580.65,3486.83 L1582.72,3490.58 L1591.35,3502.58 L1591.32,3505.27" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+<path d="M1771.43,3328.00 L1767.33,3345.14" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1765.70,3344.96 L1769.69,3328.00" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

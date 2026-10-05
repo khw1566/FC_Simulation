@@ -1,6 +1,8 @@
 extends RefCounted
 class_name RailwayTrainBuilder
 
+const NightLighting = preload("res://scripts/terrain/railway_night_lighting.gd")
+
 static var model_scenes: Dictionary = {}
 
 static func build(profile: Dictionary) -> Node3D:
@@ -11,7 +13,8 @@ static func build(profile: Dictionary) -> Node3D:
 	train.name = str(profile.id) + "_train"
 	var body := _material(profile.body_color)
 	var stripe := _material(profile.stripe_color)
-	var glass := _material([0.045, 0.065, 0.085])
+	var glass := NightLighting.emission_material(Color(0.28, 0.24, 0.17), float(NightLighting.options().get("window_emission_energy", 0.75)))
+	var cockpit_glass := _material([0.045, 0.065, 0.085])
 	var dark := _material([0.14, 0.15, 0.16])
 	var red := _material([0.66, 0.10, 0.15])
 	var light := _material([0.95, 0.92, 0.72])
@@ -27,6 +30,7 @@ static func build(profile: Dictionary) -> Node3D:
 		if ktx and head:
 			length = float(profile.get("power_car_length_m", length))
 		var direction: float = -1.0 if index == 0 else 1.0
+		var lamp := light if index == 0 else NightLighting.emission_material(Color(1.0, 0.055, 0.025), 2.0)
 		var body_center: float = -direction * 2.25 if ktx and head else 0.0
 		_box(car, Vector3(2.9, 2.8, length - (4.5 if ktx and head else 0.4)), Vector3(0, 2.2, body_center), body)
 		_box(car, Vector3(2.94, 0.38, length - (4.5 if ktx and head else 0.5)), Vector3(0, 1.85, body_center), stripe)
@@ -63,12 +67,13 @@ static func build(profile: Dictionary) -> Node3D:
 			if ktx:
 				var windshield := BoxMesh.new()
 				windshield.size = Vector3(2.0, 0.65, 0.05)
-				var window := _mesh(car, windshield, Vector3(0, 3.23, direction * (length * 0.5 - 3.4)), glass)
+				var window := _mesh(car, windshield, Vector3(0, 3.23, direction * (length * 0.5 - 3.4)), cockpit_glass)
 				window.rotation.x = direction * deg_to_rad(67.0)
 			else:
-				_box(car, Vector3(2.25, 0.7, 0.06), Vector3(0, 2.9, front_z), glass)
+				_box(car, Vector3(2.25, 0.7, 0.06), Vector3(0, 2.9, front_z), cockpit_glass)
 			for side in [-0.9, 0.9]:
-				_box(car, Vector3(0.25, 0.15, 0.08), Vector3(side, 1.65, front_z + direction * 0.07), light)
+				_box(car, Vector3(0.25, 0.15, 0.08), Vector3(side, 1.65, front_z + direction * 0.07), lamp)
+		NightLighting.train_car(car, profile, index, length, direction, body_center)
 		if index == 1 or (ktx and index == int(profile.cars) - 2):
 			_box(car, Vector3(0.08, 0.6, 0.08), Vector3(0, 4.02, 0), dark)
 			_box(car, Vector3(1.3, 0.05, 0.12), Vector3(0, 4.35, 0), dark)

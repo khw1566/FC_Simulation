@@ -7,7 +7,7 @@
     "landmarks": "res://assets/maps/kanmon_straits/landmarks.json",
     "sea_mask": "res://assets/maps/kanmon_straits/north_kyushu_sea_mask.png",
     "splatmap": "res://assets/maps/kanmon_straits/kanmon_splatmap_rgba.png",
-    "tactical_map": "res://assets/maps/kanmon_straits/kanmon_vector_tactical_map.png",
+    "tactical_map": "res://assets/maps/kanmon_straits/simple_map/revisions/75c028bc2821f509/map.svg",
     "watermask": "res://assets/maps/kanmon_straits/kanmon_watermask_8bit.png"
   },
   "bbox": {
@@ -24,7 +24,7 @@
   "min_elevation": -50,
   "name_en": "Kanmon Straits",
   "name_ko": "칸몬해협",
-  "preview_image": "res://assets/maps/kanmon_straits/kanmon_vector_tactical_map.png",
+  "preview_image": "res://assets/maps/kanmon_straits/simple_map/revisions/75c028bc2821f509/map.svg",
   "sea_level": 0,
   "spawn_position": [
     0,
@@ -41,5 +41,28 @@
     "attribution": "© OpenStreetMap contributors / 国土地理院最適化ベクトルタイル",
     "generated_date": "2026-10-03",
     "height_note": "height와 building:levels가 없는 건물의 높이는 추정"
+  },
+  "legacy_tactical_map": "res://assets/maps/kanmon_straits/kanmon_vector_tactical_map.png",
+  "simple_vector_map": {
+    "tiles_index": "res://assets/maps/kanmon_straits/simple_map/revisions/75c028bc2821f509/tiles.json",
+    "manual_refresh": true,
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로",
+    "counts": {
+      "sea": 67,
+      "mountains": 75,
+      "rivers": 351,
+      "lakes": 7,
+      "buildings": 0,
+      "roads": 1157,
+      "railways": 907,
+      "coastline": 95,
+      "shipping_routes": 0,
+      "harbors": 0
+    },
+    "navigation_status": "입력 GeoJSON이 없는 항구·항로는 빈 마스크",
+    "source_policy": "최신 로컬 원본을 수동으로 합성"
+  },
+  "tactical_atlas": {
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로 | 좌클릭: 위치 이동 · 우클릭 드래그: 이동 · 휠: 확대"
   }
 }

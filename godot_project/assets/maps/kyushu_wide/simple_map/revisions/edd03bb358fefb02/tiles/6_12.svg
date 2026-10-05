@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="1536.0 3072.0 256.0 256.0">
+<rect x="1536.0" y="3072.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+<path d="M1781.33,3136.00 L1792.00,3136.00 L1792.00,3125.33 L1781.33,3125.33 L1781.33,3136.00 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.26"/>
+</g>
+<g id="rivers">
+<path d="M1701.33,3258.67 L1706.67,3258.67 L1706.67,3248.00 L1701.33,3248.00 L1701.33,3258.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M1696.00,3274.67 L1701.33,3274.67 L1701.33,3258.67 L1696.00,3258.67 L1696.00,3274.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M1690.67,3280.00 L1696.00,3280.00 L1696.00,3274.67 L1690.67,3274.67 L1690.67,3280.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M1680.00,3296.00 L1685.33,3296.00 L1685.33,3301.33 L1690.67,3301.33 L1690.67,3290.67 L1685.33,3290.67 L1685.33,3285.33 L1690.67,3285.33 L1690.67,3280.00 L1680.00,3280.00 L1680.00,3296.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M1680.00,3312.00 L1674.67,3312.00 L1674.67,3322.67 L1680.00,3322.67 L1680.00,3317.33 L1685.33,3317.33 L1685.33,3301.33 L1680.00,3301.33 L1680.00,3312.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M1674.67,3328.00 L1669.33,3328.00" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+<path d="M1792.00,3275.27 L1788.71,3280.34 L1783.35,3290.46 L1777.95,3303.95 L1774.95,3313.31 L1771.43,3328.00" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M1769.69,3328.00 L1773.32,3312.56 L1778.73,3296.52 L1781.79,3289.75 L1787.09,3279.88 L1792.00,3272.25" fill="none" stroke="#e39a36" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "family": "railway",
+  "assets": [
+    {
+      "id": "donghae_night_scene",
+      "scene": "res://assets/generated/railway/night_assets/donghae_night_scene.scn",
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "bbox": null,
+      "elevation_max": 5.55000019073486,
+      "elevation_min": -0.14999985694885,
+      "label_ko": "동해선 광역전철 야간 조명 조립 예제",
+      "light_count": 5,
+      "marker_batches": 17,
+      "placement_status": "asset_only",
+      "resolution": null
+    },
+    {
+      "id": "donghae_track",
+      "scene": "res://assets/generated/railway/night_assets/donghae_track.scn",
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "bbox": null,
+      "elevation_max": 5.55000019073486,
+      "elevation_min": -0.14999985694885,
+      "label_ko": "동해선 광역전철 야간 식별 철로",
+      "light_count": 2,
+      "marker_batches": 5,
+      "placement_status": "asset_only",
+      "resolution": null
+    },
+    {
+      "id": "donghae_train",
+      "scene": "res://assets/generated/railway/night_assets/donghae_train.scn",
+      "aabb_max_m": [
+        1.51750004291534,
+        4.375,
+        79.5299987792969
+      ],
+      "aabb_min_m": [
+        -1.51750004291534,
+        0.050556268543005,
+        -0.02999977022409
+      ],
+      "bbox": null,
+      "elevation_max": 4.375,
+      "elevation_min": 0.050556268543005,
+      "label_ko": "동해선 광역전철 야간 조명 열차",
+      "light_count": 3,
+      "marker_batches": 12,
+      "placement_status": "asset_only",
+      "resolution": null
+    },
+    {
+      "id": "ktx_night_scene",
+      "scene": "res://assets/generated/railway/night_assets/ktx_night_scene.scn",
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "bbox": null,
+      "elevation_max": 5.55000019073486,
+      "elevation_min": -0.14999985694885,
+      "label_ko": "경부고속선 KTX 야간 조명 조립 예제",
+      "light_count": 10,
+      "marker_batches": 45,
+      "placement_status": "asset_only",
+      "resolution": null
+    },
+    {
+      "id": "ktx_track",
+      "scene": "res://assets/generated/railway/night_assets/ktx_track.scn",
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "bbox": null,
+      "elevation_max": 5.55000019073486,
+      "elevation_min": -0.14999985694885,
+      "label_ko": "경부고속선 KTX 야간 식별 철로",
+      "light_count": 2,
+      "marker_batches": 5,
+      "placement_status": "asset_only",
+      "resolution": null
+    },
+    {
+      "id": "ktx_train",
+      "scene": "res://assets/generated/railway/night_assets/ktx_train.scn",
+      "aabb_max_m": [
+        1.49300003051758,
+        4.375,
+        387.530029296875
+      ],
+      "aabb_min_m": [
+        -1.49300003051758,
+        0.050556268543005,
+        -0.02999977022409
+      ],
+      "bbox": null,
+      "elevation_max": 4.375,
+      "elevation_min": 0.050556268543005,
+      "label_ko": "경부고속선 KTX 야간 조명 열차",
+      "light_count": 8,
+      "marker_batches": 40,
+      "placement_status": "asset_only",
+      "resolution": null
+    }
+  ]
+}

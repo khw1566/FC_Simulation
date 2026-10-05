@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0.0 768.0 256.0 256.0">
+<rect x="0.0" y="768.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+<path d="M64.00,778.67 L74.67,778.67 L74.67,768.00 L64.00,768.00 L64.00,778.67 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M149.33,928.00 L170.67,928.00 L170.67,917.33 L149.33,917.33 L149.33,928.00 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M202.67,938.67 L224.00,938.67 L224.00,928.00 L202.67,928.00 L202.67,938.67 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M53.33,970.67 L32.00,970.67 L32.00,981.33 L42.67,981.33 L42.67,1002.67 L21.33,1002.67 L21.33,1013.33 L0.00,1013.33 L0.00,1024.00 L32.00,1024.00 L53.33,1024.00 L53.33,981.33 L64.00,981.33 L64.00,960.00 L74.67,960.00 L74.67,938.67 L53.33,938.67 L53.33,970.67 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M170.67,970.67 L160.00,970.67 L160.00,981.33 L181.33,981.33 L181.33,960.00 L170.67,960.00 L170.67,970.67 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M213.33,992.00 L224.00,992.00 L224.00,970.67 L213.33,970.67 L213.33,992.00 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M149.33,992.00 L160.00,992.00 L160.00,981.33 L149.33,981.33 L149.33,992.00 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M74.67,1013.33 L64.00,1013.33 L64.00,1024.00 L85.33,1024.00 L85.33,1002.67 L74.67,1002.67 L74.67,1013.33 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M96.00,1024.00 L85.33,1024.00" fill="none" stroke="#9c8867" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="0.18"/>
+</g>
+<g id="rivers">
+<path d="M80.00,768.00 L85.33,768.00" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M165.33,773.33 L170.67,773.33 L170.67,768.00 L165.33,768.00 L165.33,773.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M85.33,778.67 L90.67,778.67 L90.67,773.33 L85.33,773.33 L85.33,778.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M96.00,784.00 L101.33,784.00 L101.33,778.67 L96.00,778.67 L96.00,784.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M106.67,789.33 L112.00,789.33 L112.00,784.00 L106.67,784.00 L106.67,789.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M112.00,794.67 L128.00,794.67 L128.00,789.33 L112.00,789.33 L112.00,794.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M53.33,805.33 L58.67,805.33 L58.67,800.00 L53.33,800.00 L53.33,805.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M165.33,805.33 L170.67,805.33 L170.67,800.00 L165.33,800.00 L165.33,805.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M58.67,810.67 L64.00,810.67 L64.00,805.33 L58.67,805.33 L58.67,810.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M122.67,816.00 L128.00,816.00 L128.00,805.33 L122.67,805.33 L122.67,816.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M160.00,821.33 L165.33,821.33 L165.33,816.00 L160.00,816.00 L160.00,821.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M122.67,826.67 L128.00,826.67 L128.00,821.33 L122.67,821.33 L122.67,826.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M128.00,832.00 L133.33,832.00 L133.33,826.67 L128.00,826.67 L128.00,832.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M69.33,837.33 L74.67,837.33 L74.67,832.00 L69.33,832.00 L69.33,837.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M122.67,848.00 L128.00,848.00 L128.00,842.67 L122.67,842.67 L122.67,848.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M112.00,858.67 L117.33,858.67 L117.33,853.33 L112.00,853.33 L112.00,858.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M213.33,864.00 L218.67,864.00 L218.67,858.67 L213.33,858.67 L213.33,864.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M42.67,869.33 L48.00,869.33 L48.00,864.00 L42.67,864.00 L42.67,869.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M112.00,874.67 L117.33,874.67 L117.33,869.33 L112.00,869.33 L112.00,874.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M213.33,874.67 L218.67,874.67 L218.67,869.33 L213.33,869.33 L213.33,874.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M218.67,885.33 L224.00,885.33 L224.00,874.67 L218.67,874.67 L218.67,885.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M106.67,885.33 L112.00,885.33 L112.00,880.00 L106.67,880.00 L106.67,885.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M101.33,890.67 L106.67,890.67 L106.67,885.33 L101.33,885.33 L101.33,890.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M213.33,896.00 L218.67,896.00 L218.67,885.33 L213.33,885.33 L213.33,896.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M165.33,896.00 L170.67,896.00 L170.67,890.67 L165.33,890.67 L165.33,896.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M208.00,901.33 L197.33,901.33 L197.33,906.67 L213.33,906.67 L213.33,896.00 L208.00,896.00 L208.00,901.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M106.67,906.67 L112.00,906.67 L112.00,901.33 L106.67,901.33 L106.67,906.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M21.33,912.00 L26.67,912.00 L26.67,906.67 L21.33,906.67 L21.33,912.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M192.00,912.00 L197.33,912.00 L197.33,906.67 L192.00,906.67 L192.00,912.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M101.33,933.33 L106.67,933.33 L106.67,912.00 L101.33,912.00 L101.33,933.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M186.67,922.67 L192.00,922.67 L192.00,912.00 L186.67,912.00 L186.67,922.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M21.33,933.33 L26.67,933.33 L26.67,917.33 L21.33,917.33 L21.33,933.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M181.33,933.33 L186.67,933.33 L186.67,922.67 L181.33,922.67 L181.33,933.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M16.00,938.67 L21.33,938.67 L21.33,933.33 L16.00,933.33 L16.00,938.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M170.67,938.67 L181.33,938.67 L181.33,933.33 L170.67,933.33 L170.67,938.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M10.67,944.00 L16.00,944.00 L16.00,938.67 L10.67,938.67 L10.67,944.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M256.00,938.67 L256.00,949.33" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M5.33,949.33 L10.67,949.33 L10.67,944.00 L5.33,944.00 L5.33,949.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M160.00,949.33 L165.33,949.33 L165.33,944.00 L160.00,944.00 L160.00,949.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M101.33,960.00 L106.67,960.00 L106.67,949.33 L101.33,949.33 L101.33,960.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M250.67,954.67 L256.00,954.67 L256.00,949.33 L250.67,949.33 L250.67,954.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M138.67,960.00 L149.33,960.00 L149.33,954.67 L138.67,954.67 L138.67,960.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M245.33,960.00 L250.67,960.00 L250.67,954.67 L245.33,954.67 L245.33,960.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M128.00,965.33 L133.33,965.33 L133.33,960.00 L128.00,960.00 L128.00,965.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M106.67,976.00 L112.00,976.00 L112.00,965.33 L106.67,965.33 L106.67,976.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M245.33,976.00 L250.67,976.00 L250.67,965.33 L245.33,965.33 L245.33,976.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M122.67,976.00 L128.00,976.00 L128.00,970.67 L122.67,970.67 L122.67,976.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M250.67,981.33 L256.00,981.33 L256.00,976.00 L250.67,976.00 L250.67,981.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M90.67,986.67 L96.00,986.67 L96.00,981.33 L90.67,981.33 L90.67,986.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M256.00,981.33 L256.00,986.67" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M117.33,997.33 L122.67,997.33 L122.67,992.00 L117.33,992.00 L117.33,997.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M122.67,1008.00 L128.00,1008.00 L128.00,997.33 L122.67,997.33 L122.67,1008.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M250.67,1002.67 L256.00,1002.67 L256.00,997.33 L250.67,997.33 L250.67,1002.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M128.00,1024.00 L133.33,1024.00 L133.33,1008.00 L128.00,1008.00 L128.00,1024.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M250.67,1013.33 L256.00,1013.33 L256.00,1008.00 L250.67,1008.00 L250.67,1013.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

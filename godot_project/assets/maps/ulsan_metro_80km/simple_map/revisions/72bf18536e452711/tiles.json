@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "grid": 16,
+  "canvas_size": 4096,
+  "tile_svg_size": 256,
+  "map": "map.svg",
+  "pattern": "tiles/{x}_{y}.svg",
+  "colors": {
+    "sea": "#dcebf0",
+    "mountains": "#9c8867",
+    "rivers": "#2395bd",
+    "lakes": "#547bc1",
+    "buildings": "#68757c",
+    "roads": "#e39a36",
+    "railways": "#9559a4",
+    "coastline": "#177d82",
+    "harbors": "#d25b52",
+    "shipping_routes": "#4aa373"
+  },
+  "counts": {
+    "sea": 9,
+    "mountains": 358,
+    "rivers": 1785,
+    "lakes": 1534,
+    "buildings": 0,
+    "roads": 6614,
+    "railways": 1525,
+    "coastline": 70,
+    "shipping_routes": 0,
+    "harbors": 0
+  }
+}

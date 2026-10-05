@@ -218,6 +218,20 @@ theme_override_font_sizes/font_size = 13
 button_pressed = true
 text = "비행 벡터 HUD (디버그 녹색 화살표)"
 
+[node name="VesselsCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "선박 배치 및 운항"
+
+[node name="IndustrialZonesCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)
+theme_override_font_sizes/font_size = 13
+button_pressed = true
+text = "절차 생성 공단 표시"
+
 [node name="WeatherCheck" type="CheckBox" parent="RootMargin/MainLayout/SettingsPanel/Margin/VBox/GeneralContent"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.85, 0.85, 0.85, 1)

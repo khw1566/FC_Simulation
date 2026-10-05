@@ -1,0 +1,23 @@
+{
+  "id": "taehwagang_station_district",
+  "name_ko": "태화강역 및 역전 구역",
+  "units": "meters",
+  "up_axis": "Y",
+  "front_axis": "+Z",
+  "ground_y_m": 0,
+  "surveyed": false,
+  "georeferenced": false,
+  "district_size_m": [480, 580],
+  "station_width_m": 112,
+  "station_depth_m": 38,
+  "platform_length_m": 230,
+  "track_centers_x_m": [-34, -18, 18, 34],
+  "platform_centers_x_m": [-26, 26],
+  "basis_ko": "2021년 신축 역사의 고래 형상과 공개 환승시설 자료를 참고한 비실측 외관 모델. 선로 수, 치수, 주변 건물과 도로 배치는 제작용 근사이며 기존 OSM 선로에 정합하지 않음.",
+  "sources": [
+    "https://www.yna.co.kr/view/AKR20210312072500063",
+    "https://www.kr.or.kr/boardCnts/view.do?boardID=52&boardSeq=1117824&page=275&prntBoardID=0&prntBoardSeq=0&prntLev=0",
+    "https://ulsan.go.kr/u/metro/transfer/alimi/complete/view.ulsan?mId=001008008002002000&nttNo=102",
+    "https://www.council.ulsan.kr/minutes/assembly/bbs2/writtenQnaandview.do?NTT_ID=F90217C791A68804E06595EADCB6391C&flag=all&keyword=&listCnt=10&list_style=&page=10&schwrd="
+  ]
+}

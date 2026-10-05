@@ -1,0 +1,6367 @@
+{
+  "version": 1,
+  "assets": {
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/map.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/map.svg",
+      "sha256": "ac608756f517fb5525e1529449e8eda42628c1686f02fe3c971d5c50d82ced82",
+      "size_bytes": 2452121,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/buildings.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/buildings.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/buildings.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/buildings.svg",
+      "sha256": "92cfa96c729fa94fb0fd9eb345132a8cdb526f8b86d0b10f795f2bfc068ff68a",
+      "size_bytes": 188,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/coastline.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/coastline.png",
+      "sha256": "05888dd999c676a8ce95e44c17fdbf97aef9ddb27cf89fbd7578088266eb3f79",
+      "size_bytes": 5924,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/coastline.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/coastline.svg",
+      "sha256": "0fb254f048823cb9e6c2a1f4b59a08b8ee4e04fb09ed49c0d4d2159ae509c214",
+      "size_bytes": 63722,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/harbors.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/harbors.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/harbors.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/harbors.svg",
+      "sha256": "6137b03cf9314d92192830d07eb812c86511180136114ea20d12c9002bd783f0",
+      "size_bytes": 186,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/lakes.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/lakes.png",
+      "sha256": "e74336943f1dcbd24b9e56e835c93e16848fdd9a9da439ec39c1fd61920540e6",
+      "size_bytes": 14184,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/lakes.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/lakes.svg",
+      "sha256": "319f89df55f96c937fc38452eb3d52752a766ef9a866c577f88e92a535dc8087",
+      "size_bytes": 312355,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/mountains.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/mountains.png",
+      "sha256": "ef724168779f2d3b9c9d7297caa16604f4e8093d2d4ba929699c6b3ff06fed79",
+      "size_bytes": 10957,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/mountains.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/mountains.svg",
+      "sha256": "72f3b7c2c2f92b0735a916a762bfbebcddd4528df444b66e4d25d4ea7f6e0129",
+      "size_bytes": 102181,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/railways.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/railways.png",
+      "sha256": "80e62c13ae2baeaffaf7a44f7c8b7d2dc84e828ac7c71ddc829f90ec68d27636",
+      "size_bytes": 7566,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/railways.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/railways.svg",
+      "sha256": "7905d7564539fb7c206641fa111453ba6aa4945499c791456b479e662b3c360d",
+      "size_bytes": 249157,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/rivers.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/rivers.png",
+      "sha256": "cf2f1b5e8a67541fb4637ab32297588bfcba21ebae72205afcf642166653f7a9",
+      "size_bytes": 31929,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/rivers.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/rivers.svg",
+      "sha256": "b6ba20553d10c2ef7b2639f904778a2eb8bbb7e86b9ae63bd2bea5f5ed3e6218",
+      "size_bytes": 561257,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/roads.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/roads.png",
+      "sha256": "2e1891d5aa87525e32987fefab310e46e1930406111a3aecf14803607f7b8259",
+      "size_bytes": 23198,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/roads.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/roads.svg",
+      "sha256": "62de5f38c43fe738d05322c79f54da98196db0d8ceb292bdba2d412953305f7f",
+      "size_bytes": 1163467,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/sea.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/sea.png",
+      "sha256": "2de301c33ad01d41cdaf7c5de23827793be2041f10f30e0d9984e50e9cb7abcc",
+      "size_bytes": 1166,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/sea.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/sea.svg",
+      "sha256": "242d06cb2ace82b37da254c01eca4e210af0e0fa521b8d3af144292bf8c3aef5",
+      "size_bytes": 872,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/shipping_routes.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/shipping_routes.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/masks/shipping_routes.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/masks/shipping_routes.svg",
+      "sha256": "ba042d1424c6b8eea381ee9e075663f6ebf1b2e07854f3657c54aa32932a8481",
+      "size_bytes": 194,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/preview.png": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/preview.png",
+      "sha256": "7bb195b94b174972e7c595abcd08a762a5214cbf8dca13625b7279f8ef65b8a2",
+      "size_bytes": 99178,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_0.svg",
+      "sha256": "81a70c93c4ed43cc8177fabe89e3d562e015e50966c75a739311c42b168723cd",
+      "size_bytes": 14030,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_1.svg",
+      "sha256": "9f038ee66dab8dff7f3fc76126c85a43d9475172afdbd7302a7c5cec1930ba11",
+      "size_bytes": 14813,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_10.svg",
+      "sha256": "9a64170e7a2c10242ca1051debe3803ff7c1a0b74157eababaf0881bae664e73",
+      "size_bytes": 2947,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_11.svg",
+      "sha256": "f218d4f6a3d9668663fe839250f7849f8863994925e2386f541529089bf73245",
+      "size_bytes": 23040,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_12.svg",
+      "sha256": "63b85962ff017fc23bce8f96f2d268dda440bcda72506e8c6b273559dd457fcd",
+      "size_bytes": 8934,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_13.svg",
+      "sha256": "219ec4b45f9c6a60cd5d034bfc4164fa56a7a8bc1daf81f06a723ba6eecea27c",
+      "size_bytes": 8972,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_14.svg",
+      "sha256": "cec20a7248bab4a141698e3949c1cefd20464d6234b4c62635e6d18c295f1cbf",
+      "size_bytes": 7814,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_15.svg",
+      "sha256": "70a0b801cf928558bf0f2a567bb689afe181b46bafcd3771dbcac5da87636be9",
+      "size_bytes": 15332,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_2.svg",
+      "sha256": "6955fa6c90d12c3d3dfcf914c47c5672a9c0f49b028d11afeee4e1f5125a2cee",
+      "size_bytes": 9610,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_3.svg",
+      "sha256": "4909b28876ec300b853c9b9cfb9dbfacdf90b56f6001acaf15a67f7b3496a090",
+      "size_bytes": 7379,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_4.svg",
+      "sha256": "74a7a4e0df94af103147d4b25d375087791be1e8f7fa66a0b41bf5af9c121e85",
+      "size_bytes": 7090,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_5.svg",
+      "sha256": "cdacc96497d1473e4914055d58f1a9217b423560ce9ca66cee972bed4dc77d69",
+      "size_bytes": 4986,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_6.svg",
+      "sha256": "3a77a3065d42bb70c6f7a9ff254171759f57d83fc0619cf82eb1834a694dc260",
+      "size_bytes": 3173,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_7.svg",
+      "sha256": "9c4b232970e62a490ca84788541ba1e111c283b40604035057b73557051b08ca",
+      "size_bytes": 1851,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_8.svg",
+      "sha256": "56bd29eeb0092be972bb10d9fa75debf485be6e9b40c7f0def97776275782570",
+      "size_bytes": 2243,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/0_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/0_9.svg",
+      "sha256": "53d6d180d8f3c916fe0f028b477d42e8d347887c772b60e8631fa96716c882d8",
+      "size_bytes": 3512,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_0.svg",
+      "sha256": "a89e5a99920d1eaa3d320b8ee0c32e6e5656dbfd5152f5525cc9ab835c73ead6",
+      "size_bytes": 2449,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_1.svg",
+      "sha256": "1c0ce9fcee0a117ec4999fee7cef089d911a96ea8e6d3bbd685bf38324fce764",
+      "size_bytes": 2963,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_10.svg",
+      "sha256": "3e11eb301df041a483915915b2366f57ebac09b68fa019ff670db20ed22ea532",
+      "size_bytes": 2240,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_11.svg",
+      "sha256": "40d2b06e0147d3429f198356bc24b4f0d4844585a15f5b8714b1603511820df4",
+      "size_bytes": 619,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_12.svg",
+      "sha256": "5f71cce6c12d515cfc87ab39dededb6de471e63be0e83bb6509b36c5168778a0",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_13.svg",
+      "sha256": "28ee71a6f997148fac5e56a3aeefa8e8f1e0aed78fadc9ec46b571c8def46d19",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_14.svg",
+      "sha256": "16dfb6b3ffab4c8ce4ba974b1e26e17f3eb8a0b9aafd445f99f73d106fd93193",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_15.svg",
+      "sha256": "6c41bc48338e129107b853ec67ba1ccf26144d2d5f7803963f49e0d8a8d0b5bf",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_2.svg",
+      "sha256": "fec8c699e1ed00b5b8eb789f5126ed4f403967b1b12f0928cc6ee3633fcc8c72",
+      "size_bytes": 12739,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_3.svg",
+      "sha256": "2f99e19fb750792cc23a3ac3a0ebe6dc0e040674211de8b864b297ae6208954e",
+      "size_bytes": 10825,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_4.svg",
+      "sha256": "9933b17250f0a26fba1edca2a5457c275d881597d602b1e15f6a18f3cdd40e74",
+      "size_bytes": 6799,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_5.svg",
+      "sha256": "03240975f33804a9e649a6f953494a36994ca2facd40c6143d4511a575c55bbd",
+      "size_bytes": 10564,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_6.svg",
+      "sha256": "f2bacaf853c1d4a21df6126e3ca8e1ebd9ca524d862e63691e0655f6a44c5ce2",
+      "size_bytes": 22999,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_7.svg",
+      "sha256": "9113f72fec82f82614d8221850f4f3d54a720d4e249e7ec84eaf80c173b3853f",
+      "size_bytes": 15416,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_8.svg",
+      "sha256": "28d194d5541b5a34d1e3ba4f8919ea01e35f0834de3732509e5256e26334f750",
+      "size_bytes": 19367,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/10_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/10_9.svg",
+      "sha256": "6c3130cd469fed7d62b8a33289cac71bf9179c2228d5bb642b26fa5cf50bf958",
+      "size_bytes": 8096,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_0.svg",
+      "sha256": "e93aa6dd7133d9eac70be94ff7ef67446f7c7486a37963cf2beacca8972804a8",
+      "size_bytes": 5572,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_1.svg",
+      "sha256": "6cffc874f43a260bbb7b74078cbd894c8ed14f2d1fcda4763e29ebf531d7638c",
+      "size_bytes": 6037,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_10.svg",
+      "sha256": "75f19731d0003be56c7d3ede32d7cfe42b297fd2c8b25a014e0fdaa37df601bc",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_11.svg",
+      "sha256": "b63a8488cbc628521324f3353900b332735094a5a4f2c7dbabe57916db6be263",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_12.svg",
+      "sha256": "6d6ef0c8b69815afe90a4cfb7804125c5deeef7925758b25d0210395d6d49502",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_13.svg",
+      "sha256": "c23412526dc20184d37a4418d70dd1703f2ad929fa2dd8fbcc5d8d4f0f4e28ad",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_14.svg",
+      "sha256": "5a1be2521271f93852c93738b66f61e19471d96eecfd1fcbc8d3865ca37b757b",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_15.svg",
+      "sha256": "544f3596e89cd175a3dace498915d948dd828bb2a2b73ef6ef53dde9db6c5e37",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_2.svg",
+      "sha256": "be1d1b7db276d1d424fbe41d441047e394bdc4cda0a37025dcb5c6e48b3701fe",
+      "size_bytes": 28613,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_3.svg",
+      "sha256": "2c9eb40e158ee3f2f68128fac117f29fbb2733e357d148a64ced0820ba1871f7",
+      "size_bytes": 10533,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_4.svg",
+      "sha256": "d85d898fbd5c269e1c2c06daefd37c3b962d5e5fef032e39393956153676f9af",
+      "size_bytes": 13343,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_5.svg",
+      "sha256": "e9768bad570a37fa36eed05f0e1f19c4d833c13beacc48a7a685805d4c2af6eb",
+      "size_bytes": 14849,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_6.svg",
+      "sha256": "a76445bd50b6736932fe26abcce773c97bf8ac8e59c1a7ac2c270f8149aca0fe",
+      "size_bytes": 20098,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_7.svg",
+      "sha256": "5018206df7b65891399fcdb86e69e26addf6da4ac5af3ba1abbeb3dc4290a70e",
+      "size_bytes": 11154,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_8.svg",
+      "sha256": "848a869d296b7b08a1902e14eef0bec6886b2841059009ad6b03fcc0ed60c819",
+      "size_bytes": 12862,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/11_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/11_9.svg",
+      "sha256": "338e3156044e7fb21d38bc03654588c69abdee12788920d3b2a00ed26789b6a8",
+      "size_bytes": 6775,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_0.svg",
+      "sha256": "81a94ba9d943af0bd4f06d0194f08d6e51b1ffa92115cf3ac7b15e879c7a4619",
+      "size_bytes": 6288,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_1.svg",
+      "sha256": "0a06501d3faef4dd7dd968c863ef1bd6b84c8c76774f1d7d2f7e142be8bad2b9",
+      "size_bytes": 8658,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_10.svg",
+      "sha256": "b40ba219ed6a46893b2801ccc139c0bedefcad0930887ee0d276f0b78f5ee03a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_11.svg",
+      "sha256": "d817f41a4c078a0df18f0150d6d7079dcbc99c96e031212aa83f0dec45c2bc75",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_12.svg",
+      "sha256": "9824066bbebaf115425681040e1b4c0f404d31bb387ebb47b042c8a5a4752ac4",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_13.svg",
+      "sha256": "4073940855c8f48a4db500ba965fe65b1edaec9f8c885f8de7b49b06d7fd5fc7",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_14.svg",
+      "sha256": "62b58f1f82684286be4708d48937b94643a8f6c32c9fe661da6da97d5ca0ba73",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_15.svg",
+      "sha256": "6365575ff36d34716bafdbc805eee350763591acecf99418398892d5a1a7c169",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_2.svg",
+      "sha256": "a5c73959ba1d94db5ff7f7c3c52650204467f951f47f70c65cb3df2414dfd45b",
+      "size_bytes": 12147,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_3.svg",
+      "sha256": "c7c99639fdf017c1e9f136c58e7ef48401bb3b9eef24734d700358527b7987ec",
+      "size_bytes": 8533,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_4.svg",
+      "sha256": "fc311b546750c933b04c618df5f46492e4925c444b5591c8d11b53f3259fa4cc",
+      "size_bytes": 6764,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_5.svg",
+      "sha256": "f6c849ee56aab0d4a7f90798edcc14712fd5fb90415fa28e1544c48ba641d98e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_6.svg",
+      "sha256": "80edf95eee7f3840b355bebf0fe51d7017e8e0c1e06f70271751b4cb696dffb4",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_7.svg",
+      "sha256": "f709749b781a2996fbe7f397dbd7d0086437d95d438aa3d5ab2ae42dda17fb1e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_8.svg",
+      "sha256": "0f4914301afc751c39e4cec2c1fc495f4131932f0be2b51083a60abfab3dea5c",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/12_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/12_9.svg",
+      "sha256": "0e14d3fda90e371cde8bb3322fe78d716c8dbab4bb2f2c6d56333a5727b4e83e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_0.svg",
+      "sha256": "f34d7eeb42df3e9078dc57dea7f1c16a2b6552ce6daf43425aa0e51397f184d6",
+      "size_bytes": 1737,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_1.svg",
+      "sha256": "c27f6c51dc780f6b46a043887637f21e8668af61664750dc2d88413648c2c6bb",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_10.svg",
+      "sha256": "269c4e0e13e66c8b7112e0628cfecbfa2200d2efdd33fe47ffd0acda58ec28eb",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_11.svg",
+      "sha256": "7979f2883b5c45e5d1a6649306a6a11cf2b0ce8db614af5aff0cabc36631a80d",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_12.svg",
+      "sha256": "da127c4a15fa34600f1ebbfc608426a9758d90f99c8af6489b6eb7a0f6c56b36",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_13.svg",
+      "sha256": "4c1a9020aa14829c21e948d7878fa1caaf099741a07da3926308f0f78b6caac1",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_14.svg",
+      "sha256": "68ab5dd0c72d04d8bb4bffe4792777810d041d6d3fcb0723a32ff77bf4795eac",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_15.svg",
+      "sha256": "bfd27caa3f825c2dd7c255c66103827c27ed027544875d6e003d4869807cd081",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_2.svg",
+      "sha256": "22dc0354aee63f088b28a0689ce32454168c8a1ae82432089ee659654b05bb82",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_3.svg",
+      "sha256": "b3debb88dd0194561c448f3e7355ba0d3cf46a39339942ba8b6be5760af1dc24",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_4.svg",
+      "sha256": "a7745c8a49994a0bcaeb03843022c2978b7cc4f82d42878e982f5f3a6e31b934",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_5.svg",
+      "sha256": "e75ba48565a42aaf8fc9dbfc3f569504c02b22add722f8d9d0bde47e91ba7c35",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_6.svg",
+      "sha256": "e4e398251c08243eef46db521f921ec6148aaf973f49bb0b84625a00011eeb31",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_7.svg",
+      "sha256": "316b6b71440f8aecb67f2dbc552c7f522dddf56aacc35332531267c38d5f3d1e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_8.svg",
+      "sha256": "756b39f8125f5d5043ea8482b6d87c534b23ad8fd039073112bd46f7f7241792",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/13_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/13_9.svg",
+      "sha256": "f76bef06fc274e2f09327ef33c9c1205ccdd37b037bb662ed679381d3c3ec8e7",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_0.svg",
+      "sha256": "ed39ce926256d6b20f42a539c54ea3052335b85bb6068891e926cd8b3958a549",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_1.svg",
+      "sha256": "84ebe1dc382e12e37b4b1499ebdbbd63099303fabe69fedfb5d954068a8c36e2",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_10.svg",
+      "sha256": "c1f8adbdf67b8843bc9736ca73c7f4ae74aafb3be64bb3a7648c34d3421ca4f1",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_11.svg",
+      "sha256": "44485b26e05ab446477981959cc5cf33907a7220ca62d0a7b737e7627ba4a408",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_12.svg",
+      "sha256": "221eb9e7f7879e719040992d81485c16e7d7615e46a8ecf695fd8cee3c839dbe",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_13.svg",
+      "sha256": "95fd31aa616adb8e304192ff28044afaa5b20e25d5145e7691ebf674f2b4efa6",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_14.svg",
+      "sha256": "dbe16e6ebb57fea0cd33aa70a03fc75a28c64c6757dd97480c7bf22717f8e784",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_15.svg",
+      "sha256": "d3b059fa87c2c8e0b5d86e5faffa95d2ce0cc4f418ed35ed3c322cc9fe5a24de",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_2.svg",
+      "sha256": "a2302645a931b227d8d1b75ff7adbd82450534cfa9d6c29e1ca246dfadd856f5",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_3.svg",
+      "sha256": "c33f6189f44f33c917f17eed73b2bf1eb9d2b377c1a16ed30e18d762e913bf13",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_4.svg",
+      "sha256": "37c0dcd938c1d4226541bbe2b13b692563f5f3a7a4083e9e7b8b314b10e54f26",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_5.svg",
+      "sha256": "dddf93854f377e16f60ecfc57708dab73a174f8acf2b14c43684843e4c0fb00c",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_6.svg",
+      "sha256": "aea60f47dde542a56b2d66e5882f264eaad045d0ecfdbf5c7ecdfcc9f41ba0b0",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_7.svg",
+      "sha256": "ce705d5d599b5cfde1aaaa70ea3a5f62ce23bdfc22b7df09d55520f4d3c3200b",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_8.svg",
+      "sha256": "7639949695fdc6bfb825edba5b6179f686703a57bb823cc831eceb8e1366c5b9",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/14_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/14_9.svg",
+      "sha256": "7838a625f35310fb9cc949e927d4e69b2bd13c957e0d7530007144f77f922756",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_0.svg",
+      "sha256": "6f90da9662e7501746ffccb0d913d16855742c22190fb13d74b4d3e038259ee9",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_1.svg",
+      "sha256": "2d8566d548fe337d2dcd615bc37207c8f27b8986365c68a30e7bb1d701dddc62",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_10.svg",
+      "sha256": "47861b3167c6c86802fa20afa8183d7781193b79edd55de2636c63b51d42aea2",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_11.svg",
+      "sha256": "b7d665fcbc0479042eaf5f0a3df1d4734c024cce561b9d0e10b4d5585570f44f",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_12.svg",
+      "sha256": "9d187e0e98f5d9af30ba3b7c88def654b15e4ffc37950dfdc640185bf76b7f7d",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_13.svg",
+      "sha256": "92dee6f5d6e8f8041f046f0eb0026bbcf155dfb8f6787ef49677ad7501764168",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_14.svg",
+      "sha256": "a4acb593d8295d47aa1b1b784677b3cc4a25ad735d35dcd550ce8791e54c8970",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_15.svg",
+      "sha256": "31fd84b1ccad54d5e036c5275dfb1ec7d8299dfff0789717c5bfb6725a3bbd83",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_2.svg",
+      "sha256": "5ebb4f2bcf812e81b66939aa6d5c3a8ed1d9234a0ff024ce04017a08f8515d8b",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_3.svg",
+      "sha256": "14619a095487a7e23b45459a4883a5042a7a3366162332d5c4ca1187a3d915a4",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_4.svg",
+      "sha256": "ebf47b8a79e90f5aa4883f5f7cbd77d781ab2b862ea2f39f758731a92903eb4a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_5.svg",
+      "sha256": "6261cde4a2c025651c0acabd2ec8fbbc60241b4a362b9de6bf8de46e6d73bf82",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_6.svg",
+      "sha256": "5ae89bc5020ce436b63c729835b74b03dbedd7122ef31003e96d50fdbbca3faa",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_7.svg",
+      "sha256": "062e25dc7fb2386b7689429b91b9e404d00302235acb6f83a06b92134ed61a71",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_8.svg",
+      "sha256": "c543667bb94fe317f844848bb48770841e598bed10f83124aba23bd84a62c189",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/15_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/15_9.svg",
+      "sha256": "734ac913f7bdff4f12a73bc83eee0d50920baeb69a22c2a101732c3339c0d1aa",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_0.svg",
+      "sha256": "389c7a4979f6cb3cfd4111e0c63d0f977aa922494e40cf057d5a035a55dfbaa4",
+      "size_bytes": 13865,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_1.svg",
+      "sha256": "feb880f3a8ad0dbcf19c8d61b4d9bd6257c84e40e9253d42641aa527ba68b2a1",
+      "size_bytes": 13520,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_10.svg",
+      "sha256": "d5934f8681182b1d1e3893dd3e78004a01d37e1c67dcd0206176b6af1e97b45f",
+      "size_bytes": 2746,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_11.svg",
+      "sha256": "d1307ca99f1a39bd85bef8c716149dc46de5d45076a6b1d8e41832640dabcf17",
+      "size_bytes": 8499,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_12.svg",
+      "sha256": "0caa75411b9a9febc6f890410c8ca740de3bd1af700397f0cbaa3f293f286740",
+      "size_bytes": 6931,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_13.svg",
+      "sha256": "0b60ba40cb0720f8923763ff6e2db7a9516f769b2fe1c49a8b5363a5a8b6effd",
+      "size_bytes": 8080,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_14.svg",
+      "sha256": "12e9f15da81c67f47a4ec53365d727c841788b7f79c4513c6869ef63ce0867cb",
+      "size_bytes": 4833,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_15.svg",
+      "sha256": "7ff6c36673651cb3267c73a9985d94907818cdaad49170aaa2b5bf4aa5ae2d9c",
+      "size_bytes": 6958,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_2.svg",
+      "sha256": "cbb173c4c8b7166ed5985a9d93b0732a33484207f5e8d93b9e7706a03e366a2d",
+      "size_bytes": 11227,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_3.svg",
+      "sha256": "ca05fa0645934fa1cf82ac26431c0caa7d3ab1f07abcb9a936e8680b977dba52",
+      "size_bytes": 7340,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_4.svg",
+      "sha256": "7ab2a0c57c5e996b4313c8b2daefe5f6647b077d1ae6173b02f5a21aa66dcf4d",
+      "size_bytes": 5832,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_5.svg",
+      "sha256": "9bfac9a0f491fe8e42d4cd746b339dd61e4f78f113ff22b92cecd0d6bc417ec6",
+      "size_bytes": 5597,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_6.svg",
+      "sha256": "a812af6632ba7b54cedf66366b6e40c9a6d11fe74b8a43dd0dbebda99cf6e6f3",
+      "size_bytes": 6383,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_7.svg",
+      "sha256": "ba5caf0c8f0082ddbcfc801083398e022716931cb18d8a2768d78445c05c32e0",
+      "size_bytes": 4363,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_8.svg",
+      "sha256": "a44ee72a937caa59963c0eacd4d3a33edacc4a28c21235a8653816716f574a92",
+      "size_bytes": 5707,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/1_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/1_9.svg",
+      "sha256": "5a820e7c12310029818e38e033bbbf935d62811fc82d501406dadd3914a35b96",
+      "size_bytes": 2813,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_0.svg",
+      "sha256": "9fd3222bd37158f5f012736cfc4140da71f855cdb42f0c2fad3acc7dac1ff583",
+      "size_bytes": 9786,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_1.svg",
+      "sha256": "b492308d7481d2f22f1f520713fbb0148b3262c42fefcee94f6fcb60a5e7d9b5",
+      "size_bytes": 7384,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_10.svg",
+      "sha256": "c586f0871af788be843d6a399f195eb8073b7adcf58adfba5e333d1494905f9d",
+      "size_bytes": 4706,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_11.svg",
+      "sha256": "40e306229bc0b20a4e00d1ba5635a1cef42d41765431cc7a1472f3246d972b11",
+      "size_bytes": 4536,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_12.svg",
+      "sha256": "63a43e64c9cfb216e83242611285c787031405e29977c43ce99246189b554168",
+      "size_bytes": 15465,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_13.svg",
+      "sha256": "a8d57545eb16c5ea4e62adf3593dfc1513549a758bc7bbf6e4d0e21f9f23e7d7",
+      "size_bytes": 22084,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_14.svg",
+      "sha256": "fa8f5ab041973c67592cd0c42369b454cb7f9b914c30319ce5034c91cb018558",
+      "size_bytes": 4340,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_15.svg",
+      "sha256": "ccb9ed2b3a1edfacd3475bf922bc19d4aa5d30f598cd0a146f90c8910bbe57ba",
+      "size_bytes": 12079,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_2.svg",
+      "sha256": "91440c12e024c0156259c11729b19207cb38a629836cf3e5cabd3517da365f3c",
+      "size_bytes": 4140,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_3.svg",
+      "sha256": "4dcf6c0727d01b772b37e577ddbb4d030eb40e8fc7c9bc29d5326f3d2e53f69c",
+      "size_bytes": 7066,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_4.svg",
+      "sha256": "42ea26877b3eae9229ce9e9937eac941224647aec0f4816373fa08c59ea89e4b",
+      "size_bytes": 6031,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_5.svg",
+      "sha256": "bfc441a06ea55162dd5fde58d1ea94c85b5140688deb0614ebccd41ed24471e9",
+      "size_bytes": 2352,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_6.svg",
+      "sha256": "23a778f63c3f4fa757c6fe0eda02e5c2f907d6b63978985a5bb81509929813f3",
+      "size_bytes": 4871,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_7.svg",
+      "sha256": "2cde6904eb8b701c5fc7f1572ea952e6a036f88add1fe0d0d579a0da45788ef9",
+      "size_bytes": 9999,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_8.svg",
+      "sha256": "98ba0f8aa9e02b733bfbeec8e502a7f8d084a842aa8572273bfe684f890bc2cd",
+      "size_bytes": 6484,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/2_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/2_9.svg",
+      "sha256": "6d30ca05b02c0d128f6c5f35a50289d4d311ea8c407521cbd989a1e22a411611",
+      "size_bytes": 7062,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_0.svg",
+      "sha256": "93828ce01e0f8ce37f7063804f45a9209f115cb0d4209592e5adfea490fede89",
+      "size_bytes": 10029,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_1.svg",
+      "sha256": "62336e206d1c8e2a76a2ebab337ae119ff38d35b42de5ade5072eabf0f3ec1c8",
+      "size_bytes": 7732,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_10.svg",
+      "sha256": "65d6aa1c865ad51f3e71dc80d21f2babdd0a1053045265ce8ec4e2bfbed44726",
+      "size_bytes": 8363,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_11.svg",
+      "sha256": "b7b0f3cd46ea1621bb952a51bdf35bd58d8dbc3c7efa4749c6bcd131161085ba",
+      "size_bytes": 4340,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_12.svg",
+      "sha256": "8a9912b3d1434a6449790e40a9ad2af410f908703e14370ae7dbfbb2a0f995f9",
+      "size_bytes": 23477,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_13.svg",
+      "sha256": "c4e0eb722eb2c1d1e359201086643e526852574e74283cc23ee3017f0ec8b221",
+      "size_bytes": 62823,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_14.svg",
+      "sha256": "5d61aa98d1fd9698ba9545dffc7383aaa198dca35bf5c5eb4e86d39f501350fc",
+      "size_bytes": 10968,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_15.svg",
+      "sha256": "f45f0c2ff9a199d135f912fb908af99aafb8d7283649d7c32ea4131e27f3ae97",
+      "size_bytes": 26579,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_2.svg",
+      "sha256": "88bea5e2da8d652decfcbf7a2edd8f40c45a5ee4fa022a6078929e421e7d4477",
+      "size_bytes": 2453,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_3.svg",
+      "sha256": "ad32ec44cfb889f2787358ecbe1cd47daff1aaa6d9e12ff3227fc6e2568a5ab2",
+      "size_bytes": 3953,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_4.svg",
+      "sha256": "25965c8ad98f6304c4211adbfe9c0288a60314c588fa88dde75984c185e291c1",
+      "size_bytes": 4044,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_5.svg",
+      "sha256": "bc828166ad1aba46e7c4c9991c7d6c8619a74f379c401c3946a137584808fbc4",
+      "size_bytes": 8279,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_6.svg",
+      "sha256": "cd6ef35307c9cba2c188e7129632b40a71ab3c11e3a84aa85d29d2ab4c771b0f",
+      "size_bytes": 5819,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_7.svg",
+      "sha256": "7fbc0c3c0cfe465f251a5e3b4388d4199de86682244a7ffa28731ebcb6bab03e",
+      "size_bytes": 10602,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_8.svg",
+      "sha256": "99ea75de910544a2685dc970177507c21efb9721d12e11d1e6af60791744cc0c",
+      "size_bytes": 10958,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/3_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/3_9.svg",
+      "sha256": "9b455ff3c085194b35715dd8944f136da61d01c71109bde0cce9216382115b83",
+      "size_bytes": 4071,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_0.svg",
+      "sha256": "1a5a0c236c8198611472af233ef20176ac645f3a236df49beaf9847ed73aac22",
+      "size_bytes": 23514,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_1.svg",
+      "sha256": "2508fc510c066fa721063ec2a84065160bcfe7ddfafc560b1e70463c9bd510d5",
+      "size_bytes": 6269,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_10.svg",
+      "sha256": "07672261eada17653e16f2a988e955070aeb3b0852f03d12a15c7317a470cc73",
+      "size_bytes": 17415,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_11.svg",
+      "sha256": "66b9a0e7f6dc7f1a77e76b9caa8033f17a83af9a2ecc5ec5b6a666589bd7afca",
+      "size_bytes": 23209,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_12.svg",
+      "sha256": "c7f805fd02ba4e714cc469d6226034e2fb631e32af8cd3b82773ea828b51e5dd",
+      "size_bytes": 37410,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_13.svg",
+      "sha256": "1d2344481bfa60970459b5934f634e11123855fe189dfba39fd6cdff33f98811",
+      "size_bytes": 16795,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_14.svg",
+      "sha256": "5c9b11c4c59d9e1d0fd12e2f5659bbbc051b70112025b01fe909c92faca1df7e",
+      "size_bytes": 7980,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_15.svg",
+      "sha256": "232fe384df6f167e0fdd7eb7aa202a4a3ba4886caca54523a6b6f61f8d0bd5fe",
+      "size_bytes": 8241,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_2.svg",
+      "sha256": "b75f9dc5f4d9944cd5a1c1903d9dbf33a05cfb54eea46fe1a3b7e10e616a9704",
+      "size_bytes": 5305,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_3.svg",
+      "sha256": "9b0c6e5492792d680b22bde067b6fde84fa4dc1345973a6a3d6fe67824df56b4",
+      "size_bytes": 5645,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_4.svg",
+      "sha256": "48c565a4056570206126db81fff4e5443ae6d4282f4ff0f062533c803a241069",
+      "size_bytes": 3882,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_5.svg",
+      "sha256": "99468ed88e7381ce8fe2598b2812c1899c84fe4bacc5707da34e7d9565163c90",
+      "size_bytes": 6165,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_6.svg",
+      "sha256": "e99e6152fc6971735da9519b4df694e7092d63c46711086d5bf72f63c239d138",
+      "size_bytes": 22606,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_7.svg",
+      "sha256": "ae9aeea41054bb996eda730a8c79d410096a14d25e4f61fde9d8c8ceab4af178",
+      "size_bytes": 6428,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_8.svg",
+      "sha256": "d08fce389c315bf428ce97040a10fa2fe847d5ffada15c716dec21f62c43f5c5",
+      "size_bytes": 6451,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/4_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/4_9.svg",
+      "sha256": "e5421304f95c2f4089e7c0f5b815ac99c275c7f0876ac39087919daf5a1e4fc3",
+      "size_bytes": 14665,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_0.svg",
+      "sha256": "c27a032e49c42a0ca30b9009fa0393ec624c691ae49f5c786f74c0cef5e0a935",
+      "size_bytes": 7469,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_1.svg",
+      "sha256": "def55e899c933e1a811d871e36d8f13a79714b014da4755e6c35d8759a7d14ce",
+      "size_bytes": 23309,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_10.svg",
+      "sha256": "b631c044be5d64a73ae6c8ecd41a10a5dec192b99bd39e4dc24839eb085f6037",
+      "size_bytes": 5719,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_11.svg",
+      "sha256": "e217337baf4a4e9389a136a3b327459150c5a2d23bf7508178faf543b2bf5975",
+      "size_bytes": 7821,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_12.svg",
+      "sha256": "fa283e9382920b30ec4574b49724cd1d136f1325504de95e55c93c80c16fb56a",
+      "size_bytes": 26109,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_13.svg",
+      "sha256": "7dd3e1601e2b49cf30ba7fe741004f9be0a2ca7fdf547f16c8723454a1bb5016",
+      "size_bytes": 34040,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_14.svg",
+      "sha256": "3dcb6c23660ad40a6968d1035c8c343b1e08503a561324145abf04eb10470d40",
+      "size_bytes": 11051,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_15.svg",
+      "sha256": "bb6ad7d74cb33d391cdd7bd32af6e7145bc4c7e4cfbae4602b1b034262cca3fa",
+      "size_bytes": 8848,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_2.svg",
+      "sha256": "ad7f2f98742420d3437019d4863767ea203c70ccc450110c6f12590bc3685d26",
+      "size_bytes": 15650,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_3.svg",
+      "sha256": "1ec00bab819e3f85fbac6039bbb8698742f954acd143530cce75012fbc6e764c",
+      "size_bytes": 4458,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_4.svg",
+      "sha256": "96382085fd91327618e3ae428bc8552e24066dd497acb76667455f7777000ce7",
+      "size_bytes": 3370,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_5.svg",
+      "sha256": "21e62a8325d2ee4ab8019e9ca36258853441d7fb2c63c3b7e8f9ef6fd26b59cf",
+      "size_bytes": 3161,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_6.svg",
+      "sha256": "4ddb4eacb546d102dffeb448673bf1536db9abb2b8302d26215d0634beeee4ce",
+      "size_bytes": 18810,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_7.svg",
+      "sha256": "5e078ca2d5d950ac0cda9cb9ed81c67dc593ccaeabe1523b898bbb196f62a756",
+      "size_bytes": 52674,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_8.svg",
+      "sha256": "8dd3245eb1a0dc26046c5aa87a3e8d72247b866def4915ac9a69cb7c7fed6da9",
+      "size_bytes": 44874,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/5_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/5_9.svg",
+      "sha256": "7dc676d6fad779cf868a792ec26e9e6ef6df34eae131bbae2df24f7de1b5b7bc",
+      "size_bytes": 12663,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_0.svg",
+      "sha256": "8bec2daaf317f78148e895954643509873c04593e4ebdd6b6c2be2f583cae89d",
+      "size_bytes": 11558,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_1.svg",
+      "sha256": "2d7ad1a736271db71e2a9b7262a03a310f5c7f6cc187de13ade638b2da3fd84e",
+      "size_bytes": 11096,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_10.svg",
+      "sha256": "e2de73e5b11f2cd45cd2e5c6339d6cfc388b6a01650568273d644cca335901d5",
+      "size_bytes": 29816,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_11.svg",
+      "sha256": "ca40d158599e3b1f9274c0c939e8bfb4162729f6b799dae2df3cfeb19a989f46",
+      "size_bytes": 36059,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_12.svg",
+      "sha256": "80219cb8c9debfd756b32f5d2a0a36bb0e0f6b49a509d21e8fd069e806c65d45",
+      "size_bytes": 19692,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_13.svg",
+      "sha256": "364e7a762b78d35672352654b734da6874e013ef3b045d180d294300a4e7df63",
+      "size_bytes": 21705,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_14.svg",
+      "sha256": "36cbb1676ce4116bb061b96605245daa1fad7899b6993d9b2c368ab6662a3279",
+      "size_bytes": 13720,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_15.svg",
+      "sha256": "60876c7713b7c094e2425751750046cbdd14056421b1d8fbfbeedd75dc476326",
+      "size_bytes": 10479,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_2.svg",
+      "sha256": "e97e9c7dd75aae3ee4d9a5c19a538a8227c6a3fcb76a2ba373323ff773c5124c",
+      "size_bytes": 28635,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_3.svg",
+      "sha256": "7ce6504a288ee2958699b7951ac2a656b5c72475ed1302567804ba2cfd8bfde5",
+      "size_bytes": 21079,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_4.svg",
+      "sha256": "00606040dfd94f670a24aa31b181390ec99a064940117eb22809e8b8b6dacc1d",
+      "size_bytes": 16968,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_5.svg",
+      "sha256": "d84bbc265b471f1c034349ea1f5d9afab221e745640f044c65c4ffd7323b0716",
+      "size_bytes": 29154,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_6.svg",
+      "sha256": "a78c9ef7f2fa65deba2bba941e20d75ca13007bd63d157626cef32b2a4cd3ba8",
+      "size_bytes": 19522,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_7.svg",
+      "sha256": "ab1f9b4090781957ba2c6e0749331f0b6a82ac8209eb5f58608295b8de07706b",
+      "size_bytes": 22958,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_8.svg",
+      "sha256": "4039d8505929d0a2a63dceb2cde10ec3a76cda22410cba586180dead3996c25f",
+      "size_bytes": 24355,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/6_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/6_9.svg",
+      "sha256": "17136d06fffe4a39eed318f6d7e1da29844cbef60047e1e2eb9e5e8c45614763",
+      "size_bytes": 10845,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_0.svg",
+      "sha256": "b97406d2d969894210243e76da4b2408339897a551035aad8a6157026cb3762a",
+      "size_bytes": 8623,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_1.svg",
+      "sha256": "00ed67b6ef8ee863a5d6159720eb122b502e836b9e3a344268671ab143194a97",
+      "size_bytes": 17815,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_10.svg",
+      "sha256": "6c75473c307747afee290a76047d9fd484384c79bcbccca39935b13ec4c1912a",
+      "size_bytes": 8305,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_11.svg",
+      "sha256": "e0eacff3aa19b18a8784de6fac995ef825d48cdb23940526304b5cd13ca1a4bc",
+      "size_bytes": 7373,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_12.svg",
+      "sha256": "c0f35563a8285bd350960988fd8cb8b7e1fcdcd1c88e754d4fca2b8079e7cf1e",
+      "size_bytes": 21665,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_13.svg",
+      "sha256": "6a697efaee286cfc6fd4a0a65cbaa1cbf0c6e69967bb8405fbf5adfef6112ef4",
+      "size_bytes": 47353,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_14.svg",
+      "sha256": "dfa42cfe4de7d166eb6d0c83c5d7808feb2dcf8bc8d310ab56b971a17aa063c5",
+      "size_bytes": 33286,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_15.svg",
+      "sha256": "fc750613b9b8f56ef0eec4748fab8827c5b6a6bff9890994f3157dd833d2f4f2",
+      "size_bytes": 13729,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_2.svg",
+      "sha256": "b248395560580332d2ddb1501ca5f450dec92de9ab3d3341dec02f5020d1cc61",
+      "size_bytes": 13318,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_3.svg",
+      "sha256": "078254fa662e7358ebd77fa7e4e48471168677b7b9134aed403ed54a697b4c5b",
+      "size_bytes": 36149,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_4.svg",
+      "sha256": "ce64d0f5f1ebbbb0cf742906e2265cda384cc9473add18a30da463705c959ca1",
+      "size_bytes": 13241,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_5.svg",
+      "sha256": "496d3a04c9082c175d15cefd48dbd23350449f8b7ab007a68266fd168dd236b0",
+      "size_bytes": 9962,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_6.svg",
+      "sha256": "e5d59081ff569da066d8cd21484bc75d54eb569d1b4f070c3db7041570b06795",
+      "size_bytes": 4206,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_7.svg",
+      "sha256": "a7c71b9e88db1a9bc35d15aa596bed5a42cfee338ffcad4429a97df346dd708f",
+      "size_bytes": 33604,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_8.svg",
+      "sha256": "30df5bbb8b4604d8bb0b96302d6a9720b563690ed3559bcc876b83f6abce834e",
+      "size_bytes": 33004,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/7_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/7_9.svg",
+      "sha256": "851eddc6411d96977a1927a8c296d9317b2bba50513b7c2c9e76543f7108a349",
+      "size_bytes": 24971,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_0.svg",
+      "sha256": "3f684bd202dfa7af09f717ff8eaf617ae117fa7f7d7d489f949ee5985de30c4b",
+      "size_bytes": 8446,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_1.svg",
+      "sha256": "d8435f5897989685df918c033ad963413655b2a1bec0cee15449a6ba0364268d",
+      "size_bytes": 20218,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_10.svg",
+      "sha256": "5d2b7aa6a37103016ad333f0ab7aaf2c0e4431e6cecb9dcdaf7d98acb38528ac",
+      "size_bytes": 32705,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_11.svg",
+      "sha256": "cc841b4f6a5f87df8279135e2a61e40e494e9eec2c554b27c56dc243440d7964",
+      "size_bytes": 23708,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_12.svg",
+      "sha256": "7dfbc1956da46a975744dcd6f048f3ade8d928c7c2872e6950562ea6bcbb09d1",
+      "size_bytes": 29153,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_13.svg",
+      "sha256": "14a96c1cb34f845ab0e9404c5639b171bb6566059138b1f5cbd1b8d6aa6bb344",
+      "size_bytes": 10269,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_14.svg",
+      "sha256": "08a2f78a6e4dbf38c81a020dc8171e7cdc8d6545b967d52344c57030b7899f19",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_15.svg",
+      "sha256": "29a3eda8d88eafeedd1451b671c8e759ca2106e30b2529d0dee0f4bb6e184b5a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_2.svg",
+      "sha256": "0beb6b0b5a101811865eb2e67237c5bb3204e6cd92f8e1e8e0f3d356e9c6c68c",
+      "size_bytes": 14430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_3.svg",
+      "sha256": "0a8be57d5882d77654b71a3eee0146e24e36a6eaf87603a4a8b129c5c51c55b5",
+      "size_bytes": 11931,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_4.svg",
+      "sha256": "0c919970a68b1f1145415c02076642ac4291b7f60b4fa9cc9ecade979a287c04",
+      "size_bytes": 26675,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_5.svg",
+      "sha256": "9a42fd7c4f0126d2ddd0597d7d2d2b42dda12ee8aa3e24c256d2b211a8996bf3",
+      "size_bytes": 12559,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_6.svg",
+      "sha256": "859228f85812bfccedf7c6d886e66a2b3f71120a24c8ea24d614573784df1455",
+      "size_bytes": 16399,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_7.svg",
+      "sha256": "03afa0e0622a9bd96178393c3eb41ebeffc0fd7cacb7a06a6a8b723f79137d86",
+      "size_bytes": 74820,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_8.svg",
+      "sha256": "baa119bd12113abb6074aebf36b7fa1ec1fa27d789a6f02a27c2226053f0fbd8",
+      "size_bytes": 76358,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/8_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/8_9.svg",
+      "sha256": "781631d7f8eadcc75aa1ac6ba83e72dbefad1190ffb0616f59bcbfbb2e2c1890",
+      "size_bytes": 50750,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_0.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_0.svg",
+      "sha256": "5eeaf2723d72018af44659e8a30f3658b18add0f326131f7722e00d18f5c5cfc",
+      "size_bytes": 737,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_1.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_1.svg",
+      "sha256": "5185ed368512ffa9cc2dfc41bbab62d17305669b099f542fd4c67600fa988cf2",
+      "size_bytes": 5234,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_10.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_10.svg",
+      "sha256": "698ff3fc68441fa3d50ffd7ccf75d152f2ed4abe5dc7e9d12ed2134d0459a178",
+      "size_bytes": 17849,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_11.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_11.svg",
+      "sha256": "e37491bb0da7731c33238b49c4eb2a0456470dface914c5698afa65f2003788e",
+      "size_bytes": 21150,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_12.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_12.svg",
+      "sha256": "5f7f30e3a44c9b2fa32b2f5aa917eb14fcedfe29cba9b1ac1837425026efc2f1",
+      "size_bytes": 7650,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_13.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_13.svg",
+      "sha256": "3589448a0ffe0336b01067f1785d3aeeb152c09bfdbe24fcad7aa51bf760fe7e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_14.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_14.svg",
+      "sha256": "1f98c69b9a33e7a62ea79cd95f9715aee68071e6cbd015db9d87cd4cc66ba198",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_15.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_15.svg",
+      "sha256": "da56aa9f0febb9cc64b32e7cc72969e67be58dab55e506895d2f143b2e28834a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_2.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_2.svg",
+      "sha256": "4da925524db5f779de602fc9df19b413c40f8a2baec84bb9946ef7b8cc630076",
+      "size_bytes": 19699,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_3.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_3.svg",
+      "sha256": "d239994a51a12ece89f3ccc1b43e2d23950a4bc8419d85e3fb663d9a2bddd22b",
+      "size_bytes": 14301,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_4.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_4.svg",
+      "sha256": "6efa072b582463aefc8c7ba531292629063bd242b4f6f3d3dfa051bf1226610b",
+      "size_bytes": 25468,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_5.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_5.svg",
+      "sha256": "2b630af21439d4694827063d98a90dff686553a1c3d4d70e0d03761d7724de00",
+      "size_bytes": 35525,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_6.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_6.svg",
+      "sha256": "c22f9679d78df45dab20e0fcf0b1b3ec9e850f72329f3963525bc0dfb2af6926",
+      "size_bytes": 41367,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_7.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_7.svg",
+      "sha256": "970591a03c3093d0591071de982900317169506e5ff10908900a75afbefb3117",
+      "size_bytes": 75260,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_8.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_8.svg",
+      "sha256": "dd5b3eef2a96b4cdaa02c44d00b855bf8731d3086103c696aeb313d927d7dcd7",
+      "size_bytes": 88994,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles/9_9.svg": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles/9_9.svg",
+      "sha256": "d944a06ae69e23550c4dc3a24efc340e426bc297360944798dbd207c37634ab5",
+      "size_bytes": 25814,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/ulsan_metro_80km/02231bc5aed08085/tiles.json": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/02231bc5aed08085/tiles.json",
+      "sha256": "d6321d63f418c097d63a11eb426acab2a12d6f63aac3efbf9907a43388838dd0",
+      "size_bytes": 667,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    }
+  }
+}

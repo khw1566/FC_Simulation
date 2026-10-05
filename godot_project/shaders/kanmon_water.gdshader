@@ -18,6 +18,8 @@ void fragment() {
     vec2 map_uv = water_world_position.xz / world_size_meters + vec2(0.5);
     float coverage = 1.0;
     bool in_map = all(greaterThanEqual(map_uv, vec2(0.0))) && all(lessThanEqual(map_uv, vec2(1.0)));
+    // 맵 밖 해수면은 곡률을 적용한 광역 원경이 담당한다.
+    if (!in_map) { discard; }
     if (has_water_mask && in_map) {
         coverage = texture(water_mask_texture, map_uv).r;
         if (coverage < 0.5) { discard; }
@@ -27,12 +29,15 @@ void fragment() {
     float phase = TIME * wave_speed;
     float a = sin(p.x + phase) * cos(p.y * 0.8 + phase * 0.7);
     float b = cos(p.x * 1.6 - phase * 0.6) * sin(p.y * 1.3 + phase);
-    vec3 world_normal = normalize(vec3(a * wave_strength, 1.0, b * wave_strength));
+    float view_distance = distance(CAMERA_POSITION_WORLD,water_world_position);
+    float wave_weight = 1.0-smoothstep(1000.0,10000.0,view_distance);
+    vec3 world_normal = normalize(vec3(a * wave_strength * wave_weight, 1.0, b * wave_strength * wave_weight));
     NORMAL = normalize((VIEW_MATRIX * vec4(world_normal, 0.0)).xyz);
     float shore = has_water_mask && in_map ? 1.0 - smoothstep(0.5, 0.95, coverage) : 0.0;
     vec3 color = mix(water_albedo.rgb, shallow_water_color.rgb, shore);
     float foam = shore * (0.5 + 0.5 * sin(p.x * 0.6 + p.y + phase));
     ALBEDO = mix(color, vec3(0.66, 0.77, 0.78), foam * 0.18);
-    ROUGHNESS = mix(0.30, 0.46, shore);
-    SPECULAR = 0.35;
+    float far_water = smoothstep(10000.0,20000.0,view_distance);
+    ROUGHNESS = mix(mix(0.30, 0.46, shore),0.55,far_water);
+    SPECULAR = mix(0.35,0.12,far_water);
 }

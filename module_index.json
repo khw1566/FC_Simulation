@@ -107,7 +107,7 @@
             "_load_landmarks()",
             "_spawn_landmark_beacon()"
           ],
-          "lines": 67
+          "lines": 80
         },
         {
           "class_name": "AirportMeshBuilder",
@@ -196,6 +196,68 @@
             "preserve_height()"
           ],
           "lines": 26
+        },
+        {
+          "class_name": "HorizonHeightSampler",
+          "path": "godot_project/scripts/terrain/horizon_height_sampler.gd",
+          "responsibility": "광역 축소 DEM의 지리 표본화 및 자료 범위 밖 외삽"
+        },
+        {
+          "class_name": "HorizonRingBuilder",
+          "path": "godot_project/scripts/terrain/horizon_ring_builder.gd",
+          "responsibility": "중앙을 비운 경량 원경 링과 경계 전이 생성"
+        },
+        {
+          "class_name": "HorizonTerrainManager",
+          "path": "godot_project/scripts/terrain/horizon_terrain_manager.gd",
+          "responsibility": "상세 지형 준비 이후 지도별 독립 원경 메시 생성"
+        },
+        {
+          "class_name": "RailwayLandmarkManager",
+          "path": "godot_project/scripts/terrain/railway_landmark_manager.gd",
+          "responsibility": "태화강역 역사, 안양교 및 주변 범용 교량 배치와 중복 역사 제거",
+          "lines": 113
+        },
+        {
+          "class_name": "RailwayAssetPathFitter",
+          "path": "godot_project/scripts/terrain/railway_asset_path_fitter.gd",
+          "responsibility": "원본 철로 교량을 실제 철도 선형 및 지면 높이에 맞춰 복제 변형",
+          "lines": 69
+        },
+        {
+          "class_name": "RailwayAlignmentCatalog",
+          "path": "godot_project/scripts/terrain/railway_alignment_catalog.gd",
+          "responsibility": "공유 절점의 연속 종단과 터널 배치 목록 로드",
+          "lines": 20
+        },
+        {
+          "class_name": "RailwayTunnelWorldManager",
+          "path": "godot_project/scripts/terrain/railway_tunnel_world_manager.gd",
+          "responsibility": "노선별 터널 입구·내부·출구의 거리 기반 생성 및 해제",
+          "lines": 75
+        },
+        {
+          "class_name": "RailwayTerrainVoid",
+          "path": "godot_project/scripts/terrain/railway_terrain_void.gd",
+          "responsibility": "터널 통로의 지형 표시 및 충돌 제거와 탐색 바닥 높이",
+          "lines": 62
+        },
+        {
+          "class_name": "RailwayFormationBuilder",
+          "path": "godot_project/scripts/terrain/railway_formation_builder.gd",
+          "responsibility": "철도 절성토 도상의 측면 및 매립 기초 메시 생성",
+          "lines": 43
+        },
+        {
+          "class_name": "RailwayTerrainGrader",
+          "path": "godot_project/scripts/terrain/railway_terrain_grader.gd",
+          "responsibility": "LOD 지형의 철로 주변 삼각형 국소 세분화 및 연속 절토, 동일 높이 조회",
+          "key_methods": [
+            "configure()",
+            "cells()",
+            "corrected_height()",
+            "add_triangle()"
+          ]
         }
       ]
     },
@@ -221,6 +283,34 @@
             "_build_waterway_embankment()"
           ],
           "lines": 216
+        },
+        {
+          "class_name": "VesselRoute",
+          "path": "godot_project/scripts/water/vessel_route.gd",
+          "responsibility": "정박과 해상 왕복 운항의 위치 및 방향 샘플링",
+          "lines": 62
+        },
+        {
+          "class_name": "VesselModelFactory",
+          "path": "godot_project/scripts/water/vessel_model_factory.gd",
+          "responsibility": "원본 선박 GLB 수면 기준 및 크기를 보존한 공유 모델 로드",
+          "lines": 41
+        },
+        {
+          "class_name": "VesselWorldManager",
+          "path": "godot_project/scripts/water/vessel_world_manager.gd",
+          "responsibility": "지도별 선박 배치와 거리 표시 및 설정 활성화",
+          "lines": 103
+        },
+        {
+          "class_name": "VesselWake",
+          "path": "godot_project/scripts/water/vessel_wake.gd",
+          "responsibility": "선체 크기와 운항 속도에 따른 세계 좌표 거품 항적의 생성·확산·소멸",
+          "key_methods": [
+            "configure()",
+            "advance()"
+          ],
+          "lines": 75
         }
       ]
     },
@@ -358,6 +448,11 @@
           "path": "godot_project/shaders/night_sky.gdshader",
           "responsibility": "지형에 가려지지 않은 하늘 배경에 별 카탈로그와 달 위상·금성 렌더링",
           "lines": 61
+        },
+        {
+          "class_name": "AltitudeAtmosphereController",
+          "path": "godot_project/scripts/services/altitude_atmosphere_controller.gd",
+          "responsibility": "카메라 고도에 따른 산란 셰이더와 원경 시야 갱신"
         }
       ]
     },
@@ -383,7 +478,7 @@
             "update_player_position()",
             "set_map_texture()"
           ],
-          "lines": 350
+          "lines": 355
         },
         {
           "class_name": "FlightVectorHUDView",
@@ -614,13 +709,13 @@
           "class_name": "BridgeLandmarkBuilder",
           "path": "godot_project/scripts/terrain/bridge_landmark_builder.gd",
           "description": "현수교·아치교·일반교·징검다리 모델 생성",
-          "lines": 144
+          "lines": 157
         },
         {
           "class_name": "BridgeLandmarkManager",
           "path": "godot_project/scripts/terrain/bridge_landmark_manager.gd",
           "description": "지도 좌표 배치 및 기존 OSM 교량 중복 대체",
-          "lines": 31
+          "lines": 37
         },
         {
           "class_name": "BridgeAssetExport",
@@ -1021,7 +1116,7 @@
         {
           "path": "pipeline/processors/vessels/designs.py",
           "responsibility": "선박 6종의 선체와 갑판 장비 설계",
-          "lines": 127
+          "lines": 131
         },
         {
           "path": "pipeline/processors/vessels/preview.py",
@@ -1031,7 +1126,7 @@
         {
           "path": "pipeline/processors/vessels/generate.py",
           "responsibility": "독립 선박 모델과 씬, 자산 매니페스트 생성",
-          "lines": 79
+          "lines": 82
         }
       ]
     },
@@ -1058,13 +1153,13 @@
     "ulsan_railways": {
       "modules": [
         {
-          "lines": 140,
+          "lines": 158,
           "path": "godot_project/scripts/terrain/railway_world_manager.gd",
           "class_name": "RailwayWorldManager",
           "responsibility": "울산 실제 철도 자산 투영, 거리별 선로 청크 및 운행 서비스 구성"
         },
         {
-          "lines": 101,
+          "lines": 111,
           "path": "godot_project/scripts/terrain/railway_track_builder.gd",
           "class_name": "RailwayTrackBuilder",
           "responsibility": "노선별 도상·레일·침목·전차선·교량 지지대 생성"
@@ -1082,13 +1177,13 @@
           "responsibility": "가속·감속·역 정차 운행 단계 계산"
         },
         {
-          "lines": 118,
+          "lines": 123,
           "path": "godot_project/scripts/terrain/railway_train_builder.gd",
           "class_name": "RailwayTrainBuilder",
           "responsibility": "동해선 4량·KTX 20량 모델 생성 및 공유 자산 캐시"
         },
         {
-          "lines": 87,
+          "lines": 106,
           "path": "godot_project/scripts/terrain/railway_train_service.gd",
           "class_name": "RailwayTrainService",
           "responsibility": "양방향 주기 배차, 객차별 경로 이동 및 근거리 모델 풀 관리"
@@ -1143,17 +1238,17 @@
         {
           "path": "godot_project/scripts/terrain/gulhwa_crossing_asset.gd",
           "responsibility": "굴화리–다운동 저상 보행교 생성",
-          "lines": 26
+          "lines": 32
         },
         {
           "path": "godot_project/scripts/terrain/seonbawi_bridge_asset.gd",
           "responsibility": "선바위교 근사 모델 생성",
-          "lines": 49
+          "lines": 55
         },
         {
           "path": "godot_project/scripts/terrain/pedestrian_overpass_asset.gd",
           "responsibility": "범용 계단식 보행 육교 생성",
-          "lines": 37
+          "lines": 43
         },
         {
           "path": "godot_project/scripts/core/pedestrian_bridge_preview.gd",
@@ -1173,7 +1268,621 @@
         {
           "path": "pipeline/processors/build_pedestrian_bridge_assets.py",
           "responsibility": "격리 생성 실행과 매니페스트 및 모듈 인덱스 갱신",
-          "lines": 77
+          "lines": 83
+        }
+      ]
+    },
+    "taehwagang_assets": {
+      "description": "태화강역 및 역전 구역 독립 에셋",
+      "modules": [
+        {
+          "path": "pipeline/processors/taehwagang/__init__.py",
+          "lines": 3,
+          "responsibility": "태화강역 전용 생성 모듈의 명시적 인덱스."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/district.py",
+          "lines": 44,
+          "responsibility": "주변 도로와 비실측 상업·주거 블록."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/forecourt.py",
+          "lines": 53,
+          "responsibility": "역전광장, 정원, 버스·택시 승하차 구역과 주차장."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/generate.py",
+          "lines": 138,
+          "responsibility": "태화강역 전용 GLB·씬·자산 인덱스를 재생성한다."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/geometry.py",
+          "lines": 57,
+          "responsibility": "역사와 주변 시설의 공통 저다각형 기하 생성."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/preview.py",
+          "lines": 49,
+          "responsibility": "깊이 버퍼로 실제 생성 메시를 투영하는 경량 미리보기."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/rail_yard.py",
+          "lines": 41,
+          "responsibility": "정적 승강장, 캐노피, 선로 및 전차선 구역."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/station.py",
+          "lines": 49,
+          "responsibility": "고래 형상을 참고한 신축 역사 외관과 출입부."
+        },
+        {
+          "path": "pipeline/processors/taehwagang/verify.py",
+          "lines": 110,
+          "responsibility": "기존 맵과 분리된 임시 Godot 프로젝트에서 에셋을 검증한다."
+        },
+        {
+          "path": "godot_project/scripts/core/taehwagang_asset_preview.gd",
+          "lines": 104,
+          "responsibility": "태화강역 독립 선택 프리뷰"
+        },
+        {
+          "path": "godot_project/scenes/taehwagang_asset_preview.tscn",
+          "lines": 6,
+          "responsibility": "태화강역 프리뷰 진입 씬"
+        }
+      ]
+    },
+    "railway_bridge_assets": {
+      "description": "범용 철도 교량 및 안양교–울산역 연결 세트",
+      "modules": [
+        {
+          "path": "godot_project/scripts/terrain/railway_bridge_geometry.gd",
+          "responsibility": "철도 궤도, 가선, 부재 및 연결 기준점 생성",
+          "lines": 105
+        },
+        {
+          "path": "godot_project/scripts/terrain/railway_bridge_structures.gd",
+          "responsibility": "철도 교량 형식별 하부 구조 생성",
+          "lines": 107
+        },
+        {
+          "path": "godot_project/scripts/terrain/railway_bridge_asset_builder.gd",
+          "responsibility": "독립 철도 교량 모델 조립",
+          "lines": 21
+        },
+        {
+          "path": "godot_project/scripts/terrain/ulsan_railway_bridge_set.gd",
+          "responsibility": "안양교 본체와 울산역 접근부 연속 연결 세트",
+          "lines": 62
+        },
+        {
+          "path": "godot_project/scripts/core/railway_bridge_preview.gd",
+          "responsibility": "철도 교량 및 연결 세트 선택 프리뷰",
+          "lines": 57
+        },
+        {
+          "path": "godot_project/scenes/railway_bridge_preview.tscn",
+          "responsibility": "독립 철도 교량 프리뷰 진입 씬",
+          "lines": 12
+        },
+        {
+          "path": "pipeline/processors/export_railway_bridge_assets.gd",
+          "responsibility": "정적 씬 저장, 재로드 및 접속 규약 검증",
+          "lines": 96
+        },
+        {
+          "path": "pipeline/processors/capture_railway_bridge_preview.gd",
+          "responsibility": "경량 실제 렌더 프리뷰 이미지 저장",
+          "lines": 32
+        },
+        {
+          "path": "pipeline/processors/build_railway_bridge_assets.py",
+          "responsibility": "격리 생성, 자산 및 모듈 매니페스트 갱신",
+          "lines": 107
+        },
+        {
+          "path": "pipeline/processors/railway_bridge_preview_sheet.py",
+          "responsibility": "실제 철도 교량 렌더 기반 비교 미리보기 배치",
+          "lines": 40
+        }
+      ]
+    },
+    "pedestrian_bridge_placement": {
+      "description": "제작 교량의 울산 권역 지도 배치",
+      "modules": [
+        {
+          "class_name": "PedestrianBridgePlacement",
+          "path": "godot_project/scripts/terrain/pedestrian_bridge_placement.gd",
+          "lines": 131,
+          "responsibility": "새 교량 에셋의 지도 좌표·DEM 정렬, 접속 램프 및 중복 제거"
+        },
+        {
+          "class_name": "PedestrianBridgePlacements",
+          "path": "pipeline/processors/build_pedestrian_bridge_placements.py",
+          "lines": 52,
+          "responsibility": "원본 지도 선형 기반 배치 카탈로그 및 자산 매니페스트 생성"
+        },
+        {
+          "class_name": "PedestrianBridgeTerrainFixture",
+          "path": "godot_project/scripts/core/pedestrian_bridge_terrain_fixture.gd",
+          "lines": 11,
+          "responsibility": "전체 지도 없이 높이맵 표고만 제공하는 검증 지형"
+        },
+        {
+          "class_name": "PedestrianBridgePlacementCheck",
+          "path": "godot_project/scripts/core/pedestrian_bridge_placement_check.gd",
+          "lines": 109,
+          "responsibility": "지도 범위별 교량 배치·충돌·기준점·진입로 검증 및 경량 렌더"
+        }
+      ]
+    },
+    "core": {
+      "description": "선박 운항 지원 계층",
+      "modules": [
+        {
+          "class_name": "VesselTrafficCheck",
+          "path": "godot_project/scripts/core/vessel_traffic_check.gd",
+          "responsibility": "전체 맵 없는 선박 운항, UI, 설정 저장 검증",
+          "lines": 117
+        },
+        {
+          "class_name": "AtmosphereHorizonCheck",
+          "path": "godot_project/scripts/core/atmosphere_horizon_check.gd",
+          "responsibility": "고도별 하늘과 원경 경량 검증"
+        }
+      ]
+    },
+    "vessels": {
+      "description": "선박 운항 지원 계층",
+      "modules": [
+        {
+          "class_name": "VesselNavigationGrid",
+          "path": "pipeline/processors/vessels/navigation_grid.py",
+          "responsibility": "선체 여유를 확보한 해수 격자 탐색",
+          "lines": 91
+        },
+        {
+          "class_name": "VesselTrafficBuilder",
+          "path": "pipeline/processors/vessels/build_traffic.py",
+          "responsibility": "지도별 항포구 항로 생성과 해시 매니페스트 갱신",
+          "lines": 102
+        }
+      ]
+    },
+    "models": {
+      "description": "대기 및 원경 지원 계층",
+      "modules": [
+        {
+          "class_name": "AtmosphereScatteringModel",
+          "path": "godot_project/scripts/models/atmosphere_scattering_model.gd",
+          "responsibility": "광학용 지수 대기 밀도와 곡면 광학 경로 근사"
+        }
+      ]
+    },
+    "pipeline": {
+      "description": "대기 및 원경 지원 계층",
+      "modules": [
+        {
+          "class_name": "HorizonTerrainBuilder",
+          "path": "pipeline/processors/build_horizon_terrain.py",
+          "responsibility": "기존 DEM 축소 아틀라스와 해시 매니페스트 생성"
+        },
+        {
+          "class_name": "RailwayLandmarkPlacementBuilder",
+          "path": "pipeline/processors/build_railway_landmark_placements.py",
+          "responsibility": "원본 OSM 역사 윤곽과 철도에서 배치 목록 및 해시 인덱스 생성",
+          "lines": 53
+        },
+        {
+          "class_name": "RailwayAlignmentBuilder",
+          "path": "pipeline/processors/build_railway_alignment.py",
+          "responsibility": "철도 종단 평활화, 경사 포락선, 절성토 높이맵 및 터널 공간 마스크 생성",
+          "lines": 257
+        }
+      ]
+    },
+    "shaders": {
+      "description": "대기 및 원경 지원 계층",
+      "modules": [
+        {
+          "class_name": "AtmosphereScatteringShader",
+          "path": "godot_project/shaders/atmosphere_scattering.gdshaderinc",
+          "responsibility": "레일리 위상함수와 곡면 대기 단일 산란 근사"
+        }
+      ]
+    },
+    "simple_vector_maps": {
+      "description": "계층 마스크 합성과 수동 SVG 지도 갱신",
+      "modules": [
+        {
+          "path": "pipeline/processors/simple_maps/__init__.py",
+          "lines": 3,
+          "responsibility": "수동 벡터 지도 생성 모듈 인덱스."
+        },
+        {
+          "path": "pipeline/processors/simple_maps/check.py",
+          "lines": 143,
+          "responsibility": "지도 전체를 실행하지 않는 2D 벡터 표시 확인."
+        },
+        {
+          "path": "pipeline/processors/simple_maps/generate.py",
+          "lines": 84,
+          "responsibility": "게임과 분리된 전체 지도 수동 갱신 진입점."
+        },
+        {
+          "path": "pipeline/processors/simple_maps/publish.py",
+          "lines": 100,
+          "responsibility": "수동 생성 결과의 해시 색인과 지도 참조 갱신."
+        },
+        {
+          "path": "pipeline/processors/simple_maps/raster.py",
+          "lines": 107,
+          "responsibility": "DEM과 수역 마스크를 단순 벡터 영역으로 변환한다."
+        },
+        {
+          "path": "pipeline/processors/simple_maps/sources.py",
+          "lines": 99,
+          "responsibility": "원본 좌표 투영과 안정된 로컬 자료 읽기."
+        },
+        {
+          "path": "pipeline/processors/simple_maps/svg.py",
+          "lines": 118,
+          "responsibility": "계층 합성 SVG, 흑백 마스크와 확대용 SVG 타일 출력."
+        },
+        {
+          "path": "pipeline/processors/simple_maps/vectors.py",
+          "lines": 90,
+          "responsibility": "도로·철도·건물·수계 및 작업 중 항만 계층의 벡터 어댑터."
+        },
+        {
+          "path": "pipeline/update_map_images.ps1",
+          "lines": 11,
+          "responsibility": "게임과 분리된 수동 지도 갱신 명령"
+        },
+        {
+          "path": "godot_project/scripts/views/vector_map_tiles.gd",
+          "lines": 129,
+          "responsibility": "현재 화면의 SVG 타일 표시 및 확대 선폭·캐시 제어"
+        },
+        {
+          "path": "godot_project/scripts/services/vector_map_display.gd",
+          "lines": 21,
+          "responsibility": "수동 생성 벡터 지도의 HUD 연결"
+        }
+      ]
+    },
+    "railway_tunnel_assets": {
+      "description": "고속철도용·동해선용 독립 범용 터널 에셋",
+      "modules": [
+        {
+          "path": "godot_project/scripts/terrain/railway_tunnel_geometry.gd",
+          "responsibility": "중공 라이닝 메시와 재질별 터널 부재 생성",
+          "lines": 94
+        },
+        {
+          "path": "godot_project/scripts/terrain/railway_tunnel_details.gd",
+          "responsibility": "궤도, 보행로, 가선, 배수로와 입구 설비 생성",
+          "lines": 51
+        },
+        {
+          "path": "godot_project/scripts/terrain/railway_tunnel_asset_builder.gd",
+          "responsibility": "입구·내부·출구 및 연결 완료 터널 조립",
+          "lines": 84
+        },
+        {
+          "path": "pipeline/indexer/export_railway_tunnel_assets.gd",
+          "responsibility": "터널 씬 및 해시·경계·연결 메타데이터 저장",
+          "lines": 110
+        },
+        {
+          "path": "pipeline/processors/build_railway_tunnel_assets.py",
+          "responsibility": "독립 터널 생성 실행과 자산·모듈 색인 갱신",
+          "lines": 103
+        }
+      ]
+    },
+    "industrial_assets": {
+      "description": "범용 절차적 공단 에셋",
+      "modules": [
+        {
+          "path": "pipeline/processors/industrial/__init__.py",
+          "lines": 3,
+          "responsibility": "범용 공단 에셋 생성 모듈 인덱스."
+        },
+        {
+          "path": "pipeline/processors/industrial/cranes.py",
+          "lines": 50,
+          "responsibility": "타워 크레인과 조선용 갠트리 크레인의 고정 포즈 메시."
+        },
+        {
+          "path": "pipeline/processors/industrial/equipment.py",
+          "lines": 46,
+          "responsibility": "증류탑·대형 연통·액체 저장고·구형 LPG 저장고."
+        },
+        {
+          "path": "pipeline/processors/industrial/factories.py",
+          "lines": 36,
+          "responsibility": "박공지붕·톱니지붕·평지붕 공장 3종."
+        },
+        {
+          "path": "pipeline/processors/industrial/generate.py",
+          "lines": 94,
+          "responsibility": "범용 산업 에셋과 무작위 배치용 메타데이터 생성."
+        },
+        {
+          "path": "pipeline/processors/industrial/geometry.py",
+          "lines": 57,
+          "responsibility": "범용 공단의 회전체와 작업 발판 기하."
+        },
+        {
+          "path": "pipeline/processors/industrial/pipes.py",
+          "lines": 39,
+          "responsibility": "연결점이 있는 고가 배관 직선·곡관·분기 모듈."
+        },
+        {
+          "path": "pipeline/processors/industrial/preview.py",
+          "lines": 49,
+          "responsibility": "생성 메시의 독립 카드 미리보기."
+        },
+        {
+          "path": "pipeline/processors/industrial/structures.py",
+          "lines": 62,
+          "responsibility": "송전탑, 냉각설비, 조선용 대형 격납고의 정적 외관."
+        }
+      ]
+    },
+    "asset_inventory": {
+      "description": "전체 에셋 수동 분류와 색인",
+      "modules": [
+        {
+          "path": "pipeline/indexer/asset_inventory.py",
+          "responsibility": "안정된 에셋 조사·분류"
+        },
+        {
+          "path": "pipeline/indexer/build_asset_index.py",
+          "responsibility": "수동 색인 갱신"
+        }
+      ]
+    },
+    "industrial_plant": {
+      "description": "조립 가능한 플랜트 탑·배관·연기",
+      "modules": [
+        {
+          "path": "pipeline/processors/industrial_plant/effects.py",
+          "lines": 61
+        },
+        {
+          "path": "pipeline/processors/industrial_plant/generate.py",
+          "lines": 127
+        },
+        {
+          "path": "pipeline/processors/industrial_plant/routing.py",
+          "lines": 39
+        },
+        {
+          "path": "pipeline/processors/industrial_plant/towers.py",
+          "lines": 74
+        },
+        {
+          "path": "pipeline/processors/industrial_plant/verify_preview.py",
+          "lines": 92
+        },
+        {
+          "path": "pipeline/processors/industrial_plant/__init__.py",
+          "lines": 3
+        },
+        {
+          "path": "godot_project/scripts/industrial_plant/plant_connector.gd",
+          "lines": 17
+        },
+        {
+          "path": "godot_project/scripts/industrial_plant/plume_controller.gd",
+          "lines": 20
+        }
+      ]
+    },
+    "industrial_lighting": {
+      "description": "시설별 야간 광원·발광·주야간 연동",
+      "modules": [
+        {
+          "path": "godot_project/scripts/industrial_lighting/night_lighting.gd",
+          "lines": 79
+        },
+        {
+          "path": "pipeline/processors/industrial_lighting/__init__.py",
+          "lines": 3
+        },
+        {
+          "path": "pipeline/processors/industrial_lighting/apply.py",
+          "lines": 131
+        },
+        {
+          "path": "pipeline/processors/industrial_lighting/layouts.py",
+          "lines": 91
+        },
+        {
+          "path": "pipeline/processors/industrial_lighting/preview.py",
+          "lines": 56
+        },
+        {
+          "path": "pipeline/processors/industrial_lighting/scenes.py",
+          "lines": 65
+        },
+        {
+          "path": "pipeline/processors/industrial_lighting/showcase.gd",
+          "lines": 84
+        }
+      ]
+    },
+    "railway_night_lighting": {
+      "description": "철로 및 열차 야간 식별",
+      "modules": [
+        {
+          "path": "godot_project/scripts/terrain/railway_night_lighting.gd",
+          "responsibility": "철로 및 열차의 원거리 식별 표시와 근거리 광원 생성",
+          "lines": 132
+        },
+        {
+          "path": "pipeline/indexer/export_railway_night_assets.gd",
+          "responsibility": "야간 열차 및 철로 씬 직렬화와 구조 메타데이터",
+          "lines": 83
+        },
+        {
+          "path": "pipeline/processors/build_railway_night_assets.py",
+          "responsibility": "격리된 야간 에셋 생성 및 경량 렌더",
+          "lines": 73
+        },
+        {
+          "path": "previews/asset_browser/railway_night_capture/verify.gd",
+          "responsibility": "근거리 및 약 1.5km 야간 렌더 캡처",
+          "lines": 65
+        }
+      ]
+    },
+    "industrial_zones": {
+      "description": "공단 경계 수동 지정과 절차 생성용 기초 마스킹",
+      "modules": [
+        {
+          "class_name": "IndustrialZoneMaskBuilder",
+          "path": "pipeline/processors/industrial_zones/build_masks.py",
+          "responsibility": "사용자 GeoJSON의 구역 ID·수계 제외·1차 허용 마스크 생성",
+          "lines": 96
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/__init__.py",
+          "responsibility": "공단 구역 처리 패키지",
+          "lines": 3
+        },
+        {
+          "path": "previews/industrial_zone_editor/editor.html",
+          "responsibility": "지도 위 공단 외곽 지정과 GeoJSON 수동 입출력"
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/site_inputs.py",
+          "responsibility": "지형·수계·기존 시설 점유 형상과 배치 제외 영역",
+          "lines": 138
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/road_graph.py",
+          "responsibility": "기존 도로에 연결되는 내부 도로 그래프",
+          "lines": 96
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/parcel_builder.py",
+          "responsibility": "도로 사이 배치 가능 필지 분할",
+          "lines": 20
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/asset_placer.py",
+          "responsibility": "설비 전체 점유 형상과 진입 공간 검사",
+          "lines": 71
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/build_sites.py",
+          "responsibility": "안전 후보 선택과 공단 생성·매니페스트·검토 이미지 출력",
+          "lines": 223
+        },
+        {
+          "path": "godot_project/scripts/terrain/industrial_asset_factory.gd",
+          "responsibility": "원본 GLB 공유 캐시와 포트 배관 랙·조명·연기 조립",
+          "lines": 73
+        },
+        {
+          "path": "godot_project/scripts/terrain/industrial_placement_builder.gd",
+          "responsibility": "현재 지형 LOD에 맞춘 설비 위치와 지표 연결 기초",
+          "lines": 57
+        },
+        {
+          "path": "godot_project/scripts/terrain/industrial_road_builder.gd",
+          "responsibility": "기존 도로 지형 밀착 방식의 공단 도로와 진입로",
+          "lines": 33
+        },
+        {
+          "path": "godot_project/scripts/terrain/industrial_zone_manager.gd",
+          "responsibility": "공단 로드·청크 거리 표시·상세 모델 생성 예산과 설정 토글",
+          "lines": 168
+        }
+      ]
+    },
+    "marine_bridge_lighting": {
+      "description": "선박 및 교량의 절제된 야간 조명과 항적 조도",
+      "modules": [
+        {
+          "path": "godot_project/scripts/core/asset_marker_lighting.gd",
+          "responsibility": "선박 및 교량의 작은 발광 표시와 근거리 광원",
+          "lines": 69
+        },
+        {
+          "path": "pipeline/processors/vessels/lighting.py",
+          "responsibility": "선박 원본 GLB 보존 및 조명 씬 갱신",
+          "lines": 44
+        },
+        {
+          "path": "pipeline/processors/build_bridge_lighting.py",
+          "responsibility": "교량 조명 씬 격리 재생성",
+          "lines": 48
+        },
+        {
+          "path": "previews/asset_browser/marine_lighting_check/build.py",
+          "responsibility": "선박 교량 항적 주야간 경량 렌더",
+          "lines": 35
+        },
+        {
+          "path": "previews/asset_browser/marine_lighting_check/verify.gd",
+          "responsibility": "주야간 항적 및 광원 확인",
+          "lines": 73
+        }
+      ]
+    },
+    "high_altitude_horizon": {
+      "description": "50km 고도용 실제 광역 DEM 원경·곡률·경사 음영",
+      "modules": [
+        {
+          "path": "pipeline/collectors/regional_elevation_tiles.py",
+          "responsibility": "공개 고도 타일 수집·캐시"
+        },
+        {
+          "path": "pipeline/processors/regional_horizon_atlas.py",
+          "responsibility": "Web Mercator 고도 래스터 변환"
+        },
+        {
+          "path": "pipeline/processors/build_horizon_terrain.py",
+          "responsibility": "상세 경계와 광역 DEM 색인"
+        },
+        {
+          "path": "godot_project/scripts/terrain/horizon_height_sampler.gd",
+          "responsibility": "광역 지리 좌표 표본"
+        },
+        {
+          "path": "godot_project/scripts/terrain/horizon_ring_builder.gd",
+          "responsibility": "곡률·경사 법선 메쉬 배열 생성"
+        },
+        {
+          "path": "godot_project/scripts/terrain/horizon_terrain_manager.gd",
+          "responsibility": "비동기 원경 생성과 지형 디자인 연결"
+        },
+        {
+          "path": "godot_project/shaders/horizon_terrain.gdshader",
+          "responsibility": "지표·수면 팔레트와 고고도 셰이딩"
+        },
+        {
+          "path": "previews/high_altitude_check/check.gd",
+          "responsibility": "게임과 분리된 원경 확인"
+        }
+      ]
+    },
+    "windows_packaging": {
+      "description": "Windows 배포용 격리 빌드",
+      "modules": [
+        {
+          "path": "pipeline/packaging/build_windows.py",
+          "responsibility": "원본 보호와 격리 임포트·Windows 실행 패키지·ZIP 생성",
+          "lines": 117
+        },
+        {
+          "path": "pipeline/packaging/pack_project.gd",
+          "responsibility": "원본 데이터와 임포트 자산의 PCK 생성",
+          "lines": 25
         }
       ]
     }

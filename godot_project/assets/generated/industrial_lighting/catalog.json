@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "assets": {
+    "industrial/factory_gable": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+      "fixture_count": 30,
+      "local_light_count": 4,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/factory_gable"
+    },
+    "industrial/factory_sawtooth": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_sawtooth.tscn",
+      "fixture_count": 34,
+      "local_light_count": 4,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/factory_sawtooth"
+    },
+    "industrial/factory_flat": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_flat.tscn",
+      "fixture_count": 26,
+      "local_light_count": 4,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/factory_flat"
+    },
+    "industrial/distillation_tower": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--distillation_tower.tscn",
+      "fixture_count": 51,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/distillation_tower"
+    },
+    "industrial/industrial_chimney": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+      "fixture_count": 15,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/industrial_chimney"
+    },
+    "industrial/liquid_storage_tank": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--liquid_storage_tank.tscn",
+      "fixture_count": 27,
+      "local_light_count": 2,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/liquid_storage_tank"
+    },
+    "industrial/lpg_sphere": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--lpg_sphere.tscn",
+      "fixture_count": 27,
+      "local_light_count": 2,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/lpg_sphere"
+    },
+    "industrial/pipeline_straight": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--pipeline_straight.tscn",
+      "fixture_count": 4,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/pipeline_straight"
+    },
+    "industrial/pipeline_elbow": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--pipeline_elbow.tscn",
+      "fixture_count": 5,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/pipeline_elbow"
+    },
+    "industrial/pipeline_tee": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--pipeline_tee.tscn",
+      "fixture_count": 5,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/pipeline_tee"
+    },
+    "industrial/transmission_tower": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--transmission_tower.tscn",
+      "fixture_count": 4,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/transmission_tower"
+    },
+    "industrial/cooling_tower": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--cooling_tower.tscn",
+      "fixture_count": 50,
+      "local_light_count": 2,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/cooling_tower"
+    },
+    "industrial/cooling_fan_bank": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--cooling_fan_bank.tscn",
+      "fixture_count": 6,
+      "local_light_count": 2,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/cooling_fan_bank"
+    },
+    "industrial/shipbuilding_hangar": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--shipbuilding_hangar.tscn",
+      "fixture_count": 39,
+      "local_light_count": 4,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/shipbuilding_hangar"
+    },
+    "industrial/tower_crane": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--tower_crane.tscn",
+      "fixture_count": 31,
+      "local_light_count": 2,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/tower_crane"
+    },
+    "industrial/gantry_crane": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial--gantry_crane.tscn",
+      "fixture_count": 37,
+      "local_light_count": 2,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial/gantry_crane"
+    },
+    "industrial_plant/stack_concrete": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_concrete.tscn",
+      "fixture_count": 15,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/stack_concrete"
+    },
+    "industrial_plant/stack_steel": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_steel.tscn",
+      "fixture_count": 39,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/stack_steel"
+    },
+    "industrial_plant/stack_triple": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_triple.tscn",
+      "fixture_count": 45,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/stack_triple"
+    },
+    "industrial_plant/flare_lattice": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--flare_lattice.tscn",
+      "fixture_count": 39,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/flare_lattice"
+    },
+    "industrial_plant/process_column": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--process_column.tscn",
+      "fixture_count": 63,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/process_column"
+    },
+    "industrial_plant/scrubber_tower": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--scrubber_tower.tscn",
+      "fixture_count": 39,
+      "local_light_count": 3,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/scrubber_tower"
+    },
+    "industrial_plant/rack_straight": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+      "fixture_count": 4,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/rack_straight"
+    },
+    "industrial_plant/rack_elbow": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_elbow.tscn",
+      "fixture_count": 5,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/rack_elbow"
+    },
+    "industrial_plant/rack_tee": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_tee.tscn",
+      "fixture_count": 5,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/rack_tee"
+    },
+    "industrial_plant/rack_cross": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_cross.tscn",
+      "fixture_count": 5,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/rack_cross"
+    },
+    "industrial_plant/rack_riser": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_riser.tscn",
+      "fixture_count": 4,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/rack_riser"
+    },
+    "industrial_plant/rack_double": {
+      "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_double.tscn",
+      "fixture_count": 4,
+      "local_light_count": 1,
+      "shadow_enabled": false,
+      "distance_fade_m": [
+        350,
+        550
+      ],
+      "automatic_time": true,
+      "fallback_night_factor": 1.0,
+      "source_asset": "industrial_plant/rack_double"
+    }
+  }
+}

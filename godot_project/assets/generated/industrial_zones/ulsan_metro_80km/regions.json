@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "bbox": {
+    "south": 35.1841,
+    "north": 35.9049,
+    "west": 128.81256666666667,
+    "east": 129.69843333333336
+  },
+  "world_size_meters": 80000,
+  "source_sha256": "7f8f98a76ae85f136da1671f7bc7c4595061e4c300f8396e43be03fdfd351110",
+  "zones": [
+    {
+      "zone_id": 1,
+      "name_ko": "울산 본항 주변 절차 공단",
+      "profile": "general_factory",
+      "seed": 42018,
+      "status": "confirmed",
+      "mask_pixels": 3906
+    },
+    {
+      "zone_id": 2,
+      "name_ko": "온산항 주변 절차 공단",
+      "profile": "petrochemical",
+      "seed": 42019,
+      "status": "confirmed",
+      "mask_pixels": 3844
+    }
+  ],
+  "state": "masked",
+  "allowed_pixels": 5441,
+  "road_generation_enabled": true,
+  "note_ko": "확정 구역에서 수계·급경사·기존 건물·도로·철도·공항·문화유산을 제외한 배치 허용 영역"
+}

@@ -3,6 +3,7 @@
 
 - `preview_vessels.bat`: 선박 6종 선택, 회전, 확대 및 수면 표시 전환.
 - `preview_pedestrian_bridges.bat`: 굴화리–다운동 징검다리, 선바위교, 범용 육교 선택 프리뷰.
+- `preview_railway_bridges.bat`: 범용 철도 교량 5종 및 안양교–울산역 연결 세트 프리뷰.
 - `preview_ulsan_airport.bat`: 울산 공항 프리뷰.
 - `preview_ulsan_campus.bat`: 울산 캠퍼스 프리뷰.
 - `preview_ulsan_heritage.bat`: 울산 문화유산 프리뷰.

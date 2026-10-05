@@ -1,0 +1,475 @@
+{
+  "assets": {
+    "donghae_tunnel_body": {
+      "file_path": "res://assets/generated/railway_tunnels/donghae_tunnel_body.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.34999990463257,
+          8.55000019073486,
+          20
+        ],
+        "aabb_min_m": [
+          -6.34999990463257,
+          -1.10000002384186,
+          -0.02999999932945
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 3,
+        "connection_axis": "+Z",
+        "elevation_max": 8.55000019073486,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 8,
+        "inner_width_m": 11.6,
+        "inspection_only": false,
+        "label_ko": "동해선용 복선 터널 반복 내부 구간",
+        "length_m": 20,
+        "part": "body",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "ballast",
+        "track_count": 2,
+        "track_spacing_m": 4.4,
+        "triangles": 4274
+      },
+      "sha256": "018f3b4a0f4e8cba2c160d82a170ee7b19019fd9a4f5ca6407a866bcb7472aed",
+      "size_bytes": 287059,
+      "type": "railway_tunnel_model"
+    },
+    "donghae_tunnel_entry": {
+      "file_path": "res://assets/generated/railway_tunnels/donghae_tunnel_entry.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          9,
+          8.84249973297119,
+          6
+        ],
+        "aabb_min_m": [
+          -9,
+          -1.10000002384186,
+          -0.55000001192093
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 3,
+        "connection_axis": "+Z",
+        "elevation_max": 8.84249973297119,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 8,
+        "inner_width_m": 11.6,
+        "inspection_only": false,
+        "label_ko": "동해선용 복선 터널 입구",
+        "length_m": 6,
+        "part": "entry",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "ballast",
+        "track_count": 2,
+        "track_spacing_m": 4.4,
+        "triangles": 1838
+      },
+      "sha256": "78aa3a730703f5520bca1dac01eb58731966a76f0fe7138024de40987b23d5ad",
+      "size_bytes": 136570,
+      "type": "railway_tunnel_model"
+    },
+    "donghae_tunnel_exit": {
+      "file_path": "res://assets/generated/railway_tunnels/donghae_tunnel_exit.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          9,
+          8.84249973297119,
+          6.55000019073486
+        ],
+        "aabb_min_m": [
+          -9,
+          -1.10000002384186,
+          -0.02999999932945
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 3,
+        "connection_axis": "+Z",
+        "elevation_max": 8.84249973297119,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 8,
+        "inner_width_m": 11.6,
+        "inspection_only": false,
+        "label_ko": "동해선용 복선 터널 출구",
+        "length_m": 6,
+        "part": "exit",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "ballast",
+        "track_count": 2,
+        "track_spacing_m": 4.4,
+        "triangles": 1838
+      },
+      "sha256": "818ea3c4304348e161c886ce7628949a26628b4052db1c4195bc3dee831f4443",
+      "size_bytes": 136568,
+      "type": "railway_tunnel_model"
+    },
+    "donghae_tunnel_inspection": {
+      "file_path": "res://assets/generated/railway_tunnels/donghae_tunnel_inspection.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          9,
+          8.84249973297119,
+          52.5499992370605
+        ],
+        "aabb_min_m": [
+          -9,
+          -1.10000002384186,
+          -0.55000001192093
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 12,
+        "connection_axis": "+Z",
+        "connections": [
+          {
+            "from": "donghae_tunnel_entry_0",
+            "gap_m": 0,
+            "to": "donghae_tunnel_body_1",
+            "z_m": 6
+          },
+          {
+            "from": "donghae_tunnel_body_1",
+            "gap_m": 0,
+            "to": "donghae_tunnel_body_2",
+            "z_m": 26
+          },
+          {
+            "from": "donghae_tunnel_body_2",
+            "gap_m": 0,
+            "to": "donghae_tunnel_exit_3",
+            "z_m": 46
+          }
+        ],
+        "elevation_max": 8.84249973297119,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 8,
+        "inner_width_m": 11.6,
+        "inspection_only": true,
+        "label_ko": "동해선용 복선 터널 내부 구조 확인용",
+        "length_m": 52,
+        "part": "assembled",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "ballast",
+        "track_count": 2,
+        "track_spacing_m": 4.4,
+        "triangles": 12224
+      },
+      "sha256": "4255203d1f7d48cd69b4624962f0af04ebb7696b343b1dd9f893e1518ad03ba0",
+      "size_bytes": 834472,
+      "type": "railway_tunnel_inspection"
+    },
+    "donghae_tunnel_set": {
+      "file_path": "res://assets/generated/railway_tunnels/donghae_tunnel_set.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          9,
+          8.84249973297119,
+          52.5499992370605
+        ],
+        "aabb_min_m": [
+          -9,
+          -1.10000002384186,
+          -0.55000001192093
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 12,
+        "connection_axis": "+Z",
+        "connections": [
+          {
+            "from": "donghae_tunnel_entry_0",
+            "gap_m": 0,
+            "to": "donghae_tunnel_body_1",
+            "z_m": 6
+          },
+          {
+            "from": "donghae_tunnel_body_1",
+            "gap_m": 0,
+            "to": "donghae_tunnel_body_2",
+            "z_m": 26
+          },
+          {
+            "from": "donghae_tunnel_body_2",
+            "gap_m": 0,
+            "to": "donghae_tunnel_exit_3",
+            "z_m": 46
+          }
+        ],
+        "elevation_max": 8.84249973297119,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 8,
+        "inner_width_m": 11.6,
+        "inspection_only": false,
+        "label_ko": "동해선용 복선 터널 연결 세트",
+        "length_m": 52,
+        "part": "assembled",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "ballast",
+        "track_count": 2,
+        "track_spacing_m": 4.4,
+        "triangles": 12224
+      },
+      "sha256": "c4af04426ec9a8075f2a09033f2a4d092b2f292509d45a234e5d239e6aea91c6",
+      "size_bytes": 834140,
+      "type": "railway_tunnel_model"
+    },
+    "hsr_tunnel_body": {
+      "file_path": "res://assets/generated/railway_tunnels/hsr_tunnel_body.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          7.34999990463257,
+          9.55000019073486,
+          24
+        ],
+        "aabb_min_m": [
+          -7.34999990463257,
+          -1.10000002384186,
+          -0.02999999932945
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 3,
+        "connection_axis": "+Z",
+        "elevation_max": 9.55000019073486,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 9,
+        "inner_width_m": 13.6,
+        "inspection_only": false,
+        "label_ko": "고속철도용 복선 터널 반복 내부 구간",
+        "length_m": 24,
+        "part": "body",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "slab",
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 3074
+      },
+      "sha256": "f0c6eb2dc024ccdc873506e0b0812810473d2e2c67364938baf17f56b4291250",
+      "size_bytes": 212076,
+      "type": "railway_tunnel_model"
+    },
+    "hsr_tunnel_entry": {
+      "file_path": "res://assets/generated/railway_tunnels/hsr_tunnel_entry.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          11.1499996185303,
+          10.5900001525879,
+          7.99999904632568
+        ],
+        "aabb_min_m": [
+          -11.1499996185303,
+          -1.10000002384186,
+          -0.55000001192093
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 3,
+        "connection_axis": "+Z",
+        "elevation_max": 10.5900001525879,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 9,
+        "inner_width_m": 13.6,
+        "inspection_only": false,
+        "label_ko": "고속철도용 복선 터널 입구",
+        "length_m": 8,
+        "part": "entry",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "slab",
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 1382
+      },
+      "sha256": "7b5a04f777da956ff8062186eeeb023befab7e0aba2c5d7753f7c726246b4dd5",
+      "size_bytes": 107723,
+      "type": "railway_tunnel_model"
+    },
+    "hsr_tunnel_exit": {
+      "file_path": "res://assets/generated/railway_tunnels/hsr_tunnel_exit.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          11.1499996185303,
+          10.5900001525879,
+          8.55000019073486
+        ],
+        "aabb_min_m": [
+          -11.1499996185303,
+          -1.10000002384186,
+          -0.02999999932945
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 3,
+        "connection_axis": "+Z",
+        "elevation_max": 10.5900001525879,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 9,
+        "inner_width_m": 13.6,
+        "inspection_only": false,
+        "label_ko": "고속철도용 복선 터널 출구",
+        "length_m": 8,
+        "part": "exit",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "slab",
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 1382
+      },
+      "sha256": "f7aca719c558d0ec08f06cbab1edbc21a75f8f9d454bfb649fbb4e4a262dbab4",
+      "size_bytes": 107721,
+      "type": "railway_tunnel_model"
+    },
+    "hsr_tunnel_inspection": {
+      "file_path": "res://assets/generated/railway_tunnels/hsr_tunnel_inspection.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          11.1499996185303,
+          10.5900001525879,
+          64.5500030517578
+        ],
+        "aabb_min_m": [
+          -11.1499996185303,
+          -1.10000002384186,
+          -0.55000001192093
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 12,
+        "connection_axis": "+Z",
+        "connections": [
+          {
+            "from": "hsr_tunnel_entry_0",
+            "gap_m": 0,
+            "to": "hsr_tunnel_body_1",
+            "z_m": 8
+          },
+          {
+            "from": "hsr_tunnel_body_1",
+            "gap_m": 0,
+            "to": "hsr_tunnel_body_2",
+            "z_m": 32
+          },
+          {
+            "from": "hsr_tunnel_body_2",
+            "gap_m": 0,
+            "to": "hsr_tunnel_exit_3",
+            "z_m": 56
+          }
+        ],
+        "elevation_max": 10.5900001525879,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 9,
+        "inner_width_m": 13.6,
+        "inspection_only": true,
+        "label_ko": "고속철도용 복선 터널 내부 구조 확인용",
+        "length_m": 64,
+        "part": "assembled",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "slab",
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 8912
+      },
+      "sha256": "a16576b0ca78939e56a64caf6256b660d475139e2b70f222d7b0324a24c94506",
+      "size_bytes": 626866,
+      "type": "railway_tunnel_inspection"
+    },
+    "hsr_tunnel_set": {
+      "file_path": "res://assets/generated/railway_tunnels/hsr_tunnel_set.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          11.1499996185303,
+          10.5900001525879,
+          64.5500030517578
+        ],
+        "aabb_min_m": [
+          -11.1499996185303,
+          -1.10000002384186,
+          -0.55000001192093
+        ],
+        "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름.",
+        "bbox": null,
+        "collision_shapes": 12,
+        "connection_axis": "+Z",
+        "connections": [
+          {
+            "from": "hsr_tunnel_entry_0",
+            "gap_m": 0,
+            "to": "hsr_tunnel_body_1",
+            "z_m": 8
+          },
+          {
+            "from": "hsr_tunnel_body_1",
+            "gap_m": 0,
+            "to": "hsr_tunnel_body_2",
+            "z_m": 32
+          },
+          {
+            "from": "hsr_tunnel_body_2",
+            "gap_m": 0,
+            "to": "hsr_tunnel_exit_3",
+            "z_m": 56
+          }
+        ],
+        "elevation_max": 10.5900001525879,
+        "elevation_min": -1.10000002384186,
+        "gauge_m": 1.435,
+        "inner_height_m": 9,
+        "inner_width_m": 13.6,
+        "inspection_only": false,
+        "label_ko": "고속철도용 복선 터널 연결 세트",
+        "length_m": 64,
+        "part": "assembled",
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "track_bed": "slab",
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 8912
+      },
+      "sha256": "454d9eddc00861717ca687a325a4b1fa8363b62f6a301f2d857c7a7aaaf41b34",
+      "size_bytes": 626534,
+      "type": "railway_tunnel_model"
+    }
+  },
+  "version": 1
+}

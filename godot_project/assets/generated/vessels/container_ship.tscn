@@ -1,6 +1,12 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="PackedScene" path="res://assets/generated/vessels/container_ship.glb" id="1"]
+
+
+
+
+
+[ext_resource type="Script" path="res://scripts/core/asset_marker_lighting.gd" id="2"]
 
 [node name="container_ship" type="Node3D"]
 metadata/vessel_type = "container_ship"
@@ -18,3 +24,10 @@ position = Vector3(0, 0, -90.0)
 position = Vector3(0, 0, 90.0)
 
 [node name="Waterline" type="Marker3D" parent="."]
+
+[node name="NavigationLighting" type="Node3D" parent="."]
+script = ExtResource("2")
+vessel_length = 180.0
+vessel_beam = 28.0
+vessel_deck = 5.0
+vessel_kind = "container_ship"

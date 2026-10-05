@@ -1,0 +1,36 @@
+{
+  "maps": [
+    {
+      "map_id": "flat_testing",
+      "svg_layers": 10,
+      "tiles": 256
+    },
+    {
+      "map_id": "kanmon_straits",
+      "svg_layers": 10,
+      "tiles": 256
+    },
+    {
+      "map_id": "kyushu_wide",
+      "svg_layers": 10,
+      "tiles": 256
+    },
+    {
+      "map_id": "southeast_mega_140km",
+      "svg_layers": 10,
+      "tiles": 256
+    },
+    {
+      "map_id": "ulsan_metro_80km",
+      "svg_layers": 10,
+      "tiles": 256
+    },
+    {
+      "map_id": "ulsan_uc_west",
+      "svg_layers": 10,
+      "tiles": 256
+    }
+  ],
+  "display": "PASS",
+  "full_world_started": false
+}

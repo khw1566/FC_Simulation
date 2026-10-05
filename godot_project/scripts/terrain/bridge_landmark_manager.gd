@@ -3,9 +3,15 @@ class_name BridgeLandmarkManager
 
 const Builder = preload("res://scripts/terrain/bridge_landmark_builder.gd")
 const SPEC_PATH := "res://assets/generated/taehwa_bridges.json"
+const PlacedAssets = preload("res://scripts/terrain/pedestrian_bridge_placement.gd")
+var placed_assets: Node3D
 var replaced_osm_ids: Dictionary = {}
 
 func setup(map_config, terrain: Node3D) -> void:
+	placed_assets = PlacedAssets.new()
+	placed_assets.name = "PedestrianBridgeAssets"
+	add_child(placed_assets)
+	placed_assets.setup(map_config, terrain)
 	if map_config == null or map_config.bbox_west > 129.27 or map_config.bbox_east < 129.41:
 		return
 	if map_config.bbox_south > 35.51 or map_config.bbox_north < 35.56:
@@ -28,4 +34,4 @@ func setup(map_config, terrain: Node3D) -> void:
 			replaced_osm_ids[str(osm_id)] = true
 
 func replaces_road(road: Dictionary) -> bool:
-	return replaced_osm_ids.has(str(road.get("osm_id", "")))
+	return replaced_osm_ids.has(str(road.get("osm_id", ""))) or (placed_assets != null and placed_assets.replaces_road(road))

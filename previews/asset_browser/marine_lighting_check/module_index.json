@@ -1,0 +1,12 @@
+{
+  "modules": [
+    {
+      "path": "build.py",
+      "responsibility": "격리 렌더 실행"
+    },
+    {
+      "path": "verify.gd",
+      "responsibility": "주야간 항적과 조명 경량 확인"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "defaults": {"gauge_m": 1.435, "rail_top_y_m": 0.12, "catenary_height_m": 5.5, "shell_thickness_m": 0.55, "cross_section_segments": 24, "body_count": 2},
+  "profiles": [
+    {"id": "hsr", "name_ko": "고속철도용 복선 터널", "track_bed": "slab", "track_spacing_m": 5.4, "inner_half_width_m": 6.8, "spring_height_m": 3.0, "inner_height_m": 9.0, "portal_length_m": 8.0, "body_length_m": 24.0, "portal_flare_m": 1.6, "joint_spacing_m": 4.0, "light_spacing_m": 8.0},
+    {"id": "donghae", "name_ko": "동해선용 복선 터널", "track_bed": "ballast", "track_spacing_m": 4.4, "inner_half_width_m": 5.8, "spring_height_m": 2.8, "inner_height_m": 8.0, "portal_length_m": 6.0, "body_length_m": 20.0, "portal_flare_m": 0.45, "joint_spacing_m": 4.0, "light_spacing_m": 5.0}
+  ],
+  "accuracy": "특정 실물 터널에 대응하지 않는 게임용 범용 모델. 단면·선간거리·확폭·설비 치수는 제작 설정값이며 실제 철도 터널 설계 기준이나 구조 안전 검증값이 아님. 궤도 형식은 프로젝트 railway/services.json을 따름."
+}

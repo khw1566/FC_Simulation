@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "map_id": "ulsan_metro_80km",
+  "regions_path": "config/industrial_zones.geojson",
+  "resolution": 4096,
+  "water_buffer_m": 20,
+  "seed": 42017,
+  "profiles": {
+    "general_factory": {
+      "label_ko": "일반 제조 공단",
+      "block_size_m": [
+        180,
+        320
+      ],
+      "main_road_width_m": 20,
+      "local_road_width_m": 10,
+      "asset_coverage": 0.45
+    },
+    "petrochemical": {
+      "label_ko": "석유화학 공단",
+      "block_size_m": [
+        280,
+        450
+      ],
+      "main_road_width_m": 24,
+      "local_road_width_m": 12,
+      "asset_coverage": 0.35
+    },
+    "shipbuilding": {
+      "label_ko": "조선 공단",
+      "block_size_m": [
+        350,
+        650
+      ],
+      "main_road_width_m": 24,
+      "local_road_width_m": 14,
+      "asset_coverage": 0.3
+    },
+    "logistics": {
+      "label_ko": "물류 공단",
+      "block_size_m": [
+        200,
+        350
+      ],
+      "main_road_width_m": 22,
+      "local_road_width_m": 12,
+      "asset_coverage": 0.4
+    }
+  },
+  "note_ko": "울산 본항·온산항 주변의 로컬 안전 육지 후보에 생성하는 게임용 공단. 실제 공단 경계 및 공정 배치를 재현하지 않음.",
+  "auto_candidates_enabled": true,
+  "candidate_size_m": 1200,
+  "max_slope_degrees": 8,
+  "max_road_grade": 0.08,
+  "max_foundation_height_m": 3.5,
+  "max_assets_per_zone": 100
+}

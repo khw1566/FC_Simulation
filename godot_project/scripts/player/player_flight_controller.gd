@@ -314,7 +314,9 @@ func _physics_process(delta: float) -> void:
 		terrain_mgr = get_parent().get_node_or_null("TerrainManager")
 
 	var ground_y := -999.0
-	if terrain_mgr and terrain_mgr.has_method("get_terrain_elevation"):
+	if terrain_mgr and terrain_mgr.has_method("get_navigation_floor"):
+		ground_y = float(terrain_mgr.call("get_navigation_floor",global_position))
+	elif terrain_mgr and terrain_mgr.has_method("get_terrain_elevation"):
 		ground_y = float(terrain_mgr.call("get_terrain_elevation", global_position.x, global_position.z))
 
 	# [일방통행 상향 통과 (One-Way Upward Pass)]:

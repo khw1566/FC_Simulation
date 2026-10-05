@@ -1,0 +1,199 @@
+{
+  "routes": [
+    {
+      "map": "ulsan_metro_80km",
+      "id": "ulsan_main_container_ship",
+      "segments": 5,
+      "length_m": 8680.265892366562,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 106.0823802938856
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "ulsan_main_oil_tanker",
+      "segments": 4,
+      "length_m": 8912.988091289639,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 121.36728820459794
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "ulsan_main_tugboat",
+      "segments": 4,
+      "length_m": 9245.609334758099,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 30.811388300841898
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "onsan_lpg_carrier",
+      "segments": 2,
+      "length_m": 5255.343194644229,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 88.4863932983515
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "onsan_oil_tanker",
+      "segments": 2,
+      "length_m": 5516.845897415848,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 121.36728820459794
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "onsan_tugboat",
+      "segments": 2,
+      "length_m": 5645.245318486714,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 30.811388300841898
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "bangeojin_fishing_boat",
+      "segments": 3,
+      "length_m": 2898.771341066804,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 24.396275858019493
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "bangeojin_motor_boat",
+      "segments": 3,
+      "length_m": 3177.5337580021696,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 21.293647591023827
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "jinha_fishing_boat",
+      "segments": 1,
+      "length_m": 3985.0338034576616,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 24.396275858019493
+    },
+    {
+      "map": "ulsan_metro_80km",
+      "id": "jinha_motor_boat",
+      "segments": 1,
+      "length_m": 4205.570903499756,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 21.293647591023827
+    },
+    {
+      "map": "kanmon_straits",
+      "id": "moji_container_ship",
+      "segments": 2,
+      "length_m": 2570.0080077826033,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 106.0823802938856
+    },
+    {
+      "map": "kanmon_straits",
+      "id": "moji_lpg_carrier",
+      "segments": 2,
+      "length_m": 2470.07482352436,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 88.4863932983515
+    },
+    {
+      "map": "kanmon_straits",
+      "id": "moji_tugboat",
+      "segments": 1,
+      "length_m": 1930.2920497324426,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 30.811388300841898
+    },
+    {
+      "map": "kanmon_straits",
+      "id": "moji_motor_boat",
+      "segments": 1,
+      "length_m": 1937.2788525658837,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 21.293647591023827
+    },
+    {
+      "map": "kanmon_straits",
+      "id": "shimonoseki_oil_tanker",
+      "segments": 3,
+      "length_m": 1054.3912705270843,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 121.36728820459794
+    },
+    {
+      "map": "kanmon_straits",
+      "id": "shimonoseki_tugboat",
+      "segments": 2,
+      "length_m": 1314.7507348283634,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 30.811388300841898
+    },
+    {
+      "map": "kanmon_straits",
+      "id": "shimonoseki_fishing_boat",
+      "segments": 2,
+      "length_m": 1597.6887504021638,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 24.396275858019493
+    },
+    {
+      "map": "kyushu_wide",
+      "id": "moji_container_ship",
+      "segments": 2,
+      "length_m": 2570.0080077826033,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 106.0823802938856
+    },
+    {
+      "map": "kyushu_wide",
+      "id": "moji_lpg_carrier",
+      "segments": 2,
+      "length_m": 2470.07482352436,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 88.4863932983515
+    },
+    {
+      "map": "kyushu_wide",
+      "id": "moji_tugboat",
+      "segments": 1,
+      "length_m": 1930.2920497324426,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 30.811388300841898
+    },
+    {
+      "map": "kyushu_wide",
+      "id": "moji_motor_boat",
+      "segments": 1,
+      "length_m": 1937.2788525658837,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 21.293647591023827
+    },
+    {
+      "map": "kyushu_wide",
+      "id": "shimonoseki_oil_tanker",
+      "segments": 3,
+      "length_m": 1054.3912705270843,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 121.36728820459794
+    },
+    {
+      "map": "kyushu_wide",
+      "id": "shimonoseki_tugboat",
+      "segments": 2,
+      "length_m": 1314.7507348283634,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 30.811388300841898
+    },
+    {
+      "map": "kyushu_wide",
+      "id": "shimonoseki_fishing_boat",
+      "segments": 2,
+      "length_m": 1597.6887504021638,
+      "shore_clear": true,
+      "shore_clearance_radius_m": 24.396275858019493
+    }
+  ],
+  "omitted": [],
+  "failures": [],
+  "method": "선체 반대각선+15m 이상 해수 격자 침식, 모든 단순화 항로 구간 재검사"
+}

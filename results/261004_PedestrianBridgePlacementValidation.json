@@ -1,0 +1,92 @@
+{
+	"failures": [],
+	"full_world_loaded": false,
+	"heightmaps_sampled_only": true,
+	"placements": [
+		{
+			"bank_a": [
+				-1740.47863769531,
+				17.0044136047363,
+				-3724.20654296875
+			],
+			"bank_b": [
+				-1899.7080078125,
+				20.3298358917236,
+				-3728.13549804688
+			],
+			"map": "ulsan_metro_80km",
+			"model": "seonbawi_bridge",
+			"placed_length_m": 159.312545776367,
+			"scale_z": 0.995703458786011,
+			"terrain_clearance_adjustment_m": 3.26865604039525
+		},
+		{
+			"bank_a": [
+				784.768188476563,
+				6.70980405807495,
+				-1498.92346191406
+			],
+			"bank_b": [
+				907.694152832031,
+				5.15841960906982,
+				-1619.77807617188
+			],
+			"map": "ulsan_metro_80km",
+			"model": "gulhwa_daun_crossing",
+			"placed_length_m": 172.392105102539,
+			"scale_z": 1.72392106056213,
+			"terrain_clearance_adjustment_m": 0
+		},
+		{
+			"bank_a": [
+				1013.53753662109,
+				13.345516204834,
+				215.894393920898
+			],
+			"bank_b": [
+				854.362915039063,
+				17.9982604980469,
+				211.964797973633
+			],
+			"map": "southeast_mega_140km",
+			"model": "seonbawi_bridge",
+			"placed_length_m": 159.291091918945,
+			"scale_z": 0.995569348335266,
+			"terrain_clearance_adjustment_m": 1.70404313199702
+		},
+		{
+			"bank_a": [
+				3537.916015625,
+				6.70980405807495,
+				2441.5302734375
+			],
+			"bank_b": [
+				3660.79956054688,
+				6.70980405807495,
+				2320.65649414063
+			],
+			"map": "southeast_mega_140km",
+			"model": "gulhwa_daun_crossing",
+			"placed_length_m": 172.368316650391,
+			"scale_z": 1.72368311882019,
+			"terrain_clearance_adjustment_m": 0
+		},
+		{
+			"bank_a": [
+				787.1376953125,
+				3.27773118019104,
+				-1500.5888671875
+			],
+			"bank_b": [
+				910.434753417969,
+				1.18715023994446,
+				-1621.57775878906
+			],
+			"map": "ulsan_uc_west",
+			"model": "gulhwa_daun_crossing",
+			"placed_length_m": 172.756607055664,
+			"scale_z": 1.72756612300873,
+			"terrain_clearance_adjustment_m": 0.163620599739522
+		}
+	]
+}

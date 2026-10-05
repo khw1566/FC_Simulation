@@ -5,6 +5,12 @@ extends Node
 
 const SETTINGS_FILE_PATH: String = "user://settings.cfg"
 
+signal vessels_enabled_changed(enabled: bool)
+signal industrial_zones_enabled_changed(enabled: bool)
+var industrial_zones_enabled := true
+var vessels_enabled: bool = true
+var settings_file_path: String = SETTINGS_FILE_PATH
+
 # 설정 기본값
 var flight_accel_step: int = 2 # 기본 3단계 (60% 최고속도 비례)
 var flight_gear: int = 1
@@ -28,7 +34,7 @@ func _ready() -> void:
 
 func load_settings() -> void:
 	var config := ConfigFile.new()
-	var err := config.load(SETTINGS_FILE_PATH)
+	var err := config.load(settings_file_path)
 	if err != OK:
 		# 파일이 없으면 기본값으로 저장 생성
 		save_settings()
@@ -47,6 +53,8 @@ func load_settings() -> void:
 	cloud_quality = config.get_value("graphics", "cloud_quality", 1)
 	
 	flight_vector_enabled = config.get_value("gameplay", "flight_vector_enabled", true)
+	vessels_enabled = config.get_value("gameplay", "vessels_enabled", true)
+	industrial_zones_enabled = config.get_value("gameplay", "industrial_zones_enabled", true)
 	weather_enabled = config.get_value("gameplay", "weather_enabled", true)
 	weather_state = config.get_value("gameplay", "weather_state", 2)
 	time_hours = config.get_value("gameplay", "time_hours", 12.0)
@@ -70,6 +78,8 @@ func save_settings() -> void:
 	config.set_value("graphics", "cloud_quality", cloud_quality)
 
 	config.set_value("gameplay", "flight_vector_enabled", flight_vector_enabled)
+	config.set_value("gameplay", "vessels_enabled", vessels_enabled)
+	config.set_value("gameplay", "industrial_zones_enabled", industrial_zones_enabled)
 	config.set_value("gameplay", "weather_enabled", weather_enabled)
 	config.set_value("gameplay", "weather_state", weather_state)
 	config.set_value("gameplay", "time_hours", time_hours)
@@ -77,8 +87,18 @@ func save_settings() -> void:
 
 	config.set_value("general", "language", current_language)
 
-	var err := config.save(SETTINGS_FILE_PATH)
+	var err := config.save(settings_file_path)
 	if err == OK:
-		print("[UserSettingsService] Saved settings to ", SETTINGS_FILE_PATH)
+		print("[UserSettingsService] Saved settings to ", settings_file_path)
 	else:
 		push_error("[UserSettingsService] Failed to save settings. Error code: %d" % [err])
+
+func set_vessels_enabled(value: bool) -> void:
+	vessels_enabled = value
+	vessels_enabled_changed.emit(value)
+	save_settings()
+
+func set_industrial_zones_enabled(value: bool) -> void:
+	industrial_zones_enabled = value
+	industrial_zones_enabled_changed.emit(value)
+	save_settings()

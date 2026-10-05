@@ -66,11 +66,11 @@ func _run() -> void:
 			geographic_length += Vector2((b[0]-a[0])*90500, (b[1]-a[1])*111000).length()
 		_expect(geographic_length > 30000, "실제 경로 30km 이상 연결")
 		metrics[profile.id] = {"route_vertices": real.points.size(), "opposite_vertices": real.opposite_points.size(), "stops": real.stops, "length_m": geographic_length, "cars": profile.cars, "fixture_duration_seconds": table.duration, "observed_max_speed": max_speed}
-	# 월드 통합은 전체 지도 대신 메타데이터와 지형 없는 작은 선형으로 검증한다.
+	# 월드 통합은 전체 지도 대신 메타데이터와 생성된 실제 종단으로 검증한다.
 	var manager := WorldManager.new()
 	fixture.add_child(manager)
 	var map_config = preload("res://scripts/models/map_config_model.gd").create_from_dict(JSON.parse_string(FileAccess.get_file_as_string("res://assets/maps/ulsan_metro_80km/map_meta.json")))
-	var test_track := {"points": [[129.3,35.5],[129.31,35.5]], "bridge":false, "tunnel":false}
+	var test_track: Dictionary = network.tracks[0]
 	manager._project_track(test_track, map_config, null)
 	var projected: Dictionary = manager._project_route(test_track.points, [{"name":"검증", "point_index":1}], map_config, null)
 	_expect(projected.points.size() > 2, "열차와 선로의 세분화 경로 공유")

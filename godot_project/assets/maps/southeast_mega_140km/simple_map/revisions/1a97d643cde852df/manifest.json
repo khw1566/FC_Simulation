@@ -1,0 +1,6367 @@
+{
+  "version": 1,
+  "assets": {
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/map.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/map.svg",
+      "sha256": "7e79abba92a3c668b145a21d9104323a0ad54b9d141057c5da3cd76260bd0abd",
+      "size_bytes": 2590914,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/buildings.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/buildings.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/buildings.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/buildings.svg",
+      "sha256": "92cfa96c729fa94fb0fd9eb345132a8cdb526f8b86d0b10f795f2bfc068ff68a",
+      "size_bytes": 188,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/coastline.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/coastline.png",
+      "sha256": "afcbac036c837302b566cd9a5fa4edd1913daeb822044727fada7e51d1eb7c16",
+      "size_bytes": 1207,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/coastline.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/coastline.svg",
+      "sha256": "c363e304f06f18e446beede568cb5a8931878a9b8899b3c36a659827560d3769",
+      "size_bytes": 2586,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/harbors.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/harbors.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/harbors.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/harbors.svg",
+      "sha256": "6137b03cf9314d92192830d07eb812c86511180136114ea20d12c9002bd783f0",
+      "size_bytes": 186,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/lakes.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/lakes.png",
+      "sha256": "a71f8e7f29edc1603cb1cb7353aac7e92892717c4ec9b9b6244ae3fc58f39cb2",
+      "size_bytes": 1491,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/lakes.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/lakes.svg",
+      "sha256": "8db72dcf5b56720055e6899dcd3c9d39f55d1a587d5b23c9e7e6224981b5faab",
+      "size_bytes": 16211,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/mountains.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/mountains.png",
+      "sha256": "6954ef4121084c0429642989490ff347bad457fe4d94c46b1be29799cd2e2b87",
+      "size_bytes": 11498,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/mountains.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/mountains.svg",
+      "sha256": "498d687cf32bb799959b958049cc6e3215da503c0343344df722205cbecfdff5",
+      "size_bytes": 121319,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/railways.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/railways.png",
+      "sha256": "afc7b82e70c1f59e9b4a3a33fae92890160f4296b497808cca08eec3e3d2b6e0",
+      "size_bytes": 4859,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/railways.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/railways.svg",
+      "sha256": "3e5909b8586a831738cb393696daf4a7eb1e0ee119a037b5ac8c917d44316554",
+      "size_bytes": 245882,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/rivers.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/rivers.png",
+      "sha256": "01797eb7a22d018f3cae5a7015125421a75e3b28e4adb3ddb6431444925eb78b",
+      "size_bytes": 39537,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/rivers.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/rivers.svg",
+      "sha256": "79c770ccf5db193c412341c976effe4cc49670577097d689a17464fd640757b4",
+      "size_bytes": 1061353,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/roads.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/roads.png",
+      "sha256": "840c1c4705c5db826852c3aa54cc74fa142d8371a9619e84d2ba3a8573517f90",
+      "size_bytes": 13126,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/roads.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/roads.svg",
+      "sha256": "a9edbc43688bcd6f35f59c5bd675af19a3b901d69ade7489ac946d713915a145",
+      "size_bytes": 1142130,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/sea.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/sea.png",
+      "sha256": "5d78bca04b1bc875289fdfc982121304e4aad6712225bc02e3459ed50dc3a106",
+      "size_bytes": 1234,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/sea.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/sea.svg",
+      "sha256": "9374ff9f010190d1490c9abef42d92adfca115dafefaf5f3e669be4332d4770e",
+      "size_bytes": 2323,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/shipping_routes.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/shipping_routes.png",
+      "sha256": "0f4b1668d119f77ceb6b86645573f088ab2341d7b284314d5df0be7226ea5d91",
+      "size_bytes": 1097,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/masks/shipping_routes.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/masks/shipping_routes.svg",
+      "sha256": "ba042d1424c6b8eea381ee9e075663f6ebf1b2e07854f3657c54aa32932a8481",
+      "size_bytes": 194,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "map_mask"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/preview.png": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/preview.png",
+      "sha256": "08c9a06aae2103f1266b5f8401085b8f73beda80bf3f2c03b3530690a5a650eb",
+      "size_bytes": 79249,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "width": 1024,
+        "height": 1024
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_0.svg",
+      "sha256": "4826c0abd50c0ac4e8aff0d9b1767b05bb0c9988aad90a9ccf55313fa15f2408",
+      "size_bytes": 3967,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_1.svg",
+      "sha256": "eff8984ba2ad34303d5a640500887170fedc812fd8bf91476147cdd2146f8d97",
+      "size_bytes": 8105,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_10.svg",
+      "sha256": "404cec6978edb90df8d081e0379f58f1138311e7550fd1c932b9921ad376377f",
+      "size_bytes": 7692,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_11.svg",
+      "sha256": "2f5511b128b01d0185a4d7a1dada57cbdc69afaa4d01ccea6decafa3777a4c1a",
+      "size_bytes": 9132,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_12.svg",
+      "sha256": "152834555f23fec4d73878a2dcd8ad51497ee8a739ca366e9586823ca3a50c99",
+      "size_bytes": 17665,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_13.svg",
+      "sha256": "45d047c741f8b7ac8b5576ce03a7313f1cf34a9635b758e420588c34cdd5269c",
+      "size_bytes": 17489,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_14.svg",
+      "sha256": "dd73a6dcb7c5b5e0dabb71610dd91b9143ed7fc28ae9693eb08c19dfbc461a86",
+      "size_bytes": 5193,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_15.svg",
+      "sha256": "fcd8fc3cfa4ad4212edfa6815945252f1c5e0af7df1800a8285a2dddebaa3e49",
+      "size_bytes": 3062,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_2.svg",
+      "sha256": "629eeaaba6f13a9f950c0ec4b9b5f315dc84f78c0166d99576baf71edee3467a",
+      "size_bytes": 6478,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_3.svg",
+      "sha256": "cd61929c8bc14ec6edbc37c03e3896a41536b7c8e67f43de56a076a5cf3b514f",
+      "size_bytes": 7775,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_4.svg",
+      "sha256": "7c803db73b186e1e4cc13da23268be86f8145ae297d3523abc55bd8b2b8f637b",
+      "size_bytes": 10704,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_5.svg",
+      "sha256": "026a8025714d92a70acf2979622866bde2be91ae45c12ee7b218a6e693383264",
+      "size_bytes": 11141,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_6.svg",
+      "sha256": "3ffcbfaeb698ccbb5d01bb06a3f1d93cbfa819b9bd7dfae6961958f266a2a68d",
+      "size_bytes": 5808,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_7.svg",
+      "sha256": "489fbe09bee0639d6b24f8f0f266dba556bc3acebe3588f4d21c1eb8d9f15d3b",
+      "size_bytes": 5041,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_8.svg",
+      "sha256": "ebe7245c0a552a03bff5b6840298b8dd1847deb7f87063f077297ea6274d66d1",
+      "size_bytes": 7086,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/0_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/0_9.svg",
+      "sha256": "afcdd7932737bf98930d4e9eae32f55af3e7e27d8ffd3a929db1542d982a08ec",
+      "size_bytes": 5599,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_0.svg",
+      "sha256": "582503d0692eba75c734837b45a041005482c0f2952e7e69c5e96f419061da6d",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_1.svg",
+      "sha256": "5fed0b0793afb5e314ef9377b2606f93eca8bc9d532f321a3cafb0d63c9e28e1",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_10.svg",
+      "sha256": "021c7d8b738d873cc83947e03b02ab1c7146f5bb56ac2a8cfabf6097527ed7cd",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_11.svg",
+      "sha256": "241c85220fc4b07d2ce72850b29116768aca54dacd17c390f86117e647246ba2",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_12.svg",
+      "sha256": "5f71cce6c12d515cfc87ab39dededb6de471e63be0e83bb6509b36c5168778a0",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_13.svg",
+      "sha256": "28ee71a6f997148fac5e56a3aeefa8e8f1e0aed78fadc9ec46b571c8def46d19",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_14.svg",
+      "sha256": "16dfb6b3ffab4c8ce4ba974b1e26e17f3eb8a0b9aafd445f99f73d106fd93193",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_15.svg",
+      "sha256": "6c41bc48338e129107b853ec67ba1ccf26144d2d5f7803963f49e0d8a8d0b5bf",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_2.svg",
+      "sha256": "f2c42c89930139cd68334c7a2d5ef7f44f9ba1f9d76b13298df6d1f7de721526",
+      "size_bytes": 5646,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_3.svg",
+      "sha256": "556facda80646f5c395df9b1472f6e244c2632d6a52377c01a4a462e2961aa79",
+      "size_bytes": 11326,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_4.svg",
+      "sha256": "a2f57d53102c4cb986f03eef2821faceb738aa45e8ff3bc43faa37bc2a4e42ff",
+      "size_bytes": 8626,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_5.svg",
+      "sha256": "1fb6fdac189a9c928a7b513d872a93f050a89d0651144aabff615362d3aaee6d",
+      "size_bytes": 43794,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_6.svg",
+      "sha256": "e28739d9dcba1b806cdf98c14fc64df466fedcf8b0291b8672a00e805dff054f",
+      "size_bytes": 12219,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_7.svg",
+      "sha256": "19abcd18ae76f1eb097ddafbccde04d272e8bd6c677766615c317c2e5e1331b8",
+      "size_bytes": 24248,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_8.svg",
+      "sha256": "094a4a9e129c0808c2dfd3563c85c1d9bb1ae2a4bf6e4f9f53846e88f4a899bc",
+      "size_bytes": 12990,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/10_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/10_9.svg",
+      "sha256": "d54f6443b1904ea933a266602219e789cc38110ecc8dd0e8f5b38ded8939417f",
+      "size_bytes": 1721,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_0.svg",
+      "sha256": "602d3a5761e906ab6fee88a0e9c848d1870105e66a06d6e46eaf928277814c5d",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_1.svg",
+      "sha256": "279a90902777fab180a38f50c759c0354c809b6506ebeee947c5bf592284317e",
+      "size_bytes": 1851,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_10.svg",
+      "sha256": "75f19731d0003be56c7d3ede32d7cfe42b297fd2c8b25a014e0fdaa37df601bc",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_11.svg",
+      "sha256": "b63a8488cbc628521324f3353900b332735094a5a4f2c7dbabe57916db6be263",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_12.svg",
+      "sha256": "6d6ef0c8b69815afe90a4cfb7804125c5deeef7925758b25d0210395d6d49502",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_13.svg",
+      "sha256": "c23412526dc20184d37a4418d70dd1703f2ad929fa2dd8fbcc5d8d4f0f4e28ad",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_14.svg",
+      "sha256": "5a1be2521271f93852c93738b66f61e19471d96eecfd1fcbc8d3865ca37b757b",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_15.svg",
+      "sha256": "544f3596e89cd175a3dace498915d948dd828bb2a2b73ef6ef53dde9db6c5e37",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_2.svg",
+      "sha256": "8c92e14434e6ecb8ba6cae2606e791648ba4915daa256b7007fc001bc25496c9",
+      "size_bytes": 8148,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_3.svg",
+      "sha256": "525a4c3a16ec25c9dfd509172be756be742ae40b7ca399a9f2e56b2c1263823c",
+      "size_bytes": 3544,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_4.svg",
+      "sha256": "13a4018deec50453a216b280a8482ad334dc232ef797ebf63eba882400b621b1",
+      "size_bytes": 1617,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_5.svg",
+      "sha256": "5c1e7a2d40722891fb1f659bfbbf35dac512d3f297b13498cfa209bda5095dde",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_6.svg",
+      "sha256": "ce9e4dbf1729c015abffbafcc7ba3fb5e5cc7e08798579cb4462df9093ec077d",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_7.svg",
+      "sha256": "dbc75084b900162e6851b34eb4990a5b2a5bfeae6335452708730eba8cf80afd",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_8.svg",
+      "sha256": "b5c14b3b4894d1a4c4330fecfe2bceb43e45a719b2c5403c2f4c641e3c996155",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/11_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/11_9.svg",
+      "sha256": "c3bfa2acc87fec2152e70f50247a1c42d881544b0783daa8fca4cbf0c758493a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_0.svg",
+      "sha256": "76335a5d35747138931bce55cb4d3990f74191edfc751f8c4f29c0e958de9f7b",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_1.svg",
+      "sha256": "63a2b18b36223c8fce55050bfc065cba11495254843aa3abfe820749228c498c",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_10.svg",
+      "sha256": "b40ba219ed6a46893b2801ccc139c0bedefcad0930887ee0d276f0b78f5ee03a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_11.svg",
+      "sha256": "d817f41a4c078a0df18f0150d6d7079dcbc99c96e031212aa83f0dec45c2bc75",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_12.svg",
+      "sha256": "9824066bbebaf115425681040e1b4c0f404d31bb387ebb47b042c8a5a4752ac4",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_13.svg",
+      "sha256": "4073940855c8f48a4db500ba965fe65b1edaec9f8c885f8de7b49b06d7fd5fc7",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_14.svg",
+      "sha256": "62b58f1f82684286be4708d48937b94643a8f6c32c9fe661da6da97d5ca0ba73",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_15.svg",
+      "sha256": "6365575ff36d34716bafdbc805eee350763591acecf99418398892d5a1a7c169",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_2.svg",
+      "sha256": "ab653d60fd80f0aca5658b2861f0149e355ffecc78908ed3b1174857d94926c3",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_3.svg",
+      "sha256": "38467b14009b523c6ad8fe3156f763a0aedd587a6318ead33b4a058d64993d7d",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_4.svg",
+      "sha256": "87143a215dedac0a6603f4076af5102d4a0c6eadef67327f7ed83be212cc76e3",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_5.svg",
+      "sha256": "f6c849ee56aab0d4a7f90798edcc14712fd5fb90415fa28e1544c48ba641d98e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_6.svg",
+      "sha256": "80edf95eee7f3840b355bebf0fe51d7017e8e0c1e06f70271751b4cb696dffb4",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_7.svg",
+      "sha256": "f709749b781a2996fbe7f397dbd7d0086437d95d438aa3d5ab2ae42dda17fb1e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_8.svg",
+      "sha256": "0f4914301afc751c39e4cec2c1fc495f4131932f0be2b51083a60abfab3dea5c",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/12_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/12_9.svg",
+      "sha256": "0e14d3fda90e371cde8bb3322fe78d716c8dbab4bb2f2c6d56333a5727b4e83e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_0.svg",
+      "sha256": "7311a11339f4f6d8e69bb4242a9b04a92bf805e556c036a880469af1aa661e96",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_1.svg",
+      "sha256": "c27f6c51dc780f6b46a043887637f21e8668af61664750dc2d88413648c2c6bb",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_10.svg",
+      "sha256": "269c4e0e13e66c8b7112e0628cfecbfa2200d2efdd33fe47ffd0acda58ec28eb",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_11.svg",
+      "sha256": "7979f2883b5c45e5d1a6649306a6a11cf2b0ce8db614af5aff0cabc36631a80d",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_12.svg",
+      "sha256": "da127c4a15fa34600f1ebbfc608426a9758d90f99c8af6489b6eb7a0f6c56b36",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_13.svg",
+      "sha256": "4c1a9020aa14829c21e948d7878fa1caaf099741a07da3926308f0f78b6caac1",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_14.svg",
+      "sha256": "68ab5dd0c72d04d8bb4bffe4792777810d041d6d3fcb0723a32ff77bf4795eac",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_15.svg",
+      "sha256": "bfd27caa3f825c2dd7c255c66103827c27ed027544875d6e003d4869807cd081",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_2.svg",
+      "sha256": "22dc0354aee63f088b28a0689ce32454168c8a1ae82432089ee659654b05bb82",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_3.svg",
+      "sha256": "b3debb88dd0194561c448f3e7355ba0d3cf46a39339942ba8b6be5760af1dc24",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_4.svg",
+      "sha256": "a7745c8a49994a0bcaeb03843022c2978b7cc4f82d42878e982f5f3a6e31b934",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_5.svg",
+      "sha256": "e75ba48565a42aaf8fc9dbfc3f569504c02b22add722f8d9d0bde47e91ba7c35",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_6.svg",
+      "sha256": "e4e398251c08243eef46db521f921ec6148aaf973f49bb0b84625a00011eeb31",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_7.svg",
+      "sha256": "316b6b71440f8aecb67f2dbc552c7f522dddf56aacc35332531267c38d5f3d1e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_8.svg",
+      "sha256": "756b39f8125f5d5043ea8482b6d87c534b23ad8fd039073112bd46f7f7241792",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/13_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/13_9.svg",
+      "sha256": "f76bef06fc274e2f09327ef33c9c1205ccdd37b037bb662ed679381d3c3ec8e7",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_0.svg",
+      "sha256": "ed39ce926256d6b20f42a539c54ea3052335b85bb6068891e926cd8b3958a549",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_1.svg",
+      "sha256": "84ebe1dc382e12e37b4b1499ebdbbd63099303fabe69fedfb5d954068a8c36e2",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_10.svg",
+      "sha256": "c1f8adbdf67b8843bc9736ca73c7f4ae74aafb3be64bb3a7648c34d3421ca4f1",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_11.svg",
+      "sha256": "44485b26e05ab446477981959cc5cf33907a7220ca62d0a7b737e7627ba4a408",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_12.svg",
+      "sha256": "221eb9e7f7879e719040992d81485c16e7d7615e46a8ecf695fd8cee3c839dbe",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_13.svg",
+      "sha256": "95fd31aa616adb8e304192ff28044afaa5b20e25d5145e7691ebf674f2b4efa6",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_14.svg",
+      "sha256": "dbe16e6ebb57fea0cd33aa70a03fc75a28c64c6757dd97480c7bf22717f8e784",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_15.svg",
+      "sha256": "d3b059fa87c2c8e0b5d86e5faffa95d2ce0cc4f418ed35ed3c322cc9fe5a24de",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_2.svg",
+      "sha256": "a2302645a931b227d8d1b75ff7adbd82450534cfa9d6c29e1ca246dfadd856f5",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_3.svg",
+      "sha256": "c33f6189f44f33c917f17eed73b2bf1eb9d2b377c1a16ed30e18d762e913bf13",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_4.svg",
+      "sha256": "37c0dcd938c1d4226541bbe2b13b692563f5f3a7a4083e9e7b8b314b10e54f26",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_5.svg",
+      "sha256": "dddf93854f377e16f60ecfc57708dab73a174f8acf2b14c43684843e4c0fb00c",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_6.svg",
+      "sha256": "aea60f47dde542a56b2d66e5882f264eaad045d0ecfdbf5c7ecdfcc9f41ba0b0",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_7.svg",
+      "sha256": "ce705d5d599b5cfde1aaaa70ea3a5f62ce23bdfc22b7df09d55520f4d3c3200b",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_8.svg",
+      "sha256": "7639949695fdc6bfb825edba5b6179f686703a57bb823cc831eceb8e1366c5b9",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/14_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/14_9.svg",
+      "sha256": "7838a625f35310fb9cc949e927d4e69b2bd13c957e0d7530007144f77f922756",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_0.svg",
+      "sha256": "6f90da9662e7501746ffccb0d913d16855742c22190fb13d74b4d3e038259ee9",
+      "size_bytes": 424,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_1.svg",
+      "sha256": "2d8566d548fe337d2dcd615bc37207c8f27b8986365c68a30e7bb1d701dddc62",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_10.svg",
+      "sha256": "47861b3167c6c86802fa20afa8183d7781193b79edd55de2636c63b51d42aea2",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_11.svg",
+      "sha256": "b7d665fcbc0479042eaf5f0a3df1d4734c024cce561b9d0e10b4d5585570f44f",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_12.svg",
+      "sha256": "9d187e0e98f5d9af30ba3b7c88def654b15e4ffc37950dfdc640185bf76b7f7d",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_13.svg",
+      "sha256": "92dee6f5d6e8f8041f046f0eb0026bbcf155dfb8f6787ef49677ad7501764168",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_14.svg",
+      "sha256": "a4acb593d8295d47aa1b1b784677b3cc4a25ad735d35dcd550ce8791e54c8970",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_15.svg",
+      "sha256": "31fd84b1ccad54d5e036c5275dfb1ec7d8299dfff0789717c5bfb6725a3bbd83",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_2.svg",
+      "sha256": "5ebb4f2bcf812e81b66939aa6d5c3a8ed1d9234a0ff024ce04017a08f8515d8b",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_3.svg",
+      "sha256": "14619a095487a7e23b45459a4883a5042a7a3366162332d5c4ca1187a3d915a4",
+      "size_bytes": 428,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_4.svg",
+      "sha256": "ebf47b8a79e90f5aa4883f5f7cbd77d781ab2b862ea2f39f758731a92903eb4a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_5.svg",
+      "sha256": "6261cde4a2c025651c0acabd2ec8fbbc60241b4a362b9de6bf8de46e6d73bf82",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_6.svg",
+      "sha256": "5ae89bc5020ce436b63c729835b74b03dbedd7122ef31003e96d50fdbbca3faa",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_7.svg",
+      "sha256": "062e25dc7fb2386b7689429b91b9e404d00302235acb6f83a06b92134ed61a71",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_8.svg",
+      "sha256": "c543667bb94fe317f844848bb48770841e598bed10f83124aba23bd84a62c189",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/15_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/15_9.svg",
+      "sha256": "734ac913f7bdff4f12a73bc83eee0d50920baeb69a22c2a101732c3339c0d1aa",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_0.svg",
+      "sha256": "cb3c587490beaa7f51df80d7b055644bf440a252f6739d3b7a61afd03228854d",
+      "size_bytes": 4825,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_1.svg",
+      "sha256": "90d78e3fb4f18120f2752442049cd7bafc59fe5ed733885ef07b6240318d41e8",
+      "size_bytes": 5442,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_10.svg",
+      "sha256": "f33af455cbd9b136fcf32556b44f3480064ded79b2b45514e8b153ad5d426f06",
+      "size_bytes": 11548,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_11.svg",
+      "sha256": "c1ceaa395173898f5f9f4997edb60cae0ec0d088343e0bb47cc488b8d7f91939",
+      "size_bytes": 13915,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_12.svg",
+      "sha256": "310f54cd2dddcfef3c593b55436d8969b8baf87c84ff8d096a20f7ab996b11b6",
+      "size_bytes": 21469,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_13.svg",
+      "sha256": "e0b11930815ffdfd104b0bcbb7ce5d7698d944500a48eaa576985c756babd294",
+      "size_bytes": 7353,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_14.svg",
+      "sha256": "8221908071ba5850cb03cf448737ba5fd5c263525908897b7d5b3708e50d5b61",
+      "size_bytes": 2858,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_15.svg",
+      "sha256": "deca5ff340660f5436ad3d327cd2742721d70316baa9c3fb3f31beee7762ae09",
+      "size_bytes": 13028,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_2.svg",
+      "sha256": "b16fe01e89ddbef46813743489b400bdca84c011f12c9d3ec043ca005c65a92d",
+      "size_bytes": 7716,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_3.svg",
+      "sha256": "5e0912491a4ed0ac13e909496f3dd3e4dd8e5cbc787f8af3a475484e13be20cc",
+      "size_bytes": 12857,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_4.svg",
+      "sha256": "1db44381561193e2b5f9f4a2de1ee83de94d83c0fb652955afb6506224e49bdf",
+      "size_bytes": 7482,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_5.svg",
+      "sha256": "816c362c30a577111d53207eba3996875b29857c9c58a9982f338cfea2af5703",
+      "size_bytes": 5821,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_6.svg",
+      "sha256": "2b45afa8f75865ad7a3b11f9817a034f2df0eb4df4bd8590ff98a465991ad1f7",
+      "size_bytes": 6319,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_7.svg",
+      "sha256": "7481015dd68498110aacb2fe263fef872bd29a39ae49270dbb17520a3fb69228",
+      "size_bytes": 7366,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_8.svg",
+      "sha256": "92b812b7224416a538922d72ca278644746640a5a1bf9866d7d3e7e8850ca1ac",
+      "size_bytes": 9178,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/1_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/1_9.svg",
+      "sha256": "493f5bbc755a6a1462f8293efd0042c52c3772fcdceeeaeb2848c8357b79b034",
+      "size_bytes": 5004,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_0.svg",
+      "sha256": "3d2641ce23a698a562750af037c4af260b6fec2e355f727e6443b558e242b1f5",
+      "size_bytes": 8465,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_1.svg",
+      "sha256": "9e225ea3177f8b61273e21f41ffec6fc7025ee988273c57e8c1a304d598d4d71",
+      "size_bytes": 6414,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_10.svg",
+      "sha256": "054549bcf22ba7076dcd177d71aa9fb4a64bbe7e6e95fd866b3704fe7e93c646",
+      "size_bytes": 16602,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_11.svg",
+      "sha256": "2da35b71d52c3e406681b17204d9ce6ce3766e36bfd67490b92938084ea4bec4",
+      "size_bytes": 10527,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_12.svg",
+      "sha256": "3e1d49a08baba0a4db348b82302a797f7e1aec1feed939dc0e38ea2aeac14a40",
+      "size_bytes": 25260,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_13.svg",
+      "sha256": "368d960783d8b00d2f66d3e39f588c6bd5126428bc9324f475d4ad3737e27904",
+      "size_bytes": 10360,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_14.svg",
+      "sha256": "4f718593cbc615145d1145f5aa6d506594b886dcbf3848f8085cdd2277acb375",
+      "size_bytes": 1933,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_15.svg",
+      "sha256": "e9412fe3394f5f4b012d066d9ace1cfd9947281302fdf850539c68bebf0ac34d",
+      "size_bytes": 31135,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_2.svg",
+      "sha256": "b026f6121f031d4825926771fde51e5c58cd82cd4a085c4b585f973336490041",
+      "size_bytes": 4070,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_3.svg",
+      "sha256": "9db63c5fac0abe7bcd959d16b541de11eeb62aa3351123554361fd3907b03cb1",
+      "size_bytes": 11854,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_4.svg",
+      "sha256": "9aad82d9e5c8a7b46c0240dbe14781ed8e52bf80db5c47c1c2a721c642ba05a2",
+      "size_bytes": 20057,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_5.svg",
+      "sha256": "1c851d980f1dcc8c6ea8e8f2d183ad240eef83e39560c13c3ad6c049b2b874dd",
+      "size_bytes": 6994,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_6.svg",
+      "sha256": "25fe519dbabaa1a70d5c63c90ad0fe0e8b6768543bc161612a536d05bc53cbb8",
+      "size_bytes": 10152,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_7.svg",
+      "sha256": "5fa2f0cf3386c060ffe63fe0f9db0692b655622f4be0ddd0ae3e3838eaceedb8",
+      "size_bytes": 7591,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_8.svg",
+      "sha256": "02e98339395bd6120f80cde2b372e7062722f598c064d568792702d6b7ae8417",
+      "size_bytes": 7919,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/2_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/2_9.svg",
+      "sha256": "adf1c389623a6fb14aa37b1e7ee0025429d17da07857c6f524f8f215aa55ad50",
+      "size_bytes": 8858,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_0.svg",
+      "sha256": "8c1131e7eb5a3593d17ede53823f6d675ba3eb8d16bdcc5d13132754206f203a",
+      "size_bytes": 4778,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_1.svg",
+      "sha256": "bfdfe9cd922abd8cef73ee75c435d05afa8023a9e474215d12020cc391d3578d",
+      "size_bytes": 4799,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_10.svg",
+      "sha256": "0a9a8a78901575c6da8a5c87b10f45318169854b5c5c2fa5f1f9da84659f4a83",
+      "size_bytes": 23237,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_11.svg",
+      "sha256": "cb11503c008aed85a311121cadc97c379dcd6bd363760f07b7b21e8e2036153b",
+      "size_bytes": 10725,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_12.svg",
+      "sha256": "0ade6e7e57334bda0a70ef473b0c7f7d64cb2277a549a22d28d442c3ce0c6df2",
+      "size_bytes": 20616,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_13.svg",
+      "sha256": "c709ff74516e867d4386fa8f578a9c3ff6e89547b499d8984a789c5600b18bc2",
+      "size_bytes": 14168,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_14.svg",
+      "sha256": "a522c9727983a30afac3f6ae3c463c27acfee2f5726056d73baad37e6e6841bc",
+      "size_bytes": 2296,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_15.svg",
+      "sha256": "7dfa594febb5084754f975961d1c695bb85989d6cc3f3598b0ad494794e1a9c7",
+      "size_bytes": 2059,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_2.svg",
+      "sha256": "fa9bdfc54f08e7f8b672f0740d0fc06647fa55bcfc23aa7e242ea871262c1652",
+      "size_bytes": 9192,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_3.svg",
+      "sha256": "d36da02d8645ec4a30be87c0bc8ac00acbc7f4f7325aab6b8b11f6b4b427da9f",
+      "size_bytes": 8435,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_4.svg",
+      "sha256": "8f016ff0f08ab531f72f857c90de45d7ad5edecaa49cbf0a9343e810504d8d3f",
+      "size_bytes": 13448,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_5.svg",
+      "sha256": "903a1ce529bc630d195c217e2110b4e6a12efea18ad17b56a2e5ebad944eba88",
+      "size_bytes": 6257,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_6.svg",
+      "sha256": "ce27957769b94cd1d46467b117bd9dbe5629e06ff3baeab033f95edb0ac7a881",
+      "size_bytes": 8415,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_7.svg",
+      "sha256": "c661199ea06e8035257b543708978046e7dd579e6e17bc6ee269f7b94480a964",
+      "size_bytes": 6216,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_8.svg",
+      "sha256": "bfe5789986c53b7f62da6d41c7897d917a7787b09ab1cb8f4e256305f73a2825",
+      "size_bytes": 6870,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/3_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/3_9.svg",
+      "sha256": "b11c7f906a921b81e5f57cc23a056806544a99850fa1a54902bb3666d4dada53",
+      "size_bytes": 12500,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_0.svg",
+      "sha256": "e752f430694bd7eb9cc9148786331a488611debace140c411dbaf1675993e265",
+      "size_bytes": 4583,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_1.svg",
+      "sha256": "487091238f72bc425becc70c21108dadb5787468f0dea75f381114d6a50837db",
+      "size_bytes": 5134,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_10.svg",
+      "sha256": "48ae953b34d4fae878f5bf18678ab920b041402b837a4cbe9750a89de4067162",
+      "size_bytes": 19617,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_11.svg",
+      "sha256": "f9176e34d77628d47bd3e4d4fafc7d67dab2303f4fc98c482077bf2b44389fce",
+      "size_bytes": 14801,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_12.svg",
+      "sha256": "dc6b5b156cca83606d3a042cd57799471a614db67b1d9a64735f7e4e0a839b92",
+      "size_bytes": 10171,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_13.svg",
+      "sha256": "f2947b3195a5933f877071eb1f42e703f25751cf61afcaec54240f0aa9b05a1f",
+      "size_bytes": 15515,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_14.svg",
+      "sha256": "7ac7b326fe3c890133f5dc54a806207e9f5dff4dc5ef55111d65aa2b21b13a80",
+      "size_bytes": 3169,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_15.svg",
+      "sha256": "fb4d240fbdbd3175eae25883088ea711e1974df4c417f6f73192d02d1ab41c1b",
+      "size_bytes": 1238,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_2.svg",
+      "sha256": "d6ebc0e47326937370336cd0ec46a5797891c90875c8988d4ef8a0ef3354d27a",
+      "size_bytes": 9614,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_3.svg",
+      "sha256": "2b15dbdb1ee1a7486679343c2c3591b382d7135254ce185087e021e93a1bffcf",
+      "size_bytes": 11205,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_4.svg",
+      "sha256": "43cecec2c8c88b84fcb91ba1e1ea5486acd06c36cefdf492c01d3d58d4d8173f",
+      "size_bytes": 19471,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_5.svg",
+      "sha256": "a0b37e1a24e54e6539705dd43e020c2935bda1cb7dff4f4f9cadec697f79edc1",
+      "size_bytes": 7815,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_6.svg",
+      "sha256": "29fab6e90e03706d8d8b3e0e8919150842c34fedb3a390caf905776f30e358c4",
+      "size_bytes": 8399,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_7.svg",
+      "sha256": "fb8525553e6a96b480c16deb94dcde3cf526410e81f4bf495fe497162ad2e47a",
+      "size_bytes": 10823,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_8.svg",
+      "sha256": "f2c6b1be204986b222c100c123bc80474c375c1e862a6df050c7dc870924719f",
+      "size_bytes": 9424,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/4_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/4_9.svg",
+      "sha256": "d10ac4c1b33a6a6956e6266487e45b8ae069d53c0d894196d345bf3b397c20c3",
+      "size_bytes": 4296,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_0.svg",
+      "sha256": "0febcfc613d577b4ac265f0a458640c97b4b7f3f0dbb99f0dfaad3ba56c104e2",
+      "size_bytes": 7907,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_1.svg",
+      "sha256": "dd2d980471d816b28eb84c5d6cad0b25926afb1a225e085cd8345a881bedad1f",
+      "size_bytes": 3011,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_10.svg",
+      "sha256": "2c1d6e1f809b5084446abecf93728bd05d8bef03fd9f65dcae8c8e251b6196f7",
+      "size_bytes": 13899,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_11.svg",
+      "sha256": "d2eac19575ad834c061496d60a9b53fc4e51153dcf966b186879e734d8f948a8",
+      "size_bytes": 90273,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_12.svg",
+      "sha256": "1030c9afe3fb5633d7d6bc8994844a3a05e11a565e6c3122ab63ff4d87cba228",
+      "size_bytes": 32486,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_13.svg",
+      "sha256": "a3c4e542640a6ce9a52973e2a3298e5aa0097c370c58b894daf65a917053777d",
+      "size_bytes": 15271,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_14.svg",
+      "sha256": "d98a525df165f22b6202d76a1b10251d946639e60b9e4849c05df3dd75ba3bcb",
+      "size_bytes": 12391,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_15.svg",
+      "sha256": "4f70afd12dbc32dd9fc351e1043e2b483f27bd7e645ad7edf4afba5d6de695d8",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_2.svg",
+      "sha256": "87d8a26d231d00c3fbba88fda37d55d26c87f0a1ceb511d4743d5559e4634b3d",
+      "size_bytes": 10628,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_3.svg",
+      "sha256": "35128954d86e77d9bad63d4796741e4ddd20e0a3c22b793c31e0e1187d1f22ab",
+      "size_bytes": 9807,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_4.svg",
+      "sha256": "620be1794027d3c6a2cdec2ff30af1f3be12f63f583d4ce4c361e6279778f18f",
+      "size_bytes": 10304,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_5.svg",
+      "sha256": "23513566b48fb86cac6387ea7806ba9dd002582d81e68111f144524270523e67",
+      "size_bytes": 7279,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_6.svg",
+      "sha256": "ae9e45683d832997c8ddad433af73f557181a3ab4d9390530c6051d28f0981fc",
+      "size_bytes": 10001,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_7.svg",
+      "sha256": "aff89b95da2daa58c9ce4ddd87571473c5d441187267d787b28bb90b1494731a",
+      "size_bytes": 17672,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_8.svg",
+      "sha256": "aa16b097a09e215306e88c51d7a9ccebfa4c46b9db529dbcd4d7c63f5bfb131c",
+      "size_bytes": 22113,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/5_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/5_9.svg",
+      "sha256": "259398c60127b81d30cc80211dc60914656dd505e74df0dd5f6926ea954f392e",
+      "size_bytes": 11023,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_0.svg",
+      "sha256": "4ac468a93a4bb9a5f289e522bd6273b4f0e7d8973ff1060ef164f2a4a1aea677",
+      "size_bytes": 5953,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_1.svg",
+      "sha256": "f45a9dcdb7a186c9563f50db97babc233f9b81752a9c75ec752d53f10b7fb987",
+      "size_bytes": 5096,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_10.svg",
+      "sha256": "60b057f45b5bdc853f068bd3be1c4503229d19d0307ea0fb3e2768b1aaf8a987",
+      "size_bytes": 42442,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_11.svg",
+      "sha256": "529b621257cfb91dcb1a263570e398e9642dc16c3a74c607a3b2866a3dc76d6f",
+      "size_bytes": 72475,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_12.svg",
+      "sha256": "e7c0604c71c57fc78b8f02168a64492b5ef031f0ae25173a0ac9d7d19dc1629d",
+      "size_bytes": 16293,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_13.svg",
+      "sha256": "16bd12c97901abe82060b3f56827ec497f49112ee1cff6d07174a61fe1733a6c",
+      "size_bytes": 9006,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_14.svg",
+      "sha256": "39a03135fca641100e9bcc6e4c5dc54f16eb47a7c56628bbd79131e9506d75d6",
+      "size_bytes": 832,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_15.svg",
+      "sha256": "7fd274880b0e8a594203b0e5ca8935871437e2cc6cd5d1f3726e5208425c0fed",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_2.svg",
+      "sha256": "6c152f5378de81fce0aeefc89b8dac778275fad7f9cefac6030b97f17bfcd458",
+      "size_bytes": 7269,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_3.svg",
+      "sha256": "8c2dbfe9f1240119ad21450fe79dd4a4e5b9b63d3b68e5eb92b4a4488f97ba8f",
+      "size_bytes": 11653,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_4.svg",
+      "sha256": "0351a50a4626c124754fa1bca99d82db1dbc4159c5f681573ad55d93db64dd16",
+      "size_bytes": 26898,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_5.svg",
+      "sha256": "fe42cf736b7ced6e2c248a55c129951c7fbbc85d8ecd0b4d098015f8d8e97c8a",
+      "size_bytes": 11575,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_6.svg",
+      "sha256": "5d84c8fb8a92df0283dac078bcb6214cf1e30b13fc335fdcd16542942949e0e5",
+      "size_bytes": 6200,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_7.svg",
+      "sha256": "e9fc7e2b86dc67177dfa202ef5030a5eb76cdadaa1f639c9ea49b02fa977bad5",
+      "size_bytes": 32682,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_8.svg",
+      "sha256": "ab07b4b1a3ac6be0a5b9bc27936389adc9348be5619d7c392fe59c2c2403f720",
+      "size_bytes": 50618,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/6_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/6_9.svg",
+      "sha256": "b2066c2bbe862778c05f45020db6b89b4b2fcd5dc1cda095d01606fdc418622c",
+      "size_bytes": 33119,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_0.svg",
+      "sha256": "18b887f070e43b0a12707666d551b306ec4cdd66d34309054d5c5987cb46a96e",
+      "size_bytes": 6779,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_1.svg",
+      "sha256": "74380d433e7870dd285d0f6ab2be507976f0cf4c464012c28f19b88225dabee4",
+      "size_bytes": 6914,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_10.svg",
+      "sha256": "adce88c0f704bb398676fa1b7357b14f8d24eedeaed2f5656f1306f92607eee6",
+      "size_bytes": 57917,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_11.svg",
+      "sha256": "fe3dd9af4a7ba0b14270f0be10fe075b80c9748ab1c3e640ed7a4ccec1364f95",
+      "size_bytes": 40478,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_12.svg",
+      "sha256": "e4110fb9a901c7e0fbd7a1fb94e434284b07b2fd244cc927b2b9047c0defce2d",
+      "size_bytes": 30176,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_13.svg",
+      "sha256": "35d32127fdf1fb6f297884773cbccfe5a1b50aeed804aad39aa93a475d77b12e",
+      "size_bytes": 4156,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_14.svg",
+      "sha256": "f2589df8115fb96409570841b3f045a52bacb177b1b6c4aa7d8b971a459384d5",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_15.svg",
+      "sha256": "0157616f3d8f563b3890ec05e51eb4a47cb3322dc67fbb95d4d90930178b809e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_2.svg",
+      "sha256": "196cb80daca7141a48efd9d942e42fd836d70eb5ef817cacd0b4e088a850cbe9",
+      "size_bytes": 9738,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_3.svg",
+      "sha256": "eb4c05bbf23fd2c5f3df03b2298482f8d6663b42a52bc8fa1e07930fed0befc5",
+      "size_bytes": 5676,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_4.svg",
+      "sha256": "15b35ea8fd657a89546b2c62d26070335593d60031675a9da66a391a61bd72da",
+      "size_bytes": 22252,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_5.svg",
+      "sha256": "f16da7be6db865c49d628e1c5f26f777b5af11f1ba04dd235f6fe745d6b949b9",
+      "size_bytes": 74877,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_6.svg",
+      "sha256": "621705293b27eb041f1d49bc10d6198ea69a811febe0fc111d1ca9f0585606c8",
+      "size_bytes": 37822,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_7.svg",
+      "sha256": "65753b63c9272305dfd8d8fdf187de34490e85e8a6f19856492808879761769e",
+      "size_bytes": 36235,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_8.svg",
+      "sha256": "420a3891af6001fa6ba2b8f10859c8f4c47a53db89a9c2e9444a21f2f6760bc0",
+      "size_bytes": 73629,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/7_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/7_9.svg",
+      "sha256": "272972414e390b5e2e48d4666c1a73bbcd94ca8355470d8745a22a9f3886d1f8",
+      "size_bytes": 39050,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_0.svg",
+      "sha256": "61d1b9996a0dd318d23069c0a7c9fb2b82faf89cb8d09b7e51b2c89f493f9ec0",
+      "size_bytes": 5914,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_1.svg",
+      "sha256": "77e7ea0abb3873436f0d359c2ca8a36a4b93788fe50a1c949fb644ae420c5bb4",
+      "size_bytes": 6992,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_10.svg",
+      "sha256": "569489c60b055554881e44fefaea4e051bd04efaa4f39c2a5a1b62ee7788bfe2",
+      "size_bytes": 46411,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_11.svg",
+      "sha256": "2f130509143e1dad2ad37027cd54f22378eacba4e30f0aa6f1f44d5927792971",
+      "size_bytes": 67946,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_12.svg",
+      "sha256": "da6cd1ee5bc341f0b3ac11ad4c92ef8c2ede00c29977a3517ffba834e5efc533",
+      "size_bytes": 4226,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_13.svg",
+      "sha256": "02f7f192f43a430c37e9a9a493f9ea8424ee63f9cee8cbea3fbe519a8f2b8855",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_14.svg",
+      "sha256": "08a2f78a6e4dbf38c81a020dc8171e7cdc8d6545b967d52344c57030b7899f19",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_15.svg",
+      "sha256": "29a3eda8d88eafeedd1451b671c8e759ca2106e30b2529d0dee0f4bb6e184b5a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_2.svg",
+      "sha256": "aa3c93dd4efeafa8fc07ac0e7bae63ab3cd0bcab30ed8052ea6657951565c709",
+      "size_bytes": 13490,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_3.svg",
+      "sha256": "587adbbbf461cf341d5e89680ed71016e389f3951e3817cda95a191f3820a3a5",
+      "size_bytes": 9367,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_4.svg",
+      "sha256": "206db68223c96d8e64c55218358deff14c35e57160df7769d57fb0331282eb8c",
+      "size_bytes": 17624,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_5.svg",
+      "sha256": "4b7717bcb4d8d5bc32c6b34f8d16fa2a2b93071fc8aa9c9967176ca9a536a5bd",
+      "size_bytes": 30596,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_6.svg",
+      "sha256": "309e6df9ddb337e1069244518534549ebbf65a6416279a8042ac8d340bbd9854",
+      "size_bytes": 51320,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_7.svg",
+      "sha256": "34545ba238f7db3904dc9e2aa46141f19d52c9e459c130f0670d4eacfb9bef32",
+      "size_bytes": 36941,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_8.svg",
+      "sha256": "b2dd3aeb59e44b72c0b10bc17aed88e7ce40ae378a321da82bd15399f55fa6a4",
+      "size_bytes": 212882,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/8_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/8_9.svg",
+      "sha256": "4099931744254ee6a498e3e5b61d92837dca3b471bb00a3ffc21c67b96107325",
+      "size_bytes": 79925,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_0.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_0.svg",
+      "sha256": "35b590dc816805fd94bf30670407559b7358862c34fbf3ed5cc245563eaa9451",
+      "size_bytes": 11709,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_1.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_1.svg",
+      "sha256": "9458a3ada6d8954b85ba9dc04d4894093b7a6df2e0cb0b9f3d5ad27fd75455e9",
+      "size_bytes": 7884,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_10.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_10.svg",
+      "sha256": "9a512df6530b1b74b486960b0b2b208cdad6ace4630308de1e943008274c505c",
+      "size_bytes": 17215,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_11.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_11.svg",
+      "sha256": "6f26e7985e9eea983616a427c6e06c5bcb6b3b32ef29967a206dd732de31979b",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_12.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_12.svg",
+      "sha256": "65db86005f55d138c543ebb1b0a1aafc7eb1e1136443bb9877249a09228d6956",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_13.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_13.svg",
+      "sha256": "3589448a0ffe0336b01067f1785d3aeeb152c09bfdbe24fcad7aa51bf760fe7e",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_14.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_14.svg",
+      "sha256": "1f98c69b9a33e7a62ea79cd95f9715aee68071e6cbd015db9d87cd4cc66ba198",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_15.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_15.svg",
+      "sha256": "da56aa9f0febb9cc64b32e7cc72969e67be58dab55e506895d2f143b2e28834a",
+      "size_bytes": 430,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_2.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_2.svg",
+      "sha256": "43fc3dfeb61e82d4cf33dca2d44f9aa8e1101a323ae02a3c218124ff246e2a0c",
+      "size_bytes": 7896,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_3.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_3.svg",
+      "sha256": "25a894dba4334998f246cc498cac86eb9aa8dc9c06c7aa451d2828c6548985a3",
+      "size_bytes": 9101,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_4.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_4.svg",
+      "sha256": "4680ba81839ac861be1f7e58dffb7121649f6f20a08fcfe2363514e4731a03ed",
+      "size_bytes": 7984,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_5.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_5.svg",
+      "sha256": "ce8fa939ae0a6870aa338f4d1b06c87f54051b713820e2bee3cfc1b1d4747802",
+      "size_bytes": 26427,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_6.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_6.svg",
+      "sha256": "58384f0b37effad98d97286dcc7a392e7399fbd417a91e4fdabb3a540308e439",
+      "size_bytes": 32968,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_7.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_7.svg",
+      "sha256": "0d4280c0ca06c91d3897b46a3bf9846dba0adddb2862a8d96cbcfed436b11938",
+      "size_bytes": 69760,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_8.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_8.svg",
+      "sha256": "6b58c20a0ea923cdae6a4b69c8e00c54a4104a692e21acc15727b8c3230471e0",
+      "size_bytes": 136736,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles/9_9.svg": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles/9_9.svg",
+      "sha256": "ae408c70636ffa2c5dee3047a129cdc5d81f841a5d8d9e4d8af88764cfa809cc",
+      "size_bytes": 25498,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    },
+    "simple_maps/southeast_mega_140km/1a97d643cde852df/tiles.json": {
+      "file_path": "res://assets/maps/southeast_mega_140km/simple_map/revisions/1a97d643cde852df/tiles.json",
+      "sha256": "d32e2c11b1e4b65737f2d85b98bdb427ccf6b11d58be1757c423d2ae23af155c",
+      "size_bytes": 666,
+      "bbox": {
+        "south": 34.9494,
+        "north": 36.2106,
+        "west": 128.4496,
+        "east": 130.0004
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300.0,
+      "resolution": {
+        "type": "vector",
+        "viewbox": [
+          0,
+          0,
+          4096,
+          4096
+        ]
+      },
+      "type": "vector_map_asset"
+    }
+  }
+}

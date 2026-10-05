@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://cql1v4mx67f8r"]
+[gd_scene load_steps=37 format=3 uid="uid://cql1v4mx67f8r"]
 
 [ext_resource type="Script" path="res://scripts/terrain/terrain_chunk_manager.gd" id="1_terrain"]
 [ext_resource type="Script" path="res://scripts/water/kanmon_water_manager.gd" id="2_water"]
@@ -29,6 +29,12 @@
 [ext_resource type="Script" path="res://scripts/services/day_night_cycle_service.gd" id="26_day_night"]
 [ext_resource type="Script" path="res://scripts/services/celestial_body_manager.gd" id="27_celestial"]
 [ext_resource type="Shader" path="res://shaders/night_sky.gdshader" id="28_night_sky"]
+
+[ext_resource type="Script" path="res://scripts/water/vessel_world_manager.gd" id="30_vessels"]
+
+[ext_resource type="Script" path="res://scripts/services/altitude_atmosphere_controller.gd" id="31_atmosphere"]
+[ext_resource type="Script" path="res://scripts/terrain/horizon_terrain_manager.gd" id="32_horizon"]
+[ext_resource type="Script" path="res://scripts/terrain/industrial_zone_manager.gd" id="33_industrial"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_night_sky"]
 shader = ExtResource("28_night_sky")
@@ -200,3 +206,21 @@ player_node = NodePath("../Player")
 
 [node name="CoastlineWaterwayManager" type="Node3D" parent="."]
 script = ExtResource("13_coast_mgr")
+
+[node name="VesselWorldManager" type="Node3D" parent="." node_paths=PackedStringArray("player_node")]
+script = ExtResource("30_vessels")
+player_node = NodePath("../Player")
+
+[node name="AltitudeAtmosphereController" type="Node" parent="." node_paths=PackedStringArray("player_camera", "world_environment")]
+script = ExtResource("31_atmosphere")
+player_camera = NodePath("../Player/Camera3D")
+world_environment = NodePath("../WorldEnvironment")
+
+[node name="HorizonTerrainManager" type="Node3D" parent="." node_paths=PackedStringArray("terrain_manager")]
+script = ExtResource("32_horizon")
+terrain_manager = NodePath("../TerrainManager")
+
+[node name="IndustrialZoneManager" type="Node3D" parent="." node_paths=PackedStringArray("terrain_manager", "player_node")]
+script = ExtResource("33_industrial")
+terrain_manager = NodePath("../TerrainManager")
+player_node = NodePath("../Player")

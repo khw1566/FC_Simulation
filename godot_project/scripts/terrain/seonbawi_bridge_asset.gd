@@ -1,6 +1,7 @@
 extends RefCounted
 ## 석재 보도와 중앙 유리 난간이 있는 선바위교 근사 에셋.
 
+const Lighting = preload("res://scripts/core/asset_marker_lighting.gd")
 const Parts = preload("res://scripts/terrain/pedestrian_bridge_geometry.gd")
 
 static func build(spec: Dictionary) -> Node3D:
@@ -44,6 +45,11 @@ static func build(spec: Dictionary) -> Node3D:
 	for end in [-1.0, 1.0]:
 		g.box(Vector3(0, (top - 0.9) * 0.5, end * (length * 0.5 - 0.8)), Vector3(width, top - 0.9, 1.6))
 	g.finish(root)
+	var light_points := PackedVector3Array()
+	var lamp_count := maxi(2, int(ceil(length / 120.0)) + 1)
+	for i in range(lamp_count):
+		light_points.append(Vector3(width * 0.44, top + 0.8, -length * 0.5 + length * i / (lamp_count - 1)))
+	Lighting.bridge(root, light_points)
 	Parts.marker(root, "RoadA", Vector3(0, top, -length * 0.5))
 	Parts.marker(root, "RoadB", Vector3(0, top, length * 0.5))
 	return root

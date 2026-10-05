@@ -1,0 +1,28 @@
+{
+  "canvas_size": 4096,
+  "preview_size": 1024,
+  "raster_mask_size": 1024,
+  "terrain_sample_size": 384,
+  "water_sample_size": 768,
+  "tile_grid": 16,
+  "building_max_world_size_m": 10000,
+  "mountain_levels_m": [150, 350, 700, 1100],
+  "background": "#eeeae1",
+  "colors": {
+    "sea": "#dcebf0",
+    "mountains": "#9c8867",
+    "rivers": "#2395bd",
+    "lakes": "#547bc1",
+    "buildings": "#68757c",
+    "roads": "#e39a36",
+    "railways": "#9559a4",
+    "coastline": "#177d82",
+    "harbors": "#d25b52",
+    "shipping_routes": "#4aa373"
+  },
+  "road_types": ["motorway", "trunk", "primary", "secondary"],
+  "unclassified_major_min_width_m": 14,
+  "harbors_geojson": "data/raw/navigation/{map_id}/harbors.geojson",
+  "shipping_routes_geojson": "data/raw/navigation/{map_id}/shipping_routes.geojson",
+  "note_ko": "수동 실행 전용. 로컬 최신 원본으로 마스크와 SVG를 생성하며 게임 실행 시 데이터 수집·생성을 하지 않음. 항구·항로 입력이 없으면 빈 계층을 유지함."
+}

@@ -1,0 +1,923 @@
+{
+  "version": 1,
+  "note_ko": "울산 공단의 스카이라인을 위한 범용 실루엣. 실제 시설 배치·사양 재현 아님.",
+  "connector_axis": "-Z outward",
+  "assets": {
+    "stack_concrete": {
+      "label_ko": "고층 표식 연통",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        90,
+        8.0
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 90,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 4232
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          90,
+          0
+        ]
+      ],
+      "default_plume": "smoke_gray",
+      "scene_path": "res://assets/generated/industrial_plant/stack_concrete.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_concrete.tscn",
+        "fixture_count": 15,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/stack_concrete"
+      }
+    },
+    "stack_steel": {
+      "label_ko": "슬림 강철 연통",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        -0.04807619738204116,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        55,
+        8.0
+      ],
+      "units": "meters",
+      "elevation_min": -0.04807619738204116,
+      "elevation_max": 55,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 6272
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          55,
+          0
+        ]
+      ],
+      "default_plume": "smoke_gray",
+      "scene_path": "res://assets/generated/industrial_plant/stack_steel.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_steel.tscn",
+        "fixture_count": 39,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/stack_steel"
+      }
+    },
+    "stack_triple": {
+      "label_ko": "3구 집합 연통",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        62,
+        8.0
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 62,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 4808
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [
+        [
+          -4,
+          62,
+          0
+        ],
+        [
+          0,
+          62,
+          0
+        ],
+        [
+          4,
+          62,
+          0
+        ]
+      ],
+      "default_plume": "smoke_gray",
+      "scene_path": "res://assets/generated/industrial_plant/stack_triple.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--stack_triple.tscn",
+        "fixture_count": 45,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/stack_triple"
+      }
+    },
+    "flare_lattice": {
+      "label_ko": "격자 지지 플레어 탑",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        -0.06810140896210047,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        72,
+        8.0
+      ],
+      "units": "meters",
+      "elevation_min": -0.06810140896210047,
+      "elevation_max": 72,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 3008
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          72,
+          0
+        ]
+      ],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/flare_lattice.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--flare_lattice.tscn",
+        "fixture_count": 39,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/flare_lattice"
+      }
+    },
+    "process_column": {
+      "label_ko": "다단 정유 공정 탑",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        51.0,
+        8.0
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 51.0,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 8216
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/process_column.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--process_column.tscn",
+        "fixture_count": 63,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/process_column"
+      }
+    },
+    "scrubber_tower": {
+      "label_ko": "습식 세정·배기 탑",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        38,
+        8.0
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 38,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 5292
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [
+        [
+          0,
+          38,
+          0
+        ]
+      ],
+      "default_plume": "steam_white",
+      "scene_path": "res://assets/generated/industrial_plant/scrubber_tower.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--scrubber_tower.tscn",
+        "fixture_count": 39,
+        "local_light_count": 3,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/scrubber_tower"
+      }
+    },
+    "rack_straight": {
+      "label_ko": "배관 랙 직선",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        2.5
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 5.32,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 240
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ],
+        [
+          12,
+          5,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/rack_straight.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_straight.tscn",
+        "fixture_count": 4,
+        "local_light_count": 1,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/rack_straight"
+      }
+    },
+    "rack_elbow": {
+      "label_ko": "배관 랙 곡관",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        2.5,
+        5.32,
+        12.0
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 5.32,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 1536
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ],
+        [
+          0,
+          5,
+          12
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "smoke_outlets_m": [],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/rack_elbow.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_elbow.tscn",
+        "fixture_count": 5,
+        "local_light_count": 1,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/rack_elbow"
+      }
+    },
+    "rack_tee": {
+      "label_ko": "배관 랙 분기",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        12.0
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 5.32,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 432
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ],
+        [
+          12,
+          5,
+          0
+        ],
+        [
+          0,
+          5,
+          12
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "smoke_outlets_m": [],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/rack_tee.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_tee.tscn",
+        "fixture_count": 5,
+        "local_light_count": 1,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/rack_tee"
+      }
+    },
+    "rack_cross": {
+      "label_ko": "배관 랙 교차",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -12.0
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        12.0
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 5.32,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 432
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ],
+        [
+          12,
+          5,
+          0
+        ],
+        [
+          0,
+          5,
+          -12
+        ],
+        [
+          0,
+          5,
+          12
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "smoke_outlets_m": [],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/rack_cross.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_cross.tscn",
+        "fixture_count": 5,
+        "local_light_count": 1,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/rack_cross"
+      }
+    },
+    "rack_riser": {
+      "label_ko": "배관 랙 높이 전환",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.1
+      ],
+      "aabb_max_m": [
+        12.0,
+        9.32,
+        2.1
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 9.32,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 504
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ],
+        [
+          12,
+          9,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/rack_riser.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_riser.tscn",
+        "fixture_count": 4,
+        "local_light_count": 1,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/rack_riser"
+      }
+    },
+    "rack_double": {
+      "label_ko": "배관 랙 2층",
+      "bbox": null,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.1
+      ],
+      "aabb_max_m": [
+        12.0,
+        9.32,
+        2.1
+      ],
+      "units": "meters",
+      "elevation_min": 0.0,
+      "elevation_max": 9.32,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 384
+      },
+      "ground_y_m": 0,
+      "surveyed": false,
+      "georeferenced": false,
+      "pipe_profile": "triple_pipe_032_spacing_110",
+      "pipe_connectors_m": [
+        [
+          -12,
+          5,
+          0
+        ],
+        [
+          12,
+          5,
+          0
+        ],
+        [
+          -12,
+          9,
+          0
+        ],
+        [
+          12,
+          9,
+          0
+        ]
+      ],
+      "pipe_connector_directions": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "smoke_outlets_m": [],
+      "default_plume": null,
+      "scene_path": "res://assets/generated/industrial_plant/rack_double.tscn",
+      "night_lighting": {
+        "scene_path": "res://assets/generated/industrial_lighting/industrial_plant--rack_double.tscn",
+        "fixture_count": 4,
+        "local_light_count": 1,
+        "shadow_enabled": false,
+        "distance_fade_m": [
+          350,
+          550
+        ],
+        "automatic_time": true,
+        "fallback_night_factor": 1.0,
+        "source_asset": "industrial_plant/rack_double"
+      }
+    }
+  },
+  "plume_presets": [
+    "smoke_gray",
+    "steam_white",
+    "smoke_dark"
+  ],
+  "assembly_demo": [
+    [
+      "rack_straight",
+      [
+        0,
+        0,
+        0
+      ],
+      0
+    ],
+    [
+      "rack_tee",
+      [
+        24,
+        0,
+        0
+      ],
+      0
+    ],
+    [
+      "rack_elbow",
+      [
+        48,
+        0,
+        0
+      ],
+      0
+    ],
+    [
+      "rack_straight",
+      [
+        24,
+        0,
+        24
+      ],
+      -1.5707963267948966
+    ],
+    [
+      "stack_concrete",
+      [
+        24,
+        0,
+        48
+      ],
+      -1.5707963267948966
+    ],
+    [
+      "scrubber_tower",
+      [
+        48,
+        0,
+        24
+      ],
+      -1.5707963267948966
+    ],
+    [
+      "rack_riser",
+      [
+        -24,
+        0,
+        0
+      ],
+      3.141592653589793
+    ],
+    [
+      "rack_double",
+      [
+        -48,
+        0,
+        0
+      ],
+      0
+    ],
+    [
+      "stack_triple",
+      [
+        -24,
+        0,
+        -28
+      ],
+      0
+    ],
+    [
+      "process_column",
+      [
+        -48,
+        0,
+        -28
+      ],
+      0
+    ],
+    [
+      "flare_lattice",
+      [
+        0,
+        0,
+        -36
+      ],
+      0
+    ]
+  ]
+}

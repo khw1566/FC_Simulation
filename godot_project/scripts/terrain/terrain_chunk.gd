@@ -16,6 +16,7 @@ var collision_shape: CollisionShape3D
 var heightmap_image: Image
 var elev_min: float
 var elev_max: float
+var railway_grader: RefCounted
 
 # LOD 레벨별 버텍스 그리드 해상도 (2의 거듭제곱) - 노트북/데스크탑 최적화
 const LOD_RESOLUTIONS: Dictionary = {
@@ -66,6 +67,9 @@ func _rebuild_mesh(shader_mat: Material) -> void:
 
 	var img_w := heightmap_image.get_width()
 	var img_h := heightmap_image.get_height()
+	var railway_cells := {}
+	if railway_grader:
+		railway_cells = railway_grader.cells(Vector2(chunk_center.x-half_size,chunk_center.z-half_size),chunk_world_size,grid_res)
 
 	var vertices := PackedVector3Array()
 	var uvs := PackedVector2Array()
@@ -89,6 +93,11 @@ func _rebuild_mesh(shader_mat: Material) -> void:
 			var i1 := i0 + 1
 			var i2 := (y + 1) * (grid_res + 1) + x
 			var i3 := i2 + 1
+			var segments: Array = railway_cells.get(Vector2i(x,y),[])
+			if not segments.is_empty():
+				railway_grader.add_triangle(surface_tool,vertices[i0],vertices[i1],vertices[i2],chunk_center,segments,chunk_world_size)
+				railway_grader.add_triangle(surface_tool,vertices[i1],vertices[i3],vertices[i2],chunk_center,segments,chunk_world_size)
+				continue
 
 			surface_tool.set_uv(uvs[i0])
 			surface_tool.add_vertex(vertices[i0])
@@ -126,13 +135,29 @@ func _rebuild_mesh(shader_mat: Material) -> void:
 			add_child(collision_body)
 
 		if collision_shape.shape == null:
-			collision_shape.shape = new_mesh.create_trimesh_shape()
+			collision_shape.shape = preload("res://scripts/terrain/railway_terrain_void.gd").collision_shape(new_mesh,global_transform)
 		collision_shape.disabled = false
 	else:
 		if collision_shape:
 			collision_shape.disabled = true
 
 # 높이맵 픽셀 계단현상(Aliasing / Blockiness) 방지를 위한 3차 에르미트(Smoothstep Cubic) 보간 함수
+func get_surface_height(world_x: float, world_z: float) -> float:
+	var resolution: int = LOD_RESOLUTIONS.get(current_lod,32)
+	var uv := (Vector2(world_x-chunk_center.x,world_z-chunk_center.z)/chunk_world_size+Vector2(0.5,0.5)).clamp(Vector2.ZERO,Vector2.ONE)
+	var grid := uv*resolution
+	var cell := grid.floor().min(Vector2.ONE*(resolution-1))
+	var f := grid-cell
+	var w := heightmap_image.get_width()
+	var h := heightmap_image.get_height()
+	var a := _sample_bilinear(cell.x/resolution,cell.y/resolution,w,h)
+	var b := _sample_bilinear((cell.x+1)/resolution,cell.y/resolution,w,h)
+	var c := _sample_bilinear(cell.x/resolution,(cell.y+1)/resolution,w,h)
+	var d := _sample_bilinear((cell.x+1)/resolution,(cell.y+1)/resolution,w,h)
+	var value := a+f.x*(b-a)+f.y*(c-a) if f.x+f.y<=1 else d+(1-f.x)*(c-d)+(1-f.y)*(b-d)
+	var height := elev_min+value*(elev_max-elev_min)
+	return railway_grader.corrected_height(Vector3(world_x,height,world_z)) if railway_grader else height
+
 func _sample_bilinear(u: float, v: float, w: int, h: int) -> float:
 	var fx: float = clampf(u * float(w - 1), 0.0, float(w - 1))
 	var fy: float = clampf(v * float(h - 1), 0.0, float(h - 1))

@@ -4,6 +4,12 @@ class_name RailwayWorldManager
 const TrackBuilder = preload("res://scripts/terrain/railway_track_builder.gd")
 const Route = preload("res://scripts/terrain/railway_route.gd")
 const TrainService = preload("res://scripts/terrain/railway_train_service.gd")
+const Landmarks = preload("res://scripts/terrain/railway_landmark_manager.gd")
+const Alignment = preload("res://scripts/terrain/railway_alignment_catalog.gd")
+const Tunnels = preload("res://scripts/terrain/railway_tunnel_world_manager.gd")
+const Formation = preload("res://scripts/terrain/railway_formation_builder.gd")
+var _alignment: RefCounted
+var landmarks: Node3D
 
 var load_complete := false
 var load_error := ""
@@ -21,34 +27,66 @@ func setup(map_config, terrain: Node3D, player: Node3D) -> void:
 		load_error = "울산 철도 자산을 읽지 못했습니다."
 		push_error(load_error)
 		return
+	_alignment = Alignment.new()
+	if _alignment.data.is_empty():
+		load_error = "철도 종단 및 터널 배치 자산을 읽지 못했습니다."
+		return
 	var profiles := {}
 	for profile in settings.services:
 		profiles[profile.id] = profile
 	var count := 0
+	landmarks = Landmarks.new()
+	landmarks.name = "RailwayLandmarks"
+	add_child(landmarks)
+	landmarks.setup(map_config,terrain)
+	# 열차 경로의 높이와 세분화 구간을 먼저 준비한다.
+	for track in network.tracks:
+		_project_track(track, map_config, terrain)
+	_start_services(network, settings, profiles, map_config, terrain, player)
 	for track in network.tracks:
 		var points := _project_track(track, map_config, terrain)
+		var structure: Dictionary = track.duplicate()
+		structure.custom_bridge = landmarks.custom_bridge(int(track.osm_id))
+		if structure.custom_bridge:
+			landmarks.place_bridge(track,points,terrain)
 		for chunk in _chunks(points):
-			var node := TrackBuilder.build(chunk, profiles[track.service], track, float(settings.render_distance_m))
+			var node := TrackBuilder.build(chunk, profiles[track.service], structure, float(settings.render_distance_m), terrain)
 			node.name = "Rail_%s_%s_%d" % [track.service, str(track.osm_id), count]
 			add_child(node)
+			var formation := Formation.build(chunk,terrain,structure)
+			if formation:
+				add_child(formation)
 			count += 1
 			if count % 8 == 0:
 				await get_tree().process_frame
 				if not is_inside_tree():
 					return
+	var tunnels := Tunnels.new()
+	tunnels.name = "RailwayTunnels"
+	add_child(tunnels)
+	tunnels.configure(_alignment,player)
+	load_complete = true
+
+func _start_services(network: Dictionary, settings: Dictionary, profiles: Dictionary, map_config, terrain: Node3D, player: Node3D) -> void:
 	for data in network.routes:
 		var route := Route.new()
 		var projected := _project_route(data.points, data.stops, map_config, terrain)
+		if data.service == "ktx":
+			var placement_route := Route.new()
+			placement_route.configure(projected.points,projected.stops)
+			for stop in placement_route.stops:
+				if stop.name == "울산":
+					landmarks.place_ulsan_interface(landmarks.slice(placement_route,stop.distance-24,stop.distance+24),terrain)
 		route.configure(projected.points, projected.stops)
 		var opposite := Route.new()
 		var reverse_projected := _project_route(data.opposite_points, data.opposite_stops, map_config, terrain)
 		opposite.configure(reverse_projected.points, reverse_projected.stops)
 		var service := TrainService.new()
 		service.name = str(data.service) + "_service"
-		service.configure(route, profiles[data.service], player, float(settings.time_scale), opposite)
+		service.configure(route, profiles[data.service], player, float(settings.time_scale), opposite, float(settings.render_distance_m))
 		add_child(service)
 		services.append(service)
-	load_complete = true
+	print("[RailwayWorldManager] 열차 운행 시작: %d개 노선, 표시 거리 %.0fm" % [services.size(), float(settings.render_distance_m)])
 
 func _chunks(points: PackedVector3Array) -> Array[PackedVector3Array]:
 	var result: Array[PackedVector3Array] = []
@@ -67,36 +105,16 @@ func _chunks(points: PackedVector3Array) -> Array[PackedVector3Array]:
 	return result
 
 func _project_track(track: Dictionary, map_config, terrain: Node3D) -> PackedVector3Array:
-	var original := PackedVector3Array()
-	for coordinate in track.points:
-		original.append(_project(coordinate, map_config, terrain))
-	var structured: bool = bool(track.bridge) or bool(track.tunnel)
-	var cumulative := PackedFloat64Array([0.0])
-	for index in range(1, original.size()):
-		cumulative.append(cumulative[-1] + Vector2(original[index].x - original[index - 1].x, original[index].z - original[index - 1].z).length())
-	var result := PackedVector3Array()
-	for index in original.size():
-		var point := original[index]
-		if structured:
-			point.y = lerpf(original[0].y, original[-1].y, cumulative[index] / maxf(0.01, cumulative[-1]))
-			if track.bridge:
-				point.y += 6.0
-		point.y += 0.25
-		_elevations[_key(track.points[index])] = point.y
-		if index > 0:
-			var previous := result[-1]
-			var segment := PackedVector3Array([previous])
-			var steps: int = maxi(1, ceili(previous.distance_to(point) / 25.0))
-			for step in range(1, steps):
-				var sample := previous.lerp(point, float(step) / steps)
-				if not structured and is_instance_valid(terrain):
-					sample.y = float(terrain.call("get_terrain_elevation", sample.x, sample.z)) + 0.25
-				result.append(sample)
-				segment.append(sample)
-			segment.append(point)
-			_segments[_key(track.points[index - 1]) + "|" + _key(track.points[index])] = segment
-		result.append(point)
-	return result
+	if _alignment==null:
+		_alignment = Alignment.new()
+	var record: Dictionary = _alignment.tracks.get(int(track.osm_id),{})
+	var points: PackedVector3Array = _alignment.projected(record)
+	var indices: Array = record.get("original_indices",[])
+	for i in range(indices.size()):
+		_elevations[_key(track.points[i])] = points[int(indices[i])].y
+		if i>0:
+			_segments[_key(track.points[i-1])+"|"+_key(track.points[i])] = points.slice(int(indices[i-1]),int(indices[i])+1)
+	return points
 
 func _project_route(coordinates: Array, stations: Array, map_config, terrain: Node3D) -> Dictionary:
 	var points := PackedVector3Array()

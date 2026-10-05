@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="3072.0 256.0 256.0 256.0">
+<rect x="3072.0" y="256.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+</g>
+<g id="rivers">
+<path d="M3083.73,402.98 L3113.90,340.63 L3131.24,300.18 L3137.33,274.12 L3140.16,256.00 L3115.19,256.00 L3109.85,284.45 L3111.43,300.18 L3099.05,330.06 L3087.34,354.79 L3075.40,365.57 L3075.18,374.11 L3072.00,380.61 L3072.00,397.39 L3083.73,402.98 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M3131.81,256.00 L3130.18,288.59 L3086.51,379.87 L3072.00,390.35" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+<path d="M3097.97,490.46 L3090.11,497.83 L3093.76,501.73 L3093.01,502.44 L3101.94,512.00 L3117.38,512.00 L3125.79,504.11 L3117.88,495.86 L3097.97,490.46 Z" fill="#68757c" fill-rule="evenodd" opacity="1"/>
+<path d="M3073.71,479.95 L3072.00,478.24 L3072.00,481.42 L3073.71,479.95 Z" fill="#68757c" fill-rule="evenodd" opacity="1"/>
+<path d="M3077.49,475.14 L3072.43,470.01 L3072.00,470.44 L3072.00,477.19 L3073.69,478.90 L3077.49,475.14 Z" fill="#68757c" fill-rule="evenodd" opacity="1"/>
+<path d="M3088.45,473.02 L3085.40,465.04 L3077.64,468.02 L3080.68,476.00 L3088.45,473.02 Z" fill="#68757c" fill-rule="evenodd" opacity="1"/>
+<path d="M3075.61,453.36 L3076.48,453.35 L3077.37,457.91 L3080.40,457.50 L3079.80,451.14 L3075.50,451.60 L3075.61,453.36 Z" fill="#68757c" fill-rule="evenodd" opacity="1"/>
+<path d="M3076.71,461.05 L3077.70,460.91 L3077.85,462.41 L3080.72,462.23 L3080.65,461.09 L3081.36,461.04 L3081.18,458.69 L3076.53,459.33 L3076.71,461.05 Z" fill="#68757c" fill-rule="evenodd" opacity="1"/>
+<path d="M3130.40,512.00 L3136.09,512.00 L3134.89,509.78 L3130.40,512.00 Z" fill="#68757c" fill-rule="evenodd" opacity="1"/>
+</g>
+<g id="roads">
+<path d="M3085.13,512.00 L3072.00,503.00" fill="none" stroke="#e39a36" stroke-width="11.47" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "sample_step_m": 20.0,
+  "smoothing_passes": 24,
+  "grade_projection_passes": 600,
+  "maximum_grade": 0.035,
+  "formation_offset_m": 0.25,
+  "formation_half_width_m": 5.0,
+  "earthwork_blend_width_m": 65.0,
+  "tunnel_body_view_distance_m": 900.0,
+  "tunnel_portal_view_distance_m": 7000.0,
+  "maximum_active_tunnel_modules": 96
+}

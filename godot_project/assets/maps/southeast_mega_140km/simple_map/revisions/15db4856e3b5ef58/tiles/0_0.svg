@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0.0 0.0 256.0 256.0">
+<rect x="0.0" y="0.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+</g>
+<g id="mountains">
+<path d="M64.00,202.67 L74.67,202.67 L74.67,181.33 L64.00,181.33 L64.00,202.67 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M85.33,202.67 L96.00,202.67 L96.00,192.00 L85.33,192.00 L85.33,202.67 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M74.67,224.00 L85.33,224.00 L85.33,202.67 L74.67,202.67 L74.67,224.00 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M128.00,213.33 L138.67,213.33 L138.67,202.67 L128.00,202.67 L128.00,213.33 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+<path d="M181.33,256.00 L192.00,256.00 L192.00,245.33 L181.33,245.33 L181.33,256.00 Z" fill="#9c8867" fill-rule="evenodd" opacity="0.18"/>
+</g>
+<g id="rivers">
+<path d="M64.00,69.33 L69.33,69.33 L69.33,64.00 L64.00,64.00 L64.00,69.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M74.67,80.00 L80.00,80.00 L80.00,74.67 L74.67,74.67 L74.67,80.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M80.00,85.33 L85.33,85.33 L85.33,80.00 L80.00,80.00 L80.00,85.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M197.33,117.33 L202.67,117.33 L202.67,112.00 L197.33,112.00 L197.33,117.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M42.67,149.33 L48.00,149.33 L48.00,144.00 L42.67,144.00 L42.67,149.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M26.67,160.00 L32.00,160.00 L32.00,154.67 L26.67,154.67 L26.67,160.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M170.67,165.33 L181.33,165.33 L181.33,160.00 L170.67,160.00 L170.67,165.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M154.67,181.33 L160.00,181.33 L160.00,176.00 L154.67,176.00 L154.67,181.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M112.00,192.00 L117.33,192.00 L117.33,186.67 L112.00,186.67 L112.00,192.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M133.33,192.00 L138.67,192.00 L138.67,186.67 L133.33,186.67 L133.33,192.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M106.67,213.33 L112.00,213.33 L112.00,208.00 L106.67,208.00 L106.67,213.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M106.67,224.00 L112.00,224.00 L112.00,218.67 L106.67,218.67 L106.67,224.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M181.33,224.00 L192.00,224.00 L192.00,218.67 L181.33,218.67 L181.33,224.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M154.67,229.33 L160.00,229.33 L160.00,224.00 L154.67,224.00 L154.67,229.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M213.33,229.33 L218.67,229.33 L218.67,224.00 L213.33,224.00 L213.33,229.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M117.33,234.67 L122.67,234.67 L122.67,229.33 L117.33,229.33 L117.33,234.67 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M106.67,245.33 L112.00,245.33 L112.00,240.00 L106.67,240.00 L106.67,245.33 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M16.00,256.00 L21.33,256.00 L21.33,250.67 L16.00,250.67 L16.00,256.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M90.67,256.00 L96.00,256.00 L96.00,250.67 L90.67,250.67 L90.67,256.00 Z" fill="#2395bd" fill-rule="evenodd" opacity="1"/>
+<path d="M32.00,256.00 L26.67,256.00" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M90.67,256.00 L85.33,256.00" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M112.00,256.00 L106.67,256.00" fill="none" stroke="#2395bd" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

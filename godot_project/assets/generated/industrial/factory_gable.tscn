@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/industrial/factory_gable.glb" id="1"]
+
+
+
+
+; NIGHT_RIG_RESOURCE_BEGIN
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_lighting/industrial--factory_gable.tscn" id="NightRig"]
+; NIGHT_RIG_RESOURCE_END
+
+[node name="factory_gable" type="Node3D"]
+metadata/asset_type = "factory_gable"
+metadata/units = "meters"
+metadata/procedural = true
+metadata/ground_y_m = 0.0
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]
+
+
+
+
+; NIGHT_RIG_NODE_BEGIN
+[node name="NightLighting" parent="." instance=ExtResource("NightRig")]
+; NIGHT_RIG_NODE_END

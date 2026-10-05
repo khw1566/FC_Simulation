@@ -16,7 +16,7 @@
     "source_url": "https://github.com/DevMinGeonPark/mapcn-kr",
     "license": "CC BY 4.0"
   },
-  "preview_image": "res://assets/maps/ulsan_metro_80km/ulsan_metro_80km_tactical_map.png",
+  "preview_image": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/72bf18536e452711/map.svg",
   "world_size_meters": 80000,
   "min_elevation": -30.0,
   "max_elevation": 1300,
@@ -36,7 +36,7 @@
     "airport_placement": "res://assets/generated/airport/placement.json",
     "heightmap": "res://assets/maps/ulsan_metro_80km/hydro/coastal_heightmap_16bit.png",
     "watermask": "res://assets/maps/ulsan_metro_80km/hydro/water_mask.png",
-    "tactical_map": "res://assets/maps/ulsan_metro_80km/tactical_atlas.png",
+    "tactical_map": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/72bf18536e452711/map.svg",
     "districts": "res://assets/maps/ulsan_metro_80km/real_districts.json",
     "buildings_roads": "res://assets/maps/ulsan_metro_80km/buildings_and_roads.json",
     "sea_mask": "res://assets/maps/ulsan_metro_80km/hydro/sea_mask.png",
@@ -54,9 +54,30 @@
     "contour_interval_m": 50,
     "road_count": 6614,
     "water_source": "res://assets/maps/ulsan_metro_80km/hydro/water_mask.png",
-    "detail_note": "도로는 기존 수집 범위에 한함"
+    "detail_note": "도로는 기존 수집 범위에 한함",
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로 | 좌클릭: 위치 이동 · 우클릭 드래그: 이동 · 휠: 확대"
   },
   "hydro_source_heightmap": "res://assets/maps/ulsan_metro_80km/ulsan_metro_80km_heightmap_16bit.png",
   "coastal_heightmap_corrected": true,
-  "category": "korea"
+  "category": "korea",
+  "legacy_tactical_map": "res://assets/maps/ulsan_metro_80km/tactical_atlas.png",
+  "simple_vector_map": {
+    "tiles_index": "res://assets/maps/ulsan_metro_80km/simple_map/revisions/72bf18536e452711/tiles.json",
+    "manual_refresh": true,
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로",
+    "counts": {
+      "sea": 9,
+      "mountains": 358,
+      "rivers": 1785,
+      "lakes": 1534,
+      "buildings": 0,
+      "roads": 6614,
+      "railways": 1525,
+      "coastline": 70,
+      "shipping_routes": 0,
+      "harbors": 0
+    },
+    "navigation_status": "입력 GeoJSON이 없는 항구·항로는 빈 마스크",
+    "source_policy": "최신 로컬 원본을 수동으로 합성"
+  }
 }

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="512.0 1792.0 256.0 256.0">
+<rect x="512.0" y="1792.0" width="256.0" height="256.0" fill="#eeeae1"/>
+<g id="sea">
+<path d="M597.33,1797.33 L602.67,1797.33 L602.67,1802.67 L608.00,1802.67 L608.00,1808.00 L613.33,1808.00 L613.33,1818.67 L608.00,1818.67 L608.00,1824.00 L586.67,1824.00 L586.67,1829.33 L581.33,1829.33 L581.33,1834.67 L560.00,1834.67 L560.00,1845.33 L544.00,1845.33 L544.00,1850.67 L528.00,1850.67 L528.00,1856.00 L517.33,1856.00 L517.33,1861.33 L512.00,1861.33 L512.00,2042.67 L528.00,2042.67 L528.00,2037.33 L533.33,2037.33 L533.33,2032.00 L549.33,2032.00 L549.33,2026.67 L560.00,2026.67 L560.00,2021.33 L570.67,2021.33 L570.67,2016.00 L586.67,2016.00 L586.67,2010.67 L592.00,2010.67 L592.00,2021.33 L597.33,2021.33 L597.33,2026.67 L602.67,2026.67 L602.67,2042.67 L608.00,2042.67 L608.00,2048.00 L613.33,2048.00 L618.67,2048.00 L624.00,2048.00 L624.00,2042.67 L618.67,2042.67 L618.67,2032.00 L613.33,2032.00 L613.33,2026.67 L608.00,2026.67 L608.00,2005.33 L624.00,2005.33 L624.00,2000.00 L634.67,2000.00 L634.67,1994.67 L672.00,1994.67 L672.00,1989.33 L704.00,1989.33 L704.00,1984.00 L725.33,1984.00 L725.33,1978.67 L768.00,1978.67 L768.00,1792.00 L597.33,1792.00 L597.33,1797.33 Z" fill="#dcebf0" fill-rule="evenodd" opacity="1"/><path d="M592.00,1792.00 L597.33,1792.00" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/><path d="M512.00,2048.00 L512.00,2042.67" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/><path d="M768.00,1994.67 L768.00,2005.33" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/><path d="M768.00,2021.33 L768.00,2026.67" fill="none" stroke="#dcebf0" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="mountains">
+</g>
+<g id="rivers">
+</g>
+<g id="lakes">
+</g>
+<g id="buildings">
+</g>
+<g id="roads">
+</g>
+<g id="railways">
+</g>
+<g id="coastline">
+<path d="M512.00,1860.16 L668.96,1792.00" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M768.00,1980.22 L752.20,1974.96 L656.85,1992.08 L657.46,1994.08 L655.62,1994.64 L654.72,1992.45 L636.31,1996.30 L636.41,1994.05 L638.90,1994.02 L638.65,1992.92 L636.36,1993.82 L636.27,1993.35 L634.84,1993.61 L634.89,1994.09 L632.41,1994.09 L632.63,1995.22 L634.95,1994.31 L635.83,1996.41 L630.58,1997.41 L630.50,1996.94 L629.39,1997.17 L629.45,1997.64 L620.40,1999.31" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+<path d="M667.70,1792.00 L615.03,1814.65 L609.07,1808.65" fill="none" stroke="#177d82" stroke-width="2.00" stroke-linecap="round" stroke-linejoin="round" opacity="1"/>
+</g>
+<g id="shipping_routes">
+</g>
+<g id="harbors">
+</g>
+</svg>

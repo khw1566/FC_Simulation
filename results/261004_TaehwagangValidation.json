@@ -1,0 +1,19 @@
+{
+  "glb_valid": true,
+  "finite_positions": true,
+  "unit_normals": true,
+  "triangles": {
+    "station": 1836,
+    "rail_yard": 9396,
+    "forecourt": 3656,
+    "district": 7648,
+    "taehwagang_complete": 22536
+  },
+  "godot_scenes": 5,
+  "preview_selections": 5,
+  "isolated_project": true,
+  "rendered": true,
+  "runtime_errors": false,
+  "editor_settings_save_warning": true,
+  "auto_lod_warning": true
+}

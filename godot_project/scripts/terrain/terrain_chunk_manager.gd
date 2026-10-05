@@ -12,6 +12,7 @@ var _airport_map_meta: Dictionary = {}
 var _road_lod_image: Image
 var _road_lod_texture: ImageTexture
 var _coastal_corrected: bool = false
+var _railway_grader: RefCounted
 var _sea_mask_path: String = ""
 var _lake_mask_path: String = ""
 
@@ -199,9 +200,19 @@ func _load_heightmap() -> void:
 	if not FileAccess.file_exists(raw_path):
 		raw_path = "res://assets/generated/kanmon_heightmap_16bit.png"
 
+	if raw_path.contains("ulsan_metro_80km") and FileAccess.file_exists("res://assets/generated/railway/graded_heightmap_16bit.png"):
+		raw_path = "res://assets/generated/railway/graded_heightmap_16bit.png"
+		_railway_grader = preload("res://scripts/terrain/railway_terrain_grader.gd").new()
+		var alignment := preload("res://scripts/terrain/railway_alignment_catalog.gd").new()
+		_railway_grader.configure(alignment.data)
 	if FileAccess.file_exists(raw_path):
-		_full_heightmap_image = MapImages.read(raw_path)
+		_full_heightmap_image = MapImages.read(raw_path).duplicate()
 		_full_heightmap_image.convert(Image.FORMAT_RF)
+		if raw_path.contains("railway/graded_heightmap") and terrain_material is ShaderMaterial:
+			var void_image := preload("res://scripts/terrain/railway_terrain_void.gd").image()
+			if void_image:
+				terrain_material.set_shader_parameter("railway_tunnel_void_texture",ImageTexture.create_from_image(void_image))
+				terrain_material.set_shader_parameter("has_railway_tunnel_void",true)
 		if not _coastal_corrected:
 			CoastlineWaterCarver.apply_coastline_carving(_full_heightmap_image, _full_watermask_image, min_elevation, max_elevation)
 		if not _coastal_corrected and not _sea_mask_path.is_empty():
@@ -251,6 +262,7 @@ func _build_all_chunks() -> void:
 			var chunk_node := TerrainChunkClass.new()
 			chunk_node.name = "Chunk_%d_%d" % [cx, cy]
 			chunk_node.init_chunk(coord, chunk_size_x, center_pos, sub_img, min_elevation, max_elevation)
+			chunk_node.railway_grader = _railway_grader
 			add_child(chunk_node)
 			
 			active_chunks[coord] = chunk_node
@@ -298,8 +310,9 @@ func _update_chunks_lod() -> void:
 func create_road_material() -> Material:
 	if _full_heightmap_image == null:
 		return null
-	_road_lod_image = Image.create(grid_chunks_x, grid_chunks_y, false, Image.FORMAT_RF)
-	_road_lod_texture = ImageTexture.create_from_image(_road_lod_image)
+	if _road_lod_image == null:
+		_road_lod_image = Image.create(grid_chunks_x, grid_chunks_y, false, Image.FORMAT_RF)
+		_road_lod_texture = ImageTexture.create_from_image(_road_lod_image)
 	_sync_road_lods()
 	var material := ShaderMaterial.new()
 	material.shader = load("res://shaders/road_surface.gdshader")
@@ -321,7 +334,17 @@ func _sync_road_lods() -> void:
 
 ## 특정 월드 좌표(world_x, world_z)에서의 지형 표고(Y)를 높이맵 이미지로부터 바이리니어 보간 샘플링
 func get_terrain_elevation(world_x: float, world_z: float) -> float:
-	return CoastlineWaterCarver.sample_elevation_bilinear(_full_heightmap_image, world_x, world_z, terrain_world_size, min_elevation, max_elevation)
+	var height := CoastlineWaterCarver.sample_elevation_bilinear(_full_heightmap_image, world_x, world_z, terrain_world_size, min_elevation, max_elevation)
+	return _railway_grader.corrected_height(Vector3(world_x,height,world_z)) if _railway_grader else height
+
+func get_navigation_floor(point: Vector3) -> float:
+	var floor: float = preload("res://scripts/terrain/railway_terrain_void.gd").floor_at(point)
+	return floor if is_finite(floor) else get_terrain_elevation(point.x,point.z)
+
+func get_rendered_terrain_elevation(world_x: float,world_z: float) -> float:
+	var uv := Vector2(world_x,world_z)/terrain_world_size+Vector2(0.5,0.5)
+	var coord := Vector2i(clampi(floori(uv.x*grid_chunks_x),0,grid_chunks_x-1),clampi(floori(uv.y*grid_chunks_y),0,grid_chunks_y-1))
+	return active_chunks[coord].get_surface_height(world_x,world_z) if active_chunks.has(coord) else get_terrain_elevation(world_x,world_z)
 
 ## 특정 월드 좌표(world_x, world_z)에서의 수계 마스크 강도(0.0: 완전 육지, 1.0: 수면/하천)를 샘플링
 func get_water_mask(world_x: float, world_z: float) -> float:

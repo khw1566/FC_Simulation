@@ -1,0 +1,32 @@
+{
+	"altitude_m": 50000,
+	"failures": [],
+	"probes": {
+		"대한해협": {
+			"elevation": -127.93484163452,
+			"world_x": 67233.59375,
+			"world_z": 60432.85546875
+		},
+		"쓰시마": {
+			"elevation": 67.5294224117942,
+			"world_x": 4018.66357421875,
+			"world_z": 127025.53125
+		},
+		"큐슈": {
+			"elevation": 493.66555169851,
+			"world_x": 148509.9375,
+			"world_z": 226914.546875
+		},
+		"혼슈": {
+			"elevation": 359.10977425301,
+			"world_x": 220755.578125,
+			"world_z": 127025.53125
+		}
+	},
+	"responsive_frames_during_build": 90,
+	"scope": "독립 원경만 검증, 전체 게임·건물·도로 미실행",
+	"tilted_normals": 176123,
+	"triangles": 524288,
+	"vertices": 263168,
+	"worker_build_ms": 1457
+}

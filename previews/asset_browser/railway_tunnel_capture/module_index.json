@@ -1,0 +1,6 @@
+{
+  "modules": [
+    {"path": "capture.gd", "responsibility": "고유 임시 프로젝트에서 터널 입구 및 내부 구조의 실제 렌더 저장"},
+    {"path": "make_sheet.py", "responsibility": "터널 2종의 실제 렌더 기반 비교 시트 생성"}
+  ]
+}

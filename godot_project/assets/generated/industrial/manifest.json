@@ -1,0 +1,1557 @@
+{
+  "version": 1,
+  "assets": {
+    "factory_gable.glb": {
+      "file_path": "res://assets/generated/industrial/factory_gable.glb",
+      "sha256": "528e126bd07c0067affa1da1f1c78e49f64859538711325b6fd0db7ba6a44065",
+      "size_bytes": 43116,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "박공지붕 공장",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -25.0,
+          0.0,
+          -37.0
+        ],
+        "aabb_max_m": [
+          25.0,
+          18,
+          40.2
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 18,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 548
+        },
+        "footprint_xz_m": [
+          -25.0,
+          -37.0,
+          25.0,
+          40.2
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "factory_gable.tscn": {
+      "file_path": "res://assets/generated/industrial/factory_gable.tscn",
+      "sha256": "137efb58e57da2f5a298e0bf8a6e73debc14b911317ea7199cc3755a702b9e55",
+      "size_bytes": 726,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "박공지붕 공장",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -25.0,
+          0.0,
+          -37.0
+        ],
+        "aabb_max_m": [
+          25.0,
+          18,
+          40.2
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 18,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 548
+        },
+        "footprint_xz_m": [
+          -25.0,
+          -37.0,
+          25.0,
+          40.2
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_gable.tscn",
+          "fixture_count": 30,
+          "local_light_count": 4,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/factory_gable"
+        }
+      }
+    },
+    "factory_sawtooth.glb": {
+      "file_path": "res://assets/generated/industrial/factory_sawtooth.glb",
+      "sha256": "0da56415d4896a5b9988ee65478c94b1cbc9a65ffe5bd5c7bb61518111f91acc",
+      "size_bytes": 52348,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "톱니지붕 공장",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -33.0,
+          0.0,
+          -45.0
+        ],
+        "aabb_max_m": [
+          33.0,
+          14.6,
+          48.2
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 14.6,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 676
+        },
+        "footprint_xz_m": [
+          -33.0,
+          -45.0,
+          33.0,
+          48.2
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "factory_sawtooth.tscn": {
+      "file_path": "res://assets/generated/industrial/factory_sawtooth.tscn",
+      "sha256": "f91571e15c51738751a94900c2d418229033b85d789ecce5edce3685550332ee",
+      "size_bytes": 738,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "톱니지붕 공장",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -33.0,
+          0.0,
+          -45.0
+        ],
+        "aabb_max_m": [
+          33.0,
+          14.6,
+          48.2
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 14.6,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 676
+        },
+        "footprint_xz_m": [
+          -33.0,
+          -45.0,
+          33.0,
+          48.2
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_sawtooth.tscn",
+          "fixture_count": 34,
+          "local_light_count": 4,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/factory_sawtooth"
+        }
+      }
+    },
+    "factory_flat.glb": {
+      "file_path": "res://assets/generated/industrial/factory_flat.glb",
+      "sha256": "e4c85e973720dd7b39007fff65a6d4a90411c4380295765a23e01fadb27fb7b4",
+      "size_bytes": 41700,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "평지붕 공장",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -23.0,
+          0.0,
+          -31.0
+        ],
+        "aabb_max_m": [
+          23.0,
+          19.200000000000003,
+          34.2
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 19.200000000000003,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 528
+        },
+        "footprint_xz_m": [
+          -23.0,
+          -31.0,
+          23.0,
+          34.2
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "factory_flat.tscn": {
+      "file_path": "res://assets/generated/industrial/factory_flat.tscn",
+      "sha256": "b463642d0f3e743ca3735afb4dce548f5128ca8aa7b73ff0ba13545170f500d4",
+      "size_bytes": 722,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "평지붕 공장",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -23.0,
+          0.0,
+          -31.0
+        ],
+        "aabb_max_m": [
+          23.0,
+          19.200000000000003,
+          34.2
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 19.200000000000003,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 528
+        },
+        "footprint_xz_m": [
+          -23.0,
+          -31.0,
+          23.0,
+          34.2
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--factory_flat.tscn",
+          "fixture_count": 26,
+          "local_light_count": 4,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/factory_flat"
+        }
+      }
+    },
+    "distillation_tower.glb": {
+      "file_path": "res://assets/generated/industrial/distillation_tower.glb",
+      "sha256": "2d56f3f1138979cc1aed0f055792479d4fec0630a12ad4db90484ba2819a653e",
+      "size_bytes": 480364,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "증류탑",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -7.0,
+          0.0,
+          -7.0
+        ],
+        "aabb_max_m": [
+          7.0,
+          41.0,
+          7.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 41.0,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 6632
+        },
+        "footprint_xz_m": [
+          -7.0,
+          -7.0,
+          7.0,
+          7.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "distillation_tower.tscn": {
+      "file_path": "res://assets/generated/industrial/distillation_tower.tscn",
+      "sha256": "299c0211080d4503ea55174eee5490d404ee314875ec9f99b2d03b52697a9bd4",
+      "size_bytes": 746,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "증류탑",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -7.0,
+          0.0,
+          -7.0
+        ],
+        "aabb_max_m": [
+          7.0,
+          41.0,
+          7.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 41.0,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 6632
+        },
+        "footprint_xz_m": [
+          -7.0,
+          -7.0,
+          7.0,
+          7.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--distillation_tower.tscn",
+          "fixture_count": 51,
+          "local_light_count": 3,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/distillation_tower"
+        }
+      }
+    },
+    "industrial_chimney.glb": {
+      "file_path": "res://assets/generated/industrial/industrial_chimney.glb",
+      "sha256": "f9b1741ab641e2acb675120ec090381068262f23e1099ac69991c5da53a50f70",
+      "size_bytes": 256808,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "대형 연통",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -7.5,
+          0.0,
+          -7.5
+        ],
+        "aabb_max_m": [
+          7.5,
+          65,
+          7.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 65,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3516
+        },
+        "footprint_xz_m": [
+          -7.5,
+          -7.5,
+          7.5,
+          7.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "industrial_chimney.tscn": {
+      "file_path": "res://assets/generated/industrial/industrial_chimney.tscn",
+      "sha256": "ce6d44e562e64fed090905656ff7aa879b0fa81148dfd54337b0663bd59ef13c",
+      "size_bytes": 746,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "대형 연통",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -7.5,
+          0.0,
+          -7.5
+        ],
+        "aabb_max_m": [
+          7.5,
+          65,
+          7.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 65,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3516
+        },
+        "footprint_xz_m": [
+          -7.5,
+          -7.5,
+          7.5,
+          7.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--industrial_chimney.tscn",
+          "fixture_count": 15,
+          "local_light_count": 3,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/industrial_chimney"
+        }
+      }
+    },
+    "liquid_storage_tank.glb": {
+      "file_path": "res://assets/generated/industrial/liquid_storage_tank.glb",
+      "sha256": "5421a493cb312952dcbd1b8c9ef0f4540ee05cb767a1cb75d344d1297d8b629f",
+      "size_bytes": 160380,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "원통형 액체저장고",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -17.0,
+          0.0,
+          -17.0
+        ],
+        "aabb_max_m": [
+          19.0,
+          19.8,
+          17.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 19.8,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 2188
+        },
+        "footprint_xz_m": [
+          -17.0,
+          -17.0,
+          19.0,
+          17.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "liquid_storage_tank.tscn": {
+      "file_path": "res://assets/generated/industrial/liquid_storage_tank.tscn",
+      "sha256": "bf65e9a768b956ec85ea95d22a90c4b6c360e9a3266d55e97f7ffa528d575529",
+      "size_bytes": 750,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "원통형 액체저장고",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -17.0,
+          0.0,
+          -17.0
+        ],
+        "aabb_max_m": [
+          19.0,
+          19.8,
+          17.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 19.8,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 2188
+        },
+        "footprint_xz_m": [
+          -17.0,
+          -17.0,
+          19.0,
+          17.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--liquid_storage_tank.tscn",
+          "fixture_count": 27,
+          "local_light_count": 2,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/liquid_storage_tank"
+        }
+      }
+    },
+    "lpg_sphere.glb": {
+      "file_path": "res://assets/generated/industrial/lpg_sphere.glb",
+      "sha256": "1dc277e9c1058651fa447144e5cfee92759f0c61604083a0421426d6a38498f5",
+      "size_bytes": 143660,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "구형 LPG저장고",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.5,
+          0.0,
+          -12.5
+        ],
+        "aabb_max_m": [
+          12.5,
+          23.4,
+          12.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 23.4,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1956
+        },
+        "footprint_xz_m": [
+          -12.5,
+          -12.5,
+          12.5,
+          12.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "lpg_sphere.tscn": {
+      "file_path": "res://assets/generated/industrial/lpg_sphere.tscn",
+      "sha256": "4f2ed963c747914da9d2a179c585b6664dd0ae48acc4ff0cf2681735a3884d60",
+      "size_bytes": 714,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "구형 LPG저장고",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.5,
+          0.0,
+          -12.5
+        ],
+        "aabb_max_m": [
+          12.5,
+          23.4,
+          12.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 23.4,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1956
+        },
+        "footprint_xz_m": [
+          -12.5,
+          -12.5,
+          12.5,
+          12.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--lpg_sphere.tscn",
+          "fixture_count": 27,
+          "local_light_count": 2,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/lpg_sphere"
+        }
+      }
+    },
+    "pipeline_straight.glb": {
+      "file_path": "res://assets/generated/industrial/pipeline_straight.glb",
+      "sha256": "1afa8755e45055fa2d8f51cc8eea4e4e754e9a102cd8f590deaf45d237d8c807",
+      "size_bytes": 19752,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "파이프라인 직선",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          2.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 5.32,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 240
+        },
+        "footprint_xz_m": [
+          -12.0,
+          -2.5,
+          12.0,
+          2.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "pipeline_straight.tscn": {
+      "file_path": "res://assets/generated/industrial/pipeline_straight.tscn",
+      "sha256": "674273a23ffd0c05839bcc488440f0273bd64498b3be417b9f9d795da4f0cf42",
+      "size_bytes": 1004,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "파이프라인 직선",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          2.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 5.32,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 240
+        },
+        "footprint_xz_m": [
+          -12.0,
+          -2.5,
+          12.0,
+          2.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--pipeline_straight.tscn",
+          "fixture_count": 4,
+          "local_light_count": 1,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/pipeline_straight"
+        }
+      }
+    },
+    "pipeline_elbow.glb": {
+      "file_path": "res://assets/generated/industrial/pipeline_elbow.glb",
+      "sha256": "37395f98fc2ce4906ad445189305cd00fc3c6ddad9162dbee8de7e730fa5d058",
+      "size_bytes": 113064,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "파이프라인 곡관",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          2.5,
+          5.32,
+          12.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 5.32,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1536
+        },
+        "footprint_xz_m": [
+          -12.0,
+          -2.5,
+          2.5,
+          12.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "pipeline_elbow.tscn": {
+      "file_path": "res://assets/generated/industrial/pipeline_elbow.tscn",
+      "sha256": "c1ee803b93659515b65e98c0831b85df25fe7d6e2dfe64429d4e5bfb47f0b3c3",
+      "size_bytes": 991,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "파이프라인 곡관",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          2.5,
+          5.32,
+          12.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 5.32,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1536
+        },
+        "footprint_xz_m": [
+          -12.0,
+          -2.5,
+          2.5,
+          12.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--pipeline_elbow.tscn",
+          "fixture_count": 5,
+          "local_light_count": 1,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/pipeline_elbow"
+        }
+      }
+    },
+    "pipeline_tee.glb": {
+      "file_path": "res://assets/generated/industrial/pipeline_tee.glb",
+      "sha256": "d8f54fe01ccd72260ea3426ffa930beb107108df3199f5f8dfaa28076c4d4c1c",
+      "size_bytes": 33580,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "파이프라인 분기",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          12.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 5.32,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 432
+        },
+        "footprint_xz_m": [
+          -12.0,
+          -2.5,
+          12.0,
+          12.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "pipeline_tee.tscn": {
+      "file_path": "res://assets/generated/industrial/pipeline_tee.tscn",
+      "sha256": "88a77f651180d7023c2714e2b8af490047c05ce0ea1dc9117a3248e38c3bc36f",
+      "size_bytes": 1114,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "파이프라인 분기",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          12.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 5.32,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 432
+        },
+        "footprint_xz_m": [
+          -12.0,
+          -2.5,
+          12.0,
+          12.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--pipeline_tee.tscn",
+          "fixture_count": 5,
+          "local_light_count": 1,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/pipeline_tee"
+        }
+      }
+    },
+    "transmission_tower.glb": {
+      "file_path": "res://assets/generated/industrial/transmission_tower.glb",
+      "sha256": "a7a132050ad191c3212e593d7e1ea0f59d7702117256da12c52b199e4606aafa",
+      "size_bytes": 211180,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "송전탑",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.380422606518062,
+          -0.06952604524738866,
+          -8.5
+        ],
+        "aabb_max_m": [
+          12.380422606518062,
+          46.031684333108274,
+          8.5
+        ],
+        "bbox": null,
+        "elevation_min": -0.06952604524738866,
+        "elevation_max": 46.031684333108274,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 2892
+        },
+        "footprint_xz_m": [
+          -12.380422606518062,
+          -8.5,
+          12.380422606518062,
+          8.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "transmission_tower.tscn": {
+      "file_path": "res://assets/generated/industrial/transmission_tower.tscn",
+      "sha256": "63eaf9239f73b24c2533348ed1f7a2586bee20195ad9b7d28ef0d5340dff8eea",
+      "size_bytes": 746,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "송전탑",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -12.380422606518062,
+          -0.06952604524738866,
+          -8.5
+        ],
+        "aabb_max_m": [
+          12.380422606518062,
+          46.031684333108274,
+          8.5
+        ],
+        "bbox": null,
+        "elevation_min": -0.06952604524738866,
+        "elevation_max": 46.031684333108274,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 2892
+        },
+        "footprint_xz_m": [
+          -12.380422606518062,
+          -8.5,
+          12.380422606518062,
+          8.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--transmission_tower.tscn",
+          "fixture_count": 4,
+          "local_light_count": 1,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/transmission_tower"
+        }
+      }
+    },
+    "cooling_tower.glb": {
+      "file_path": "res://assets/generated/industrial/cooling_tower.glb",
+      "sha256": "bfaf95c2bee273725f969b4c12dead7214a3305f82a836b55bf27668678000d7",
+      "size_bytes": 173348,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "냉각탑",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -22.0,
+          0.0,
+          -22.0
+        ],
+        "aabb_max_m": [
+          22.0,
+          50.0,
+          22.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 50.0,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 2368
+        },
+        "footprint_xz_m": [
+          -22.0,
+          -22.0,
+          22.0,
+          22.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "cooling_tower.tscn": {
+      "file_path": "res://assets/generated/industrial/cooling_tower.tscn",
+      "sha256": "58c5d79aad1a93cffa6690f8f2b6a87e41c9c2f6fa61c94d16cc6752591ee5a1",
+      "size_bytes": 726,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "냉각탑",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -22.0,
+          0.0,
+          -22.0
+        ],
+        "aabb_max_m": [
+          22.0,
+          50.0,
+          22.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 50.0,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 2368
+        },
+        "footprint_xz_m": [
+          -22.0,
+          -22.0,
+          22.0,
+          22.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--cooling_tower.tscn",
+          "fixture_count": 50,
+          "local_light_count": 2,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/cooling_tower"
+        }
+      }
+    },
+    "cooling_fan_bank.glb": {
+      "file_path": "res://assets/generated/industrial/cooling_fan_bank.glb",
+      "sha256": "589236b1b82f98ec5da848ba64853ad58428944f7c60cc3d8ac7507dd09ff73e",
+      "size_bytes": 102564,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "냉각 팬 설비",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -14.5,
+          0.0,
+          -8.5
+        ],
+        "aabb_max_m": [
+          14.5,
+          6.4,
+          8.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 6.4,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1380
+        },
+        "footprint_xz_m": [
+          -14.5,
+          -8.5,
+          14.5,
+          8.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "cooling_fan_bank.tscn": {
+      "file_path": "res://assets/generated/industrial/cooling_fan_bank.tscn",
+      "sha256": "46059d37c3964d0478f8998e60236c981db7139a92b62d2c7fee467899b33bac",
+      "size_bytes": 738,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "냉각 팬 설비",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -14.5,
+          0.0,
+          -8.5
+        ],
+        "aabb_max_m": [
+          14.5,
+          6.4,
+          8.5
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 6.4,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 1380
+        },
+        "footprint_xz_m": [
+          -14.5,
+          -8.5,
+          14.5,
+          8.5
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--cooling_fan_bank.tscn",
+          "fixture_count": 6,
+          "local_light_count": 2,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/cooling_fan_bank"
+        }
+      }
+    },
+    "shipbuilding_hangar.glb": {
+      "file_path": "res://assets/generated/industrial/shipbuilding_hangar.glb",
+      "sha256": "bf9a8828817f06f5a86322ba83ffdaeb9f6f945db395f607142148b0bbcdcfe6",
+      "size_bytes": 37456,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "조선용 대형 격납고",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -52.0,
+          0.0,
+          -92.0
+        ],
+        "aabb_max_m": [
+          52.0,
+          52,
+          92.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 52,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 476
+        },
+        "footprint_xz_m": [
+          -52.0,
+          -92.0,
+          52.0,
+          92.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "shipbuilding_hangar.tscn": {
+      "file_path": "res://assets/generated/industrial/shipbuilding_hangar.tscn",
+      "sha256": "f12e044e533bf95204e4cc7108706f2a8491faf45ebea604b9066a80a20153f8",
+      "size_bytes": 750,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "조선용 대형 격납고",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -52.0,
+          0.0,
+          -92.0
+        ],
+        "aabb_max_m": [
+          52.0,
+          52,
+          92.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 52,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 476
+        },
+        "footprint_xz_m": [
+          -52.0,
+          -92.0,
+          52.0,
+          92.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--shipbuilding_hangar.tscn",
+          "fixture_count": 39,
+          "local_light_count": 4,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/shipbuilding_hangar"
+        }
+      }
+    },
+    "tower_crane.glb": {
+      "file_path": "res://assets/generated/industrial/tower_crane.glb",
+      "sha256": "52c1f8f8a9265fde27032ca34eb54a345229fab86f733320f7a102fdd3c37adb",
+      "size_bytes": 242140,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "타워 크레인",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -18.057616595969805,
+          0.0,
+          -5.0
+        ],
+        "aabb_max_m": [
+          60.057616595969805,
+          65.06826708557621,
+          5.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 65.06826708557621,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3312
+        },
+        "footprint_xz_m": [
+          -18.057616595969805,
+          -5.0,
+          60.057616595969805,
+          5.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "tower_crane.tscn": {
+      "file_path": "res://assets/generated/industrial/tower_crane.tscn",
+      "sha256": "81e11a499179970868a0f12e251d663fd6074ad6d29c3c6a46d9758b25862d1f",
+      "size_bytes": 718,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "타워 크레인",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -18.057616595969805,
+          0.0,
+          -5.0
+        ],
+        "aabb_max_m": [
+          60.057616595969805,
+          65.06826708557621,
+          5.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 65.06826708557621,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3312
+        },
+        "footprint_xz_m": [
+          -18.057616595969805,
+          -5.0,
+          60.057616595969805,
+          5.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--tower_crane.tscn",
+          "fixture_count": 31,
+          "local_light_count": 2,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/tower_crane"
+        }
+      }
+    },
+    "gantry_crane.glb": {
+      "file_path": "res://assets/generated/industrial/gantry_crane.glb",
+      "sha256": "40da7b00d1bc58356065a4c91c58c71529a4ae3ce0ef649f217e49c51ab997a4",
+      "size_bytes": 248112,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "갠트리 크레인",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -48.072,
+          0.0,
+          -17.0
+        ],
+        "aabb_max_m": [
+          48.072,
+          56.125,
+          17.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 56.125,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3396
+        },
+        "footprint_xz_m": [
+          -48.072,
+          -17.0,
+          48.072,
+          17.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false
+      }
+    },
+    "gantry_crane.tscn": {
+      "file_path": "res://assets/generated/industrial/gantry_crane.tscn",
+      "sha256": "d5ed4119e092dcd5cad759845637c9d26e5f9077d71e2fcf17eaad5c190f59e8",
+      "size_bytes": 722,
+      "type": "industrial_asset",
+      "metadata": {
+        "label_ko": "갠트리 크레인",
+        "units": "meters",
+        "ground_y_m": 0,
+        "aabb_min_m": [
+          -48.072,
+          0.0,
+          -17.0
+        ],
+        "aabb_max_m": [
+          48.072,
+          56.125,
+          17.0
+        ],
+        "bbox": null,
+        "elevation_min": 0.0,
+        "elevation_max": 56.125,
+        "resolution": {
+          "type": "triangle_mesh",
+          "triangles": 3396
+        },
+        "footprint_xz_m": [
+          -48.072,
+          -17.0,
+          48.072,
+          17.0
+        ],
+        "placement_padding_m": 3,
+        "scale_range": [
+          0.85,
+          1.15
+        ],
+        "georeferenced": false,
+        "surveyed": false,
+        "night_lighting": {
+          "scene_path": "res://assets/generated/industrial_lighting/industrial--gantry_crane.tscn",
+          "fixture_count": 37,
+          "local_light_count": 2,
+          "shadow_enabled": false,
+          "distance_fade_m": [
+            350,
+            550
+          ],
+          "automatic_time": true,
+          "fallback_night_factor": 1.0,
+          "source_asset": "industrial/gantry_crane"
+        }
+      }
+    },
+    "catalog.json": {
+      "file_path": "res://assets/generated/industrial/catalog.json",
+      "sha256": "62a8322a2424f83045e4593e858aaaafd60ae0120b93623f4efbc4f659317d23",
+      "size_bytes": 21028,
+      "bbox": null,
+      "elevation_min": null,
+      "elevation_max": null,
+      "resolution": null
+    },
+    "preview.png": {
+      "file_path": "res://assets/generated/industrial/preview.png",
+      "sha256": "424614d7b8faa63bd705152dbc4eca605e573668d638d49902e1ab7a7738b877",
+      "size_bytes": 151238,
+      "bbox": null,
+      "elevation_min": null,
+      "elevation_max": null,
+      "resolution": {
+        "width": 2000,
+        "height": 1810
+      }
+    },
+    "README.md": {
+      "file_path": "res://assets/generated/industrial/README.md",
+      "sha256": "18f13411850dc20801457fde3191b85260a67fc009d91856f81a29b4bdb340c1",
+      "size_bytes": 4227,
+      "bbox": null,
+      "elevation_min": null,
+      "elevation_max": null,
+      "resolution": null,
+      "type": "asset_document",
+      "metadata": {}
+    }
+  }
+}

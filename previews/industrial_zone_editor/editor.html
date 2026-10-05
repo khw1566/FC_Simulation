@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><title>울산 공단 구역 지정</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#161616;color:#eee;font:14px system-ui;display:grid;grid-template-columns:310px 1fr;height:100vh}aside{padding:22px;overflow:auto;border-right:1px solid #555}h1{font-size:21px}p{line-height:1.65;color:#ccc}input,select,button{width:100%;padding:10px;margin:5px 0;background:#282828;color:#fff;border:1px solid #666}button{cursor:pointer}button:hover{background:#444}#map{position:relative;overflow:hidden;background:#303030}canvas{display:block;width:100%;height:100%;touch-action:none}#zones button{text-align:left;font-size:12px}#message{white-space:pre-line;color:#eee}label{display:block;margin-top:12px}
+</style>
+<aside><h1>공단 구역 지정</h1><p>지도에 점을 찍어 경계를 그립니다. 휠로 확대하고 오른쪽 드래그로 이동합니다. 이번 도구는 구역만 지정합니다.</p>
+<label>구역 이름<input id="name" value="새 공단 구역"></label>
+<label>생성 유형<select id="profile"><option value="general_factory">일반 제조 공단</option><option value="petrochemical">석유화학 공단</option><option value="shipbuilding">조선 공단</option><option value="logistics">물류 공단</option></select></label>
+<label>상태<select id="status"><option value="draft">초안 — 생성 제외</option><option value="confirmed">확정 — 마스크 허용</option></select></label>
+<button id="finish">경계 닫기 · 구역 추가</button><button id="undo">마지막 점 취소</button><button id="clear">현재 그리기 취소</button><button id="fit">지도 전체 보기</button>
+<p id="message">확정 경계가 없어 빈 구역 목록으로 시작합니다.</p><div id="zones"></div>
+<label>기존 GeoJSON 불러오기<input type="file" id="import" accept=".json,.geojson"></label><button id="export">industrial_zones.geojson 저장</button>
+<p>저장한 파일로 config/industrial_zones.geojson을 교체한 뒤 계획서의 마스크 생성 명령을 실행합니다. 기존 파일은 자동으로 덮어쓰지 않습니다.</p></aside>
+<main id="map"><canvas id="canvas"></canvas></main>
+<script>
+const bbox={west:128.81256666666667,east:129.69843333333336,south:35.1841,north:35.9049};
+const canvas=document.getElementById('canvas'),ctx=canvas.getContext('2d'),map=document.getElementById('map');
+const message=document.getElementById('message'),zonesDiv=document.getElementById('zones');
+let features=[],draft=[],zoom=1,offset={x:0,y:0},drag=null;
+const image=new Image();image.src='../../godot_project/assets/maps/ulsan_metro_80km/simple_map/revisions/72bf18536e452711/map.svg';
+function fit(){zoom=Math.min(canvas.width,canvas.height);offset={x:(canvas.width-zoom)/2,y:(canvas.height-zoom)/2};draw()}
+function resize(){canvas.width=map.clientWidth;canvas.height=map.clientHeight;fit()}
+function uvToGeo(p){return [bbox.west+p[0]*(bbox.east-bbox.west),bbox.north-p[1]*(bbox.north-bbox.south)]}
+function geoToUv(p){return [(p[0]-bbox.west)/(bbox.east-bbox.west),(bbox.north-p[1])/(bbox.north-bbox.south)]}
+function point(e){const r=canvas.getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top}}
+function uv(e){const p=point(e);return [(p.x-offset.x)/zoom,(p.y-offset.y)/zoom]}
+function path(points,close){ctx.beginPath();points.forEach((p,i)=>{const x=offset.x+p[0]*zoom,y=offset.y+p[1]*zoom;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});if(close)ctx.closePath()}
+function draw(){ctx.clearRect(0,0,canvas.width,canvas.height);if(image.complete&&image.naturalWidth){ctx.filter='grayscale(1)';ctx.drawImage(image,offset.x,offset.y,zoom,zoom);ctx.filter='none'}features.forEach(f=>{const polys=f.geometry.type==='Polygon'?[f.geometry.coordinates]:f.geometry.coordinates;polys.forEach(poly=>{ctx.beginPath();poly.forEach(ring=>{ring.map(geoToUv).forEach((p,i)=>{const x=offset.x+p[0]*zoom,y=offset.y+p[1]*zoom;i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.closePath()});ctx.fillStyle=f.properties.status==='confirmed'?'rgba(255,255,255,.32)':'rgba(0,0,0,.28)';ctx.fill('evenodd');ctx.strokeStyle='#fff';ctx.lineWidth=2;ctx.stroke()})});if(draft.length){path(draft,false);ctx.strokeStyle='#fff';ctx.setLineDash([5,4]);ctx.stroke();ctx.setLineDash([]);draft.forEach(p=>{ctx.beginPath();ctx.arc(offset.x+p[0]*zoom,offset.y+p[1]*zoom,4,0,Math.PI*2);ctx.fillStyle='#fff';ctx.fill()})}}
+function list(){zonesDiv.replaceChildren();features.forEach((f,i)=>{const b=document.createElement('button');b.textContent=f.properties.zone_id+' · '+f.properties.name_ko+' · '+(f.properties.status==='confirmed'?'확정':'초안')+' — 눌러 삭제';b.onclick=()=>{features.splice(i,1);list();draw()};zonesDiv.appendChild(b)})}
+canvas.oncontextmenu=e=>e.preventDefault();canvas.onpointerdown=e=>{if(e.button===2){drag=point(e);canvas.setPointerCapture(e.pointerId)}else if(e.button===0){const p=uv(e);if(p.every(v=>v>=0&&v<=1)){draft.push(p);const g=uvToGeo(p);message.textContent='경계 점 '+draft.length+'개\n경도 '+g[0].toFixed(6)+' · 위도 '+g[1].toFixed(6);draw()}}};
+canvas.onpointermove=e=>{if(drag){const p=point(e);offset.x+=p.x-drag.x;offset.y+=p.y-drag.y;drag=p;draw()}};canvas.onpointerup=()=>drag=null;
+canvas.addEventListener('wheel',e=>{e.preventDefault();const p=point(e),u=uv(e);zoom=Math.max(120,Math.min(30000,zoom*(e.deltaY<0?1.15:1/1.15)));offset={x:p.x-u[0]*zoom,y:p.y-u[1]*zoom};draw()},{passive:false});
+document.getElementById('finish').onclick=()=>{if(draft.length<3){message.textContent='경계 점을 3개 이상 지정하세요.';return}const coordinates=draft.map(uvToGeo);coordinates.push([...coordinates[0]]);const id=Math.max(0,...features.map(f=>Number(f.properties.zone_id)))+1;features.push({type:'Feature',properties:{zone_id:id,name_ko:document.getElementById('name').value,profile:document.getElementById('profile').value,status:document.getElementById('status').value,seed:42017+id},geometry:{type:'Polygon',coordinates:[coordinates]}});draft=[];list();draw();message.textContent='구역 '+id+' 추가. 경계 중첩 여부는 마스크 생성기에서 확인합니다.'};
+document.getElementById('undo').onclick=()=>{draft.pop();draw()};document.getElementById('clear').onclick=()=>{draft=[];draw()};document.getElementById('fit').onclick=fit;
+document.getElementById('export').onclick=()=>{const a=document.createElement('a');const url=URL.createObjectURL(new Blob([JSON.stringify({type:'FeatureCollection',name:'ulsan_industrial_zones',features},null,2)],{type:'application/geo+json'}));a.href=url;a.download='industrial_zones.geojson';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+document.getElementById('import').onchange=async e=>{try{const d=JSON.parse(await e.target.files[0].text());if(d.type!=='FeatureCollection'||!Array.isArray(d.features)||d.features.some(f=>!['Polygon','MultiPolygon'].includes(f.geometry?.type)||!f.properties?.zone_id))throw Error('구역 GeoJSON 형식이 맞지 않습니다');features=d.features;draft=[];list();draw();message.textContent='구역 '+features.length+'개 불러옴'}catch(err){message.textContent=err.message}};
+image.onload=draw;image.onerror=()=>{message.textContent='지도 배경을 읽지 못했습니다. 편집기를 원래 previews/industrial_zone_editor 폴더에서 여세요.'};new ResizeObserver(resize).observe(map);
+</script></html>

@@ -1,0 +1,85 @@
+{
+  "type": "FeatureCollection",
+  "name": "ulsan_industrial_zones",
+  "coordinate_reference": "WGS84 longitude latitude",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": 1,
+        "name_ko": "울산 본항 주변 절차 공단",
+        "profile": "general_factory",
+        "seed": 42018,
+        "status": "confirmed",
+        "source": "local_safe_land_candidate",
+        "accuracy": "게임용 후보 구역, 실제 공단 경계 아님"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              129.37792666666667,
+              35.519822
+            ],
+            [
+              129.37792666666667,
+              35.50901
+            ],
+            [
+              129.36463866666668,
+              35.50901
+            ],
+            [
+              129.36463866666668,
+              35.519822
+            ],
+            [
+              129.37792666666667,
+              35.519822
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_id": 2,
+        "name_ko": "온산항 주변 절차 공단",
+        "profile": "petrochemical",
+        "seed": 42019,
+        "status": "confirmed",
+        "source": "local_safe_land_candidate",
+        "accuracy": "게임용 후보 구역, 실제 공단 경계 아님"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              129.37063866666668,
+              35.467634
+            ],
+            [
+              129.37063866666668,
+              35.456821999999995
+            ],
+            [
+              129.3573506666667,
+              35.456821999999995
+            ],
+            [
+              129.3573506666667,
+              35.467634
+            ],
+            [
+              129.37063866666668,
+              35.467634
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

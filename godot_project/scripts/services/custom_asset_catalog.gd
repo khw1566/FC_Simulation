@@ -14,6 +14,12 @@ static func collect() -> Array[Dictionary]:
 	labels["res://assets/generated/pedestrian_bridges/gulhwa_daun_crossing.scn"] = "굴화리–다운동 도보 징검다리"
 	labels["res://assets/generated/pedestrian_bridges/seonbawi_bridge.scn"] = "선바위교"
 	labels["res://assets/generated/pedestrian_bridges/generic_pedestrian_overpass.scn"] = "범용 보행 육교"
+	var railway_bridge_catalog := "res://assets/generated/railway_bridges/catalog.json"
+	if FileAccess.file_exists(railway_bridge_catalog):
+		var railway_bridges = JSON.parse_string(FileAccess.get_file_as_string(railway_bridge_catalog))
+		if railway_bridges is Dictionary:
+			for bridge in railway_bridges.get("models", []):
+				labels[str(bridge.scene_path)] = str(bridge.name_ko)
 	labels["res://assets/generated/airport/ulsan_airport.scn"] = "울산공항"
 	var airport_path := "res://assets/generated/japan_airports/placement.json"
 	if FileAccess.file_exists(airport_path):

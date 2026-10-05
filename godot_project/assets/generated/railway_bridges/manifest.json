@@ -1,0 +1,415 @@
+{
+  "assets": {
+    "anyang_main_bridge": {
+      "file_path": "res://assets/generated/railway_bridges/anyang_main_bridge.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.25,
+          6.70000076293945,
+          234.300003051758
+        ],
+        "aabb_min_m": [
+          -6.25,
+          -24,
+          -2.5
+        ],
+        "accuracy": "안양교/언양고가 아치부 문헌 기반 게임용 근사. 아치부 총길이 231.8m·중앙경간 70.4m·아치 높이 10m와 병렬 상하행 구조를 반영. 양쪽 아치 길이 배분, 접근부 길이·높이·방향·역 접속부는 제작 가정이며 지도 배치나 전체 울산역 모델이 아님.",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -24,
+        "gauge_m": 1.435,
+        "kind": "anyang",
+        "label_ko": "안양교 병렬 상로 아치 본체",
+        "length_m": 231.8,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC5981442/",
+          "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002322862",
+          "https://www.openstreetmap.org/way/128255609"
+        ],
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 19576,
+        "width_m": 12.5
+      },
+      "sha256": "e5b2dffddfa06ef1da788e33254af37a3b8f708da7a785cae32c5cb64341ab1b",
+      "size_bytes": 1225932,
+      "type": "railway_bridge_model"
+    },
+    "anyang_north_approach": {
+      "file_path": "res://assets/generated/railway_bridges/anyang_north_approach.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.25,
+          6.70000076293945,
+          237.5
+        ],
+        "aabb_min_m": [
+          -6.25,
+          -24,
+          -2.5
+        ],
+        "accuracy": "안양교/언양고가 아치부 문헌 기반 게임용 근사. 아치부 총길이 231.8m·중앙경간 70.4m·아치 높이 10m와 병렬 상하행 구조를 반영. 양쪽 아치 길이 배분, 접근부 길이·높이·방향·역 접속부는 제작 가정이며 지도 배치나 전체 울산역 모델이 아님.",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -24,
+        "gauge_m": 1.435,
+        "kind": "viaduct",
+        "label_ko": "안양교 북측 접근 고가교",
+        "length_m": 235,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC5981442/",
+          "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002322862",
+          "https://www.openstreetmap.org/way/128255609"
+        ],
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 8992,
+        "width_m": 12.5
+      },
+      "sha256": "490d55421547c5184f67f1b1f9cebebaff0c0cb45ef62fa20df60bf6e3f9452c",
+      "size_bytes": 568718,
+      "type": "railway_bridge_model"
+    },
+    "anyang_station_approach": {
+      "file_path": "res://assets/generated/railway_bridges/anyang_station_approach.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.25,
+          6.70000076293945,
+          322.5
+        ],
+        "aabb_min_m": [
+          -6.25,
+          -24,
+          -2.5
+        ],
+        "accuracy": "안양교/언양고가 아치부 문헌 기반 게임용 근사. 아치부 총길이 231.8m·중앙경간 70.4m·아치 높이 10m와 병렬 상하행 구조를 반영. 양쪽 아치 길이 배분, 접근부 길이·높이·방향·역 접속부는 제작 가정이며 지도 배치나 전체 울산역 모델이 아님.",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -24,
+        "gauge_m": 1.435,
+        "kind": "viaduct",
+        "label_ko": "울산역 방향 접근 고가교",
+        "length_m": 320,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC5981442/",
+          "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002322862",
+          "https://www.openstreetmap.org/way/128255609"
+        ],
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 12018,
+        "width_m": 12.5
+      },
+      "sha256": "1851342f78a89002d4fd99ff4927504ff31d7f8f7aafb25a1adfdc10be720545",
+      "size_bytes": 756604,
+      "type": "railway_bridge_model"
+    },
+    "rail_box_girder": {
+      "file_path": "res://assets/generated/railway_bridges/rail_box_girder.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.25,
+          6.70000076293945,
+          34.5
+        ],
+        "aabb_min_m": [
+          -6.25,
+          -12,
+          -2.5
+        ],
+        "accuracy": "게임용 범용 모델, 치수는 제작 설정값",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -12,
+        "gauge_m": 1.435,
+        "kind": "box",
+        "label_ko": "복선 콘크리트 박스거더교",
+        "length_m": 32,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [],
+        "track_count": 2,
+        "track_spacing_m": 5,
+        "triangles": 1442,
+        "width_m": 12.5
+      },
+      "sha256": "0aab112d7dcf66c555ee5cfdce42283f67a2cb762d2106ef08b523f197ee1980",
+      "size_bytes": 100215,
+      "type": "railway_bridge_model"
+    },
+    "rail_deck_arch": {
+      "file_path": "res://assets/generated/railway_bridges/rail_deck_arch.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.25,
+          6.70000076293945,
+          122.5
+        ],
+        "aabb_min_m": [
+          -6.25,
+          -20,
+          -2.5
+        ],
+        "accuracy": "게임용 범용 모델, 치수는 제작 설정값",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -20,
+        "gauge_m": 1.435,
+        "kind": "arch",
+        "label_ko": "복선 상로 아치교",
+        "length_m": 120,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [],
+        "track_count": 2,
+        "track_spacing_m": 5,
+        "triangles": 5906,
+        "width_m": 12.5
+      },
+      "sha256": "312d13ff4db1bcdceb87bc2d0068522d64666a51c97ad55c19c4e03e38649725",
+      "size_bytes": 377548,
+      "type": "railway_bridge_model"
+    },
+    "rail_multi_viaduct": {
+      "file_path": "res://assets/generated/railway_bridges/rail_multi_viaduct.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.25,
+          6.70000076293945,
+          162.5
+        ],
+        "aabb_min_m": [
+          -6.25,
+          -18,
+          -2.5
+        ],
+        "accuracy": "게임용 범용 모델, 치수는 제작 설정값",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -18,
+        "gauge_m": 1.435,
+        "kind": "viaduct",
+        "label_ko": "복선 다경간 고가교",
+        "length_m": 160,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [],
+        "track_count": 2,
+        "track_spacing_m": 5,
+        "triangles": 6148,
+        "width_m": 12.5
+      },
+      "sha256": "01caf628f34c6b3e40908471a4634049005e922ec4329b01c040dd8c5b9fb740",
+      "size_bytes": 392107,
+      "type": "railway_bridge_model"
+    },
+    "rail_plate_girder": {
+      "file_path": "res://assets/generated/railway_bridges/rail_plate_girder.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          3.25,
+          6.69999980926514,
+          26.5
+        ],
+        "aabb_min_m": [
+          -3.25,
+          -8,
+          -2.5
+        ],
+        "accuracy": "게임용 범용 모델, 치수는 제작 설정값",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.69999980926514,
+        "elevation_min": -8,
+        "gauge_m": 1.435,
+        "kind": "plate",
+        "label_ko": "단선 강판거더교",
+        "length_m": 24,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [],
+        "track_count": 1,
+        "track_spacing_m": 5,
+        "triangles": 1166,
+        "width_m": 6.5
+      },
+      "sha256": "92b857141299d3e96dc5031bda1f2729154c48ae76512c65e518e6f3ebf7d042",
+      "size_bytes": 83362,
+      "type": "railway_bridge_model"
+    },
+    "rail_through_truss": {
+      "file_path": "res://assets/generated/railway_bridges/rail_through_truss.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          6.34999990463257,
+          8.17499923706055,
+          74.5
+        ],
+        "aabb_min_m": [
+          -6.34999990463257,
+          -14,
+          -2.5
+        ],
+        "accuracy": "게임용 범용 모델, 치수는 제작 설정값",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 8.17499923706055,
+        "elevation_min": -14,
+        "gauge_m": 1.435,
+        "kind": "truss",
+        "label_ko": "복선 강재 트러스교",
+        "length_m": 72,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [],
+        "track_count": 2,
+        "track_spacing_m": 5,
+        "triangles": 3494,
+        "width_m": 12.5
+      },
+      "sha256": "60753989942bb78423a2ec1b70ab5623d524a36a2e5f329886f21c3df3676c4a",
+      "size_bytes": 228013,
+      "type": "railway_bridge_model"
+    },
+    "ulsan_anyang_connected_set": {
+      "file_path": "res://assets/generated/railway_bridges/ulsan_anyang_connected_set.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          8.75,
+          6.70000076293945,
+          837.299987792969
+        ],
+        "aabb_min_m": [
+          -8.75,
+          -24,
+          -2.5
+        ],
+        "accuracy": "안양교/언양고가 아치부 문헌 기반 게임용 근사. 아치부 총길이 231.8m·중앙경간 70.4m·아치 높이 10m와 병렬 상하행 구조를 반영. 양쪽 아치 길이 배분, 접근부 길이·높이·방향·역 접속부는 제작 가정이며 지도 배치나 전체 울산역 모델이 아님.",
+        "bbox": null,
+        "collision_shapes": 4,
+        "connection_axis": "+Z",
+        "connections": [
+          {
+            "from": "anyang_north_approach",
+            "gap_m": 0,
+            "to": "anyang_main_bridge",
+            "z_m": 235
+          },
+          {
+            "from": "anyang_main_bridge",
+            "gap_m": 0,
+            "to": "anyang_station_approach",
+            "z_m": 466.8
+          },
+          {
+            "from": "anyang_station_approach",
+            "gap_m": 0,
+            "to": "ulsan_station_interface",
+            "z_m": 786.8
+          }
+        ],
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -24,
+        "gauge_m": 1.435,
+        "kind": "assembled_set",
+        "label_ko": "안양교–울산역 연결 세트",
+        "length_m": 834.8,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC5981442/",
+          "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002322862",
+          "https://www.openstreetmap.org/way/128255609"
+        ],
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 42028,
+        "width_m": 12.5
+      },
+      "sha256": "29c30a713d8a647d2f6ec353e333d5ff96498c437a6f4f0293940066938d90f1",
+      "size_bytes": 2639102,
+      "type": "railway_bridge_model"
+    },
+    "ulsan_station_interface": {
+      "file_path": "res://assets/generated/railway_bridges/ulsan_station_interface.scn",
+      "format": "SCN",
+      "metadata": {
+        "aabb_max_m": [
+          8.75,
+          6.70000076293945,
+          50.5
+        ],
+        "aabb_min_m": [
+          -8.75,
+          -24,
+          -2.5
+        ],
+        "accuracy": "안양교/언양고가 아치부 문헌 기반 게임용 근사. 아치부 총길이 231.8m·중앙경간 70.4m·아치 높이 10m와 병렬 상하행 구조를 반영. 양쪽 아치 길이 배분, 접근부 길이·높이·방향·역 접속부는 제작 가정이며 지도 배치나 전체 울산역 모델이 아님.",
+        "bbox": null,
+        "collision_shapes": 1,
+        "connection_axis": "+Z",
+        "elevation_max": 6.70000076293945,
+        "elevation_min": -24,
+        "gauge_m": 1.435,
+        "kind": "station",
+        "label_ko": "울산역 연결부",
+        "length_m": 48,
+        "placement_status": "asset_only",
+        "rail_top_y_m": 0.12,
+        "resolution": null,
+        "source_urls": [
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC5981442/",
+          "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002322862",
+          "https://www.openstreetmap.org/way/128255609"
+        ],
+        "track_count": 2,
+        "track_spacing_m": 5.4,
+        "triangles": 1622,
+        "width_m": 12.5
+      },
+      "sha256": "702d88bfe94ba87cf1c74012f32406871f243f1133adad533fcafca79c7d40da",
+      "size_bytes": 112770,
+      "type": "railway_bridge_model"
+    }
+  },
+  "version": 1
+}

@@ -4,7 +4,7 @@
   "name_en": "Flat Testing Map",
   "description_ko": "표고 50m 균일 평지 및 격자 기반 가속/비행/LOD 성능 검증 전용 테스트 맵입니다.",
   "description_en": "Uniform 50m flat terrain for flight control, acceleration physics, and LOD benchmark testing.",
-  "preview_image": "res://assets/maps/flat_testing/flat_vector_tactical_map.png",
+  "preview_image": "res://assets/maps/flat_testing/simple_map/revisions/02c1fb8ce93f2be9/map.svg",
   "world_size_meters": 6000.0,
   "min_elevation": -50.0,
   "max_elevation": 750.0,
@@ -24,10 +24,33 @@
     "heightmap": "res://assets/maps/flat_testing/flat_heightmap_16bit.png",
     "watermask": "res://assets/maps/flat_testing/flat_watermask_8bit.png",
     "splatmap": "res://assets/maps/flat_testing/flat_splatmap_rgba.png",
-    "tactical_map": "res://assets/maps/flat_testing/flat_vector_tactical_map.png",
+    "tactical_map": "res://assets/maps/flat_testing/simple_map/revisions/02c1fb8ce93f2be9/map.svg",
     "districts": "res://assets/maps/flat_testing/real_districts.json",
     "buildings_roads": "res://assets/maps/flat_testing/buildings_and_roads.json",
     "landmarks": "res://assets/maps/flat_testing/landmarks.json"
   },
-  "category": "testing"
+  "category": "testing",
+  "legacy_tactical_map": "res://assets/maps/flat_testing/flat_vector_tactical_map.png",
+  "simple_vector_map": {
+    "tiles_index": "res://assets/maps/flat_testing/simple_map/revisions/02c1fb8ce93f2be9/tiles.json",
+    "manual_refresh": true,
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로",
+    "counts": {
+      "sea": 0,
+      "mountains": 0,
+      "rivers": 0,
+      "lakes": 0,
+      "buildings": 3,
+      "roads": 0,
+      "railways": 0,
+      "coastline": 0,
+      "shipping_routes": 0,
+      "harbors": 0
+    },
+    "navigation_status": "입력 GeoJSON이 없는 항구·항로는 빈 마스크",
+    "source_policy": "최신 로컬 원본을 수동으로 합성"
+  },
+  "tactical_atlas": {
+    "legend": "청록: 해안선 · 주황: 대로 · 보라: 철로 · 하늘색: 강 · 파랑: 호수 · 갈색: 산지 · 회색: 소형맵 건물 · 빨강: 항구 · 초록: 항로 | 좌클릭: 위치 이동 · 우클릭 드래그: 이동 · 휠: 확대"
+  }
 }

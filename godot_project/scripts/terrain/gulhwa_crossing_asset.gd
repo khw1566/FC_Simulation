@@ -1,6 +1,7 @@
 extends RefCounted
 ## 좁은 콘크리트 보행판과 수로가 있는 낮은 징검다리.
 
+const Lighting = preload("res://scripts/core/asset_marker_lighting.gd")
 const Parts = preload("res://scripts/terrain/pedestrian_bridge_geometry.gd")
 
 static func build(spec: Dictionary) -> Node3D:
@@ -21,6 +22,11 @@ static func build(spec: Dictionary) -> Node3D:
 	for end in [-1.0, 1.0]:
 		g.box(Vector3(0, top - 0.15, end * (length * 0.5 + 0.75)), Vector3(2.2, 0.3, 1.5), "stone")
 	g.finish(root)
+	var light_points := PackedVector3Array()
+	var lamp_count := maxi(2, int(ceil(length / 120.0)) + 1)
+	for i in range(lamp_count):
+		light_points.append(Vector3(width * 0.44, top + 0.8, -length * 0.5 + length * i / (lamp_count - 1)))
+	Lighting.bridge(root, light_points)
 	Parts.marker(root, "BankA", Vector3(0, top, -length * 0.5))
 	Parts.marker(root, "BankB", Vector3(0, top, length * 0.5))
 	return root
