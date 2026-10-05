@@ -46,9 +46,8 @@ class WindowsPackageBuilder:
         self.output.mkdir(parents=True)
         shutil.copytree(ROOT / 'godot_project', self.project,
                         ignore=shutil.ignore_patterns('.godot', '*.tmp', '*.log', 'export_presets.cfg'))
-        # 벡터 지도는 Image/문자열로 직접 읽는다. 이력 타일을 텍스처로 임포트하지 않는다.
-        for folder in (self.project / 'assets/maps').glob('*/simple_map'):
-            (folder / '.gdignore').write_text('', encoding='utf-8')
+        # 지도는 Image/문자열로 직접 읽는다. 원본 데이터와 이력은 임포트 스캔에서 제외한다.
+        (self.project / 'assets/maps/.gdignore').write_text('', encoding='utf-8')
         print('격리 프로젝트 복사 완료. 임포트 시작.', flush=True)
         self.run_engine(['--editor', '--import'], 'import.log')
         files = []

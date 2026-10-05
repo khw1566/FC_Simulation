@@ -1877,7 +1877,7 @@
         {
           "path": "pipeline/packaging/build_windows.py",
           "responsibility": "원본 보호와 격리 임포트·Windows 실행 패키지·ZIP 생성",
-          "lines": 117
+          "lines": 119
         },
         {
           "path": "pipeline/packaging/pack_project.gd",
