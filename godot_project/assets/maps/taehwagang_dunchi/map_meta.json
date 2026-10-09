@@ -1,0 +1,31 @@
+{
+  "id": "taehwagang_dunchi",
+  "name_ko": "태화강 둔치 정밀 지형",
+  "name_en": "Taehwa River Floodplain Detail Terrain",
+  "description_ko": "태화강 국가정원부터 명촌교 부근까지 둔치를 별도 고해상도 지형으로 처리한 8km 지도입니다. 둔치는 수계 경계 기준으로 평탄하게 정형되어 에셋 배치용 표면으로 사용합니다.",
+  "description_en": "8km detail map of the Taehwa River floodplain from the National Garden to Myeongchon Bridge. Floodplain surfaces are shaped flat from water boundaries for asset placement.",
+  "preview_image": "",
+  "world_size_meters": 8000.0,
+  "min_elevation": -10.0,
+  "max_elevation": 250.0,
+  "sea_level": -999.0,
+  "spawn_position": [
+    0.0,
+    120.0,
+    0.0
+  ],
+  "bbox": {
+    "south": 35.515,
+    "north": 35.5872,
+    "west": 129.2738,
+    "east": 129.3622
+  },
+  "coastal_heightmap_corrected": true,
+  "assets": {
+    "heightmap": "res://assets/maps/taehwagang_dunchi/dunchi_heightmap_16bit.png",
+    "watermask": "res://assets/maps/taehwagang_dunchi/dunchi_watermask_8bit.png",
+    "placement_mask": "res://assets/maps/taehwagang_dunchi/dunchi_placement_mask_8bit.png",
+    "riverside_placements": "res://assets/maps/taehwagang_dunchi/placements.json"
+  },
+  "category": "korea"
+}

@@ -22,7 +22,7 @@ nwr["waterway"="riverbank"]({box}););out body geom;'''
         self.output.parent.mkdir(parents=True, exist_ok=True)
         for url in self.settings["overpass_endpoints"]:
             try:
-                response = requests.post(url, data={"data": query}, timeout=210)
+                response = requests.post(url, data={"data": query}, timeout=210, headers={"User-Agent": "FC-Simulation-Riverside/1 (taehwagang dunchi terrain)"})
                 response.raise_for_status()
                 data = response.json()
                 if data.get("remark") or not data.get("elements"):

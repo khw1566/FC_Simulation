@@ -1,0 +1,85 @@
+{
+  "last_updated": "2026-10-09 23:14:27",
+  "region": "taehwagang_dunchi",
+  "bbox": {
+    "south": 35.515,
+    "north": 35.5872,
+    "west": 129.2738,
+    "east": 129.3622
+  },
+  "pixel_spacing_m": 1.9536,
+  "height_source": {
+    "source": "terrarium",
+    "zoom": 15,
+    "new_requests": 0,
+    "despiked_pixels": 354,
+    "vworld_error": "DEM 노드 크기 불일치 140753,57123: 174 bytes",
+    "api_key_origin": "env:VWORLD_API_KEY"
+  },
+  "riverbank_shaping": {
+    "river_pixels": 512165,
+    "dunchi_pixels": 1019398,
+    "placeable_pixels": 887308,
+    "placeable_area_m2": 3386464.7,
+    "skipped_open_relations": 0
+  },
+  "water_level_basis": "추정값. 실측 수위 자료로 교체 필요",
+  "placement_pads": [],
+  "surveyed": false,
+  "assets": {
+    "heightmap": {
+      "file_path": "res://assets/maps/taehwagang_dunchi/dunchi_heightmap_16bit.png",
+      "format": "PNG16",
+      "sha256": "1da39cc702a03ffcd0a4a1855cca5ca1a64d3c13a4caa4bc80064ddae4ab9c3d",
+      "size_bytes": 13812544,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "resolution": [
+        4096,
+        4096
+      ],
+      "elevation_min": -8.897,
+      "elevation_max": 199.965,
+      "encoding_range_m": [
+        -10.0,
+        250.0
+      ]
+    },
+    "watermask": {
+      "file_path": "res://assets/maps/taehwagang_dunchi/dunchi_watermask_8bit.png",
+      "format": "PNG8",
+      "sha256": "e4574bceeb3805caa0f56eccf4dcd96766a47dcf3d4e5cefbcbaeb84dd55f393",
+      "size_bytes": 53197,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "resolution": [
+        4096,
+        4096
+      ]
+    },
+    "placement_mask": {
+      "file_path": "res://assets/maps/taehwagang_dunchi/dunchi_placement_mask_8bit.png",
+      "format": "PNG8",
+      "sha256": "fd09530c04f96071c9cac2cae75ba7df88d762d725ef41826e283e9436e595d2",
+      "size_bytes": 56222,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "resolution": [
+        4096,
+        4096
+      ]
+    }
+  }
+}
