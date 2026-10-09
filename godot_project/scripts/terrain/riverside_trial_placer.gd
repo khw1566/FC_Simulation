@@ -84,6 +84,6 @@ static func _inside(lonlat: Array, map) -> bool:
 
 static func _world_xz(lonlat: Array, map) -> Vector2:
 	var size: float = map.world_size_meters
-	var x := ((float(lonlat[0]) - map.bbox_west) / (map.bbox_east - map.bbox_west) - 0.5) * size
-	var z := ((map.bbox_north - float(lonlat[1])) / (map.bbox_north - map.bbox_south) - 0.5) * size
+	var x: float = ((float(lonlat[0]) - map.bbox_west) / (map.bbox_east - map.bbox_west) - 0.5) * size
+	var z: float = ((map.bbox_north - float(lonlat[1])) / (map.bbox_north - map.bbox_south) - 0.5) * size
 	return Vector2(x, z)
