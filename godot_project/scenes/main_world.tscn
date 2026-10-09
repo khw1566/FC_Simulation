@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=3 uid="uid://cql1v4mx67f8r"]
+[gd_scene load_steps=38 format=3 uid="uid://cql1v4mx67f8r"]
 
 [ext_resource type="Script" path="res://scripts/terrain/terrain_chunk_manager.gd" id="1_terrain"]
 [ext_resource type="Script" path="res://scripts/water/kanmon_water_manager.gd" id="2_water"]
@@ -35,6 +35,7 @@
 [ext_resource type="Script" path="res://scripts/services/altitude_atmosphere_controller.gd" id="31_atmosphere"]
 [ext_resource type="Script" path="res://scripts/terrain/horizon_terrain_manager.gd" id="32_horizon"]
 [ext_resource type="Script" path="res://scripts/terrain/industrial_zone_manager.gd" id="33_industrial"]
+[ext_resource type="Script" path="res://scripts/terrain/riverside_trial_placer.gd" id="34_riverside_trial"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_night_sky"]
 shader = ExtResource("28_night_sky")
@@ -224,3 +225,7 @@ terrain_manager = NodePath("../TerrainManager")
 script = ExtResource("33_industrial")
 terrain_manager = NodePath("../TerrainManager")
 player_node = NodePath("../Player")
+
+[node name="RiversideTrialPlacer" type="Node3D" parent="." node_paths=PackedStringArray("terrain_manager")]
+script = ExtResource("34_riverside_trial")
+terrain_manager = NodePath("../TerrainManager")
