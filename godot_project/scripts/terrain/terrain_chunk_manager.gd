@@ -5,6 +5,11 @@ const TerrainChunkClass = preload("res://scripts/terrain/terrain_chunk.gd")
 const CoastlineWaterCarver = preload("res://scripts/terrain/coastline_water_carver.gd")
 const AirfieldGrader = preload("res://scripts/terrain/airfield_terrain_grader.gd")
 const MapImages = preload("res://scripts/services/map_image_preloader.gd")
+const Quality = preload("res://scripts/models/render_quality_profile.gd")
+var base_resolution := 128
+const LOD_HYSTERESIS := 600.0
+var startup_timings: Dictionary = {}
+var _height_texture: ImageTexture
 
 var airport_floor_y: float = NAN
 var _airport_placement_path: String = ""
@@ -41,7 +46,6 @@ var is_simple_contour_mode: bool = false
 var load_complete := false
 var load_error := ""
 var load_status := "지형 자료 읽기"
-var _lod_busy := false
 
 func toggle_terrain_render_mode() -> bool:
 	is_simple_contour_mode = !is_simple_contour_mode
@@ -69,13 +73,16 @@ func _initialize_async() -> void:
 	await get_tree().process_frame
 	if not is_inside_tree():
 		return
+	var chunks_started := Time.get_ticks_msec()
 	await _build_all_chunks()
+	startup_timings["chunks_ms"] = Time.get_ticks_msec() - chunks_started
 	if not is_inside_tree():
 		return
 	_build_subsurface_bed()
 	load_complete = true
 
 func _init_from_map_selection() -> void:
+	base_resolution = int(Quality.current().base_resolution)
 	var root = get_tree().root
 	if root.has_node("MapSelectionService"):
 		var svc = root.get_node("MapSelectionService")
@@ -121,6 +128,14 @@ func _init_from_map_selection() -> void:
 				lod2_distance = 28000.0
 
 			print("[TerrainChunkManager] Applied MapConfig: %s | WorldSize: %.0fm | Grid: %dx%d" % [m.id, terrain_world_size, grid_chunks_x, grid_chunks_y])
+	var quality := Quality.current()
+	# 건물 표시 범위 안의 지형은 상세 LOD를 유지해 건물·철도와 지면이 어긋나 보이지 않게 한다.
+	if quality.id == "light":
+		lod0_distance = minf(lod0_distance, 6500.0)
+		lod1_distance = minf(lod1_distance, 14000.0)
+	elif quality.id == "standard":
+		lod0_distance = minf(lod0_distance, 8500.0)
+		lod1_distance = minf(lod1_distance, 20000.0)
 
 func _build_subsurface_bed() -> void:
 	# 맵 전체의 지하 하부에 영구 물리 지지판(Subsurface Bed) 배치
@@ -194,6 +209,7 @@ func _init_shader_material() -> void:
 		terrain_material = mat
 
 func _load_heightmap() -> void:
+	var height_started := Time.get_ticks_msec()
 	var raw_path := heightmap_override_path
 	if raw_path.is_empty() or not FileAccess.file_exists(raw_path):
 		raw_path = "res://assets/maps/kanmon_straits/kanmon_heightmap_16bit.png"
@@ -202,13 +218,18 @@ func _load_heightmap() -> void:
 
 	if raw_path.contains("ulsan_metro_80km") and FileAccess.file_exists("res://assets/generated/railway/graded_heightmap_16bit.png"):
 		raw_path = "res://assets/generated/railway/graded_heightmap_16bit.png"
+		var selection := get_node_or_null("/root/MapSelectionService")
+		if selection and selection.selected_map:
+			raw_path = Quality.heightmap_path(selection.selected_map)
 		_railway_grader = preload("res://scripts/terrain/railway_terrain_grader.gd").new()
 		var alignment := preload("res://scripts/terrain/railway_alignment_catalog.gd").new()
 		_railway_grader.configure(alignment.data)
+		_railway_grader.edge_limit = float(Quality.current().rail_edge)
+		preload("res://scripts/terrain/railway_terrain_void.gd").configure_bounds(alignment.data)
 	if FileAccess.file_exists(raw_path):
 		_full_heightmap_image = MapImages.read(raw_path).duplicate()
 		_full_heightmap_image.convert(Image.FORMAT_RF)
-		if raw_path.contains("railway/graded_heightmap") and terrain_material is ShaderMaterial:
+		if _railway_grader != null and terrain_material is ShaderMaterial:
 			var void_image := preload("res://scripts/terrain/railway_terrain_void.gd").image()
 			if void_image:
 				terrain_material.set_shader_parameter("railway_tunnel_void_texture",ImageTexture.create_from_image(void_image))
@@ -224,9 +245,11 @@ func _load_heightmap() -> void:
 			elif airport_spec is Dictionary and airport_spec.has("airports"):
 				preload("res://scripts/terrain/regional_airport_grader.gd").apply(_full_heightmap_image, airport_spec, _airport_map_meta, min_elevation, max_elevation)
 		if terrain_material is ShaderMaterial and _full_watermask_image != null:
-			terrain_material.set_shader_parameter("coast_height_texture", ImageTexture.create_from_image(_full_heightmap_image))
+			_height_texture = ImageTexture.create_from_image(_full_heightmap_image)
+			terrain_material.set_shader_parameter("coast_height_texture", _height_texture)
 			terrain_material.set_shader_parameter("has_coast_height", true)
 		print("[TerrainChunkManager] Successfully loaded and carved heightmap: ", raw_path)
+		startup_timings["height_prepare_ms"] = Time.get_ticks_msec() - height_started
 	else:
 		push_error("[TerrainChunkManager] Heightmap not found at: " + raw_path)
 
@@ -263,6 +286,7 @@ func _build_all_chunks() -> void:
 			chunk_node.name = "Chunk_%d_%d" % [cx, cy]
 			chunk_node.init_chunk(coord, chunk_size_x, center_pos, sub_img, min_elevation, max_elevation)
 			chunk_node.railway_grader = _railway_grader
+			chunk_node.base_resolution = base_resolution
 			add_child(chunk_node)
 			
 			active_chunks[coord] = chunk_node
@@ -272,40 +296,71 @@ func _build_all_chunks() -> void:
 				return
 
 	print("[TerrainChunkManager] Initialized %d chunk tiles (%dx%d grid)" % [active_chunks.size(), grid_chunks_x, grid_chunks_y])
-	await _update_chunks_lod()
+	_update_chunks_lod()
+	await _wait_for_lod_builds()
 
 func _physics_process(_delta: float) -> void:
-	if load_complete and not _lod_busy and Engine.get_physics_frames() % 15 == 0:
-		_update_chunks_lod()
-
-func _update_chunks_lod() -> void:
-	if not player_node or _lod_busy:
+	if not load_complete:
 		return
-	_lod_busy = true
+	if Engine.get_physics_frames() % 15 == 0:
+		_update_chunks_lod()
+	# 작업 스레드에서 끝난 LOD 메시는 프레임당 하나씩 적용해 생성 순간의 끊김을 막는다.
+	_apply_finished_builds(1)
 
+## 지도 시작 시 첫 LOD 메시가 모두 준비될 때까지 기다린다.
+func _wait_for_lod_builds() -> void:
+	# 화면이 꺼진 로딩 중에는 코어를 더 써서 첫 메시를 빨리 만든다.
+	TerrainChunkClass.max_concurrent_builds = maxi(1, OS.get_processor_count() - 2)
+	while is_inside_tree():
+		_apply_finished_builds(active_chunks.size())
+		var remaining := _update_chunks_lod()
+		if remaining == 0:
+			break
+		load_status = "지형 상세도 준비: 남은 구역 %d" % remaining
+		await get_tree().process_frame
+	TerrainChunkClass.max_concurrent_builds = 1
+
+func _apply_finished_builds(limit: int) -> void:
+	var applied := 0
+	for chunk in active_chunks.values():
+		if applied >= limit:
+			break
+		if chunk.is_building() and chunk.poll_build(terrain_material):
+			applied += 1
+	if applied > 0:
+		_sync_road_lods()
+
+## LOD 목표를 정하고 메시 계산을 요청한다. 계산은 작업 스레드에서 진행된다.
+## 아직 목표 LOD에 도달하지 않은 청크 수를 반환한다.
+func _update_chunks_lod() -> int:
+	if not player_node:
+		return 0
+	var remaining := 0
 	var player_pos := player_node.global_position
 	var lod_changed: bool = false
+	# 계산 자리가 하나뿐이므로 가까운 청크부터 요청한다.
+	var order: Array = active_chunks.values()
+	order.sort_custom(func(a, b): return a.chunk_center.distance_squared_to(player_pos) < b.chunk_center.distance_squared_to(player_pos))
 
-	for coord in active_chunks.keys():
-		var chunk = active_chunks[coord]
+	for chunk in order:
 		var dist: float = chunk.chunk_center.distance_to(player_pos)
 
+		# 경계 왕복 시 메쉬가 반복 교체되지 않도록 상세 LOD는 여유 거리만큼 더 유지한다.
 		var target_lod: int = 2
-		if dist <= lod0_distance:
+		if dist <= lod0_distance or (chunk.current_lod == 0 and dist <= lod0_distance + LOD_HYSTERESIS):
 			target_lod = 0
-		elif dist <= lod1_distance:
+		elif dist <= lod1_distance or (chunk.current_lod == 1 and dist <= lod1_distance + LOD_HYSTERESIS):
 			target_lod = 1
 
 		if chunk.current_lod != target_lod:
 			chunk.update_lod(target_lod, terrain_material)
-			lod_changed = true
-			load_status = "지형 상세도 준비: " + str(coord)
-			await get_tree().process_frame
-			if not is_inside_tree():
-				return
+			# 캐시된 LOD는 즉시 바뀌므로 도로 LOD도 함께 맞춘다.
+			lod_changed = lod_changed or chunk.current_lod == target_lod
+			if chunk.current_lod != target_lod:
+				remaining += 1
 	if lod_changed:
 		_sync_road_lods()
-	_lod_busy = false
+	return remaining
 
 func create_road_material() -> Material:
 	if _full_heightmap_image == null:
@@ -316,7 +371,10 @@ func create_road_material() -> Material:
 	_sync_road_lods()
 	var material := ShaderMaterial.new()
 	material.shader = load("res://shaders/road_surface.gdshader")
-	material.set_shader_parameter("road_heightmap", ImageTexture.create_from_image(_full_heightmap_image))
+	if _height_texture == null:
+		_height_texture = ImageTexture.create_from_image(_full_heightmap_image)
+	material.set_shader_parameter("road_heightmap", _height_texture)
+	material.set_shader_parameter("terrain_base_resolution", float(base_resolution))
 	material.set_shader_parameter("terrain_lods", _road_lod_texture)
 	material.set_shader_parameter("chunk_counts", Vector2(grid_chunks_x, grid_chunks_y))
 	material.set_shader_parameter("world_size", terrain_world_size)

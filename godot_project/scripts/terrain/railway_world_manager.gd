@@ -8,6 +8,8 @@ const Landmarks = preload("res://scripts/terrain/railway_landmark_manager.gd")
 const Alignment = preload("res://scripts/terrain/railway_alignment_catalog.gd")
 const Tunnels = preload("res://scripts/terrain/railway_tunnel_world_manager.gd")
 const Formation = preload("res://scripts/terrain/railway_formation_builder.gd")
+const ChunkStream = preload("res://scripts/terrain/railway_chunk_stream.gd")
+const Quality = preload("res://scripts/models/render_quality_profile.gd")
 var _alignment: RefCounted
 var landmarks: Node3D
 
@@ -43,6 +45,10 @@ func setup(map_config, terrain: Node3D, player: Node3D) -> void:
 	for track in network.tracks:
 		_project_track(track, map_config, terrain)
 	_start_services(network, settings, profiles, map_config, terrain, player)
+	var stream := ChunkStream.new()
+	stream.name = "RailwayChunkStream"
+	add_child(stream)
+	stream.configure(player, terrain)
 	for track in network.tracks:
 		var points := _project_track(track, map_config, terrain)
 		var structure: Dictionary = track.duplicate()
@@ -50,17 +56,15 @@ func setup(map_config, terrain: Node3D, player: Node3D) -> void:
 		if structure.custom_bridge:
 			landmarks.place_bridge(track,points,terrain)
 		for chunk in _chunks(points):
-			var node := TrackBuilder.build(chunk, profiles[track.service], structure, float(settings.render_distance_m), terrain)
-			node.name = "Rail_%s_%s_%d" % [track.service, str(track.osm_id), count]
-			add_child(node)
-			var formation := Formation.build(chunk,terrain,structure)
-			if formation:
-				add_child(formation)
+			stream.append(chunk, profiles[track.service], structure)
 			count += 1
 			if count % 8 == 0:
 				await get_tree().process_frame
 				if not is_inside_tree():
 					return
+	await stream.prepare_initial()
+	if not is_inside_tree():
+		return
 	var tunnels := Tunnels.new()
 	tunnels.name = "RailwayTunnels"
 	add_child(tunnels)
@@ -83,7 +87,7 @@ func _start_services(network: Dictionary, settings: Dictionary, profiles: Dictio
 		opposite.configure(reverse_projected.points, reverse_projected.stops)
 		var service := TrainService.new()
 		service.name = str(data.service) + "_service"
-		service.configure(route, profiles[data.service], player, float(settings.time_scale), opposite, float(settings.render_distance_m))
+		service.configure(route, profiles[data.service], player, float(settings.time_scale), opposite, minf(float(settings.render_distance_m), float(Quality.current().view_distance)))
 		add_child(service)
 		services.append(service)
 	print("[RailwayWorldManager] 열차 운행 시작: %d개 노선, 표시 거리 %.0fm" % [services.size(), float(settings.render_distance_m)])

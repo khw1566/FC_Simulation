@@ -117,7 +117,7 @@ func _run() -> void:
 	camera.look_at(Vector3(0, 40, 0))
 	camera.make_current()
 	for lod in [0, 1, 2]:
-		chunk.update_lod(lod, terrain_material)
+		chunk.update_lod_now(lod, terrain_material)
 		terrain._sync_road_lods()
 		_expect("LOD_%d_동기화" % lod, is_equal_approx(terrain._road_lod_image.get_pixel(0, 0).r, float(lod)))
 		for i in range(3):

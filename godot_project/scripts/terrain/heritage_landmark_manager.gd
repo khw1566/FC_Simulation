@@ -3,6 +3,8 @@ class_name HeritageLandmarkManager
 
 const SPEC_PATH := "res://assets/generated/heritage/placement.json"
 var placements: Array[Dictionary] = []
+# 배치하지 않는 유적지 주변에서 같은 시설을 나타내는 범용 건물도 생략한다.
+var _suppressions: Array[Dictionary] = []
 var _height_cache: Dictionary = {}
 
 func setup(config, terrain: Node3D) -> void:
@@ -17,12 +19,17 @@ func setup(config, terrain: Node3D) -> void:
 		var lon: float = spec.anchor.lon
 		if lat < config.bbox_south or lat > config.bbox_north or lon < config.bbox_west or lon > config.bbox_east:
 			continue
+		var anchor := Vector3(((lon - config.bbox_west) / (config.bbox_east - config.bbox_west) - 0.5) * config.world_size_meters, 0, ((config.bbox_north - lat) / (config.bbox_north - config.bbox_south) - 0.5) * config.world_size_meters)
+		if spec.has("suppress_building_names"):
+			_suppressions.append({"center": Vector2(anchor.x, anchor.z), "radius": float(spec.get("suppress_radius_m", 200.0)), "names": spec.suppress_building_names})
+		if not bool(spec.get("placement_enabled", true)):
+			continue
 		var scene := load(str(spec.scene_path)) as PackedScene
 		if scene == null:
 			continue
 		var model := scene.instantiate() as Node3D
 		add_child(model)
-		model.position = Vector3(((lon - config.bbox_west) / (config.bbox_east - config.bbox_west) - 0.5) * config.world_size_meters, 0, ((config.bbox_north - lat) / (config.bbox_north - config.bbox_south) - 0.5) * config.world_size_meters)
+		model.position = anchor
 		model.scale = Vector3(config.world_size_meters / ((config.bbox_east - config.bbox_west) * 111320.0 * cos(deg_to_rad(lat))), 1, config.world_size_meters / ((config.bbox_north - config.bbox_south) * 111320.0))
 		_fit_terrain(model, spec, terrain)
 		placements.append({"model": model, "spec": spec})
@@ -82,7 +89,10 @@ func _gate_foundations(model: Node3D, gate: Dictionary, floor_y: float, terrain:
 	model.add_child(instance)
 	instance.create_trimesh_collision()
 
-func replaces_building(world_x: float, world_z: float) -> bool:
+func replaces_building(world_x: float, world_z: float, building_name: String = "") -> bool:
+	for zone in _suppressions:
+		if building_name in zone.names and Vector2(world_x, world_z).distance_to(zone.center) <= zone.radius:
+			return true
 	for placement in placements:
 		var point: Vector3 = placement.model.to_local(Vector3(world_x, 0, world_z))
 		if absf(point.x) > 240.0 or absf(point.z) > 240.0:

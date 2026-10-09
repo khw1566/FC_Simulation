@@ -9,11 +9,14 @@ static func build(roads: Array, placements: Array, terrain: Node3D) -> MeshInsta
 	var step := Vector2.ZERO
 	var origin := Vector2.ZERO
 	if is_instance_valid(terrain):
-		step = Vector2(terrain.terrain_world_size/terrain.grid_chunks_x/128.0,terrain.terrain_world_size/terrain.grid_chunks_y/128.0)
+		var resolution := float(terrain.base_resolution)
+		step = Vector2(terrain.terrain_world_size/terrain.grid_chunks_x/resolution,terrain.terrain_world_size/terrain.grid_chunks_y/resolution)
 		origin = Vector2.ONE*-terrain.terrain_world_size*0.5
 	var entries := roads.duplicate()
+	# 블록 배치 방식의 설비는 도로에 면해 있어 개별 진입로가 없다.
 	for placement in placements:
-		entries.append({"points_xz":placement.driveway_xz,"width_m":6.0})
+		if placement.has("driveway_xz"):
+			entries.append({"points_xz":placement.driveway_xz,"width_m":6.0})
 	for entry in entries:
 		var points: Array[Vector3] = []
 		var heights: Array[float] = []

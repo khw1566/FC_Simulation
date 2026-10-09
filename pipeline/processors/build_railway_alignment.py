@@ -105,14 +105,7 @@ class RailwayAlignmentBuilder:
                 half=8.5 if tunnel["service"]=="ktx" else 7.0
                 if mouth<35:
                     self.cut_portal(graded,p,size,half,mouth)
-        void=np.zeros((*raw.shape,4),dtype=np.uint8)
-        for track in tracks:
-            if not track["bridge"] and not track["tunnel"]:
-                for point in track["points"]:
-                    self.paint_void(void,point,size,meta,5.5,0)
-        for tunnel in tunnels:
-            for point in tunnel["points"]:
-                self.paint_void(void,point,size,meta,8.5 if tunnel["service"]=="ktx" else 7.0,11 if tunnel["service"]=="ktx" else 10)
+        void=self.build_void(raw.shape,tracks,tunnels,size,meta)
         destination=root/"godot_project/assets/generated/railway/alignment.json"
         payload={"version":1,"map_id":"ulsan_metro_80km","settings":settings,"tracks":tracks,"tunnels":tunnels}
         destination.write_text(json.dumps(payload,ensure_ascii=False,separators=(",",":")),encoding="utf-8")
@@ -234,6 +227,24 @@ class RailwayAlignmentBuilder:
         patch=graded[y0:y1,x0:x1]
         # 갱구 바닥과 바깥 절개는 지표가 통로를 막지 않도록 낮춘다.
         patch[mask]=point[1]-0.55
+
+    # 지형 제거는 갱구 주변으로 한정한다. 터널 전 구간에 칠하면 흙덮개가 얕은
+    # 구간이나 저해상도 지형 삼각형이 제거 범위로 내려와 지표에 구멍이 생긴다.
+    PORTAL_VOID_M = 60.0
+
+    def build_void(self, shape, tracks, tunnels, size, meta):
+        void=np.zeros((*shape,4),dtype=np.uint8)
+        for track in tracks:
+            if not track["bridge"] and not track["tunnel"]:
+                for point in track["points"]:
+                    self.paint_void(void,point,size,meta,5.5,0)
+        for tunnel in tunnels:
+            points=tunnel["points"]
+            along=np.r_[0,np.cumsum([math.dist(a,b) for a,b in zip(points,points[1:])])]
+            for point,distance in zip(points,along):
+                if min(distance,along[-1]-distance)<=self.PORTAL_VOID_M:
+                    self.paint_void(void,point,size,meta,8.5 if tunnel["service"]=="ktx" else 7.0,11 if tunnel["service"]=="ktx" else 10)
+        return void
 
     def paint_void(self, mask, point, size, meta, half, height):
         x=(point[0]/size+0.5)*(mask.shape[1]-1)

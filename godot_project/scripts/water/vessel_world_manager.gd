@@ -71,7 +71,8 @@ func _update_models(delta: float) -> void:
 			continue
 		var vessel: Node3D = _models.get(id)
 		if vessel == null:
-			vessel = _factory.instantiate(entry)
+			# 모델 준비 전에는 건너뛰고 다음 프레임에 다시 확인한다.
+			vessel = _factory.instantiate(entry, false)
 			if vessel == null:
 				continue
 			vessel.name = id
@@ -93,6 +94,9 @@ func _update_models(delta: float) -> void:
 			var current := vessel.basis.get_rotation_quaternion()
 			var angle := current.angle_to(target)
 			vessel.basis = Basis(current.slerp(target, minf(1.0, delta * 0.12 / maxf(angle, 0.0001))))
+
+func _exit_tree() -> void:
+	_factory.dispose()
 
 func _clear_models() -> void:
 	for wake in _wakes.values():

@@ -21,6 +21,9 @@ var _queue: Array = []
 var _content: Node3D
 var _factory := Factory.new()
 var _timer := 0.0
+# 높이 재정렬은 비용이 커서 갱신마다 일부 설비만 순환 처리한다.
+const POSE_REFRESH_PER_UPDATE := 200
+var _pose_cursor := 0
 
 func _ready() -> void:
 	set_process(false)
@@ -35,6 +38,11 @@ func _initialize() -> void:
 	while is_instance_valid(terrain_manager) and not terrain_manager.load_complete:
 		if not terrain_manager.load_error.is_empty():
 			return
+		await get_tree().process_frame
+		if not is_inside_tree():
+			return
+	var loader := get_node_or_null("/root/LoadingManagerService")
+	while loader and loader.is_loading:
 		await get_tree().process_frame
 		if not is_inside_tree():
 			return
@@ -91,6 +99,9 @@ func configure(catalog: Dictionary, preferences: Node = null) -> void:
 	load_complete = true
 	print("[IndustrialZoneManager] 공단 %d개, 설비 %d개 배치 데이터 로드" % [catalog.zones.size(),_entries.size()])
 
+func _exit_tree() -> void:
+	_factory.dispose()
+
 func set_enabled(value: bool) -> void:
 	enabled = value
 	if _content:
@@ -116,6 +127,10 @@ func _process(delta: float) -> void:
 		var entry: Dictionary = _queue.pop_front()
 		if not _wanted.has(entry.id) or _models.has(entry.id):
 			continue
+		# 모델은 작업 스레드에서 준비한다. 준비 전이면 대기열 끝으로 돌린다.
+		if not _factory.prepare(entry):
+			_queue.push_back(entry)
+			continue
 		var model := _factory.instantiate(entry)
 		if model:
 			model.transform = Placement.pose(entry,terrain_manager)
@@ -129,34 +144,51 @@ func _update_visibility() -> void:
 	_wanted.clear()
 	_queue.clear()
 	var viewer := player_node.global_position if is_instance_valid(player_node) else Vector3.ZERO
-	var candidates: Array = []
-	for entry in _entries:
-		var p: Array = entry.position
-		var distance := viewer.distance_to(Vector3(p[0],p[1],p[2]))
-		if distance<=float(_settings.get("detail_distance_m",2600)):
-			_wanted[entry.id] = true
-			if not _models.has(entry.id):
-				candidates.append({"entry":entry,"distance":distance})
+	var viewer_2d := Vector2(viewer.x, viewer.z)
+	var detail := float(_settings.get("detail_distance_m", 2600))
+	var render := float(_settings.get("render_distance_m", 9000))
+	# 청크 대각 길이만큼 여유를 두고 상세 범위에 걸치는 청크의 설비만 개별 검사한다.
+	var reach := detail + float(_settings.get("chunk_size_m", 600)) * 0.75
+	# 생성 대기열은 200m 거리 구간별로 모아 정렬 비용 없이 가까운 순서를 만든다.
+	var rings: Array = []
+	rings.resize(int(detail / 200.0) + 1)
+	for ring in rings.size():
+		rings[ring] = []
+	var nearby: Array = []
+	for key in _chunks:
+		var chunk: Dictionary = _chunks[key]
+		var chunk_distance := viewer_2d.distance_to(Vector2(chunk.center.x, chunk.center.z))
+		chunk.node.visible = chunk_distance <= render
+		if chunk_distance > reach:
+			continue
+		for entry in chunk.entries:
+			nearby.append(entry)
+			var p: Array = entry.position
+			var distance := viewer.distance_to(Vector3(p[0], p[1], p[2]))
+			if distance <= detail:
+				_wanted[entry.id] = true
+				if not _models.has(entry.id):
+					rings[mini(int(distance / 200.0), rings.size() - 1)].append(entry)
 	for id in _models.keys():
 		if not _wanted.has(id):
 			_models[id].free()
 			_models.erase(id)
-	for key in _chunks:
-		var chunk: Dictionary = _chunks[key]
-		chunk.node.visible = Vector2(viewer.x,viewer.z).distance_to(Vector2(chunk.center.x,chunk.center.z))<=float(_settings.get("render_distance_m",9000))
-	for entry in _entries:
+	# 주변 지형 LOD가 바뀌면 원경 상자와 상세 모델 높이를 다시 맞춘다. 새로 만든 모델은 생성 시 맞춘다.
+	var refresh_count := mini(POSE_REFRESH_PER_UPDATE, nearby.size())
+	for step in refresh_count:
+		_pose_cursor = (_pose_cursor + 1) % nearby.size()
+		var entry: Dictionary = nearby[_pose_cursor]
 		var slot: Dictionary = _slots[entry.id]
 		if _models.has(entry.id):
-			var pose := Placement.pose(entry,terrain_manager)
+			var pose := Placement.pose(entry, terrain_manager)
 			var model: Node3D = _models[entry.id]
-			if absf(model.position.y-pose.origin.y)>0.05:
+			if absf(model.position.y - pose.origin.y) > 0.05:
 				model.transform = pose
-				Placement.foundation(model,entry,terrain_manager)
+				Placement.foundation(model, entry, terrain_manager)
 		else:
-			slot.node.multimesh.set_instance_transform(slot.index,_coarse_pose(entry))
-	candidates.sort_custom(func(a,b): return a.distance<b.distance)
-	for candidate in candidates:
-		_queue.append(candidate.entry)
+			slot.node.multimesh.set_instance_transform(slot.index, _coarse_pose(entry))
+	for ring in rings:
+		_queue.append_array(ring)
 
 func _coarse_pose(entry: Dictionary) -> Transform3D:
 	var pose := Placement.pose(entry,terrain_manager)

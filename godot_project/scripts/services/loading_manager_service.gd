@@ -12,6 +12,9 @@ var _last_progress := 0.0
 var image_cache: Dictionary = {}
 var _image_job: Node
 const ImagePreloader = preload("res://scripts/services/map_image_preloader.gd")
+const Quality = preload("res://scripts/models/render_quality_profile.gd")
+var stage_timings: Dictionary = {}
+var _failed := false
 
 func transition_to_map() -> void:
 	if is_loading:
@@ -20,6 +23,9 @@ func transition_to_map() -> void:
 	if service == null or service.selected_map == null:
 		return
 	is_loading = true
+	_failed = false
+	get_node("/root/UserSettingsService").begin_map_session()
+	stage_timings = {"quality": Quality.current().id}
 	get_tree().root.disable_3d = true
 	_generation += 1
 	_started_ms = Time.get_ticks_msec()
@@ -42,10 +48,16 @@ func _progress(value: float, message: String) -> void:
 	if is_instance_valid(_loading_view):
 		_loading_view.set_progress(_last_progress, message)
 
+func _process(_delta: float) -> void:
+	# 이미지 스레드를 기다리는 동안에도 제한 시간과 취소 UI는 유지한다.
+	if is_loading and not _failed:
+		_timed_out()
+
 func _execute_load_sequence(generation: int) -> void:
 	await get_tree().process_frame
 	_progress(3, "지도 실행 준비")
 	var config = get_node("/root/MapSelectionService").selected_map
+	var height_path := Quality.heightmap_path(config)
 	while is_instance_valid(_image_job):
 		await get_tree().process_frame
 		if generation != _generation:
@@ -53,15 +65,18 @@ func _execute_load_sequence(generation: int) -> void:
 	var images := ImagePreloader.new()
 	_image_job = images
 	add_child(images)
-	var prepared := await images.prepare([config.heightmap_path, config.watermask_path, config.sea_mask_path, config.lake_mask_path, config.splatmap_path, config.tactical_map_path])
+	var image_started := Time.get_ticks_msec()
+	var prepared := await images.prepare([height_path, config.watermask_path, config.sea_mask_path, config.lake_mask_path, config.splatmap_path, config.tactical_map_path], height_path, int(Quality.current().height_width))
+	stage_timings["images_ms"] = Time.get_ticks_msec() - image_started
 	images.queue_free()
 	_image_job = null
 	if generation != _generation:
 		return
 	image_cache = prepared
-	if not image_cache.has(config.heightmap_path):
+	if not image_cache.has(height_path):
 		_fail("지도 높이맵을 읽지 못했습니다.")
 		return
+	var scene_started := Time.get_ticks_msec()
 	var error := ResourceLoader.load_threaded_request(MAIN_WORLD_PATH)
 	if error != OK:
 		_fail("월드 파일 읽기를 시작하지 못했습니다.")
@@ -80,6 +95,7 @@ func _execute_load_sequence(generation: int) -> void:
 			return
 		await get_tree().process_frame
 	var packed := ResourceLoader.load_threaded_get(MAIN_WORLD_PATH) as PackedScene
+	stage_timings["scene_read_ms"] = Time.get_ticks_msec() - scene_started
 	if packed == null or get_tree().change_scene_to_packed(packed) != OK:
 		_fail("월드 화면을 만들지 못했습니다.")
 		return
@@ -103,6 +119,9 @@ func _execute_load_sequence(generation: int) -> void:
 			else:
 				_progress(55 + 43 * vectors.load_progress, vectors.load_status)
 			if terrain.load_complete and vectors.load_complete:
+				stage_timings["total_ms"] = Time.get_ticks_msec() - _started_ms
+				stage_timings["terrain"] = terrain.startup_timings
+				print("[지도 준비 시간] ", JSON.stringify(stage_timings))
 				get_tree().root.disable_3d = false
 				if player != null:
 					player.process_mode = Node.PROCESS_MODE_INHERIT
@@ -122,6 +141,12 @@ func _timed_out() -> bool:
 	return false
 
 func _fail(message: String) -> void:
+	if _failed:
+		return
+	_failed = true
+	_generation += 1
+	if is_instance_valid(_image_job):
+		_image_job.cancel()
 	push_error(message)
 	_progress(_last_progress, "불러오기 중단: " + message)
 	# 실패 화면은 유지해 원인을 확인하고 선택 화면으로 돌아갈 수 있게 한다.

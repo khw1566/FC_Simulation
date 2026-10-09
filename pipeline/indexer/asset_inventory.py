@@ -5,7 +5,12 @@ import json
 from pathlib import Path
 
 CATEGORIES = {
+    'trees':'수목 및 원경 LOD',
+    'prebaked_rail_test':'철로 사전 보정 테스트 자산',
+    'terrain_quality':'품질별 지형 파생 자산',
     'industrial_zones':'공단 구역 마스크',
+    'road_assets':'모듈형 도로·보행로·교차로·데크',
+    'harbor_assets':'모듈형 항구·방파제·등대·하역시설',
     'industrial':'산업·공단', 'industrial_plant':'플랜트 탑·배관·연기',
     'industrial_lighting':'공단 야간 조명', 'vessels':'선박', 'wolsong':'발전소',
     'taehwagang':'역사·역세권', 'railway':'철도', 'railway_bridges':'철도교',
@@ -16,6 +21,7 @@ CATEGORIES = {
     'asset_metadata':'공통 에셋 메타데이터',
 }
 ROLES = {'.glb':'모델', '.tscn':'씬', '.scn':'씬', '.png':'이미지',
+         '.rf32z':'고도 래스터',
          '.f32':'고도 래스터',
          '.svg':'벡터 이미지', '.geojson':'지리 데이터', '.json':'데이터·메타데이터',
          '.md':'문서', '.gdshader':'셰이더', '.gdshaderinc':'셰이더', '.tres':'리소스'}
@@ -74,4 +80,10 @@ def collect(root, previous):
                           'resolution':entry.get('resolution',details.get('resolution')),
                           'label_ko':details.get('label_ko'),
                           'metadata_source': 'existing_manifest' if entry else None})
+            if details.get('detail_profile'):
+                files[-1].update(detail_profile=details['detail_profile'],
+                                 external_textures=details.get('external_textures'),
+                                 material_style=details.get('material_style'))
+                for field in ('triangles', 'triangle_count_method', 'indexed_geometry', 'collision_geometry_preserved', 'connections_preserved'):
+                    if field in details: files[-1][field]=details[field]
     return files,pending

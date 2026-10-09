@@ -3,6 +3,41 @@ class_name RailwayTerrainVoid
 
 const PATH = "res://assets/generated/railway/tunnel_void.png"
 static var _image: Image
+static var _bounds: Dictionary = {}
+static var _bounds_ready := false
+const BUCKET_SIZE := 512.0
+
+static func configure_bounds(_data: Dictionary) -> void:
+	_bounds.clear()
+	_bounds_ready = false
+	var manifest_path := "res://assets/generated/terrain_quality/ulsan_metro_80km/light/manifest.json"
+	if not FileAccess.file_exists(manifest_path):
+		return
+	var manifest = JSON.parse_string(FileAccess.get_file_as_string(manifest_path))
+	if not manifest is Dictionary:
+		return
+	var record: Dictionary = manifest.get("assets", {}).get("tunnel_buckets", {})
+	var path := str(record.get("file_path", ""))
+	if not FileAccess.file_exists(path):
+		return
+	var index = JSON.parse_string(FileAccess.get_file_as_string(path))
+	if not index is Dictionary or int(index.get("bucket_size", 0)) != int(BUCKET_SIZE):
+		return
+	var source := FileAccess.open(PATH, FileAccess.READ)
+	if source == null or source.get_length() != int(index.get("source_size", -1)) or FileAccess.get_modified_time(PATH) != int(index.get("source_modified", -1)):
+		return
+	for bucket in index.get("buckets", []):
+		_bounds[Vector2i(int(bucket[0]), int(bucket[1]))] = true
+	_bounds_ready = true
+
+static func _has_tunnel(lower: Vector2, upper: Vector2) -> bool:
+	if not _bounds_ready:
+		return true
+	for y in range(floori(lower.y / BUCKET_SIZE), floori(upper.y / BUCKET_SIZE) + 1):
+		for x in range(floori(lower.x / BUCKET_SIZE), floori(upper.x / BUCKET_SIZE) + 1):
+			if _bounds.has(Vector2i(x, y)):
+				return true
+	return false
 
 static func enabled() -> bool:
 	var tree := Engine.get_main_loop() as SceneTree
@@ -47,6 +82,8 @@ static func collision_shape(mesh: ArrayMesh,transform: Transform3D) -> Shape3D:
 static func intersects(a: Vector3,b: Vector3,c: Vector3) -> bool:
 	var lower := Vector2(minf(a.x,minf(b.x,c.x)),minf(a.z,minf(b.z,c.z)))
 	var upper := Vector2(maxf(a.x,maxf(b.x,c.x)),maxf(a.z,maxf(b.z,c.z)))
+	if not _has_tunnel(lower, upper):
+		return false
 	var size := _image.get_width()-1
 	var start := Vector2i((lower/80000.0+Vector2(0.5,0.5))*size)
 	var finish := Vector2i((upper/80000.0+Vector2(0.5,0.5))*size)+Vector2i.ONE

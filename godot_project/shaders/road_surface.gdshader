@@ -5,6 +5,7 @@ uniform sampler2D road_heightmap : filter_nearest, repeat_disable;
 uniform sampler2D terrain_lods : filter_nearest, repeat_disable;
 uniform vec2 chunk_counts = vec2(8.0);
 uniform float world_size = 60000.0;
+uniform float terrain_base_resolution = 128.0;
 uniform float min_elevation = -30.0;
 uniform float max_elevation = 1250.0;
 uniform float clearance = 1.2;
@@ -29,7 +30,7 @@ void vertex() {
 	vec2 tile_uv = map_uv * chunk_counts;
 	ivec2 tile = ivec2(floor(tile_uv));
 	float lod = texelFetch(terrain_lods, tile, 0).r;
-	float resolution = 128.0 / exp2(clamp(round(lod), 0.0, 2.0));
+	float resolution = terrain_base_resolution / exp2(clamp(round(lod), 0.0, 2.0));
 	ivec2 image_size = textureSize(road_heightmap, 0);
 	ivec2 tile_size = image_size / ivec2(chunk_counts);
 	ivec2 origin = tile * tile_size;

@@ -24,7 +24,8 @@ func _check() -> void:
 		manager.setup(config, terrain)
 		await physics_frame
 		await physics_frame
-		var expected := 0 if map_id == "kanmon_straits" else 2
+		# 울산왜성(학성공원)은 배치 제외 대상이므로 언양읍성만 배치된다.
+		var expected := 0 if map_id == "kanmon_straits" else 1
 		var valid: bool = manager.placements.size() == expected
 		var checks: Array = []
 		for placement in manager.placements:

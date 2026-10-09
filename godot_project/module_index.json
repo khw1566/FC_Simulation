@@ -25,7 +25,7 @@
             "get_terrain_elevation()",
             "get_water_mask()"
           ],
-          "lines": 344
+          "lines": 393
         },
         {
           "class_name": "TerrainChunk",
@@ -37,7 +37,7 @@
             "_rebuild_mesh()",
             "_sample_bilinear()"
           ],
-          "lines": 159
+          "lines": 185
         },
         {
           "class_name": "CoastlineWaterCarver",
@@ -60,7 +60,7 @@
             "_render_roads_and_tunnels_batched()",
             "is_point_in_tunnel()"
           ],
-          "lines": 576
+          "lines": 588
         },
         {
           "class_name": "RoadMeshBuilder",
@@ -82,9 +82,10 @@
           "responsibility": "폴리곤 돌출 빌딩 삼각화, 저층 결측 건물 높이 복원 휴리스틱, 경사지 하부 접지 스커트 및 박스 빌딩 3D 지오메트리 빌드 전담",
           "key_methods": [
             "build_chunk_buildings_mesh()",
-            "_add_quad()"
+            "_add_quad()",
+            "_round_polygon()"
           ],
-          "lines": 223
+          "lines": 240
         },
         {
           "class_name": "BreakwaterLighthouseRenderer",
@@ -200,17 +201,20 @@
         {
           "class_name": "HorizonHeightSampler",
           "path": "godot_project/scripts/terrain/horizon_height_sampler.gd",
-          "responsibility": "광역 축소 DEM의 지리 표본화 및 자료 범위 밖 외삽"
+          "responsibility": "광역 축소 DEM의 지리 표본화 및 자료 범위 밖 외삽",
+          "lines": 55
         },
         {
           "class_name": "HorizonRingBuilder",
           "path": "godot_project/scripts/terrain/horizon_ring_builder.gd",
-          "responsibility": "중앙을 비운 경량 원경 링과 경계 전이 생성"
+          "responsibility": "중앙을 비운 경량 원경 링과 경계 전이 생성",
+          "lines": 101
         },
         {
           "class_name": "HorizonTerrainManager",
           "path": "godot_project/scripts/terrain/horizon_terrain_manager.gd",
-          "responsibility": "상세 지형 준비 이후 지도별 독립 원경 메시 생성"
+          "responsibility": "상세 지형 준비 이후 지도별 독립 원경 메시 생성",
+          "lines": 106
         },
         {
           "class_name": "RailwayLandmarkManager",
@@ -240,7 +244,7 @@
           "class_name": "RailwayTerrainVoid",
           "path": "godot_project/scripts/terrain/railway_terrain_void.gd",
           "responsibility": "터널 통로의 지형 표시 및 충돌 제거와 탐색 바닥 높이",
-          "lines": 62
+          "lines": 99
         },
         {
           "class_name": "RailwayFormationBuilder",
@@ -257,7 +261,14 @@
             "cells()",
             "corrected_height()",
             "add_triangle()"
-          ]
+          ],
+          "lines": 104
+        },
+        {
+          "class_name": "RailwayChunkStream",
+          "path": "godot_project/scripts/terrain/railway_chunk_stream.gd",
+          "responsibility": "주변 철도 표시 청크 생성 및 해제",
+          "lines": 91
         }
       ]
     },
@@ -328,7 +339,7 @@
             "set_gear()",
             "adjust_accel_step()"
           ],
-          "lines": 385
+          "lines": 387
         }
       ]
     },
@@ -344,7 +355,7 @@
             "set_weather_system_enabled()",
             "set_cloud_quality()"
           ],
-          "lines": 200
+          "lines": 199
         },
         {
           "class_name": "CloudClusterManager",
@@ -411,7 +422,7 @@
             "save_settings()",
             "apply_to_engine()"
           ],
-          "lines": 84
+          "lines": 124
         },
         {
           "class_name": "DistrictModel",
@@ -445,7 +456,8 @@
         {
           "class_name": "AltitudeAtmosphereController",
           "path": "godot_project/scripts/services/altitude_atmosphere_controller.gd",
-          "responsibility": "카메라 고도에 따른 산란 셰이더와 원경 시야 갱신"
+          "responsibility": "카메라 고도에 따른 산란 셰이더와 원경 시야 갱신",
+          "lines": 33
         }
       ]
     },
@@ -461,7 +473,7 @@
             "_on_shadows_toggled()",
             "_on_cloud_quality_changed()"
           ],
-          "lines": 352
+          "lines": 366
         },
         {
           "class_name": "MapHUDView",
@@ -704,6 +716,11 @@
           "path": "pipeline/collectors/taehwa_bridge_collector.py",
           "description": "교량 원본 OSM 데이터 수집",
           "lines": 40
+        },
+        {
+          "path": "godot_project/scripts/terrain/structure_collision.gd",
+          "responsibility": "교량 등 고정 구조물 메시의 트라이메시 충돌체 일괄 생성",
+          "lines": 16
         }
       ]
     },
@@ -712,7 +729,7 @@
         {
           "path": "godot_project/scripts/services/custom_asset_catalog.gd",
           "description": "독립 커스텀 씬 목록 검색",
-          "lines": 43
+          "lines": 52
         },
         {
           "path": "godot_project/scripts/views/custom_asset_preview.gd",
@@ -823,18 +840,40 @@
         },
         {
           "path": "godot_project/scripts/terrain/vector_data_stream.gd",
-          "responsibility": "주변 구역 이동 스트리밍, 원거리 건물 해제, 실행 중 2ms 생성 예산, 캐시 무결성 검사",
-          "lines": 197
+          "responsibility": "주변 구역 이동 스트리밍, 작업 스레드 병렬 배치 준비, 원거리 건물·도로 해제, 실행 중 2ms 노드 생성 예산, 캐시 무결성 검사",
+          "lines": 296
         },
         {
           "path": "godot_project/scripts/services/map_image_preloader.gd",
           "responsibility": "백그라운드 이미지 읽기와 취소·중복 읽기 방지",
-          "lines": 44
+          "lines": 65
         },
         {
           "path": "godot_project/scripts/terrain/map_loading_smoke.gd",
           "responsibility": "실제 80km 진입·중복 요청·취소 복구·프레임 지연 측정",
           "lines": 76
+        },
+        {
+          "path": "pipeline/processors/building_optimizer.py",
+          "responsibility": "스트림 건물 자료 최적화: 소형 부지 제외, 밑면 폴리곤 단순화, 원형 곡면 건물의 타원 매개변수(round) 변환",
+          "lines": 140
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_collision_stream.gd",
+          "responsibility": "플레이어 주변 건물 청크에만 충돌체 생성·해제(보관 정점으로 작업 스레드 형상 생성, 고고도 생략)",
+          "lines": 96
+        },
+        {
+          "class_name": "RoadBatchBuilder",
+          "path": "godot_project/scripts/terrain/road_batch_builder.gd",
+          "responsibility": "스트리밍 도로 배치의 메타데이터 보정·중복 키 계산·메시 배열과 교량 충돌 형상 작업 스레드 계산, 메인 스레드 노드 조립",
+          "lines": 155
+        },
+        {
+          "class_name": "ThreadedSceneCache",
+          "path": "godot_project/scripts/core/threaded_scene_cache.gd",
+          "responsibility": "GLB 공단·선박 모델 PackedScene의 작업 스레드 준비와 실패 결과 캐시",
+          "lines": 45
         }
       ]
     },
@@ -1106,7 +1145,7 @@
         {
           "path": "pipeline/processors/vessels/generate.py",
           "responsibility": "독립 선박 모델과 씬, 자산 매니페스트 생성",
-          "lines": 82
+          "lines": 83
         }
       ]
     },
@@ -1133,13 +1172,13 @@
     "ulsan_railways": {
       "modules": [
         {
-          "lines": 158,
+          "lines": 162,
           "path": "godot_project/scripts/terrain/railway_world_manager.gd",
           "class_name": "RailwayWorldManager",
           "responsibility": "울산 실제 철도 자산 투영, 거리별 선로 청크 및 운행 서비스 구성"
         },
         {
-          "lines": 111,
+          "lines": 114,
           "path": "godot_project/scripts/terrain/railway_track_builder.gd",
           "class_name": "RailwayTrackBuilder",
           "responsibility": "노선별 도상·레일·침목·전차선·교량 지지대 생성"
@@ -1203,6 +1242,11 @@
           "class_name": "RailwayPipelineEntry",
           "responsibility": "철도 원본 수집 선택 및 자산 재생성 진입점",
           "path": "pipeline/run_railways.ps1"
+        },
+        {
+          "path": "pipeline/processors/rebuild_tunnel_void.py",
+          "responsibility": "기존 철도 종단으로 갱구 주변 터널 지형 제거 마스크만 재생성",
+          "lines": 34
         }
       ],
       "description": "울산광역시 동해선·경부고속선 선로 및 주기 운행 열차"
@@ -1408,7 +1452,8 @@
         {
           "class_name": "AtmosphereHorizonCheck",
           "path": "godot_project/scripts/core/atmosphere_horizon_check.gd",
-          "responsibility": "고도별 하늘과 원경 경량 검증"
+          "responsibility": "고도별 하늘과 원경 경량 검증",
+          "lines": 105
         }
       ]
     },
@@ -1435,7 +1480,14 @@
         {
           "class_name": "AtmosphereScatteringModel",
           "path": "godot_project/scripts/models/atmosphere_scattering_model.gd",
-          "responsibility": "광학용 지수 대기 밀도와 곡면 광학 경로 근사"
+          "responsibility": "광학용 지수 대기 밀도와 곡면 광학 경로 근사",
+          "lines": 24
+        },
+        {
+          "class_name": "RenderQualityProfile",
+          "path": "godot_project/scripts/models/render_quality_profile.gd",
+          "responsibility": "지도 시작 품질 정책",
+          "lines": 48
         }
       ]
     },
@@ -1445,7 +1497,8 @@
         {
           "class_name": "HorizonTerrainBuilder",
           "path": "pipeline/processors/build_horizon_terrain.py",
-          "responsibility": "기존 DEM 축소 아틀라스와 해시 매니페스트 생성"
+          "responsibility": "기존 DEM 축소 아틀라스와 해시 매니페스트 생성",
+          "lines": 60
         },
         {
           "class_name": "RailwayLandmarkPlacementBuilder",
@@ -1586,7 +1639,7 @@
         },
         {
           "path": "pipeline/processors/industrial/generate.py",
-          "lines": 94,
+          "lines": 96,
           "responsibility": "범용 산업 에셋과 무작위 배치용 메타데이터 생성."
         },
         {
@@ -1633,7 +1686,7 @@
         },
         {
           "path": "pipeline/processors/industrial_plant/generate.py",
-          "lines": 127
+          "lines": 129
         },
         {
           "path": "pipeline/processors/industrial_plant/routing.py",
@@ -1645,7 +1698,7 @@
         },
         {
           "path": "pipeline/processors/industrial_plant/verify_preview.py",
-          "lines": 92
+          "lines": 94
         },
         {
           "path": "pipeline/processors/industrial_plant/__init__.py",
@@ -1740,27 +1793,12 @@
         {
           "path": "pipeline/processors/industrial_zones/site_inputs.py",
           "responsibility": "지형·수계·기존 시설 점유 형상과 배치 제외 영역",
-          "lines": 138
-        },
-        {
-          "path": "pipeline/processors/industrial_zones/road_graph.py",
-          "responsibility": "기존 도로에 연결되는 내부 도로 그래프",
-          "lines": 96
-        },
-        {
-          "path": "pipeline/processors/industrial_zones/parcel_builder.py",
-          "responsibility": "도로 사이 배치 가능 필지 분할",
-          "lines": 20
-        },
-        {
-          "path": "pipeline/processors/industrial_zones/asset_placer.py",
-          "responsibility": "설비 전체 점유 형상과 진입 공간 검사",
-          "lines": 71
+          "lines": 151
         },
         {
           "path": "pipeline/processors/industrial_zones/build_sites.py",
-          "responsibility": "안전 후보 선택과 공단 생성·매니페스트·검토 이미지 출력",
-          "lines": 223
+          "responsibility": "OSM 공단 구역의 블록 분할·용도 배치·연결 설비 생성과 배치도·매니페스트·건물 대체 영역 발행",
+          "lines": 177
         },
         {
           "path": "godot_project/scripts/terrain/industrial_asset_factory.gd",
@@ -1775,12 +1813,57 @@
         {
           "path": "godot_project/scripts/terrain/industrial_road_builder.gd",
           "responsibility": "기존 도로 지형 밀착 방식의 공단 도로와 진입로",
-          "lines": 33
+          "lines": 36
         },
         {
           "path": "godot_project/scripts/terrain/industrial_zone_manager.gd",
           "responsibility": "공단 로드·청크 거리 표시·상세 모델 생성 예산과 설정 토글",
-          "lines": 168
+          "lines": 193
+        },
+        {
+          "path": "pipeline/collectors/industrial_landuse_collector.py",
+          "responsibility": "울산 80km 범위 OSM 산업·항만 용지 경계 타일 분할 수집",
+          "lines": 82
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/landuse_zones.py",
+          "responsibility": "OSM 산업 용지 병합·소형 제외·이름 기반 프로필 추정으로 공단 구역 생성",
+          "lines": 103
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/block_divider.py",
+          "responsibility": "기존 도로와 재귀 분할 도로로 공단 블록 분할 및 도로망 접속",
+          "lines": 131
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/block_signals.py",
+          "responsibility": "블록 안 기존 건물 원형 비율·크기·이름의 용도 단서 추출",
+          "lines": 56
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/district_planner.py",
+          "responsibility": "저장고·공정·공장·조선소·물류·지원 시설 블록 용도 지정",
+          "lines": 118
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/district_fillers.py",
+          "responsibility": "용도별 단계 배치(대형 설비 후 틈 채움) 블록 방향 정렬 채움",
+          "lines": 131
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/district_links.py",
+          "responsibility": "저장고-공정 파이프랙과 지원 시설 송전탑 선로 연결",
+          "lines": 76
+        },
+        {
+          "path": "pipeline/processors/industrial_zones/asset_catalog.py",
+          "responsibility": "산업·플랜트 카탈로그 통합과 footprint·랙 부착 보강",
+          "lines": 30
+        },
+        {
+          "path": "godot_project/scripts/terrain/industrial_building_suppression.gd",
+          "responsibility": "공단 구역 안 범용 건물 생성 제외(공단 표시 설정 연동)",
+          "lines": 32
         }
       ]
     },
@@ -1819,27 +1902,33 @@
       "modules": [
         {
           "path": "pipeline/collectors/regional_elevation_tiles.py",
-          "responsibility": "공개 고도 타일 수집·캐시"
+          "responsibility": "공개 고도 타일 수집·캐시",
+          "lines": 65
         },
         {
           "path": "pipeline/processors/regional_horizon_atlas.py",
-          "responsibility": "Web Mercator 고도 래스터 변환"
+          "responsibility": "Web Mercator 고도 래스터 변환",
+          "lines": 39
         },
         {
           "path": "pipeline/processors/build_horizon_terrain.py",
-          "responsibility": "상세 경계와 광역 DEM 색인"
+          "responsibility": "상세 경계와 광역 DEM 색인",
+          "lines": 60
         },
         {
           "path": "godot_project/scripts/terrain/horizon_height_sampler.gd",
-          "responsibility": "광역 지리 좌표 표본"
+          "responsibility": "광역 지리 좌표 표본",
+          "lines": 55
         },
         {
           "path": "godot_project/scripts/terrain/horizon_ring_builder.gd",
-          "responsibility": "곡률·경사 법선 메쉬 배열 생성"
+          "responsibility": "곡률·경사 법선 메쉬 배열 생성",
+          "lines": 101
         },
         {
           "path": "godot_project/scripts/terrain/horizon_terrain_manager.gd",
-          "responsibility": "비동기 원경 생성과 지형 디자인 연결"
+          "responsibility": "비동기 원경 생성과 지형 디자인 연결",
+          "lines": 106
         },
         {
           "path": "godot_project/shaders/horizon_terrain.gdshader",
@@ -1847,7 +1936,8 @@
         },
         {
           "path": "previews/high_altitude_check/check.gd",
-          "responsibility": "게임과 분리된 원경 확인"
+          "responsibility": "게임과 분리된 원경 확인",
+          "lines": 111
         }
       ]
     },
@@ -1863,6 +1953,318 @@
           "path": "pipeline/packaging/pack_project.gd",
           "responsibility": "원본 데이터와 임포트 자산의 PCK 생성",
           "lines": 25
+        }
+      ]
+    },
+    "quality_pipeline": {
+      "description": "품질별 경량 파생 지형 생성",
+      "modules": [
+        {
+          "path": "pipeline/processors/build_quality_variants.py",
+          "responsibility": "안정된 원본에서 16bit 경량 높이맵 및 매니페스트 생성",
+          "lines": 135
+        }
+      ]
+    },
+    "prebaked_rail_test": {
+      "description": "철로 사전 보정 독립 테스트맵",
+      "modules": [
+        {
+          "class_name": "PrebakedRailTestBuilder",
+          "path": "pipeline/processors/build_prebaked_rail_test.py",
+          "responsibility": "실제 울산 소구역 추출, 격리 생성, 매니페스트 및 독립 실행 프로젝트 구성",
+          "lines": 194
+        },
+        {
+          "class_name": "PrebakedRailBaker",
+          "path": "godot_project/scripts/testing/prebaked_rail_baker.gd",
+          "responsibility": "사전 보정 지형 3품질 및 고정 충돌, 선로·노반·터널 씬 저장",
+          "lines": 129
+        },
+        {
+          "class_name": "PrebakedRailSampler",
+          "path": "godot_project/scripts/testing/prebaked_rail_sampler.gd",
+          "responsibility": "생성 전용 16bit 고도 추출 및 터널 충돌 삼각형 제외",
+          "lines": 50
+        },
+        {
+          "class_name": "PrebakedRailTest",
+          "path": "godot_project/scripts/testing/prebaked_rail_test.gd",
+          "responsibility": "완성 자산 3개 읽기·배치, 품질 선택과 준비 시간 표시",
+          "lines": 140
+        },
+        {
+          "class_name": "PrebakedRailCamera",
+          "path": "godot_project/scripts/testing/prebaked_rail_camera.gd",
+          "responsibility": "저장된 충돌체를 사용하는 테스트 비행 및 시점 제어",
+          "lines": 29
+        }
+      ]
+    },
+    "road_assets": {
+      "description": "혼합 도로·보행로·교차로·데크 독립 에셋",
+      "modules": [
+        {
+          "path": "pipeline/processors/road_assets/__init__.py",
+          "lines": 2,
+          "responsibility": "혼합 조립용 도로·보행로 에셋 생성 모듈 색인."
+        },
+        {
+          "path": "pipeline/processors/road_assets/accessories.py",
+          "lines": 120,
+          "responsibility": "교차로·폭 전환·경계 부재와 독립 노면 표시 생성."
+        },
+        {
+          "path": "pipeline/processors/road_assets/assembly.py",
+          "lines": 71,
+          "responsibility": "씬의 연결 Marker3D와 게임에 연결하지 않는 혼합 조립 예제."
+        },
+        {
+          "path": "pipeline/processors/road_assets/cached_mesh.py",
+          "lines": 26,
+          "responsibility": "기존 도로 GLB를 읽기 전용 프리뷰 메시로 변환."
+        },
+        {
+          "path": "pipeline/processors/road_assets/decks.py",
+          "lines": 159,
+          "responsibility": "공통 보행 단면을 사용하는 데크·광장·분기·경사로·난간·지지대."
+        },
+        {
+          "path": "pipeline/processors/road_assets/extension_assembly.py",
+          "lines": 69,
+          "responsibility": "혼합 교차로와 기존 보행로·데크를 연결하는 독립 조립 예제."
+        },
+        {
+          "path": "pipeline/processors/road_assets/extensions.py",
+          "lines": 110,
+          "responsibility": "기존 에셋을 보존하며 혼합 교차로·데크 확장만 생성하고 등록."
+        },
+        {
+          "path": "pipeline/processors/road_assets/generate.py",
+          "lines": 170,
+          "responsibility": "독립 도로 에셋 생성과 카탈로그·매니페스트·모듈 색인 등록."
+        },
+        {
+          "path": "pipeline/processors/road_assets/junctions.py",
+          "lines": 77,
+          "responsibility": "서로 다른 차선 수를 연결하는 교차로 중심·진입·표시 모듈."
+        },
+        {
+          "path": "pipeline/processors/road_assets/low_detail.py",
+          "lines": 25,
+          "responsibility": "접속 규격을 보존하는 낮은 세분화와 단색 표면 표현."
+        },
+        {
+          "path": "pipeline/processors/road_assets/mesh.py",
+          "lines": 92,
+          "responsibility": "도로 전용 재질과 메시·GLB 작성기."
+        },
+        {
+          "path": "pipeline/processors/road_assets/preview.py",
+          "lines": 58,
+          "responsibility": "실제 생성 메시를 독립 이미지로 투영하는 경량 프리뷰."
+        },
+        {
+          "path": "pipeline/processors/road_assets/profiles.py",
+          "lines": 92,
+          "responsibility": "도로·보행로 유형과 연결 규격 정의."
+        },
+        {
+          "path": "pipeline/processors/road_assets/surfaces.py",
+          "lines": 100,
+          "responsibility": "차도·보행로 표면과 패턴 생성."
+        }
+      ]
+    },
+    "rail_bridge_lowpoly": {
+      "description": "철로·교량 정적 씬의 격리 경량화 및 충돌·접속점 보존",
+      "modules": [
+        {
+          "path": "pipeline/processors/rail_bridge_lowpoly/__init__.py",
+          "lines": 2
+        },
+        {
+          "path": "pipeline/processors/rail_bridge_lowpoly/audit.gd",
+          "lines": 145
+        },
+        {
+          "path": "pipeline/processors/rail_bridge_lowpoly/build.py",
+          "lines": 102
+        },
+        {
+          "path": "pipeline/processors/rail_bridge_lowpoly/capture.gd",
+          "lines": 72
+        },
+        {
+          "path": "pipeline/processors/rail_bridge_lowpoly/presets.py",
+          "lines": 19
+        },
+        {
+          "path": "pipeline/processors/rail_bridge_lowpoly/publish.py",
+          "lines": 140
+        },
+        {
+          "path": "pipeline/processors/rail_bridge_lowpoly/tracks.gd",
+          "lines": 43
+        }
+      ]
+    },
+    "custom_lowpoly": {
+      "description": "커스텀 정적 모델 격리 경량화",
+      "modules": [
+        {
+          "path": "pipeline/processors/custom_lowpoly/__init__.py",
+          "lines": 2
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/audit.gd",
+          "lines": 145
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/build.py",
+          "lines": 92
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/capture.gd",
+          "lines": 72
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/export.gd",
+          "lines": 41
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/glb.py",
+          "lines": 63
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/models.py",
+          "lines": 53
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/presets.py",
+          "lines": 32
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/publish.py",
+          "lines": 134
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/runway_label.gd",
+          "lines": 26
+        },
+        {
+          "path": "pipeline/processors/custom_lowpoly/verify_glb.gd",
+          "lines": 28
+        }
+      ]
+    },
+    "harbor_assets": {
+      "description": "지형에 조합 배치하는 저다각형 항구 모듈·접속 규약",
+      "modules": [
+        {
+          "path": "pipeline/processors/harbor_assets/__init__.py",
+          "lines": 2,
+          "responsibility": "지형에 조합하여 놓는 저다각형 항구 모듈."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/assemblies.py",
+          "lines": 75,
+          "responsibility": "독립 조립 예제. 실제 항구 좌표나 배치 데이터를 만들지 않는다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/asset.py",
+          "lines": 39,
+          "responsibility": "모델 기하와 지형 기준·접속점·간단한 충돌을 함께 기록한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/breakwaters.py",
+          "lines": 70,
+          "responsibility": "직선·곡선 방파제와 개별 테트라포드. 상부와 기초를 분리한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/check.py",
+          "lines": 50,
+          "responsibility": "원본 임포터 없이 격리 복사본의 GLB·씬·포트·조립을 확인한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/containers.py",
+          "lines": 40,
+          "responsibility": "6m·12m 게임용 컨테이너와 저다각형 적재 묶음. 실측 규격 아님."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/cranes.py",
+          "lines": 60,
+          "responsibility": "사진 참고 어선 인양 크레인과 컨테이너 크레인의 고정 포즈."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/generate.py",
+          "lines": 77,
+          "responsibility": "저다각형 항구 모듈 생성. 지리 배치나 게임 연결을 수행하지 않는다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/infrastructure.py",
+          "lines": 106,
+          "responsibility": "계류·충격 완충·하역·어시장·설비와 레일 등 작은 항구 기반시설."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/lighthouses.py",
+          "lines": 45,
+          "responsibility": "색과 실루엣이 다른 등대 6종. 렌즈는 단색 발광으로만 표현한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/mesh.py",
+          "lines": 44,
+          "responsibility": "무광 단색 항구 기하. 기본 회전체는 6~8면만 사용한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/publish.py",
+          "lines": 53,
+          "responsibility": "새 항구 계열만 등록하며 공유 매니페스트는 기존 항목을 보존한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/quays.py",
+          "lines": 70,
+          "responsibility": "부두 상판·벽·지지대·높이 전환. 기초는 지형에 따라 독립 선택한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/scenes.py",
+          "lines": 54,
+          "responsibility": "GLB를 참조하고 접속 Marker3D·간단한 충돌·선택 조명을 저장한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/terrain_fit.py",
+          "lines": 46,
+          "responsibility": "지도 실행 없이 DEM 표본을 입력받아 지지대 길이와 배치 높이를 제안한다."
+        },
+        {
+          "path": "pipeline/processors/harbor_assets/verify.gd",
+          "lines": 63,
+          "responsibility": "extends SceneTree"
+        }
+      ]
+    },
+    "trees": {
+      "description": "경량 수목 4종, 3단계 LOD 및 MultiMesh 청크 배치",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/tree_geometry.gd",
+          "lines": 81
+        },
+        {
+          "path": "godot_project/scripts/vegetation/tree_batch_factory.gd",
+          "lines": 38
+        },
+        {
+          "path": "pipeline/processors/trees/generate.py",
+          "lines": 86
+        },
+        {
+          "path": "pipeline/processors/trees/export_trees.gd",
+          "lines": 43
+        },
+        {
+          "path": "pipeline/processors/trees/capture.gd",
+          "lines": 61
         }
       ]
     }

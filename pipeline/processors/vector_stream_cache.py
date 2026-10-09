@@ -7,8 +7,10 @@ from pathlib import Path
 
 
 class VectorStreamCache:
-    def __init__(self, source):
+    def __init__(self, source, optimizer=None):
         self.source = Path(source)
+        # 건물 최적화기를 주면 출력 폴더와 인덱스에 최적화 판을 기록한다.
+        self.optimizer = optimizer
 
     def items(self):
         decoder = json.JSONDecoder()
@@ -73,7 +75,8 @@ class VectorStreamCache:
     def build(self):
         with self.source.open("rb") as source_file:
             digest = hashlib.file_digest(source_file, "sha256").hexdigest()
-        folder = self.source.parent / "vector_stream" / digest[:16]
+        folder_name = digest[:16] if self.optimizer is None else f"{digest[:16]}_b{self.optimizer.VERSION}"
+        folder = self.source.parent / "vector_stream" / folder_name
         folder.mkdir(parents=True, exist_ok=True)
         batches, buckets, counts = [], defaultdict(list), defaultdict(int)
         pending = 0
@@ -89,10 +92,14 @@ class VectorStreamCache:
             radius = 1100
             if kind == "roads":
                 radius = max([math.hypot(p[0] - center[0], p[2] - center[1]) for item in items for p in item.get("points", [])] or [1100])
-            batches.append({"kind": kind, "file": f"{digest[:16]}/{name}", "count": len(items), "center": center, "radius": radius, "sha256": hashlib.sha256(raw).hexdigest()})
+            batches.append({"kind": kind, "file": f"{folder_name}/{name}", "count": len(items), "center": center, "radius": radius, "sha256": hashlib.sha256(raw).hexdigest()})
             pending -= len(items)
 
         for kind, item in self.items():
+            if kind == "buildings" and self.optimizer is not None:
+                item = self.optimizer.optimize(item)
+                if item is None:
+                    continue
             counts[kind] += 1
             x = z = 0
             if kind == "buildings":
@@ -115,6 +122,8 @@ class VectorStreamCache:
         for key in list(buckets):
             flush(key)
         index = {"version": 1, "source_size": self.source.stat().st_size, "source_modified": int(self.source.stat().st_mtime), "source_sha256": digest, "counts": counts, "batches": batches}
+        if self.optimizer is not None:
+            index["building_optimization"] = {"parameters": self.optimizer.parameters(), "stats": dict(self.optimizer.stats)}
         index_path = folder.parent / "index.json"
         temporary = index_path.with_suffix(".tmp")
         temporary.write_text(json.dumps(index, ensure_ascii=False), encoding="utf-8")
@@ -130,17 +139,25 @@ class VectorStreamCache:
             return
         meta = json.loads(meta_path.read_text(encoding="utf-8-sig"))
         entry = {"file_path": "res://" + index_path.relative_to(root / "godot_project").as_posix(), "sha256": hashlib.sha256(index_path.read_bytes()).hexdigest(), "bbox": meta["bbox"], "elevation": {"min_meters": meta["min_elevation"], "max_meters": meta["max_elevation"]}, "resolution": {"type": "spatial_vector_batches", "batches": len(index["batches"]), "counts": index["counts"]}, "metadata": {"source_sha256": index["source_sha256"], "batch_hashes": "각 배치의 SHA-256은 인덱스에 기록"}}
+        if "building_optimization" in index:
+            entry["metadata"]["building_optimization"] = index["building_optimization"]
         for path in [self.source.parent / "manifest.json", root / "godot_project/assets/generated/manifest.json"]:
-            document = json.loads(path.read_text(encoding="utf-8-sig")) if path.exists() else {"assets": {}}
+            before = path.read_bytes() if path.exists() else None
+            document = json.loads(before.decode("utf-8-sig")) if before is not None else {"assets": {}}
             document.setdefault("assets", {})[meta["id"] + "_vector_stream"] = entry
             temp = path.with_suffix(".tmp")
             temp.write_text(json.dumps(document, ensure_ascii=False, indent=2), encoding="utf-8")
+            # 다른 작업이 같은 매니페스트를 고친 경우 덮어쓰지 않는다.
+            if (path.read_bytes() if path.exists() else None) != before:
+                temp.unlink()
+                raise RuntimeError(f"동시 변경으로 매니페스트 갱신 보류: {path}")
             temp.replace(path)
 
 
 if __name__ == "__main__":
     import sys
     root = Path(__file__).resolve().parents[2]
+    from building_optimizer import BuildingOptimizer
     for name in sys.argv[1:] or ["ulsan_metro_80km", "southeast_mega_140km"]:
-        VectorStreamCache(root / "godot_project/assets/maps" / name / "buildings_and_roads.json").build()
+        VectorStreamCache(root / "godot_project/assets/maps" / name / "buildings_and_roads.json", BuildingOptimizer()).build()
 

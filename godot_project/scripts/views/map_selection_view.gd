@@ -28,14 +28,37 @@ signal language_toggled()
 @onready var enter_button: Button = $RootMargin/MainLayout/BodyLayout/RightPanel/DetailMargin/DetailVBox/BottomActions/EnterButton
 
 var _map_buttons: Dictionary = {}
+const Quality = preload("res://scripts/models/render_quality_profile.gd")
 const CATEGORIES := ["japan", "korea", "testing"]
 const CATEGORY_NAMES := {"japan": ["일본", "Japan"], "korea": ["한국", "Korea"], "testing": ["테스팅", "Testing"]}
 
 func _ready() -> void:
+	_add_quality_selector()
 	if lang_button:
 		lang_button.pressed.connect(func(): language_toggled.emit())
 	if enter_button:
 		enter_button.pressed.connect(func(): enter_world_requested.emit())
+
+func _add_quality_selector() -> void:
+	var row := VBoxContainer.new()
+	var label := Label.new()
+	label.text = "시작 품질"
+	row.add_child(label)
+	var selector := OptionButton.new()
+	selector.name = "QualitySelector"
+	for title in ["경량 (기본) · 빠른 시작", "표준 · 균형", "고품질 · 상세 표시"]:
+		selector.add_item(title)
+	selector.custom_minimum_size = Vector2(230, 36)
+	row.add_child(selector)
+	var settings := get_node_or_null("/root/UserSettingsService")
+	selector.select(Quality.IDS.find(settings.render_quality) if settings else 0)
+	selector.item_selected.connect(func(index: int):
+		if settings:
+			settings.set_render_quality(Quality.IDS[index]))
+	selector.tooltip_text = "지도·지형·건물·철도 상세 범위를 함께 변경합니다. 적용은 다음 지도 시작 시 이루어집니다."
+	var actions := enter_button.get_parent()
+	actions.add_child(row)
+	actions.move_child(row, 0)
 
 func populate_map_list(maps: Array, selected_id: String, lang: String) -> void:
 	for child in map_list_container.get_children():

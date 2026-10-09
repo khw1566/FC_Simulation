@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "units": "meters",
+  "grid_m": 6,
+  "deck_surface_y_m": 0,
+  "sea_side_local_axis": "+X",
+  "connector_forward_axis": "-Z outward",
+  "detail_profile": "harbor_low_poly_flat_v1",
+  "max_triangles_per_model": 1800,
+  "external_textures": false,
+  "auto_apply": false,
+  "note_ko": "게임용 범용 모듈. 실제 항구 좌표·표고·시설 규격은 지정하지 않음. 지형과 수위 확인 후 독립 부재를 조립한다."
+}

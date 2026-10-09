@@ -21,7 +21,16 @@ static func emission_material(color: Color, power: float) -> StandardMaterial3D:
 	material.roughness = 0.55
 	return material
 
+## 같은 색·크기의 표시 재질과 그라디언트 텍스처를 공유한다. 청크·열차마다 새로 만들면 텍스처 생성과 재질 전환이 늘어난다.
+static var _marker_materials: Dictionary = {}
+
 static func marker_material(color: Color, _diameter: float, pixels: float) -> StandardMaterial3D:
+	var key := "%s|%.3f" % [color.to_html(), pixels]
+	if not _marker_materials.has(key):
+		_marker_materials[key] = _new_marker_material(color, pixels)
+	return _marker_materials[key]
+
+static func _new_marker_material(color: Color, pixels: float) -> StandardMaterial3D:
 	var material := StandardMaterial3D.new()
 	material.shading_mode = BaseMaterial3D.SHADING_MODE_UNSHADED
 	material.billboard_mode = BaseMaterial3D.BILLBOARD_ENABLED

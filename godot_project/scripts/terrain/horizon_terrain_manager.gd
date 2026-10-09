@@ -39,6 +39,9 @@ func _process(_delta: float) -> void:
 		return
 	if terrain_manager and not terrain_manager.load_complete:
 		return
+	var loader := get_node_or_null("/root/LoadingManagerService")
+	if loader and loader.is_loading:
+		return
 	# 메인 스레드에서는 상세 경계만 읽고 광역 표본·메쉬 배열 계산은 별도 스레드에서 수행한다.
 	var edges := PackedFloat32Array()
 	if terrain_manager:

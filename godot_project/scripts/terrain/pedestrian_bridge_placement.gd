@@ -4,6 +4,7 @@ class_name PedestrianBridgePlacement
 const CATALOG := "res://assets/generated/pedestrian_bridges/placements.json"
 const Geometry = preload("res://scripts/terrain/bridge_geometry.gd")
 const DeckBuilder = preload("res://scripts/terrain/bridge_landmark_builder.gd")
+const Collision = preload("res://scripts/terrain/structure_collision.gd")
 var replaced_osm_ids: Dictionary = {}
 var placed: Array[Node3D] = []
 
@@ -51,6 +52,7 @@ func setup(map_config, terrain: Node3D) -> void:
 		model.set_meta("bank_b_world", b)
 		model.set_meta("terrain_clearance_adjustment_m", rise)
 		add_child(model)
+		Collision.add_trimesh(model)
 		placed.append(model)
 		for id in spec.osm_ids:
 			replaced_osm_ids[str(id)] = true
@@ -84,6 +86,7 @@ func _add_pier_foundations(model: Node3D, terrain: Node3D) -> void:
 	node.name = "seonbawi_bridge_foundations"
 	geometry.finish(node)
 	add_child(node)
+	Collision.add_trimesh(node)
 
 func _add_approaches(spec: Dictionary, map_config, terrain: Node3D, bank_a: Vector3, bank_b: Vector3) -> void:
 	if spec.approaches.is_empty():
@@ -115,6 +118,7 @@ func _add_approaches(spec: Dictionary, map_config, terrain: Node3D, bank_a: Vect
 	node.name = str(spec.id) + "_approaches"
 	geometry.finish(node)
 	add_child(node)
+	Collision.add_trimesh(node)
 
 func replaces_road(road: Dictionary) -> bool:
 	return replaced_osm_ids.has(str(road.get("osm_id", "")))

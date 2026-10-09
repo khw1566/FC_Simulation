@@ -3,7 +3,7 @@ class_name RailwayTrackBuilder
 
 const NightLighting = preload("res://scripts/terrain/railway_night_lighting.gd")
 
-static func build(points: PackedVector3Array, profile: Dictionary, structure: Dictionary, view_distance: float, terrain: Node3D = null) -> Node3D:
+static func build(points: PackedVector3Array, profile: Dictionary, structure: Dictionary, view_distance: float, terrain: Node3D = null, detailed: bool = true) -> Node3D:
 	var root := Node3D.new()
 	if points.size() < 2:
 		return root
@@ -13,8 +13,7 @@ static func build(points: PackedVector3Array, profile: Dictionary, structure: Di
 		local.append(point - points[0])
 	var slab: bool = profile.track_bed == "slab"
 	var bed := _material(Color(0.57, 0.58, 0.59) if slab else Color(0.32, 0.30, 0.28))
-	var steel := _material(Color(0.52, 0.55, 0.59))
-	steel.metallic = 0.7
+	var steel := _material(Color(0.52, 0.55, 0.59), 0.7)
 	var concrete := _material(Color(0.60, 0.59, 0.55))
 	var bed_st := SurfaceTool.new()
 	var rail_st := SurfaceTool.new()
@@ -29,10 +28,12 @@ static func build(points: PackedVector3Array, profile: Dictionary, structure: Di
 		_ribbon(bed_st, a, b, 3.4 if slab else 3.8, -0.14, 0.0)
 		for offset in [-0.7175, 0.7175]:
 			_ribbon(rail_st, a, b, 0.075, 0.12, offset)
-		_ribbon(wire_st, a, b, 0.035, 5.5, 0.0)
+		if detailed:
+			_ribbon(wire_st, a, b, 0.035, 5.5, 0.0)
 	_add_surface(root, bed_st, bed, view_distance)
 	_add_surface(root, rail_st, steel, view_distance)
-	_add_surface(root, wire_st, steel, 3500.0)
+	if detailed:
+		_add_surface(root, wire_st, steel, 3500.0)
 	var route := preload("res://scripts/terrain/railway_route.gd").new()
 	route.configure(local, [])
 	var sleepers: Array[Transform3D] = []
@@ -40,11 +41,11 @@ static func build(points: PackedVector3Array, profile: Dictionary, structure: Di
 	var arms: Array[Transform3D] = []
 	var supports: Array[Transform3D] = []
 	var sleeper_step: float = 1.2 if slab else 0.75
-	for index in range(int(route.length / sleeper_step) + 1):
+	for index in range(int(route.length / sleeper_step) + 1 if detailed else 0):
 		var pose: Transform3D = route.sample(index * sleeper_step)
 		pose.origin += Vector3(0, 0.0, 0)
 		sleepers.append(pose)
-	for index in range(int(route.length / 50.0) + 1):
+	for index in range(int(route.length / 50.0) + 1 if detailed or bool(structure.get("bridge", false)) else 0):
 		var pose: Transform3D = route.sample(index * 50.0, 2.5)
 		pose.origin.y += 2.7
 		poles.append(pose)
@@ -67,7 +68,8 @@ static func build(points: PackedVector3Array, profile: Dictionary, structure: Di
 	_instances(root, Vector3(2.7, 0.10, 0.12), arms, steel, 5000.0)
 	if not supports.is_empty():
 		_instances(root, Vector3(1.4, 1.0, 1.4), supports, concrete, view_distance)
-	NightLighting.track(root, route, view_distance)
+	if detailed:
+		NightLighting.track(root, route, view_distance)
 	return root
 
 static func _ribbon(st: SurfaceTool, a: Vector3, b: Vector3, width: float, height: float, offset: float) -> void:
@@ -104,8 +106,15 @@ static func _instances(root: Node3D, size: Vector3, transforms: Array[Transform3
 	instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	root.add_child(instance)
 
-static func _material(color: Color) -> StandardMaterial3D:
-	var material := StandardMaterial3D.new()
-	material.albedo_color = color
-	material.cull_mode = BaseMaterial3D.CULL_DISABLED
-	return material
+## 청크마다 새 재질을 만들면 재질 수만큼 렌더 배치가 나뉘므로 색상별로 공유한다.
+static var _materials: Dictionary = {}
+
+static func _material(color: Color, metallic: float = 0.0) -> StandardMaterial3D:
+	var key := "%s|%.2f" % [color.to_html(), metallic]
+	if not _materials.has(key):
+		var material := StandardMaterial3D.new()
+		material.albedo_color = color
+		material.metallic = metallic
+		material.cull_mode = BaseMaterial3D.CULL_DISABLED
+		_materials[key] = material
+	return _materials[key]

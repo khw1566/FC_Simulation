@@ -2,11 +2,10 @@ extends Node3D
 class_name BuildingRoadManager
 
 const BuildingMeshBuilder = preload("res://scripts/terrain/building_mesh_builder.gd")
-const CampusGround = preload("res://scripts/terrain/campus_ground_overlay.gd")
 var _campus_ground_loaded := false
-const RoadMeshBuilder = preload("res://scripts/terrain/road_mesh_builder.gd")
 const AirportManager = preload("res://scripts/terrain/airport_landmark_manager.gd")
 const RoadClassifier = preload("res://scripts/terrain/road_segment_classifier.gd")
+const RoadBatchBuilder = preload("res://scripts/terrain/road_batch_builder.gd")
 const BridgeManager = preload("res://scripts/terrain/bridge_landmark_manager.gd")
 const HeritageManager = preload("res://scripts/terrain/heritage_landmark_manager.gd")
 const RailwayManager = preload("res://scripts/terrain/railway_world_manager.gd")
@@ -14,6 +13,9 @@ const RailwayManager = preload("res://scripts/terrain/railway_world_manager.gd")
 var _heritage_manager: Node3D
 var _railway_manager: Node3D
 const VectorStream = preload("res://scripts/terrain/vector_data_stream.gd")
+const Quality = preload("res://scripts/models/render_quality_profile.gd")
+var initial_load_radius := 2000.0
+var prefetch_distance := 500.0
 var load_complete := false
 var load_error := ""
 var load_status := "지형 준비 대기"
@@ -44,6 +46,10 @@ var _last_cull_check_pos: Vector3 = Vector3(99999, 99999, 99999)
 var _cull_timer: float = 0.0
 var _max_cull_altitude: float = 12000.0
 var _high_cull_altitude: float = 8000.0
+const CULL_HYSTERESIS := 400.0
+const BatchAssembler = preload("res://scripts/terrain/building_batch_assembler.gd")
+var _collision_stream := preload("res://scripts/terrain/building_collision_stream.gd").new()
+var _industrial_suppression := preload("res://scripts/terrain/industrial_building_suppression.gd").new()
 
 # 박스 빌딩, 일반 도로, 터널 아치 튜브, 교량 구조물 재질
 var building_material: StandardMaterial3D
@@ -60,6 +66,9 @@ var tunnel_segments: Array[Dictionary] = []
 
 func _ready() -> void:
 	_initialize_async.call_deferred()
+
+func _exit_tree() -> void:
+	_collision_stream.dispose()
 
 func _initialize_async() -> void:
 	while is_instance_valid(terrain_manager) and not terrain_manager.load_complete:
@@ -122,6 +131,7 @@ func _load_airport_landmark() -> void:
 	if service == null or service.selected_map == null:
 		return
 	var map_config = service.selected_map
+	_industrial_suppression.configure(str(map_config.id))
 	if map_config.airport_placement_path.is_empty():
 		return
 	_airport_manager = AirportManager.new()
@@ -141,6 +151,11 @@ func _init_from_map_selection() -> void:
 			small_building_cutoff_distance = 9000.0 if w_size >= 100000.0 else (3500.0 if w_size >= 40000.0 else 2200.0)
 			_max_cull_altitude = 22000.0 if w_size >= 100000.0 else 12000.0
 			_high_cull_altitude = 12000.0 if w_size >= 100000.0 else 8000.0
+	var quality := Quality.current()
+	max_view_distance = minf(max_view_distance, float(quality.view_distance))
+	small_building_cutoff_distance = minf(small_building_cutoff_distance, float(quality.minor_distance))
+	initial_load_radius = minf(max_view_distance, float(quality.initial_radius))
+	prefetch_distance = float(quality.prefetch)
 	var default_map_path := "res://assets/maps/kanmon_straits/buildings_and_roads.json"
 	if not FileAccess.file_exists(buildings_roads_path) and FileAccess.file_exists(default_map_path):
 		buildings_roads_path = default_map_path
@@ -217,27 +232,19 @@ func load_and_render_all() -> void:
 	load_error = stream.error
 	load_complete = load_error.is_empty()
 
-func _apply_road_metadata(roads: Array) -> void:
-	var path := buildings_roads_path.get_base_dir().path_join("road_metadata.json")
-	if not FileAccess.file_exists(path):
-		return
+## 도로 메타데이터를 처음 요청할 때 읽는다. 메인 스레드에서 호출한다.
+func road_metadata_entries() -> Dictionary:
 	if not _road_metadata_loaded:
-		var data = JSON.parse_string(FileAccess.get_file_as_string(path))
-		if not data is Dictionary:
-			return
-		_road_metadata = data.get("entries", {})
 		_road_metadata_loaded = true
-	var entries: Dictionary = _road_metadata
-	for road in roads:
-		var metadata: Dictionary = entries.get(str(road.get("id", "")), {})
-		if metadata.get("points_sha256", "") != JSON.stringify(road.get("points", [])).sha256_text():
-			continue
-		road["width"] = float(metadata.width)
-		road["layer"] = metadata.layer
-		road["osm_id"] = metadata.osm_id
-		for key in ["bridge", "tunnel", "surface", "structure_tags_verified"]:
-			if metadata.has(key):
-				road[key] = metadata[key]
+		var path := buildings_roads_path.get_base_dir().path_join("road_metadata.json")
+		if FileAccess.file_exists(path):
+			var data = JSON.parse_string(FileAccess.get_file_as_string(path))
+			if data is Dictionary:
+				_road_metadata = data.get("entries", {})
+	return _road_metadata
+
+func _apply_road_metadata(roads: Array) -> void:
+	RoadBatchBuilder.apply_metadata(roads, road_metadata_entries())
 
 func _process(delta: float) -> void:
 	_cull_timer += delta
@@ -245,6 +252,11 @@ func _process(delta: float) -> void:
 		return
 	_cull_timer = 0.0
 	_update_chunk_culling()
+	if player_node:
+		var ppos := player_node.global_position
+		# 지면에서 충분히 높이 날 때는 건물 충돌체를 새로 만들지 않는다.
+		var clearance := ppos.y - _sample_ground_height(ppos.x, ppos.z, 0.0)
+		_collision_stream.update(_building_chunk_nodes, Vector2(ppos.x, ppos.z), clearance)
 
 func _update_chunk_culling() -> void:
 	if not player_node:
@@ -264,100 +276,58 @@ func _update_chunk_culling() -> void:
 
 	# 1. 초고고도: 픽셀 단위로도 식별 불가하므로 건물 전체 일괄 컬링 (지형에 GPU 100% 집중)
 	if player_alt >= _max_cull_altitude:
-		for coord in _building_chunk_nodes.keys():
-			var chunk_info: Dictionary = _building_chunk_nodes[coord]
+		for chunk_info in _building_chunk_nodes.values():
 			var chunk_node: Node3D = chunk_info.get("node")
 			if chunk_node and chunk_node.visible:
 				chunk_node.visible = false
 		return
 
 	var is_high_alt := (player_alt >= _high_cull_altitude)
-	var max_dist_sq := max_view_distance * max_view_distance
-	var small_cutoff_sq := small_building_cutoff_distance * small_building_cutoff_distance
+	for chunk_info in _building_chunk_nodes.values():
+		_apply_chunk_visibility(chunk_info, p_pos_2d, is_high_alt)
 
-	for coord in _building_chunk_nodes.keys():
-		var chunk_info: Dictionary = _building_chunk_nodes[coord]
-		var chunk_node: Node3D = chunk_info.get("node")
-		if not chunk_node:
-			continue
-
-		var center_pos: Vector2 = chunk_info.get("center_2d", Vector2.ZERO)
-		var dist_sq := p_pos_2d.distance_squared_to(center_pos)
-
-		if dist_sq > max_dist_sq:
-			if chunk_node.visible:
-				chunk_node.visible = false
-		else:
-			if not chunk_node.visible:
-				chunk_node.visible = true
-
-			# 대형/소형 계층적 가시성 제어: 고고도(8000m+)이거나 원경(3000m+)에서는 소형 건물 생략
-			var minor_node := chunk_node.get_node_or_null("MinorBuildings")
-			if minor_node:
-				var show_minor: bool = (not is_high_alt) and (dist_sq <= small_cutoff_sq)
-				if minor_node.visible != show_minor:
-					minor_node.visible = show_minor
+## 경계에서 켜짐/꺼짐이 반복되지 않도록 표시 기준보다 넓은 여유 거리를 지나야 숨긴다.
+## chunk_info: {"node": Node3D, "center_2d": Vector2, "minor": Node3D}
+func _apply_chunk_visibility(chunk_info: Dictionary, p_pos_2d: Vector2, is_high_alt: bool) -> void:
+	var chunk_node: Node3D = chunk_info.get("node")
+	if chunk_node == null:
+		return
+	var dist := p_pos_2d.distance_to(chunk_info.get("center_2d", Vector2.ZERO))
+	var show_chunk := dist <= max_view_distance or (chunk_node.visible and dist <= max_view_distance + CULL_HYSTERESIS)
+	if chunk_node.visible != show_chunk:
+		chunk_node.visible = show_chunk
+	if not show_chunk:
+		return
+	# 대형/소형 계층적 가시성 제어: 고고도이거나 원경에서는 소형 건물 생략
+	var minor_node: Node3D = chunk_info.get("minor")
+	if minor_node:
+		var near_minor := dist <= small_building_cutoff_distance or (minor_node.visible and dist <= small_building_cutoff_distance + CULL_HYSTERESIS)
+		var show_minor: bool = (not is_high_alt) and near_minor
+		if minor_node.visible != show_minor:
+			minor_node.visible = show_minor
 
 func _render_buildings_batched(buildings: Array) -> Node3D:
-	if buildings_roads_path.contains("ulsan_uc_west"):
-		preload("res://scripts/terrain/campus_building_policy.gd").mark_imagery_candidates(buildings)
-	if not _campus_ground_loaded and buildings_roads_path.contains("ulsan_uc_west"):
-		var campus_step := 5000.0 / 512.0
-		CampusGround.build(self, _sample_ground_height, campus_step, -2500.0)
-		_campus_ground_loaded = true
 	if buildings.is_empty():
 		return null
+	var chunks := BatchAssembler.group(self, buildings)
+	return BatchAssembler.attach(self, BatchAssembler.compute(chunks, _sample_ground_height))
 
-	var bldg_container := Node3D.new()
-	bldg_container.name = "BuildingsContainer"
-	add_child(bldg_container)
+## 작업 스레드용 지형 높이 샘플러. 장면 트리를 조회하지 않는다.
+func threaded_ground_sampler() -> Callable:
+	var terrain := terrain_manager
+	return func(x: float, z: float, fallback: float) -> float:
+		if terrain == null:
+			return fallback
+		var elevation: float = terrain.get_terrain_elevation(x, z)
+		return elevation if elevation > -90.0 else fallback
 
-	# 1. 1,500m 단위 공간 청크별로 건물 분류
-	var chunks_data: Dictionary = {}
-	for b in buildings:
-		# 수집 자료의 0 높이는 미지정 값일 수 있다. 실제 기초 높이는
-		# BuildingMeshBuilder에서 현재 지형을 샘플링하여 결정한다.
-
-		var center_arr: Array = b.get("center", [0, 0, 0])
-		var cx: float = float(center_arr[0])
-		var cz: float = float(center_arr[2])
-
-		var poly_arr: Array = b.get("polygon", [])
-		if poly_arr.size() >= 3:
-			cx = 0.0
-			cz = 0.0
-			for p in poly_arr:
-				if p is Array and p.size() >= 2:
-					cx += float(p[0])
-					cz += float(p[1])
-			cx /= float(poly_arr.size())
-			cz /= float(poly_arr.size())
-
-		if _airport_manager != null and _airport_manager.replaces_building(cx, cz):
-			continue
-		if _heritage_manager != null and _heritage_manager.replaces_building(cx, cz):
-			continue
-		if _railway_manager != null and _railway_manager.landmarks != null and _railway_manager.landmarks.replaces_building(cx,cz):
-			continue
-		var coord := Vector2i(int(floor(cx / chunk_size)), int(floor(cz / chunk_size)))
-		if not chunks_data.has(coord):
-			chunks_data[coord] = []
-		chunks_data[coord].append(b)
-
-	_batch_serial += 1
-
-	# 2. 공간 청크별 메시 배치 생성
-	for coord in chunks_data.keys():
-		var chunk_buildings: Array = chunks_data[coord]
-		var chunk_node := Node3D.new()
-		chunk_node.name = "Chunk_%d_%d" % [coord.x, coord.y]
-		bldg_container.add_child(chunk_node)
-
-		var chunk_center := Vector2((float(coord.x) + 0.5) * chunk_size, (float(coord.y) + 0.5) * chunk_size)
-		_building_chunk_nodes[Vector3i(coord.x, coord.y, _batch_serial)] = {"node": chunk_node, "center_2d": chunk_center}
-		BuildingMeshBuilder.build_chunk_buildings_mesh(chunk_buildings, chunk_node, building_material, _sample_ground_height)
-	_last_cull_check_pos = Vector3.INF
-	return bldg_container
+## 작업 스레드용 수계 마스크 샘플러. 장면 트리를 조회하지 않는다.
+func threaded_water_sampler() -> Callable:
+	var terrain := terrain_manager
+	return func(x: float, z: float) -> float:
+		if terrain == null or not terrain.has_method("get_water_mask"):
+			return 0.0
+		return float(terrain.get_water_mask(x, z))
 
 func release_building_batch(container: Node3D) -> void:
 	if not is_instance_valid(container):
@@ -367,154 +337,59 @@ func release_building_batch(container: Node3D) -> void:
 			_building_chunk_nodes.erase(key)
 	container.queue_free()
 
-func _render_roads_and_tunnels_batched(roads: Array, yield_budget: Callable = Callable()) -> void:
-	if roads.is_empty():
-		return
-
-	var road_container := Node3D.new()
-	road_container.name = "RoadsContainer"
-	add_child(road_container)
-
-	var road_st := SurfaceTool.new()
-	road_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-	var walking_st := SurfaceTool.new()
-	walking_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-	var unpaved_st := SurfaceTool.new()
-	unpaved_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-
-	var tunnel_st := SurfaceTool.new()
-	tunnel_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-
-	var bridge_st := SurfaceTool.new()
-	bridge_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-
-	var road_count: int = 0
-	var walking_count: int = 0
-	var unpaved_count: int = 0
-	var tunnel_count: int = 0
-	var bridge_count: int = 0
+## 도로 배치를 만든다. threaded가 참이면 메시 계산을 작업 스레드에서 수행하고 프레임을 넘기며 기다린다.
+## 반환값의 signatures·batch는 release_road_batch()에서 중복 판정과 터널 구간을 되돌릴 때 사용한다.
+func _render_roads_and_tunnels_batched(roads: Array, threaded: bool = false, batch: String = "") -> Dictionary:
+	var accepted: Array = []
+	var signatures: Array = []
+	for r in roads:
+		if _bridge_manager != null and _bridge_manager.replaces_road(r):
+			continue
+		var signature: String = r["_geometry_key"] if r.has("_geometry_key") else RoadClassifier.geometry_key(r)
+		if _seen_road_geometry.has(signature):
+			continue
+		_seen_road_geometry[signature] = true
+		signatures.append(signature)
+		accepted.append(r)
+	var record := {"container": null, "signatures": signatures, "batch": batch}
+	if accepted.is_empty():
+		return record
 	var terrain_step := Vector2.ZERO
 	var terrain_origin := Vector2.ZERO
 	if terrain_manager and road_material is ShaderMaterial:
 		var size: float = terrain_manager.terrain_world_size
-		terrain_step = Vector2(size / float(terrain_manager.grid_chunks_x) / 128.0, size / float(terrain_manager.grid_chunks_y) / 128.0)
+		terrain_step = Vector2(size / float(terrain_manager.grid_chunks_x) / terrain_manager.base_resolution, size / float(terrain_manager.grid_chunks_y) / terrain_manager.base_resolution)
 		terrain_origin = Vector2.ONE * -size * 0.5
-
-	var seen_roads: Dictionary = _seen_road_geometry
-	for r in roads:
-		if not is_inside_tree():
-			return
-		if yield_budget.is_valid():
-			await yield_budget.call()
-		else:
+	var ground := threaded_ground_sampler()
+	var water := threaded_water_sampler()
+	var result: Dictionary
+	if threaded:
+		var holder := [null]
+		var task := WorkerThreadPool.add_task(func(): holder[0] = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin), false, "도로 배치 준비")
+		while not WorkerThreadPool.is_task_completed(task):
 			await get_tree().process_frame
-		if not is_inside_tree():
-			return
-		if _bridge_manager != null and _bridge_manager.replaces_road(r):
-			continue
-		var signature := RoadClassifier.geometry_key(r)
-		if seen_roads.has(signature):
-			continue
-		seen_roads[signature] = true
-		var raw_pts: Array = r.get("points", [])
-		if raw_pts.size() < 2:
-			continue
+		WorkerThreadPool.wait_for_task_completion(task)
+		result = holder[0]
+	else:
+		result = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin)
+	if not is_inside_tree():
+		return record
+	for segment in result.tunnel_segments:
+		segment["batch"] = batch
+		tunnel_segments.append(segment)
+	record.container = RoadBatchBuilder.attach(self, result)
+	return record
 
-		var width: float = float(r.get("width", 8.0))
-
-		# 1단계: 도로 선분을 곡률 적응형으로 세분화 (RoadMeshBuilder에 위임)
-		var sub_pts: Array[Vector3] = RoadMeshBuilder.subdivide_polyline(raw_pts)
-		if sub_pts.size() < 2:
-			continue
-
-		# 2단계: 실제 지형 고도 및 수계 마스크 샘플링
-		var ground_y_list: Array[float] = []
-		var water_mask_list: Array[float] = []
-		for p in sub_pts:
-			var gy: float = _sample_ground_height(p.x, p.z, p.y)
-			var wm: float = _sample_water_mask(p.x, p.z)
-			ground_y_list.append(gy)
-			water_mask_list.append(wm)
-
-		var segment_types := RoadClassifier.classify(r, sub_pts, water_mask_list)
-		var first: int = 0
-		while first < segment_types.size():
-			var kind: int = segment_types[first]
-			var last: int = first + 1
-			while last < segment_types.size() and segment_types[last] == kind:
-				last += 1
-			var section: Array[Vector3] = []
-			var section_ground: Array[float] = []
-			for index in range(first, last + 1):
-				section.append(sub_pts[index])
-				section_ground.append(ground_y_list[index])
-			if kind == 0:
-				var road_type := str(r.get("type", ""))
-				if road_type in ["footway", "path", "steps", "pedestrian", "bridleway", "corridor"]:
-					RoadMeshBuilder.build_surface_road(walking_st, section, section_ground, width, _sample_ground_height, terrain_step, terrain_origin, 0.24)
-					walking_count += 1
-				elif road_type in ["track", "cycleway"]:
-					RoadMeshBuilder.build_surface_road(unpaved_st, section, section_ground, width, _sample_ground_height, terrain_step, terrain_origin, 0.32)
-					unpaved_count += 1
-				else:
-					RoadMeshBuilder.build_surface_road(road_st, section, section_ground, width, _sample_ground_height, terrain_step, terrain_origin)
-					road_count += 1
-			elif kind == 1:
-				RoadMeshBuilder.build_universal_bridge(bridge_st, section, section_ground, width)
-				bridge_count += 1
-			else:
-				# 광역 수집 데이터의 Y=0은 실측 터널 고도가 아니라 미지정 값이다.
-				if str(r.get("id", "")).begins_with("rd_metro_") or r.get("projected_source", false):
-					var cumulative: Array[float] = [0.0]
-					for index in range(1, section.size()):
-						cumulative.append(cumulative[-1] + section[index].distance_to(section[index - 1]))
-					for index in range(section.size()):
-						section[index].y = lerpf(section_ground[0], section_ground[-1], cumulative[index] / maxf(0.01, cumulative[-1])) + 0.2
-				RoadMeshBuilder.build_mountain_tunnel(tunnel_st, section, width, tunnel_segments)
-				tunnel_count += 1
-			first = last
-		# 배치 분할 커밋
-		if road_count + walking_count + unpaved_count >= 1500:
-			_commit_road_surface(road_container, road_st, road_material, "PavedRoads", road_count)
-			_commit_road_surface(road_container, walking_st, walking_path_material, "WalkingPaths", walking_count)
-			_commit_road_surface(road_container, unpaved_st, unpaved_road_material, "UnpavedAndCycleways", unpaved_count)
-			road_st = SurfaceTool.new(); road_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-			walking_st = SurfaceTool.new(); walking_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-			unpaved_st = SurfaceTool.new(); unpaved_st.begin(Mesh.PRIMITIVE_TRIANGLES)
-			road_count = 0
-			walking_count = 0
-			unpaved_count = 0
-
-	_commit_road_surface(road_container, road_st, road_material, "PavedRoads", road_count)
-	_commit_road_surface(road_container, walking_st, walking_path_material, "WalkingPaths", walking_count)
-	_commit_road_surface(road_container, unpaved_st, unpaved_road_material, "UnpavedAndCycleways", unpaved_count)
-
-	if tunnel_count > 0:
-		var m = tunnel_st.commit()
-		var mi = MeshInstance3D.new()
-		mi.mesh = m
-		mi.material_override = tunnel_wall_material
-		road_container.add_child(mi)
-
-	if bridge_count > 0:
-		var m = bridge_st.commit()
-		var mi = MeshInstance3D.new()
-		mi.mesh = m
-		mi.material_override = bridge_truss_material
-		road_container.add_child(mi)
-
-func _commit_road_surface(container: Node3D, surface: SurfaceTool, material: Material, node_name: String, road_sections: int) -> void:
-	if road_sections <= 0:
-		return
-	var mesh := surface.commit()
-	if mesh == null or mesh.get_surface_count() == 0:
-		return
-	var instance := MeshInstance3D.new()
-	instance.name = node_name
-	instance.mesh = mesh
-	instance.material_override = material
-	_configure_road_bounds(instance)
-	container.add_child(instance)
+## 멀어진 도로 배치를 해제하고 중복 판정 키와 터널 구간을 되돌린다.
+func release_road_batch(record: Dictionary) -> void:
+	for signature in record.get("signatures", []):
+		_seen_road_geometry.erase(signature)
+	var batch: String = record.get("batch", "")
+	if not batch.is_empty():
+		tunnel_segments.assign(tunnel_segments.filter(func(segment): return segment.get("batch", "") != batch))
+	var container = record.get("container")
+	if is_instance_valid(container):
+		container.queue_free()
 
 func _configure_road_bounds(mesh_instance: MeshInstance3D) -> void:
 	mesh_instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
@@ -577,4 +452,3 @@ func _render_breakwaters(breakwaters: Array) -> void:
 	renderer.terrain_manager = terrain_manager
 	add_child(renderer)
 	renderer.render_breakwaters(breakwaters)
-

@@ -14,7 +14,8 @@
       ],
       "main_road_width_m": 20,
       "local_road_width_m": 10,
-      "asset_coverage": 0.45
+      "asset_coverage": 0.45,
+      "max_block_area_m2": 70000
     },
     "petrochemical": {
       "label_ko": "석유화학 공단",
@@ -24,7 +25,8 @@
       ],
       "main_road_width_m": 24,
       "local_road_width_m": 12,
-      "asset_coverage": 0.35
+      "asset_coverage": 0.35,
+      "max_block_area_m2": 110000
     },
     "shipbuilding": {
       "label_ko": "조선 공단",
@@ -34,7 +36,8 @@
       ],
       "main_road_width_m": 24,
       "local_road_width_m": 14,
-      "asset_coverage": 0.3
+      "asset_coverage": 0.3,
+      "max_block_area_m2": 160000
     },
     "logistics": {
       "label_ko": "물류 공단",
@@ -44,14 +47,17 @@
       ],
       "main_road_width_m": 22,
       "local_road_width_m": 12,
-      "asset_coverage": 0.4
+      "asset_coverage": 0.4,
+      "max_block_area_m2": 90000
     }
   },
-  "note_ko": "울산 본항·온산항 주변의 로컬 안전 육지 후보에 생성하는 게임용 공단. 실제 공단 경계 및 공정 배치를 재현하지 않음.",
-  "auto_candidates_enabled": true,
+  "note_ko": "OSM 산업·항만 용지(landuse=industrial/port)를 공단 구역으로 사용한다. 구역 안 범용 건물은 절차 생성 설비로 대체하며 실제 공정 배치를 재현하지 않는다.",
+  "auto_candidates_enabled": false,
   "candidate_size_m": 1200,
-  "max_slope_degrees": 8,
+  "max_slope_degrees": 12,
   "max_road_grade": 0.08,
   "max_foundation_height_m": 3.5,
-  "max_assets_per_zone": 100
+  "zone_source": "osm_landuse",
+  "landuse_source": "data/raw/ulsan_metro_80km/industrial/landuse_industrial.json",
+  "zone_min_area_m2": 400000
 }

@@ -6,18 +6,18 @@ class_name BuildingMeshBuilder
 ## 대형 건물 기준: 바닥 스팬 >= 16m 또는 면적 >= 120㎡ 또는 높이 >= 18m
 const MAJOR_SPAN_THRESHOLD: float = 16.0
 const MAJOR_HEIGHT_THRESHOLD: float = 18.0
+## 인덱스 없는 삼각형 목록(SurfaceTool 기본 출력)의 정점 배열을 보관하는 메타 키
+const COLLISION_FACES_META := "collision_faces"
 const CampusPolicy = preload("res://scripts/terrain/campus_building_policy.gd")
 const CampusArchitecture = preload("res://scripts/terrain/campus_architecture_builder.gd")
 
 static func build_chunk_buildings_mesh(chunk_buildings: Array, chunk_node: Node3D, mat: Material, sample_ground: Callable) -> void:
-	var major_container := Node3D.new()
-	major_container.name = "MajorBuildings"
-	chunk_node.add_child(major_container)
+	apply_arrays(compute_arrays(chunk_buildings, sample_ground), chunk_node, mat, sample_ground)
 
-	var minor_container := Node3D.new()
-	minor_container.name = "MinorBuildings"
-	chunk_node.add_child(minor_container)
-
+## 메시 배열만 계산한다. 노드와 렌더링 자원을 만들지 않으므로 작업 스레드에서 실행할 수 있다.
+## 캠퍼스 건축 상세는 노드를 만들기 때문에 작업 목록으로 돌려주고 apply_arrays()에서 처리한다.
+static func compute_arrays(chunk_buildings: Array, sample_ground: Callable) -> Dictionary:
+	var result := {"major": [], "minor": [], "campus": []}
 	var major_st := SurfaceTool.new()
 	major_st.begin(Mesh.PRIMITIVE_TRIANGLES)
 	var major_count: int = 0
@@ -28,6 +28,8 @@ static func build_chunk_buildings_mesh(chunk_buildings: Array, chunk_node: Node3
 
 	for b in chunk_buildings:
 		var poly_arr: Array = b.get("polygon", [])
+		if b.has("round"):
+			poly_arr = _round_polygon(b.round)
 		var base_y: float = float(b.get("base_y", 0.0))
 		var height: float = float(b.get("height", 10.0))
 		var center_arr: Array = b.get("center", [0, 0, 0])
@@ -90,7 +92,7 @@ static func build_chunk_buildings_mesh(chunk_buildings: Array, chunk_node: Node3
 
 				var roof_y: float = actual_base_y + eff_height
 				if CampusPolicy.is_campus_candidate(b):
-					CampusArchitecture.build(major_container, PackedVector2Array(pts_2d), actual_base_y, roof_y, sample_ground)
+					result.campus.append([PackedVector2Array(pts_2d), actual_base_y, roof_y])
 				var n_pts: int = pts_2d.size()
 
 				var vert_base_ys: Array[float] = []
@@ -148,12 +150,12 @@ static func build_chunk_buildings_mesh(chunk_buildings: Array, chunk_node: Node3
 				if is_major:
 					major_count += 1
 					if major_count >= 1200:
-						_commit_surface(major_st, major_container, mat)
+						_commit_arrays(major_st, result.major)
 						major_count = 0
 				else:
 					minor_count += 1
 					if minor_count >= 1200:
-						_commit_surface(minor_st, minor_container, mat)
+						_commit_arrays(minor_st, result.minor)
 						minor_count = 0
 		else:
 			if center_arr.size() < 3 or size_arr.size() < 3:
@@ -190,27 +192,60 @@ static func build_chunk_buildings_mesh(chunk_buildings: Array, chunk_node: Node3
 			if is_major_box:
 				major_count += 1
 				if major_count >= 1200:
-					_commit_surface(major_st, major_container, mat)
+					_commit_arrays(major_st, result.major)
 					major_count = 0
 			else:
 				minor_count += 1
 				if minor_count >= 1200:
-					_commit_surface(minor_st, minor_container, mat)
+					_commit_arrays(minor_st, result.minor)
 					minor_count = 0
 
 	if major_count > 0:
-		_commit_surface(major_st, major_container, mat)
+		_commit_arrays(major_st, result.major)
 	if minor_count > 0:
-		_commit_surface(minor_st, minor_container, mat)
+		_commit_arrays(minor_st, result.minor)
+	return result
 
-static func _commit_surface(st: SurfaceTool, container: Node3D, mat: Material) -> void:
-	var sub_mesh = st.commit()
-	var mi = MeshInstance3D.new()
-	mi.mesh = sub_mesh
-	mi.material_override = mat
-	container.add_child(mi)
+## 스트림 최적화에서 [중심x, 중심z, 반경x, 반경z, 회전(도)]로 저장한 곡면 건물을
+## 둘레 약 5m마다 꼭짓점을 두는 다각형으로 복원한다.
+static func _round_polygon(spec: Array) -> Array:
+	var rx := float(spec[2])
+	var rz := float(spec[3])
+	var perimeter := PI * (3.0 * (rx + rz) - sqrt((3.0 * rx + rz) * (rx + 3.0 * rz)))
+	var segments := clampi(ceili(perimeter / 5.0), 12, 32)
+	var basis := Transform2D(deg_to_rad(float(spec[4])), Vector2(float(spec[0]), float(spec[1])))
+	var points: Array = []
+	for i in segments:
+		var angle := TAU * float(i) / float(segments)
+		var p := basis * Vector2(rx * cos(angle), rz * sin(angle))
+		points.append([p.x, p.y])
+	return points
+
+static func _commit_arrays(st: SurfaceTool, target: Array) -> void:
+	target.append(st.commit_to_arrays())
 	st.clear()
 	st.begin(Mesh.PRIMITIVE_TRIANGLES)
+
+## 계산된 배열로 대형/소형 건물 노드를 만든다. 메인 스레드에서 호출한다.
+static func apply_arrays(result: Dictionary, chunk_node: Node3D, mat: Material, sample_ground: Callable) -> void:
+	var major_container := Node3D.new()
+	major_container.name = "MajorBuildings"
+	chunk_node.add_child(major_container)
+	var minor_container := Node3D.new()
+	minor_container.name = "MinorBuildings"
+	chunk_node.add_child(minor_container)
+	for job in result.campus:
+		CampusArchitecture.build(major_container, job[0], job[1], job[2], sample_ground)
+	for pair in [[result.major, major_container], [result.minor, minor_container]]:
+		for arrays in pair[0]:
+			var mesh := ArrayMesh.new()
+			mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
+			var mi := MeshInstance3D.new()
+			mi.mesh = mesh
+			mi.material_override = mat
+			# 충돌 형상은 이 삼각형 정점으로 만든다. 렌더링 메시를 다시 읽으면 GPU 동기화로 프레임이 멈춘다.
+			mi.set_meta(COLLISION_FACES_META, arrays[Mesh.ARRAY_VERTEX])
+			pair[1].add_child(mi)
 
 static func _add_quad(st: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, d: Vector3, normal: Vector3) -> void:
 	st.set_normal(normal)

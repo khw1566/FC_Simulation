@@ -4,6 +4,9 @@ extends Node
 ## user://settings.cfg 파일을 통해 게임 재시작 후에도 설정 유지
 
 const SETTINGS_FILE_PATH: String = "user://settings.cfg"
+const Quality = preload("res://scripts/models/render_quality_profile.gd")
+var render_quality := "light"
+var session_quality := "light"
 
 signal vessels_enabled_changed(enabled: bool)
 signal industrial_zones_enabled_changed(enabled: bool)
@@ -60,6 +63,8 @@ func load_settings() -> void:
 	time_hours = config.get_value("gameplay", "time_hours", 12.0)
 	time_progression = config.get_value("gameplay", "time_progression", true)
 	current_language = config.get_value("general", "language", "ko")
+	render_quality = Quality.normalize(str(config.get_value("graphics", "render_quality", "light")))
+	session_quality = render_quality
 	print("[UserSettingsService] Loaded settings. Accel step: %d (60%% default)" % [flight_accel_step])
 
 func save_settings() -> void:
@@ -76,6 +81,7 @@ func save_settings() -> void:
 	config.set_value("graphics", "fog_enabled", fog_enabled)
 	config.set_value("graphics", "shadow_enabled", shadow_enabled)
 	config.set_value("graphics", "cloud_quality", cloud_quality)
+	config.set_value("graphics", "render_quality", render_quality)
 
 	config.set_value("gameplay", "flight_vector_enabled", flight_vector_enabled)
 	config.set_value("gameplay", "vessels_enabled", vessels_enabled)
@@ -102,3 +108,17 @@ func set_industrial_zones_enabled(value: bool) -> void:
 	industrial_zones_enabled = value
 	industrial_zones_enabled_changed.emit(value)
 	save_settings()
+
+func set_render_quality(value: String) -> void:
+	render_quality = Quality.normalize(value)
+	# 품질을 명시적으로 선택하면 그래픽 기본값도 함께 적용한다.
+	msaa_enabled = render_quality != "light"
+	shadow_enabled = render_quality != "light"
+	cloud_quality = 0 if render_quality == "light" else 1
+	save_settings()
+
+func begin_map_session() -> void:
+	session_quality = render_quality
+	if session_quality == "light":
+		msaa_enabled = false
+		shadow_enabled = false

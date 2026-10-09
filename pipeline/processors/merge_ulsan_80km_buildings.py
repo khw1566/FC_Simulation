@@ -165,7 +165,8 @@ def merge_ulsan_80km_buildings():
     report_path = PROJECT_ROOT / f"results/{datetime.now().astimezone():%y%m%d}_Ulsan80kmBuildingMerge.json"
     report_path.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     from pipeline.processors.vector_stream_cache import VectorStreamCache
-    VectorStreamCache(output_path).build()
+    from pipeline.processors.building_optimizer import BuildingOptimizer
+    VectorStreamCache(output_path, BuildingOptimizer()).build()
     print(json.dumps(result, ensure_ascii=False), flush=True)
 
 
