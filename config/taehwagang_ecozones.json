@@ -1,0 +1,87 @@
+{
+  "region_name": "taehwagang_ecozones",
+  "target_map_id": "taehwagang_dunchi",
+  "description_ko": "태화강 둔치 평탄 마스크를 생태 구역(대숲, 억새, 수변 갈대, 수림, 잔디, 들풀)으로 나누고 구역별 규칙 격자로 식생 에셋을 배치한다.",
+  "source_map_folders": [
+    "godot_project/assets/maps/taehwagang_dunchi",
+    "../FC_Simulation_dunchi/godot_project/assets/maps/taehwagang_dunchi"
+  ],
+  "working_resolution": 2048,
+  "overpass_endpoints": [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter"
+  ],
+  "osm_classes": {
+    "wood": [["natural", "wood"], ["landuse", "forest"]],
+    "grass": [["landuse", "grass"], ["landuse", "meadow"], ["natural", "grassland"]],
+    "park": [["leisure", "park"], ["leisure", "garden"]],
+    "pitch": [["leisure", "pitch"]],
+    "scrub": [["natural", "scrub"]],
+    "wetland": [["natural", "wetland"]]
+  },
+  "zone_basis_ko": "대숲은 OSM 숲 다각형과 국가정원 곡류부(삼호교~태화교) 경도 범위의 교집합, 그리고 곡류부 안쪽 강변 띠(수면 8~55m, 기준 다각형은 수작업 추정). 억새 구간(명촌 하류부, 삼호 상류부)과 잔디 구간(도심 구간)의 경도 범위는 추정값이며 현장 식생도로 교체 필요.",
+  "zones": [
+    {
+      "id": 3, "key": "bamboo", "name_ko": "대숲(십리대숲)",
+      "ground": "bamboo_litter", "color": [46, 92, 40],
+      "rules": [
+        {"osm_any": ["wood"], "osm_buffer_m": 12, "lon_ranges": [[129.2760, 129.3095]], "water_distance_m": [0, 90]},
+        {"polygons_lonlat": [[[129.29107, 35.54911], [129.2928, 35.54699], [129.29626, 35.54576], [129.30014, 35.54611], [129.30273, 35.5477], [129.30338, 35.55122], [129.30489, 35.55334], [129.30187, 35.55281], [129.29798, 35.55017], [129.29323, 35.54928]]], "water_distance_m": [8, 55]}
+      ]
+    },
+    {
+      "id": 4, "key": "reed", "name_ko": "수변 갈대",
+      "ground": "reed_mud", "color": [120, 128, 84],
+      "rules": [
+        {"water_distance_m": [0, 20]}
+      ]
+    },
+    {
+      "id": 5, "key": "woodland", "name_ko": "수림대",
+      "ground": "woodland_soil", "color": [70, 110, 60],
+      "rules": [
+        {"osm_any": ["wood", "scrub"]}
+      ]
+    },
+    {
+      "id": 2, "key": "silvergrass", "name_ko": "억새 군락",
+      "ground": "silvergrass_ground", "color": [196, 178, 120],
+      "rules": [
+        {"lon_ranges": [[129.3380, 129.3622]], "water_distance_m": [20, 110], "osm_none": ["park", "pitch"]},
+        {"lon_ranges": [[129.2738, 129.2900]], "water_distance_m": [20, 70]},
+        {"osm_any": ["wetland"]}
+      ]
+    },
+    {
+      "id": 1, "key": "lawn", "name_ko": "잔디 광장",
+      "ground": "lawn", "color": [128, 176, 92],
+      "rules": [
+        {"osm_any": ["park", "grass", "pitch"]},
+        {"lon_ranges": [[129.2900, 129.3380]]}
+      ]
+    },
+    {
+      "id": 6, "key": "meadow", "name_ko": "들풀 초지",
+      "ground": "meadow", "color": [160, 170, 96],
+      "rules": [
+        {}
+      ]
+    }
+  ],
+  "scatter": [
+    {"zone": "bamboo", "family": "bamboo", "kind": "bamboo_grove", "lattice": "square", "spacing_m": 8.0, "jitter_m": 0.6, "yaw_step_deg": 90, "scale": [0.9, 1.1], "min_edge_m": 6.0},
+    {"zone": "bamboo", "family": "bamboo", "kind": "bamboo_clump", "lattice": "hex", "spacing_m": 3.6, "jitter_m": 0.5, "yaw_step_deg": 0, "scale": [0.85, 1.05], "max_edge_m": 6.0},
+    {"zone": "silvergrass", "family": "silvergrass", "kind": "silvergrass_patch", "lattice": "hex", "spacing_m": 4.2, "jitter_m": 0.9, "yaw_step_deg": 0, "scale": [0.85, 1.15], "min_edge_m": 2.0},
+    {"zone": "reed", "family": "silvergrass", "kind": "reed_patch", "lattice": "hex", "spacing_m": 4.0, "jitter_m": 0.8, "yaw_step_deg": 0, "scale": [0.8, 1.1]},
+    {"zone": "woodland", "family": "trees", "kind": "broadleaf", "lattice": "hex", "spacing_m": 9.0, "jitter_m": 1.8, "yaw_step_deg": 0, "scale": [0.8, 1.15], "min_edge_m": 2.0},
+    {"zone": "lawn", "family": "trees", "kind": "slender", "lattice": "hex", "spacing_m": 32.0, "jitter_m": 0.0, "yaw_step_deg": 0, "scale": [0.9, 1.1], "min_edge_m": 10.0},
+    {"zone": "meadow", "family": "trees", "kind": "shrub", "lattice": "hex", "spacing_m": 14.0, "jitter_m": 3.0, "yaw_step_deg": 0, "scale": [0.7, 1.1], "min_edge_m": 3.0},
+    {"zone": "meadow", "family": "silvergrass", "kind": "silvergrass_clump", "lattice": "hex", "spacing_m": 7.0, "jitter_m": 2.0, "yaw_step_deg": 0, "scale": [0.6, 0.9], "min_edge_m": 1.0}
+  ],
+  "families": {
+    "bamboo": {"scene_template": "res://assets/generated/bamboo/%s_lod%d.scn", "lod_ranges_m": [[0, 70], [70, 250], [250, 2200]]},
+    "trees": {"scene_template": "res://assets/generated/trees/%s_lod%d.scn", "lod_ranges_m": [[0, 100], [100, 350], [350, 3000]]},
+    "silvergrass": {"scene_template": "res://assets/generated/silvergrass/%s_lod%d.scn", "lod_ranges_m": [[0, 40], [40, 150], [150, 900]]}
+  },
+  "random_seed": 20261009
+}

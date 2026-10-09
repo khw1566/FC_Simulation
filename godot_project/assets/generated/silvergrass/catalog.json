@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "kinds": [
+    "silvergrass_clump",
+    "silvergrass_patch",
+    "reed_patch"
+  ],
+  "lod_ranges_m": [
+    [
+      0,
+      40
+    ],
+    [
+      40,
+      150
+    ],
+    [
+      150,
+      900
+    ]
+  ],
+  "chunk_size_m": 64,
+  "batch_factory": "res://scripts/vegetation/vegetation_batch_factory.gd",
+  "assets": {
+    "reed_patch_auto_lod": {
+      "file_path": "res://assets/generated/silvergrass/reed_patch_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.4,
+        "elevation_min": 0,
+        "height_m": 2.4,
+        "kind": "reed_patch",
+        "lod_ranges_m": [
+          [
+            0,
+            40
+          ],
+          [
+            40,
+            150
+          ],
+          [
+            150,
+            900
+          ]
+        ],
+        "resolution": null,
+        "width_m": 3
+      },
+      "sha256": "4aac24354be072c88600f8198b6663e7875c0a29701bef6d8edd2a47b3acebea",
+      "size_bytes": 1428048,
+      "type": "silvergrass_auto_lod"
+    },
+    "reed_patch_lod0": {
+      "file_path": "res://assets/generated/silvergrass/reed_patch_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.4,
+        "elevation_min": 0,
+        "height_m": 2.4,
+        "kind": "reed_patch",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 288,
+        "width_m": 3
+      },
+      "sha256": "99da6f9c6c37f7398b772764d1cf6de3cba3891f33874eeab9f38dd2fa6565ff",
+      "size_bytes": 24312,
+      "type": "silvergrass_lod"
+    },
+    "reed_patch_lod1": {
+      "file_path": "res://assets/generated/silvergrass/reed_patch_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.4,
+        "elevation_min": 0,
+        "height_m": 2.4,
+        "kind": "reed_patch",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 52,
+        "width_m": 3
+      },
+      "sha256": "bb01e0be33ff6fd49c422406d4d0e49f08dc1e54676d58be5a5067b403283545",
+      "size_bytes": 7320,
+      "type": "silvergrass_lod"
+    },
+    "reed_patch_lod2": {
+      "file_path": "res://assets/generated/silvergrass/reed_patch_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.4,
+        "elevation_min": 0,
+        "height_m": 2.4,
+        "kind": "reed_patch",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 3
+      },
+      "sha256": "fcb0a70df3aee5d679459b30f1d824a88bf36646fb501c1ed1a648a14a68e791",
+      "size_bytes": 1402456,
+      "type": "silvergrass_lod"
+    },
+    "silvergrass_clump_auto_lod": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_clump_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.8,
+        "elevation_min": 0,
+        "height_m": 1.8,
+        "kind": "silvergrass_clump",
+        "lod_ranges_m": [
+          [
+            0,
+            40
+          ],
+          [
+            40,
+            150
+          ],
+          [
+            150,
+            900
+          ]
+        ],
+        "resolution": null,
+        "width_m": 1.4
+      },
+      "sha256": "bcf1654567e32e832c2f5f3fda2d0c2aca4c38dc0a39c62f1b780edfc3cde9da",
+      "size_bytes": 1409695,
+      "type": "silvergrass_auto_lod"
+    },
+    "silvergrass_clump_lod0": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_clump_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.8,
+        "elevation_min": 0,
+        "height_m": 1.8,
+        "kind": "silvergrass_clump",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 72,
+        "width_m": 1.4
+      },
+      "sha256": "d586116e1447422575a49caaf87d4107f7d100c082d9a4b02a6712c7ee79d55e",
+      "size_bytes": 8774,
+      "type": "silvergrass_lod"
+    },
+    "silvergrass_clump_lod1": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_clump_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.8,
+        "elevation_min": 0,
+        "height_m": 1.8,
+        "kind": "silvergrass_clump",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 13,
+        "width_m": 1.4
+      },
+      "sha256": "b958772c837287c000607fe9d7a5e215957deccd6a7ac1f3eea2670879a9f883",
+      "size_bytes": 4526,
+      "type": "silvergrass_lod"
+    },
+    "silvergrass_clump_lod2": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_clump_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.8,
+        "elevation_min": 0,
+        "height_m": 1.8,
+        "kind": "silvergrass_clump",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 1.4
+      },
+      "sha256": "177f07f6e02960960042890690c8dafac2cc8bf4e7bbac6be587180731da63e7",
+      "size_bytes": 1402470,
+      "type": "silvergrass_lod"
+    },
+    "silvergrass_patch_auto_lod": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_patch_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.9,
+        "elevation_min": 0,
+        "height_m": 1.9,
+        "kind": "silvergrass_patch",
+        "lod_ranges_m": [
+          [
+            0,
+            40
+          ],
+          [
+            40,
+            150
+          ],
+          [
+            150,
+            900
+          ]
+        ],
+        "resolution": null,
+        "width_m": 4
+      },
+      "sha256": "3c0f52492db8e69c010dc390524f315994b23ebc3e6edd20c83d115587347c22",
+      "size_bytes": 1434175,
+      "type": "silvergrass_auto_lod"
+    },
+    "silvergrass_patch_lod0": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_patch_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.9,
+        "elevation_min": 0,
+        "height_m": 1.9,
+        "kind": "silvergrass_patch",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 360,
+        "width_m": 4
+      },
+      "sha256": "f0808f57893ec97e47896658b0faaaf912f4e8640cf54426339db04d4ce66d4c",
+      "size_bytes": 29510,
+      "type": "silvergrass_lod"
+    },
+    "silvergrass_patch_lod1": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_patch_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.9,
+        "elevation_min": 0,
+        "height_m": 1.9,
+        "kind": "silvergrass_patch",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 65,
+        "width_m": 4
+      },
+      "sha256": "eed42c9df24276875f36e4a4b55bb0e7305677781bc6b5d4e2e1075be16c06ef",
+      "size_bytes": 8270,
+      "type": "silvergrass_lod"
+    },
+    "silvergrass_patch_lod2": {
+      "file_path": "res://assets/generated/silvergrass/silvergrass_patch_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 1.9,
+        "elevation_min": 0,
+        "height_m": 1.9,
+        "kind": "silvergrass_patch",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 4
+      },
+      "sha256": "956d35f08b4d3555deadb462552cc2c37790c299de432fef4df11c5420eb85bc",
+      "size_bytes": 1402470,
+      "type": "silvergrass_lod"
+    }
+  }
+}

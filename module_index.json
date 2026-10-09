@@ -1885,6 +1885,84 @@
           "lines": 25
         }
       ]
+    },
+    "silvergrass": {
+      "description": "경량 억새 군집·억새 군락·갈대 군락, 3단계 LOD와 계열 공통 MultiMesh 묶음기",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_geometry.gd",
+          "lines": 80
+        },
+        {
+          "path": "godot_project/scripts/vegetation/vegetation_batch_factory.gd",
+          "lines": 39
+        },
+        {
+          "path": "pipeline/processors/silvergrass/generate.py",
+          "lines": 101
+        },
+        {
+          "path": "pipeline/processors/silvergrass/silvergrass_geometry.gd",
+          "lines": 80
+        },
+        {
+          "path": "pipeline/processors/silvergrass/export_silvergrass.gd",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/silvergrass/capture.gd",
+          "lines": 61
+        }
+      ]
+    },
+    "taehwagang_ecozones": {
+      "description": "태화강 둔치 생태 구역(대숲·억새·수변 갈대·수림·잔디·들풀) 분할, 구역별 규칙 격자 식생 배치, 바닥 텍스처·스플랫",
+      "modules": [
+        {
+          "path": "config/taehwagang_ecozones.json",
+          "lines": 87
+        },
+        {
+          "path": "pipeline/collectors/ecozone_landcover_collector.py",
+          "lines": 43
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/generate.py",
+          "lines": 69
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/source_masks.py",
+          "lines": 61
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/geo_raster.py",
+          "lines": 128
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/zone_classifier.py",
+          "lines": 60
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/scatter_planner.py",
+          "lines": 82
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/ground_textures.py",
+          "lines": 74
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
+          "lines": 133
+        },
+        {
+          "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
+          "lines": 66
+        },
+        {
+          "path": "godot_project/shaders/ecozone_ground.gdshaderinc",
+          "lines": 37
+        }
+      ]
     }
   }
 }
