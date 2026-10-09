@@ -1,0 +1,220 @@
+{
+  "version": 1,
+  "map_id": "ulsan_metro_80km",
+  "note_ko": "태화강 조사 교량 초안 시범 배치. 중심·방향은 OSM 교량 선형(osm_ids) 기준이며 모델 길이만큼 양 끝점을 둔다. bank_ends는 양 끝 지형 높이 평균에 상판을 맞추고, sea_level은 지도 해수면에 모델 원점을 둔다.",
+  "source": "OpenStreetMap way geometry (2026-10-09), research_20261009/catalog.json",
+  "placements": [
+    {
+      "id": "taehwa_bridge_mangseong_bridge_draft",
+      "label_ko": "망성교",
+      "scene": "res://assets/generated/bridges/research_20261009/mangseong_bridge_draft.tscn",
+      "lonlat": [
+        129.2310966,
+        35.5853997
+      ],
+      "lonlat_start": [
+        129.2311572,
+        35.584836
+      ],
+      "lonlat_end": [
+        129.231036,
+        35.5859635
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        37400353
+      ]
+    },
+    {
+      "id": "taehwa_bridge_seonbawi_road_revision",
+      "label_ko": "선바위교 도로교",
+      "scene": "res://assets/generated/bridges/research_20261009/seonbawi_road_revision.tscn",
+      "lonlat": [
+        129.2351993,
+        35.5780757
+      ],
+      "lonlat_start": [
+        129.2360826,
+        35.578058
+      ],
+      "lonlat_end": [
+        129.2343159,
+        35.5780935
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        153128115
+      ]
+    },
+    {
+      "id": "taehwa_bridge_guyeong_bridge_draft",
+      "label_ko": "구영교",
+      "scene": "res://assets/generated/bridges/research_20261009/guyeong_bridge_draft.tscn",
+      "lonlat": [
+        129.2483615,
+        35.5616046
+      ],
+      "lonlat_start": [
+        129.2482416,
+        35.560938
+      ],
+      "lonlat_end": [
+        129.2484815,
+        35.5622712
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        189551792
+      ]
+    },
+    {
+      "id": "taehwa_bridge_ulsan_grand_revision",
+      "label_ko": "울산대교",
+      "scene": "res://assets/generated/bridges/research_20261009/ulsan_grand_revision.tscn",
+      "lonlat": [
+        129.3914926,
+        35.5118175
+      ],
+      "lonlat_start": [
+        129.3819025,
+        35.5095799
+      ],
+      "lonlat_end": [
+        129.4010828,
+        35.5140552
+      ],
+      "ground": "sea_level",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        997824965,
+        997824969
+      ]
+    },
+    {
+      "id": "taehwa_bridge_taehwa_bridge_draft",
+      "label_ko": "태화교",
+      "scene": "res://assets/generated/bridges/research_20261009/taehwa_bridge_draft.tscn",
+      "lonlat": [
+        129.3087761,
+        35.5521034
+      ],
+      "lonlat_start": [
+        129.308351,
+        35.5501576
+      ],
+      "lonlat_end": [
+        129.3092012,
+        35.5540492
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        64166572,
+        1276737164
+      ]
+    },
+    {
+      "id": "taehwa_bridge_ulsan_pedestrian_draft",
+      "label_ko": "울산교 보행교",
+      "scene": "res://assets/generated/bridges/research_20261009/ulsan_pedestrian_draft.tscn",
+      "lonlat": [
+        129.3218833,
+        35.5509998
+      ],
+      "lonlat_start": [
+        129.3218538,
+        35.5525986
+      ],
+      "lonlat_end": [
+        129.3219128,
+        35.549401
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        165927778
+      ]
+    },
+    {
+      "id": "taehwa_bridge_beonyeong_bridge_draft",
+      "label_ko": "번영교",
+      "scene": "res://assets/generated/bridges/research_20261009/beonyeong_bridge_draft.tscn",
+      "lonlat": [
+        129.323259,
+        35.5509036
+      ],
+      "lonlat_start": [
+        129.3234418,
+        35.5523919
+      ],
+      "lonlat_end": [
+        129.3230762,
+        35.5494153
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        1090665625,
+        1090665626
+      ]
+    },
+    {
+      "id": "taehwa_bridge_hakseong_bridge_draft",
+      "label_ko": "학성교",
+      "scene": "res://assets/generated/bridges/research_20261009/hakseong_bridge_draft.tscn",
+      "lonlat": [
+        129.3402822,
+        35.5494013
+      ],
+      "lonlat_start": [
+        129.340513,
+        35.5514499
+      ],
+      "lonlat_end": [
+        129.3400513,
+        35.5473528
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        1090665607,
+        1090665608
+      ]
+    },
+    {
+      "id": "taehwa_bridge_myeongchon_bridge_draft",
+      "label_ko": "명촌교",
+      "scene": "res://assets/generated/bridges/research_20261009/myeongchon_bridge_draft.tscn",
+      "lonlat": [
+        129.3562537,
+        35.5460846
+      ],
+      "lonlat_start": [
+        129.3572804,
+        35.5484094
+      ],
+      "lonlat_end": [
+        129.3552269,
+        35.5437597
+      ],
+      "ground": "bank_ends",
+      "y_offset_m": 0.0,
+      "scale": 1.0,
+      "osm_ids": [
+        1090665637,
+        1090665638
+      ]
+    }
+  ]
+}
