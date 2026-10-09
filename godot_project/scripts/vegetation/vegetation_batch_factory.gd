@@ -1,6 +1,6 @@
 extends RefCounted
 ## 계열 공통 식생 MultiMesh 묶음기. 씬 경로 템플릿(%s=kind, %d=LOD)과 LOD 거리로 64m 청크별 묶음을 만든다.
-static func build(scene_template: String, kind: String, transforms: Array[Transform3D], lod_ranges: Array, shadow_lod0: bool = true, chunk_size: float = 64.0) -> Node3D:
+static func build(scene_template: String, kind: String, transforms: Array[Transform3D], lod_ranges: Array, shadow_lod0: bool = true, chunk_size: float = 64.0, material_override: Material = null) -> Node3D:
 	var root := Node3D.new()
 	root.name = kind + "_Batches"
 	var groups := {}
@@ -31,6 +31,8 @@ static func build(scene_template: String, kind: String, transforms: Array[Transf
 			node.name = "%s_%d_%d_LOD%d" % [kind,key.x,key.y,lod]
 			node.position = origin
 			node.multimesh = multi
+			if material_override != null:
+				node.material_override = material_override
 			node.visibility_range_begin = float(lod_ranges[lod][0])
 			node.visibility_range_end = float(lod_ranges[lod][1])
 			node.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON if lod == 0 and shadow_lod0 else GeometryInstance3D.SHADOW_CASTING_SETTING_OFF

@@ -62,6 +62,8 @@ def main():
     files = exporter.write_rasters(labels, placeable)
     files["preview"] = exporter.write_preview(labels, water, layers)
     files["scatter"] = exporter.write_scatter(layers)
+    files["forest_masses"] = exporter.write_forest_masses(labels, placeable)
+    files["ground_blend"] = exporter.write_ground()
     for name, path in render_all(exporter.folder / "ground", config["random_seed"]).items():
         files["ground_" + name] = path
     osm_meta = {"cache": "data/raw/taehwagang_ecozones/osm_landcover.json", "elements": len(osm.get("elements", [])),

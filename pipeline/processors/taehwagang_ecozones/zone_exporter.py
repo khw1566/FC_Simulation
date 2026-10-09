@@ -83,6 +83,60 @@ class ZoneExporter:
         self._save_json(data, path, indent=None)
         return path
 
+    def write_forest_masses(self, labels, placeable):
+        """대숲·활엽수림 구역을 닫힘 연산으로 덩어리화한 셀 목록(라벨 격자 좌표)을 기록한다."""
+        ids = {zone["key"]: zone["id"] for zone in self.config["zones"]}
+        masses = []
+        for spec in self.config.get("forest_masses", []):
+            mask = labels == ids[spec["zone"]]
+            steps = int(round(float(spec.get("close_m", 0.0)) / self.raster.cell_m))
+            if steps:
+                mask = ~self.raster.dilate(~self.raster.dilate(mask, steps), steps) & placeable
+            ramp = float(spec.get("edge_ramp_m", 12.0))
+            inside = self.raster.distance_m(~mask, ramp + self.raster.cell_m)
+            # 셀 수관 높이 비율(0~255): 가장자리에서 ramp 거리만큼 올라가고, 가우스 흐림으로 윤곽 계단을 지면 쪽에 묻는다.
+            t = np.where(mask, np.clip(inside / ramp, 0.0, 1.0), 0.0)
+            raw = Image.fromarray(np.round(255 * t * t * (3 - 2 * t)).astype(np.uint8), "L")
+            blurred = np.array(raw.filter(ImageFilter.GaussianBlur(float(spec.get("edge_blur_cells", 1.5)))))
+            keep = blurred >= 6
+            rows, cols = np.nonzero(keep)
+            level = blurred[rows, cols].astype(int)
+            entry = {k: v for k, v in spec.items() if k not in ("close_m", "edge_ramp_m")}
+            entry["texture"] = f"{self.res}/ground/{spec['texture']}.png"
+            entry["cell_count"] = int(mask.sum())
+            entry["area_m2"] = round(float(mask.sum()) * self.raster.cell_m ** 2, 1)
+            entry["cells"] = np.stack([cols, rows, level], axis=1).ravel().astype(int).tolist()
+            masses.append(entry)
+        data = {
+            "version": 1,
+            "coordinate_system_ko": "cells는 [열, 행, 수관 높이 비율 0~255] 평면 배열(라벨 격자 픽셀, 흐림으로 가장자리가 0에 가깝게 내려간다). 픽셀 중심의 원천 월드 좌표 = (픽셀 / (label_size - 1) - 0.5) * source_world_size_m.",
+            "source_bbox": self.raster.bbox,
+            "source_world_size_m": self.raster.world_size_m,
+            "label_size": self.raster.size,
+            "cell_m": round(self.raster.cell_m, 4),
+            "masses": masses,
+        }
+        path = self.folder / "forest_masses.json"
+        self._save_json(data, path, indent=None)
+        return path
+
+    def write_ground(self):
+        """지형 셰이더 바닥 혼합에 쓰는 스플랫·텍스처 경로와 원천 좌표를 기록한다."""
+        blend = self.config.get("ground_blend", {})
+        data = {
+            "version": 1,
+            "source_bbox": self.raster.bbox,
+            "source_world_size_m": self.raster.world_size_m,
+            "splat_a": f"{self.res}/ecozone_splat_a_rgba.png",
+            "splat_b": f"{self.res}/ecozone_splat_b_rgba.png",
+            "textures": {name: f"{self.res}/ground/{name}.png" for name in ("lawn", "silvergrass_ground", "bamboo_litter", "reed_mud", "woodland_soil", "meadow")},
+            "tile_m": blend.get("tile_m", 6.0),
+            "fade_distance_m": blend.get("fade_distance_m", 6000.0),
+        }
+        path = self.folder / "ground_blend.json"
+        self._save_json(data, path)
+        return path
+
     def write_catalog(self, files, stats, layers, provenance, osm_meta):
         assets = {}
         for key, path in files.items():
@@ -125,7 +179,8 @@ class ZoneExporter:
         if key.startswith("ground_"):
             return "ecozone_ground_texture"
         return {"labels": "ecozone_label_mask", "splat_a": "ecozone_splat", "splat_b": "ecozone_splat",
-                "preview": "ecozone_preview", "scatter": "ecozone_scatter"}.get(key, "ecozone_asset")
+                "preview": "ecozone_preview", "scatter": "ecozone_scatter", "forest_masses": "ecozone_forest_mass",
+                "ground_blend": "ecozone_ground_blend"}.get(key, "ecozone_asset")
 
     def _merge_master(self, assets):
         master_path = self.folder.parent / "manifest.json"

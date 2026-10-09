@@ -1891,11 +1891,11 @@
       "modules": [
         {
           "path": "godot_project/scripts/vegetation/silvergrass_geometry.gd",
-          "lines": 80
+          "lines": 82
         },
         {
           "path": "godot_project/scripts/vegetation/vegetation_batch_factory.gd",
-          "lines": 39
+          "lines": 41
         },
         {
           "path": "pipeline/processors/silvergrass/generate.py",
@@ -1903,7 +1903,7 @@
         },
         {
           "path": "pipeline/processors/silvergrass/silvergrass_geometry.gd",
-          "lines": 80
+          "lines": 82
         },
         {
           "path": "pipeline/processors/silvergrass/export_silvergrass.gd",
@@ -1916,11 +1916,11 @@
       ]
     },
     "taehwagang_ecozones": {
-      "description": "태화강 둔치 생태 구역(대숲·억새·수변 갈대·수림·잔디·들풀) 분할, 구역별 규칙 격자 식생 배치, 바닥 텍스처·스플랫",
+      "description": "태화강 둔치 생태 구역(대숲·억새·수변 갈대·수림·잔디·들풀) 분할, 근경 개체 배치(흔들림), 숲 수관 덩어리 메시, 지형 셰이더 바닥 혼합",
       "modules": [
         {
           "path": "config/taehwagang_ecozones.json",
-          "lines": 101
+          "lines": 107
         },
         {
           "path": "pipeline/collectors/ecozone_landcover_collector.py",
@@ -1928,7 +1928,7 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/generate.py",
-          "lines": 76
+          "lines": 78
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/source_masks.py",
@@ -1952,19 +1952,31 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/ground_textures.py",
-          "lines": 74
+          "lines": 80
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
-          "lines": 135
+          "lines": 190
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
-          "lines": 89
+          "lines": 139
+        },
+        {
+          "path": "godot_project/scripts/vegetation/forest_mass_builder.gd",
+          "lines": 136
+        },
+        {
+          "path": "godot_project/scripts/vegetation/ecozone_ground_binder.gd",
+          "lines": 48
+        },
+        {
+          "path": "godot_project/shaders/vegetation_sway.gdshader",
+          "lines": 30
         },
         {
           "path": "godot_project/shaders/ecozone_ground.gdshaderinc",
-          "lines": 37
+          "lines": 46
         }
       ]
     }

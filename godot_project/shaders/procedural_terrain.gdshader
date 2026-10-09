@@ -20,6 +20,7 @@ uniform vec4 contour_color : source_color = vec4(0.12, 0.12, 0.12, 0.7);
 // 수계 마스크 (하천, 호수 수면 절차적 매핑)
 uniform sampler2D water_mask_texture : filter_linear_mipmap, repeat_disable;
 #include "res://shaders/water_mask_filter.gdshaderinc"
+#include "res://shaders/ecozone_ground.gdshaderinc"
 uniform sampler2D coast_height_texture : filter_linear, repeat_disable;
 uniform bool has_coast_height = false;
 uniform sampler2D railway_tunnel_void_texture : filter_nearest, repeat_disable;
@@ -145,6 +146,9 @@ void fragment() {
 				col = mix(col, urban_tone.rgb, splat.b * 0.80);
 			}
 		}
+
+		// 태화강 둔치 생태 구역 바닥(잔디·억새·갈대 등). 연결되지 않은 지도에서는 has_ecozone=false로 무시된다.
+		col = ecozone_blend(col, v_world_pos.xz, length(CAMERA_POSITION_WORLD - v_world_pos));
 
 		// 해안가 절벽 및 일반 급경사 암벽 믹스
 		if (v_world_y < 15.0) {
