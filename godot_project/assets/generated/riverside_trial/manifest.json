@@ -1,0 +1,67 @@
+{
+  "last_updated": "2026-10-09 23:15:22",
+  "map_id": "taehwagang_dunchi",
+  "source_mask_bbox": {
+    "south": 35.515,
+    "north": 35.5872,
+    "west": 129.2738,
+    "east": 129.3622
+  },
+  "source_map_dir": "..\\FC_Simulation_dunchi\\godot_project\\assets\\maps\\taehwagang_dunchi",
+  "sites": [
+    {
+      "id": "garden",
+      "name_ko": "태화강 국가정원",
+      "layout": "garden_promenade",
+      "segments": 10,
+      "length_m": 120.0,
+      "center_lonlat": [
+        129.2968998,
+        35.5489379
+      ],
+      "yaw_degrees": -25.0,
+      "offset_from_hint_m": 11.4,
+      "placed": 27
+    },
+    {
+      "id": "midstream",
+      "name_ko": "태화강 중류 둔치",
+      "layout": "cycle_path",
+      "segments": 8,
+      "length_m": 96.0,
+      "center_lonlat": [
+        129.3195994,
+        35.5497473
+      ],
+      "yaw_degrees": -63.62,
+      "offset_from_hint_m": 45.8,
+      "placed": 14
+    },
+    {
+      "id": "myeongchon",
+      "name_ko": "명촌 둔치",
+      "layout": "waterside_picnic",
+      "segments": 8,
+      "length_m": 96.0,
+      "center_lonlat": [
+        129.3432983,
+        35.552418
+      ],
+      "yaw_degrees": -59.42,
+      "offset_from_hint_m": 53.6,
+      "placed": 16
+    }
+  ],
+  "assets": {
+    "placements.json": {
+      "file_path": "res://assets/generated/riverside_trial/placements.json",
+      "sha256": "35940b7904212a2a207ab54bfaf773c405b7a5e31077e6a6cd4c20a159f76f54",
+      "size_bytes": 18045
+    },
+    "preview.png": {
+      "file_path": "res://assets/generated/riverside_trial/preview.png",
+      "sha256": "fb0b7d4c0f201aabd2f68534da3baf3d7974041b155e787e066a1c1c48be1197",
+      "size_bytes": 6236
+    }
+  }
+}

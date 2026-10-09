@@ -1,0 +1,691 @@
+{
+  "version": 1,
+  "map_id": "taehwagang_dunchi",
+  "note_ko": "보도·정원 시설물 시범 배치. taehwagang_dunchi 지도 placements.json의 placements 배열에 병합해 사용한다.",
+  "placements": [
+    {
+      "id": "trial_garden_walk_01",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.29718,
+        35.5494287
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_02",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2971239,
+        35.5493306
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_03",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2970679,
+        35.5492324
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_04",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2970118,
+        35.5491343
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_05",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2969558,
+        35.5490361
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_06",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2968998,
+        35.5489379
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_07",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2968437,
+        35.5488398
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_08",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2967877,
+        35.5487416
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_09",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2967316,
+        35.5486435
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_walk_10",
+      "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
+      "lonlat": [
+        129.2966756,
+        35.5485453
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_01",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2971574,
+        35.5494373
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_bench_01",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.2972,
+        35.5494211
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 65.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_02",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2971014,
+        35.5493391
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_03",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2970453,
+        35.549241
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_bench_02",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.2970879,
+        35.5492248
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 65.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_04",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2969893,
+        35.5491428
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_05",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2969333,
+        35.5490447
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_bench_03",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.2969758,
+        35.5490285
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 65.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_06",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2968772,
+        35.5489465
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_07",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2968212,
+        35.5488484
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_bench_04",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.2968638,
+        35.5488322
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 65.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_08",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2967651,
+        35.5487502
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_09",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2967091,
+        35.5486521
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_bench_05",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.2967517,
+        35.5486359
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 65.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_planter_10",
+      "scene": "res://assets/generated/road_assets/addon_planter_strip.tscn",
+      "lonlat": [
+        129.2966531,
+        35.5485539
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_plaza_01",
+      "scene": "res://assets/generated/road_assets/deck_stone_plaza_6m.tscn",
+      "lonlat": [
+        129.2969448,
+        35.5489208
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_garden_pavilion_01",
+      "scene": "res://assets/generated/garden_furniture/near/korean_pavilion.tscn",
+      "lonlat": [
+        129.2969448,
+        35.5489208
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.15,
+      "yaw_degrees": -25.0,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_01",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.3200746,
+        35.5499398
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_02",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.3199558,
+        35.5498917
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_03",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.319837,
+        35.5498436
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_04",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.3197182,
+        35.5497954
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_05",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.3195994,
+        35.5497473
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_06",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.3194807,
+        35.5496992
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_07",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.3193619,
+        35.5496511
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_walk_08",
+      "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
+      "lonlat": [
+        129.3192431,
+        35.5496029
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_bench_01",
+      "scene": "res://assets/generated/garden_furniture/near/backless_bench.tscn",
+      "lonlat": [
+        129.3199656,
+        35.5498755
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 26.38,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_bench_02",
+      "scene": "res://assets/generated/garden_furniture/near/backless_bench.tscn",
+      "lonlat": [
+        129.319728,
+        35.5497793
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 26.38,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_bench_03",
+      "scene": "res://assets/generated/garden_furniture/near/backless_bench.tscn",
+      "lonlat": [
+        129.3194905,
+        35.549683
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 26.38,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_bench_04",
+      "scene": "res://assets/generated/garden_furniture/near/backless_bench.tscn",
+      "lonlat": [
+        129.3192529,
+        35.5495868
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 26.38,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_canopy_01",
+      "scene": "res://assets/generated/garden_furniture/near/square_canopy.tscn",
+      "lonlat": [
+        129.3195818,
+        35.5497764
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_midstream_picnic_01",
+      "scene": "res://assets/generated/garden_furniture/near/picnic_table.tscn",
+      "lonlat": [
+        129.3195818,
+        35.5497764
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -63.62,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_01",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.3437549,
+        35.5526384
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_02",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.3436407,
+        35.5525833
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_03",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.3435266,
+        35.5525282
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_04",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.3434124,
+        35.5524731
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_05",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.3432983,
+        35.552418
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_06",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.3431841,
+        35.5523629
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_07",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.34307,
+        35.5523078
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_walk_08",
+      "scene": "res://assets/generated/road_assets/walk_waterside_w3_straight.tscn",
+      "lonlat": [
+        129.3429558,
+        35.5522527
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_picnic_01",
+      "scene": "res://assets/generated/garden_furniture/near/picnic_table.tscn",
+      "lonlat": [
+        129.3437723,
+        35.5526143
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_bench_01",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.343652,
+        35.5525678
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 30.58,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_picnic_02",
+      "scene": "res://assets/generated/garden_furniture/near/picnic_table.tscn",
+      "lonlat": [
+        129.343544,
+        35.5525041
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_bench_02",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.3434237,
+        35.5524576
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 30.58,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_bench_03",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.3431953,
+        35.5523474
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 30.58,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_picnic_03",
+      "scene": "res://assets/generated/garden_furniture/near/picnic_table.tscn",
+      "lonlat": [
+        129.3430874,
+        35.5522837
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_bench_04",
+      "scene": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "lonlat": [
+        129.342967,
+        35.5522372
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": 30.58,
+      "scale": 1.0
+    },
+    {
+      "id": "trial_myeongchon_marquee_01",
+      "scene": "res://assets/generated/garden_furniture/near/festival_marquee.tscn",
+      "lonlat": [
+        129.3432668,
+        35.5524615
+      ],
+      "ground": "terrain",
+      "y_offset_m": 0.0,
+      "yaw_degrees": -59.42,
+      "scale": 1.0
+    }
+  ]
+}

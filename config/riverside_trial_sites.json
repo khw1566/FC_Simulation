@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "basis_ko": "보도·정원 시설물 시범 배치 후보지. 중심 좌표는 대략 위치이며 실제 배치는 둔치 배치 가능 마스크에서 직선 구간을 탐색해 정한다.",
+  "map_id": "taehwagang_dunchi",
+  "segment_length_m": 12.0,
+  "corridor_half_width_m": 9.0,
+  "search_radius_m": 700.0,
+  "search_step_m": 8.0,
+  "yaw_sweep_degrees": [-20, -10, 0, 10, 20],
+  "sites": [
+    {
+      "id": "garden",
+      "name_ko": "태화강 국가정원",
+      "center_lonlat": [129.2970, 35.5490],
+      "layout": "garden_promenade",
+      "max_segments": 10
+    },
+    {
+      "id": "midstream",
+      "name_ko": "태화강 중류 둔치",
+      "center_lonlat": [129.3200, 35.5500],
+      "layout": "cycle_path",
+      "max_segments": 8
+    },
+    {
+      "id": "myeongchon",
+      "name_ko": "명촌 둔치",
+      "center_lonlat": [129.3430, 35.5520],
+      "layout": "waterside_picnic",
+      "max_segments": 8
+    }
+  ]
+}
