@@ -99,6 +99,7 @@ void fragment() {
 			col = simple_water_color.rgb;
 		} else {
 			col = simple_land_color.rgb;
+			col = ecozone_blend(col, v_world_pos.xz, length(CAMERA_POSITION_WORLD - v_world_pos));
 			if (v_world_y < 15.0) {
 				col = mix(col, coastal_cliff_color.rgb, rock_factor * 0.5);
 			} else {
