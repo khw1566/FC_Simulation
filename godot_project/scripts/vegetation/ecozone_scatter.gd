@@ -2,7 +2,8 @@ extends Node3D
 class_name EcozoneScatter
 
 ## 태화강 둔치 생태 구역 식생 배치기. scatter_instances.json의 구역별 규칙 격자 인스턴스를
-## 계열별 64m 청크 MultiMesh로 묶어 배치한다. 대상 지도가 아니면 아무 것도 하지 않는다.
+## 계열별 64m 청크 MultiMesh로 묶어 배치한다. 원천 좌표를 위경도로 바꿔 현재 지도(울산 80km,
+## 둔치 정밀 지도 등)에 맞추고, 현재 지도 범위 밖 인스턴스는 건너뛴다.
 
 const Batches = preload("res://scripts/vegetation/vegetation_batch_factory.gd")
 const CATALOG := "res://assets/generated/taehwagang_ecozones/scatter_instances.json"
@@ -11,25 +12,25 @@ const NO_SHADOW_FAMILIES := ["silvergrass"]
 @export var terrain_manager: Node3D
 ## 비우면 모든 구역. 예: ["bamboo", "silvergrass"]
 @export var zones: PackedStringArray = PackedStringArray()
-## 실행 시 지형 높이로 다시 맞춘다. 끄면 생성 시 기록한 y를 쓴다.
+## 실행 시 지형 높이로 다시 맞춘다. 끄면 생성 시 기록한 y를 쓴다(원천 지도에서만 의미 있음).
 @export var resample_terrain := true
 var load_complete := false
 var placed_count := 0
+## 원천 월드 좌표 → 현재 지도 월드 좌표: target = source * _scale + _offset
+var _scale := Vector2.ONE
+var _offset := Vector2.ZERO
+var _half_extent := INF
 
 func _ready() -> void:
 	_initialize.call_deferred()
 
 func _initialize() -> void:
-	if not FileAccess.file_exists(CATALOG):
+	var maps := get_node_or_null("/root/MapSelectionService")
+	if maps == null or maps.selected_map == null or not FileAccess.file_exists(CATALOG):
 		load_complete = true
 		return
 	var catalog = JSON.parse_string(FileAccess.get_file_as_string(CATALOG))
-	if not catalog is Dictionary:
-		push_warning("생태 구역 배치 파일을 읽지 못함")
-		load_complete = true
-		return
-	var maps := get_node_or_null("/root/MapSelectionService")
-	if maps == null or maps.selected_map == null or maps.selected_map.id != str(catalog.get("map_id", "")):
+	if not catalog is Dictionary or not configure_mapping(catalog, maps.selected_map):
 		load_complete = true
 		return
 	while is_instance_valid(terrain_manager) and not terrain_manager.load_complete:
@@ -46,15 +47,37 @@ func _initialize() -> void:
 			continue
 		add_layer(layer, families[layer.family])
 		await get_tree().process_frame
+	print("EcozoneScatter: ", placed_count, " placed")
 	load_complete = true
+
+## 원천 bbox와 현재 지도 bbox가 겹치면 선형 변환을 설정한다. 겹치지 않으면 false.
+func configure_mapping(catalog: Dictionary, map) -> bool:
+	var source: Dictionary = catalog.get("source_bbox", {})
+	if source.is_empty():
+		return str(catalog.get("map_id", "")) == str(map.id)
+	if source.east < map.bbox_west or source.west > map.bbox_east or source.north < map.bbox_south or source.south > map.bbox_north:
+		return false
+	var source_size := float(catalog.get("source_world_size_m", 8000.0))
+	var size: float = map.world_size_meters
+	var kx: float = (source.east - source.west) / (map.bbox_east - map.bbox_west) * size / source_size
+	var kz: float = (source.north - source.south) / (map.bbox_north - map.bbox_south) * size / source_size
+	var center_lon: float = (source.west + source.east) * 0.5
+	var center_lat: float = (source.south + source.north) * 0.5
+	_scale = Vector2(kx, kz)
+	_offset = Vector2(((center_lon - map.bbox_west) / (map.bbox_east - map.bbox_west) - 0.5) * size,
+		((map.bbox_north - center_lat) / (map.bbox_north - map.bbox_south) - 0.5) * size)
+	_half_extent = size * 0.5
+	return true
 
 func add_layer(layer: Dictionary, family: Dictionary) -> void:
 	var data: Array = layer.get("data", [])
 	var transforms: Array[Transform3D] = []
 	var use_terrain := resample_terrain and is_instance_valid(terrain_manager) and terrain_manager.has_method("get_terrain_elevation")
 	for i in range(0, data.size() - 4, 5):
-		var x := float(data[i])
-		var z := float(data[i + 2])
+		var x := float(data[i]) * _scale.x + _offset.x
+		var z := float(data[i + 2]) * _scale.y + _offset.y
+		if absf(x) > _half_extent or absf(z) > _half_extent:
+			continue
 		var y: float = terrain_manager.get_terrain_elevation(x, z) if use_terrain else float(data[i + 1])
 		var basis := Basis(Vector3.UP, deg_to_rad(float(data[i + 3]))).scaled(Vector3.ONE * float(data[i + 4]))
 		transforms.append(Transform3D(basis, Vector3(x, y, z)))

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-09 23:25:27",
+  "last_updated": "2026-10-09 23:33:23",
   "assets": {
     "labels": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
@@ -93,8 +93,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "10a015eca52339c47a77aec98f534498542fe4d933d5ed160ed84ea9c19b5515",
-      "size_bytes": 3849673,
+      "sha256": "f6142c334c757a7206eb019cd58d5b28d3a2248dc7e6a339cd309ee99142a216",
+      "size_bytes": 3849839,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {

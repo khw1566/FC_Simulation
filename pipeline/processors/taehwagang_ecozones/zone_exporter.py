@@ -74,7 +74,9 @@ class ZoneExporter:
         data = {
             "version": 1,
             "map_id": self.config["target_map_id"],
-            "coordinate_system_ko": "월드 미터. 원점은 지도 중앙, +X 동쪽, +Z 남쪽, y는 생성 시 둔치 높이맵 표본(실행 시 지형 높이로 재표본 권장).",
+            "coordinate_system_ko": "원천 지도 월드 미터. 원점은 원천 지도 중앙, +X 동쪽, +Z 남쪽, y는 생성 시 둔치 높이맵 표본. 다른 지도에서는 source_bbox로 위경도를 거쳐 변환한다.",
+            "source_bbox": self.raster.bbox,
+            "source_world_size_m": self.raster.world_size_m,
             "families": self.config["families"],
             "layers": layers,
         }
