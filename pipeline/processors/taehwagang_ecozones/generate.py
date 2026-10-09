@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from ecozone_landcover_collector import EcozoneLandcoverCollector  # noqa: E402
 from geo_raster import GeoRaster  # noqa: E402
+from mask_repair import MaskRepair  # noqa: E402
 from ground_textures import render_all  # noqa: E402
 from scatter_planner import ScatterPlanner  # noqa: E402
 from source_masks import DunchiSourceMasks  # noqa: E402
@@ -35,6 +36,10 @@ def main():
     collector = EcozoneLandcoverCollector(ROOT / "data/raw/taehwagang_ecozones/osm_landcover.json", config["overpass_endpoints"])
     osm = collector.collect(source.bbox, refresh=args.refresh_osm)
     osm_layers = raster.rasterize_classes(osm.get("elements", []), config["osm_classes"])
+    repair_stats = None
+    if "placeable_repair" in config:
+        placeable, repair_stats = MaskRepair(raster, config["placeable_repair"]).repair(water, placeable, osm_layers)
+        print(f"  부지 보정: {repair_stats['source_area_m2'] / 10000:.1f} ha -> {repair_stats['repaired_area_m2'] / 10000:.1f} ha")
 
     classifier = ZoneClassifier(raster, config["zones"])
     labels, stats = classifier.classify(placeable, water, osm_layers)
@@ -61,7 +66,9 @@ def main():
         files["ground_" + name] = path
     osm_meta = {"cache": "data/raw/taehwagang_ecozones/osm_landcover.json", "elements": len(osm.get("elements", [])),
                 "endpoint": osm.get("source_endpoint"), "osm_timestamp": osm.get("osm3s", {}).get("timestamp_osm_base")}
-    exporter.write_catalog(files, stats, layers, source.provenance(), osm_meta)
+    provenance = source.provenance()
+    provenance["placeable_repair"] = repair_stats
+    exporter.write_catalog(files, stats, layers, provenance, osm_meta)
     print("완료:", exporter.folder)
 
 

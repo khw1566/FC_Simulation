@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "last_updated": "2026-10-09 23:33:23",
+  "last_updated": "2026-10-09 23:39:54",
   "assets": {
     "labels": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
       "format": "PNG",
-      "sha256": "1d0002f7defb1f8faf739f2a1ca7f85d7bfa26a55beb27e8cd0b2277b2789f9c",
-      "size_bytes": 29260,
+      "sha256": "6caccee3137de341e96bd2554f33dbad021d1276fcdaf99202f550972e01b440",
+      "size_bytes": 23805,
       "type": "ecozone_label_mask",
       "metadata": {
         "bbox": {
@@ -27,8 +27,8 @@
     "splat_a": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_a_rgba.png",
       "format": "PNG",
-      "sha256": "31af86a108cae4cd5928b7b7a6ff79b2518d9b6d9fd761552c7e824af7c72ec8",
-      "size_bytes": 226506,
+      "sha256": "1bc91518d9760e669c74b9fb3cc31d41e6419b396f9ab3bf44a4014bd94e57e6",
+      "size_bytes": 217446,
       "type": "ecozone_splat",
       "metadata": {
         "bbox": {
@@ -49,8 +49,8 @@
     "splat_b": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_b_rgba.png",
       "format": "PNG",
-      "sha256": "de0b9559cf5e729b9563e94c1afd7ab00d2647a39864a40605ac1a9ab7de6454",
-      "size_bytes": 233898,
+      "sha256": "a680be5c5cb034665842d29779d1442273c7830cd52b4243583e8481db48facc",
+      "size_bytes": 150400,
       "type": "ecozone_splat",
       "metadata": {
         "bbox": {
@@ -71,8 +71,8 @@
     "preview": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
       "format": "PNG",
-      "sha256": "f0df3e8a6529f6e09fb725c85e1d8556e52768fe12b4a7c2471eacfe049efd1e",
-      "size_bytes": 125099,
+      "sha256": "2f4bf7fd0e3256b231f7284dbae16358a8ce83acb2d4fbc5c97671cc6ce9f43c",
+      "size_bytes": 112584,
       "type": "ecozone_preview",
       "metadata": {
         "bbox": {
@@ -93,8 +93,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "f6142c334c757a7206eb019cd58d5b28d3a2248dc7e6a339cd309ee99142a216",
-      "size_bytes": 3849839,
+      "sha256": "700e4b68839faa1687f7bb932c93cea07d859ee645b3e6125f0546fa11cc1876",
+      "size_bytes": 4859601,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -104,9 +104,9 @@
           "east": 129.3622
         },
         "resolution": null,
-        "elevation_min": 1.35,
-        "elevation_max": 13.43,
-        "instances": 104113
+        "elevation_min": -0.59,
+        "elevation_max": 66.75,
+        "instances": 129438
       }
     },
     "ground_lawn": {

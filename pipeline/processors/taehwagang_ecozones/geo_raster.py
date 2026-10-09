@@ -107,6 +107,16 @@ class GeoRaster:
             result = grown
         return result
 
+    @staticmethod
+    def reconstruct(seed, mask):
+        """seed에서 출발해 mask 안에서 이어지는 영역(형태학적 재구성)."""
+        region = seed & mask
+        while True:
+            grown = GeoRaster.dilate(region, 8) & mask
+            if np.array_equal(grown, region):
+                return region
+            region = grown
+
     def distance_m(self, mask, max_m):
         """대상 마스크로부터의 근사 거리(4·8 이웃 교대 확장, 팔각형 근사). 범위 밖은 inf."""
         distance = np.full(mask.shape, np.inf, dtype=np.float32)

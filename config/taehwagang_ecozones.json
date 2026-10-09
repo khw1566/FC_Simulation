@@ -7,6 +7,20 @@
     "../FC_Simulation_dunchi/godot_project/assets/maps/taehwagang_dunchi"
   ],
   "working_resolution": 2048,
+  "placeable_repair_basis_ko": "원천 둔치 마스크가 거친 고도 때문에 조각나므로, 서쪽 상류 유입부와 이어진 폭 16m 이상 수면(태화강 본류·동천)에서 구간별 폭의 연속 띠를 부지로 삼고 수면 300m 이내 OSM 공원·잔디를 더한다. 띠 폭은 추정값.",
+  "placeable_repair": {
+    "min_water_width_m": 16,
+    "river_seed_edges": ["west"],
+    "band_m": 70,
+    "band_overrides": [
+      {"lon_ranges": [[129.2738, 129.2900]], "band_m": 60},
+      {"lon_ranges": [[129.3380, 129.3622]], "band_m": 120}
+    ],
+    "osm_classes": ["park", "grass", "pitch"],
+    "osm_max_water_distance_m": 300,
+    "close_m": 20,
+    "keep_source": false
+  },
   "overpass_endpoints": [
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter"

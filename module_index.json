@@ -1920,7 +1920,7 @@
       "modules": [
         {
           "path": "config/taehwagang_ecozones.json",
-          "lines": 87
+          "lines": 101
         },
         {
           "path": "pipeline/collectors/ecozone_landcover_collector.py",
@@ -1928,7 +1928,7 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/generate.py",
-          "lines": 69
+          "lines": 76
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/source_masks.py",
@@ -1936,7 +1936,11 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/geo_raster.py",
-          "lines": 128
+          "lines": 138
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/mask_repair.py",
+          "lines": 63
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/zone_classifier.py",
@@ -1952,11 +1956,11 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
-          "lines": 133
+          "lines": 135
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
-          "lines": 66
+          "lines": 89
         },
         {
           "path": "godot_project/shaders/ecozone_ground.gdshaderinc",
