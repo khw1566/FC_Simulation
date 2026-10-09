@@ -1928,8 +1928,8 @@
         {
           "class_name": "RiverbankShaper",
           "path": "pipeline/processors/taehwagang_terrain/riverbank_shaper.py",
-          "responsibility": "본류 하상 단면과 제방 안쪽 연결 둔치 평탄 정형, 배치 가능 마스크 산출",
-          "lines": 74
+          "responsibility": "본류 하상 단면과 구간별 폭의 연속 수변 둔치 띠 평탄화, 배치 가능 마스크 산출",
+          "lines": 62
         },
         {
           "class_name": "PadFlattener",
