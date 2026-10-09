@@ -67,11 +67,30 @@
     "bank_slope_run_per_rise": 3.0
   },
   "dunchi": {
-    "corridor_width_m": 320.0,
-    "min_rise_m": 1.2,
-    "max_rise_m": 6.5,
-    "edge_blend_m": 1.5,
-    "smoothing_sigma_m": 14.0,
+    "basis": "본류 수면에서 잰 연속 띠. 폭은 생태 권역 배치 부지(config/taehwagang_ecozones.json)와 같게 유지",
+    "band_m": 70.0,
+    "band_overrides": [
+      {
+        "lon_ranges": [
+          [
+            129.2738,
+            129.29
+          ]
+        ],
+        "band_m": 60.0
+      },
+      {
+        "lon_ranges": [
+          [
+            129.338,
+            129.3622
+          ]
+        ],
+        "band_m": 120.0
+      }
+    ],
+    "band_edge_blend_m": 30.0,
+    "flat_rise_m": 2.5,
     "bank_ramp_m": 10.0
   },
   "placement_pads_basis": "에셋 배치 예정 부지. 높이를 비우면 부지 내 중앙값으로 평탄화",

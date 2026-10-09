@@ -16,7 +16,7 @@ $env:VWORLD_API_KEY = "<발급 키>"
 - 고도 원천: VWorld DEM 노드를 `data/raw/taehwagang_dunchi/vworld_dem/<level>/`에 캐시한다. 노드 행 방향은 Terrarium과의 상관계수로 확정하고 결측은 Terrarium으로 채운다.
 - 수계: Overpass 수면 다각형(`water=river`, `waterway=riverbank`)을 본류로, 그 외 수면과 지류를 기타 수면으로 분리한다.
 - 하상: 본류 안쪽은 수위 프로파일에서 `bank_slope_run_per_rise` 경사로 `bed_max_depth_m`까지 낮춘다.
-- 둔치: 본류에서 출발해 수위 + `max_rise_m` 이하로만 이어지는 연결 영역을 둔치로 보고 `smoothing_sigma_m`로 평탄화한다. 제방이 연결을 끊으므로 제방 뒤 시가지는 정형하지 않는다.
+- 둔치: 본류 수면에서 잰 구간별 폭(`band_m`, `band_overrides`)의 연속 띠를 수위 + `flat_rise_m`로 평탄화한다. 폭은 생태 권역 배치 부지와 같게 유지한다. 거친 고도의 연결 영역은 조각나고 시가지로 번져 쓰지 않는다.
 - 강변도로 단면: OSM 도로 중 본류와 나란한 구간(`roads`)을 강변도로로 고른다. 둔치는 수위 + `dunchi_rise_m`의 일정 높이, 강변도로와 그 바깥 시가지는 수위 + `road_rise_m`로 평탄화하고, 도로 가장자리에서 `slope_width_m` 띠에만 S자 곡면 경사를 둔다. 도로보다 `hill_threshold_m` 이상 높은 산지는 원 지형을 유지한다. 강변도로가 없는 구간은 앞 단계 둔치 정형을 유지한다.
 - 위성 확인: `results/dunchi_check/`에 위성 영상 위로 수면(파랑), 강변도로(빨강), 기타 도로(회색), 제방 경사(주황), 배치 가능 둔치(초록)를 겹친 이미지를 쓴다. 어긋난 도로는 `roads.include_osm_ids`, `exclude_osm_ids`, `manual_lines`로 보정한다.
 - 배치 부지: `placement_pads`의 다각형을 지정 높이 또는 중앙값으로 평탄화한다.
