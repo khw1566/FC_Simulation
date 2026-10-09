@@ -44,7 +44,7 @@ def garden_promenade(count: int) -> list[Item]:
             items.append(_bench("park_bench.tscn", i, 1.0))
     plaza_lateral = WALK_HALF_WIDTH_M + 3.0
     items.append(Item("plaza", ROAD + "deck_stone_plaza_6m.tscn", mid, 0.0, plaza_lateral, 0.0, 0.0, (3.0, 3.0)))
-    items.append(Item("pavilion", GARDEN + "korean_pavilion.tscn", mid, 0.0, plaza_lateral, 0.0, WALK_SURFACE_Y_M, (2.95, 2.6)))
+    items.append(Item("pavilion", GARDEN + "korean_pavilion.tscn", mid, 0.0, plaza_lateral, 0.0, WALK_SURFACE_Y_M, (3.0, 3.0)))
     return items
 
 
