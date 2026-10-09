@@ -31,7 +31,7 @@ class TerrainExporter:
         temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         temporary.replace(path)
 
-    def export(self, heights, water, placeable, source_meta, shape_stats, pads):
+    def export(self, heights, water, placeable, source_meta, shape_stats, pads, satellite=None, extra_meta=None):
         self.folder.mkdir(parents=True, exist_ok=True)
         low = float(self.config["elevation_range"]["min_meters"])
         high = float(self.config["elevation_range"]["max_meters"])
@@ -43,6 +43,13 @@ class TerrainExporter:
         }
         for path, array, mode in files.values():
             self._write_png(array, path, mode)
+        if satellite is not None:
+            path = self.folder / "dunchi_satellite.jpg"
+            temporary = path.with_name("dunchi_satellite.partial.jpg")
+            Image.fromarray(satellite, mode="RGB").save(temporary, quality=88)
+            temporary.replace(path)
+            files["satellite"] = (path, None, "JPEG")
+        self.extra_meta = extra_meta or {}
         self._write_meta()
         self._write_manifest(files, heights, source_meta, shape_stats, pads)
         self._register()
@@ -69,6 +76,7 @@ class TerrainExporter:
                 "watermask": f"{self.res}/dunchi_watermask_8bit.png",
                 "placement_mask": f"{self.res}/dunchi_placement_mask_8bit.png",
                 "riverside_placements": f"{self.res}/placements.json",
+                "satellite_reference": f"{self.res}/dunchi_satellite.jpg",
             },
             "category": "korea",
         }
@@ -78,7 +86,7 @@ class TerrainExporter:
         c = self.config
         assets = {}
         for name, (path, _, mode) in files.items():
-            entry = {"file_path": f"{self.res}/{path.name}", "format": "PNG16" if mode == "I;16" else "PNG8",
+            entry = {"file_path": f"{self.res}/{path.name}", "format": {"I;16": "PNG16", "L": "PNG8"}.get(mode, mode),
                      "sha256": self._sha256(path), "size_bytes": path.stat().st_size,
                      "bbox": c["bbox"], "resolution": [c["resolution"]["target_width"], c["resolution"]["target_height"]]}
             if name == "heightmap":
@@ -95,6 +103,7 @@ class TerrainExporter:
             "water_level_basis": c["water"]["water_level_profile_basis"],
             "placement_pads": pads,
             "surveyed": False,
+            **self.extra_meta,
             "assets": assets,
         }
         self._write_json(self.folder / "manifest.json", manifest)

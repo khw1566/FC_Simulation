@@ -1905,7 +1905,7 @@
           "class_name": "TerrariumDemSource",
           "path": "pipeline/collectors/riverside_sources/terrarium_dem_source.py",
           "responsibility": "키 없는 공개 Terrarium 고도의 위도 등간격 격자 변환",
-          "lines": 34
+          "lines": 44
         },
         {
           "class_name": "RiversideWaterCollector",
@@ -1947,19 +1947,49 @@
           "class_name": "TerrainExporter",
           "path": "pipeline/processors/taehwagang_terrain/terrain_exporter.py",
           "responsibility": "높이맵·마스크 내보내기, map_meta·매니페스트·지도 목록 갱신",
-          "lines": 108
+          "lines": 117
         },
         {
           "class_name": "generate",
           "path": "pipeline/processors/taehwagang_terrain/generate.py",
           "responsibility": "태화강 둔치 정밀 지형 생성 진입점",
-          "lines": 52
+          "lines": 84
         },
         {
           "class_name": "RiversideAssetPlacer",
           "path": "godot_project/scripts/terrain/riverside_asset_placer.gd",
           "responsibility": "taehwagang_dunchi 지도 전용 placements.json 씬 지형 높이 배치",
           "lines": 60
+        },
+        {
+          "class_name": "RiversideRoadCollector",
+          "path": "pipeline/collectors/riverside_sources/road_collector.py",
+          "responsibility": "Overpass 도로 중심선 수집",
+          "lines": 37
+        },
+        {
+          "class_name": "SatelliteImagerySource",
+          "path": "pipeline/collectors/riverside_sources/satellite_imagery.py",
+          "responsibility": "VWorld 위성 WMTS 타일 수집과 지도 격자 정합",
+          "lines": 74
+        },
+        {
+          "class_name": "RoadRasterizer",
+          "path": "pipeline/processors/taehwagang_terrain/road_rasterizer.py",
+          "responsibility": "도로 폭 래스터화와 본류 평행 강변도로 선택, 포함/제외/수동 선형 보정",
+          "lines": 82
+        },
+        {
+          "class_name": "LeveeProfileShaper",
+          "path": "pipeline/processors/taehwagang_terrain/levee_profile_shaper.py",
+          "responsibility": "평탄 둔치, 둔치-강변도로 사이 곡면 경사, 도로·시가지 평탄화",
+          "lines": 64
+        },
+        {
+          "class_name": "CheckOverlayRenderer",
+          "path": "pipeline/processors/taehwagang_terrain/check_overlay.py",
+          "responsibility": "위성 영상 위 수면·도로·경사·배치 가능 영역 확인 이미지",
+          "lines": 45
         }
       ]
     }

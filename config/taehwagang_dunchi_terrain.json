@@ -6,11 +6,11 @@
   "description_en": "8km detail map of the Taehwa River floodplain from the National Garden to Myeongchon Bridge. Floodplain surfaces are shaped flat from water boundaries for asset placement.",
   "center": {
     "lat": 35.5511,
-    "lon": 129.3180
+    "lon": 129.318
   },
   "world_size_meters": 8000.0,
   "bbox": {
-    "south": 35.5150,
+    "south": 35.515,
     "north": 35.5872,
     "west": 129.2738,
     "east": 129.3622
@@ -46,10 +46,22 @@
     "centerline_width_m": 120.0,
     "water_level_profile_basis": "추정값. 실측 수위 자료로 교체 필요",
     "water_level_profile": [
-      [129.2738, 3.0],
-      [129.3000, 2.0],
-      [129.3300, 1.0],
-      [129.3622, 0.4]
+      [
+        129.2738,
+        3.0
+      ],
+      [
+        129.3,
+        2.0
+      ],
+      [
+        129.33,
+        1.0
+      ],
+      [
+        129.3622,
+        0.4
+      ]
     ],
     "bed_max_depth_m": 2.5,
     "bank_slope_run_per_rise": 3.0
@@ -64,5 +76,40 @@
   },
   "placement_pads_basis": "에셋 배치 예정 부지. 높이를 비우면 부지 내 중앙값으로 평탄화",
   "placement_pads": [],
-  "spawn_position": [0.0, 120.0, 0.0]
+  "spawn_position": [
+    0.0,
+    120.0,
+    0.0
+  ],
+  "satellite": {
+    "url_template": "https://api.vworld.kr/req/wmts/1.0.0/{key}/Satellite/{z}/{y}/{x}.jpeg",
+    "zoom": 17,
+    "max_workers": 6
+  },
+  "roads": {
+    "basis": "OSM 도로 중 본류와 나란한 구간을 자동 선택하고, 위성 영상 겹침 확인(results/dunchi_check) 후 포함/제외 id와 수동 선형으로 보정",
+    "riverside_highway_classes": [
+      "trunk",
+      "primary",
+      "secondary",
+      "tertiary",
+      "unclassified"
+    ],
+    "max_distance_to_river_m": 320.0,
+    "min_river_share": 0.7,
+    "min_length_m": 150.0,
+    "include_osm_ids": [],
+    "exclude_osm_ids": [],
+    "manual_lines": []
+  },
+  "levee_profile": {
+    "basis": "강변 지형은 평탄. 둔치와 강변도로 사이에만 곡면 경사. 높이는 수위 기준 추정값",
+    "dunchi_rise_m": 2.5,
+    "road_rise_m": 7.0,
+    "slope_width_m": 25.0,
+    "road_search_m": 450.0,
+    "city_flatten_m": 1500.0,
+    "hill_threshold_m": 8.0,
+    "hill_blend_m": 12.0
+  }
 }
