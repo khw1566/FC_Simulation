@@ -1,0 +1,420 @@
+{
+  "last_updated": "2026-10-09 23:44:25",
+  "region": "taehwagang_dunchi",
+  "bbox": {
+    "south": 35.515,
+    "north": 35.5872,
+    "west": 129.2738,
+    "east": 129.3622
+  },
+  "pixel_spacing_m": 1.9536,
+  "height_source": {
+    "source": "terrarium",
+    "zoom": 15,
+    "new_requests": 0,
+    "despiked_pixels": 354,
+    "vworld_error": "DEM 노드 크기 불일치 140753,57123: 174 bytes",
+    "api_key_origin": "env:VWORLD_API_KEY"
+  },
+  "riverbank_shaping": {
+    "river_pixels": 512165,
+    "dunchi_pixels": 881655,
+    "placeable_pixels": 786048,
+    "placeable_area_m2": 2999999.8,
+    "levee_profile_pixels": 451667,
+    "levee_slope_pixels": 109349,
+    "city_flatten_pixels": 2921401,
+    "levee_placeable_pixels": 500440,
+    "skipped_open_relations": 0
+  },
+  "water_level_basis": "추정값. 실측 수위 자료로 교체 필요",
+  "placement_pads": [],
+  "surveyed": false,
+  "riverside_roads": [
+    {
+      "osm_id": 37399715,
+      "name": "남산로",
+      "highway": "secondary",
+      "length_m": 1110.1,
+      "manual": false
+    },
+    {
+      "osm_id": 179640367,
+      "name": "신기길",
+      "highway": "tertiary",
+      "length_m": 201.1,
+      "manual": false
+    },
+    {
+      "osm_id": 179640369,
+      "name": "내오산로",
+      "highway": "tertiary",
+      "length_m": 334.3,
+      "manual": false
+    },
+    {
+      "osm_id": 179640372,
+      "name": "태화로",
+      "highway": "secondary",
+      "length_m": 554.1,
+      "manual": false
+    },
+    {
+      "osm_id": 723740353,
+      "name": "신기길",
+      "highway": "tertiary",
+      "length_m": 760.5,
+      "manual": false
+    },
+    {
+      "osm_id": 1092021481,
+      "name": "내오산로",
+      "highway": "tertiary",
+      "length_m": 433.0,
+      "manual": false
+    },
+    {
+      "osm_id": 1092021482,
+      "name": "내오산로",
+      "highway": "tertiary",
+      "length_m": 431.1,
+      "manual": false
+    },
+    {
+      "osm_id": 1092021483,
+      "name": "내오산로",
+      "highway": "tertiary",
+      "length_m": 289.5,
+      "manual": false
+    },
+    {
+      "osm_id": 1287409834,
+      "name": "남산로",
+      "highway": "secondary",
+      "length_m": 1343.7,
+      "manual": false
+    },
+    {
+      "osm_id": 1494898719,
+      "name": "남산로",
+      "highway": "secondary",
+      "length_m": 574.3,
+      "manual": false
+    },
+    {
+      "osm_id": 1494898733,
+      "name": "남산로",
+      "highway": "secondary",
+      "length_m": 1329.3,
+      "manual": false
+    },
+    {
+      "osm_id": 37401997,
+      "name": "옥교로",
+      "highway": "unclassified",
+      "length_m": 788.3,
+      "manual": false
+    },
+    {
+      "osm_id": 37403214,
+      "name": "학성로",
+      "highway": "tertiary_link",
+      "length_m": 328.1,
+      "manual": false
+    },
+    {
+      "osm_id": 64166497,
+      "name": "강남로",
+      "highway": "secondary",
+      "length_m": 923.7,
+      "manual": false
+    },
+    {
+      "osm_id": 64166501,
+      "name": null,
+      "highway": "secondary",
+      "length_m": 417.7,
+      "manual": false
+    },
+    {
+      "osm_id": 64166532,
+      "name": "강남로",
+      "highway": "secondary",
+      "length_m": 546.0,
+      "manual": false
+    },
+    {
+      "osm_id": 178653190,
+      "name": null,
+      "highway": "secondary_link",
+      "length_m": 189.7,
+      "manual": false
+    },
+    {
+      "osm_id": 202529392,
+      "name": null,
+      "highway": "tertiary_link",
+      "length_m": 302.9,
+      "manual": false
+    },
+    {
+      "osm_id": 1088140665,
+      "name": "태화로",
+      "highway": "secondary",
+      "length_m": 169.6,
+      "manual": false
+    },
+    {
+      "osm_id": 1089693051,
+      "name": "강북로",
+      "highway": "secondary",
+      "length_m": 999.1,
+      "manual": false
+    },
+    {
+      "osm_id": 1090665605,
+      "name": "강북로",
+      "highway": "secondary",
+      "length_m": 1498.3,
+      "manual": false
+    },
+    {
+      "osm_id": 1091146463,
+      "name": "강남로",
+      "highway": "secondary",
+      "length_m": 381.1,
+      "manual": false
+    },
+    {
+      "osm_id": 37402056,
+      "name": "외솔큰길",
+      "highway": "secondary",
+      "length_m": 243.1,
+      "manual": false
+    },
+    {
+      "osm_id": 165686816,
+      "name": "외솔큰길",
+      "highway": "tertiary",
+      "length_m": 306.7,
+      "manual": false
+    },
+    {
+      "osm_id": 165686821,
+      "name": "외솔큰길",
+      "highway": "tertiary",
+      "length_m": 186.4,
+      "manual": false
+    },
+    {
+      "osm_id": 814236752,
+      "name": "외솔큰길",
+      "highway": "tertiary",
+      "length_m": 358.4,
+      "manual": false
+    },
+    {
+      "osm_id": 892757425,
+      "name": null,
+      "highway": "secondary",
+      "length_m": 269.4,
+      "manual": false
+    },
+    {
+      "osm_id": 892757426,
+      "name": null,
+      "highway": "secondary",
+      "length_m": 250.8,
+      "manual": false
+    },
+    {
+      "osm_id": 892757427,
+      "name": "외솔큰길",
+      "highway": "secondary",
+      "length_m": 197.6,
+      "manual": false
+    },
+    {
+      "osm_id": 930162331,
+      "name": "외솔큰길",
+      "highway": "tertiary",
+      "length_m": 154.0,
+      "manual": false
+    },
+    {
+      "osm_id": 1000406420,
+      "name": "강남로",
+      "highway": "secondary",
+      "length_m": 491.7,
+      "manual": false
+    },
+    {
+      "osm_id": 1086722932,
+      "name": "강남로",
+      "highway": "secondary",
+      "length_m": 348.7,
+      "manual": false
+    },
+    {
+      "osm_id": 1090665603,
+      "name": "강북로",
+      "highway": "secondary",
+      "length_m": 604.9,
+      "manual": false
+    },
+    {
+      "osm_id": 1090665604,
+      "name": "강북로",
+      "highway": "secondary",
+      "length_m": 328.0,
+      "manual": false
+    },
+    {
+      "osm_id": 1409120145,
+      "name": null,
+      "highway": "tertiary",
+      "length_m": 368.0,
+      "manual": false
+    },
+    {
+      "osm_id": 1493362094,
+      "name": "강남로",
+      "highway": "secondary",
+      "length_m": 204.5,
+      "manual": false
+    },
+    {
+      "osm_id": 1493362095,
+      "name": "강남로",
+      "highway": "secondary",
+      "length_m": 362.2,
+      "manual": false
+    },
+    {
+      "osm_id": 143750343,
+      "name": "외솔큰길",
+      "highway": "secondary",
+      "length_m": 327.3,
+      "manual": false
+    },
+    {
+      "osm_id": 152941341,
+      "name": "산전길",
+      "highway": "tertiary",
+      "length_m": 243.5,
+      "manual": false
+    },
+    {
+      "osm_id": 180231906,
+      "name": "산전길",
+      "highway": "tertiary",
+      "length_m": 358.5,
+      "manual": false
+    },
+    {
+      "osm_id": 1087026082,
+      "name": "산전길",
+      "highway": "tertiary",
+      "length_m": 243.6,
+      "manual": false
+    },
+    {
+      "osm_id": 1087026108,
+      "name": "산전길",
+      "highway": "tertiary",
+      "length_m": 290.8,
+      "manual": false
+    },
+    {
+      "osm_id": 1087125093,
+      "name": "외솔큰길",
+      "highway": "secondary",
+      "length_m": 164.0,
+      "manual": false
+    }
+  ],
+  "satellite": {
+    "source": "vworld_wmts_satellite",
+    "zoom": 17,
+    "new_requests": 0
+  },
+  "check_images": [
+    "overview.jpg",
+    "crop_00_x0_y1542.jpg",
+    "crop_01_x1024_y1584.jpg",
+    "crop_02_x2048_y1680.jpg",
+    "crop_03_x3072_y982.jpg"
+  ],
+  "assets": {
+    "heightmap": {
+      "file_path": "res://assets/maps/taehwagang_dunchi/dunchi_heightmap_16bit.png",
+      "format": "PNG16",
+      "sha256": "abaa62f2d5bcc4f7f55cccbd4eaa6878e8649ed078971ea50e61e92fa33cb3c7",
+      "size_bytes": 12251186,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "resolution": [
+        4096,
+        4096
+      ],
+      "elevation_min": -8.897,
+      "elevation_max": 199.965,
+      "encoding_range_m": [
+        -10.0,
+        250.0
+      ]
+    },
+    "watermask": {
+      "file_path": "res://assets/maps/taehwagang_dunchi/dunchi_watermask_8bit.png",
+      "format": "PNG8",
+      "sha256": "e4574bceeb3805caa0f56eccf4dcd96766a47dcf3d4e5cefbcbaeb84dd55f393",
+      "size_bytes": 53197,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "resolution": [
+        4096,
+        4096
+      ]
+    },
+    "placement_mask": {
+      "file_path": "res://assets/maps/taehwagang_dunchi/dunchi_placement_mask_8bit.png",
+      "format": "PNG8",
+      "sha256": "72e977a1a246961e25b2c1c5b7a22bd06d436034d90e3d9e002923142e2d8c30",
+      "size_bytes": 42300,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "resolution": [
+        4096,
+        4096
+      ]
+    },
+    "satellite": {
+      "file_path": "res://assets/maps/taehwagang_dunchi/dunchi_satellite.jpg",
+      "format": "JPEG",
+      "sha256": "d60a18b3c3b59f573ce582132a7d3b72eac92f462fbd7d717374b3d9030a593d",
+      "size_bytes": 4998410,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "resolution": [
+        4096,
+        4096
+      ]
+    }
+  }
+}

@@ -27,6 +27,10 @@
 - **용도:** 간몬 해협의 해안선(`natural=coastline`) 및 하천망(`waterway=river`) 벡터 GeoJSON을 수집합니다.
 - **필요성:** **API 키 불필요.** 공개 공용 서버(overpass-api.de 등)를 파이프라인에서 자동 호출합니다.
 
+### 2.3. VWorld API (태화강 둔치 정밀 지형)
+- **용도:** `pipeline/processors/taehwagang_terrain/generate.py`가 VWorld 3D 지형 DEM을 수집합니다.
+- **설정 방법:** 환경변수 `VWORLD_API_KEY`를 우선 사용하고, 없으면 `data/api_keys.json`의 `vworld_api_key`를 사용합니다. 키는 커밋하지 않습니다.
+
 ---
 
 ## 3. 사용자가 직접 수동 배치할 수 있는 오프라인 데이터 (선택 사항)

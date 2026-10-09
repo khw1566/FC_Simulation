@@ -1,0 +1,195 @@
+{
+  "region_name": "taehwagang_dunchi",
+  "name_ko": "태화강 둔치 정밀 지형",
+  "name_en": "Taehwa River Floodplain Detail Terrain",
+  "description_ko": "태화강 국가정원부터 명촌교 부근까지 둔치를 별도 고해상도 지형으로 처리한 8km 지도입니다. 둔치는 수계 경계 기준으로 평탄하게 정형되어 에셋 배치용 표면으로 사용합니다.",
+  "description_en": "8km detail map of the Taehwa River floodplain from the National Garden to Myeongchon Bridge. Floodplain surfaces are shaped flat from water boundaries for asset placement.",
+  "center": {
+    "lat": 35.5511,
+    "lon": 129.318
+  },
+  "world_size_meters": 8000.0,
+  "bbox": {
+    "south": 35.515,
+    "north": 35.5872,
+    "west": 129.2738,
+    "east": 129.3622
+  },
+  "resolution": {
+    "target_width": 4096,
+    "target_height": 4096
+  },
+  "elevation_range": {
+    "min_meters": -10.0,
+    "max_meters": 250.0
+  },
+  "height_source": {
+    "preferred": "auto",
+    "api_key_env": "VWORLD_API_KEY",
+    "api_key_file_field": "vworld_api_key",
+    "vworld": {
+      "url_template": "https://xdworld.vworld.kr/XDServer/requestLayerNode?APIKey={key}&Layer=dem&Level={level}&IDX={idx}&IDY={idy}",
+      "level": 14,
+      "samples_per_tile": 65,
+      "max_workers": 4,
+      "daily_request_limit": 2500
+    },
+    "terrarium": {
+      "zoom": 15
+    }
+  },
+  "water": {
+    "overpass_endpoints": [
+      "https://overpass-api.de/api/interpreter",
+      "https://overpass.kumi.systems/api/interpreter"
+    ],
+    "centerline_width_m": 120.0,
+    "water_level_profile_basis": "추정값. 실측 수위 자료로 교체 필요",
+    "water_level_profile": [
+      [
+        129.2738,
+        3.0
+      ],
+      [
+        129.3,
+        2.0
+      ],
+      [
+        129.33,
+        1.0
+      ],
+      [
+        129.3622,
+        0.4
+      ]
+    ],
+    "bed_max_depth_m": 2.5,
+    "bank_slope_run_per_rise": 3.0
+  },
+  "dunchi": {
+    "basis": "본류 수면에서 잰 연속 띠. 폭은 생태 권역 배치 부지(config/taehwagang_ecozones.json)와 같게 유지",
+    "band_m": 70.0,
+    "band_overrides": [
+      {
+        "lon_ranges": [
+          [
+            129.2738,
+            129.29
+          ]
+        ],
+        "band_m": 60.0
+      },
+      {
+        "lon_ranges": [
+          [
+            129.338,
+            129.3622
+          ]
+        ],
+        "band_m": 120.0
+      }
+    ],
+    "band_edge_blend_m": 30.0,
+    "flat_rise_m": 2.5,
+    "bank_ramp_m": 10.0
+  },
+  "placement_pads_basis": "에셋 배치 예정 부지. 높이를 비우면 부지 내 중앙값으로 평탄화",
+  "placement_pads": [],
+  "spawn_position": [
+    0.0,
+    120.0,
+    0.0
+  ],
+  "satellite": {
+    "url_template": "https://api.vworld.kr/req/wmts/1.0.0/{key}/Satellite/{z}/{y}/{x}.jpeg",
+    "zoom": 17,
+    "max_workers": 6
+  },
+  "roads": {
+    "basis": "OSM 도로 중 본류와 나란한 구간을 자동 선택하고, 위성 영상 겹침 확인(results/dunchi_check) 후 포함/제외 id와 수동 선형으로 보정",
+    "riverside_highway_classes": [
+      "trunk",
+      "primary",
+      "secondary",
+      "tertiary",
+      "unclassified"
+    ],
+    "max_distance_to_river_m": 320.0,
+    "min_river_share": 0.7,
+    "min_length_m": 150.0,
+    "include_osm_ids": [],
+    "exclude_osm_ids": [
+      551130740,
+      886670370,
+      472062077,
+      1089693043,
+      1095331154,
+      1033391687,
+      1095331155,
+      1090665682,
+      1090665681,
+      37398101,
+      37402561,
+      1095331153,
+      721854567,
+      1095331152,
+      1095331150,
+      1095331148,
+      573701572,
+      37400393,
+      166089494,
+      201542068,
+      37397484,
+      180233617,
+      1495003422,
+      707849115,
+      143750348,
+      37401941,
+      1087371040,
+      1087371043,
+      143750328,
+      1087021077,
+      1087021074,
+      471849985,
+      64166571,
+      1090665650,
+      1090665645,
+      1090665651,
+      1090665646,
+      1499865931,
+      1088140663,
+      1499865932,
+      1091634345,
+      178653176,
+      180233615,
+      1089847977,
+      265425228,
+      180137331,
+      1494898743,
+      1087371011,
+      1087371041,
+      37397392,
+      1087370984,
+      1087370981,
+      1087370979,
+      1087370980,
+      1087370996,
+      1087370994,
+      1090665644,
+      1384057701,
+      1086699473
+    ],
+    "manual_lines": [],
+    "exclude_basis": "위성 대조 결과: 소하천(본류 320m 밖) 주변 도로, 본류와 직교하는 접근로, 더 가까운 제방도로 뒤의 내륙 평행 도로, 교량 접속 램프 제외 (261009 검토)"
+  },
+  "levee_profile": {
+    "basis": "강변 지형은 평탄. 둔치와 강변도로 사이에만 곡면 경사. 높이는 수위 기준 추정값",
+    "dunchi_rise_m": 2.5,
+    "road_rise_m": 7.0,
+    "slope_width_m": 25.0,
+    "road_search_m": 450.0,
+    "city_flatten_m": 1500.0,
+    "hill_threshold_m": 8.0,
+    "hill_blend_m": 12.0
+  }
+}
