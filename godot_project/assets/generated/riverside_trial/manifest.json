@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09 23:15:22",
+  "last_updated": "2026-10-09 23:36:47",
   "map_id": "taehwagang_dunchi",
   "source_mask_bbox": {
     "south": 35.515,
@@ -55,13 +55,13 @@
   "assets": {
     "placements.json": {
       "file_path": "res://assets/generated/riverside_trial/placements.json",
-      "sha256": "35940b7904212a2a207ab54bfaf773c405b7a5e31077e6a6cd4c20a159f76f54",
-      "size_bytes": 18045
+      "sha256": "5013b166fd1b45cd640521391de21fa8ac948ecb5e1bc45813821fedd40a5600",
+      "size_bytes": 28023
     },
     "preview.png": {
       "file_path": "res://assets/generated/riverside_trial/preview.png",
-      "sha256": "fb0b7d4c0f201aabd2f68534da3baf3d7974041b155e787e066a1c1c48be1197",
-      "size_bytes": 6236
+      "sha256": "ae4b3ccef014adc60c998ab91912b3daab3f0fb17b911c196721691f51edca6c",
+      "size_bytes": 6232
     }
   }
 }

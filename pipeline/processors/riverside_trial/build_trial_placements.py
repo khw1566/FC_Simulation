@@ -24,6 +24,8 @@ DEFAULT_MAP_DIR = ROOT / "godot_project" / "assets" / "maps" / "taehwagang_dunch
 OUT_DIR = ROOT / "godot_project" / "assets" / "generated" / "riverside_trial"
 PREVIEW_HALF_M = 70.0
 PREVIEW_PX = 420
+CHAIN_KEYS = ("walk", "planter")
+CHAIN_HALF_WIDTH_M = 3.0
 
 
 def build(map_dir: Path) -> dict:
@@ -44,15 +46,24 @@ def build(map_dir: Path) -> dict:
             x, z, yaw = resolve(item, corridor)
             counters[item.key] = counters.get(item.key, 0) + 1
             lon, lat = mask.world_to_lonlat(x, z)
-            placements.append({
+            entry = {
                 "id": f"trial_{site['id']}_{item.key}_{counters[item.key]:02d}",
                 "scene": item.scene,
-                "lonlat": [round(lon, 7), round(lat, 7)],
+                "lonlat": [round(lon, 9), round(lat, 9)],
                 "ground": "terrain",
                 "y_offset_m": item.y_offset,
                 "yaw_degrees": round(yaw, 2),
                 "scale": 1.0,
-            })
+                "chain": site["id"],
+                "footprint_half_m": list(item.half_extent),
+            }
+            if item.key in CHAIN_KEYS:
+                # 보도 세그먼트와 같은 길이의 선형 부속물은 보도 높이 프로파일을 따라 기울인다
+                entry["chain_index"] = item.segment
+                entry["chain_role"] = "path" if item.key == "walk" else "follow"
+                entry["segment_length_m"] = config["segment_length_m"]
+                entry["chain_half_width_m"] = CHAIN_HALF_WIDTH_M
+            placements.append(entry)
             drawn.append((item.key, x, z, math.radians(yaw), item.half_extent))
         mid = corridor.centers[len(corridor.centers) // 2]
         sites.append({
