@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_utc": "2026-10-09T14:14:42.073431+00:00",
+  "updated_utc": "2026-10-09T14:45:02.446475+00:00",
   "scope": [
     "godot_project/assets",
     "godot_project/shaders"
@@ -64,6 +64,7 @@
       "데이터·메타데이터": 17879,
       "이미지": 245,
       "벡터 이미지": 4808,
+      "기타 파일": 1,
       "지리 데이터": 3
     },
     "pedestrian_bridges": {
@@ -215342,9 +215343,9 @@
       "category": "maps",
       "category_ko": "지도",
       "role": "이미지",
-      "sha256": "1da39cc702a03ffcd0a4a1855cca5ca1a64d3c13a4caa4bc80064ddae4ab9c3d",
-      "size_bytes": 13812544,
-      "mtime_ns": 1791555267054981100,
+      "sha256": "abaa62f2d5bcc4f7f55cccbd4eaa6878e8649ed078971ea50e61e92fa33cb3c7",
+      "size_bytes": 12251186,
+      "mtime_ns": 1791557065209242200,
       "revision": null,
       "bbox": {
         "south": 35.515,
@@ -215366,9 +215367,33 @@
       "category": "maps",
       "category_ko": "지도",
       "role": "이미지",
-      "sha256": "fd09530c04f96071c9cac2cae75ba7df88d762d725ef41826e283e9436e595d2",
-      "size_bytes": 56222,
-      "mtime_ns": 1791555267209854800,
+      "sha256": "72e977a1a246961e25b2c1c5b7a22bd06d436034d90e3d9e002923142e2d8c30",
+      "size_bytes": 42300,
+      "mtime_ns": 1791557065348372800,
+      "revision": null,
+      "bbox": {
+        "south": 35.515,
+        "north": 35.5872,
+        "west": 129.2738,
+        "east": 129.3622
+      },
+      "elevation_min": null,
+      "elevation_max": null,
+      "resolution": [
+        4096,
+        4096
+      ],
+      "label_ko": null,
+      "metadata_source": "existing_manifest"
+    },
+    {
+      "path": "godot_project/assets/maps/taehwagang_dunchi/dunchi_satellite.jpg",
+      "category": "maps",
+      "category_ko": "지도",
+      "role": "기타 파일",
+      "sha256": "d60a18b3c3b59f573ce582132a7d3b72eac92f462fbd7d717374b3d9030a593d",
+      "size_bytes": 4998410,
+      "mtime_ns": 1791557065436802300,
       "revision": null,
       "bbox": {
         "south": 35.515,
@@ -215392,7 +215417,7 @@
       "role": "이미지",
       "sha256": "e4574bceeb3805caa0f56eccf4dcd96766a47dcf3d4e5cefbcbaeb84dd55f393",
       "size_bytes": 53197,
-      "mtime_ns": 1791555267141578500,
+      "mtime_ns": 1791557065293121600,
       "revision": null,
       "bbox": {
         "south": 35.515,
@@ -215414,9 +215439,9 @@
       "category": "maps",
       "category_ko": "지도",
       "role": "데이터·메타데이터",
-      "sha256": "7db62e6007239f0ffaf9423b7e33a8d4f0f38097eac6ee1dcfff475b2328abcd",
-      "size_bytes": 2289,
-      "mtime_ns": 1791555267257446300,
+      "sha256": "038887d1405e513dc9a4854d1b4e69d1258764a778ab4803402fd19255c8c4fd",
+      "size_bytes": 9687,
+      "mtime_ns": 1791557065497316800,
       "revision": null,
       "bbox": null,
       "elevation_min": null,
@@ -215430,9 +215455,9 @@
       "category": "maps",
       "category_ko": "지도",
       "role": "데이터·메타데이터",
-      "sha256": "7f51505a51592652ebb909040ec73dd19cc32444ce5fcd5bd5fce2cd46407637",
-      "size_bytes": 1326,
-      "mtime_ns": 1791555267210879500,
+      "sha256": "70e2b99fb2ee0f348d11eab0dc380aa065b05ca7eeaca92041e367e9a6e88830",
+      "size_bytes": 1414,
+      "mtime_ns": 1791557065441549200,
       "revision": null,
       "bbox": null,
       "elevation_min": null,
@@ -215446,9 +215471,9 @@
       "category": "maps",
       "category_ko": "지도",
       "role": "데이터·메타데이터",
-      "sha256": "bf8cd9c7a90bc20abfd002f48c9f439c28bac2068c20ac05f0a5d5b5a6d99174",
-      "size_bytes": 464,
-      "mtime_ns": 1791554821621229500,
+      "sha256": "7d94785f1796f36d6b09089704d12f3985303cde4a93384e5f75663609ee1f67",
+      "size_bytes": 18564,
+      "mtime_ns": 1791555479003741100,
       "revision": null,
       "bbox": null,
       "elevation_min": null,
