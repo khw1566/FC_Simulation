@@ -90,14 +90,18 @@ func height_at(x: float, z: float) -> float:
 		return terrain_manager.get_terrain_elevation(x, z)
 	return 0.0
 
+## 근경 식생 셰이더 머티리얼: 흔들림(sway)과 숲 덩어리로 넘기는 원거리 디더 전환(fade_far_m).
 func sway_material(family: Dictionary) -> ShaderMaterial:
-	if not family.has("sway") or not ResourceLoader.exists(SWAY_SHADER):
+	if not ResourceLoader.exists(SWAY_SHADER) or not (family.has("sway") or family.has("fade_far_m")):
 		return null
 	var material := ShaderMaterial.new()
 	material.shader = load(SWAY_SHADER)
-	material.set_shader_parameter("sway_height_m", float(family.sway.height_m))
-	material.set_shader_parameter("sway_strength_m", float(family.sway.strength_m))
-	material.set_shader_parameter("sway_speed", float(family.sway.speed))
+	var sway: Dictionary = family.get("sway", {})
+	material.set_shader_parameter("sway_height_m", float(sway.get("height_m", 2.4)))
+	material.set_shader_parameter("sway_strength_m", float(sway.get("strength_m", 0.0)))
+	material.set_shader_parameter("sway_speed", float(sway.get("speed", 1.0)))
+	material.set_shader_parameter("fade_far_m", float(family.get("fade_far_m", 0.0)))
+	material.set_shader_parameter("fade_band_m", float(family.get("fade_band_m", 20.0)))
 	return material
 
 ## 원천 bbox와 현재 지도 bbox가 겹치면 선형 변환을 설정한다. 겹치지 않으면 false.

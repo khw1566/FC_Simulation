@@ -1960,7 +1960,7 @@
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
-          "lines": 139
+          "lines": 143
         },
         {
           "path": "godot_project/scripts/vegetation/forest_mass_builder.gd",
@@ -1972,7 +1972,11 @@
         },
         {
           "path": "godot_project/shaders/vegetation_sway.gdshader",
-          "lines": 30
+          "lines": 53
+        },
+        {
+          "path": "godot_project/shaders/forest_mass.gdshader",
+          "lines": 37
         },
         {
           "path": "godot_project/shaders/ecozone_ground.gdshaderinc",

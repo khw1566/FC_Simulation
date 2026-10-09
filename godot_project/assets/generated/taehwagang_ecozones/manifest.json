@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-09 23:52:47",
+  "last_updated": "2026-10-10 00:06:01",
   "assets": {
     "labels": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
@@ -93,8 +93,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "c563e135b757a941c78c227d4c3a6990eb4800e91fa7ba9d52b7fa74beb49cc4",
-      "size_bytes": 7843581,
+      "sha256": "14a06c9d8634b681573f74c55a18a596a28a1575ca1889187f3632d740406699",
+      "size_bytes": 7843693,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -112,8 +112,8 @@
     "forest_masses": {
       "file_path": "res://assets/generated/taehwagang_ecozones/forest_masses.json",
       "format": "JSON",
-      "sha256": "4a5e8c9595a5fec7ab5a506a2d13b96b3d2e471b766056a1829f5df1aa436a34",
-      "size_bytes": 570980,
+      "sha256": "61c57d8a8eb491eaeb72a7fa7f8d1cbcf6243e767650033a08db9faf9f8bb558",
+      "size_bytes": 571014,
       "type": "ecozone_forest_mass",
       "metadata": {
         "bbox": null,

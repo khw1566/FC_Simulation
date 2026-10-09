@@ -1,7 +1,7 @@
 extends RefCounted
 ## 숲 구역 셀 목록으로 연속 수관 덩어리 메시를 만든다. 셀 모서리마다 인접 셀의 수관 높이 비율을
 ## 평균해 높이를 정하고, 가장자리 모서리는 이웃 가장자리 모서리 평균으로 옮겨 계단 윤곽을 둥글게 편다.
-## 내부는 수관 크기의 굴곡을 준다. 128m 청크로 나눈다.
+## 내부는 수관 크기의 굴곡을 준다. 128m 청크로 나누며, 근접 전환은 셰이더가 픽셀 거리로 처리한다.
 
 const CHUNK_M := 128.0
 const QUAD := [Vector2i(0, 0), Vector2i(1, 0), Vector2i(1, 1), Vector2i(0, 1)]
@@ -24,9 +24,9 @@ static func build(mass: Dictionary, label_size: int, source_size_m: float, to_ta
 				coverage[corner] = _coverage(corner, cells)
 	if emitted.is_empty():
 		return root
-	var material := _material(str(mass.get("texture", "")))
+	var material := _material(str(mass.get("texture", "")), float(mass.get("fade_near_m", 100.0)), float(mass.get("fade_band_m", 20.0)))
 	var rgb: Array = mass.get("color", [60, 95, 45])
-	var base := Color(0.92, 0.92, 0.92) if material.albedo_texture != null else Color8(int(rgb[0]), int(rgb[1]), int(rgb[2]))
+	var base := Color(0.92, 0.92, 0.92) if bool(material.get_shader_parameter("has_texture")) else Color8(int(rgb[0]), int(rgb[1]), int(rgb[2]))
 	var canopy := float(mass.get("canopy_height_m", 10.0))
 	var variation := float(mass.get("color_variation", 0.12))
 	var points := {}
@@ -60,8 +60,6 @@ static func build(mass: Dictionary, label_size: int, source_size_m: float, to_ta
 		node.name = "Canopy_%d_%d" % [key.x, key.y]
 		node.mesh = st.commit()
 		node.material_override = material
-		node.visibility_range_begin = float(mass.get("visible_from_m", 0.0))
-		node.visibility_range_begin_margin = 15.0
 		root.add_child(node)
 	return root
 
@@ -123,14 +121,16 @@ static func _has_canopy_neighbor(cell: Vector2i, cells: Dictionary) -> bool:
 				return true
 	return false
 
-static func _material(texture_path: String) -> StandardMaterial3D:
-	var material := StandardMaterial3D.new()
-	material.vertex_color_use_as_albedo = true
-	material.roughness = 1.0
-	material.cull_mode = BaseMaterial3D.CULL_DISABLED
+## 거리 디더 전환 셰이더 머티리얼. fade_near_m 안쪽은 그리지 않고 개별 수목에 맡긴다.
+static func _material(texture_path: String, fade_near_m: float, fade_band_m: float) -> ShaderMaterial:
+	var material := ShaderMaterial.new()
+	material.shader = load("res://shaders/forest_mass.gdshader")
+	material.set_shader_parameter("fade_near_m", fade_near_m)
+	material.set_shader_parameter("fade_band_m", fade_band_m)
 	if not texture_path.is_empty() and FileAccess.file_exists(texture_path):
 		var image := Image.load_from_file(texture_path)
 		if image != null and not image.is_empty():
 			image.generate_mipmaps()
-			material.albedo_texture = ImageTexture.create_from_image(image)
+			material.set_shader_parameter("canopy_texture", ImageTexture.create_from_image(image))
+			material.set_shader_parameter("has_texture", true)
 	return material

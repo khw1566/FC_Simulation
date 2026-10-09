@@ -91,16 +91,16 @@
     {"zone": "meadow", "family": "trees", "kind": "shrub", "lattice": "hex", "spacing_m": 14.0, "jitter_m": 3.0, "yaw_step_deg": 0, "scale": [0.7, 1.1], "min_edge_m": 3.0},
     {"zone": "meadow", "family": "silvergrass", "kind": "silvergrass_clump", "lattice": "hex", "spacing_m": 7.0, "jitter_m": 2.0, "yaw_step_deg": 0, "scale": [0.6, 0.9], "min_edge_m": 1.0}
   ],
-  "families_basis_ko": "근경 개체만 메시로 그린다. 원경은 숲 덩어리 수관 메시와 지형 바닥 텍스처가 대신한다. 억새·갈대·대나무는 흔들림 셰이더를 쓴다.",
+  "families_basis_ko": "근경 개체만 메시로 그린다. fade_far_m~+fade_band_m 구간에서 픽셀 거리 디더로 사라지고, 같은 구간에서 숲 덩어리(fade_near_m)와 바닥 텍스처가 나타난다. 억새·갈대·대나무는 흔들림 셰이더를 쓴다.",
   "families": {
-    "bamboo": {"scene_template": "res://assets/generated/bamboo/%s_lod%d.scn", "lod_ranges_m": [[0, 70], [70, 260]], "sway": {"height_m": 9.0, "strength_m": 0.35, "speed": 0.9}},
-    "trees": {"scene_template": "res://assets/generated/trees/%s_lod%d.scn", "lod_ranges_m": [[0, 100], [100, 300]]},
-    "silvergrass": {"scene_template": "res://assets/generated/silvergrass/%s_lod%d.scn", "lod_ranges_m": [[0, 45], [45, 130]], "sway": {"height_m": 2.4, "strength_m": 0.28, "speed": 1.6}}
+    "bamboo": {"scene_template": "res://assets/generated/bamboo/%s_lod%d.scn", "lod_ranges_m": [[0, 60], [60, 190]], "sway": {"height_m": 9.0, "strength_m": 0.35, "speed": 0.9}, "fade_far_m": 100, "fade_band_m": 25},
+    "trees": {"scene_template": "res://assets/generated/trees/%s_lod%d.scn", "lod_ranges_m": [[0, 70], [70, 210]], "fade_far_m": 120, "fade_band_m": 25},
+    "silvergrass": {"scene_template": "res://assets/generated/silvergrass/%s_lod%d.scn", "lod_ranges_m": [[0, 45], [45, 190]], "sway": {"height_m": 2.4, "strength_m": 0.28, "speed": 1.6}, "fade_far_m": 110, "fade_band_m": 30}
   },
   "forest_masses_basis_ko": "대숲·활엽수림을 연속 수관 덩어리로 표현한다. 셀은 라벨 격자(약 3.9m), 가장자리는 지면까지 낮춘다.",
   "forest_masses": [
-    {"zone": "bamboo", "canopy_height_m": 9.5, "close_m": 12, "edge_ramp_m": 10, "color": [62, 98, 42], "color_variation": 0.12, "texture": "canopy_bamboo", "visible_from_m": 60},
-    {"zone": "woodland", "canopy_height_m": 13.0, "close_m": 12, "edge_ramp_m": 14, "color": [56, 86, 44], "color_variation": 0.16, "texture": "canopy_broadleaf", "visible_from_m": 80}
+    {"zone": "bamboo", "canopy_height_m": 9.5, "close_m": 12, "edge_ramp_m": 10, "color": [62, 98, 42], "color_variation": 0.12, "texture": "canopy_bamboo", "fade_near_m": 100, "fade_band_m": 25},
+    {"zone": "woodland", "canopy_height_m": 13.0, "close_m": 12, "edge_ramp_m": 14, "color": [56, 86, 44], "color_variation": 0.16, "texture": "canopy_broadleaf", "fade_near_m": 120, "fade_band_m": 25}
   ],
   "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0},
   "random_seed": 20261009
