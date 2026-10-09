@@ -1,0 +1,68 @@
+{
+  "region_name": "taehwagang_dunchi",
+  "name_ko": "태화강 둔치 정밀 지형",
+  "name_en": "Taehwa River Floodplain Detail Terrain",
+  "description_ko": "태화강 국가정원부터 명촌교 부근까지 둔치를 별도 고해상도 지형으로 처리한 8km 지도입니다. 둔치는 수계 경계 기준으로 평탄하게 정형되어 에셋 배치용 표면으로 사용합니다.",
+  "description_en": "8km detail map of the Taehwa River floodplain from the National Garden to Myeongchon Bridge. Floodplain surfaces are shaped flat from water boundaries for asset placement.",
+  "center": {
+    "lat": 35.5511,
+    "lon": 129.3180
+  },
+  "world_size_meters": 8000.0,
+  "bbox": {
+    "south": 35.5150,
+    "north": 35.5872,
+    "west": 129.2738,
+    "east": 129.3622
+  },
+  "resolution": {
+    "target_width": 4096,
+    "target_height": 4096
+  },
+  "elevation_range": {
+    "min_meters": -10.0,
+    "max_meters": 250.0
+  },
+  "height_source": {
+    "preferred": "auto",
+    "api_key_env": "VWORLD_API_KEY",
+    "api_key_file_field": "vworld_api_key",
+    "vworld": {
+      "url_template": "https://xdworld.vworld.kr/XDServer/requestLayerNode?APIKey={key}&Layer=dem&Level={level}&IDX={idx}&IDY={idy}",
+      "level": 14,
+      "samples_per_tile": 65,
+      "max_workers": 4,
+      "daily_request_limit": 2500
+    },
+    "terrarium": {
+      "zoom": 15
+    }
+  },
+  "water": {
+    "overpass_endpoints": [
+      "https://overpass-api.de/api/interpreter",
+      "https://overpass.kumi.systems/api/interpreter"
+    ],
+    "centerline_width_m": 120.0,
+    "water_level_profile_basis": "추정값. 실측 수위 자료로 교체 필요",
+    "water_level_profile": [
+      [129.2738, 3.0],
+      [129.3000, 2.0],
+      [129.3300, 1.0],
+      [129.3622, 0.4]
+    ],
+    "bed_max_depth_m": 2.5,
+    "bank_slope_run_per_rise": 3.0
+  },
+  "dunchi": {
+    "corridor_width_m": 320.0,
+    "min_rise_m": 1.2,
+    "max_rise_m": 6.5,
+    "edge_blend_m": 1.5,
+    "smoothing_sigma_m": 14.0,
+    "bank_ramp_m": 10.0
+  },
+  "placement_pads_basis": "에셋 배치 예정 부지. 높이를 비우면 부지 내 중앙값으로 평탄화",
+  "placement_pads": [],
+  "spawn_position": [0.0, 120.0, 0.0]
+}

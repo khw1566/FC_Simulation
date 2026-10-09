@@ -1885,6 +1885,83 @@
           "lines": 25
         }
       ]
+    },
+    "taehwagang_dunchi_terrain": {
+      "description": "태화강 둔치 별도 고해상도 지형 생성과 에셋 배치 기반",
+      "modules": [
+        {
+          "class_name": "ApiKeyResolver",
+          "path": "pipeline/collectors/riverside_sources/api_key_resolver.py",
+          "responsibility": "환경변수 우선, data/api_keys.json 차선으로 API 키 위치 해석",
+          "lines": 23
+        },
+        {
+          "class_name": "VworldDemSource",
+          "path": "pipeline/collectors/riverside_sources/vworld_dem_source.py",
+          "responsibility": "VWorld 3D 지형 DEM 노드(65x65 float32) 캐시 수집 및 모자이크",
+          "lines": 91
+        },
+        {
+          "class_name": "TerrariumDemSource",
+          "path": "pipeline/collectors/riverside_sources/terrarium_dem_source.py",
+          "responsibility": "키 없는 공개 Terrarium 고도의 위도 등간격 격자 변환",
+          "lines": 34
+        },
+        {
+          "class_name": "RiversideWaterCollector",
+          "path": "pipeline/collectors/riverside_sources/water_collector.py",
+          "responsibility": "Overpass 태화강 수면 다각형·하천 중심선 수집",
+          "lines": 38
+        },
+        {
+          "class_name": "TerrainGrid",
+          "path": "pipeline/processors/taehwagang_terrain/terrain_grid.py",
+          "responsibility": "지도 bbox와 높이맵 픽셀 좌표 변환 및 고도 재표본",
+          "lines": 34
+        },
+        {
+          "class_name": "WaterRasterizer",
+          "path": "pipeline/processors/taehwagang_terrain/water_rasterizer.py",
+          "responsibility": "본류 마스크와 기타 수면 마스크 래스터화",
+          "lines": 75
+        },
+        {
+          "class_name": "RiverbankShaper",
+          "path": "pipeline/processors/taehwagang_terrain/riverbank_shaper.py",
+          "responsibility": "본류 하상 단면과 제방 안쪽 연결 둔치 평탄 정형, 배치 가능 마스크 산출",
+          "lines": 74
+        },
+        {
+          "class_name": "PadFlattener",
+          "path": "pipeline/processors/taehwagang_terrain/pad_flattener.py",
+          "responsibility": "설정 배치 부지 다각형 평탄화와 경계 완화",
+          "lines": 30
+        },
+        {
+          "class_name": "HeightSourceSelector",
+          "path": "pipeline/processors/taehwagang_terrain/height_source_selector.py",
+          "responsibility": "VWorld/Terrarium 고도 원천 선택, 행 방향 상관 검증, 결측 보완",
+          "lines": 77
+        },
+        {
+          "class_name": "TerrainExporter",
+          "path": "pipeline/processors/taehwagang_terrain/terrain_exporter.py",
+          "responsibility": "높이맵·마스크 내보내기, map_meta·매니페스트·지도 목록 갱신",
+          "lines": 108
+        },
+        {
+          "class_name": "generate",
+          "path": "pipeline/processors/taehwagang_terrain/generate.py",
+          "responsibility": "태화강 둔치 정밀 지형 생성 진입점",
+          "lines": 52
+        },
+        {
+          "class_name": "RiversideAssetPlacer",
+          "path": "godot_project/scripts/terrain/riverside_asset_placer.gd",
+          "responsibility": "taehwagang_dunchi 지도 전용 placements.json 씬 지형 높이 배치",
+          "lines": 60
+        }
+      ]
     }
   }
 }

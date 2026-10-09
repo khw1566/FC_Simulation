@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "map_id": "taehwagang_dunchi",
+  "schema_ko": {
+    "id": "고유 노드 이름",
+    "scene": "res:// 씬 경로 (.scn/.tscn)",
+    "lonlat": "[경도, 위도] 또는 world_xz: [x, z] 미터 중 하나",
+    "ground": "terrain(지형 높이에 맞춤) 또는 absolute(absolute_y_m 사용)",
+    "y_offset_m": "지면 기준 추가 높이",
+    "yaw_degrees": "Y축 회전",
+    "scale": "균일 배율"
+  },
+  "placements": []
+}
