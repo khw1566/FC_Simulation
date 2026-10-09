@@ -107,7 +107,7 @@ def main():
     targets = [hydro / "coastal_heightmap_16bit.png", hydro / "river_mask.png", hydro / "lake_mask.png", hydro / "water_mask.png"]
     if graded is not None:
         targets.append(graded_path)
-    for path in targets:
+    for path in targets + [folder / "manifest.json"]:
         shutil.copy2(path, backup / path.name)
 
     save_heights(hydro / "coastal_heightmap_16bit.png", heights, low, high)
@@ -124,7 +124,7 @@ def main():
 
     manifest_path = folder / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8-sig"))
-    for path in targets[:4] + [hydro / "hydro_leveling_report.json"]:
+    for path in [p for p in targets if p.parent == hydro] + [hydro / "hydro_leveling_report.json"]:
         key = f"{MAP_ID}/hydro/{path.name}"
         entry = manifest["assets"].get(key, {"file_path": f"res://assets/maps/{MAP_ID}/hydro/{path.name}"})
         entry.update(sha256=hashlib.sha256(path.read_bytes()).hexdigest(), size_bytes=path.stat().st_size,
