@@ -1992,6 +1992,29 @@
           "lines": 45
         }
       ]
+    },
+    "hydro_leveling": {
+      "description": "울산 80km 지도 하천·호수 수면 평탄화와 비탈로 번진 수계 마스크 제거",
+      "modules": [
+        {
+          "class_name": "LakeLeveler",
+          "path": "pipeline/processors/hydro_leveling/lake_leveler.py",
+          "responsibility": "호수 성분별 단일 수위 평탄화, 비탈 화소 수면 제외",
+          "lines": 53
+        },
+        {
+          "class_name": "RiverLeveler",
+          "path": "pipeline/processors/hydro_leveling/river_leveler.py",
+          "responsibility": "하곡 바닥 기준 매끄러운 하천 수면 정지, 비탈·급경사 계류 수면 제외",
+          "lines": 62
+        },
+        {
+          "class_name": "apply",
+          "path": "pipeline/processors/hydro_leveling/apply.py",
+          "responsibility": "원본 백업 후 실행·수계 높이맵과 수계 마스크에 보정 적용, 보고서·매니페스트 갱신",
+          "lines": 138
+        }
+      ]
     }
   }
 }
