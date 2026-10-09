@@ -132,6 +132,8 @@ class ZoneExporter:
             "textures": {name: f"{self.res}/ground/{name}.png" for name in ("lawn", "silvergrass_ground", "bamboo_litter", "reed_mud", "woodland_soil", "meadow")},
             "tile_m": blend.get("tile_m", 6.0),
             "fade_distance_m": blend.get("fade_distance_m", 6000.0),
+            "flat_near_m": blend.get("flat_near_m", 150.0),
+            "flat_far_m": blend.get("flat_far_m", 450.0),
         }
         path = self.folder / "ground_blend.json"
         self._save_json(data, path)

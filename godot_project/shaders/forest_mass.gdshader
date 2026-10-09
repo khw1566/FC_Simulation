@@ -8,6 +8,10 @@ uniform sampler2D canopy_texture : source_color, filter_linear_mipmap, repeat_en
 uniform bool has_texture = false;
 uniform float fade_near_m = 100.0;
 uniform float fade_band_m = 20.0;
+// 원경 단색: flat_near_m~flat_far_m 구간에서 잎 무늬를 가장 작은 밉맵(평균색)과 완만한 그라데이션으로 바꾼다.
+uniform float flat_near_m = 200.0;
+uniform float flat_far_m = 550.0;
+uniform float gradient_strength = 0.10;
 
 varying vec3 v_world;
 
@@ -30,8 +34,12 @@ void fragment() {
 	if (show <= 1.0 - bayer4(FRAGCOORD.xy)) {
 		discard;
 	}
-	vec3 base = has_texture ? texture(canopy_texture, UV).rgb : vec3(1.0);
-	ALBEDO = base * COLOR.rgb;
+	float flat_mix = has_texture ? smoothstep(flat_near_m, flat_far_m, d) : 0.0;
+	float gradient = sin(v_world.x * 0.0047 + 1.3) * sin(v_world.z * 0.0039 - 0.7) * 0.6 + sin((v_world.x + v_world.z) * 0.0017) * 0.4;
+	vec3 flat_color = (has_texture ? textureLod(canopy_texture, vec2(0.5), 12.0).rgb : vec3(1.0)) * (1.0 + gradient * gradient_strength);
+	vec3 base = has_texture ? mix(texture(canopy_texture, UV).rgb, flat_color, flat_mix) : vec3(1.0);
+	// 원경에서는 정점 색 얼룩도 줄여 덩어리가 단색에 가깝게 보이게 한다(가장자리 음영은 일부 유지).
+	ALBEDO = base * mix(COLOR.rgb, vec3(0.9), flat_mix * 0.7);
 	ROUGHNESS = 1.0;
 	SPECULAR = 0.1;
 }

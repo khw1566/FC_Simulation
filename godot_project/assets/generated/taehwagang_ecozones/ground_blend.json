@@ -18,5 +18,7 @@
     "meadow": "res://assets/generated/taehwagang_ecozones/ground/meadow.png"
   },
   "tile_m": 6.0,
-  "fade_distance_m": 6000.0
+  "fade_distance_m": 6000.0,
+  "flat_near_m": 150.0,
+  "flat_far_m": 450.0
 }

@@ -102,6 +102,6 @@
     {"zone": "bamboo", "canopy_height_m": 9.5, "close_m": 12, "edge_ramp_m": 10, "color": [62, 98, 42], "color_variation": 0.12, "texture": "canopy_bamboo", "fade_near_m": 100, "fade_band_m": 25},
     {"zone": "woodland", "canopy_height_m": 13.0, "close_m": 12, "edge_ramp_m": 14, "color": [56, 86, 44], "color_variation": 0.16, "texture": "canopy_broadleaf", "fade_near_m": 120, "fade_band_m": 25}
   ],
-  "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0},
+  "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0, "flat_near_m": 150.0, "flat_far_m": 450.0},
   "random_seed": 20261009
 }
