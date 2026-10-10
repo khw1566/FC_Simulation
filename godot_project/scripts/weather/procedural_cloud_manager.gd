@@ -93,8 +93,10 @@ func _process(delta: float) -> void:
 func _apply_composition() -> void:
 	var cu := _ratios.x * 0.75
 	var st := _ratios.y
-	var ci := _ratios.z
 	var cb := _ratios.w
+	# 뇌우 모루에서 흘러나온 권운, 비·흐림 때 중층 고층운을 함께 띄운다.
+	var ci := maxf(_ratios.z, cb * 0.5)
+	var alto := maxf(cb * 0.7, _ratios.y * 0.3)
 	var st_base := 900.0 - 300.0 * cb
 	var st_top := 2000.0 + 600.0 * cb
 	var bottom := 1.0e9
@@ -105,9 +107,12 @@ func _apply_composition() -> void:
 	if st > 0.001:
 		bottom = minf(bottom, st_base)
 		top = maxf(top, st_top)
+	if alto > 0.001:
+		bottom = minf(bottom, 4200.0)
+		top = maxf(top, 5300.0)
 	if cb > 0.001:
 		bottom = minf(bottom, 650.0)
-		top = maxf(top, 10500.0)
+		top = maxf(top, 11800.0)
 	if top < bottom:
 		bottom = 0.0
 		top = 0.0
@@ -117,6 +122,7 @@ func _apply_composition() -> void:
 	_material.set_shader_parameter("st_top", st_top)
 	_material.set_shader_parameter("cb_coverage", cb)
 	_material.set_shader_parameter("ci_coverage", ci)
+	_material.set_shader_parameter("as_coverage", alto)
 	_material.set_shader_parameter("slab_bottom", bottom)
 	_material.set_shader_parameter("slab_top", top)
 	_material.set_shader_parameter("cloud_top_color", _top)

@@ -763,7 +763,7 @@
         {
           "path": "godot_project/scripts/weather/procedural_cloud_manager.gd",
           "description": "메인 월드 구름 관리자: 기상 비율을 유형별 덮임·고도로 변환, 고도풍 이동, 태양·안개 동기화, 품질 단계",
-          "lines": 187
+          "lines": 193
         },
         {
           "path": "godot_project/scripts/weather/cloud_layer_factory.gd",
@@ -773,7 +773,7 @@
         {
           "path": "godot_project/shaders/sky_cloud_layer.gdshader",
           "description": "적운·층운·적란운 슬래브와 권운 평면 레이마칭, 구간 세분 적분, 태양광 감쇠·위상함수·대기 원근",
-          "lines": 269
+          "lines": 341
         },
         {
           "path": "godot_project/scripts/weather/cloud_pool_factory.gd",

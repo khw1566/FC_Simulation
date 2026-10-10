@@ -24,9 +24,13 @@ uniform float st_base = 800.0;
 uniform float st_top = 2000.0;
 uniform float cb_coverage = 0.0;
 uniform float cb_base = 650.0;
-uniform float cb_top = 10500.0;
+uniform float cb_top = 11000.0;
+// 중층 고층운(4~5km): 비·뇌우 때 적란운 허리를 감싼다.
+uniform float as_coverage = 0.0;
+uniform float as_base = 4000.0;
+uniform float as_top = 5600.0;
 uniform float ci_coverage = 0.0;
-uniform float ci_altitude = 8800.0;
+uniform float ci_altitude = 9200.0;
 uniform float slab_bottom = 600.0;
 uniform float slab_top = 3000.0;
 
@@ -58,10 +62,21 @@ float remap01(float v, float lo, float hi) {
 	return clamp((v - lo) / max(hi - lo, 0.0001), 0.0, 1.0);
 }
 
-// 2D 기상도: x=적운 셀, y=층운 덮개, z=적란운 탑/모루, w=탑 높이 변화
-vec4 weather_at(vec2 xz) {
-	float large = texture(weather_noise, xz * (1.0 / 42000.0)).r;
-	float mid = texture(weather_noise, xz * (1.0 / 6500.0) + vec2(0.37, 0.71)).r;
+// 반복문 안에서는 미분 기반 밉 선택이 불안정하므로 명시적 LOD로 읽는다.
+float wtex(vec2 uv) {
+	return textureLod(weather_noise, uv, 0.0).r;
+}
+
+// 표본 간격(m)에 맞춰 기상도를 미리 흐리게 읽는다. 원경의 긴 간격에서 작은 구름을 건너뛰며 생기는 자글거림을 막는다.
+float wtex_filtered(vec2 uv, float tile_m, float stride) {
+	float lod = clamp(log2(max(stride, 1.0) / (tile_m / 512.0)) - 1.0, 0.0, 8.0);
+	return textureLod(weather_noise, uv, lod).r;
+}
+
+// 2D 기상도: x=적운 셀, y=층운 덮개, z=고층운 덮개, w=탑 높이 변화
+vec4 weather_at(vec2 xz, float stride) {
+	float large = wtex_filtered(xz * (1.0 / 42000.0), 42000.0, stride);
+	float mid = wtex_filtered(xz * (1.0 / 6500.0) + vec2(0.37, 0.71), 6500.0, stride);
 	float cu = 0.0;
 	if (cu_coverage > 0.001) {
 		// 큰 규모 기상도가 적운 밀집 지역과 맑은 지역을 나눈다.
@@ -73,7 +88,18 @@ vec4 weather_at(vec2 xz) {
 		float lo_s = 1.0 - st_coverage;
 		st = smoothstep(lo_s, lo_s + 0.35, large * 0.6 + mid * 0.4);
 	}
-	return vec4(cu, st, 0.0, mix(0.45, 1.0, large));
+	if (cb_coverage > 0.001) {
+		// 뇌우 때 낮은 덮개구름은 폭풍 세포 주변에만 빽빽하고 그 밖은 끊겨 탑이 보인다.
+		float lo_n = 1.0 - cb_coverage * 0.6;
+		float near = smoothstep(lo_n, lo_n + 0.3, wtex(xz * (1.0 / 30000.0) + vec2(0.13, 0.52)));
+		st *= mix(1.0, 0.2 + 0.8 * near, cb_coverage);
+	}
+	float alto = 0.0;
+	if (as_coverage > 0.001) {
+		float lo_m = 1.0 - as_coverage;
+		alto = smoothstep(lo_m, lo_m + 0.55, large * 0.55 + (1.0 - mid) * 0.45);
+	}
+	return vec4(cu, st, alto, mix(0.45, 1.0, large));
 }
 
 // 3D 밀도. hfrac에는 지배 유형 기준 상대 높이를 돌려준다.
@@ -88,21 +114,29 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 	float prof_st = smoothstep(0.0, 0.12, h_st) * (1.0 - smoothstep(0.5 + 0.4 * w.w, 1.0, h_st));
 	float c_st = w.y * prof_st;
 
+	float h_as = (p.y - as_base) / (as_top - as_base);
+	float c_as = w.z * smoothstep(0.0, 0.35, h_as) * (1.0 - smoothstep(0.45 + 0.3 * w.w, 1.0, h_as));
+
 	float c_cb = 0.0;
 	float h_cb = (p.y - cb_base) / (cb_top - cb_base);
-	if (cb_coverage > 0.001) {
-		// 탑은 위로 갈수록 가늘어지며 고도풍 방향으로 기울고, 꼭대기에서 모루로 퍼진다.
+	if (cb_coverage > 0.001 && h_cb > 0.0 && h_cb < 1.08) {
+		// 여러 층을 관통하는 적란운: 저층 밑면에서 대류권계면(약 11km)까지 솟은 탑,
+		// 고도별 크기가 다른 탑 마루(터렛), 꼭대기에서 바람 방향으로 퍼지는 모루와 탑 위로 솟는 돔.
 		float hc = clamp(h_cb, 0.0, 1.0);
-		vec2 cxz = p.xz + wind_offset - cirrus_wind_dir * hc * 2000.0;
-		float cbv = texture(weather_noise, cxz * (1.0 / 30000.0) + vec2(0.13, 0.52)).r;
-		float lo_t = 1.0 - cb_coverage * 0.42 + 0.14 * hc;
-		float lo_a = 1.0 - cb_coverage * 0.5;
-		float tower = smoothstep(lo_t, lo_t + 0.3, cbv) * smoothstep(0.0, 0.03, h_cb) * (1.0 - smoothstep(0.8, 0.95, h_cb));
-		float anvil = smoothstep(lo_a, lo_a + 0.35, cbv) * smoothstep(0.74, 0.88, h_cb) * (1.0 - smoothstep(0.9, 1.0, h_cb)) * 0.65;
-		c_cb = max(tower, anvil);
+		vec2 cxz = p.xz + wind_offset - cirrus_wind_dir * hc * 1800.0;
+		float cbv = wtex(cxz * (1.0 / 30000.0) + vec2(0.13, 0.52));
+		float turret = texture(base_noise, vec3(cxz.x, p.y * 1.6, cxz.y) * (1.0 / 9000.0)).r - 0.5;
+		float lo_t = 1.0 - cb_coverage * 0.42 + 0.10 * hc - turret * 0.22;
+		float tower = smoothstep(lo_t, lo_t + 0.24, cbv) * smoothstep(0.0, 0.03, h_cb) * (1.0 - smoothstep(0.84, 0.97, h_cb));
+		float spread = smoothstep(0.78, 1.0, hc);
+		float cbv_anvil = wtex((cxz - cirrus_wind_dir * spread * 9000.0) * (1.0 / 30000.0) + vec2(0.13, 0.52));
+		float lo_a = 1.0 - cb_coverage * 0.62;
+		float anvil = smoothstep(lo_a, lo_a + 0.3, cbv_anvil) * smoothstep(0.80, 0.90, h_cb) * (1.0 - smoothstep(0.95, 1.0, h_cb)) * 0.75;
+		float overshoot = smoothstep(lo_t + 0.2, lo_t + 0.32, cbv) * smoothstep(0.9, 0.97, h_cb) * (1.0 - smoothstep(1.0, 1.07, h_cb));
+		c_cb = max(max(tower, anvil), overshoot);
 	}
 
-	float c = max(c_cu, max(c_st, c_cb));
+	float c = max(max(c_cu, c_as), max(c_st, c_cb));
 	if (c <= 0.002) {
 		return 0.0;
 	}
@@ -111,6 +145,10 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 	if (c_st >= c) {
 		type_scale = 0.6;
 		hfrac = clamp(h_st, 0.0, 1.0);
+	}
+	if (c_as >= c) {
+		type_scale = 0.45;
+		hfrac = clamp(h_as, 0.0, 1.0);
 	}
 	if (c_cb >= c) {
 		type_scale = 2.5;
@@ -123,6 +161,9 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 	float billow = 1.0 - texture(detail_noise, uvw).r;
 	float shape = base * 0.5 + billow * 0.5;
 	float d = remap01(shape, 1.0 - c, 1.0) * c;
+	// 원경 LOD: 성긴 표본에서 자글거림이 생기지 않도록 고주파 형상을 기상도 윤곽으로 부드럽게 바꾼다.
+	float lod = smoothstep(8000.0, 30000.0, dist);
+	d = mix(d, c * smoothstep(0.2, 0.75, c) * 0.75, lod);
 	if (detailed && d > 0.0 && dist < detail_distance) {
 		// 가장자리만 깎아 솜털 같은 경계를 만든다.
 		float det = texture(detail_noise, uvw * 7.0 + vec3(evolve * 3.0)).r;
@@ -130,6 +171,13 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 		d = remap01(d, erode, 1.0);
 	}
 	return d * type_scale;
+}
+
+float bayer4(vec2 frag) {
+	ivec2 q = ivec2(mod(frag, 4.0));
+	int i = q.x + q.y * 4;
+	const float m[16] = float[](0.0, 8.0, 2.0, 10.0, 12.0, 4.0, 14.0, 6.0, 3.0, 11.0, 1.0, 9.0, 15.0, 7.0, 13.0, 5.0);
+	return (m[i] + 0.5) / 16.0;
 }
 
 float hg(float cos_theta, float g) {
@@ -181,8 +229,8 @@ void fragment() {
 	float mu = dot(dir, sun_direction);
 	float phase = clamp(mix(hg(mu, 0.6), hg(mu, -0.25), 0.3) * 12.566, 0.0, 4.0);
 	phase = mix(1.0, phase, 0.55);
-	// 결 무늬가 생기지 않는 정적 백색 잡음 지터
-	float jitter = fract(sin(dot(FRAGCOORD.xy, vec2(12.9898, 78.233))) * 43758.5453);
+	// 4x4 베이어 순서 지터: 백색 잡음보다 반짝임이 적고 해상도에서 거의 보이지 않는다.
+	float jitter = bayer4(FRAGCOORD.xy);
 	float sub_jitter = fract(jitter * 7.31 + 0.37);
 
 	// 1. 저·중층 슬래브
@@ -199,17 +247,19 @@ void fragment() {
 	t1 = min(t1, min(opaque, max_distance));
 	if (t1 > t0 && slab_top > slab_bottom) {
 		float span = t1 - t0;
-		float steps = float(step_count);
+		// 지평선 쪽 긴 광선(화면의 작은 띠)에만 표본을 최대 2배까지 더 준다.
+		int n_steps = int(clamp(float(step_count) * span / 12000.0, float(step_count), min(64.0, float(step_count) * 2.0)));
+		float steps = float(n_steps);
 		bool prev_hit = false;
 		for (int i = 0; i < 64; i++) {
-			if (i >= step_count || transmit < 0.02) { break; }
+			if (i >= n_steps || transmit < 0.02) { break; }
 			// 1차: 앞쪽이 촘촘한 2차 간격으로 구간 중앙만 값싸게 검사
 			float s0 = (float(i) + jitter) / steps;
 			float s1 = (float(i) + 1.0 + jitter) / steps;
 			float t = t0 + span * s0 * s0;
 			float ds = span * (s1 * s1 - s0 * s0);
 			vec3 pm = cam + dir * (t + ds * 0.5);
-			vec4 w = weather_at(pm.xz + wind_offset);
+			vec4 w = weather_at(pm.xz + wind_offset, max(ds * 0.25, refine_stride));
 			float hf_probe;
 			bool hit = density_at(pm, w, t, false, hf_probe) > 0.002;
 			if (!hit && !prev_hit) { continue; }
@@ -226,7 +276,9 @@ void fragment() {
 				if (d > 0.002) {
 					vec3 col = shade(p, w, d, hfrac, ts, phase);
 					col = mix(col, haze_color * ambient_scale, 1.0 - exp(-ts * haze_density));
-					float a = (1.0 - exp(-extinction * d * sds)) * (1.0 - smoothstep(max_distance * 0.75, max_distance, ts));
+					// 원경은 소광을 낮춰 여러 표본이 평균되도록 해 반짝임을 줄인다.
+					float ext = extinction * mix(1.0, 0.4, smoothstep(8000.0, 35000.0, ts));
+					float a = (1.0 - exp(-ext * d * sds)) * (1.0 - smoothstep(max_distance * 0.75, max_distance, ts));
 					acc += transmit * a * col;
 					transmit *= 1.0 - a;
 					if (transmit < 0.02) { break; }
@@ -235,28 +287,48 @@ void fragment() {
 		}
 	}
 
-	// 2. 권운: 바람 방향으로 늘어진 섬유층 (2D 표본 2회)
+	// 2. 고고도 권운 2층: 9.2km 섬유상 권운(갈고리 꼬리) + 7.8km 얇은 권적운/권층운 조각
 	if (ci_coverage > 0.001 && abs(dir.y) > 0.00001) {
-		float tc = (ci_altitude - cam.y) / dir.y;
-		if (tc > 0.0 && tc < opaque && tc < max_distance * 1.4) {
-			vec2 xz = (cam + dir * tc).xz + cirrus_offset;
+		for (int layer = 0; layer < 2; layer++) {
+			// 카메라에서 먼 층부터 그려 앞쪽 층이 위에 덮이도록 한다.
+			int idx = (cam.y < ci_altitude - 700.0) ? 1 - layer : layer;
+			float alt = idx == 0 ? ci_altitude : ci_altitude - 1400.0;
+			float tc = (alt - cam.y) / dir.y;
+			if (tc <= 0.0 || tc >= opaque || tc >= max_distance * 1.5) { continue; }
+			vec2 xz = (cam + dir * tc).xz + cirrus_offset * (idx == 0 ? 1.0 : 0.85);
 			vec2 perp = vec2(-cirrus_wind_dir.y, cirrus_wind_dir.x);
 			float along = dot(xz, cirrus_wind_dir);
 			float across = dot(xz, perp);
-			float n1 = texture(weather_noise, vec2(along / 38000.0, across / 7000.0)).r;
-			float n2 = texture(weather_noise, vec2(along / 16000.0 + n1 * 0.4, across / 2400.0)).r;
-			float lo = 1.0 - ci_coverage * 0.6;
-			float a = smoothstep(lo, lo + 0.4, n1 * 0.6 + n2 * 0.4) * 0.42;
-			a *= mix(0.2, 1.0, smoothstep(0.0, 0.12, abs(dir.y))) * (1.0 - smoothstep(max_distance, max_distance * 1.4, tc));
-			vec3 col = cloud_top_color.rgb * (sun_color * phase * 0.7 + vec3(0.55) * ambient_scale);
-			col = mix(col, haze_color * ambient_scale, 1.0 - exp(-tc * haze_density * 0.5));
-			if (cam.y < ci_altitude) {
+			// 원경일수록 밉을 올려 가는 줄무늬가 깜빡이지 않게 한다.
+			float lod_c = clamp(log2(max(tc, 1.0) / 5000.0) + 1.0, 0.0, 6.0);
+			float a = 0.0;
+			if (idx == 0) {
+				float n1 = textureLod(weather_noise, vec2(along / 42000.0, across / 9000.0), lod_c * 0.5).r;
+				// 영역 왜곡으로 끝이 휘어진 갈고리 모양 섬유
+				// 완만한 굽음만 주어 거의 평행한 섬유가 끝에서 휘도록 한다.
+				float bend = (n1 - 0.5) * 1600.0;
+				float strands = textureLod(weather_noise, vec2(along / 30000.0, (across + bend) / 1500.0) + vec2(0.31, 0.17), lod_c).r;
+				float fine = textureLod(weather_noise, vec2(along / 14000.0, (across + bend * 1.3) / 420.0) + vec2(0.7, 0.4), lod_c + 1.0).r;
+				float lo = 1.0 - ci_coverage * 0.62;
+				float body = smoothstep(lo, lo + 0.35, n1);
+				a = body * smoothstep(0.35, 0.8, strands * 0.65 + fine * 0.35) * 0.55;
+			} else {
+				float m1 = textureLod(weather_noise, xz / 26000.0 + vec2(0.52, 0.09), lod_c * 0.5).r;
+				float m2 = textureLod(weather_noise, xz / 1800.0 + vec2(0.11, 0.83), lod_c).r;
+				float lo2 = 1.0 - ci_coverage * 0.4;
+				a = smoothstep(lo2, lo2 + 0.3, m1) * smoothstep(0.35, 0.75, m2) * 0.3;
+			}
+			a *= mix(0.25, 1.0, smoothstep(0.0, 0.1, abs(dir.y))) * (1.0 - smoothstep(max_distance, max_distance * 1.5, tc));
+			if (a < 0.002) { continue; }
+			// 얼음 결정: 태양 쪽 전방 산란이 강하고 그늘이 거의 없다.
+			vec3 col = mix(vec3(1.0), cloud_top_color.rgb, 0.25) * (sun_color * (0.45 + phase * 0.55) + vec3(0.5) * ambient_scale);
+			col = mix(col, haze_color * ambient_scale, 1.0 - exp(-tc * haze_density * 0.4));
+			if (cam.y < alt) {
 				acc += transmit * a * col;
-				transmit *= 1.0 - a;
 			} else {
 				acc = a * col + (1.0 - a) * acc;
-				transmit *= 1.0 - a;
 			}
+			transmit *= 1.0 - a;
 		}
 	}
 
