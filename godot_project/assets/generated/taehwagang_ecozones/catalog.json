@@ -71,19 +71,27 @@
   "layers": [
     {
       "zone": "bamboo",
-      "family": "bamboo",
-      "kind": "bamboo_grove",
-      "lattice": "hex",
-      "spacing_m": 7.0,
-      "count": 6493
+      "family": "forest",
+      "kind": "bamboo_a",
+      "lattice": "blue",
+      "spacing_m": 3.4,
+      "count": 9178
     },
     {
       "zone": "bamboo",
-      "family": "bamboo",
-      "kind": "bamboo_clump",
-      "lattice": "hex",
-      "spacing_m": 3.6,
-      "count": 3761
+      "family": "forest",
+      "kind": "bamboo_b",
+      "lattice": "blue",
+      "spacing_m": 3.4,
+      "count": 7850
+    },
+    {
+      "zone": "bamboo",
+      "family": "forest",
+      "kind": "bamboo_c",
+      "lattice": "blue",
+      "spacing_m": 3.4,
+      "count": 5621
     },
     {
       "zone": "silvergrass",
@@ -91,7 +99,7 @@
       "kind": "silvergrass_patch",
       "lattice": "hex",
       "spacing_m": 3.3,
-      "count": 72069
+      "count": 72140
     },
     {
       "zone": "reed",
@@ -99,23 +107,103 @@
       "kind": "reed_patch",
       "lattice": "hex",
       "spacing_m": 3.0,
-      "count": 48818
+      "count": 48914
     },
     {
       "zone": "woodland",
-      "family": "trees",
-      "kind": "broadleaf",
-      "lattice": "hex",
+      "family": "forest",
+      "kind": "deciduous_a",
+      "lattice": "blue",
       "spacing_m": 6.5,
-      "count": 1864
+      "count": 401
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "deciduous_b",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 304
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "deciduous_c",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 228
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "pine_a",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 117
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "pine_b",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 125
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "pine_c",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 60
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "shrub_a",
+      "lattice": "blue",
+      "spacing_m": 9.0,
+      "count": 273
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "shrub_b",
+      "lattice": "blue",
+      "spacing_m": 9.0,
+      "count": 255
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "shrub_c",
+      "lattice": "blue",
+      "spacing_m": 9.0,
+      "count": 187
     },
     {
       "zone": "meadow",
-      "family": "trees",
-      "kind": "shrub",
-      "lattice": "hex",
+      "family": "forest",
+      "kind": "shrub_a",
+      "lattice": "blue",
       "spacing_m": 14.0,
-      "count": 197
+      "count": 68
+    },
+    {
+      "zone": "meadow",
+      "family": "forest",
+      "kind": "shrub_b",
+      "lattice": "blue",
+      "spacing_m": 14.0,
+      "count": 66
+    },
+    {
+      "zone": "meadow",
+      "family": "forest",
+      "kind": "shrub_c",
+      "lattice": "blue",
+      "spacing_m": 14.0,
+      "count": 42
     },
     {
       "zone": "meadow",
@@ -123,7 +211,7 @@
       "kind": "silvergrass_clump",
       "lattice": "hex",
       "spacing_m": 7.0,
-      "count": 885
+      "count": 866
     }
   ],
   "source_masks": {
@@ -233,8 +321,8 @@
     "preview": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
       "format": "PNG",
-      "sha256": "6c6c3511e14191eff0130fa850c9ed0442d3c66a5d476a7df7450e28f2026ecb",
-      "size_bytes": 123065,
+      "sha256": "dc778f150540a733865120e1a6001b3d632e5fb80ea9351f77251b3bb519078c",
+      "size_bytes": 127407,
       "type": "ecozone_preview",
       "metadata": {
         "bbox": {
@@ -255,8 +343,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "43cd4c382393c28ea790f23a08b8c6672b6785d4f5d5c8f6ac1a997072c04cbf",
-      "size_bytes": 5008695,
+      "sha256": "9c40c8086f57fe2b99c2ffdc9a4ee1c842a8c811551a5f5ce67775a91d15282d",
+      "size_bytes": 5478305,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -266,9 +354,9 @@
           "east": 129.3622
         },
         "resolution": null,
-        "elevation_min": -0.27,
-        "elevation_max": 14.73,
-        "instances": 134087
+        "elevation_min": -0.24,
+        "elevation_max": 14.7,
+        "instances": 146695
       }
     },
     "forest_masses": {

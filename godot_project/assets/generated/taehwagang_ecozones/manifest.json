@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-10 16:03:06",
+  "last_updated": "2026-10-10 21:43:39",
   "assets": {
     "labels": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
@@ -71,8 +71,8 @@
     "preview": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
       "format": "PNG",
-      "sha256": "6c6c3511e14191eff0130fa850c9ed0442d3c66a5d476a7df7450e28f2026ecb",
-      "size_bytes": 123065,
+      "sha256": "dc778f150540a733865120e1a6001b3d632e5fb80ea9351f77251b3bb519078c",
+      "size_bytes": 127407,
       "type": "ecozone_preview",
       "metadata": {
         "bbox": {
@@ -93,8 +93,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "43cd4c382393c28ea790f23a08b8c6672b6785d4f5d5c8f6ac1a997072c04cbf",
-      "size_bytes": 5008695,
+      "sha256": "9c40c8086f57fe2b99c2ffdc9a4ee1c842a8c811551a5f5ce67775a91d15282d",
+      "size_bytes": 5478305,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -104,9 +104,9 @@
           "east": 129.3622
         },
         "resolution": null,
-        "elevation_min": -0.27,
-        "elevation_max": 14.73,
-        "instances": 134087
+        "elevation_min": -0.24,
+        "elevation_max": 14.7,
+        "instances": 146695
       }
     },
     "forest_masses": {

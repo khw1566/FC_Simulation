@@ -1895,7 +1895,7 @@
         },
         {
           "path": "godot_project/scripts/vegetation/vegetation_batch_factory.gd",
-          "lines": 41
+          "lines": 43
         },
         {
           "path": "pipeline/processors/silvergrass/generate.py",
@@ -1920,7 +1920,7 @@
       "modules": [
         {
           "path": "config/taehwagang_ecozones.json",
-          "lines": 113
+          "lines": 116
         },
         {
           "path": "pipeline/collectors/ecozone_landcover_collector.py",
@@ -1952,7 +1952,7 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/scatter_planner.py",
-          "lines": 95
+          "lines": 138
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/ground_textures.py",
@@ -1960,11 +1960,11 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
-          "lines": 197
+          "lines": 198
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
-          "lines": 160
+          "lines": 161
         },
         {
           "path": "godot_project/scripts/vegetation/forest_mass_builder.gd",
@@ -1972,11 +1972,11 @@
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_ground_binder.gd",
-          "lines": 50
+          "lines": 56
         },
         {
           "path": "godot_project/shaders/vegetation_sway.gdshader",
-          "lines": 53
+          "lines": 55
         },
         {
           "path": "godot_project/shaders/forest_mass.gdshader",
@@ -1984,7 +1984,32 @@
         },
         {
           "path": "godot_project/shaders/ecozone_ground.gdshaderinc",
-          "lines": 56
+          "lines": 62
+        }
+      ]
+    },
+    "forest_trees": {
+      "description": "공통 숲 수목 12형태(활엽 낙엽수·소나무형·관목·대나무 각 3) × 3 LOD, 정점 색 알파 흔들림 가중치",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/forest_tree_geometry.gd",
+          "lines": 206
+        },
+        {
+          "path": "pipeline/processors/forest_trees/forest_tree_geometry.gd",
+          "lines": 206
+        },
+        {
+          "path": "pipeline/processors/forest_trees/generate.py",
+          "lines": 79
+        },
+        {
+          "path": "pipeline/processors/forest_trees/export_forest_trees.gd",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/forest_trees/capture.gd",
+          "lines": 62
         }
       ]
     }

@@ -103,6 +103,7 @@ func sway_material(family: Dictionary) -> ShaderMaterial:
 	material.set_shader_parameter("sway_height_m", float(sway.get("height_m", 2.4)))
 	material.set_shader_parameter("sway_strength_m", float(sway.get("strength_m", 0.0)))
 	material.set_shader_parameter("sway_speed", float(sway.get("speed", 1.0)))
+	material.set_shader_parameter("use_vertex_weight", bool(sway.get("vertex_weight", false)))
 	material.set_shader_parameter("fade_far_m", float(family.get("fade_far_m", 0.0)))
 	material.set_shader_parameter("fade_band_m", float(family.get("fade_band_m", 20.0)))
 	return material

@@ -25,6 +25,7 @@
 - 광역 원경 고도 (`horizon`): `.f32`는 little-endian float32 표고 미터를 행 우선으로 기록한다. 해상도·Web Mercator bbox·출처·해시를 계열 매니페스트에 기록하며, RGB 고도 텍스처의 인코딩은 카탈로그에 명시한다. 수평 표본 간격을 원본 측량 정밀도로 표현하지 않는다.
 - 표시·자료: 지도, UI, 셰이더. 모델·씬·이미지·벡터·지리 데이터·문서는 파일 역할로 별도 구분한다.
 - 둔치 생태 구역 (`taehwagang_ecozones`): 대상 지도 bbox 격자의 8bit 구역 ID 라벨, 구역별 바닥 혼합 스플랫(RGBA 2장), 512px 반복 바닥 텍스처, 구역별 규칙 격자 식생 인스턴스(`scatter_instances.json`, 월드 미터·지도 중앙 원점). 원천 둔치 마스크 해시, OSM 캐시 시각, 구역 면적, 레이어별 인스턴스 수를 카탈로그에 기록한다. 경도 범위·기준 다각형으로 정한 구역은 추정이며 현장 식생도가 아니다(`status=generated_estimate`).
+- 공통 숲 수목 (`forest_trees`): 활엽 낙엽수·소나무형·관목·대나무 각 3형태 × 3 LOD(LOD2는 입체 수관). 정점 색 알파를 흔들림 가중치로 쓴다.
 - 억새·갈대 (`silvergrass`): 억새 군집·억새 군락 타일·갈대 군락 3종 × 3 LOD와 원경 카드. 계열 공통 `vegetation_batch_factory.gd`로 64m 청크 MultiMesh 묶음, 그림자 없음.
 - 새 계열은 `asset_inventory.py`의 CATEGORIES와 이 지침을 함께 갱신한다. 알 수 없는 계열은 기타로 기록하고 보고한다.
 

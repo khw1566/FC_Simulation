@@ -6,6 +6,7 @@ from pathlib import Path
 
 CATEGORIES = {
     'silvergrass':'억새·갈대 군락 LOD',
+    'forest_trees':'공통 숲 수목 LOD',
     'taehwagang_ecozones':'태화강 둔치 생태 구역·식생 배치',
     'industrial_zones':'공단 구역 마스크',
     'industrial':'산업·공단', 'industrial_plant':'플랜트 탑·배관·연기',

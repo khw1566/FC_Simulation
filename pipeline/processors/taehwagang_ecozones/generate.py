@@ -68,9 +68,9 @@ def main():
         zone_id = ids[rule["zone"]]
         if zone_id not in edges:
             edges[zone_id] = classifier.edge_distance(labels, zone_id)
-        layer = planner.plan(rule, index, labels, zone_id, edges[zone_id])
-        layers.append(layer)
-        print(f"  배치 {rule['zone']}/{rule['kind']}: {layer['count']}")
+        for layer in planner.plan(rule, index, labels, zone_id, edges[zone_id]):
+            layers.append(layer)
+            print(f"  배치 {rule['zone']}/{layer['kind']}: {layer['count']}")
 
     exporter = ZoneExporter(ROOT, config, raster)
     files = exporter.write_rasters(labels, placeable)

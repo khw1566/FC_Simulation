@@ -11,6 +11,8 @@ uniform float sway_speed = 1.6;
 uniform vec2 wind_direction = vec2(0.8, 0.6);
 uniform float gust_scale = 0.045;
 uniform float fade_far_m = 0.0;
+// 참이면 정점 색 알파를 흔들림 가중치로 쓴다(줄기 0, 수관 끝 1). 공통 숲 수목(forest_trees)용.
+uniform bool use_vertex_weight = false;
 uniform float fade_band_m = 20.0;
 
 varying vec3 v_world;
@@ -27,7 +29,7 @@ void vertex() {
 	vec3 world = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
 	if (sway_strength_m > 0.0) {
 		float h = clamp(VERTEX.y / sway_height_m, 0.0, 1.0);
-		float bend = h * h;
+		float bend = use_vertex_weight ? COLOR.a * h : h * h;
 		float phase = dot(world.xz, normalize(wind_direction)) * gust_scale * 6.2831;
 		float wave = sin(TIME * sway_speed - phase) * 0.7 + sin(TIME * sway_speed * 2.7 - phase * 1.9 + world.x * 0.3) * 0.3;
 		float gust = 0.6 + 0.4 * sin(TIME * 0.35 - phase * 0.25);
