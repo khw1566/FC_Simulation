@@ -4,6 +4,8 @@ class_name BridgeLandmarkManager
 const Builder = preload("res://scripts/terrain/bridge_landmark_builder.gd")
 const SPEC_PATH := "res://assets/generated/taehwa_bridges.json"
 const PlacedAssets = preload("res://scripts/terrain/pedestrian_bridge_placement.gd")
+const TrialCorridors = preload("res://scripts/terrain/bridge_trial_corridors.gd")
+var trial_corridors := TrialCorridors.new()
 var placed_assets: Node3D
 var replaced_osm_ids: Dictionary = {}
 # 도로 자료에 OSM ID가 없는 지도도 있으므로 교량 위치와 겹치는 범용 교량을 형상으로 대체한다.
@@ -17,6 +19,7 @@ func setup(map_config, terrain: Node3D) -> void:
 	placed_assets.name = "PedestrianBridgeAssets"
 	add_child(placed_assets)
 	placed_assets.setup(map_config, terrain)
+	trial_corridors.configure(map_config)
 	if map_config == null or map_config.bbox_west > 129.27 or map_config.bbox_east < 129.41:
 		return
 	if map_config.bbox_south > 35.51 or map_config.bbox_north < 35.56:
@@ -27,6 +30,8 @@ func setup(map_config, terrain: Node3D) -> void:
 	if not data is Dictionary:
 		return
 	for spec in data.get("bridges", []):
+		if _covered_by_trial(spec):
+			continue
 		var curve := Curve3D.new()
 		for p in spec.get("geometry", []):
 			var x: float = (float(p.lon) - map_config.bbox_west) / (map_config.bbox_east - map_config.bbox_west) - 0.5
@@ -38,6 +43,23 @@ func setup(map_config, terrain: Node3D) -> void:
 		for osm_id in spec.osm_ids:
 			replaced_osm_ids[str(osm_id)] = true
 		_register_deck(curve, float(spec.width_m))
+
+## 시범 배치 교량이 같은 OSM 교량을 대신하면 기존 절차 생성 교량을 만들지 않는다.
+func _covered_by_trial(spec: Dictionary) -> bool:
+	var ids: Array = spec.get("osm_ids", [])
+	if ids.is_empty():
+		return false
+	for osm_id in ids:
+		if not trial_corridors.osm_ids.has(str(osm_id)):
+			return false
+	return true
+
+## 시범 배치 교량 상판과 겹치는 범용 교량 구간을 잘라낸 도로 조각들
+func clip_road(road: Dictionary) -> Array:
+	return trial_corridors.clip_road(road)
+
+func replaces_building(world_x: float, world_z: float) -> bool:
+	return trial_corridors.replaces_building(world_x, world_z)
 
 func replaces_road(road: Dictionary) -> bool:
 	if replaced_osm_ids.has(str(road.get("osm_id", ""))) or (placed_assets != null and placed_assets.replaces_road(road)):

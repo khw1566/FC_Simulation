@@ -37,6 +37,8 @@ static func group(host: Node3D, buildings: Array) -> Dictionary:
 			continue
 		if host._industrial_suppression.replaces(cx, cz):
 			continue
+		if host._bridge_manager != null and host._bridge_manager.replaces_building(cx, cz):
+			continue
 		if host._railway_manager != null and host._railway_manager.landmarks != null and host._railway_manager.landmarks.replaces_building(cx, cz):
 			continue
 		var coord := Vector2i(int(floor(cx / host.chunk_size)), int(floor(cz / host.chunk_size)))

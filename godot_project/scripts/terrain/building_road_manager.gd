@@ -342,9 +342,12 @@ func release_building_batch(container: Node3D) -> void:
 func _render_roads_and_tunnels_batched(roads: Array, threaded: bool = false, batch: String = "") -> Dictionary:
 	var accepted: Array = []
 	var signatures: Array = []
+	var pieces: Array = []
 	for r in roads:
 		if _bridge_manager != null and _bridge_manager.replaces_road(r):
 			continue
+		pieces.append_array(_bridge_manager.clip_road(r) if _bridge_manager != null else [r])
+	for r in pieces:
 		var signature: String = r["_geometry_key"] if r.has("_geometry_key") else RoadClassifier.geometry_key(r)
 		if _seen_road_geometry.has(signature):
 			continue

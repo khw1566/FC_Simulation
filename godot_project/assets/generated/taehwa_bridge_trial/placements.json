@@ -1,7 +1,7 @@
 {
   "version": 1,
   "map_id": "ulsan_metro_80km",
-  "note_ko": "태화강 조사 교량 초안 시범 배치. 중심·방향은 OSM 교량 선형(osm_ids) 기준이며 모델 길이만큼 양 끝점을 둔다. bank_ends는 양 끝 지형 높이 평균에 상판을 맞추고, sea_level은 지도 해수면에 모델 원점을 둔다.",
+  "note_ko": "태화강 조사 교량 초안 시범 배치. 중심·방향은 OSM 교량 선형(osm_ids) 기준이며 모델 길이만큼 양 끝점을 둔다. bank_ends는 양 끝 지형 높이 평균에 상판을 맞추고, sea_level은 지도 해수면에 모델 원점을 둔다. deck_width_m 폭의 상판 구간에서는 범용 교량 도로와 상판 위 건물을 생성하지 않는다. road_clip_margin_m은 실제 선형이 곡선이라 직선 모델과 어긋나는 교량의 도로 제거 여유폭이다.",
   "source": "OpenStreetMap way geometry (2026-10-09), research_20261009/catalog.json",
   "placements": [
     {
@@ -20,6 +20,7 @@
         129.231036,
         35.5859635
       ],
+      "deck_width_m": 8.5,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
@@ -43,6 +44,7 @@
         129.2343159,
         35.5780935
       ],
+      "deck_width_m": 24.9,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
@@ -66,6 +68,7 @@
         129.2484815,
         35.5622712
       ],
+      "deck_width_m": 25.0,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
@@ -89,13 +92,15 @@
         129.4010828,
         35.5140552
       ],
+      "deck_width_m": 41.18,
       "ground": "sea_level",
       "y_offset_m": 0.0,
       "scale": 1.0,
       "osm_ids": [
         997824965,
         997824969
-      ]
+      ],
+      "road_clip_margin_m": 25.0
     },
     {
       "id": "taehwa_bridge_taehwa_bridge_draft",
@@ -113,6 +118,7 @@
         129.3092012,
         35.5540492
       ],
+      "deck_width_m": 35.8,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
@@ -137,6 +143,7 @@
         129.3219128,
         35.549401
       ],
+      "deck_width_m": 5.0,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
@@ -160,6 +167,7 @@
         129.3230762,
         35.5494153
       ],
+      "deck_width_m": 50.8,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
@@ -184,6 +192,7 @@
         129.3400513,
         35.5473528
       ],
+      "deck_width_m": 30.8,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
@@ -208,6 +217,7 @@
         129.3552269,
         35.5437597
       ],
+      "deck_width_m": 40.6,
       "ground": "bank_ends",
       "y_offset_m": 0.0,
       "scale": 1.0,
