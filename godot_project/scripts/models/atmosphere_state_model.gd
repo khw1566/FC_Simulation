@@ -85,8 +85,9 @@ static func calculate_at_altitude(alt_m: float, ground_speed_ms: float, base_wea
 	var jet_dir := 280.0 if season > 0.0 else 260.0
 	state.wind_direction_deg = fposmod(SurfaceClimateModelClass.lerp_angle_deg(dir_boundary, jet_dir, smoothstep(1000.0, 7000.0, z)), 360.0)
 
+	# 풍향은 불어오는 방향. 월드 축은 (동, 위, -북)이므로 바람이 향하는 속도 벡터로 변환한다.
 	var rad: float = deg_to_rad(state.wind_direction_deg)
-	state.wind_vector = Vector3(-sin(rad), 0.0, -cos(rad)) * state.wind_speed_ms
+	state.wind_vector = Vector3(-sin(rad), 0.0, cos(rad)) * state.wind_speed_ms
 
 	# 6. 음속 계산: a = sqrt(gamma * R * T), gamma=1.4, R=287.05 -> a ≈ 20.0468 * sqrt(T_K)
 	state.speed_of_sound_ms = 20.0468 * sqrt(maxf(state.temperature_k, 1.0))

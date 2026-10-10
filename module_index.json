@@ -758,21 +758,31 @@
       "description": "게임 내 커스텀 오브젝트 열람"
     },
     "procedural_clouds": {
-      "description": "기상별 절차적 구름 혼합과 고정 성능 예산",
+      "description": "화면 1패스 레이마칭 구름층(지평선 70km), 기상 혼합·고도풍·태양광 연동과 품질 예산",
       "modules": [
         {
           "path": "godot_project/scripts/weather/procedural_cloud_manager.gd",
-          "description": "현재 메인 월드 구름 관리자, 혼합 및 품질 상한",
-          "lines": 120
+          "description": "메인 월드 구름 관리자: 기상 비율을 유형별 덮임·고도로 변환, 고도풍 이동, 태양·안개 동기화, 품질 단계",
+          "lines": 187
+        },
+        {
+          "path": "godot_project/scripts/weather/cloud_layer_factory.gd",
+          "description": "화면 고정 쿼드 1개와 기상도 2D·형상 3D 노이즈 텍스처 생성",
+          "lines": 64
+        },
+        {
+          "path": "godot_project/shaders/sky_cloud_layer.gdshader",
+          "description": "적운·층운·적란운 슬래브와 권운 평면 레이마칭, 구간 세분 적분, 태양광 감쇠·위상함수·대기 원근",
+          "lines": 269
         },
         {
           "path": "godot_project/scripts/weather/cloud_pool_factory.gd",
-          "description": "유형별 볼륨 풀과 공유 노이즈 초기 생성",
+          "description": "(미사용) 이전 상자 볼륨 풀 생성기",
           "lines": 51
         },
         {
           "path": "godot_project/shaders/procedural_cloud_volume.gdshader",
-          "description": "유형별 밀도 함수, 전처리 지시문 없는 깊이 가림 및 볼륨 적분",
+          "description": "(미사용) 이전 상자 볼륨 셰이더",
           "lines": 113
         }
       ]

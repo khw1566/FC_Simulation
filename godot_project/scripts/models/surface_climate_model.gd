@@ -145,14 +145,14 @@ static func _diurnal_shape(h: float) -> float:
 
 static func _seasonal(table: Array, pos: float) -> float:
 	var p := fposmod(pos, 12.0)
-	var i0 := int(floor(p)) % 12
+	var i0 := int(floorf(p)) % 12
 	var i1 := (i0 + 1) % 12
-	var f := p - floor(p)
+	var f := p - floorf(p)
 	f = f * f * (3.0 - 2.0 * f)
 	return lerpf(float(table[i0]), float(table[i1]), f)
 
 static func _seasonal_angle(pos: float) -> float:
 	var p := fposmod(pos, 12.0)
-	var i0 := int(floor(p)) % 12
+	var i0 := int(floorf(p)) % 12
 	var i1 := (i0 + 1) % 12
-	return lerp_angle_deg(float(MONTH_WIND_DEG[i0]), float(MONTH_WIND_DEG[i1]), p - floor(p))
+	return lerp_angle_deg(float(MONTH_WIND_DEG[i0]), float(MONTH_WIND_DEG[i1]), p - floorf(p))
