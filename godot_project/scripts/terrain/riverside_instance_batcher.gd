@@ -28,9 +28,14 @@ static func build(parent: Node3D, name_prefix: String, template: Node3D, transfo
 			multimesh.transform_format = MultiMesh.TRANSFORM_3D
 			multimesh.mesh = part.mesh
 			multimesh.instance_count = cell_transforms.size()
+			# 가시 거리는 노드 원점 기준이므로 노드를 칸 중심에 두고 인스턴스 변환을 칸 기준으로 옮긴다
+			var center := Vector3((key.x + 0.5) * CELL_M, 0.0, (key.y + 0.5) * CELL_M)
 			for i in range(cell_transforms.size()):
-				multimesh.set_instance_transform(i, cell_transforms[i] * part.local)
+				var world: Transform3D = cell_transforms[i] * part.local
+				world.origin -= center
+				multimesh.set_instance_transform(i, world)
 			var instance := MultiMeshInstance3D.new()
+			instance.position = center
 			instance.name = "%s_%d_%d_%d" % [name_prefix, key.x, key.y, part_index]
 			instance.multimesh = multimesh
 			instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
