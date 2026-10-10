@@ -32,6 +32,31 @@ static func build() -> ArrayMesh:
 	st.generate_normals()
 	return st.commit()
 
+## 원경 카드(6삼각형): 교차 세로 카드 2장(텍스처 왼쪽 절반, 옆모습) + 높이 1.5m 수평 카드(오른쪽 절반, 위에서 본 이삭).
+## 정점 색 알파: 세로 카드 아래 0·위 1, 수평 카드 1. 셰이더가 윗부분을 물결 마루에 맞춰 비튼다.
+static func build_card(width: float = 3.4, height: float = 2.0) -> ArrayMesh:
+	var st := SurfaceTool.new()
+	st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	for axis in [Vector3(1, 0, 0), Vector3(0, 0, 1)]:
+		var a: Vector3 = -axis * width * 0.5
+		var b: Vector3 = axis * width * 0.5
+		var quad := [[a, Vector2(0.0, 1.0), 0.0], [b, Vector2(0.5, 1.0), 0.0], [b + Vector3.UP * height, Vector2(0.5, 0.0), 1.0], [a + Vector3.UP * height, Vector2(0.0, 0.0), 1.0]]
+		for i in [0, 1, 2, 0, 2, 3]:
+			st.set_normal(Vector3.UP)
+			st.set_color(Color(1, 1, 1, quad[i][2]))
+			st.set_uv(quad[i][1])
+			st.add_vertex(quad[i][0])
+	var y := height * 0.75
+	var s := width * 0.5
+	var top := [[Vector3(-s, y, -s), Vector2(0.5, 0.0)], [Vector3(s, y, -s), Vector2(1.0, 0.0)], [Vector3(s, y, s), Vector2(1.0, 1.0)], [Vector3(-s, y, s), Vector2(0.5, 1.0)]]
+	for i in [0, 1, 2, 0, 2, 3]:
+		st.set_normal(Vector3.UP)
+		st.set_color(Color(1, 1, 1, 1.0))
+		st.set_uv(top[i][1])
+		st.add_vertex(top[i][0])
+	# 법선을 모두 위로 두어 카드 방향과 상관없이 들판처럼 고르게 밝힌다.
+	return st.commit()
+
 static func _tri(st: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, wa: float, wb: float, plume: float) -> void:
 	_vertex(st, a, wa, plume)
 	_vertex(st, b, wb, plume)

@@ -68,6 +68,33 @@ def _stroke(draw, shape, x, y, size, angle, color):
     draw.polygon([(x, y), (x + dx / 2 + nx, y + dy / 2 + ny), (x + dx, y + dy), (x + dx / 2 - nx, y + dy / 2 - ny)], fill=color)
 
 
+def render_silvergrass_card(seed):
+    """원경 억새 카드 512×256 RGBA: 왼쪽 절반 옆모습(꽃대·숙인 이삭), 오른쪽 절반 위에서 본 이삭 덩이."""
+    rng = np.random.default_rng(seed)
+    # 투명 영역 RGB를 황금색으로 채워 밉맵·필터링 시 가장자리가 검게 번지지 않게 한다.
+    image = Image.new("RGBA", (512, 256), (214, 184, 118, 0))
+    draw = ImageDraw.Draw(image)
+    stems = [(176, 140, 76, 255), (196, 158, 88, 255), (150, 118, 64, 255)]
+    plumes = [(240, 220, 168, 255), (226, 200, 140, 255), (250, 236, 196, 255)]
+    for _ in range(46):
+        x = rng.uniform(8, 248)
+        top = rng.uniform(30, 110)
+        lean = rng.uniform(-14, 14)
+        draw.line([(x, 255), (x + lean, top)], fill=stems[int(rng.integers(3))], width=2)
+        for k in range(4):
+            dx = lean * 0.2 + rng.uniform(-10, 10)
+            draw.line([(x + lean, top), (x + lean + dx, top + rng.uniform(18, 34))], fill=plumes[int(rng.integers(3))], width=3)
+    for _ in range(14):
+        x = rng.uniform(10, 246)
+        draw.polygon([(x - 4, 255), (x + rng.uniform(-30, 30), rng.uniform(120, 180)), (x + 4, 255)], fill=(150, 130, 70, 255))
+    for _ in range(220):
+        cx, cy = rng.uniform(262, 506), rng.uniform(6, 250)
+        r = rng.uniform(5, 13)
+        color = plumes[int(rng.integers(3))] if rng.uniform() < 0.7 else stems[int(rng.integers(3))]
+        draw.ellipse([cx - r, cy - r * 0.6, cx + r, cy + r * 0.6], fill=color)
+    return image
+
+
 def render_all(folder, seed):
     folder.mkdir(parents=True, exist_ok=True)
     written = {}
@@ -77,4 +104,9 @@ def render_all(folder, seed):
         render(name, seed + index).save(temporary)
         temporary.replace(path)
         written[name] = path
+    card = folder / "silvergrass_card.png"
+    temporary = card.with_name("silvergrass_card.partial.png")
+    render_silvergrass_card(seed + 99).save(temporary)
+    temporary.replace(card)
+    written["silvergrass_card"] = card
     return written

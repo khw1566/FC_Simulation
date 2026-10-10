@@ -17,7 +17,8 @@
     "woodland_soil": "res://assets/generated/taehwagang_ecozones/ground/woodland_soil.png",
     "meadow": "res://assets/generated/taehwagang_ecozones/ground/meadow.png",
     "canopy_bamboo": "res://assets/generated/taehwagang_ecozones/ground/canopy_bamboo.png",
-    "canopy_broadleaf": "res://assets/generated/taehwagang_ecozones/ground/canopy_broadleaf.png"
+    "canopy_broadleaf": "res://assets/generated/taehwagang_ecozones/ground/canopy_broadleaf.png",
+    "silvergrass_card": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_card.png"
   },
   "tile_m": 6.0,
   "fade_distance_m": 6000.0,
@@ -28,6 +29,8 @@
     "radius_m": 120.0,
     "thin_start_m": 50.0,
     "density": 1.0,
+    "card_spacing_m": 4.0,
+    "card_radius_m": 450.0,
     "wave_length_m": 22.0,
     "wave_speed_mps": 7.0,
     "sway_strength_m": 0.45

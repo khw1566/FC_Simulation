@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-10 21:55:56",
+  "last_updated": "2026-10-10 22:52:03",
   "assets": {
     "labels": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
@@ -125,8 +125,8 @@
     "ground_blend": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ground_blend.json",
       "format": "JSON",
-      "sha256": "a40a1c4de8e3cd1bf76b04102303a5f6145d6997cce451caf7e9205834945c7f",
-      "size_bytes": 1391,
+      "sha256": "3e61b1483349972a3baa18f9693da71dad69a4d8aa542d034352215530249c6d",
+      "size_bytes": 1547,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,
@@ -231,6 +231,19 @@
       "format": "PNG",
       "sha256": "94f96200e832250d392e1816b4f5053501514fa6a6e71bf22e9b594517668e5b",
       "size_bytes": 187223,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_silvergrass_card": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_card.png",
+      "format": "PNG",
+      "sha256": "3c423529f23a77fce930f1d03640a85b4b142d49e0b1917264d6a29e41386d35",
+      "size_bytes": 15382,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,

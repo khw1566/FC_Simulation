@@ -76,15 +76,21 @@ func bind_ground() -> void:
 	if ground is Dictionary and ground.get("silvergrass_field") is Dictionary and ground_bound:
 		add_silvergrass_field(ground, material)
 
-## 억새·갈대 GPU 필드. 바닥 혼합과 같은 스플랫·UV 변환을 쓴다.
+## 억새·갈대 GPU 필드(근경 다발 + 원경 카드). 바닥 혼합과 같은 스플랫·UV 변환을 쓴다.
 func add_silvergrass_field(ground: Dictionary, material: ShaderMaterial) -> void:
-	var splat = material.get_shader_parameter("ecozone_splat_a")
-	if not splat is Texture2D:
+	if not material.get_shader_parameter("ecozone_splat_a") is Texture2D:
 		return
+	var card: Texture2D = null
+	var card_path := str(ground.get("textures", {}).get("silvergrass_card", ""))
+	if not card_path.is_empty() and FileAccess.file_exists(card_path):
+		var image := Image.load_from_file(card_path)
+		if image != null and not image.is_empty():
+			image.generate_mipmaps()
+			card = ImageTexture.create_from_image(image)
 	var field := Field.new()
 	field.name = "SilvergrassField"
 	add_child(field)
-	field.setup(ground.silvergrass_field, splat, material.get_shader_parameter("ecozone_uv_scale"), material.get_shader_parameter("ecozone_uv_offset"), terrain_manager)
+	field.setup(ground.silvergrass_field, material, card, terrain_manager)
 	field_ready = true
 
 func add_forest_masses() -> void:

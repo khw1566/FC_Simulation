@@ -110,6 +110,6 @@
   ],
   "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0, "flat_near_m": 150.0, "flat_far_m": 450.0,
     "silvergrass_field_basis_ko": "억새·갈대는 개체 배치 대신 카메라 주변 GPU 필드로 그린다. 스플랫 G(억새)·A(갈대) 비율만큼 0.9m 칸마다 다발을 세우고, 렌더된 지형 높이에 붙이며, 풍향으로 진행하는 물결로 흔든다. 반경 밖은 황금빛 바닥 텍스처.",
-    "silvergrass_field": {"spacing_m": 0.9, "radius_m": 120.0, "thin_start_m": 50.0, "density": 1.0, "wave_length_m": 22.0, "wave_speed_mps": 7.0, "sway_strength_m": 0.45}},
+    "silvergrass_field": {"spacing_m": 0.9, "radius_m": 120.0, "thin_start_m": 50.0, "density": 1.0, "card_spacing_m": 4.0, "card_radius_m": 450.0, "wave_length_m": 22.0, "wave_speed_mps": 7.0, "sway_strength_m": 0.45}},
   "random_seed": 20261009
 }
