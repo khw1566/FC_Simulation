@@ -5,7 +5,8 @@ class_name RiversideTrialPlacer
 ## 현재 지도 범위 안에서 지형 높이에 맞춰 놓는다. 같은 씬은 MultiMesh로 묶고, 임포트 전 GLB도 직접 읽는다.
 ## taehwagang_dunchi 지도는 RiversideAssetPlacer가 담당하므로 건너뛴다.
 
-const PATHS := "res://assets/generated/riverside_trial/paths.json"
+## 체인 형식 보도 파일: 둔치 보도망, 언양~시내 태화강 자전거길
+const PATH_FILES := ["res://assets/generated/riverside_trial/paths.json", "res://assets/generated/riverside_trial/cycleway.json"]
 const CATALOG := "res://assets/generated/riverside_trial/placements.json"
 const SKIP_MAP_IDS := ["taehwagang_dunchi"]
 const PathProfile = preload("res://scripts/terrain/riverside_path_profile.gd")
@@ -44,7 +45,9 @@ func _initialize() -> void:
 			return
 	_surface = SurfaceSampler.new(terrain_manager)
 	var instances: Dictionary = {}
-	_collect_paths(_read_json(PATHS).get("chains", []), maps.selected_map, instances)
+	for path_file in PATH_FILES:
+		var data := _read_json(path_file)
+		_collect_paths(data.get("chains", []), float(data.get("asset_length_m", 12.0)), maps.selected_map, instances)
 	_collect_placements(_read_json(CATALOG).get("placements", []), maps.selected_map, instances)
 	for scene_path in instances:
 		var template := _instantiate(scene_path)
@@ -57,9 +60,8 @@ func _initialize() -> void:
 	print("RiversideTrialPlacer: ", placed_count, " placed")
 	load_complete = true
 
-func _collect_paths(chains: Array, map, instances: Dictionary) -> void:
+func _collect_paths(chains: Array, asset_length: float, map, instances: Dictionary) -> void:
 	var elevation := Callable(_surface, "height")
-	var asset_length := float(_read_json(PATHS).get("asset_length_m", 12.0))
 	for chain_index in range(chains.size()):
 		var chain: Dictionary = chains[chain_index]
 		# 생성기가 교차 체인끼리 겹치지 않게 정한 높이 단. 없으면 순번으로 나눈다
