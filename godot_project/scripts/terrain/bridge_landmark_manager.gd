@@ -4,6 +4,7 @@ class_name BridgeLandmarkManager
 const Builder = preload("res://scripts/terrain/bridge_landmark_builder.gd")
 const SPEC_PATH := "res://assets/generated/taehwa_bridges.json"
 const PlacedAssets = preload("res://scripts/terrain/pedestrian_bridge_placement.gd")
+const RoadClassifier = preload("res://scripts/terrain/road_segment_classifier.gd")
 const TrialCorridors = preload("res://scripts/terrain/bridge_trial_corridors.gd")
 var trial_corridors := TrialCorridors.new()
 var placed_assets: Node3D
@@ -64,7 +65,7 @@ func replaces_building(world_x: float, world_z: float) -> bool:
 func replaces_road(road: Dictionary) -> bool:
 	if replaced_osm_ids.has(str(road.get("osm_id", ""))) or (placed_assets != null and placed_assets.replaces_road(road)):
 		return true
-	return bool(road.get("bridge", false)) and _overlaps_deck(road.get("points", []))
+	return RoadClassifier.tag_enabled(road, "bridge") and _overlaps_deck(road.get("points", []))
 
 func _register_deck(curve: Curve3D, width: float) -> void:
 	var points := PackedVector2Array()

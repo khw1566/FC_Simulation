@@ -5,6 +5,7 @@ class_name BridgeTrialCorridors
 ## 상판 위에 잘못 잡힌 건물(울산교 보행교 천막 등)을 생성하지 않는다.
 ## 도로 자료에 OSM ID가 없는 지도가 있으므로 형상으로 판정한다.
 
+const RoadClassifier = preload("res://scripts/terrain/road_segment_classifier.gd")
 const PATH := "res://assets/generated/taehwa_bridge_trial/placements.json"
 const ROAD_MARGIN_M := 6.0
 const BUILDING_MARGIN_M := 4.0
@@ -42,7 +43,7 @@ func is_empty() -> bool:
 ## 교량 판정 도로를 상판 밖 구간들로 나눈다. 겹치지 않으면 원본 하나를, 전부 겹치면 빈 배열을 돌려준다.
 func clip_road(road: Dictionary) -> Array:
 	var points: Array = road.get("points", [])
-	if _decks.is_empty() or not bool(road.get("bridge", false)) or points.size() < 2:
+	if _decks.is_empty() or not RoadClassifier.tag_enabled(road, "bridge") or points.size() < 2:
 		return [road]
 	var pieces: Array = []
 	var current: Array = []
