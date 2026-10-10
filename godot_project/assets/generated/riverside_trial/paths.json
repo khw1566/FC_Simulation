@@ -11,6 +11,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3454205,
@@ -37,6 +38,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.345778,
@@ -67,6 +69,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3458183,
@@ -121,6 +124,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.34462694,
@@ -147,6 +151,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3445687,
@@ -181,6 +186,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3021565,
@@ -503,6 +509,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3057955,
@@ -705,6 +712,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3001954,
@@ -955,6 +963,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3002193,
@@ -1169,6 +1178,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2986008,
@@ -1219,6 +1229,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.293051,
@@ -1297,6 +1308,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2904062,
@@ -1363,6 +1375,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2909126,
@@ -1389,6 +1402,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2745559,
@@ -1459,6 +1473,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2904233,
@@ -1621,6 +1636,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2936791,
@@ -1691,6 +1707,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2920466,
@@ -1717,6 +1734,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2959482,
@@ -1879,6 +1897,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2966225,
@@ -1925,6 +1944,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2969549,
@@ -1979,6 +1999,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.296923,
@@ -2025,6 +2046,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2969761,
@@ -2047,6 +2069,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2966225,
@@ -2069,6 +2092,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2971,
@@ -2091,6 +2115,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2984052,
@@ -2117,6 +2142,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2984689,
@@ -2147,6 +2173,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2988637,
@@ -2201,6 +2228,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.293051,
@@ -2319,6 +2347,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2956942,
@@ -2341,6 +2370,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 4,
    "nodes": [
     [
      129.2961649,
@@ -2403,6 +2433,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2916203,
@@ -2429,6 +2460,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2920982,
@@ -2503,6 +2535,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2919916,
@@ -2521,6 +2554,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.291599,
@@ -2539,6 +2573,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.29354,
@@ -2709,6 +2744,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2941196,
@@ -2735,6 +2771,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2941406,
@@ -2785,6 +2822,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.294781,
@@ -2811,6 +2849,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2951266,
@@ -2841,6 +2880,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.295234,
@@ -2867,6 +2907,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2986008,
@@ -2901,6 +2942,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2985366,
@@ -2931,6 +2973,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3021565,
@@ -3061,6 +3104,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3018641,
@@ -3163,6 +3207,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3010929,
@@ -3201,6 +3246,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.3010482,
@@ -3259,6 +3305,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3010482,
@@ -3293,6 +3340,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3013978,
@@ -3331,6 +3379,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3015117,
@@ -3361,6 +3410,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2986747,
@@ -3439,6 +3489,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2953208,
@@ -3465,6 +3516,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2972723,
@@ -3523,6 +3575,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2960548,
@@ -3561,6 +3614,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2972757,
@@ -3591,6 +3645,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.3018359,
@@ -3617,6 +3672,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3012023,
@@ -3651,6 +3707,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.301899791,
@@ -3677,6 +3734,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2978082,
@@ -3747,6 +3805,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2938449,
@@ -3817,6 +3876,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2972723,
@@ -3879,6 +3939,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2980125,
@@ -3921,6 +3982,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2975776,
@@ -3943,6 +4005,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2980125,
@@ -3969,6 +4032,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2981801,
@@ -3991,6 +4055,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2980278,
@@ -4017,6 +4082,7 @@
    "surface": "grass",
    "scene": "res://assets/generated/road_assets/walk_forest_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2959157,
@@ -4107,6 +4173,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2991553,
@@ -4149,6 +4216,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3016579,
@@ -4171,6 +4239,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.299239,
@@ -4281,6 +4350,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3000087,
@@ -4315,6 +4385,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2997913,
@@ -4345,6 +4416,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2992148,
@@ -4375,6 +4447,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2994221,
@@ -4405,6 +4478,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2993687,
@@ -4447,6 +4521,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3004031,
@@ -4477,6 +4552,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2989056,
@@ -4519,6 +4595,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.298739,
@@ -4573,6 +4650,7 @@
    "surface": "paving_stones",
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3001812,
@@ -4603,6 +4681,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3005491,
@@ -4645,6 +4724,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.298626,
@@ -4719,6 +4799,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2964201,
@@ -4785,6 +4866,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2908682,
@@ -4815,6 +4897,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2904635,
@@ -4853,6 +4936,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_granite_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2771638,
@@ -5455,6 +5539,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.293816644,
@@ -5485,6 +5570,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2919602,
@@ -5579,6 +5665,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2959157,
@@ -5637,6 +5724,7 @@
    "surface": "compacted",
    "scene": "res://assets/generated/road_assets/walk_gravel_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2995422,
@@ -5667,6 +5755,7 @@
    "surface": "asphalt",
    "scene": "res://assets/generated/road_assets/walk_asphalt_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3002382,
@@ -5685,6 +5774,7 @@
    "surface": "asphalt",
    "scene": "res://assets/generated/road_assets/walk_asphalt_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.3001954,
@@ -5703,6 +5793,7 @@
    "surface": "wood",
    "scene": "res://assets/generated/road_assets/walk_boardwalk_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2940025,
@@ -5741,6 +5832,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 4,
    "nodes": [
     [
      129.3004224,
@@ -5823,6 +5915,7 @@
    "surface": "paving_stones",
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2990756,
@@ -5845,6 +5938,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2991553,
@@ -5867,6 +5961,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2902959,
@@ -5917,6 +6012,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2885993,
@@ -5967,6 +6063,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.274398,
@@ -5985,6 +6082,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2743788,
@@ -6003,6 +6101,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.274503572,
@@ -6033,6 +6132,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2907773,
@@ -6051,6 +6151,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2906044,
@@ -6077,6 +6178,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2944567,
@@ -6099,6 +6201,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2944711,
@@ -6197,6 +6300,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2909195,
@@ -6219,6 +6323,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.2896323,
@@ -6261,6 +6366,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2906725,
@@ -6283,6 +6389,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.293229667,
@@ -6313,6 +6420,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2904635,
@@ -6343,6 +6451,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.2909859,
@@ -6377,6 +6486,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3000032,
@@ -6407,6 +6517,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.2994901,
@@ -6429,6 +6540,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.30171688,
@@ -6467,6 +6579,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.2900543,
@@ -6489,6 +6602,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.309018,
@@ -6743,6 +6857,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.321855,
@@ -6801,6 +6916,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3385605,
@@ -7707,6 +7823,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3038358,
@@ -7757,6 +7874,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.324215,
@@ -8255,6 +8373,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3057544,
@@ -8321,6 +8440,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3053299,
@@ -8347,6 +8467,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3054703,
@@ -8369,6 +8490,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3053299,
@@ -8423,6 +8545,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.3054513,
@@ -8465,6 +8588,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3069626,
@@ -8543,6 +8667,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3084797,
@@ -8677,6 +8802,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3130128,
@@ -8703,6 +8829,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3130128,
@@ -8757,6 +8884,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3124708,
@@ -8835,6 +8963,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3128237,
@@ -8857,6 +8986,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3136196,
@@ -9075,6 +9205,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.320419,
@@ -9205,6 +9336,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3091913,
@@ -9359,6 +9491,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3275536,
@@ -9717,6 +9850,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.339179035,
@@ -9751,6 +9885,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3168532,
@@ -10089,6 +10224,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3039745,
@@ -10135,6 +10271,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.304903655,
@@ -10281,6 +10418,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3037618,
@@ -10351,6 +10489,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3057955,
@@ -10493,6 +10632,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.320353,
@@ -10511,6 +10651,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3203432,
@@ -10533,6 +10674,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.321855,
@@ -10591,6 +10733,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3228696,
@@ -10661,6 +10804,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3217872,
@@ -10691,6 +10835,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3076821,
@@ -10741,6 +10886,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3087018,
@@ -10767,6 +10913,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3060865,
@@ -10789,6 +10936,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3067646,
@@ -10811,6 +10959,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3050692,
@@ -10869,6 +11018,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3038033,
@@ -10907,6 +11057,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_red_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3042527,
@@ -10929,6 +11080,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3070662,
@@ -10975,6 +11127,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3077928,
@@ -10993,6 +11146,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 3,
    "nodes": [
     [
      129.3077928,
@@ -11011,6 +11165,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3073892,
@@ -11037,6 +11192,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3088185,
@@ -11059,6 +11215,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3505065,
@@ -11089,6 +11246,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3485226,
@@ -11251,6 +11409,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.348227856,
@@ -11553,6 +11712,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3498328,
@@ -11591,6 +11751,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3509991,
@@ -11661,6 +11822,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.350219,
@@ -11907,6 +12069,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3507532,
@@ -11953,6 +12116,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.350152372,
@@ -12199,6 +12363,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3509991,
@@ -12237,6 +12402,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3495777,
@@ -12267,6 +12433,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.355944,
@@ -12357,6 +12524,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 2,
    "nodes": [
     [
      129.3400865,
@@ -12619,6 +12787,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3458271,
@@ -12877,6 +13046,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3398669,
@@ -13007,6 +13177,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.343819586,
@@ -13081,6 +13252,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3500804,
@@ -13099,6 +13271,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3530905,
@@ -13349,6 +13522,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.350257623,
@@ -13519,6 +13693,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 0,
    "nodes": [
     [
      129.3516986,
@@ -13745,6 +13920,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3512717,
@@ -13783,6 +13959,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.351462442,
@@ -13849,6 +14026,7 @@
    "surface": null,
    "scene": "res://assets/generated/road_assets/walk_earth_w3_straight.tscn",
    "half_width_m": 1.5,
+   "tier": 1,
    "nodes": [
     [
      129.3486882,

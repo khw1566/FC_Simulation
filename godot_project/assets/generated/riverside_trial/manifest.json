@@ -1,5 +1,5 @@
 {
- "last_updated": "2026-10-10 16:07:19",
+ "last_updated": "2026-10-10 22:21:06",
  "map_id": "taehwagang_dunchi",
  "sources": {
   "roads_raw": "C:\\Users\\work\\Desktop\\FC_Simulation_dunchi\\data\\raw\\taehwagang_dunchi\\roads_raw.json",
@@ -31,13 +31,14 @@
    "walk_earth_w3_straight.tscn": 12,
    "walk_shared_cycle_w3_straight.tscn": 16
   },
-  "benches": 235
+  "benches": 235,
+  "max_tier": 4
  },
  "assets": {
   "paths.json": {
    "file_path": "res://assets/generated/riverside_trial/paths.json",
-   "sha256": "7a325bbc1c298f43aeeb2599e2f7b47466e9ef0331f0df40444173982275647c",
-   "size_bytes": 207802
+   "sha256": "90c9f012121239c3abef1049985f5fbce2825110ad70e82f95e075c39a343621",
+   "size_bytes": 210472
   },
   "placements.json": {
    "file_path": "res://assets/generated/riverside_trial/placements.json",
