@@ -1,16 +1,22 @@
 extends Node3D
 class_name RiversideTrialPlacer
 
-## 태화강 국가정원·둔치 보도 시범 배치기. riverside_trial/placements.json의 위경도 배치를
-## 현재 지도 범위 안에서 지형 높이에 맞춰 놓는다. 임포트 전 GLB도 실행 중 직접 읽는다.
-## taehwagang_dunchi 지도는 RiversideAssetPlacer가 같은 배치를 담당하므로 건너뛴다.
+## 태화강 둔치 보도 배치기. riverside_trial/paths.json의 OSM 보행로 체인과 placements.json의 시설물을
+## 현재 지도 범위 안에서 지형 높이에 맞춰 놓는다. 같은 씬은 MultiMesh로 묶고, 임포트 전 GLB도 직접 읽는다.
+## taehwagang_dunchi 지도는 RiversideAssetPlacer가 담당하므로 건너뛴다.
 
+const PATHS := "res://assets/generated/riverside_trial/paths.json"
 const CATALOG := "res://assets/generated/riverside_trial/placements.json"
 const SKIP_MAP_IDS := ["taehwagang_dunchi"]
-const ChainProfile = preload("res://scripts/terrain/riverside_chain_profile.gd")
+const PathProfile = preload("res://scripts/terrain/riverside_path_profile.gd")
+const Batcher = preload("res://scripts/terrain/riverside_instance_batcher.gd")
 ## 지형 메시 LOD가 높이맵 표본보다 약간 높게 보간될 수 있어 두는 여유 높이
 const PATH_CLEARANCE_M := 0.15
 const OBJECT_CLEARANCE_M := 0.03
+## 굽은 접속부의 바깥쪽 틈을 덮도록 조각 양 끝을 늘리는 길이
+const SEGMENT_OVERLAP_M := 0.6
+## 겹치는 조각끼리 깜박이지 않도록 번갈아 주는 미세 높이 차
+const ALTERNATE_LIFT_M := 0.006
 
 @export var terrain_manager: Node3D
 var load_complete := false
@@ -22,73 +28,66 @@ func _ready() -> void:
 
 func _initialize() -> void:
 	var maps := get_node_or_null("/root/MapSelectionService")
-	if maps == null or maps.selected_map == null or maps.selected_map.id in SKIP_MAP_IDS or not FileAccess.file_exists(CATALOG):
+	if maps == null or maps.selected_map == null or maps.selected_map.id in SKIP_MAP_IDS or not is_instance_valid(terrain_manager):
 		load_complete = true
 		return
-	while is_instance_valid(terrain_manager) and not terrain_manager.load_complete:
+	while not terrain_manager.load_complete:
 		if not terrain_manager.load_error.is_empty():
 			return
 		await get_tree().process_frame
 		if not is_inside_tree():
 			return
-	var catalog = JSON.parse_string(FileAccess.get_file_as_string(CATALOG))
-	if catalog is Dictionary:
-		place_all(catalog.get("placements", []), maps.selected_map)
+	var instances: Dictionary = {}
+	_collect_paths(_read_json(PATHS).get("chains", []), maps.selected_map, instances)
+	_collect_placements(_read_json(CATALOG).get("placements", []), maps.selected_map, instances)
+	for scene_path in instances:
+		var template := _instantiate(scene_path)
+		if template == null:
+			push_warning("둔치 보도 에셋 로드 실패: " + scene_path)
+			continue
+		Batcher.build(self, scene_path.get_file().get_basename(), template, instances[scene_path])
+		placed_count += instances[scene_path].size()
+		template.free()
 	print("RiversideTrialPlacer: ", placed_count, " placed")
 	load_complete = true
 
-func place_all(entries: Array, map) -> void:
-	var inside: Array = entries.filter(func(e): return e is Dictionary and _inside(e.lonlat, map))
-	var profiles := _build_profiles(inside, map)
-	for entry in inside:
-		var node := _instantiate(str(entry.get("scene", "")))
-		if node == null:
-			push_warning("둔치 시범 배치 건너뜀: " + str(entry.get("id", "?")))
+func _collect_paths(chains: Array, map, instances: Dictionary) -> void:
+	var elevation := Callable(terrain_manager, "get_terrain_elevation")
+	var asset_length := float(_read_json(PATHS).get("asset_length_m", 12.0))
+	for chain in chains:
+		var points := PackedVector2Array()
+		var inside := true
+		for node in chain.nodes:
+			inside = inside and _inside(node, map)
+			points.append(_world_xz(node, map))
+		if not inside or points.size() < 2:
 			continue
-		node.name = str(entry.get("id", "RiversideTrial"))
+		var heights := PathProfile.node_heights(points, float(chain.half_width_m), PATH_CLEARANCE_M, elevation)
+		var scene := str(chain.scene)
+		if not instances.has(scene):
+			instances[scene] = []
+		for k in range(points.size() - 1):
+			if points[k].distance_to(points[k + 1]) < 0.5:
+				continue
+			var lift := ALTERNATE_LIFT_M * float(k % 2)
+			var a := Vector3(points[k].x, heights[k] + lift, points[k].y)
+			var b := Vector3(points[k + 1].x, heights[k + 1] + lift, points[k + 1].y)
+			instances[scene].append(PathProfile.segment_transform(a, b, asset_length, SEGMENT_OVERLAP_M))
+
+func _collect_placements(entries: Array, map, instances: Dictionary) -> void:
+	for entry in entries:
+		if not entry is Dictionary or not _inside(entry.lonlat, map):
+			continue
 		var xz := _world_xz(entry.lonlat, map)
 		var yaw := deg_to_rad(float(entry.get("yaw_degrees", 0.0)))
-		var pitch := 0.0
 		var y := float(entry.get("absolute_y_m", 0.0))
-		var profile = profiles.get(str(entry.get("chain", "")))
-		if profile != null and entry.has("chain_index"):
-			# 보도와 선형 부속물: 이웃과 공유하는 접속점 높이를 따라 기울인다
-			var index := int(entry.chain_index)
-			y = profile.segment_center_y(index)
-			pitch = -atan(profile.segment_slope(index))
-			yaw = profile.yaw()
-		elif str(entry.get("ground", "terrain")) == "terrain" and is_instance_valid(terrain_manager):
+		if str(entry.get("ground", "terrain")) == "terrain":
 			y = _footprint_max(xz, yaw, entry.get("footprint_half_m", [0.0, 0.0])) + OBJECT_CLEARANCE_M
-		node.position = Vector3(xz.x, y + float(entry.get("y_offset_m", 0.0)), xz.y)
-		node.rotation = Vector3(pitch, yaw, 0.0)
-		node.scale = Vector3.ONE * float(entry.get("scale", 1.0))
-		# 기울인 세그먼트의 수평 투영 길이가 줄어 생기는 접속 틈을 진행축 배율로 메운다
-		node.scale.z /= cos(pitch)
-		if profile != null and entry.has("chain_index"):
-			node.scale.z *= profile.stretch
-		add_child(node)
-		placed_count += 1
-
-func _build_profiles(entries: Array, map) -> Dictionary:
-	var groups: Dictionary = {}
-	for entry in entries:
-		if str(entry.get("chain_role", "")) != "path":
-			continue
-		var chain := str(entry.chain)
-		if not groups.has(chain):
-			groups[chain] = []
-		groups[chain].append(entry)
-	var profiles: Dictionary = {}
-	if not is_instance_valid(terrain_manager):
-		return profiles
-	var elevation := Callable(terrain_manager, "get_terrain_elevation")
-	for chain in groups:
-		var group: Array = groups[chain]
-		var segments: Array = group.map(func(e): return {"xz": _world_xz(e.lonlat, map), "index": int(e.chain_index)})
-		var profile = ChainProfile.new()
-		profile.build(segments, float(group[0].yaw_degrees), float(group[0].segment_length_m), float(group[0].chain_half_width_m), PATH_CLEARANCE_M, elevation)
-		profiles[chain] = profile
-	return profiles
+		var basis := Basis(Vector3.UP, yaw).scaled(Vector3.ONE * float(entry.get("scale", 1.0)))
+		var scene := str(entry.scene)
+		if not instances.has(scene):
+			instances[scene] = []
+		instances[scene].append(Transform3D(basis, Vector3(xz.x, y + float(entry.get("y_offset_m", 0.0)), xz.y)))
 
 func _footprint_max(xz: Vector2, yaw: float, half: Array) -> float:
 	# 회전된 바닥면의 모서리·변 중점·중심 중 가장 높은 지형에 맞춰 묻히지 않게 한다
@@ -100,6 +99,12 @@ func _footprint_max(xz: Vector2, yaw: float, half: Array) -> float:
 			var p: Vector2 = xz + axis_x * sx + axis_z * sz
 			best = maxf(best, float(terrain_manager.get_terrain_elevation(p.x, p.y)))
 	return best
+
+func _read_json(path: String) -> Dictionary:
+	if not FileAccess.file_exists(path):
+		return {}
+	var data = JSON.parse_string(FileAccess.get_file_as_string(path))
+	return data if data is Dictionary else {}
 
 func _instantiate(scene_path: String) -> Node3D:
 	# 임포트된 씬이 있으면 사용하고, 없으면 같은 이름의 GLB를 실행 중 읽는다
