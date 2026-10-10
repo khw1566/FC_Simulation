@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "basis_ko": "언양부터 시내까지 태화강 본류를 따라 이어지는 자전거길. OSM 자전거길 중 본류 가까운 선형을 쓰고, OSM에 없는 구간은 본류 중심선에서 육지 쪽으로 띄운 선형으로 잇는다. 둔치 지도 범위(시내) 안은 둔치 보도 생성기가 이미 자전거길을 배치하므로 그 서쪽 경계까지만 만든다.",
+  "river_name": "태화강",
+  "raw_dir": "data/raw/taehwa_cycleway",
+  "collect_bbox": [35.48, 129.05, 35.62, 129.40],
+  "route_lon_range": [129.095, 129.2738],
+  "max_distance_to_river_m": 350.0,
+  "min_way_length_m": 40.0,
+  "coverage_step_m": 20.0,
+  "coverage_radius_m": 400.0,
+  "min_gap_m": 120.0,
+  "fill_bank_margin_m": 18.0,
+  "fill_search_m": 300.0,
+  "fill_smooth_m": 60.0,
+  "segment_length_m": 12.0,
+  "scene": "res://assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn"
+}

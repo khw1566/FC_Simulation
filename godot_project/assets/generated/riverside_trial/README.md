@@ -15,3 +15,8 @@
 python -m pipeline.processors.riverside_paths.build_riverside_paths
 ```
 기본 입력은 옆 작업 폴더 `FC_Simulation_dunchi`의 둔치 지도와 `data/raw/taehwagang_dunchi/roads_raw.json`이다. 조건은 `config/riverside_paths.json`에서 바꾼다. 예전 3곳 시범 배치 생성기(`pipeline/processors/riverside_trial/build_trial_placements.py`)는 같은 `placements.json`을 덮어쓰므로 다시 실행하지 않는다.
+## 언양~시내 태화강 자전거길
+- `cycleway.json`: 둔치 지도 서쪽 경계(경도 129.2738)부터 언양까지 태화강 본류를 따르는 자전거길 체인 25개, 조각 2,868개다. OSM 자전거길 31.2 km와 OSM 공백을 메운 3.2 km(`source: gap_fill`)로 이뤄진다.
+- OSM 자전거길 중 본류 중심선 350 m 안 구간만 쓴다. 공백 구간은 본류 중심선에서 게임 지도 수면 마스크가 끝나는 곳보다 18 m 육지 쪽에 둔다.
+- `cycleway_preview.png`: 회색 본류 중심선, 검은 선 OSM 자전거길, 진회색 공백 메움.
+- 원자료는 `python -m pipeline.collectors.taehwa_cycleway_collector`로 `data/raw/taehwa_cycleway`에 받고, `python -m pipeline.processors.riverside_paths.build_taehwa_cycleway`로 다시 만든다. 조건은 `config/taehwa_cycleway.json`이다.

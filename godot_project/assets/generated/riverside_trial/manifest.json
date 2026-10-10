@@ -49,6 +49,30 @@
    "file_path": "res://assets/generated/riverside_trial/preview.png",
    "sha256": "acf6c27c56d9024dac5f89bea4659eee60046b6b6dde2f9281d3941de8f0ec91",
    "size_bytes": 38425
+  },
+  "cycleway.json": {
+   "file_path": "res://assets/generated/riverside_trial/cycleway.json",
+   "sha256": "96befd3bd9f7936f40068966cb36cc66cb2e6d0d3a27783c30d99055ae918967",
+   "size_bytes": 165144
+  },
+  "cycleway_preview.png": {
+   "file_path": "res://assets/generated/riverside_trial/cycleway_preview.png",
+   "sha256": "85ae97c7a565f1343884798e0b4de02fcfdee5c0344809cf899898e8efb0bbf0",
+   "size_bytes": 13218
   }
+ },
+ "cycleway": {
+  "last_updated": "2026-10-10 22:46:20",
+  "stats": {
+   "osm_chains": 21,
+   "osm_length_m": 31175,
+   "fill_chains": 4,
+   "fill_length_m": 3181,
+   "segments": 2868
+  },
+  "route_lon_range": [
+   129.095,
+   129.2738
+  ]
  }
 }
