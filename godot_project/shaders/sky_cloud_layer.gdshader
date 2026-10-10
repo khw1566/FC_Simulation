@@ -173,6 +173,65 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 	return d * type_scale;
 }
 
+float wlod(vec2 uv, float lod) {
+	return textureLod(weather_noise, uv, lod).r;
+}
+
+// 한 방향 섬유 무늬. 좌표를 픽셀마다 회전하면 먼 좌표에서 등고선 무늬가 생기므로 방향은 고정값을 쓴다.
+float fibers_dir(vec2 xz, float lod, vec2 d, vec2 seed) {
+	float along = dot(xz, d);
+	float across = dot(xz, vec2(-d.y, d.x));
+	// 약한 굽힘만: 강하면 대리석 같은 등고선 무늬가 된다.
+	float bend = (wlod(xz / 16000.0 + seed.yx, lod * 0.5) - 0.5) * 700.0;
+	float strands = wlod(vec2(along / 22000.0, (across + bend) / 1800.0) + seed * 1.7, lod);
+	float fine = wlod(vec2(along / 9000.0, across / 800.0) + seed * 2.3, lod + 1.0);
+	// 가는 결은 옅은 바탕 위에 얹어 털 같은 줄 대신 부드러운 섬유로 보이게 한다.
+	float soft = smoothstep(0.3, 0.75, wlod(vec2(along / 30000.0, across / 4000.0) + seed * 0.7, lod * 0.5));
+	return mix(soft * 0.6, smoothstep(0.42, 0.85, strands * 0.85 + fine * 0.15), 0.45);
+}
+
+// 결 방향이 지역마다 다른 섬유상 권운: 고정된 세 방향 무늬를 약 50km 규모 지역 가중치로 섞는다.
+float cirrus_fibratus(vec2 xz, float lod, vec2 seed) {
+	float r = wlod(xz / 50000.0 + seed, lod * 0.3);
+	float g = wlod(xz / 43000.0 + seed.yx + vec2(0.4, 0.1), lod * 0.3);
+	// 한 지역에는 한 방향이 지배하도록 가중치를 날카롭게 한다 (여러 방향이 겹치면 격자무늬가 된다).
+	vec3 wgt = vec3(smoothstep(0.45, 0.7, r), smoothstep(0.45, 0.7, g), 0.3) + 0.001;
+	wgt = wgt * wgt * wgt * wgt;
+	wgt /= wgt.x + wgt.y + wgt.z;
+	float f0 = fibers_dir(xz, lod, vec2(0.966, 0.259), seed);
+	float f1 = fibers_dir(xz, lod, vec2(-0.259, 0.966), seed + vec2(0.21, 0.37));
+	float f2 = fibers_dir(xz, lod, vec2(0.574, -0.819), seed + vec2(0.53, 0.11));
+	return f0 * wgt.x + f1 * wgt.y + f2 * wgt.z;
+}
+
+// 상층(약 9.2km): 섬유상 권운 두 계열(서로 다른 방향) + 뭉친 농밀권운 + 옅은 권층운 막
+float cirrus_upper(vec2 xz, float lod) {
+	float lo = 1.0 - ci_coverage * 0.62;
+	float gate = smoothstep(lo, lo + 0.35, wlod(xz / 38000.0, lod * 0.5));
+	float type_a = smoothstep(0.35, 0.7, wlod(xz / 60000.0 + vec2(0.21, 0.64), lod * 0.3));
+	float type_b = smoothstep(0.4, 0.75, wlod(xz / 52000.0 + vec2(0.77, 0.12), lod * 0.3));
+	float fib1 = cirrus_fibratus(xz, lod, vec2(0.13, 0.41)) * type_a;
+	float fib2 = cirrus_fibratus(xz, lod, vec2(0.58, 0.83)) * (1.0 - type_a) * 0.8;
+	// 농밀권운: 등방성 덩어리, 가장자리가 부드럽다.
+	float spissatus = smoothstep(0.55, 0.85, wlod(xz / 6000.0 + vec2(0.35, 0.92), lod) * 0.7 + wlod(xz / 1800.0 + vec2(0.66, 0.27), lod + 0.5) * 0.3) * type_b;
+	float veil = smoothstep(0.3, 0.75, wlod(xz / 24000.0 + vec2(0.48, 0.55), lod * 0.5)) * 0.18;
+	return gate * clamp(max(max(fib1, fib2) * 0.55, spissatus * 0.5) + veil, 0.0, 0.7);
+}
+
+// 하층(약 7.8km): 잔물결 권적운 알갱이 + 짧은 꼬리 권운 조각
+float cirrus_lower(vec2 xz, float lod) {
+	float lo = 1.0 - ci_coverage * 0.42;
+	float gate = smoothstep(lo, lo + 0.3, wlod(xz / 26000.0 + vec2(0.52, 0.09), lod * 0.5));
+	// 권적운: 물결 방향이 지역마다 다른 알갱이 줄
+	float rsel = smoothstep(0.4, 0.6, wlod(xz / 50000.0 + vec2(0.9, 0.3), lod * 0.3));
+	float warp = wlod(xz / 3000.0, lod) * 6.0;
+	float ripple = 0.5 + 0.5 * mix(sin(dot(xz, vec2(0.8, 0.6)) / 260.0 + warp), sin(dot(xz, vec2(-0.5, 0.866)) / 260.0 + warp), rsel);
+	float grains = smoothstep(0.5, 0.78, wlod(xz / 900.0 + vec2(0.11, 0.83), lod + 0.5) * 0.6 + ripple * 0.4 * smoothstep(3.0, 0.0, lod));
+	float cc = grains * smoothstep(0.45, 0.7, wlod(xz / 9000.0 + vec2(0.3, 0.6), lod * 0.5));
+	float wisps = cirrus_fibratus(xz, lod, vec2(0.37, 0.19)) * smoothstep(0.55, 0.8, wlod(xz / 15000.0 + vec2(0.05, 0.71), lod * 0.5));
+	return gate * clamp(cc * 0.32 + wisps * 0.35, 0.0, 0.5);
+}
+
 float bayer4(vec2 frag) {
 	ivec2 q = ivec2(mod(frag, 4.0));
 	int i = q.x + q.y * 4;
@@ -287,7 +346,7 @@ void fragment() {
 		}
 	}
 
-	// 2. 고고도 권운 2층: 9.2km 섬유상 권운(갈고리 꼬리) + 7.8km 얇은 권적운/권층운 조각
+	// 2. 고고도 권운 2층: 여러 권운 형태를 지역별로 섞는다 (단일 방향 줄무늬 금지)
 	if (ci_coverage > 0.001 && abs(dir.y) > 0.00001) {
 		for (int layer = 0; layer < 2; layer++) {
 			// 카메라에서 먼 층부터 그려 앞쪽 층이 위에 덮이도록 한다.
@@ -296,28 +355,9 @@ void fragment() {
 			float tc = (alt - cam.y) / dir.y;
 			if (tc <= 0.0 || tc >= opaque || tc >= max_distance * 1.5) { continue; }
 			vec2 xz = (cam + dir * tc).xz + cirrus_offset * (idx == 0 ? 1.0 : 0.85);
-			vec2 perp = vec2(-cirrus_wind_dir.y, cirrus_wind_dir.x);
-			float along = dot(xz, cirrus_wind_dir);
-			float across = dot(xz, perp);
-			// 원경일수록 밉을 올려 가는 줄무늬가 깜빡이지 않게 한다.
+			// 원경일수록 밉을 올려 가는 결이 깜빡이지 않게 한다.
 			float lod_c = clamp(log2(max(tc, 1.0) / 5000.0) + 1.0, 0.0, 6.0);
-			float a = 0.0;
-			if (idx == 0) {
-				float n1 = textureLod(weather_noise, vec2(along / 42000.0, across / 9000.0), lod_c * 0.5).r;
-				// 영역 왜곡으로 끝이 휘어진 갈고리 모양 섬유
-				// 완만한 굽음만 주어 거의 평행한 섬유가 끝에서 휘도록 한다.
-				float bend = (n1 - 0.5) * 1600.0;
-				float strands = textureLod(weather_noise, vec2(along / 30000.0, (across + bend) / 1500.0) + vec2(0.31, 0.17), lod_c).r;
-				float fine = textureLod(weather_noise, vec2(along / 14000.0, (across + bend * 1.3) / 420.0) + vec2(0.7, 0.4), lod_c + 1.0).r;
-				float lo = 1.0 - ci_coverage * 0.62;
-				float body = smoothstep(lo, lo + 0.35, n1);
-				a = body * smoothstep(0.35, 0.8, strands * 0.65 + fine * 0.35) * 0.55;
-			} else {
-				float m1 = textureLod(weather_noise, xz / 26000.0 + vec2(0.52, 0.09), lod_c * 0.5).r;
-				float m2 = textureLod(weather_noise, xz / 1800.0 + vec2(0.11, 0.83), lod_c).r;
-				float lo2 = 1.0 - ci_coverage * 0.4;
-				a = smoothstep(lo2, lo2 + 0.3, m1) * smoothstep(0.35, 0.75, m2) * 0.3;
-			}
+			float a = idx == 0 ? cirrus_upper(xz, lod_c) : cirrus_lower(xz, lod_c);
 			a *= mix(0.25, 1.0, smoothstep(0.0, 0.1, abs(dir.y))) * (1.0 - smoothstep(max_distance, max_distance * 1.5, tc));
 			if (a < 0.002) { continue; }
 			// 얼음 결정: 태양 쪽 전방 산란이 강하고 그늘이 거의 없다.
