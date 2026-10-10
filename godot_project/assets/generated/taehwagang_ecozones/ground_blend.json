@@ -24,15 +24,5 @@
   "fade_distance_m": 6000.0,
   "flat_near_m": 150.0,
   "flat_far_m": 450.0,
-  "silvergrass_field": {
-    "spacing_m": 0.9,
-    "radius_m": 120.0,
-    "thin_start_m": 50.0,
-    "density": 1.0,
-    "card_spacing_m": 4.0,
-    "card_radius_m": 450.0,
-    "wave_length_m": 22.0,
-    "wave_speed_mps": 7.0,
-    "sway_strength_m": 0.45
-  }
+  "silvergrass_field": null
 }

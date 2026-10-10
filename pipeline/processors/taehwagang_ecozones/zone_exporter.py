@@ -38,7 +38,7 @@ class ZoneExporter:
         self._save_png(Image.fromarray(labels, "L"), files["labels"])
         ids = {zone["key"]: zone["id"] for zone in self.config["zones"]}
         for name, keys, extra in (("splat_a", SPLAT_A, None), ("splat_b", SPLAT_B, placeable)):
-            channels = [self._weight(labels == ids[key]) for key in keys]
+            channels = [self._weight(self._zone_mask(labels, ids, key)) for key in keys]
             while len(channels) < 3:
                 channels.append(np.zeros(labels.shape, np.uint8))
             if extra is not None:
@@ -46,6 +46,17 @@ class ZoneExporter:
             files[name] = self.folder / f"ecozone_{name}_rgba.png"
             self._save_png(Image.merge("RGBA", [Image.fromarray(c, "L") for c in channels]), files[name])
         return files
+
+    def _zone_mask(self, labels, ids, key):
+        """바닥 채널 마스크. ground_override로 다른 바닥을 쓰게 한 구역(예: 억새 보류 → 들풀)은 그 채널로 옮긴다."""
+        overrides = self.config.get("ground_override", {})
+        if key in overrides:
+            return np.zeros(labels.shape, dtype=bool)
+        mask = labels == ids[key]
+        for zone, target in overrides.items():
+            if target == key:
+                mask |= labels == ids[zone]
+        return mask
 
     @staticmethod
     def _weight(mask):
@@ -140,7 +151,7 @@ class ZoneExporter:
             "fade_distance_m": blend.get("fade_distance_m", 6000.0),
             "flat_near_m": blend.get("flat_near_m", 150.0),
             "flat_far_m": blend.get("flat_far_m", 450.0),
-            "silvergrass_field": blend.get("silvergrass_field"),
+            "silvergrass_field": blend.get("silvergrass_field") if blend.get("silvergrass_field_enabled", True) else None,
         }
         path = self.folder / "ground_blend.json"
         self._save_json(data, path)

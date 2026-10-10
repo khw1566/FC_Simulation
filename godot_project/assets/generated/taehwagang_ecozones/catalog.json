@@ -253,8 +253,8 @@
     "splat_a": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_a_rgba.png",
       "format": "PNG",
-      "sha256": "b7d4550e2fe3159b280dfdca32b5ca27c3e71bb9a75045014ed78bd902efd262",
-      "size_bytes": 285680,
+      "sha256": "193336e2a2e406efe79cbd7f6ef5940c7bffdeef9766cc486ffe8b98b922db90",
+      "size_bytes": 190047,
       "type": "ecozone_splat",
       "metadata": {
         "bbox": {
@@ -275,8 +275,8 @@
     "splat_b": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_b_rgba.png",
       "format": "PNG",
-      "sha256": "38a9a45df66a747501e5b6d51766ae9fa22070e853645de5e5eec74a4ba9eb86",
-      "size_bytes": 230432,
+      "sha256": "d3ad0e59f9c2026f409c5b9df337d05431ec9da024e204c105f779a8165a15c7",
+      "size_bytes": 274028,
       "type": "ecozone_splat",
       "metadata": {
         "bbox": {
@@ -351,8 +351,8 @@
     "ground_blend": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ground_blend.json",
       "format": "JSON",
-      "sha256": "3e61b1483349972a3baa18f9693da71dad69a4d8aa542d034352215530249c6d",
-      "size_bytes": 1547,
+      "sha256": "4bc273f81345920200578e0f292d7174d1ff9e56c9ad45bf80b47d5cc657d154",
+      "size_bytes": 1308,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,

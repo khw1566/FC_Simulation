@@ -108,8 +108,12 @@
     {"zone": "bamboo", "canopy_height_m": 9.5, "close_m": 12, "edge_ramp_m": 10, "color": [62, 98, 42], "color_variation": 0.12, "texture": "canopy_bamboo", "fade_near_m": 100, "fade_band_m": 25},
     {"zone": "woodland", "canopy_height_m": 13.0, "close_m": 12, "edge_ramp_m": 14, "color": [56, 86, 44], "color_variation": 0.16, "texture": "canopy_broadleaf", "fade_near_m": 120, "fade_band_m": 25}
   ],
+  "ground_override_ko": "억새 보류 동안 억새 구역 바닥을 들풀 텍스처로 칠한다(황금빛 억새 바닥 제거).",
+  "ground_override": {"silvergrass": "meadow"},
   "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0, "flat_near_m": 150.0, "flat_far_m": 450.0,
     "silvergrass_field_basis_ko": "억새·갈대는 개체 배치 대신 카메라 주변 GPU 필드로 그린다. 스플랫 G(억새)·A(갈대) 비율만큼 0.9m 칸마다 다발을 세우고, 렌더된 지형 높이에 붙이며, 풍향으로 진행하는 물결로 흔든다. 반경 밖은 황금빛 바닥 텍스처.",
+    "silvergrass_field_enabled": false,
+    "silvergrass_field_disabled_ko": "2026-10-10 사용자 요청으로 억새 전부 제거(추후 재작업). 필드 코드와 설정은 보존.",
     "silvergrass_field": {"spacing_m": 0.9, "radius_m": 120.0, "thin_start_m": 50.0, "density": 1.0, "card_spacing_m": 4.0, "card_radius_m": 450.0, "wave_length_m": 22.0, "wave_speed_mps": 7.0, "sway_strength_m": 0.45}},
   "random_seed": 20261009
 }
