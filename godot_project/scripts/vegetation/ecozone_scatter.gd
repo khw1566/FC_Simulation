@@ -9,6 +9,7 @@ class_name EcozoneScatter
 const Batches = preload("res://scripts/vegetation/vegetation_batch_factory.gd")
 const Masses = preload("res://scripts/vegetation/forest_mass_builder.gd")
 const Ground = preload("res://scripts/vegetation/ecozone_ground_binder.gd")
+const Field = preload("res://scripts/vegetation/silvergrass_field.gd")
 const CATALOG := "res://assets/generated/taehwagang_ecozones/scatter_instances.json"
 const MASSES := "res://assets/generated/taehwagang_ecozones/forest_masses.json"
 const GROUND := "res://assets/generated/taehwagang_ecozones/ground_blend.json"
@@ -24,6 +25,7 @@ var load_complete := false
 var placed_count := 0
 var mass_count := 0
 var ground_bound := false
+var field_ready := false
 ## 원천 월드 좌표 → 현재 지도 월드 좌표: target = source * _scale + _offset
 var _scale := Vector2.ONE
 var _offset := Vector2.ZERO
@@ -71,6 +73,19 @@ func bind_ground() -> void:
 	var material = terrain_manager.get("terrain_material")
 	if ground is Dictionary and material is Material:
 		ground_bound = Ground.bind(material, ground, _scale, _offset)
+	if ground is Dictionary and ground.get("silvergrass_field") is Dictionary and ground_bound:
+		add_silvergrass_field(ground, material)
+
+## 억새·갈대 GPU 필드. 바닥 혼합과 같은 스플랫·UV 변환을 쓴다.
+func add_silvergrass_field(ground: Dictionary, material: ShaderMaterial) -> void:
+	var splat = material.get_shader_parameter("ecozone_splat_a")
+	if not splat is Texture2D:
+		return
+	var field := Field.new()
+	field.name = "SilvergrassField"
+	add_child(field)
+	field.setup(ground.silvergrass_field, splat, material.get_shader_parameter("ecozone_uv_scale"), material.get_shader_parameter("ecozone_uv_offset"), terrain_manager)
+	field_ready = true
 
 func add_forest_masses() -> void:
 	if not FileAccess.file_exists(MASSES):

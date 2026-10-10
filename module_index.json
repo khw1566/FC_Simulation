@@ -1920,7 +1920,7 @@
       "modules": [
         {
           "path": "config/taehwagang_ecozones.json",
-          "lines": 116
+          "lines": 115
         },
         {
           "path": "pipeline/collectors/ecozone_landcover_collector.py",
@@ -1960,11 +1960,11 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
-          "lines": 198
+          "lines": 199
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
-          "lines": 161
+          "lines": 176
         },
         {
           "path": "godot_project/scripts/vegetation/forest_mass_builder.gd",
@@ -1973,6 +1973,22 @@
         {
           "path": "godot_project/scripts/vegetation/ecozone_ground_binder.gd",
           "lines": 56
+        },
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_field.gd",
+          "lines": 79
+        },
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_tuft.gd",
+          "lines": 43
+        },
+        {
+          "path": "godot_project/shaders/silvergrass_field.gdshader",
+          "lines": 79
+        },
+        {
+          "path": "godot_project/shaders/terrain_height.gdshaderinc",
+          "lines": 50
         },
         {
           "path": "godot_project/shaders/vegetation_sway.gdshader",

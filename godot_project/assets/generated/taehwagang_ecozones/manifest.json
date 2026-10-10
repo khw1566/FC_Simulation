@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_updated": "2026-10-10 21:43:39",
+  "last_updated": "2026-10-10 21:55:56",
   "assets": {
     "labels": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
@@ -71,8 +71,8 @@
     "preview": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
       "format": "PNG",
-      "sha256": "dc778f150540a733865120e1a6001b3d632e5fb80ea9351f77251b3bb519078c",
-      "size_bytes": 127407,
+      "sha256": "9439dbc428edc3bb1b7e141d0a8f433f6fa0b414f7a340f933d0c23a7843eee8",
+      "size_bytes": 76707,
       "type": "ecozone_preview",
       "metadata": {
         "bbox": {
@@ -93,8 +93,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "9c40c8086f57fe2b99c2ffdc9a4ee1c842a8c811551a5f5ce67775a91d15282d",
-      "size_bytes": 5478305,
+      "sha256": "4c400669b36a757d0dc1e79be1ec4b06c2400b3f5754d5ca0a519fb97a0d77b4",
+      "size_bytes": 923711,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -104,9 +104,9 @@
           "east": 129.3622
         },
         "resolution": null,
-        "elevation_min": -0.24,
+        "elevation_min": 1.43,
         "elevation_max": 14.7,
-        "instances": 146695
+        "instances": 24789
       }
     },
     "forest_masses": {
@@ -125,8 +125,8 @@
     "ground_blend": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ground_blend.json",
       "format": "JSON",
-      "sha256": "a854fc9033798c322f46f52c7bdb328ace27bcd9706dcbd2d66e775df94e2b15",
-      "size_bytes": 1179,
+      "sha256": "a40a1c4de8e3cd1bf76b04102303a5f6145d6997cce451caf7e9205834945c7f",
+      "size_bytes": 1391,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,
@@ -151,8 +151,8 @@
     "ground_silvergrass_ground": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_ground.png",
       "format": "PNG",
-      "sha256": "033353c6b1e9bbb3fecfcc85f963f832712eac55fd41fec1ce2b5f6167871562",
-      "size_bytes": 255121,
+      "sha256": "eb01f47d804539cfe54021247d0bb193684b7f81eea7651f8b502dc0c62a9ce5",
+      "size_bytes": 239554,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,

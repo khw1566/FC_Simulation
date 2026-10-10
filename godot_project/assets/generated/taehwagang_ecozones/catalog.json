@@ -94,28 +94,12 @@
       "count": 5621
     },
     {
-      "zone": "silvergrass",
-      "family": "silvergrass",
-      "kind": "silvergrass_patch",
-      "lattice": "hex",
-      "spacing_m": 3.3,
-      "count": 72140
-    },
-    {
-      "zone": "reed",
-      "family": "silvergrass",
-      "kind": "reed_patch",
-      "lattice": "hex",
-      "spacing_m": 3.0,
-      "count": 48914
-    },
-    {
       "zone": "woodland",
       "family": "forest",
       "kind": "deciduous_a",
       "lattice": "blue",
       "spacing_m": 6.5,
-      "count": 401
+      "count": 391
     },
     {
       "zone": "woodland",
@@ -123,7 +107,7 @@
       "kind": "deciduous_b",
       "lattice": "blue",
       "spacing_m": 6.5,
-      "count": 304
+      "count": 315
     },
     {
       "zone": "woodland",
@@ -131,7 +115,7 @@
       "kind": "deciduous_c",
       "lattice": "blue",
       "spacing_m": 6.5,
-      "count": 228
+      "count": 257
     },
     {
       "zone": "woodland",
@@ -139,7 +123,7 @@
       "kind": "pine_a",
       "lattice": "blue",
       "spacing_m": 6.5,
-      "count": 117
+      "count": 128
     },
     {
       "zone": "woodland",
@@ -147,7 +131,7 @@
       "kind": "pine_b",
       "lattice": "blue",
       "spacing_m": 6.5,
-      "count": 125
+      "count": 138
     },
     {
       "zone": "woodland",
@@ -155,7 +139,7 @@
       "kind": "pine_c",
       "lattice": "blue",
       "spacing_m": 6.5,
-      "count": 60
+      "count": 68
     },
     {
       "zone": "woodland",
@@ -163,7 +147,7 @@
       "kind": "shrub_a",
       "lattice": "blue",
       "spacing_m": 9.0,
-      "count": 273
+      "count": 272
     },
     {
       "zone": "woodland",
@@ -171,7 +155,7 @@
       "kind": "shrub_b",
       "lattice": "blue",
       "spacing_m": 9.0,
-      "count": 255
+      "count": 237
     },
     {
       "zone": "woodland",
@@ -179,20 +163,12 @@
       "kind": "shrub_c",
       "lattice": "blue",
       "spacing_m": 9.0,
-      "count": 187
+      "count": 168
     },
     {
       "zone": "meadow",
       "family": "forest",
       "kind": "shrub_a",
-      "lattice": "blue",
-      "spacing_m": 14.0,
-      "count": 68
-    },
-    {
-      "zone": "meadow",
-      "family": "forest",
-      "kind": "shrub_b",
       "lattice": "blue",
       "spacing_m": 14.0,
       "count": 66
@@ -200,18 +176,18 @@
     {
       "zone": "meadow",
       "family": "forest",
-      "kind": "shrub_c",
+      "kind": "shrub_b",
       "lattice": "blue",
       "spacing_m": 14.0,
-      "count": 42
+      "count": 59
     },
     {
       "zone": "meadow",
-      "family": "silvergrass",
-      "kind": "silvergrass_clump",
-      "lattice": "hex",
-      "spacing_m": 7.0,
-      "count": 866
+      "family": "forest",
+      "kind": "shrub_c",
+      "lattice": "blue",
+      "spacing_m": 14.0,
+      "count": 41
     }
   ],
   "source_masks": {
@@ -321,8 +297,8 @@
     "preview": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
       "format": "PNG",
-      "sha256": "dc778f150540a733865120e1a6001b3d632e5fb80ea9351f77251b3bb519078c",
-      "size_bytes": 127407,
+      "sha256": "9439dbc428edc3bb1b7e141d0a8f433f6fa0b414f7a340f933d0c23a7843eee8",
+      "size_bytes": 76707,
       "type": "ecozone_preview",
       "metadata": {
         "bbox": {
@@ -343,8 +319,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "9c40c8086f57fe2b99c2ffdc9a4ee1c842a8c811551a5f5ce67775a91d15282d",
-      "size_bytes": 5478305,
+      "sha256": "4c400669b36a757d0dc1e79be1ec4b06c2400b3f5754d5ca0a519fb97a0d77b4",
+      "size_bytes": 923711,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -354,9 +330,9 @@
           "east": 129.3622
         },
         "resolution": null,
-        "elevation_min": -0.24,
+        "elevation_min": 1.43,
         "elevation_max": 14.7,
-        "instances": 146695
+        "instances": 24789
       }
     },
     "forest_masses": {
@@ -375,8 +351,8 @@
     "ground_blend": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ground_blend.json",
       "format": "JSON",
-      "sha256": "a854fc9033798c322f46f52c7bdb328ace27bcd9706dcbd2d66e775df94e2b15",
-      "size_bytes": 1179,
+      "sha256": "a40a1c4de8e3cd1bf76b04102303a5f6145d6997cce451caf7e9205834945c7f",
+      "size_bytes": 1391,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,
@@ -401,8 +377,8 @@
     "ground_silvergrass_ground": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_ground.png",
       "format": "PNG",
-      "sha256": "033353c6b1e9bbb3fecfcc85f963f832712eac55fd41fec1ce2b5f6167871562",
-      "size_bytes": 255121,
+      "sha256": "eb01f47d804539cfe54021247d0bb193684b7f81eea7651f8b502dc0c62a9ce5",
+      "size_bytes": 239554,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,

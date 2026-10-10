@@ -90,12 +90,9 @@
   ],
   "scatter": [
     {"zone": "bamboo", "family": "forest", "kinds": {"bamboo_a": 0.4, "bamboo_b": 0.35, "bamboo_c": 0.25}, "lattice": "blue", "spacing_m": 3.4, "density_noise": 0.3, "edge_thin_m": 6.0, "scale": [0.85, 1.15], "clearance_m": 2.0},
-    {"zone": "silvergrass", "family": "silvergrass", "kind": "silvergrass_patch", "lattice": "hex", "spacing_m": 3.3, "jitter_m": 0.9, "yaw_step_deg": 0, "scale": [0.85, 1.15], "min_edge_m": 2.0, "clearance_m": 2.0},
-    {"zone": "reed", "family": "silvergrass", "kind": "reed_patch", "lattice": "hex", "spacing_m": 3.0, "jitter_m": 0.8, "yaw_step_deg": 0, "scale": [0.8, 1.1], "clearance_m": 1.5},
     {"zone": "woodland", "family": "forest", "kinds": {"deciduous_a": 0.3, "deciduous_b": 0.25, "deciduous_c": 0.2, "pine_a": 0.1, "pine_b": 0.1, "pine_c": 0.05}, "lattice": "blue", "spacing_m": 6.5, "density_noise": 0.35, "edge_thin_m": 8.0, "scale": [0.8, 1.15], "clearance_m": 3.0},
     {"zone": "woodland", "family": "forest", "kinds": {"shrub_a": 0.4, "shrub_b": 0.35, "shrub_c": 0.25}, "lattice": "blue", "spacing_m": 9.0, "density_noise": 0.5, "scale": [0.8, 1.2], "clearance_m": 1.5},
-    {"zone": "meadow", "family": "forest", "kinds": {"shrub_a": 0.4, "shrub_b": 0.35, "shrub_c": 0.25}, "lattice": "blue", "spacing_m": 14.0, "density_noise": 0.5, "scale": [0.7, 1.1], "min_edge_m": 3.0, "clearance_m": 1.5},
-    {"zone": "meadow", "family": "silvergrass", "kind": "silvergrass_clump", "lattice": "hex", "spacing_m": 7.0, "jitter_m": 2.0, "yaw_step_deg": 0, "scale": [0.6, 0.9], "min_edge_m": 1.0, "clearance_m": 0.8}
+    {"zone": "meadow", "family": "forest", "kinds": {"shrub_a": 0.4, "shrub_b": 0.35, "shrub_c": 0.25}, "lattice": "blue", "spacing_m": 14.0, "density_noise": 0.5, "scale": [0.7, 1.1], "min_edge_m": 3.0, "clearance_m": 1.5}
   ],
   "families_basis_ko": "근경 개체만 메시로 그린다. fade_far_m~+fade_band_m 구간에서 픽셀 거리 디더로 사라지고, 같은 구간에서 숲 덩어리(fade_near_m)와 바닥 텍스처가 나타난다. 억새·갈대·대나무는 흔들림 셰이더를 쓴다.",
   "families": {
@@ -111,6 +108,8 @@
     {"zone": "bamboo", "canopy_height_m": 9.5, "close_m": 12, "edge_ramp_m": 10, "color": [62, 98, 42], "color_variation": 0.12, "texture": "canopy_bamboo", "fade_near_m": 100, "fade_band_m": 25},
     {"zone": "woodland", "canopy_height_m": 13.0, "close_m": 12, "edge_ramp_m": 14, "color": [56, 86, 44], "color_variation": 0.16, "texture": "canopy_broadleaf", "fade_near_m": 120, "fade_band_m": 25}
   ],
-  "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0, "flat_near_m": 150.0, "flat_far_m": 450.0},
+  "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0, "flat_near_m": 150.0, "flat_far_m": 450.0,
+    "silvergrass_field_basis_ko": "억새·갈대는 개체 배치 대신 카메라 주변 GPU 필드로 그린다. 스플랫 G(억새)·A(갈대) 비율만큼 0.9m 칸마다 다발을 세우고, 렌더된 지형 높이에 붙이며, 풍향으로 진행하는 물결로 흔든다. 반경 밖은 황금빛 바닥 텍스처.",
+    "silvergrass_field": {"spacing_m": 0.9, "radius_m": 120.0, "thin_start_m": 50.0, "density": 1.0, "wave_length_m": 22.0, "wave_speed_mps": 7.0, "sway_strength_m": 0.45}},
   "random_seed": 20261009
 }

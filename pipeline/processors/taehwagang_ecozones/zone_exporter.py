@@ -140,6 +140,7 @@ class ZoneExporter:
             "fade_distance_m": blend.get("fade_distance_m", 6000.0),
             "flat_near_m": blend.get("flat_near_m", 150.0),
             "flat_far_m": blend.get("flat_far_m", 450.0),
+            "silvergrass_field": blend.get("silvergrass_field"),
         }
         path = self.folder / "ground_blend.json"
         self._save_json(data, path)
