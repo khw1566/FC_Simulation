@@ -2,6 +2,7 @@ extends Node
 class_name WeatherDetailsHUDController
 
 const AtmosphereStateModelClass = preload("res://scripts/models/atmosphere_state_model.gd")
+const SurfaceClimateModelClass = preload("res://scripts/models/surface_climate_model.gd")
 
 ## 기상 상세 정보 HUD(TAB 키 토글) 제어 컨트롤러
 ## 플레이어의 고도 및 속도, 날씨 상태를 실시간 수신하여 ISA 대기역학 모델 계산 및 뷰 동기화
@@ -48,7 +49,8 @@ func _refresh_atmosphere_data() -> void:
 	if weather_manager:
 		w_type = int(weather_manager.get("current_weather"))
 
-	var data = AtmosphereStateModelClass.calculate_at_altitude(alt_m, speed_ms, w_type)
+	var hour: float = SurfaceClimateModelClass.resolve_hour(weather_manager)
+	var data = AtmosphereStateModelClass.calculate_at_altitude(alt_m, speed_ms, w_type, hour)
 
 	if hud_view and hud_view.has_method("update_atmosphere_data"):
 		hud_view.call("update_atmosphere_data", data)
