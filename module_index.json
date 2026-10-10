@@ -1920,15 +1920,15 @@
       "modules": [
         {
           "path": "config/taehwagang_ecozones.json",
-          "lines": 107
+          "lines": 113
         },
         {
           "path": "pipeline/collectors/ecozone_landcover_collector.py",
-          "lines": 43
+          "lines": 48
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/generate.py",
-          "lines": 78
+          "lines": 93
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/source_masks.py",
@@ -1943,12 +1943,16 @@
           "lines": 63
         },
         {
+          "path": "pipeline/processors/taehwagang_ecozones/obstacle_mask.py",
+          "lines": 143
+        },
+        {
           "path": "pipeline/processors/taehwagang_ecozones/zone_classifier.py",
           "lines": 60
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/scatter_planner.py",
-          "lines": 82
+          "lines": 95
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/ground_textures.py",
@@ -1956,11 +1960,11 @@
         },
         {
           "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
-          "lines": 190
+          "lines": 197
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
-          "lines": 143
+          "lines": 160
         },
         {
           "path": "godot_project/scripts/vegetation/forest_mass_builder.gd",
@@ -1968,7 +1972,7 @@
         },
         {
           "path": "godot_project/scripts/vegetation/ecozone_ground_binder.gd",
-          "lines": 48
+          "lines": 50
         },
         {
           "path": "godot_project/shaders/vegetation_sway.gdshader",
@@ -1976,11 +1980,11 @@
         },
         {
           "path": "godot_project/shaders/forest_mass.gdshader",
-          "lines": 37
+          "lines": 45
         },
         {
           "path": "godot_project/shaders/ecozone_ground.gdshaderinc",
-          "lines": 46
+          "lines": 56
         }
       ]
     }

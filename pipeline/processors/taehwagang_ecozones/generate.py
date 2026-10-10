@@ -11,9 +11,10 @@ ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "pipeline/collectors"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from ecozone_landcover_collector import EcozoneLandcoverCollector  # noqa: E402
+from ecozone_landcover_collector import ROAD_QUERY, EcozoneLandcoverCollector  # noqa: E402
 from geo_raster import GeoRaster  # noqa: E402
 from mask_repair import MaskRepair  # noqa: E402
+from obstacle_mask import ObstacleMask  # noqa: E402
 from ground_textures import render_all  # noqa: E402
 from scatter_planner import ScatterPlanner  # noqa: E402
 from source_masks import DunchiSourceMasks  # noqa: E402
@@ -41,12 +42,25 @@ def main():
         placeable, repair_stats = MaskRepair(raster, config["placeable_repair"]).repair(water, placeable, osm_layers)
         print(f"  부지 보정: {repair_stats['source_area_m2'] / 10000:.1f} ha -> {repair_stats['repaired_area_m2'] / 10000:.1f} ha")
 
+    blocked = None
+    obstacle_stats = None
+    if "obstacles" in config:
+        roads = EcozoneLandcoverCollector(ROOT / "data/raw/taehwagang_ecozones/osm_roads.json", config["overpass_endpoints"])
+        osm_roads = roads.collect(source.bbox, refresh=args.refresh_osm, query=ROAD_QUERY)
+        obstacles = ObstacleMask(ROOT, raster, config["obstacles"])
+        blocked = obstacles.build(water, osm_roads)
+        placeable &= ~blocked
+        obstacle_stats = obstacles.stats
+        print(f"  배치 제외(차도·건물·수면): {obstacle_stats['blocked_area_m2'] / 10000:.1f} ha")
+
     classifier = ZoneClassifier(raster, config["zones"])
     labels, stats = classifier.classify(placeable, water, osm_layers)
     for key, value in stats.items():
         print(f"  구역 {key}: {value['area_m2'] / 10000:.2f} ha")
 
     planner = ScatterPlanner(raster, source.heights(), config["random_seed"])
+    if blocked is not None:
+        planner.set_obstacles(raster.distance_m(blocked, 12.0))
     ids = {zone["key"]: zone["id"] for zone in config["zones"]}
     edges = {}
     layers = []
@@ -62,7 +76,7 @@ def main():
     files = exporter.write_rasters(labels, placeable)
     files["preview"] = exporter.write_preview(labels, water, layers)
     files["scatter"] = exporter.write_scatter(layers)
-    files["forest_masses"] = exporter.write_forest_masses(labels, placeable)
+    files["forest_masses"] = exporter.write_forest_masses(labels, placeable, blocked)
     files["ground_blend"] = exporter.write_ground()
     for name, path in render_all(exporter.folder / "ground", config["random_seed"]).items():
         files["ground_" + name] = path
@@ -70,6 +84,7 @@ def main():
                 "endpoint": osm.get("source_endpoint"), "osm_timestamp": osm.get("osm3s", {}).get("timestamp_osm_base")}
     provenance = source.provenance()
     provenance["placeable_repair"] = repair_stats
+    provenance["obstacles"] = obstacle_stats
     exporter.write_catalog(files, stats, layers, provenance, osm_meta)
     print("완료:", exporter.folder)
 

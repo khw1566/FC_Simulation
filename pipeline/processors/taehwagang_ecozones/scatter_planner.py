@@ -9,6 +9,11 @@ class ScatterPlanner:
         self.raster = raster
         self.heights = heights
         self.seed = int(seed)
+        self.obstacle_distance = None
+
+    def set_obstacles(self, obstacle_distance):
+        """차도·건물·수면까지의 거리(m). 개체 반경(clearance_m)보다 가까우면 놓지 않는다."""
+        self.obstacle_distance = obstacle_distance
 
     def plan(self, rule, index, labels, zone_id, edge_distance):
         rows, cols = np.nonzero(labels == zone_id)
@@ -33,6 +38,14 @@ class ScatterPlanner:
         jitter = float(rule.get("jitter_m", 0.0))
         xs = xs + rng.uniform(-jitter, jitter, xs.size)
         zs = zs + rng.uniform(-jitter, jitter, zs.size)
+        # 흔들린 최종 위치에서 구역 소속과 장애물 여유 거리를 다시 확인한다.
+        u, v = self.raster.world_to_pixel(xs, zs)
+        ui = np.clip(np.rint(u).astype(int), 0, self.raster.size - 1)
+        vi = np.clip(np.rint(v).astype(int), 0, self.raster.size - 1)
+        keep = labels[vi, ui] == zone_id
+        if self.obstacle_distance is not None:
+            keep &= self.obstacle_distance[vi, ui] >= float(rule.get("clearance_m", 1.5))
+        xs, zs = xs[keep], zs[keep]
         step = float(rule.get("yaw_step_deg", 0))
         yaw = rng.integers(0, int(360 / step), xs.size) * step if step > 0 else rng.uniform(0, 360, xs.size)
         scale = rng.uniform(rule["scale"][0], rule["scale"][1], xs.size)

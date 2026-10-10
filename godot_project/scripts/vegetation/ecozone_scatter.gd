@@ -28,6 +28,9 @@ var ground_bound := false
 var _scale := Vector2.ONE
 var _offset := Vector2.ZERO
 var _half_extent := INF
+var _water_image: Image
+var _water_checked := false
+var _map_size := 1.0
 
 func _ready() -> void:
 	_initialize.call_deferred()
@@ -121,7 +124,21 @@ func configure_mapping(catalog: Dictionary, map) -> bool:
 	_offset = Vector2(((center_lon - map.bbox_west) / (map.bbox_east - map.bbox_west) - 0.5) * size,
 		((map.bbox_north - center_lat) / (map.bbox_north - map.bbox_south) - 0.5) * size)
 	_half_extent = size * 0.5
+	_map_size = size
 	return true
+
+## 실행 중 지형이 쓰는 수면 마스크로 마지막 검사를 한다(생성 단계 제외 마스크의 안전망).
+func is_water(x: float, z: float) -> bool:
+	if not _water_checked:
+		_water_checked = true
+		var water = terrain_manager.get("_full_watermask_image") if is_instance_valid(terrain_manager) else null
+		_water_image = water if water is Image and not water.is_empty() else null
+	if _water_image == null:
+		return false
+	var size := float(_water_image.get_width())
+	var u := clampi(roundi((x / _map_size + 0.5) * (size - 1.0)), 0, _water_image.get_width() - 1)
+	var v := clampi(roundi((z / _map_size + 0.5) * (float(_water_image.get_height()) - 1.0)), 0, _water_image.get_height() - 1)
+	return _water_image.get_pixel(u, v).r > 0.4
 
 func add_layer(layer: Dictionary, family: Dictionary) -> void:
 	var data: Array = layer.get("data", [])
@@ -130,7 +147,7 @@ func add_layer(layer: Dictionary, family: Dictionary) -> void:
 	for i in range(0, data.size() - 4, 5):
 		var x := float(data[i]) * _scale.x + _offset.x
 		var z := float(data[i + 2]) * _scale.y + _offset.y
-		if absf(x) > _half_extent or absf(z) > _half_extent:
+		if absf(x) > _half_extent or absf(z) > _half_extent or is_water(x, z):
 			continue
 		var y: float = terrain_manager.get_terrain_elevation(x, z) if use_terrain else float(data[i + 1])
 		var basis := Basis(Vector3.UP, deg_to_rad(float(data[i + 3]))).scaled(Vector3.ONE * float(data[i + 4]))

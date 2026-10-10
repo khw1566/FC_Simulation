@@ -83,7 +83,7 @@ class ZoneExporter:
         self._save_json(data, path, indent=None)
         return path
 
-    def write_forest_masses(self, labels, placeable):
+    def write_forest_masses(self, labels, placeable, blocked=None):
         """대숲·활엽수림 구역을 닫힘 연산으로 덩어리화한 셀 목록(라벨 격자 좌표)을 기록한다."""
         ids = {zone["key"]: zone["id"] for zone in self.config["zones"]}
         masses = []
@@ -92,6 +92,8 @@ class ZoneExporter:
             steps = int(round(float(spec.get("close_m", 0.0)) / self.raster.cell_m))
             if steps:
                 mask = ~self.raster.dilate(~self.raster.dilate(mask, steps), steps) & placeable
+            if blocked is not None:
+                mask &= ~blocked
             ramp = float(spec.get("edge_ramp_m", 12.0))
             inside = self.raster.distance_m(~mask, ramp + self.raster.cell_m)
             # 셀 수관 높이 비율(0~255): 가장자리에서 ramp 거리만큼 올라가고, 가우스 흐림으로 윤곽 계단을 지면 쪽에 묻는다.
@@ -99,6 +101,9 @@ class ZoneExporter:
             raw = Image.fromarray(np.round(255 * t * t * (3 - 2 * t)).astype(np.uint8), "L")
             blurred = np.array(raw.filter(ImageFilter.GaussianBlur(float(spec.get("edge_blur_cells", 1.5)))))
             keep = blurred >= 6
+            if blocked is not None:
+                # 흐림으로 번진 수관 가장자리가 도로·건물·수면 위로 나가지 않게 한다.
+                keep &= ~blocked
             rows, cols = np.nonzero(keep)
             level = blurred[rows, cols].astype(int)
             entry = {k: v for k, v in spec.items() if k not in ("close_m", "edge_ramp_m")}

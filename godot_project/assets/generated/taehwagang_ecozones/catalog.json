@@ -24,16 +24,16 @@
       "key": "bamboo",
       "name_ko": "대숲(십리대숲)",
       "ground": "bamboo_litter",
-      "pixels": 23163,
-      "area_m2": 353784.7
+      "pixels": 21086,
+      "area_m2": 322061.3
     },
     {
       "id": 4,
       "key": "reed",
       "name_ko": "수변 갈대",
       "ground": "reed_mud",
-      "pixels": 37862,
-      "area_m2": 578292.9
+      "pixels": 25796,
+      "area_m2": 394000.4
     },
     {
       "id": 5,
@@ -48,24 +48,24 @@
       "key": "silvergrass",
       "name_ko": "억새 군락",
       "ground": "silvergrass_ground",
-      "pixels": 74396,
-      "area_m2": 1136302.3
+      "pixels": 45575,
+      "area_m2": 696098.9
     },
     {
       "id": 1,
       "key": "lawn",
       "name_ko": "잔디 광장",
       "ground": "lawn",
-      "pixels": 67214,
-      "area_m2": 1026606.5
+      "pixels": 55781,
+      "area_m2": 851982.3
     },
     {
       "id": 6,
       "key": "meadow",
       "name_ko": "들풀 초지",
       "ground": "meadow",
-      "pixels": 6476,
-      "area_m2": 98912.5
+      "pixels": 2900,
+      "area_m2": 44293.7
     }
   ],
   "layers": [
@@ -75,7 +75,7 @@
       "kind": "bamboo_grove",
       "lattice": "hex",
       "spacing_m": 7.0,
-      "count": 7351
+      "count": 6493
     },
     {
       "zone": "bamboo",
@@ -83,7 +83,7 @@
       "kind": "bamboo_clump",
       "lattice": "hex",
       "spacing_m": 3.6,
-      "count": 3729
+      "count": 3761
     },
     {
       "zone": "silvergrass",
@@ -91,7 +91,7 @@
       "kind": "silvergrass_patch",
       "lattice": "hex",
       "spacing_m": 3.3,
-      "count": 120360
+      "count": 72069
     },
     {
       "zone": "reed",
@@ -99,7 +99,7 @@
       "kind": "reed_patch",
       "lattice": "hex",
       "spacing_m": 3.0,
-      "count": 74168
+      "count": 48818
     },
     {
       "zone": "woodland",
@@ -107,7 +107,7 @@
       "kind": "broadleaf",
       "lattice": "hex",
       "spacing_m": 6.5,
-      "count": 1907
+      "count": 1864
     },
     {
       "zone": "meadow",
@@ -115,7 +115,7 @@
       "kind": "shrub",
       "lattice": "hex",
       "spacing_m": 14.0,
-      "count": 580
+      "count": 197
     },
     {
       "zone": "meadow",
@@ -123,7 +123,7 @@
       "kind": "silvergrass_clump",
       "lattice": "hex",
       "spacing_m": 7.0,
-      "count": 2375
+      "count": 885
     }
   ],
   "source_masks": {
@@ -146,6 +146,15 @@
     "placeable_repair": {
       "source_area_m2": 1947366.3,
       "repaired_area_m2": 3263363.7
+    },
+    "obstacles": {
+      "godot_project/assets/maps/ulsan_metro_80km": {
+        "roads": 1406,
+        "buildings": 46576
+      },
+      "osm_roads": 4951,
+      "godot_project/assets/maps/ulsan_metro_80km_water_m2": 3051013.4,
+      "blocked_area_m2": 25279823.5
     }
   },
   "osm_landcover": {
@@ -158,8 +167,8 @@
     "labels": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
       "format": "PNG",
-      "sha256": "6caccee3137de341e96bd2554f33dbad021d1276fcdaf99202f550972e01b440",
-      "size_bytes": 23805,
+      "sha256": "8007eedaab0490b48709018e02e3937b50da7b7d218fd6b437b64921c401a3f1",
+      "size_bytes": 31070,
       "type": "ecozone_label_mask",
       "metadata": {
         "bbox": {
@@ -180,8 +189,8 @@
     "splat_a": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_a_rgba.png",
       "format": "PNG",
-      "sha256": "1bc91518d9760e669c74b9fb3cc31d41e6419b396f9ab3bf44a4014bd94e57e6",
-      "size_bytes": 217446,
+      "sha256": "b7d4550e2fe3159b280dfdca32b5ca27c3e71bb9a75045014ed78bd902efd262",
+      "size_bytes": 285680,
       "type": "ecozone_splat",
       "metadata": {
         "bbox": {
@@ -202,8 +211,8 @@
     "splat_b": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_b_rgba.png",
       "format": "PNG",
-      "sha256": "a680be5c5cb034665842d29779d1442273c7830cd52b4243583e8481db48facc",
-      "size_bytes": 150400,
+      "sha256": "38a9a45df66a747501e5b6d51766ae9fa22070e853645de5e5eec74a4ba9eb86",
+      "size_bytes": 230432,
       "type": "ecozone_splat",
       "metadata": {
         "bbox": {
@@ -224,8 +233,8 @@
     "preview": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
       "format": "PNG",
-      "sha256": "5c2fb8cb4dec570220bc7d978e0c3211767e6323adb59948ded1b83a4d937f8d",
-      "size_bytes": 125451,
+      "sha256": "6c6c3511e14191eff0130fa850c9ed0442d3c66a5d476a7df7450e28f2026ecb",
+      "size_bytes": 123065,
       "type": "ecozone_preview",
       "metadata": {
         "bbox": {
@@ -246,8 +255,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "14a06c9d8634b681573f74c55a18a596a28a1575ca1889187f3632d740406699",
-      "size_bytes": 7843693,
+      "sha256": "8437f26c1c3af07586452dfe08d9862b69711c8e432b72f5ba2bf966fc310ab2",
+      "size_bytes": 5008743,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -257,16 +266,16 @@
           "east": 129.3622
         },
         "resolution": null,
-        "elevation_min": -0.65,
+        "elevation_min": -0.27,
         "elevation_max": 14.73,
-        "instances": 210470
+        "instances": 134087
       }
     },
     "forest_masses": {
       "file_path": "res://assets/generated/taehwagang_ecozones/forest_masses.json",
       "format": "JSON",
-      "sha256": "61c57d8a8eb491eaeb72a7fa7f8d1cbcf6243e767650033a08db9faf9f8bb558",
-      "size_bytes": 571014,
+      "sha256": "60c413d43181bf71b7f6e957cc0fca9c9d0e8ee823e8e2edd36cdb43a91c9e00",
+      "size_bytes": 486295,
       "type": "ecozone_forest_mass",
       "metadata": {
         "bbox": null,
