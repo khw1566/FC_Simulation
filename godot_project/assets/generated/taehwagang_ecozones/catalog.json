@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "map_id": "taehwagang_dunchi",
+  "status": "generated_estimate",
+  "zone_basis_ko": "대숲은 OSM 숲 다각형과 국가정원 곡류부(삼호교~태화교) 경도 범위의 교집합, 그리고 곡류부 안쪽 강변 띠(수면 8~55m, 기준 다각형은 수작업 추정). 억새 구간(명촌 하류부, 삼호 상류부)과 잔디 구간(도심 구간)의 경도 범위는 추정값이며 현장 식생도로 교체 필요.",
+  "label_encoding_ko": "8bit 픽셀값=구역 ID, 0=비대상(수면·제방 밖·비평탄). 북쪽이 0행.",
+  "splat_channels": {
+    "ecozone_splat_a_rgba.png": [
+      "lawn",
+      "silvergrass",
+      "bamboo",
+      "reed"
+    ],
+    "ecozone_splat_b_rgba.png": [
+      "woodland",
+      "meadow",
+      "unused",
+      "placeable"
+    ]
+  },
+  "zones": [
+    {
+      "id": 3,
+      "key": "bamboo",
+      "name_ko": "대숲(십리대숲)",
+      "ground": "bamboo_litter",
+      "pixels": 21086,
+      "area_m2": 322061.3
+    },
+    {
+      "id": 4,
+      "key": "reed",
+      "name_ko": "수변 갈대",
+      "ground": "reed_mud",
+      "pixels": 25796,
+      "area_m2": 394000.4
+    },
+    {
+      "id": 5,
+      "key": "woodland",
+      "name_ko": "수림대",
+      "ground": "woodland_soil",
+      "pixels": 4548,
+      "area_m2": 69464.8
+    },
+    {
+      "id": 2,
+      "key": "silvergrass",
+      "name_ko": "억새 군락",
+      "ground": "silvergrass_ground",
+      "pixels": 45575,
+      "area_m2": 696098.9
+    },
+    {
+      "id": 1,
+      "key": "lawn",
+      "name_ko": "잔디 광장",
+      "ground": "lawn",
+      "pixels": 55781,
+      "area_m2": 851982.3
+    },
+    {
+      "id": 6,
+      "key": "meadow",
+      "name_ko": "들풀 초지",
+      "ground": "meadow",
+      "pixels": 2900,
+      "area_m2": 44293.7
+    }
+  ],
+  "layers": [
+    {
+      "zone": "bamboo",
+      "family": "forest",
+      "kind": "bamboo_a",
+      "lattice": "blue",
+      "spacing_m": 3.4,
+      "count": 9178
+    },
+    {
+      "zone": "bamboo",
+      "family": "forest",
+      "kind": "bamboo_b",
+      "lattice": "blue",
+      "spacing_m": 3.4,
+      "count": 7850
+    },
+    {
+      "zone": "bamboo",
+      "family": "forest",
+      "kind": "bamboo_c",
+      "lattice": "blue",
+      "spacing_m": 3.4,
+      "count": 5621
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "deciduous_a",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 391
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "deciduous_b",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 315
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "deciduous_c",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 257
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "pine_a",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 128
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "pine_b",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 138
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "pine_c",
+      "lattice": "blue",
+      "spacing_m": 6.5,
+      "count": 68
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "shrub_a",
+      "lattice": "blue",
+      "spacing_m": 9.0,
+      "count": 272
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "shrub_b",
+      "lattice": "blue",
+      "spacing_m": 9.0,
+      "count": 237
+    },
+    {
+      "zone": "woodland",
+      "family": "forest",
+      "kind": "shrub_c",
+      "lattice": "blue",
+      "spacing_m": 9.0,
+      "count": 168
+    },
+    {
+      "zone": "meadow",
+      "family": "forest",
+      "kind": "shrub_a",
+      "lattice": "blue",
+      "spacing_m": 14.0,
+      "count": 66
+    },
+    {
+      "zone": "meadow",
+      "family": "forest",
+      "kind": "shrub_b",
+      "lattice": "blue",
+      "spacing_m": 14.0,
+      "count": 59
+    },
+    {
+      "zone": "meadow",
+      "family": "forest",
+      "kind": "shrub_c",
+      "lattice": "blue",
+      "spacing_m": 14.0,
+      "count": 41
+    }
+  ],
+  "source_masks": {
+    "folder": "C:\\Users\\work\\Desktop\\FC_Simulation_dunchi\\godot_project\\assets\\maps\\taehwagang_dunchi",
+    "heightmap": {
+      "file": "dunchi_heightmap_16bit.png",
+      "sha256": "abaa62f2d5bcc4f7f55cccbd4eaa6878e8649ed078971ea50e61e92fa33cb3c7",
+      "size_bytes": 12251186
+    },
+    "watermask": {
+      "file": "dunchi_watermask_8bit.png",
+      "sha256": "e4574bceeb3805caa0f56eccf4dcd96766a47dcf3d4e5cefbcbaeb84dd55f393",
+      "size_bytes": 53197
+    },
+    "placement_mask": {
+      "file": "dunchi_placement_mask_8bit.png",
+      "sha256": "72e977a1a246961e25b2c1c5b7a22bd06d436034d90e3d9e002923142e2d8c30",
+      "size_bytes": 42300
+    },
+    "placeable_repair": {
+      "source_area_m2": 1947366.3,
+      "repaired_area_m2": 3263363.7
+    },
+    "obstacles": {
+      "godot_project/assets/maps/ulsan_metro_80km": {
+        "roads": 1406,
+        "buildings": 46576
+      },
+      "osm_roads": 4951,
+      "godot_project/assets/maps/ulsan_metro_80km_water_m2": 3051013.4,
+      "blocked_area_m2": 25279823.5
+    }
+  },
+  "osm_landcover": {
+    "cache": "data/raw/taehwagang_ecozones/osm_landcover.json",
+    "elements": 418,
+    "endpoint": "https://overpass-api.de/api/interpreter",
+    "osm_timestamp": "2026-10-09T14:21:20Z"
+  },
+  "assets": {
+    "labels": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
+      "format": "PNG",
+      "sha256": "8007eedaab0490b48709018e02e3937b50da7b7d218fd6b437b64921c401a3f1",
+      "size_bytes": 31070,
+      "type": "ecozone_label_mask",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "splat_a": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_a_rgba.png",
+      "format": "PNG",
+      "sha256": "193336e2a2e406efe79cbd7f6ef5940c7bffdeef9766cc486ffe8b98b922db90",
+      "size_bytes": 190047,
+      "type": "ecozone_splat",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "splat_b": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_b_rgba.png",
+      "format": "PNG",
+      "sha256": "d3ad0e59f9c2026f409c5b9df337d05431ec9da024e204c105f779a8165a15c7",
+      "size_bytes": 274028,
+      "type": "ecozone_splat",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "preview": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
+      "format": "PNG",
+      "sha256": "9439dbc428edc3bb1b7e141d0a8f433f6fa0b414f7a340f933d0c23a7843eee8",
+      "size_bytes": 76707,
+      "type": "ecozone_preview",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "scatter": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
+      "format": "JSON",
+      "sha256": "4c400669b36a757d0dc1e79be1ec4b06c2400b3f5754d5ca0a519fb97a0d77b4",
+      "size_bytes": 923711,
+      "type": "ecozone_scatter",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": null,
+        "elevation_min": 1.43,
+        "elevation_max": 14.7,
+        "instances": 24789
+      }
+    },
+    "forest_masses": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/forest_masses.json",
+      "format": "JSON",
+      "sha256": "f693b3f1617ed75c614e97254d1651e5caf0481b36b8629739222f5508169e4c",
+      "size_bytes": 454,
+      "type": "ecozone_forest_mass",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_blend": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground_blend.json",
+      "format": "JSON",
+      "sha256": "4bc273f81345920200578e0f292d7174d1ff9e56c9ad45bf80b47d5cc657d154",
+      "size_bytes": 1308,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_lawn": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/lawn.png",
+      "format": "PNG",
+      "sha256": "b314bacd731e6ffc0cf217ede58434825ef94050c92eda4c8e2c2e1e4169e0af",
+      "size_bytes": 180579,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_silvergrass_ground": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_ground.png",
+      "format": "PNG",
+      "sha256": "eb01f47d804539cfe54021247d0bb193684b7f81eea7651f8b502dc0c62a9ce5",
+      "size_bytes": 239554,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_bamboo_litter": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/bamboo_litter.png",
+      "format": "PNG",
+      "sha256": "8632a32eb90a9da27f95201d2b23f82c16c151f1cb3d4b4b1083b748911e98f9",
+      "size_bytes": 155435,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_reed_mud": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/reed_mud.png",
+      "format": "PNG",
+      "sha256": "2b429fa15dd2117a1b98611c48fe1a54dba490507bcdfc74f4c8c8c447b357ec",
+      "size_bytes": 200777,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_woodland_soil": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/woodland_soil.png",
+      "format": "PNG",
+      "sha256": "9294ce525ff195bb1e620b1d6be27e5ed2521755ea97cb4b2562942c55c5887b",
+      "size_bytes": 138958,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_canopy_bamboo": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/canopy_bamboo.png",
+      "format": "PNG",
+      "sha256": "b6b1e327546ddec865708e3e0071b8cf5910f54441eccf5c23c3ffab21529274",
+      "size_bytes": 166399,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_canopy_broadleaf": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/canopy_broadleaf.png",
+      "format": "PNG",
+      "sha256": "40b49da3a300ef9fb3fee3dc491cc9f9cc6f1adfb8449a4c9a0c0a27f5a45b04",
+      "size_bytes": 82130,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_meadow": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/meadow.png",
+      "format": "PNG",
+      "sha256": "94f96200e832250d392e1816b4f5053501514fa6a6e71bf22e9b594517668e5b",
+      "size_bytes": 187223,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_silvergrass_card": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_card.png",
+      "format": "PNG",
+      "sha256": "3c423529f23a77fce930f1d03640a85b4b142d49e0b1917264d6a29e41386d35",
+      "size_bytes": 15382,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    }
+  }
+}

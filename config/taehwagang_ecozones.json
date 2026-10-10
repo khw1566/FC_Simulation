@@ -1,0 +1,119 @@
+{
+  "region_name": "taehwagang_ecozones",
+  "target_map_id": "taehwagang_dunchi",
+  "description_ko": "태화강 둔치 평탄 마스크를 생태 구역(대숲, 억새, 수변 갈대, 수림, 잔디, 들풀)으로 나누고 구역별 규칙 격자로 식생 에셋을 배치한다.",
+  "source_map_folders": [
+    "godot_project/assets/maps/taehwagang_dunchi",
+    "../FC_Simulation_dunchi/godot_project/assets/maps/taehwagang_dunchi"
+  ],
+  "working_resolution": 2048,
+  "obstacles_basis_ko": "게임에 실제로 그려지는 울산 80km 지도의 도로(폭+여유)·건물(여유)·수면 마스크와 OSM 차도(등급별 폭)를 배치 제외로 쓴다. 개체는 clearance_m만큼 떨어져야 놓인다.",
+  "obstacles": {
+    "margin_m": 2.0,
+    "water_threshold": 96,
+    "game_maps": [{"folder": "godot_project/assets/maps/ulsan_metro_80km", "obstacles_file": "buildings_and_roads.json"}]
+  },
+  "placeable_repair_basis_ko": "원천 둔치 마스크가 거친 고도 때문에 조각나므로, 서쪽 상류 유입부와 이어진 폭 16m 이상 수면(태화강 본류·동천)에서 구간별 폭의 연속 띠를 부지로 삼고 수면 300m 이내 OSM 공원·잔디를 더한다. 띠 폭은 추정값.",
+  "placeable_repair": {
+    "min_water_width_m": 16,
+    "river_seed_edges": ["west"],
+    "band_m": 70,
+    "band_overrides": [
+      {"lon_ranges": [[129.2738, 129.2900]], "band_m": 60},
+      {"lon_ranges": [[129.3380, 129.3622]], "band_m": 120}
+    ],
+    "osm_classes": ["park", "grass", "pitch"],
+    "osm_max_water_distance_m": 300,
+    "close_m": 20,
+    "keep_source": false
+  },
+  "overpass_endpoints": [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter"
+  ],
+  "osm_classes": {
+    "wood": [["natural", "wood"], ["landuse", "forest"]],
+    "grass": [["landuse", "grass"], ["landuse", "meadow"], ["natural", "grassland"]],
+    "park": [["leisure", "park"], ["leisure", "garden"]],
+    "pitch": [["leisure", "pitch"]],
+    "scrub": [["natural", "scrub"]],
+    "wetland": [["natural", "wetland"]]
+  },
+  "zone_basis_ko": "대숲은 OSM 숲 다각형과 국가정원 곡류부(삼호교~태화교) 경도 범위의 교집합, 그리고 곡류부 안쪽 강변 띠(수면 8~55m, 기준 다각형은 수작업 추정). 억새 구간(명촌 하류부, 삼호 상류부)과 잔디 구간(도심 구간)의 경도 범위는 추정값이며 현장 식생도로 교체 필요.",
+  "zones": [
+    {
+      "id": 3, "key": "bamboo", "name_ko": "대숲(십리대숲)",
+      "ground": "bamboo_litter", "color": [46, 92, 40],
+      "rules": [
+        {"osm_any": ["wood"], "osm_buffer_m": 12, "lon_ranges": [[129.2760, 129.3095]], "water_distance_m": [0, 90]},
+        {"polygons_lonlat": [[[129.29107, 35.54911], [129.2928, 35.54699], [129.29626, 35.54576], [129.30014, 35.54611], [129.30273, 35.5477], [129.30338, 35.55122], [129.30489, 35.55334], [129.30187, 35.55281], [129.29798, 35.55017], [129.29323, 35.54928]]], "water_distance_m": [8, 55]}
+      ]
+    },
+    {
+      "id": 4, "key": "reed", "name_ko": "수변 갈대",
+      "ground": "reed_mud", "color": [120, 128, 84],
+      "rules": [
+        {"water_distance_m": [0, 20]}
+      ]
+    },
+    {
+      "id": 5, "key": "woodland", "name_ko": "수림대",
+      "ground": "woodland_soil", "color": [70, 110, 60],
+      "rules": [
+        {"osm_any": ["wood", "scrub"]}
+      ]
+    },
+    {
+      "id": 2, "key": "silvergrass", "name_ko": "억새 군락",
+      "ground": "silvergrass_ground", "color": [196, 178, 120],
+      "rules": [
+        {"lon_ranges": [[129.3380, 129.3622]], "water_distance_m": [20, 110], "osm_none": ["park", "pitch"]},
+        {"lon_ranges": [[129.2738, 129.2900]], "water_distance_m": [20, 70]},
+        {"osm_any": ["wetland"]}
+      ]
+    },
+    {
+      "id": 1, "key": "lawn", "name_ko": "잔디 광장",
+      "ground": "lawn", "color": [128, 176, 92],
+      "rules": [
+        {"osm_any": ["park", "grass", "pitch"]},
+        {"lon_ranges": [[129.2900, 129.3380]]}
+      ]
+    },
+    {
+      "id": 6, "key": "meadow", "name_ko": "들풀 초지",
+      "ground": "meadow", "color": [160, 170, 96],
+      "rules": [
+        {}
+      ]
+    }
+  ],
+  "scatter": [
+    {"zone": "bamboo", "family": "forest", "kinds": {"bamboo_a": 0.4, "bamboo_b": 0.35, "bamboo_c": 0.25}, "lattice": "blue", "spacing_m": 3.4, "density_noise": 0.3, "edge_thin_m": 6.0, "scale": [0.85, 1.15], "clearance_m": 2.0},
+    {"zone": "woodland", "family": "forest", "kinds": {"deciduous_a": 0.3, "deciduous_b": 0.25, "deciduous_c": 0.2, "pine_a": 0.1, "pine_b": 0.1, "pine_c": 0.05}, "lattice": "blue", "spacing_m": 6.5, "density_noise": 0.35, "edge_thin_m": 8.0, "scale": [0.8, 1.15], "clearance_m": 3.0},
+    {"zone": "woodland", "family": "forest", "kinds": {"shrub_a": 0.4, "shrub_b": 0.35, "shrub_c": 0.25}, "lattice": "blue", "spacing_m": 9.0, "density_noise": 0.5, "scale": [0.8, 1.2], "clearance_m": 1.5},
+    {"zone": "meadow", "family": "forest", "kinds": {"shrub_a": 0.4, "shrub_b": 0.35, "shrub_c": 0.25}, "lattice": "blue", "spacing_m": 14.0, "density_noise": 0.5, "scale": [0.7, 1.1], "min_edge_m": 3.0, "clearance_m": 1.5}
+  ],
+  "families_basis_ko": "근경 개체만 메시로 그린다. fade_far_m~+fade_band_m 구간에서 픽셀 거리 디더로 사라지고, 같은 구간에서 숲 덩어리(fade_near_m)와 바닥 텍스처가 나타난다. 억새·갈대·대나무는 흔들림 셰이더를 쓴다.",
+  "families": {
+    "bamboo": {"scene_template": "res://assets/generated/bamboo/%s_lod%d.scn", "lod_ranges_m": [[0, 70], [70, 250], [250, 1500]], "sway": {"height_m": 9.0, "strength_m": 0.35, "speed": 0.9}},
+    "forest": {"scene_template": "res://assets/generated/forest_trees/%s_lod%d.scn", "lod_ranges_m": [[0, 100], [100, 350], [350, 1500]], "sway": {"height_m": 12.0, "strength_m": 0.22, "speed": 0.7, "vertex_weight": true}},
+    "trees": {"scene_template": "res://assets/generated/trees/%s_lod%d.scn", "lod_ranges_m": [[0, 100], [100, 350], [350, 1500]]},
+    "silvergrass": {"scene_template": "res://assets/generated/silvergrass/%s_lod%d.scn", "lod_ranges_m": [[0, 45], [45, 190]], "sway": {"height_m": 2.4, "strength_m": 0.28, "speed": 1.6}, "fade_far_m": 110, "fade_band_m": 30}
+  },
+  "forest_masses_basis_ko": "대숲·활엽수림을 연속 수관 덩어리로 표현한다. 셀은 라벨 격자(약 3.9m), 가장자리는 지면까지 낮춘다.",
+  "forest_masses_enabled": false,
+  "forest_masses_disabled_ko": "2026-10-10 숲 덩어리 중단(판형 실루엣이 어색함). 개별 수목 LOD 0~1500m로 복귀. 계획: results/261010_ForestRepresentationPlan.md",
+  "forest_masses": [
+    {"zone": "bamboo", "canopy_height_m": 9.5, "close_m": 12, "edge_ramp_m": 10, "color": [62, 98, 42], "color_variation": 0.12, "texture": "canopy_bamboo", "fade_near_m": 100, "fade_band_m": 25},
+    {"zone": "woodland", "canopy_height_m": 13.0, "close_m": 12, "edge_ramp_m": 14, "color": [56, 86, 44], "color_variation": 0.16, "texture": "canopy_broadleaf", "fade_near_m": 120, "fade_band_m": 25}
+  ],
+  "ground_override_ko": "억새 보류 동안 억새 구역 바닥을 들풀 텍스처로 칠한다(황금빛 억새 바닥 제거).",
+  "ground_override": {"silvergrass": "meadow"},
+  "ground_blend": {"tile_m": 6.0, "fade_distance_m": 6000.0, "flat_near_m": 150.0, "flat_far_m": 450.0,
+    "silvergrass_field_basis_ko": "억새·갈대는 개체 배치 대신 카메라 주변 GPU 필드로 그린다. 스플랫 G(억새)·A(갈대) 비율만큼 0.9m 칸마다 다발을 세우고, 렌더된 지형 높이에 붙이며, 풍향으로 진행하는 물결로 흔든다. 반경 밖은 황금빛 바닥 텍스처.",
+    "silvergrass_field_enabled": false,
+    "silvergrass_field_disabled_ko": "2026-10-10 사용자 요청으로 억새 전부 제거(추후 재작업). 필드 코드와 설정은 보존.",
+    "silvergrass_field": {"spacing_m": 0.9, "radius_m": 120.0, "thin_start_m": 50.0, "density": 1.0, "card_spacing_m": 4.0, "card_radius_m": 450.0, "wave_length_m": 22.0, "wave_speed_mps": 7.0, "sway_strength_m": 0.45}},
+  "random_seed": 20261009
+}

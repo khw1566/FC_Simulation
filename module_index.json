@@ -1885,6 +1885,149 @@
           "lines": 25
         }
       ]
+    },
+    "silvergrass": {
+      "description": "경량 억새 군집·억새 군락·갈대 군락, 3단계 LOD와 계열 공통 MultiMesh 묶음기",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_geometry.gd",
+          "lines": 82
+        },
+        {
+          "path": "godot_project/scripts/vegetation/vegetation_batch_factory.gd",
+          "lines": 43
+        },
+        {
+          "path": "pipeline/processors/silvergrass/generate.py",
+          "lines": 101
+        },
+        {
+          "path": "pipeline/processors/silvergrass/silvergrass_geometry.gd",
+          "lines": 82
+        },
+        {
+          "path": "pipeline/processors/silvergrass/export_silvergrass.gd",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/silvergrass/capture.gd",
+          "lines": 61
+        }
+      ]
+    },
+    "taehwagang_ecozones": {
+      "description": "태화강 둔치 생태 구역(대숲·억새·수변 갈대·수림·잔디·들풀) 분할, 근경 개체 배치(흔들림), 숲 수관 덩어리 메시, 지형 셰이더 바닥 혼합",
+      "modules": [
+        {
+          "path": "config/taehwagang_ecozones.json",
+          "lines": 115
+        },
+        {
+          "path": "pipeline/collectors/ecozone_landcover_collector.py",
+          "lines": 48
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/generate.py",
+          "lines": 93
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/source_masks.py",
+          "lines": 61
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/geo_raster.py",
+          "lines": 138
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/mask_repair.py",
+          "lines": 63
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/obstacle_mask.py",
+          "lines": 143
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/zone_classifier.py",
+          "lines": 60
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/scatter_planner.py",
+          "lines": 138
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/ground_textures.py",
+          "lines": 80
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
+          "lines": 199
+        },
+        {
+          "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
+          "lines": 176
+        },
+        {
+          "path": "godot_project/scripts/vegetation/forest_mass_builder.gd",
+          "lines": 136
+        },
+        {
+          "path": "godot_project/scripts/vegetation/ecozone_ground_binder.gd",
+          "lines": 56
+        },
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_field.gd",
+          "lines": 79
+        },
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_tuft.gd",
+          "lines": 43
+        },
+        {
+          "path": "godot_project/shaders/silvergrass_field.gdshader",
+          "lines": 79
+        },
+        {
+          "path": "godot_project/shaders/terrain_height.gdshaderinc",
+          "lines": 50
+        },
+        {
+          "path": "godot_project/shaders/vegetation_sway.gdshader",
+          "lines": 55
+        },
+        {
+          "path": "godot_project/shaders/forest_mass.gdshader",
+          "lines": 45
+        },
+        {
+          "path": "godot_project/shaders/ecozone_ground.gdshaderinc",
+          "lines": 62
+        }
+      ]
+    },
+    "forest_trees": {
+      "description": "공통 숲 수목 12형태(활엽 낙엽수·소나무형·관목·대나무 각 3) × 3 LOD, 정점 색 알파 흔들림 가중치",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/forest_tree_geometry.gd",
+          "lines": 206
+        },
+        {
+          "path": "pipeline/processors/forest_trees/forest_tree_geometry.gd",
+          "lines": 206
+        },
+        {
+          "path": "pipeline/processors/forest_trees/generate.py",
+          "lines": 79
+        },
+        {
+          "path": "pipeline/processors/forest_trees/export_forest_trees.gd",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/forest_trees/capture.gd",
+          "lines": 62
+        }
+      ]
     }
   }
 }
