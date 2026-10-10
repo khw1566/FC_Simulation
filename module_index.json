@@ -1456,6 +1456,16 @@
           "class_name": "AtmosphereScatteringModel",
           "path": "godot_project/scripts/models/atmosphere_scattering_model.gd",
           "responsibility": "광학용 지수 대기 밀도와 곡면 광학 경로 근사"
+        },
+        {
+          "class_name": "AtmosphereStateModel",
+          "path": "godot_project/scripts/models/atmosphere_state_model.gd",
+          "responsibility": "지상 기후값을 고도별 기온·기압·밀도·습도·바람 및 비행 역학 값으로 변환"
+        },
+        {
+          "class_name": "SurfaceClimateModel",
+          "path": "godot_project/scripts/models/surface_climate_model.gd",
+          "responsibility": "울산 평년값 기반 계절·시각·날씨 상태별 지상 기온·이슬점·습도·풍향풍속·해면기압 산출"
         }
       ]
     },

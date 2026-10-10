@@ -2,6 +2,7 @@ extends Node
 class_name MapHUDController
 
 const AtmosphereStateModelClass = preload("res://scripts/models/atmosphere_state_model.gd")
+const SurfaceClimateModelClass = preload("res://scripts/models/surface_climate_model.gd")
 
 @export var map_hud_view: Control
 @export var player_node: Node3D
@@ -58,5 +59,5 @@ func _physics_process(_delta: float) -> void:
 			if weather_manager:
 				w_type = int(weather_manager.get("current_weather"))
 
-			var atmo = AtmosphereStateModelClass.calculate_at_altitude(pos.y, speed_ms, w_type)
+			var atmo = AtmosphereStateModelClass.calculate_at_altitude(pos.y, speed_ms, w_type, SurfaceClimateModelClass.resolve_hour(weather_manager))
 			map_hud_view.call("update_airspeed_display", atmo.true_airspeed_kmh, atmo.indicated_airspeed_kmh, atmo.mach_number)
