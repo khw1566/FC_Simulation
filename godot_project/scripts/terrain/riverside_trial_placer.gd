@@ -10,18 +10,23 @@ const CATALOG := "res://assets/generated/riverside_trial/placements.json"
 const SKIP_MAP_IDS := ["taehwagang_dunchi"]
 const PathProfile = preload("res://scripts/terrain/riverside_path_profile.gd")
 const Batcher = preload("res://scripts/terrain/riverside_instance_batcher.gd")
-## 지형 메시 LOD가 높이맵 표본보다 약간 높게 보간될 수 있어 두는 여유 높이
-const PATH_CLEARANCE_M := 0.15
-const OBJECT_CLEARANCE_M := 0.03
+const SurfaceSampler = preload("res://scripts/terrain/riverside_surface_sampler.gd")
+## 보도 조각 바닥의 지면 기준 높이. 보도 표면은 바닥보다 0.15 m 높아 바닥을 조금 묻어도 표면은 지면 위에 남는다
+const PATH_CLEARANCE_M := -0.06
+const OBJECT_CLEARANCE_M := 0.02
 ## 굽은 접속부의 바깥쪽 틈을 덮도록 조각 양 끝을 늘리는 길이
 const SEGMENT_OVERLAP_M := 0.6
-## 겹치는 조각끼리 깜박이지 않도록 번갈아 주는 미세 높이 차
-const ALTERNATE_LIFT_M := 0.006
+## 같은 체인의 굽은 접속부에서 겹치는 이웃 조각끼리 깜박이지 않도록 번갈아 주는 높이 차
+const ALTERNATE_LIFT_M := 0.012
+## 서로 교차하는 다른 체인끼리 겹쳐 깜박이지 않도록 체인마다 주는 높이 단 간격(단 정보가 없을 때 단 수)
+const CHAIN_TIERS := 5
+const CHAIN_TIER_M := 0.025
 
 @export var terrain_manager: Node3D
 var load_complete := false
 var placed_count := 0
 var _models: Dictionary = {}
+var _surface
 
 func _ready() -> void:
 	_initialize.call_deferred()
@@ -37,6 +42,7 @@ func _initialize() -> void:
 		await get_tree().process_frame
 		if not is_inside_tree():
 			return
+	_surface = SurfaceSampler.new(terrain_manager)
 	var instances: Dictionary = {}
 	_collect_paths(_read_json(PATHS).get("chains", []), maps.selected_map, instances)
 	_collect_placements(_read_json(CATALOG).get("placements", []), maps.selected_map, instances)
@@ -52,9 +58,12 @@ func _initialize() -> void:
 	load_complete = true
 
 func _collect_paths(chains: Array, map, instances: Dictionary) -> void:
-	var elevation := Callable(terrain_manager, "get_terrain_elevation")
+	var elevation := Callable(_surface, "height")
 	var asset_length := float(_read_json(PATHS).get("asset_length_m", 12.0))
-	for chain in chains:
+	for chain_index in range(chains.size()):
+		var chain: Dictionary = chains[chain_index]
+		# 생성기가 교차 체인끼리 겹치지 않게 정한 높이 단. 없으면 순번으로 나눈다
+		var tier := int(chain.get("tier", chain_index % CHAIN_TIERS))
 		var points := PackedVector2Array()
 		var inside := true
 		for node in chain.nodes:
@@ -62,17 +71,20 @@ func _collect_paths(chains: Array, map, instances: Dictionary) -> void:
 			points.append(_world_xz(node, map))
 		if not inside or points.size() < 2:
 			continue
-		var heights := PathProfile.node_heights(points, float(chain.half_width_m), PATH_CLEARANCE_M, elevation)
+		var profile := PathProfile.build(points, float(chain.half_width_m), PATH_CLEARANCE_M, elevation)
+		var heights: PackedFloat64Array = profile.heights
+		var slopes: PackedFloat64Array = profile.slopes
 		var scene := str(chain.scene)
 		if not instances.has(scene):
 			instances[scene] = []
 		for k in range(points.size() - 1):
 			if points[k].distance_to(points[k + 1]) < 0.5:
 				continue
-			var lift := ALTERNATE_LIFT_M * float(k % 2)
+			var lift := CHAIN_TIER_M * float(tier) + ALTERNATE_LIFT_M * float(k % 2)
 			var a := Vector3(points[k].x, heights[k] + lift, points[k].y)
 			var b := Vector3(points[k + 1].x, heights[k + 1] + lift, points[k + 1].y)
-			instances[scene].append(PathProfile.segment_transform(a, b, asset_length, SEGMENT_OVERLAP_M))
+			var slope := (slopes[k] + slopes[k + 1]) * 0.5
+			instances[scene].append(PathProfile.segment_transform(a, b, slope, asset_length, SEGMENT_OVERLAP_M))
 
 func _collect_placements(entries: Array, map, instances: Dictionary) -> void:
 	for entry in entries:
@@ -97,7 +109,7 @@ func _footprint_max(xz: Vector2, yaw: float, half: Array) -> float:
 	for sx in [-1.0, 0.0, 1.0]:
 		for sz in [-1.0, 0.0, 1.0]:
 			var p: Vector2 = xz + axis_x * sx + axis_z * sz
-			best = maxf(best, float(terrain_manager.get_terrain_elevation(p.x, p.y)))
+			best = maxf(best, _surface.height(p.x, p.y))
 	return best
 
 func _read_json(path: String) -> Dictionary:

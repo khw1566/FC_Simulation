@@ -33,6 +33,7 @@ PREVIEW_PX = 2048
 
 def build_chains(runs: list[PathRun], zone: RiversideZone, config: dict) -> list[dict]:
     chains = []
+    tiers = assign_tiers(runs)
     for index, run in enumerate(runs):
         mid = run.nodes[len(run.nodes) // 2]
         lon_mid = zone.world_to_lonlat(*mid)[0]
@@ -43,9 +44,33 @@ def build_chains(runs: list[PathRun], zone: RiversideZone, config: dict) -> list
             "surface": run.surface,
             "scene": style_for(run.highway, run.surface, lon_mid, config["garden_lon_range"]),
             "half_width_m": WALK_HALF_WIDTH_M,
+            "tier": tiers[index],
             "nodes": [[round(v, 9) for v in zone.world_to_lonlat(x, z)] for x, z in run.nodes],
         })
     return chains
+
+
+def assign_tiers(runs: list[PathRun], cell_m: float = 4.0, sample_m: float = 2.0) -> list[int]:
+    """교차·접하는 체인끼리 서로 다른 높이 단을 갖도록 탐욕 색칠한다. 같은 단끼리 겹치면 깜박인다."""
+    owners: dict[tuple[int, int], set[int]] = {}
+    cells_by_run = []
+    for index, run in enumerate(runs):
+        cells = set()
+        for a, b in zip(run.nodes[:-1], run.nodes[1:]):
+            count = max(1, int(math.dist(a, b) / sample_m))
+            for t in range(count + 1):
+                x = a[0] + (b[0] - a[0]) * t / count
+                z = a[1] + (b[1] - a[1]) * t / count
+                cx, cz = int(math.floor(x / cell_m)), int(math.floor(z / cell_m))
+                cells.update((cx + dx, cz + dz) for dx in (-1, 0, 1) for dz in (-1, 0, 1))
+        cells_by_run.append(cells)
+        for cell in cells:
+            owners.setdefault(cell, set()).add(index)
+    tiers = [-1] * len(runs)
+    for index, cells in enumerate(cells_by_run):
+        used = {tiers[other] for cell in cells for other in owners[cell] if other != index and tiers[other] >= 0}
+        tiers[index] = next(t for t in range(len(runs) + 1) if t not in used)
+    return tiers
 
 
 def build_benches(runs: list[PathRun], zone: RiversideZone, settings: dict) -> list[dict]:
@@ -151,6 +176,7 @@ def main() -> None:
         "length_m_by_highway": {k: round(v) for k, v in _length_by(runs).items()},
         "chains_by_scene": dict(Counter(c["scene"].rsplit("/", 1)[-1] for c in chains)),
         "benches": len(benches),
+        "max_tier": max((c["tier"] for c in chains), default=0),
     }
     write_json(OUT_DIR / "manifest.json", {
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
