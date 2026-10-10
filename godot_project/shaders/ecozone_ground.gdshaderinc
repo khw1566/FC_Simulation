@@ -13,6 +13,10 @@ uniform sampler2D ecozone_bamboo_litter : source_color, filter_linear_mipmap, re
 uniform sampler2D ecozone_reed_mud : source_color, filter_linear_mipmap, repeat_enable;
 uniform sampler2D ecozone_woodland_soil : source_color, filter_linear_mipmap, repeat_enable;
 uniform sampler2D ecozone_meadow : source_color, filter_linear_mipmap, repeat_enable;
+// 원경 숲 바닥색: 대숲·수림 구역은 멀리서 낙엽 바닥 대신 수관 평균색으로 칠해 숲으로 읽히게 한다.
+uniform sampler2D ecozone_canopy_bamboo : source_color, filter_linear_mipmap, repeat_enable;
+uniform sampler2D ecozone_canopy_broadleaf : source_color, filter_linear_mipmap, repeat_enable;
+uniform bool ecozone_has_canopy = false;
 uniform float ecozone_tile_m = 6.0;
 uniform float ecozone_fade_distance_m = 6000.0;
 // 원경 단색: ecozone_flat_near_m~far_m 구간에서 텍스처 무늬가 사라지고, 가장 작은 밉맵(=텍스처 평균색)에
@@ -37,9 +41,11 @@ vec3 ecozone_blend(vec3 base_albedo, vec2 world_xz, float view_distance) {
 	}
 	float flat_mix = smoothstep(ecozone_flat_near_m, ecozone_flat_far_m, view_distance);
 	vec2 c = vec2(0.5);
+	vec3 bamboo_far = ecozone_has_canopy ? textureLod(ecozone_canopy_bamboo, c, 12.0).rgb : textureLod(ecozone_bamboo_litter, c, 12.0).rgb;
+	vec3 woodland_far = ecozone_has_canopy ? textureLod(ecozone_canopy_broadleaf, c, 12.0).rgb : textureLod(ecozone_woodland_soil, c, 12.0).rgb;
 	vec3 flat_color = (textureLod(ecozone_lawn, c, 12.0).rgb * a.r + textureLod(ecozone_silvergrass, c, 12.0).rgb * a.g
-		+ textureLod(ecozone_bamboo_litter, c, 12.0).rgb * a.b + textureLod(ecozone_reed_mud, c, 12.0).rgb * a.a
-		+ textureLod(ecozone_woodland_soil, c, 12.0).rgb * b.r + textureLod(ecozone_meadow, c, 12.0).rgb * b.g) / weight;
+		+ bamboo_far * a.b + textureLod(ecozone_reed_mud, c, 12.0).rgb * a.a
+		+ woodland_far * b.r + textureLod(ecozone_meadow, c, 12.0).rgb * b.g) / weight;
 	// 수백 m 규모의 완만한 밝기 그라데이션(반복 무늬 없음)
 	float gradient = sin(world_xz.x * 0.0047 + 1.3) * sin(world_xz.y * 0.0039 - 0.7) * 0.6 + sin((world_xz.x + world_xz.y) * 0.0017) * 0.4;
 	flat_color *= 1.0 + gradient * ecozone_gradient_strength;

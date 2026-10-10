@@ -15,7 +15,9 @@
     "bamboo_litter": "res://assets/generated/taehwagang_ecozones/ground/bamboo_litter.png",
     "reed_mud": "res://assets/generated/taehwagang_ecozones/ground/reed_mud.png",
     "woodland_soil": "res://assets/generated/taehwagang_ecozones/ground/woodland_soil.png",
-    "meadow": "res://assets/generated/taehwagang_ecozones/ground/meadow.png"
+    "meadow": "res://assets/generated/taehwagang_ecozones/ground/meadow.png",
+    "canopy_bamboo": "res://assets/generated/taehwagang_ecozones/ground/canopy_bamboo.png",
+    "canopy_broadleaf": "res://assets/generated/taehwagang_ecozones/ground/canopy_broadleaf.png"
   },
   "tile_m": 6.0,
   "fade_distance_m": 6000.0,

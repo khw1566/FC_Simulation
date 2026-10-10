@@ -87,7 +87,8 @@ class ZoneExporter:
         """대숲·활엽수림 구역을 닫힘 연산으로 덩어리화한 셀 목록(라벨 격자 좌표)을 기록한다."""
         ids = {zone["key"]: zone["id"] for zone in self.config["zones"]}
         masses = []
-        for spec in self.config.get("forest_masses", []):
+        specs = self.config.get("forest_masses", []) if self.config.get("forest_masses_enabled", True) else []
+        for spec in specs:
             mask = labels == ids[spec["zone"]]
             steps = int(round(float(spec.get("close_m", 0.0)) / self.raster.cell_m))
             if steps:
@@ -134,7 +135,7 @@ class ZoneExporter:
             "source_world_size_m": self.raster.world_size_m,
             "splat_a": f"{self.res}/ecozone_splat_a_rgba.png",
             "splat_b": f"{self.res}/ecozone_splat_b_rgba.png",
-            "textures": {name: f"{self.res}/ground/{name}.png" for name in ("lawn", "silvergrass_ground", "bamboo_litter", "reed_mud", "woodland_soil", "meadow")},
+            "textures": {name: f"{self.res}/ground/{name}.png" for name in ("lawn", "silvergrass_ground", "bamboo_litter", "reed_mud", "woodland_soil", "meadow", "canopy_bamboo", "canopy_broadleaf")},
             "tile_m": blend.get("tile_m", 6.0),
             "fade_distance_m": blend.get("fade_distance_m", 6000.0),
             "flat_near_m": blend.get("flat_near_m", 150.0),

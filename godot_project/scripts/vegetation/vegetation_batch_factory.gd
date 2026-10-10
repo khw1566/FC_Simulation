@@ -31,7 +31,9 @@ static func build(scene_template: String, kind: String, transforms: Array[Transf
 			node.name = "%s_%d_%d_LOD%d" % [kind,key.x,key.y,lod]
 			node.position = origin
 			node.multimesh = multi
-			if material_override != null:
+			# 원경 카드(텍스처 알파 컷아웃)는 자체 재질을 유지하고, 정점 색 메시에만 흔들림 재질을 씌운다.
+			var own := mesh.surface_get_material(0) as BaseMaterial3D
+			if material_override != null and (own == null or own.albedo_texture == null):
 				node.material_override = material_override
 			node.visibility_range_begin = float(lod_ranges[lod][0])
 			node.visibility_range_end = float(lod_ranges[lod][1])

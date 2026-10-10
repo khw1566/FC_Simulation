@@ -32,6 +32,12 @@ static func bind(material: Material, ground: Dictionary, scale: Vector2, offset:
 		var texture := _texture(str(textures.get(key, "")), true)
 		if texture != null:
 			shader_material.set_shader_parameter(TEXTURE_UNIFORMS[key], texture)
+	var canopy_bamboo := _texture(str(textures.get("canopy_bamboo", "")), true)
+	var canopy_broadleaf := _texture(str(textures.get("canopy_broadleaf", "")), true)
+	if canopy_bamboo != null and canopy_broadleaf != null:
+		shader_material.set_shader_parameter("ecozone_canopy_bamboo", canopy_bamboo)
+		shader_material.set_shader_parameter("ecozone_canopy_broadleaf", canopy_broadleaf)
+		shader_material.set_shader_parameter("ecozone_has_canopy", true)
 	shader_material.set_shader_parameter("ecozone_flat_near_m", float(ground.get("flat_near_m", 150.0)))
 	shader_material.set_shader_parameter("ecozone_flat_far_m", float(ground.get("flat_far_m", 450.0)))
 	shader_material.set_shader_parameter("ecozone_tile_m", float(ground.get("tile_m", 6.0)))

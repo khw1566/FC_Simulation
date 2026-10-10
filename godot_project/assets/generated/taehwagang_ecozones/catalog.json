@@ -255,8 +255,8 @@
     "scatter": {
       "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
       "format": "JSON",
-      "sha256": "8437f26c1c3af07586452dfe08d9862b69711c8e432b72f5ba2bf966fc310ab2",
-      "size_bytes": 5008743,
+      "sha256": "43cd4c382393c28ea790f23a08b8c6672b6785d4f5d5c8f6ac1a997072c04cbf",
+      "size_bytes": 5008695,
       "type": "ecozone_scatter",
       "metadata": {
         "bbox": {
@@ -274,8 +274,8 @@
     "forest_masses": {
       "file_path": "res://assets/generated/taehwagang_ecozones/forest_masses.json",
       "format": "JSON",
-      "sha256": "60c413d43181bf71b7f6e957cc0fca9c9d0e8ee823e8e2edd36cdb43a91c9e00",
-      "size_bytes": 486295,
+      "sha256": "f693b3f1617ed75c614e97254d1651e5caf0481b36b8629739222f5508169e4c",
+      "size_bytes": 454,
       "type": "ecozone_forest_mass",
       "metadata": {
         "bbox": null,
@@ -287,8 +287,8 @@
     "ground_blend": {
       "file_path": "res://assets/generated/taehwagang_ecozones/ground_blend.json",
       "format": "JSON",
-      "sha256": "de29ba83f1732f74e663adb572b830890d12f7c7a67dc44e6d8429985fbfe2b7",
-      "size_bytes": 987,
+      "sha256": "a854fc9033798c322f46f52c7bdb328ace27bcd9706dcbd2d66e775df94e2b15",
+      "size_bytes": 1179,
       "type": "ecozone_ground_texture",
       "metadata": {
         "bbox": null,
