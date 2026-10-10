@@ -108,7 +108,8 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 	float h_cu = (p.y - cu_base) / (cu_top - cu_base);
 	// 평평한 밑면과 위로 갈수록 좁아지는 돔(콜리플라워) 윤곽
 	float prof_cu = smoothstep(0.0, 0.07, h_cu) * (1.0 - smoothstep(0.0, w.w, h_cu) * 0.85);
-	float c_cu = w.x * prof_cu * step(h_cu, w.w);
+	// 꼭대기를 계단 대신 부드럽게 잘라 원경 윗면이 끊긴 점선으로 보이지 않게 한다.
+	float c_cu = w.x * prof_cu * (1.0 - smoothstep(w.w * 0.8, w.w, h_cu));
 
 	float h_st = (p.y - st_base) / (st_top - st_base);
 	float prof_st = smoothstep(0.0, 0.12, h_st) * (1.0 - smoothstep(0.5 + 0.4 * w.w, 1.0, h_st));
@@ -162,8 +163,8 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 	float shape = base * 0.5 + billow * 0.5;
 	float d = remap01(shape, 1.0 - c, 1.0) * c;
 	// 원경 LOD: 성긴 표본에서 자글거림이 생기지 않도록 고주파 형상을 기상도 윤곽으로 부드럽게 바꾼다.
-	float lod = smoothstep(8000.0, 30000.0, dist);
-	d = mix(d, c * smoothstep(0.2, 0.75, c) * 0.75, lod);
+	float lod = smoothstep(6000.0, 22000.0, dist);
+	d = mix(d, c * smoothstep(0.35, 0.85, c) * 0.75, lod);
 	if (detailed && d > 0.0 && dist < detail_distance) {
 		// 가장자리만 깎아 솜털 같은 경계를 만든다.
 		float det = texture(detail_noise, uvw * 7.0 + vec3(evolve * 3.0)).r;
@@ -232,6 +233,11 @@ float cirrus_lower(vec2 xz, float lod) {
 	return gate * clamp(cc * 0.32 + wisps * 0.35, 0.0, 0.5);
 }
 
+// 인터리브드 그래디언트 잡음: 반복 격자가 없어 베이어보다 무늬가 덜 드러난다.
+float ign(vec2 frag) {
+	return fract(52.9829189 * fract(dot(frag, vec2(0.06711056, 0.00583715))));
+}
+
 float bayer4(vec2 frag) {
 	ivec2 q = ivec2(mod(frag, 4.0));
 	int i = q.x + q.y * 4;
@@ -265,6 +271,14 @@ vec3 shade(vec3 p, vec4 w, float d, float hfrac, float dist, float phase) {
 	return mix(cloud_shadow_color.rgb * ambient_scale, color, clamp(sunlit * 1.4 + hfrac * 0.4, 0.0, 1.0));
 }
 
+// 구간 중앙 한 점의 대략적 밀도로 구름 유무를 판단한다.
+bool probe_hit(vec3 cam, vec3 dir, float t, float ds) {
+	vec3 pm = cam + dir * (t + ds * 0.5);
+	vec4 w = weather_at(pm.xz + wind_offset, max(ds * 0.25, refine_stride));
+	float hf_probe;
+	return density_at(pm, w, t, false, hf_probe) > 0.002;
+}
+
 void fragment() {
 	vec3 cam = INV_VIEW_MATRIX[3].xyz;
 	vec4 far_view = INV_PROJECTION_MATRIX * vec4(SCREEN_UV * 2.0 - 1.0, 0.5, 1.0);
@@ -288,9 +302,12 @@ void fragment() {
 	float mu = dot(dir, sun_direction);
 	float phase = clamp(mix(hg(mu, 0.6), hg(mu, -0.25), 0.3) * 12.566, 0.0, 4.0);
 	phase = mix(1.0, phase, 0.55);
-	// 4x4 베이어 순서 지터: 백색 잡음보다 반짝임이 적고 해상도에서 거의 보이지 않는다.
-	float jitter = bayer4(FRAGCOORD.xy);
-	float sub_jitter = fract(jitter * 7.31 + 0.37);
+	// 지터 폭을 좁혀 구간 중앙 근처에서만 흔든다: TAA가 없어 전폭 지터는 격자 점무늬로 그대로 보인다.
+	float n = ign(FRAGCOORD.xy);
+	// 지평선 쪽 광선은 구름이 화면에서 얇아 지터 잡음이 더 두드러지므로 폭을 더 줄인다.
+	float jitter_amt = mix(0.05, 0.15, smoothstep(0.02, 0.15, abs(dir.y)));
+	float jitter = 0.5 + (n - 0.5) * jitter_amt;
+	float sub_jitter = 0.5 + (fract(n * 7.31 + 0.37) - 0.5) * jitter_amt;
 
 	// 1. 저·중층 슬래브
 	float t0 = 0.0;
@@ -309,39 +326,77 @@ void fragment() {
 		// 지평선 쪽 긴 광선(화면의 작은 띠)에만 표본을 최대 2배까지 더 준다.
 		int n_steps = int(clamp(float(step_count) * span / 12000.0, float(step_count), min(64.0, float(step_count) * 2.0)));
 		float steps = float(n_steps);
-		bool prev_hit = false;
+		// 1차: 앞쪽이 촘촘한 2차 간격으로 구간 중앙만 값싸게 검사한다.
+		// 앞뒤 구간도 함께 보아, 구름 가장자리가 구간 중앙을 비껴가도 건너뛰지 않게 한다(원경 점무늬 원인).
+		float sj = jitter / steps;
+		bool hit_prev = false;
+		bool hit_cur = probe_hit(cam, dir, t0 + span * sj * sj, span * ((1.0 + jitter) * (1.0 + jitter) - jitter * jitter) / (steps * steps));
+		// 마지막으로 빈 공간이었던 거리: 구름에 들어서는 지점을 이분 탐색으로 찾는 데 쓴다.
+		float t_empty = t0;
 		for (int i = 0; i < 64; i++) {
 			if (i >= n_steps || transmit < 0.02) { break; }
-			// 1차: 앞쪽이 촘촘한 2차 간격으로 구간 중앙만 값싸게 검사
 			float s0 = (float(i) + jitter) / steps;
 			float s1 = (float(i) + 1.0 + jitter) / steps;
+			float s2 = (float(i) + 2.0 + jitter) / steps;
 			float t = t0 + span * s0 * s0;
 			float ds = span * (s1 * s1 - s0 * s0);
-			vec3 pm = cam + dir * (t + ds * 0.5);
-			vec4 w = weather_at(pm.xz + wind_offset, max(ds * 0.25, refine_stride));
-			float hf_probe;
-			bool hit = density_at(pm, w, t, false, hf_probe) > 0.002;
-			if (!hit && !prev_hit) { continue; }
-			prev_hit = hit;
-			// 2차: 구름이 있는 구간만 잘게 나눠 지터 표본으로 적분 (가장자리 계단 제거)
-			int sub = clamp(int(ceil(ds / refine_stride)), 1, 4);
+			bool hit_next = i + 1 < n_steps && probe_hit(cam, dir, t + ds, span * (s2 * s2 - s1 * s1));
+			bool run = hit_prev || hit_cur || hit_next;
+			hit_prev = hit_cur;
+			hit_cur = hit_next;
+			if (!run) {
+				t_empty = t + ds;
+				continue;
+			}
+			// 2차: 구름이 있는 구간만 거리에 비례한 간격으로 최대 16회까지 나눠 적분한다.
+			float stride = max(refine_stride, t * 0.003);
+			int sub = clamp(int(ceil(ds / stride)), 1, 16);
 			float sds = ds / float(sub);
-			for (int k = 0; k < 4; k++) {
+			for (int k = 0; k < 16; k++) {
 				if (k >= sub) { break; }
 				float ts = t + (float(k) + sub_jitter) * sds;
 				vec3 p = cam + dir * ts;
+				// 기상도는 표본마다 다시 읽는다: 구간 단위로 고정하면 구간 경계가 가로 띠와 점무늬로 드러난다.
+				vec4 ws = weather_at(p.xz + wind_offset, max(sds, refine_stride));
 				float hfrac;
-				float d = density_at(p, w, ts, true, hfrac);
-				if (d > 0.002) {
-					vec3 col = shade(p, w, d, hfrac, ts, phase);
-					col = mix(col, haze_color * ambient_scale, 1.0 - exp(-ts * haze_density));
-					// 원경은 소광을 낮춰 여러 표본이 평균되도록 해 반짝임을 줄인다.
-					float ext = extinction * mix(1.0, 0.4, smoothstep(8000.0, 35000.0, ts));
-					float a = (1.0 - exp(-ext * d * sds)) * (1.0 - smoothstep(max_distance * 0.75, max_distance, ts));
-					acc += transmit * a * col;
-					transmit *= 1.0 - a;
-					if (transmit < 0.02) { break; }
+				float d = density_at(p, ws, ts, true, hfrac);
+				if (d <= 0.002) {
+					t_empty = ts;
+					continue;
 				}
+				// 구름에 처음 들어선 표본: 원경에서는 표본 하나가 거의 불투명하므로, 표본 위치 대신
+				// 실제 경계를 이분 탐색해 그 지점부터 적분·조명한다. 표본 격자가 화면에 띠·점무늬로 남지 않는다.
+				float seg = sds;
+				if (t_empty > ts - sds * 1.5) {
+					float lo = t_empty;
+					float hi = ts;
+					for (int b = 0; b < 4; b++) {
+						float tm = (lo + hi) * 0.5;
+						vec3 pb = cam + dir * tm;
+						float hf_b;
+						if (density_at(pb, weather_at(pb.xz + wind_offset, max(sds, refine_stride)), tm, true, hf_b) > 0.002) {
+							hi = tm;
+						} else {
+							lo = tm;
+						}
+					}
+					float te = (lo + hi) * 0.5;
+					seg = ts + sds * 0.5 - te;
+					// 경계 바로 안쪽에서 밀도와 조명을 다시 구한다.
+					float tin = te + min(seg, sds) * 0.25;
+					p = cam + dir * tin;
+					ws = weather_at(p.xz + wind_offset, max(sds, refine_stride));
+					d = max(density_at(p, ws, tin, true, hfrac), 0.002);
+				}
+				t_empty = -1.0e9;
+				vec3 col = shade(p, ws, d, hfrac, ts, phase);
+				col = mix(col, haze_color * ambient_scale, 1.0 - exp(-ts * haze_density));
+				// 원경은 소광을 낮춰 여러 표본이 평균되도록 해 반짝임을 줄인다.
+				float ext = extinction * mix(1.0, 0.3, smoothstep(5000.0, 25000.0, ts));
+				float a = (1.0 - exp(-ext * d * seg)) * (1.0 - smoothstep(max_distance * 0.75, max_distance, ts));
+				acc += transmit * a * col;
+				transmit *= 1.0 - a;
+				if (transmit < 0.02) { break; }
 			}
 		}
 	}
