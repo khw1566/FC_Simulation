@@ -1,67 +1,53 @@
 {
-  "last_updated": "2026-10-09 23:36:47",
-  "map_id": "taehwagang_dunchi",
-  "source_mask_bbox": {
-    "south": 35.515,
-    "north": 35.5872,
-    "west": 129.2738,
-    "east": 129.3622
+ "last_updated": "2026-10-10 16:07:19",
+ "map_id": "taehwagang_dunchi",
+ "sources": {
+  "roads_raw": "C:\\Users\\work\\Desktop\\FC_Simulation_dunchi\\data\\raw\\taehwagang_dunchi\\roads_raw.json",
+  "map_dir": "C:\\Users\\work\\Desktop\\FC_Simulation_dunchi\\godot_project\\assets\\maps\\taehwagang_dunchi"
+ },
+ "bbox": {
+  "south": 35.515,
+  "north": 35.5872,
+  "west": 129.2738,
+  "east": 129.3622
+ },
+ "stats": {
+  "chains": 178,
+  "segments": 2847,
+  "length_m_by_highway": {
+   "footway": 23916,
+   "pedestrian": 1761,
+   "path": 631,
+   "cycleway": 7714
   },
-  "source_map_dir": "..\\FC_Simulation_dunchi\\godot_project\\assets\\maps\\taehwagang_dunchi",
-  "sites": [
-    {
-      "id": "garden",
-      "name_ko": "태화강 국가정원",
-      "layout": "garden_promenade",
-      "segments": 10,
-      "length_m": 120.0,
-      "center_lonlat": [
-        129.2968998,
-        35.5489379
-      ],
-      "yaw_degrees": -25.0,
-      "offset_from_hint_m": 11.4,
-      "placed": 27
-    },
-    {
-      "id": "midstream",
-      "name_ko": "태화강 중류 둔치",
-      "layout": "cycle_path",
-      "segments": 8,
-      "length_m": 96.0,
-      "center_lonlat": [
-        129.3195994,
-        35.5497473
-      ],
-      "yaw_degrees": -63.62,
-      "offset_from_hint_m": 45.8,
-      "placed": 14
-    },
-    {
-      "id": "myeongchon",
-      "name_ko": "명촌 둔치",
-      "layout": "waterside_picnic",
-      "segments": 8,
-      "length_m": 96.0,
-      "center_lonlat": [
-        129.3432983,
-        35.552418
-      ],
-      "yaw_degrees": -59.42,
-      "offset_from_hint_m": 53.6,
-      "placed": 16
-    }
-  ],
-  "assets": {
-    "placements.json": {
-      "file_path": "res://assets/generated/riverside_trial/placements.json",
-      "sha256": "5013b166fd1b45cd640521391de21fa8ac948ecb5e1bc45813821fedd40a5600",
-      "size_bytes": 28023
-    },
-    "preview.png": {
-      "file_path": "res://assets/generated/riverside_trial/preview.png",
-      "sha256": "ae4b3ccef014adc60c998ab91912b3daab3f0fb17b911c196721691f51edca6c",
-      "size_bytes": 6232
-    }
+  "chains_by_scene": {
+   "walk_paver_gray_w3_straight.tscn": 44,
+   "walk_paver_red_w3_straight.tscn": 92,
+   "walk_gravel_w3_straight.tscn": 9,
+   "walk_forest_w3_straight.tscn": 1,
+   "walk_granite_w3_straight.tscn": 1,
+   "walk_asphalt_w3_straight.tscn": 2,
+   "walk_boardwalk_w3_straight.tscn": 1,
+   "walk_earth_w3_straight.tscn": 12,
+   "walk_shared_cycle_w3_straight.tscn": 16
+  },
+  "benches": 235
+ },
+ "assets": {
+  "paths.json": {
+   "file_path": "res://assets/generated/riverside_trial/paths.json",
+   "sha256": "7a325bbc1c298f43aeeb2599e2f7b47466e9ef0331f0df40444173982275647c",
+   "size_bytes": 207802
+  },
+  "placements.json": {
+   "file_path": "res://assets/generated/riverside_trial/placements.json",
+   "sha256": "006f1a6da31db2273ee69527c12f476512821d4e0912a145c63bab76cd03f43f",
+   "size_bytes": 77179
+  },
+  "preview.png": {
+   "file_path": "res://assets/generated/riverside_trial/preview.png",
+   "sha256": "acf6c27c56d9024dac5f89bea4659eee60046b6b6dde2f9281d3941de8f0ec91",
+   "size_bytes": 38425
   }
+ }
 }

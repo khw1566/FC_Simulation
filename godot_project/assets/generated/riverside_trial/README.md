@@ -1,22 +1,17 @@
-# 태화강 국가정원·둔치 보도 시범 배치
-코덱스 제작 보행로·부속물(`road_assets`)과 정원 시설물(`garden_furniture/near`)을 태화강 둔치 지도에 시범 배치한 결과다. 게임 씬에는 직접 연결하지 않았다.
+# 태화강 둔치 보도 배치
+둔치 지형 스레드의 OSM 보행로 선형(`roads_raw.json`)과 둔치 배치 가능·수면 마스크로 태화강 둔치 보도와 벤치를 배치한 결과다. 현재 지도에서는 `RiversideTrialPlacer`가 읽는다.
 ## 구성
-- `placements.json`: `taehwagang_dunchi` 지도 `RiversideAssetPlacer` 스키마(lonlat, ground=terrain)와 같은 형식의 배치 57건
-- `preview.png`: 배치 가능 마스크(회색) 위 평면 배치도, 각 칸 140 m, 북쪽이 위
-- `manifest.json`: 후보지별 구간 길이, 중심 좌표, 방향, 파일 해시
-## 후보지
-- garden(태화강 국가정원): 적갈색 블록 보도 120 m, 한쪽 녹지 띠, 벤치, 석재 광장 위 육각 정자
-- midstream(중류 둔치): 보행·자전거 공유길 96 m, 평벤치, 천막 아래 피크닉 테이블
-- myeongchon(명촌 둔치): 수변 석판 보도 96 m, 피크닉 테이블, 벤치, 행사 천막
-## 배치 방식
-- 후보지 중심 반경 700 m 안에서 둔치 배치 가능 마스크를 따라 폭 18 m 직선 구간이 가장 길게 이어지는 위치·방향을 찾는다.
-- 보도 세그먼트(12 m)를 접속점 간격으로 잇고 시설물을 진행 방향 좌우 오프셋으로 둔다. 높이는 배치기에서 지형 높이에 맞춘다.
-- 후보지 중심은 대략 위치이며 실제 시설 배치를 복제하지 않았다. 벤치 정면 방향은 확인하지 않았다.
-## 적용
-- 둔치 지도의 `assets/maps/taehwagang_dunchi/placements.json` `placements` 배열에 병합하면 배치기가 읽는다.
-- 둔치 작업 폴더에는 아직 `road_assets`, `garden_furniture`가 없으므로 함께 복사해야 배치된다. 없으면 배치기가 경고 후 건너뛴다.
+- `paths.json`: 보도 체인 178개, 조각 2,847개. 체인마다 약 12 m 간격 접속점 위경도와 보도 씬을 가진다.
+- `placements.json`: 보도 옆 벤치 235개. `taehwagang_dunchi` 지도 `placements.json`과 같은 형식이다.
+- `preview.png`: 전체 둔치 평면도. 진회색 수면, 연회색 둔치, 검은 선 보도, 점 벤치.
+- `manifest.json`: 원자료 경로, 유형별 길이, 파일 해시.
+## 선정과 형태
+- 보행로·자전거길·보행자 도로 중 둔치 마스크를 40 m 넓힌 권역 안에 60% 이상 있는 선형만 쓴다. 수면 위, 교량, 터널, 광장 면형은 뺀다.
+- 포장 태그가 있으면 그 재질(아스팔트, 자갈, 목재 데크 등)을, 없으면 유형별 기본값을 쓴다. 국가정원 구간 보도는 적갈색 블록, 자전거길은 공유길이다.
+- 게임에서는 이웃 조각이 접속점 높이를 공유하고 조각 폭 전체가 지형 위에 오도록 올린다. 굽은 접속부는 조각 끝을 0.6 m씩 겹쳐 틈을 덮는다.
+- 같은 씬은 400 m 격자별 MultiMesh로 묶고 3 km 밖은 그리지 않는다.
 ## 재생성
 ```powershell
-python -m pipeline.processors.riverside_trial.build_trial_placements --map-dir <taehwagang_dunchi 지도 폴더>
+python -m pipeline.processors.riverside_paths.build_riverside_paths
 ```
-후보지와 탐색 조건은 `config/riverside_trial_sites.json`, 레이아웃은 `pipeline/processors/riverside_trial/site_layouts.py`에서 바꾼다.
+기본 입력은 옆 작업 폴더 `FC_Simulation_dunchi`의 둔치 지도와 `data/raw/taehwagang_dunchi/roads_raw.json`이다. 조건은 `config/riverside_paths.json`에서 바꾼다. 예전 3곳 시범 배치 생성기(`pipeline/processors/riverside_trial/build_trial_placements.py`)는 같은 `placements.json`을 덮어쓰므로 다시 실행하지 않는다.

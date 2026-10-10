@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "basis_ko": "둔치 지형 스레드가 수집한 OSM 보행로·자전거길 선형(roads_raw.json)과 둔치 배치 가능 마스크로 태화강 둔치 보도를 배치한다. 둔치 마스크를 제방·강변도로 폭만큼 넓힌 권역 안의 선형만 쓰고, 수면 위와 교량·터널 구간은 뺀다.",
+  "map_id": "taehwagang_dunchi",
+  "roads_raw": "data/raw/taehwagang_dunchi/roads_raw.json",
+  "path_highways": ["footway", "path", "cycleway", "pedestrian"],
+  "zone_dilate_m": 40.0,
+  "min_zone_share": 0.6,
+  "min_run_m": 12.0,
+  "segment_length_m": 12.0,
+  "garden_lon_range": [129.2880, 129.3060],
+  "bench": {
+    "spacing_m": 80.0,
+    "lateral_m": 2.3,
+    "highways": ["footway", "path"],
+    "require_placeable": true
+  }
+}
