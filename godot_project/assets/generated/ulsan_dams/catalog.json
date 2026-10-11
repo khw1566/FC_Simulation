@@ -1,0 +1,524 @@
+{
+  "version": 1,
+  "survey_date": "2026-10-11",
+  "scope": "울산 관내 주요 용수댐 5개소. 농업용 저수지와 사방댐은 제외.",
+  "status": "research_based_simplified",
+  "sources": {
+    "kwater": "https://www.kwater.or.kr/water/sub01/sub05/20060752/works.do?brdId=KO27&mobileYn=Y&s_flag=1&s_mid=248&s_officecode=20060752",
+    "seonam": "https://www.kwater.or.kr/busi/sub02/facilitiespresent03Page.do?s_mid=1515",
+    "hoeya": "https://www.ulsan.go.kr/archive/us/nUlsan/NL/LR.do",
+    "hoeya_future_gates": "https://www.ulsan.go.kr/u/rep/bbs/view.do?bbsId=BBS_0000000000000027&dataId=183282&mId=001004003001000000",
+    "osm": "https://www.openstreetmap.org/copyright",
+    "imagery": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+  },
+  "model_policy": {
+    "units": "metres",
+    "origin": "댐마루 중앙, Y=0",
+    "axes": "+X=축선 시작에서 끝, -Z=저수지측",
+    "crest_width_m_estimate": 6.0,
+    "upstream_slope_estimate": 2.0,
+    "downstream_slope_estimate": 2.2,
+    "height_policy": "현재 지도 DEM 축선 내부 표본의 90백분위 + 0.35m. 측량 댐마루 표고가 아님.",
+    "water_policy": "기존 저수지 수계와 수위를 유지. 수문·취수탑·관리동·방류 효과는 미조사로 생략.",
+    "lod_switch_m": 3500,
+    "visibility_end_m": 24000
+  },
+  "dams": [
+    {
+      "id": "sayeon",
+      "name_ko": "사연댐",
+      "type": "ECRD",
+      "type_ko": "중앙차수벽식 사력댐",
+      "official_length_m": 300,
+      "official_height_m": 46,
+      "spec_source": "kwater",
+      "reservoir_osm_id": 37220214,
+      "axis_lonlat": [
+        [
+          129.1930228,
+          35.5810329
+        ],
+        [
+          129.1947024,
+          35.5789414
+        ]
+      ],
+      "axis_osm_ids": [
+        166906642
+      ],
+      "axis_status": "osm_dam_axis",
+      "notes": "이름이 붙은 OSM 면 469893650은 별도 여수로 구역이므로 본댐 축선으로 사용하지 않음. K-water 시설소개 일부 본문에 대곡댐 제원과 혼재한 값이 있어 지역본부 시설현황 표의 300m/46m 채택."
+    },
+    {
+      "id": "daegok",
+      "name_ko": "대곡댐",
+      "type": "CFRD",
+      "type_ko": "콘크리트 표면차수벽형 석괴댐",
+      "official_length_m": 190,
+      "official_height_m": 52,
+      "spec_source": "kwater",
+      "reservoir_osm_id": 382710949,
+      "axis_lonlat": [
+        [
+          129.174595,
+          35.6194633
+        ],
+        [
+          129.1749907,
+          35.6177942
+        ]
+      ],
+      "axis_osm_ids": [
+        382710956
+      ],
+      "axis_status": "osm_dam_axis",
+      "notes": "표면차수벽을 저수지측 사면에 표현. 취수탑 및 여수로 부속 구조 미조사."
+    },
+    {
+      "id": "daeam",
+      "name_ko": "대암댐",
+      "type": "ECRD",
+      "type_ko": "중앙차수벽식 사력댐",
+      "official_length_m": 318,
+      "official_height_m": 27,
+      "spec_source": "kwater",
+      "reservoir_osm_id": 37220310,
+      "axis_lonlat": [
+        [
+          129.1840616,
+          35.5419782
+        ],
+        [
+          129.1826633,
+          35.5443396
+        ]
+      ],
+      "axis_osm_ids": [
+        1389839978
+      ],
+      "axis_status": "inferred_crest_road_and_imagery",
+      "notes": "저수지 북동단 본댐의 마루 관리도로를 공개 항공영상과 대조. 초기 서남단 후보 도로는 유입부 도로로 판명하여 제외. 공개 축선 길이 약 292m와 공식 318m의 차이는 보존하며 끝부분 지형을 추정 연장하지 않음. 수문 및 여수로는 생략."
+    },
+    {
+      "id": "seonam",
+      "name_ko": "선암댐",
+      "type": "EF",
+      "type_ko": "중앙차수벽형 흙댐",
+      "official_length_m": 331,
+      "official_height_m": 22,
+      "spec_source": "seonam",
+      "reservoir_osm_id": 998164001,
+      "axis_lonlat": [
+        [
+          129.3315982,
+          35.5168119
+        ],
+        [
+          129.3315453,
+          35.5190389
+        ]
+      ],
+      "axis_osm_ids": [
+        469846115
+      ],
+      "axis_status": "inferred_crest_footway",
+      "notes": "저수지 동측 본댐의 직선 마루 산책로와 항공영상을 대조. 공개 직선 구간 약 248m와 공식 331m의 차이를 보존하며 임의로 연장하지 않음. 현장 측량 좌표가 아님."
+    },
+    {
+      "id": "hoeya",
+      "name_ko": "회야댐",
+      "type": "ROCKFILL",
+      "type_ko": "석괴댐",
+      "official_length_m": 424,
+      "official_height_m": 24.5,
+      "spec_source": "hoeya",
+      "reservoir_osm_id": 156408222,
+      "axis_lonlat": [
+        [
+          129.2786208,
+          35.4706564
+        ],
+        [
+          129.2824689,
+          35.4722296
+        ]
+      ],
+      "axis_osm_ids": [
+        156415883,
+        969960295
+      ],
+      "axis_status": "osm_dam_axis",
+      "notes": "본댐과 서남측 여수로 156415884를 구분. 2026-08-27 수문 설치 확정 발표는 향후 사업으로 보고 현재 모델에 수문을 추가하지 않음."
+    }
+  ],
+  "palette": {
+    "rock": [
+      0.48,
+      0.49,
+      0.46
+    ],
+    "concrete": [
+      0.64,
+      0.65,
+      0.63
+    ],
+    "earth": [
+      0.35,
+      0.4,
+      0.28
+    ],
+    "road": [
+      0.24,
+      0.25,
+      0.25
+    ],
+    "rail": [
+      0.7,
+      0.71,
+      0.69
+    ]
+  },
+  "models": [
+    {
+      "id": "sayeon",
+      "name_ko": "사연댐",
+      "type": "ECRD",
+      "type_ko": "중앙차수벽식 사력댐",
+      "official_length_m": 300,
+      "official_height_m": 46,
+      "spec_source": "kwater",
+      "reservoir_osm_id": 37220214,
+      "axis_lonlat": [
+        [
+          129.1930228,
+          35.5810329
+        ],
+        [
+          129.1947024,
+          35.5789414
+        ]
+      ],
+      "axis_osm_ids": [
+        166906642
+      ],
+      "axis_status": "osm_dam_axis",
+      "notes": "이름이 붙은 OSM 면 469893650은 별도 여수로 구역이므로 본댐 축선으로 사용하지 않음. K-water 시설소개 일부 본문에 대곡댐 제원과 혼재한 값이 있어 지역본부 시설현황 표의 300m/46m 채택.",
+      "anchor": {
+        "lon": 129.1938626,
+        "lat": 35.579987149999994
+      },
+      "axis_length_m": 278.0861350767887,
+      "axis_yaw_rad": -0.9922225357719927,
+      "scene_path": "res://assets/generated/ulsan_dams/sayeon.tscn",
+      "lods": [
+        {
+          "lod": "near",
+          "file_path": "res://assets/generated/ulsan_dams/sayeon_near.glb",
+          "triangles": 1900,
+          "size_bytes": 145064,
+          "sha256": "46951959f4ef12517a9cbd9c947b9e5e0625f4b0c21b2493aca6164e7675544c",
+          "aabb_min_m": [
+            -150.06,
+            -46.0,
+            -95.0
+          ],
+          "aabb_max_m": [
+            150.06,
+            0.72,
+            104.2
+          ]
+        },
+        {
+          "lod": "far",
+          "file_path": "res://assets/generated/ulsan_dams/sayeon_far.glb",
+          "triangles": 1444,
+          "size_bytes": 117068,
+          "sha256": "bdab000a0f9444263eb230eeb524742f216551c581e20aa6ef38c639dd6e456a",
+          "aabb_min_m": [
+            -150.0,
+            -46.0,
+            -95.0
+          ],
+          "aabb_max_m": [
+            150.0,
+            0,
+            104.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daegok",
+      "name_ko": "대곡댐",
+      "type": "CFRD",
+      "type_ko": "콘크리트 표면차수벽형 석괴댐",
+      "official_length_m": 190,
+      "official_height_m": 52,
+      "spec_source": "kwater",
+      "reservoir_osm_id": 382710949,
+      "axis_lonlat": [
+        [
+          129.174595,
+          35.6194633
+        ],
+        [
+          129.1749907,
+          35.6177942
+        ]
+      ],
+      "axis_osm_ids": [
+        382710956
+      ],
+      "axis_status": "osm_dam_axis",
+      "notes": "표면차수벽을 저수지측 사면에 표현. 취수탑 및 여수로 부속 구조 미조사.",
+      "anchor": {
+        "lon": 129.17479285000002,
+        "lat": 35.61862875
+      },
+      "axis_length_m": 189.22323423694485,
+      "axis_yaw_rad": -1.3804104028962552,
+      "scene_path": "res://assets/generated/ulsan_dams/daegok.tscn",
+      "lods": [
+        {
+          "lod": "near",
+          "file_path": "res://assets/generated/ulsan_dams/daegok_near.glb",
+          "triangles": 1340,
+          "size_bytes": 101072,
+          "sha256": "fb716a39310c7f966116eb3de5bb580b9ead5cc1456495354353b70b44f4521c",
+          "aabb_min_m": [
+            -95.06,
+            -52.0,
+            -106.81672654330019
+          ],
+          "aabb_max_m": [
+            95.06,
+            0.72,
+            117.16539919763021
+          ]
+        },
+        {
+          "lod": "far",
+          "file_path": "res://assets/generated/ulsan_dams/daegok_far.glb",
+          "triangles": 992,
+          "size_bytes": 79560,
+          "sha256": "bbc0dc7ad0f74163f5146370ed999c4fa2d3d5e0164787699e867e20aad98f6b",
+          "aabb_min_m": [
+            -95.0,
+            -52.0,
+            -106.78672654330019
+          ],
+          "aabb_max_m": [
+            95.0,
+            0,
+            117.16539919763021
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daeam",
+      "name_ko": "대암댐",
+      "type": "ECRD",
+      "type_ko": "중앙차수벽식 사력댐",
+      "official_length_m": 318,
+      "official_height_m": 27,
+      "spec_source": "kwater",
+      "reservoir_osm_id": 37220310,
+      "axis_lonlat": [
+        [
+          129.1840616,
+          35.5419782
+        ],
+        [
+          129.1826633,
+          35.5443396
+        ]
+      ],
+      "axis_osm_ids": [
+        1389839978
+      ],
+      "axis_status": "inferred_crest_road_and_imagery",
+      "notes": "저수지 북동단 본댐의 마루 관리도로를 공개 항공영상과 대조. 초기 서남단 후보 도로는 유입부 도로로 판명하여 제외. 공개 축선 길이 약 292m와 공식 318m의 차이는 보존하며 끝부분 지형을 추정 연장하지 않음. 수문 및 여수로는 생략.",
+      "anchor": {
+        "lon": 129.18336245,
+        "lat": 35.5431589
+      },
+      "axis_length_m": 291.7926515963581,
+      "axis_yaw_rad": 2.0197930736770773,
+      "scene_path": "res://assets/generated/ulsan_dams/daeam.tscn",
+      "lods": [
+        {
+          "lod": "near",
+          "file_path": "res://assets/generated/ulsan_dams/daeam_near.glb",
+          "triangles": 1508,
+          "size_bytes": 111172,
+          "sha256": "6b293c17041cd7b11344e2ff8e069fc72327ccd86a0bc46338ffa3f7977480e0",
+          "aabb_min_m": [
+            -159.06,
+            -27.0,
+            -57.0
+          ],
+          "aabb_max_m": [
+            159.06,
+            0.72,
+            62.400000000000006
+          ]
+        },
+        {
+          "lod": "far",
+          "file_path": "res://assets/generated/ulsan_dams/daeam_far.glb",
+          "triangles": 1028,
+          "size_bytes": 81736,
+          "sha256": "fc2610f3e80e46336e4f9c5e2268111d7d52d980bd2079a8681318e6a161d238",
+          "aabb_min_m": [
+            -159.0,
+            -27.0,
+            -57.0
+          ],
+          "aabb_max_m": [
+            159.0,
+            0,
+            62.400000000000006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seonam",
+      "name_ko": "선암댐",
+      "type": "EF",
+      "type_ko": "중앙차수벽형 흙댐",
+      "official_length_m": 331,
+      "official_height_m": 22,
+      "spec_source": "seonam",
+      "reservoir_osm_id": 998164001,
+      "axis_lonlat": [
+        [
+          129.3315982,
+          35.5168119
+        ],
+        [
+          129.3315453,
+          35.5190389
+        ]
+      ],
+      "axis_osm_ids": [
+        469846115
+      ],
+      "axis_status": "inferred_crest_footway",
+      "notes": "저수지 동측 본댐의 직선 마루 산책로와 항공영상을 대조. 공개 직선 구간 약 248m와 공식 331m의 차이를 보존하며 임의로 연장하지 않음. 현장 측량 좌표가 아님.",
+      "anchor": {
+        "lon": 129.33157175,
+        "lat": 35.517925399999996
+      },
+      "axis_length_m": 247.9559710257834,
+      "axis_yaw_rad": 1.5901280440255705,
+      "scene_path": "res://assets/generated/ulsan_dams/seonam.tscn",
+      "lods": [
+        {
+          "lod": "near",
+          "file_path": "res://assets/generated/ulsan_dams/seonam_near.glb",
+          "triangles": 1436,
+          "size_bytes": 105380,
+          "sha256": "99220f1432be254c025f366b1c48e56d3bb3e8a8ac897471111d749fea0c9bf2",
+          "aabb_min_m": [
+            -165.56,
+            -22.0,
+            -47.0
+          ],
+          "aabb_max_m": [
+            165.56,
+            0.72,
+            51.400000000000006
+          ]
+        },
+        {
+          "lod": "far",
+          "file_path": "res://assets/generated/ulsan_dams/seonam_far.glb",
+          "triangles": 956,
+          "size_bytes": 75940,
+          "sha256": "66c7408a3115d5f446dc3d98f1717c815517f57dadf37601509c87ebf15aa539",
+          "aabb_min_m": [
+            -165.5,
+            -22.0,
+            -47.0
+          ],
+          "aabb_max_m": [
+            165.5,
+            0,
+            51.400000000000006
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hoeya",
+      "name_ko": "회야댐",
+      "type": "ROCKFILL",
+      "type_ko": "석괴댐",
+      "official_length_m": 424,
+      "official_height_m": 24.5,
+      "spec_source": "hoeya",
+      "reservoir_osm_id": 156408222,
+      "axis_lonlat": [
+        [
+          129.2786208,
+          35.4706564
+        ],
+        [
+          129.2824689,
+          35.4722296
+        ]
+      ],
+      "axis_osm_ids": [
+        156415883,
+        969960295
+      ],
+      "axis_status": "osm_dam_axis",
+      "notes": "본댐과 서남측 여수로 156415884를 구분. 2026-08-27 수문 설치 확정 발표는 향후 사업으로 보고 현재 모델에 수문을 추가하지 않음.",
+      "anchor": {
+        "lon": 129.28054485,
+        "lat": 35.471443
+      },
+      "axis_length_m": 390.35653225502944,
+      "axis_yaw_rad": 0.4652403471362096,
+      "scene_path": "res://assets/generated/ulsan_dams/hoeya.tscn",
+      "lods": [
+        {
+          "lod": "near",
+          "file_path": "res://assets/generated/ulsan_dams/hoeya_near.glb",
+          "triangles": 1832,
+          "size_bytes": 131688,
+          "sha256": "8ee2d9030b0d760a4e4aab9004c04c148e9d5420e303c1e75d201bafe3889289",
+          "aabb_min_m": [
+            -212.06,
+            -24.5,
+            -51.98038312413308
+          ],
+          "aabb_max_m": [
+            212.06,
+            0.72,
+            56.87842143654639
+          ]
+        },
+        {
+          "lod": "far",
+          "file_path": "res://assets/generated/ulsan_dams/hoeya_far.glb",
+          "triangles": 1208,
+          "size_bytes": 93608,
+          "sha256": "e0fb32c0b6c54372447eac2acb4bb2c2efa8611af97c2b158d927fe0fc451d71",
+          "aabb_min_m": [
+            -212.0,
+            -24.5,
+            -51.98038312413308
+          ],
+          "aabb_max_m": [
+            212.0,
+            0,
+            56.87842143654639
+          ]
+        }
+      ]
+    }
+  ]
+}

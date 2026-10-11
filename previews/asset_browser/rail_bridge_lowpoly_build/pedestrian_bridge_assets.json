@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "assets": [
+    {"id": "gulhwa_daun_crossing", "name_ko": "굴화리–다운동 도보 징검다리", "length_m": 100.0, "width_m": 1.0, "deck_height_m": 0.65, "segment_m": 2.0, "accuracy": "2023년 보도 길이·폭 기반 근사. 하부 구조 및 높이는 제작 가정이며 현재 상태를 재현한 측량 모델이 아님.", "source_urls": ["https://www.iusm.co.kr/news/articleView.html?idxno=1027634"]},
+    {"id": "seonbawi_bridge", "name_ko": "선바위교", "length_m": 160.0, "width_m": 24.9, "deck_height_m": 8.0, "spans": 5, "accuracy": "공개 제원 및 OSM 선형 길이에 맞춘 직선 근사. 교각 수·높이·차선 구성과 상세 부재는 제작 가정.", "source_urls": ["https://krbridge.com/선바위교-울산광역시-울주군/", "https://www.fnnews.com/news/202003261441461345", "https://www.openstreetmap.org/way/153128115"]},
+    {"id": "generic_pedestrian_overpass", "name_ko": "범용 보행 육교", "length_m": 28.0, "width_m": 3.0, "deck_height_m": 6.2, "stair_run_m": 10.8, "step_count": 36, "accuracy": "특정 실물에 대응하지 않는 게임용 범용 모델. 길이는 중앙 경간 기준이며 계단 포함 길이는 49.6m.", "source_urls": []}
+  ]
+}

@@ -11,16 +11,16 @@
   "assets": {
     "station": {
       "file_path": "res://assets/generated/taehwagang/station.glb",
-      "sha256": "7b622cbbbf8be6646eaf7d70590bb197edd46a175b5ded4c39ce291d6affb4bc",
-      "size_bytes": 135548,
+      "sha256": "929331ffdb06669a89ed5f62d30a82300ac63495add144184334f757328f3ff9",
+      "size_bytes": 57412,
       "type": "station_district_model",
       "metadata": {
         "bbox": null,
         "elevation_min": 0.0,
-        "elevation_max": 26.05808960222799,
+        "elevation_max": 26.034317178054977,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1836
+          "triangles": 924
         },
         "aabb_min_m": [
           -59.0,
@@ -29,12 +29,22 @@
         ],
         "aabb_max_m": [
           59.0,
-          26.05808960222799,
+          26.034317178054977,
           34.00524109043984
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 924,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "태화강역",
+        "indexed_geometry": true
       }
     },
     "station_scene": {
@@ -45,10 +55,10 @@
       "metadata": {
         "bbox": null,
         "elevation_min": 0.0,
-        "elevation_max": 26.05808960222799,
+        "elevation_max": 26.034317178054977,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1836
+          "triangles": 924
         },
         "aabb_min_m": [
           -59.0,
@@ -57,18 +67,28 @@
         ],
         "aabb_max_m": [
           59.0,
-          26.05808960222799,
+          26.034317178054977,
           34.00524109043984
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 924,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "태화강역",
+        "indexed_geometry": true
       }
     },
     "rail_yard": {
       "file_path": "res://assets/generated/taehwagang/rail_yard.glb",
-      "sha256": "e4ef2fe56d8e79582317bb36853bdd55bbf324b511eaab03de4923ec36ea3b4b",
-      "size_bytes": 680972,
+      "sha256": "579e5190ebbd90b12e140200e50577bc88885e50f4b985278434f6df876ab0cc",
+      "size_bytes": 269376,
       "type": "station_district_model",
       "metadata": {
         "bbox": null,
@@ -76,7 +96,7 @@
         "elevation_max": 8.049143609346716,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 9396
+          "triangles": 4596
         },
         "aabb_min_m": [
           -55.06,
@@ -90,7 +110,17 @@
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 4596,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "역 승강장",
+        "indexed_geometry": true
       }
     },
     "rail_yard_scene": {
@@ -104,7 +134,7 @@
         "elevation_max": 8.049143609346716,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 9396
+          "triangles": 4596
         },
         "aabb_min_m": [
           -55.06,
@@ -118,13 +148,23 @@
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 4596,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "역 승강장",
+        "indexed_geometry": true
       }
     },
     "forecourt": {
       "file_path": "res://assets/generated/taehwagang/forecourt.glb",
-      "sha256": "046fa9e84a75e0c6f68e61adb6eb620231ce877ad117b097c48bb9bbb3a117c5",
-      "size_bytes": 267648,
+      "sha256": "4d576e8d8c54552ba355035659ab1767620223adfd5a1ae4a3b09b8180a15e90",
+      "size_bytes": 212204,
       "type": "station_district_model",
       "metadata": {
         "bbox": null,
@@ -132,7 +172,7 @@
         "elevation_max": 10.3,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3656
+          "triangles": 3592
         },
         "aabb_min_m": [
           -147.0,
@@ -146,7 +186,17 @@
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 3592,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "역 광장",
+        "indexed_geometry": true
       }
     },
     "forecourt_scene": {
@@ -160,7 +210,7 @@
         "elevation_max": 10.3,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3656
+          "triangles": 3592
         },
         "aabb_min_m": [
           -147.0,
@@ -174,13 +224,23 @@
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 3592,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "역 광장",
+        "indexed_geometry": true
       }
     },
     "district": {
       "file_path": "res://assets/generated/taehwagang/district.glb",
-      "sha256": "1d94dc392307577fdaf73dc7c669042d910a15c87fadd1d761fa886c78c6cbb3",
-      "size_bytes": 555064,
+      "sha256": "38ee2d790c8551a0ec2c43181cf631b36202a92a9dc4b2f5e5f1977736e98b53",
+      "size_bytes": 443208,
       "type": "station_district_model",
       "metadata": {
         "bbox": null,
@@ -202,7 +262,17 @@
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 7648,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "역전 구역",
+        "indexed_geometry": true
       }
     },
     "district_scene": {
@@ -230,21 +300,31 @@
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 7648,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "역전 구역",
+        "indexed_geometry": true
       }
     },
     "taehwagang_complete": {
       "file_path": "res://assets/generated/taehwagang/taehwagang_complete.glb",
-      "sha256": "c664eb40b49f0824933c5dc47f5e16a0016f3e992753b52517210cc204af8c2d",
-      "size_bytes": 1627456,
+      "sha256": "42aa2af4a2fd115c6c1badcac92413989f07dec457d0a3d6bca666511e9fb5ef",
+      "size_bytes": 970552,
       "type": "station_district_model",
       "metadata": {
         "bbox": null,
         "elevation_min": -2.0,
-        "elevation_max": 26.05808960222799,
+        "elevation_max": 26.034317178054977,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 22536
+          "triangles": 16760
         },
         "aabb_min_m": [
           -240.0,
@@ -253,12 +333,22 @@
         ],
         "aabb_max_m": [
           240.0,
-          26.05808960222799,
+          26.034317178054977,
           290.0
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 16760,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "태화강역 조립",
+        "indexed_geometry": true
       }
     },
     "taehwagang_complete_scene": {
@@ -269,10 +359,10 @@
       "metadata": {
         "bbox": null,
         "elevation_min": -2.0,
-        "elevation_max": 26.05808960222799,
+        "elevation_max": 26.034317178054977,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 22536
+          "triangles": 16760
         },
         "aabb_min_m": [
           -240.0,
@@ -281,12 +371,22 @@
         ],
         "aabb_max_m": [
           240.0,
-          26.05808960222799,
+          26.034317178054977,
           290.0
         ],
         "units": "meters",
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 16760,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "태화강역 조립",
+        "indexed_geometry": true
       }
     },
     "district_preview": {

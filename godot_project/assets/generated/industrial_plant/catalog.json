@@ -21,7 +21,7 @@
       "elevation_max": 90,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 4232
+        "triangles": 1440
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -62,7 +62,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/stack_concrete"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1440,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "stack_steel": {
       "label_ko": "슬림 강철 연통",
@@ -82,7 +91,7 @@
       "elevation_max": 55,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 6272
+        "triangles": 2352
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -123,7 +132,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/stack_steel"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2352,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "stack_triple": {
       "label_ko": "3구 집합 연통",
@@ -143,7 +161,7 @@
       "elevation_max": 62,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 4808
+        "triangles": 1552
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -194,7 +212,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/stack_triple"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1552,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "flare_lattice": {
       "label_ko": "격자 지지 플레어 탑",
@@ -214,7 +241,7 @@
       "elevation_max": 72,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 3008
+        "triangles": 2288
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -255,7 +282,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/flare_lattice"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2288,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "process_column": {
       "label_ko": "다단 정유 공정 탑",
@@ -275,7 +311,7 @@
       "elevation_max": 51.0,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 8216
+        "triangles": 3380
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -310,7 +346,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/process_column"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 3380,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "scrubber_tower": {
       "label_ko": "습식 세정·배기 탑",
@@ -330,7 +375,7 @@
       "elevation_max": 38,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 5292
+        "triangles": 2128
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -371,7 +416,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/scrubber_tower"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2128,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "rack_straight": {
       "label_ko": "배관 랙 직선",
@@ -391,7 +445,7 @@
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 240
+        "triangles": 192
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -436,7 +490,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/rack_straight"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 192,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "rack_elbow": {
       "label_ko": "배관 랙 곡관",
@@ -456,7 +519,7 @@
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 1536
+        "triangles": 576
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -501,7 +564,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/rack_elbow"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 576,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "rack_tee": {
       "label_ko": "배관 랙 분기",
@@ -521,7 +593,7 @@
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 432
+        "triangles": 336
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -576,7 +648,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/rack_tee"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 336,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "rack_cross": {
       "label_ko": "배관 랙 교차",
@@ -596,7 +677,7 @@
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 432
+        "triangles": 336
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -661,7 +742,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/rack_cross"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 336,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "rack_riser": {
       "label_ko": "배관 랙 높이 전환",
@@ -681,7 +771,7 @@
       "elevation_max": 9.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 504
+        "triangles": 360
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -726,7 +816,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/rack_riser"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 360,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "rack_double": {
       "label_ko": "배관 랙 2층",
@@ -746,7 +845,7 @@
       "elevation_max": 9.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 384
+        "triangles": 288
       },
       "ground_y_m": 0,
       "surveyed": false,
@@ -811,7 +910,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial_plant/rack_double"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 288,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     }
   },
   "plume_presets": [

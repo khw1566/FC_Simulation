@@ -1,0 +1,10 @@
+{
+  "geometry.py": "원경 회전체·정적 메시",
+  "models.py": "28종 실루엣 구성",
+  "scene.py": "연결 마커 및 선택형 LOD 씬",
+  "generate.py": "생성·메타데이터·원본 보존 확인",
+  "check.py": "격리 GLB·씬·LOD 전환 확인",
+  "check.gd": "씬 표면·그림자·마커·히스테리시스·파티클 중지 확인",
+  "lod_selector.gd": "거리·히스테리시스·파티클 중지",
+  "far_visual.gd": "원경 전용 그림자 비활성화"
+}

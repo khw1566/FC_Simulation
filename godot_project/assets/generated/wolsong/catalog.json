@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "wolsong_npp",
+      "scene_path": "res://assets/generated/wolsong/wolsong_npp.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2048,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -165.0,
+        -3.0,
+        -360.0
+      ],
+      "aabb_max_m": [
+        165.0,
+        58.0,
+        360.0
+      ],
+      "elevation_min": -3.0,
+      "elevation_max": 58.0,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "월성 발전소",
+      "indexed_geometry": true
+    }
+  ],
+  "note_ko": "독립 에셋 표현의 경량화, 기존 지리 배치 유지"
+}

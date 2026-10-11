@@ -1,0 +1,37 @@
+{
+  "description": "분리 스트리밍 측정과 LOD·건물·충돌 검증",
+  "modules": [
+    {
+      "path": "pipeline/processors/streaming_performance/__init__.py",
+      "lines": 1
+    },
+    {
+      "path": "pipeline/processors/streaming_performance/register.py",
+      "lines": 41
+    },
+    {
+      "path": "pipeline/processors/streaming_performance/run.py",
+      "lines": 109
+    },
+    {
+      "path": "pipeline/processors/streaming_performance/validate.py",
+      "lines": 40
+    },
+    {
+      "path": "pipeline/processors/streaming_performance/detail_field.gd",
+      "lines": 4
+    },
+    {
+      "path": "pipeline/processors/streaming_performance/measure.gd",
+      "lines": 110
+    },
+    {
+      "path": "pipeline/processors/streaming_performance/state_check.gd",
+      "lines": 149
+    },
+    {
+      "path": "pipeline/processors/streaming_performance/state_host.gd",
+      "lines": 12
+    }
+  ]
+}

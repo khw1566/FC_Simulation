@@ -1,5 +1,5 @@
 # Windows 패키징
-원본 게임 프로젝트를 `.build`에 복사한 뒤 복사본에서만 임포트한다. 원본의 `.godot`나 `.import`는 변경하지 않는다. Godot 4.3 엔진과 원본 데이터·임포트 결과를 포함한 PCK를 `dist`에 출력한다.
+원본 게임 프로젝트를 `build_artifacts/work`에 복사한 뒤 복사본에서만 임포트한다. 원본의 `.godot`나 `.import`는 변경하지 않는다. Godot 4.3 엔진과 원본 데이터·임포트 결과를 포함한 PCK를 `build_artifacts/releases`에 출력한다.
 
 ```powershell
 & '.\.venv_campus\Scripts\python.exe' pipeline/packaging/build_windows.py

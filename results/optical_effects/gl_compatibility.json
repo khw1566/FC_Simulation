@@ -1,0 +1,82 @@
+{
+  "buildings": {
+    "dense_disabled": 9,
+    "geometry_and_collision_faces_preserved": true,
+    "isolated_tall_campus_preserved": 3,
+    "polygon_box_negative_grid_boundary": true,
+    "shadow_disabled_meshes": 1,
+    "shadow_enabled_meshes": 3
+  },
+  "flare_state": {
+    "clouds_active": false,
+    "compatibility": true,
+    "sun_uv": "(0.61236, 0.406728)",
+    "visibility": 1,
+    "visible": true
+  },
+  "full_world_run": false,
+  "renderer": "NVIDIA GeForce RTX 4070 SUPER",
+  "settings_and_night": true,
+  "copied_sources": [
+    "scripts/models/atmosphere_state_model.gd",
+    "scripts/models/surface_climate_model.gd",
+    "scripts/terrain/building_courtyard_builder.gd",
+    "scripts/terrain/building_mesh_builder.gd",
+    "scripts/terrain/building_shadow_policy.gd",
+    "scripts/terrain/campus_architecture_builder.gd",
+    "scripts/terrain/campus_building_policy.gd",
+    "scripts/weather/cloud_layer_factory.gd",
+    "scripts/weather/optical_effects_controller.gd",
+    "scripts/weather/procedural_cloud_manager.gd",
+    "shaders/optics/atmospheric_light.gdshader",
+    "shaders/optics/cloud_field.gdshaderinc",
+    "shaders/optics/cloud_ground_shadow.gdshader",
+    "shaders/optics/cloud_transmission.gdshaderinc",
+    "shaders/optics/lens_flare.gdshaderinc",
+    "shaders/optics/optical_depth.gdshaderinc",
+    "shaders/sky_cloud_layer.gdshader"
+  ],
+  "rendered": true,
+  "method": "gl_compatibility",
+  "source_sha256": {
+    "scripts/models/atmosphere_state_model.gd": "1eacd7265900c00353a8fa4d803d7df3eb0073b34faf6a0995f6c2b45e412b78",
+    "scripts/models/surface_climate_model.gd": "5a363e23bdb167205c4b383a7d4b3974c6057166328bbca84d2db5c0e6e3ec70",
+    "scripts/terrain/building_courtyard_builder.gd": "22f58ef3a5192e041ba5a32a5c9ac57e483a8285c6600982b58bdd26c06cfdb3",
+    "scripts/terrain/building_mesh_builder.gd": "36161bc76f54cc3286c35ba1daee49e8b8bc07edfa3e7a2e22e8d5c5daeef59c",
+    "scripts/terrain/building_shadow_policy.gd": "945e010b80fe6949627c64750291f0f6d75715f1bee2954af71446018406cd61",
+    "scripts/terrain/campus_architecture_builder.gd": "d7850fd2b8fe03fcfe1726ae50184e7554416853209fe54424f503b00641b20f",
+    "scripts/terrain/campus_building_policy.gd": "d2d4b16a5352b529bc12e2b48507237f0a58868bd1b51f8e1a2e6edeac538d58",
+    "scripts/weather/cloud_layer_factory.gd": "b962426a1897ebb2b53fcb095d1fceffb5128f30e05d08df899cc0b44d42c6ca",
+    "scripts/weather/optical_effects_controller.gd": "818bfb8970257fa7a4e206e2267ef519b29194a0d198f5ed0ef0412b3d936723",
+    "scripts/weather/procedural_cloud_manager.gd": "459ccd5af8f435da39c9cc7ca03297d538311fda585b6c9577486d5bdc635cc9",
+    "shaders/optics/atmospheric_light.gdshader": "85586667d8557983b6cd43c081a24a5b213ee2be339d3a80c1f6c85ddfa22f41",
+    "shaders/optics/cloud_field.gdshaderinc": "f6b70bfe5a47b17effe663517206658322ae78c08876553aaf549dde90b1a1f1",
+    "shaders/optics/cloud_ground_shadow.gdshader": "ba32aa973dd2a28a6672cabc04908de3703630bac533ce32d3ddfdc0c707b268",
+    "shaders/optics/cloud_transmission.gdshaderinc": "66d2f33df83c7366e8b76ed41d338893dd0700e7cb21686e2ef9d2284bd57508",
+    "shaders/optics/lens_flare.gdshaderinc": "aa5e41fb2133862293b7bb5ce6b9c3085b589ec7f55df4fc2a40919b5e7a1f2d",
+    "shaders/optics/optical_depth.gdshaderinc": "8a238440e356c67e1da957a702bff9b29a49ee58c66159695df984b8c6879315",
+    "shaders/sky_cloud_layer.gdshader": "d8cde5977eca35b2c467458210046e18c94dca764f4f4d8af534afdeb3612ab1"
+  },
+  "image_metrics": {
+    "combined": {
+      "mean_rgb_difference_255": 3.5218069553375244,
+      "max_rgb_difference_255": 63.0,
+      "changed_pixels": 178279
+    },
+    "rays": {
+      "mean_rgb_difference_255": 1.6606121063232422,
+      "max_rgb_difference_255": 35.0,
+      "changed_pixels": 108103
+    },
+    "flare": {
+      "mean_rgb_difference_255": 0.02683577686548233,
+      "max_rgb_difference_255": 40.0,
+      "changed_pixels": 3782
+    },
+    "occluded_flare": {
+      "mean_rgb_difference_255": 0.0,
+      "max_rgb_difference_255": 0.0,
+      "changed_pixels": 0
+    }
+  }
+}

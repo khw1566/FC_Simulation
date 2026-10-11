@@ -1,0 +1,92 @@
+{
+  "moves": [
+    {
+      "destination": "build_artifacts/work",
+      "bytes": 4185734732.0,
+      "metadata_mismatches": 0,
+      "source": ".build",
+      "files": 71247,
+      "status": "verified",
+      "compatibility_junction": false
+    },
+    {
+      "destination": "build_artifacts/releases",
+      "bytes": 2100468642.0,
+      "metadata_mismatches": 0,
+      "source": "dist",
+      "files": 6,
+      "status": "verified",
+      "compatibility_junction": false
+    },
+    {
+      "destination": "source_assets/raw",
+      "bytes": 724692684.0,
+      "metadata_mismatches": 0,
+      "source": "data/raw",
+      "files": 573,
+      "status": "verified",
+      "compatibility_junction": true,
+      "junction_verified": true
+    },
+    {
+      "bytes": 293462205.0,
+      "compatibility_junction": true,
+      "metadata_mismatches": 0,
+      "source": "data/archives",
+      "files": 15,
+      "junction_verified": true,
+      "status": "verified",
+      "destination": "source_assets/archives"
+    },
+    {
+      "bytes": 21750527.0,
+      "compatibility_junction": true,
+      "metadata_mismatches": 0,
+      "source": "기초 미가공데이터",
+      "files": 3,
+      "junction_verified": true,
+      "status": "verified",
+      "destination": "source_assets/기초 미가공데이터"
+    },
+    {
+      "bytes": 461033550.0,
+      "compatibility_junction": true,
+      "metadata_mismatches": 0,
+      "source": "data/processed",
+      "files": 21952,
+      "junction_verified": true,
+      "status": "verified",
+      "destination": "build_artifacts/processed"
+    },
+    {
+      "bytes": 250.0,
+      "compatibility_junction": false,
+      "metadata_mismatches": 0,
+      "source": ".godot_check.txt",
+      "files": 1,
+      "status": "verified",
+      "destination": "build_artifacts/logs/.godot_check.txt"
+    },
+    {
+      "bytes": 0.0,
+      "compatibility_junction": false,
+      "metadata_mismatches": 0,
+      "source": "godot_stderr.log",
+      "files": 1,
+      "status": "verified",
+      "destination": "build_artifacts/logs/godot_stderr.log"
+    },
+    {
+      "bytes": 0.0,
+      "compatibility_junction": false,
+      "metadata_mismatches": 0,
+      "source": "godot_stdout.log",
+      "files": 1,
+      "status": "verified",
+      "destination": "build_artifacts/logs/godot_stdout.log"
+    }
+  ],
+  "verification": "파일별 크기와 수정시각 비교; 해시 검증 및 게임 실행 생략",
+  "date": "2026-10-12",
+  "deleted_files": 0
+}

@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/quay_6x12.tscn" id="Model0"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/quay_ramp_rise2m.tscn" id="Model1"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/pier_pile_4m.tscn" id="Model2"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/pier_pile_8m.tscn" id="Model3"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/pier_pile_12m.tscn" id="Model4"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/quay_walk_adapter_3m.tscn" id="Model5"]
+
+[node name="terrain_height_demo" type="Node3D"]
+metadata/placement_status = "synthetic_assembly"
+
+[node name="quay_6x12_0" parent="." instance=ExtResource("Model0")]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="quay_ramp_rise2m_1" parent="." instance=ExtResource("Model1")]
+position = Vector3(0.00000000, 0.00000000, 12.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="quay_6x12_2" parent="." instance=ExtResource("Model0")]
+position = Vector3(0.00000000, 2.00000000, 24.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="pier_pile_4m_3" parent="." instance=ExtResource("Model2")]
+position = Vector3(-2.00000000, 0.00000000, -4.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="pier_pile_8m_4" parent="." instance=ExtResource("Model3")]
+position = Vector3(2.00000000, 0.00000000, 4.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="pier_pile_8m_5" parent="." instance=ExtResource("Model3")]
+position = Vector3(-2.00000000, 2.00000000, 20.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="pier_pile_12m_6" parent="." instance=ExtResource("Model4")]
+position = Vector3(2.00000000, 2.00000000, 28.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="quay_walk_adapter_3m_7" parent="." instance=ExtResource("Model5")]
+position = Vector3(0.00000000, 2.00000000, 33.00000000)
+rotation = Vector3(0, 0.00000000, 0)

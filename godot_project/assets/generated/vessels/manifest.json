@@ -15,7 +15,7 @@
         "waterline_y_m": 0,
         "forward_axis": "-Z",
         "units": "meters",
-        "triangles": 6262,
+        "triangles": 2374,
         "aabb_min_m": [
           -14.0,
           -7,
@@ -37,10 +37,18 @@
           "energy": 0.2,
           "fade_end_m": 100,
           "glb_includes_lights": false
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
-      "sha256": "7881d284edc4e1726edf8a0c0fc3d1c8746c7895c600bcacd9a2f8ad3b22f686",
-      "size_bytes": 456944,
+      "sha256": "db481751b2b19b0a2199e2ccfad5be52fd9a2f411f395f88279e11d33399f5b4",
+      "size_bytes": 145628,
       "scene_sha256": "beae13399de8dcd3e68cf64f701e68107f755554015dba94cacc6fc699979875"
     },
     "tugboat": {
@@ -56,14 +64,14 @@
         "waterline_y_m": 0,
         "forward_axis": "-Z",
         "units": "meters",
-        "triangles": 1478,
+        "triangles": 1046,
         "aabb_min_m": [
-          -5.2230810839623345,
+          -5.25,
           -3,
           -15.0
         ],
         "aabb_max_m": [
-          5.2230810839623345,
+          5.25,
           11.76,
           14.399999999999999
         ],
@@ -78,10 +86,18 @@
           "energy": 0.2,
           "fade_end_m": 100,
           "glb_includes_lights": false
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
-      "sha256": "1b9e3e408bb33724d0b572681941eb935fd9c8cb6adb72a7f4fcaf3799eb8870",
-      "size_bytes": 111304,
+      "sha256": "fd8e826ebb276cec82232fb188aede42b5b9fa63c30c37be2e6b2a80bd029312",
+      "size_bytes": 59264,
       "scene_sha256": "3b2f5ed0aa86219179db67e3bf43827e2b0b6edcb49fde59f2639be48829cab4"
     },
     "motor_boat": {
@@ -119,10 +135,18 @@
           "energy": 0.2,
           "fade_end_m": 100,
           "glb_includes_lights": false
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
-      "sha256": "0f74bac00fb717c830f41db1b90300a6224e80cfc8975404d1b0b54046118cfa",
-      "size_bytes": 20580,
+      "sha256": "4a8f485db42de9cb47cbb8bb3f479c139651a40aa1c0539473d84b29991ebb9e",
+      "size_bytes": 17004,
       "scene_sha256": "d8614aa7f21305f3d665d865d2030d687cd8da5d54f09a43966e4d2cdedc1ee8"
     },
     "lpg_carrier": {
@@ -138,7 +162,7 @@
         "waterline_y_m": 0,
         "forward_axis": "-Z",
         "units": "meters",
-        "triangles": 1610,
+        "triangles": 1074,
         "aabb_min_m": [
           -12.0,
           -6,
@@ -160,10 +184,18 @@
           "energy": 0.2,
           "fade_end_m": 100,
           "glb_includes_lights": false
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
-      "sha256": "57aaa13c3eb2f3ec74b0e908641b8bbdf39183417ce850a7b165da915222f90b",
-      "size_bytes": 121516,
+      "sha256": "34a5d46ae8c4ac48183283dc36693c4227d80ed933bda31cc231637a0bbfe7d5",
+      "size_bytes": 62584,
       "scene_sha256": "565eb7d819c0965cdf9b6e9f96d375743452376f7181c57816216428239eb600"
     },
     "oil_tanker": {
@@ -179,7 +211,7 @@
         "waterline_y_m": 0,
         "forward_axis": "-Z",
         "units": "meters",
-        "triangles": 2242,
+        "triangles": 1722,
         "aabb_min_m": [
           -17.0,
           -9,
@@ -201,10 +233,18 @@
           "energy": 0.2,
           "fade_end_m": 100,
           "glb_includes_lights": false
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
-      "sha256": "bc0e26ed77274410bb857a153a750a3ef6f06fa91eab6c6267f611a02ca5ab44",
-      "size_bytes": 167028,
+      "sha256": "0dde6cc0c8c779cc29b5d8f2323eedbb150e97a93ef23401d4153feefda63fed",
+      "size_bytes": 91728,
       "scene_sha256": "d2938b3e743b1ef0c36a4dd7e8c622e2f07777975b446f74eff63fe215357100"
     },
     "fishing_boat": {
@@ -220,7 +260,7 @@
         "waterline_y_m": 0,
         "forward_axis": "-Z",
         "units": "meters",
-        "triangles": 1106,
+        "triangles": 754,
         "aabb_min_m": [
           -2.85,
           -1.5,
@@ -242,11 +282,193 @@
           "energy": 0.2,
           "fade_end_m": 100,
           "glb_includes_lights": false
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
-      "sha256": "2d75532a3a9f4f1c5274b5b0f51d7f11764232392a6d9dc3afaf60301ec46093",
-      "size_bytes": 85244,
+      "sha256": "9489dc4174fa65d8f58855503bbbe7b97599743b5d48262f9ce56365a0761a7d",
+      "size_bytes": 45456,
       "scene_sha256": "be9eed4b7623922591e0d540db951070aedd1e9b7997995bf25faf6dee1cddb9"
+    },
+    "container_ship.tscn": {
+      "file_path": "res://assets/generated/vessels/container_ship.tscn",
+      "sha256": "beae13399de8dcd3e68cf64f701e68107f755554015dba94cacc6fc699979875",
+      "size_bytes": 891,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2374,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -14.0,
+          -7,
+          -90.0
+        ],
+        "aabb_max_m": [
+          14.0,
+          20.06,
+          86.39999999999999
+        ],
+        "elevation_min": -7,
+        "elevation_max": 20.06,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "컨테이너선",
+        "indexed_geometry": true
+      }
+    },
+    "tugboat.tscn": {
+      "file_path": "res://assets/generated/vessels/tugboat.tscn",
+      "sha256": "3b2f5ed0aa86219179db67e3bf43827e2b0b6edcb49fde59f2639be48829cab4",
+      "size_bytes": 861,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1046,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -5.25,
+          -3,
+          -15.0
+        ],
+        "aabb_max_m": [
+          5.25,
+          11.76,
+          14.399999999999999
+        ],
+        "elevation_min": -3,
+        "elevation_max": 11.76,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "예인선",
+        "indexed_geometry": true
+      }
+    },
+    "motor_boat.tscn": {
+      "file_path": "res://assets/generated/vessels/motor_boat.tscn",
+      "sha256": "d8614aa7f21305f3d665d865d2030d687cd8da5d54f09a43966e4d2cdedc1ee8",
+      "size_bytes": 869,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 230,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -1.9,
+          -0.8,
+          -6.0
+        ],
+        "aabb_max_m": [
+          1.9,
+          4.36,
+          6.4
+        ],
+        "elevation_min": -0.8,
+        "elevation_max": 4.36,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "보트",
+        "indexed_geometry": true
+      }
+    },
+    "lpg_carrier.tscn": {
+      "file_path": "res://assets/generated/vessels/lpg_carrier.tscn",
+      "sha256": "565eb7d819c0965cdf9b6e9f96d375743452376f7181c57816216428239eb600",
+      "size_bytes": 879,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1074,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -12.0,
+          -6,
+          -72.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          19.06,
+          69.6
+        ],
+        "elevation_min": -6,
+        "elevation_max": 19.06,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "LPG선",
+        "indexed_geometry": true
+      }
+    },
+    "oil_tanker.tscn": {
+      "file_path": "res://assets/generated/vessels/oil_tanker.tscn",
+      "sha256": "d2938b3e743b1ef0c36a4dd7e8c622e2f07777975b446f74eff63fe215357100",
+      "size_bytes": 877,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1722,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -17.0,
+          -9,
+          -105.0
+        ],
+        "aabb_max_m": [
+          17.0,
+          20.56,
+          100.8
+        ],
+        "elevation_min": -9,
+        "elevation_max": 20.56,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "유조선",
+        "indexed_geometry": true
+      }
+    },
+    "fishing_boat.tscn": {
+      "file_path": "res://assets/generated/vessels/fishing_boat.tscn",
+      "sha256": "be9eed4b7623922591e0d540db951070aedd1e9b7997995bf25faf6dee1cddb9",
+      "size_bytes": 877,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 754,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -2.85,
+          -1.5,
+          -9.0
+        ],
+        "aabb_max_m": [
+          2.85,
+          6.659999999999999,
+          8.64
+        ],
+        "elevation_min": -1.5,
+        "elevation_max": 6.659999999999999,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "어업용 소형선박",
+        "indexed_geometry": true
+      }
     }
   }
 }

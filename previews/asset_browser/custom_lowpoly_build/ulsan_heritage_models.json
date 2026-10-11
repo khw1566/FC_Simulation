@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "modeling_basis": "공개 위치와 성곽 구조를 참고한 게임용 근사 모델. 현황 실측·문화유산 복원 도면이 아니다. 울산왜성은 석축 유구, 언양읍성은 영화루와 주변 복원 성벽·낮은 잔존 성곽을 표현한다.",
+  "sources": [
+    "https://www.junggu.ulsan.kr/board/view.ulsan?boardId=ATTRACTION&dataSid=711529&menuCd=DOM_000000104001000000&paging=ok&startPage=8",
+    "https://encykorea.aks.ac.kr/Article/E0040485",
+    "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.do?mId=001002007000000000&unqId=103",
+    "https://www.openstreetmap.org/way/899771700"
+  ],
+  "landmarks": [
+    {
+      "id": "ulsan_waeseong", "name_ko": "울산왜성",
+      "anchor": {"lat": 35.554522, "lon": 129.339582},
+      "anchor_basis": "울산 중구 학성공원 공식 안내 좌표. 석축 윤곽과 높이는 지형에 맞춘 근사값.",
+      "scene_path": "res://assets/generated/heritage/ulsan_waeseong.scn",
+      "placement_enabled": false, "suppress_building_names": ["학성공원"], "suppress_radius_m": 200,
+      "walls": [
+        {"height": 5.2, "width": 5.8, "ruined": true, "points": [[-42,-28],[-28,-46],[30,-43],[51,-12],[40,27],[10,39],[-25,31],[-42,5],[-42,-17]]},
+        {"height": 3.6, "width": 5.0, "ruined": true, "points": [[-64,-48],[-49,-72],[13,-79],[62,-56],[79,-15],[67,46],[34,70],[-13,65],[-58,36],[-69,-2]]},
+        {"height": 2.5, "width": 4.4, "ruined": true, "points": [[-85,13],[-78,61],[-24,101],[32,108],[84,72],[103,28],[91,-28]]},
+        {"height": 2.6, "width": 3.5, "ruined": true, "points": [[35,70],[52,118],[43,151]]},
+        {"height": 2.0, "width": 3.4, "ruined": true, "points": [[79,-15],[117,-4],[132,30]]}
+      ]
+    },
+    {
+      "id": "eonyang_eupseong", "name_ko": "언양읍성",
+      "anchor": {"lat": 35.56815, "lon": 129.12278},
+      "anchor_basis": "공식 북측 안내 좌표 35.570001,129.122649와 OSM 북측 성벽 윤곽을 참고한 중심점. 약 1500m 둘레를 375m 사각형으로 단순화하며 문루 세부 치수와 남측 선형은 근사값.",
+      "scene_path": "res://assets/generated/heritage/eonyang_eupseong.scn",
+      "gate": {"x": 0, "z": 187.5, "half_size": [10.5,12]},
+      "walls": [
+        {"height": 4.8, "width": 5.5, "points": [[-187.5,125],[-187.5,187.5],[-9.0,187.5]]},
+        {"height": 4.8, "width": 5.5, "points": [[9.0,187.5],[187.5,187.5],[187.5,122]]},
+        {"height": 2.0, "width": 4.3, "ruined": true, "points": [[-187.5,115],[-187.5,8]]},
+        {"height": 2.4, "width": 4.3, "ruined": true, "points": [[-187.5,-8],[-187.5,-187.5],[-8,-187.5]]},
+        {"height": 1.5, "width": 4.0, "ruined": true, "points": [[8,-187.5],[187.5,-187.5],[187.5,-8]]},
+        {"height": 1.5, "width": 4.0, "ruined": true, "points": [[187.5,8],[187.5,110]]},
+        {"height": 4.1, "width": 4.3, "points": [[-23,187.5],[-27,196],[-24,210],[-16,219],[-4,224],[10,222],[21,216],[27,206]]},
+        {"height": 4.8, "width": 5.5, "points": [[-105,187.5],[-105,195],[-95,195],[-95,187.5]]},
+        {"height": 4.8, "width": 5.5, "points": [[95,187.5],[95,195],[105,195],[105,187.5]]}
+      ]
+    }
+  ]
+}

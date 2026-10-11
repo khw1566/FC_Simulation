@@ -15,9 +15,9 @@ ROOT = Path(__file__).resolve().parents[2]
 class WindowsPackageBuilder:
     def __init__(self, version):
         self.version = version
-        self.work = ROOT / '.build' / version
+        self.work = ROOT / 'build_artifacts/work' / version
         self.project = self.work / 'project'
-        self.output = ROOT / 'dist' / version
+        self.output = ROOT / 'build_artifacts/releases' / version
         self.engine = ROOT / 'tools/godot/Godot_v4.3-stable_win64.exe'
         self.environment = dict(os.environ)
         for key, name in [('APPDATA', 'roaming'), ('LOCALAPPDATA', 'local')]:

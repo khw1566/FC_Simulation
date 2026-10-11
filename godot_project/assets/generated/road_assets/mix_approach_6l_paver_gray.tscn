@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mix_approach_6l_paver_gray.glb" id="1"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mix_approach_6l_markings.glb" id="2"]
+
+[node name="mix_approach_6l_paver_gray" type="Node3D"]
+metadata/asset_type = "mix_approach_6l_paver_gray"
+metadata/procedural = true
+metadata/units = "meters"
+metadata/runtime_applied = false
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]
+
+[node name="RoadMarkings" parent="." instance=ExtResource("2")]
+
+[node name="Start" type="Marker3D" parent="."]
+position = Vector3(0, 0, -3)
+rotation = Vector3(0, 0.0, 0)
+metadata/profile = "vehicle_w20.50_h0.00"
+metadata/width_m = 20.5
+metadata/surface_y_m = 0
+metadata/lane_count = 6
+
+[node name="End" type="Marker3D" parent="."]
+position = Vector3(0, 0, 3)
+rotation = Vector3(0, 3.141592653589793, 0)
+metadata/profile = "vehicle_w20.50_h0.00"
+metadata/width_m = 20.5
+metadata/surface_y_m = 0
+metadata/lane_count = 6

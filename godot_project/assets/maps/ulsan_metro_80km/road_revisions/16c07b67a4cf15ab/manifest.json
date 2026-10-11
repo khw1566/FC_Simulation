@@ -1,0 +1,168 @@
+{
+  "assets": {
+    "ulsan80_roads/16c07b67a4cf15ab/buildings_and_roads.json": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/road_revisions/16c07b67a4cf15ab/buildings_and_roads.json",
+      "sha256": "79531f054ebd1580e50638ea1f69bfaf9b71517d27a7ca3c35cd2e9d322e944b",
+      "size_bytes": 199428986,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1300
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "vector",
+        "buildings": 428347,
+        "roads": 91468
+      },
+      "metadata": {
+        "source": "OpenStreetMap",
+        "license": "ODbL-1.0",
+        "revision": "16c07b67a4cf15ab",
+        "batch_hashes": "vector_stream/index.json"
+      }
+    },
+    "ulsan80_roads/16c07b67a4cf15ab/vector_stream/index.json": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/road_revisions/16c07b67a4cf15ab/vector_stream/index.json",
+      "sha256": "d7fea87efe9f2d9869e493fcdbb14ef8ab5a4a3718c278919e597674a01516dc",
+      "size_bytes": 4569207,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1300
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "spatial_vector_batches",
+        "batches": 21940,
+        "counts": {
+          "buildings": 393748,
+          "roads": 91468
+        }
+      },
+      "metadata": {
+        "source": "OpenStreetMap",
+        "license": "ODbL-1.0",
+        "revision": "16c07b67a4cf15ab",
+        "batch_hashes": "vector_stream/index.json"
+      }
+    },
+    "ulsan80_roads/16c07b67a4cf15ab/road_mapping.json": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/road_revisions/16c07b67a4cf15ab/road_mapping.json",
+      "sha256": "1e56d436a58724646ed809397841b0809c493bcdb0790dbacd448d57ac9c3aba",
+      "size_bytes": 7100813,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1300
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "source_way_mapping",
+        "ways": 97289
+      },
+      "metadata": {
+        "source": "OpenStreetMap",
+        "license": "ODbL-1.0",
+        "revision": "16c07b67a4cf15ab",
+        "batch_hashes": "vector_stream/index.json"
+      }
+    },
+    "ulsan80_roads/16c07b67a4cf15ab/excluded.json": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/road_revisions/16c07b67a4cf15ab/excluded.json",
+      "sha256": "b6eaef5c9e4139d707b29f6a285a47aeab6420d22052c17ccf5f46d9548099f0",
+      "size_bytes": 451258,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1300
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "excluded_source_ways"
+      },
+      "metadata": {
+        "source": "OpenStreetMap",
+        "license": "ODbL-1.0",
+        "revision": "16c07b67a4cf15ab",
+        "batch_hashes": "vector_stream/index.json"
+      }
+    },
+    "ulsan80_roads/16c07b67a4cf15ab/build_report.json": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/road_revisions/16c07b67a4cf15ab/build_report.json",
+      "sha256": "88d545ca58366efbc699128e51522640b042682c230c43e734252f2a762762d5",
+      "size_bytes": 2508,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1300
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "road_build_report"
+      },
+      "metadata": {
+        "source": "OpenStreetMap",
+        "license": "ODbL-1.0",
+        "revision": "16c07b67a4cf15ab",
+        "batch_hashes": "vector_stream/index.json"
+      }
+    },
+    "ulsan80_roads/16c07b67a4cf15ab/verification.json": {
+      "file_path": "res://assets/maps/ulsan_metro_80km/road_revisions/16c07b67a4cf15ab/verification.json",
+      "sha256": "30143afe2a69297615d12df8b2c360ebef475128cf1ba939d0e99b1ea658e7bb",
+      "size_bytes": 380,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1300
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": {
+        "type": "road_verification"
+      },
+      "metadata": {
+        "source": "OpenStreetMap",
+        "license": "ODbL-1.0",
+        "revision": "16c07b67a4cf15ab",
+        "batch_hashes": "vector_stream/index.json"
+      }
+    }
+  }
+}

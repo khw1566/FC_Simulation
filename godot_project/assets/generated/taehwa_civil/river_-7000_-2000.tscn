@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=4]
+
+[ext_resource type="Shader" path="res://shaders/river_gravel.gdshader" id="1_hhf3i"]
+[ext_resource type="Shader" path="res://shaders/taehwa_flow_water.gdshader" id="2_1oucf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8vxtr"]
+render_priority = 0
+shader = ExtResource("1_hhf3i")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8bac3"]
+_surfaces = [{
+"aabb": AABB(468.063, 20.1546, -500, 31.9373, 2.1, 69.8976),
+"attribute_data": PackedByteArray("Rv8A/wQdD0YMpgTB6E2EPqjwfj05rwD/6m0ORqbMAcLoTYQ+qPB+PQMAAP8ZGA9GmXoowuhNhD6o8H49AwAA/75aD0ZHAhHC6E2EPqjwfj0DAAD/L4MORj1XKMLoTYQ+qPB+PQMAAP87KA5GpUEowuhNhD6o8H49"),
+"format": 34359742527,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAACAAEABAABAAUA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AAD6Q488oUEAAPrDAAD6Q9ONpEEAAOHD83zrQ1wJskHsSfHDBgjqQ1wJskEAAPrDUn/0Q1wJskEAAOHDAAD6Q1wJskEbDdfD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jnffh"]
+data = PackedVector3Array(500, 20.1546, -500, 500, 20.5693, -450, 470.976, 22.2546, -482.577, 470.976, 22.2546, -482.577, 468.063, 22.2546, -500, 500, 20.1546, -500, 488.995, 22.2546, -450, 470.976, 22.2546, -482.577, 500, 20.5693, -450, 488.995, 22.2546, -450, 500, 20.5693, -450, 500, 22.2546, -430.102)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v3kr1"]
+render_priority = 0
+shader = ExtResource("2_1oucf")
+shader_parameter/compatibility_depth = null
+shader_parameter/flow_speed_mps = 0.65
+shader_parameter/simulation_time = null
+shader_parameter/absorption = null
+shader_parameter/wave_strength = null
+shader_parameter/shallow_tint = null
+shader_parameter/deep_tint = null
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tsecm"]
+_surfaces = [{
+"aabb": AABB(468.063, 22.3746, -500, 31.9373, 1e-05, 69.8976),
+"attribute_data": PackedByteArray("Rv8A/wQdD0YMpgTB6E2EPqjwfj05rwD/6m0ORqbMAcLoTYQ+qPB+PQMAAP8ZGA9GmXoowuhNhD6o8H49AwAA/75aD0ZHAhHC6E2EPqjwfj0DAAD/L4MORj1XKMLoTYQ+qPB+PQMAAP87KA5GpUEowuhNhD6o8H49"),
+"format": 34359742527,
+"index_count": 12,
+"index_data": PackedByteArray("AAABAAIAAgADAAAABAACAAEABAABAAUA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 6,
+"vertex_data": PackedByteArray("AAD6Qx//skEAAPrDAAD6Qx//skEAAOHD83zrQx//skHsSfHDBgjqQx//skEAAPrDUn/0Qx//skEAAOHDAAD6Qx//skEbDdfD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
+}]
+
+[node name="river_-7000_-2000" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6500, 0, -1500)
+
+[node name="Bed" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_8vxtr")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_8bac3")
+
+[node name="Bed_col" type="StaticBody3D" parent="Bed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bed/Bed_col"]
+shape = SubResource("ConcavePolygonShape3D_jnffh")
+
+[node name="Water" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_v3kr1")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_tsecm")

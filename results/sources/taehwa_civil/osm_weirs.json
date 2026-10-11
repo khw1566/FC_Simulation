@@ -1,0 +1,30 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-07-28T02:16:18Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 1540924116,
+  "bounds": {
+    "minlat": 35.5526841,
+    "minlon": 129.1422256,
+    "maxlat": 35.5528560,
+    "maxlon": 129.1433315
+  },
+  "geometry": [
+    { "lat": 35.5526841, "lon": 129.1422256 },
+    { "lat": 35.5527419, "lon": 129.1428131 },
+    { "lat": 35.5528560, "lon": 129.1433315 }
+  ],
+  "tags": {
+    "waterway": "weir"
+  }
+}
+
+  ]
+}

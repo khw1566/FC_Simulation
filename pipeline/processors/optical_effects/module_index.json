@@ -1,0 +1,37 @@
+{
+  "description": "광학 효과의 격리 렌더링·설정·가림·기하 보존 확인",
+  "modules": [
+    {
+      "path": "pipeline/processors/optical_effects/__init__.py",
+      "lines": 1
+    },
+    {
+      "path": "pipeline/processors/optical_effects/image_metrics.py",
+      "lines": 24
+    },
+    {
+      "path": "pipeline/processors/optical_effects/register.py",
+      "lines": 42
+    },
+    {
+      "path": "pipeline/processors/optical_effects/report.py",
+      "lines": 60
+    },
+    {
+      "path": "pipeline/processors/optical_effects/verify.py",
+      "lines": 98
+    },
+    {
+      "path": "pipeline/processors/optical_effects/preview.gd",
+      "lines": 176
+    },
+    {
+      "path": "pipeline/processors/optical_effects/preview_cycle.gd",
+      "lines": 2
+    },
+    {
+      "path": "pipeline/processors/optical_effects/preview_weather.gd",
+      "lines": 5
+    }
+  ]
+}

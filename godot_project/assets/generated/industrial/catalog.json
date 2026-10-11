@@ -22,7 +22,7 @@
       "elevation_max": 18,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 548
+        "triangles": 356
       },
       "footprint_xz_m": [
         -25.0,
@@ -51,7 +51,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/factory_gable"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 356,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "factory_sawtooth": {
       "scene_path": "res://assets/generated/industrial/factory_sawtooth.tscn",
@@ -73,7 +82,7 @@
       "elevation_max": 14.6,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 676
+        "triangles": 460
       },
       "footprint_xz_m": [
         -33.0,
@@ -102,7 +111,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/factory_sawtooth"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 460,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "factory_flat": {
       "scene_path": "res://assets/generated/industrial/factory_flat.tscn",
@@ -124,7 +142,7 @@
       "elevation_max": 19.200000000000003,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 528
+        "triangles": 384
       },
       "footprint_xz_m": [
         -23.0,
@@ -153,7 +171,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/factory_flat"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 384,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "distillation_tower": {
       "scene_path": "res://assets/generated/industrial/distillation_tower.tscn",
@@ -175,7 +202,7 @@
       "elevation_max": 41.0,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 6632
+        "triangles": 2684
       },
       "footprint_xz_m": [
         -7.0,
@@ -204,7 +231,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/distillation_tower"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2684,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "industrial_chimney": {
       "scene_path": "res://assets/generated/industrial/industrial_chimney.tscn",
@@ -226,7 +262,7 @@
       "elevation_max": 65,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 3516
+        "triangles": 1156
       },
       "footprint_xz_m": [
         -7.5,
@@ -255,7 +291,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/industrial_chimney"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1156,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "liquid_storage_tank": {
       "scene_path": "res://assets/generated/industrial/liquid_storage_tank.tscn",
@@ -277,7 +322,7 @@
       "elevation_max": 19.8,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 2188
+        "triangles": 608
       },
       "footprint_xz_m": [
         -17.0,
@@ -306,7 +351,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/liquid_storage_tank"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 608,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "lpg_sphere": {
       "scene_path": "res://assets/generated/industrial/lpg_sphere.tscn",
@@ -328,7 +382,7 @@
       "elevation_max": 23.4,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 1956
+        "triangles": 692
       },
       "footprint_xz_m": [
         -12.5,
@@ -357,7 +411,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/lpg_sphere"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 692,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "pipeline_straight": {
       "scene_path": "res://assets/generated/industrial/pipeline_straight.tscn",
@@ -379,7 +442,7 @@
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 240
+        "triangles": 192
       },
       "footprint_xz_m": [
         -12.0,
@@ -430,7 +493,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/pipeline_straight"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 192,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "pipeline_elbow": {
       "scene_path": "res://assets/generated/industrial/pipeline_elbow.tscn",
@@ -452,7 +524,7 @@
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 1536
+        "triangles": 576
       },
       "footprint_xz_m": [
         -12.0,
@@ -503,7 +575,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/pipeline_elbow"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 576,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "pipeline_tee": {
       "scene_path": "res://assets/generated/industrial/pipeline_tee.tscn",
@@ -525,7 +606,7 @@
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 432
+        "triangles": 336
       },
       "footprint_xz_m": [
         -12.0,
@@ -586,7 +667,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/pipeline_tee"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 336,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "transmission_tower": {
       "scene_path": "res://assets/generated/industrial/transmission_tower.tscn",
@@ -594,12 +684,12 @@
       "units": "meters",
       "ground_y_m": 0,
       "aabb_min_m": [
-        -12.380422606518062,
+        -12.4,
         -0.06952604524738866,
         -8.5
       ],
       "aabb_max_m": [
-        12.380422606518062,
+        12.4,
         46.031684333108274,
         8.5
       ],
@@ -608,7 +698,7 @@
       "elevation_max": 46.031684333108274,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 2892
+        "triangles": 1500
       },
       "footprint_xz_m": [
         -12.380422606518062,
@@ -637,7 +727,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/transmission_tower"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1500,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "cooling_tower": {
       "scene_path": "res://assets/generated/industrial/cooling_tower.tscn",
@@ -646,7 +745,7 @@
       "ground_y_m": 0,
       "aabb_min_m": [
         -22.0,
-        0.0,
+        -2.3980817331903383e-15,
         -22.0
       ],
       "aabb_max_m": [
@@ -655,11 +754,11 @@
         22.0
       ],
       "bbox": null,
-      "elevation_min": 0.0,
+      "elevation_min": -2.3980817331903383e-15,
       "elevation_max": 50.0,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 2368
+        "triangles": 416
       },
       "footprint_xz_m": [
         -22.0,
@@ -688,7 +787,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/cooling_tower"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 416,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "cooling_fan_bank": {
       "scene_path": "res://assets/generated/industrial/cooling_fan_bank.tscn",
@@ -710,7 +818,7 @@
       "elevation_max": 6.4,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 1380
+        "triangles": 900
       },
       "footprint_xz_m": [
         -14.5,
@@ -739,7 +847,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/cooling_fan_bank"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 900,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "shipbuilding_hangar": {
       "scene_path": "res://assets/generated/industrial/shipbuilding_hangar.tscn",
@@ -761,7 +878,7 @@
       "elevation_max": 52,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 476
+        "triangles": 236
       },
       "footprint_xz_m": [
         -52.0,
@@ -790,7 +907,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/shipbuilding_hangar"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 236,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "tower_crane": {
       "scene_path": "res://assets/generated/industrial/tower_crane.tscn",
@@ -798,12 +924,12 @@
       "units": "meters",
       "ground_y_m": 0,
       "aabb_min_m": [
-        -18.057616595969805,
+        -18.03098386676966,
         0.0,
         -5.0
       ],
       "aabb_max_m": [
-        60.057616595969805,
+        60.01699626542851,
         65.06826708557621,
         5.0
       ],
@@ -812,7 +938,7 @@
       "elevation_max": 65.06826708557621,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 3312
+        "triangles": 2352
       },
       "footprint_xz_m": [
         -18.057616595969805,
@@ -841,7 +967,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/tower_crane"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2352,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     },
     "gantry_crane": {
       "scene_path": "res://assets/generated/industrial/gantry_crane.tscn",
@@ -849,12 +984,12 @@
       "units": "meters",
       "ground_y_m": 0,
       "aabb_min_m": [
-        -48.072,
+        -48.02846049894151,
         0.0,
         -17.0
       ],
       "aabb_max_m": [
-        48.072,
+        48.02846049894151,
         56.125,
         17.0
       ],
@@ -863,7 +998,7 @@
       "elevation_max": 56.125,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 3396
+        "triangles": 1092
       },
       "footprint_xz_m": [
         -48.072,
@@ -892,7 +1027,16 @@
         "automatic_time": true,
         "fallback_night_factor": 1.0,
         "source_asset": "industrial/gantry_crane"
-      }
+      },
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1092,
+      "triangle_count_method": "gltf_primitive_indices",
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": true
     }
   }
 }

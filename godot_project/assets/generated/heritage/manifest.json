@@ -1,0 +1,110 @@
+{
+  "assets": {
+    "eonyang_eupseong.scn": {
+      "bbox": {
+        "east": 129.124881040204,
+        "north": 35.5698536470885,
+        "south": 35.5661186919366,
+        "west": 129.120678959796
+      },
+      "elevation": {
+        "max_meters": 10.1499996185303,
+        "min_meters": -0.58249998092651,
+        "reference": "지역 지표 기준 높이, 런타임 DEM에 맞춰 배치"
+      },
+      "file_path": "res://assets/generated/heritage/eonyang_eupseong.scn",
+      "format": "Godot PackedScene",
+      "metadata": {
+        "basis": "공개 위치와 성곽 구조를 참고한 게임용 근사 모델. 현황 실측·문화유산 복원 도면이 아니다. 울산왜성은 석축 유구, 언양읍성은 영화루와 주변 복원 성벽·낮은 잔존 성곽을 표현한다.",
+        "name_ko": "언양읍성",
+        "sources": [
+          "https://www.junggu.ulsan.kr/board/view.ulsan?boardId=ATTRACTION&dataSid=711529&menuCd=DOM_000000104001000000&paging=ok&startPage=8",
+          "https://encykorea.aks.ac.kr/Article/E0040485",
+          "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.do?mId=001002007000000000&unqId=103",
+          "https://www.openstreetmap.org/way/899771700"
+        ],
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 6004,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -190.25,
+          -0.58250004053116,
+          -189.649993896484
+        ],
+        "aabb_max_m": [
+          190.25,
+          10.1499996185303,
+          226.125213623047
+        ],
+        "elevation_min": -0.58250004053116,
+        "elevation_max": 10.1499996185303,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": false
+      },
+      "resolution": {
+        "material_batches": 11,
+        "triangles": 6004,
+        "type": "triangle_mesh"
+      },
+      "sha256": "d33d249d707b065a8674ce3856f289ff3bc171dff4c91428a76cd2b2b017a4d1",
+      "size_bytes": 379355
+    },
+    "ulsan_waeseong.scn": {
+      "bbox": {
+        "east": 129.341056577468,
+        "north": 35.5552539591219,
+        "south": 35.5531616089116,
+        "west": 129.338619454048
+      },
+      "elevation": {
+        "max_meters": 4.58249998092651,
+        "min_meters": -0.58249998092651,
+        "reference": "지역 지표 기준 높이, 런타임 DEM에 맞춰 배치"
+      },
+      "file_path": "res://assets/generated/heritage/ulsan_waeseong.scn",
+      "format": "Godot PackedScene",
+      "metadata": {
+        "basis": "공개 위치와 성곽 구조를 참고한 게임용 근사 모델. 현황 실측·문화유산 복원 도면이 아니다. 울산왜성은 석축 유구, 언양읍성은 영화루와 주변 복원 성벽·낮은 잔존 성곽을 표현한다.",
+        "name_ko": "울산왜성",
+        "sources": [
+          "https://www.junggu.ulsan.kr/board/view.ulsan?boardId=ATTRACTION&dataSid=711529&menuCd=DOM_000000104001000000&paging=ok&startPage=8",
+          "https://encykorea.aks.ac.kr/Article/E0040485",
+          "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.do?mId=001002007000000000&unqId=103",
+          "https://www.openstreetmap.org/way/899771700"
+        ],
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 3984,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -87.1737289428711,
+          -0.58250004053116,
+          -81.481689453125
+        ],
+        "aabb_max_m": [
+          133.546264648438,
+          4.58249998092651,
+          151.438751220703
+        ],
+        "elevation_min": -0.58250004053116,
+        "elevation_max": 4.58249998092651,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": false
+      },
+      "resolution": {
+        "material_batches": 5,
+        "triangles": 3984,
+        "type": "triangle_mesh"
+      },
+      "sha256": "0c49c492abb5b4c34ca36fef3e3d186214923a9eee5c677ed1d1d093163a6f8b",
+      "size_bytes": 250839
+    }
+  }
+}

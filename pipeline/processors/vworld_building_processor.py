@@ -175,12 +175,14 @@ class VWorldBuildingProcessor:
         # 기존 파일에 구축된 도로/터널망이 있다면 보존 병합
         existing_roads = []
         existing_tunnels = []
+        existing_road_source = None
         if os.path.exists(output_json_path):
             try:
                 with open(output_json_path, "r", encoding="utf-8") as ef:
                     old_data = json.load(ef)
                     existing_roads = old_data.get("roads", [])
                     existing_tunnels = old_data.get("tunnels", [])
+                    existing_road_source = old_data.get("road_source")
             except Exception:
                 pass
 
@@ -195,6 +197,8 @@ class VWorldBuildingProcessor:
             "roads": existing_roads,
             "tunnels": existing_tunnels
         }
+        if existing_road_source is not None:
+            out_dict["road_source"] = existing_road_source
 
         with open(output_json_path, "w", encoding="utf-8") as f:
             json.dump(out_dict, f, indent=2, ensure_ascii=False)

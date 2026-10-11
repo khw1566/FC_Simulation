@@ -1,0 +1,278 @@
+{
+  "assets": {
+    "bamboo_clump_auto_lod": {
+      "file_path": "res://assets/generated/bamboo/bamboo_clump_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_clump",
+        "lod_ranges_m": [
+          [
+            0,
+            70
+          ],
+          [
+            70,
+            250
+          ],
+          [
+            250,
+            2200
+          ]
+        ],
+        "resolution": null,
+        "width_m": 4.5
+      },
+      "sha256": "13d183e75a6cacf2abe98208b7141d01d66e67b38e878027dc83037dd16fdd2d",
+      "size_bytes": 1440426,
+      "type": "bamboo_auto_lod"
+    },
+    "bamboo_clump_lod0": {
+      "file_path": "res://assets/generated/bamboo/bamboo_clump_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_clump",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 416,
+        "width_m": 4.5
+      },
+      "sha256": "e8f562e0209d841c79cb7a5fb2c9c9a2747bfde860f7a83fe1f4a731069036a4",
+      "size_bytes": 33500,
+      "type": "bamboo_lod"
+    },
+    "bamboo_clump_lod1": {
+      "file_path": "res://assets/generated/bamboo/bamboo_clump_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_clump",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 96,
+        "width_m": 4.5
+      },
+      "sha256": "c155472f84489edde740e81897f516954587dbbe1209266eaa18ab53afbd28e8",
+      "size_bytes": 10460,
+      "type": "bamboo_lod"
+    },
+    "bamboo_clump_lod2": {
+      "file_path": "res://assets/generated/bamboo/bamboo_clump_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_clump",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 4.5
+      },
+      "sha256": "b6a2552a752935c333b778f8d825bfccc2729a94378a5242ab07f076d36e67fb",
+      "size_bytes": 1402460,
+      "type": "bamboo_lod"
+    },
+    "bamboo_grove_auto_lod": {
+      "file_path": "res://assets/generated/bamboo/bamboo_grove_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_grove",
+        "lod_ranges_m": [
+          [
+            0,
+            70
+          ],
+          [
+            70,
+            250
+          ],
+          [
+            250,
+            2200
+          ]
+        ],
+        "resolution": null,
+        "width_m": 9
+      },
+      "sha256": "d29e979083f19900b7884b7e4f2ea39b161acdc45e696e257d0d49e93ef5d54b",
+      "size_bytes": 1486506,
+      "type": "bamboo_auto_lod"
+    },
+    "bamboo_grove_lod0": {
+      "file_path": "res://assets/generated/bamboo/bamboo_grove_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_grove",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 936,
+        "width_m": 9
+      },
+      "sha256": "313f1a81ee306e17ead41076717691613501b85a457116aa47054836ed85d1ac",
+      "size_bytes": 70940,
+      "type": "bamboo_lod"
+    },
+    "bamboo_grove_lod1": {
+      "file_path": "res://assets/generated/bamboo/bamboo_grove_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_grove",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 216,
+        "width_m": 9
+      },
+      "sha256": "9f1c6e66bb7c9ce98e89ec904a80c57a356ae57a9d366090a889ec88cc93bc31",
+      "size_bytes": 19100,
+      "type": "bamboo_lod"
+    },
+    "bamboo_grove_lod2": {
+      "file_path": "res://assets/generated/bamboo/bamboo_grove_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_grove",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 9
+      },
+      "sha256": "0982a8528decf4b4c8a3c7d291a73def19494eb3004edeaa5d9ded4376f326c2",
+      "size_bytes": 1402460,
+      "type": "bamboo_lod"
+    },
+    "bamboo_single_auto_lod": {
+      "file_path": "res://assets/generated/bamboo/bamboo_single_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_single",
+        "lod_ranges_m": [
+          [
+            0,
+            70
+          ],
+          [
+            70,
+            250
+          ],
+          [
+            250,
+            2200
+          ]
+        ],
+        "resolution": null,
+        "width_m": 3
+      },
+      "sha256": "c36f7388eab736158e4834544e397d06642c73274287ae01e82c48d754b6cc8d",
+      "size_bytes": 1412779,
+      "type": "bamboo_auto_lod"
+    },
+    "bamboo_single_lod0": {
+      "file_path": "res://assets/generated/bamboo/bamboo_single_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_single",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 104,
+        "width_m": 3
+      },
+      "sha256": "d7ba57322dc4334e6f0eb2066665529217196c1b222273d14fbb1ec722a2fe06",
+      "size_bytes": 11038,
+      "type": "bamboo_lod"
+    },
+    "bamboo_single_lod1": {
+      "file_path": "res://assets/generated/bamboo/bamboo_single_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_single",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 24,
+        "width_m": 3
+      },
+      "sha256": "78a529b576138e56ca48736587f65f0ff49c864277cfe2ff27cfbaa5686d89a4",
+      "size_bytes": 5278,
+      "type": "bamboo_lod"
+    },
+    "bamboo_single_lod2": {
+      "file_path": "res://assets/generated/bamboo/bamboo_single_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "bamboo_single",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 3
+      },
+      "sha256": "84f59b0914adfecffb17978c06db1453ff0e66930d5f3a0d73ba162996bd2aac",
+      "size_bytes": 1402462,
+      "type": "bamboo_lod"
+    }
+  },
+  "version": 1
+}

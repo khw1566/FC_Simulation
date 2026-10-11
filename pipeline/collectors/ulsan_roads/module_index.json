@@ -1,0 +1,1 @@
+{"description":"울산 80km 전 범위 도로 도구","modules":[{"path":"pipeline/collectors/ulsan_roads/__init__.py","lines":1,"responsibility":"울산 80km 도로 원본 수집 패키지."},{"path":"pipeline/collectors/ulsan_roads/collect.py","lines":117,"responsibility":"전체 경계 일괄 수집과 분할 재개 수집. 런타임 자산은 변경하지 않는다."}]}

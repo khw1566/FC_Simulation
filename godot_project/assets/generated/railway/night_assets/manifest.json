@@ -7,7 +7,7 @@
         "aabb_max_m": [
           2.45149993896484,
           5.55000019073486,
-          460
+          460.109985351563
         ],
         "aabb_min_m": [
           -2.59999990463257,
@@ -21,10 +21,18 @@
         "light_count": 5,
         "marker_batches": 17,
         "placement_status": "asset_only",
-        "resolution": null
+        "resolution": null,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 7446,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "collision_shapes": 0,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "a42bec8be03060ebdf9f2d9a237ac43755e5dbfe7fae3263804280b00a42193c",
-      "size_bytes": 85525,
+      "sha256": "2ae762780d87bd4d7a4021b9b935062fd129bcd1e113a0df44852e344237829c",
+      "size_bytes": 58720,
       "type": "railway_night_asset"
     },
     "donghae_track": {
@@ -34,7 +42,7 @@
         "aabb_max_m": [
           2.45149993896484,
           5.55000019073486,
-          460
+          460.109985351563
         ],
         "aabb_min_m": [
           -2.59999990463257,
@@ -48,10 +56,18 @@
         "light_count": 2,
         "marker_batches": 5,
         "placement_status": "asset_only",
-        "resolution": null
+        "resolution": null,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1854,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "collision_shapes": 0,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "64ec3ae0cbe6571b7e866cb05a69ff1cb4c7b6a0351f75e8b5a1252dbafe5109",
-      "size_bytes": 43309,
+      "sha256": "f08594edea68d119188b9a78f0a8c43563301651037b55a50c0c640f7d8c41e6",
+      "size_bytes": 16657,
       "type": "railway_night_asset"
     },
     "donghae_train": {
@@ -102,10 +118,18 @@
         "light_count": 10,
         "marker_batches": 45,
         "placement_status": "asset_only",
-        "resolution": null
+        "resolution": null,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 25902,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "collision_shapes": 0,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "bfc7e2730bb828593ab9c9044d12194f8f5c94be913e56226ec09994e3d35de3",
-      "size_bytes": 169860,
+      "sha256": "3c9be584560d11903a17c69994e8c862331bfb59855bb5478f550934fcf61b29",
+      "size_bytes": 153584,
       "type": "railway_night_asset"
     },
     "ktx_track": {
@@ -129,10 +153,18 @@
         "light_count": 2,
         "marker_batches": 5,
         "placement_status": "asset_only",
-        "resolution": null
+        "resolution": null,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1326,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "collision_shapes": 0,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "e207b7779ff11ba003a74aa78cf6a721bd51469ff7239fe19b0ac842ed6b63e2",
-      "size_bytes": 30826,
+      "sha256": "082ee691db1b83af375e0d28a41171908c7a7299b83dde9308fdbed240116b2b",
+      "size_bytes": 14550,
       "type": "railway_night_asset"
     },
     "ktx_train": {

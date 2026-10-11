@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "bridge_00",
+      "scene_path": "res://assets/generated/bridges/bridge_00.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 9884,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -5.16802978515625,
+        -8,
+        -320.304290771484
+      ],
+      "aabb_max_m": [
+        2856.94213867188,
+        203.387451171875,
+        231.498992919922
+      ],
+      "elevation_min": -8,
+      "elevation_max": 203.387451171875,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "bridge_01",
+      "scene_path": "res://assets/generated/bridges/bridge_01.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 924,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -0.10771587491035,
+        0.200000017881393,
+        -4.30391550064087
+      ],
+      "aabb_max_m": [
+        158.083694458008,
+        31.3347911834717,
+        3.54920101165771
+      ],
+      "elevation_min": 0.200000017881393,
+      "elevation_max": 31.3347911834717,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "bridge_02",
+      "scene_path": "res://assets/generated/bridges/bridge_02.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1076,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -5.41790533065796,
+        -3,
+        -235.536041259766
+      ],
+      "aabb_max_m": [
+        118.157218933105,
+        2.30000019073486,
+        2.65036010742188
+      ],
+      "elevation_min": -3,
+      "elevation_max": 2.30000019073486,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "bridge_03",
+      "scene_path": "res://assets/generated/bridges/bridge_03.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1596,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -8.05770874023438,
+        -3,
+        -230.891067504883
+      ],
+      "aabb_max_m": [
+        12.7459201812744,
+        2.30000019073486,
+        1.23143005371094
+      ],
+      "elevation_min": -3,
+      "elevation_max": 2.30000019073486,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "bridge_04",
+      "scene_path": "res://assets/generated/bridges/bridge_04.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1744,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -392.721649169922,
+        -3,
+        -5.11762475967407
+      ],
+      "aabb_max_m": [
+        3.20028686523438,
+        2.30000019073486,
+        247.115386962891
+      ],
+      "elevation_min": -3,
+      "elevation_max": 2.30000019073486,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "bridge_05",
+      "scene_path": "res://assets/generated/bridges/bridge_05.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1744,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -3.19490242004395,
+        -3,
+        -245.975555419922
+      ],
+      "aabb_max_m": [
+        391.795135498047,
+        2.30000019073486,
+        5.12094116210938
+      ],
+      "elevation_min": -3,
+      "elevation_max": 2.30000019073486,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "bridge_06",
+      "scene_path": "res://assets/generated/bridges/bridge_06.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 496,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6,
+        -3,
+        -0.09510565549135
+      ],
+      "aabb_max_m": [
+        6,
+        2.30000019073486,
+        120.095108032227
+      ],
+      "elevation_min": -3,
+      "elevation_max": 2.30000019073486,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "bridge_07",
+      "scene_path": "res://assets/generated/bridges/bridge_07.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 604,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -0.625,
+        -0.39999997615814,
+        -0.5
+      ],
+      "aabb_max_m": [
+        0.645105600357056,
+        1.14999997615814,
+        60.5
+      ],
+      "elevation_min": -0.39999997615814,
+      "elevation_max": 1.14999997615814,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    }
+  ]
+}

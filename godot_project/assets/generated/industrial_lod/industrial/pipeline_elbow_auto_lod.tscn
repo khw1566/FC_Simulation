@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://assets/generated/industrial_lod/lod_selector.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial/pipeline_elbow.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_lod/industrial/pipeline_elbow_lod1.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://assets/generated/industrial_lod/industrial/pipeline_elbow_lod2.tscn" id="4"]
+
+[node name="industrial_pipeline_elbow_AutoLOD" type="Node3D"]
+script = ExtResource("1")
+near_end_m = 350.0
+far_begin_m = 1200.0
+cull_m = 10000.0
+
+[node name="Near" parent="." instance=ExtResource("2")]
+
+[node name="Far" parent="." instance=ExtResource("3")]
+visible = false
+
+[node name="VeryFar" parent="." instance=ExtResource("4")]
+visible = false

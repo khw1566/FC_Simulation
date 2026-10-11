@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "name_ko": "태화강 국가정원 시설물 6종 · 근경/원경 별도 모델",
+  "units": "meters",
+  "up_axis": "Y",
+  "origin": "바닥 중심",
+  "assets": {
+    "korean_pavilion_near": {
+      "name_ko": "육각 목조 정자",
+      "lod": "near",
+      "file_path": "res://assets/generated/garden_furniture/near/korean_pavilion.glb",
+      "triangles": 704,
+      "material_batches": 3,
+      "size_bytes": 52532,
+      "sha256": "35cd668f85f404e4ec5b90e2b8d747c81ffbac5ea015b105075ee8ccb5318446",
+      "aabb_min_m": [
+        -2.94875,
+        0.0,
+        -2.6
+      ],
+      "aabb_max_m": [
+        2.94875,
+        3.82,
+        2.6
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 3.82,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 704
+      },
+      "scene_path": "res://assets/generated/garden_furniture/near/korean_pavilion.tscn",
+      "scene_sha256": "deafff7d1c013488b5ec3263481b69aad201270fad6fb808f6df16332be965dc",
+      "suggested_switch_m": 70
+    },
+    "korean_pavilion_far": {
+      "name_ko": "육각 목조 정자",
+      "lod": "far",
+      "file_path": "res://assets/generated/garden_furniture/far/korean_pavilion.glb",
+      "triangles": 132,
+      "material_batches": 3,
+      "size_bytes": 11340,
+      "sha256": "0c56d7b363744df39229ab4eff76196dfe1fdc6224dffa3b100dc09ca053fb8d",
+      "aabb_min_m": [
+        -2.9,
+        0.0,
+        -2.6
+      ],
+      "aabb_max_m": [
+        2.9,
+        3.82,
+        2.6
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 3.82,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 132
+      },
+      "scene_path": "res://assets/generated/garden_furniture/far/korean_pavilion.tscn",
+      "scene_sha256": "a15abb05ff5b10e8d4d33dd6b89c14e264a1c9ffeb770b7b6e7b667e82162206",
+      "suggested_cull_m": 650
+    },
+    "park_bench_near": {
+      "name_ko": "등받이 벤치",
+      "lod": "near",
+      "file_path": "res://assets/generated/garden_furniture/near/park_bench.glb",
+      "triangles": 252,
+      "material_batches": 2,
+      "size_bytes": 19472,
+      "sha256": "eb60037a4bf69797544a8f11c66c9396845695185741f2f92d7752ebe3e8571a",
+      "aabb_min_m": [
+        -0.9,
+        0.0,
+        -0.23750000000000002
+      ],
+      "aabb_max_m": [
+        0.9,
+        1.0925,
+        0.2575
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 1.0925,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 252
+      },
+      "scene_path": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "scene_sha256": "c8f3c4c1c91e2616c57fca59d98377be17668f1af1aec27044ca07e737b523cd",
+      "suggested_switch_m": 25
+    },
+    "park_bench_far": {
+      "name_ko": "등받이 벤치",
+      "lod": "far",
+      "file_path": "res://assets/generated/garden_furniture/far/park_bench.glb",
+      "triangles": 48,
+      "material_batches": 2,
+      "size_bytes": 4728,
+      "sha256": "7e92ae37494df997d5e260edb8eca64e0bb789564d8ea6ed886c7daf59886473",
+      "aabb_min_m": [
+        -0.9,
+        0.0,
+        -0.2375
+      ],
+      "aabb_max_m": [
+        0.9,
+        1.0925,
+        0.2575
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 1.0925,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 48
+      },
+      "scene_path": "res://assets/generated/garden_furniture/far/park_bench.tscn",
+      "scene_sha256": "ec50e614dc1d01b59e992bc6435fed6565351b9988a10514cce1bfcf712f7186",
+      "suggested_cull_m": 150
+    },
+    "backless_bench_near": {
+      "name_ko": "평벤치",
+      "lod": "near",
+      "file_path": "res://assets/generated/garden_furniture/near/backless_bench.glb",
+      "triangles": 132,
+      "material_batches": 2,
+      "size_bytes": 10860,
+      "sha256": "b02dc7919e7e2a661d6d9d99716c83e37dabeaaed0fd954ce72fbb4ab5b9d5e7",
+      "aabb_min_m": [
+        -0.9,
+        0.0,
+        -0.23750000000000002
+      ],
+      "aabb_max_m": [
+        0.9,
+        0.49,
+        0.23750000000000002
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 0.49,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 132
+      },
+      "scene_path": "res://assets/generated/garden_furniture/near/backless_bench.tscn",
+      "scene_sha256": "71134d70b95953a17bd6c5d9a0021395138fc91ee28a94ce091bc79d5e1bcd61",
+      "suggested_switch_m": 25
+    },
+    "backless_bench_far": {
+      "name_ko": "평벤치",
+      "lod": "far",
+      "file_path": "res://assets/generated/garden_furniture/far/backless_bench.glb",
+      "triangles": 36,
+      "material_batches": 2,
+      "size_bytes": 3868,
+      "sha256": "20f9b196e8a8922527281bf402d141e9e7d19e3e4c215a51160b3ec69ef03bd6",
+      "aabb_min_m": [
+        -0.9,
+        0.0,
+        -0.2375
+      ],
+      "aabb_max_m": [
+        0.9,
+        0.49,
+        0.2375
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 0.49,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 36
+      },
+      "scene_path": "res://assets/generated/garden_furniture/far/backless_bench.tscn",
+      "scene_sha256": "6795d829fb09500976ad625e89d8d126e012dbe34739269d2ba0e767e3822da3",
+      "suggested_cull_m": 150
+    },
+    "square_canopy_near": {
+      "name_ko": "소형 천막",
+      "lod": "near",
+      "file_path": "res://assets/generated/garden_furniture/near/square_canopy.glb",
+      "triangles": 232,
+      "material_batches": 3,
+      "size_bytes": 18488,
+      "sha256": "ad13e6fce0ff4618af20bdc49b1995ab760f6fa27f65bfda6dff32f42dd10694",
+      "aabb_min_m": [
+        -1.6,
+        0.0,
+        -1.6
+      ],
+      "aabb_max_m": [
+        1.6,
+        3.1,
+        1.6
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 3.1,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 232
+      },
+      "scene_path": "res://assets/generated/garden_furniture/near/square_canopy.tscn",
+      "scene_sha256": "ec2753c114edae9c62c7bef18e3cb31cc45ad3f3117c064ad50e1b54077b76e4",
+      "suggested_switch_m": 50
+    },
+    "square_canopy_far": {
+      "name_ko": "소형 천막",
+      "lod": "far",
+      "file_path": "res://assets/generated/garden_furniture/far/square_canopy.glb",
+      "triangles": 104,
+      "material_batches": 2,
+      "size_bytes": 8772,
+      "sha256": "15a42b320582cabe29672169d82bc26eb4cb679499f4b3c26a0e49be7167d17c",
+      "aabb_min_m": [
+        -1.5325,
+        0.0,
+        -1.5325
+      ],
+      "aabb_max_m": [
+        1.5325,
+        3.1,
+        1.5325
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 3.1,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 104
+      },
+      "scene_path": "res://assets/generated/garden_furniture/far/square_canopy.tscn",
+      "scene_sha256": "d6ac91bb74b90cda6d699e78a3529bfc33d7ea26f6ad3b921bfb20d14159a07a",
+      "suggested_cull_m": 450
+    },
+    "festival_marquee_near": {
+      "name_ko": "대형 행사 천막",
+      "lod": "near",
+      "file_path": "res://assets/generated/garden_furniture/near/festival_marquee.glb",
+      "triangles": 380,
+      "material_batches": 4,
+      "size_bytes": 29660,
+      "sha256": "04cdf3b570b72aae89c38694b22a9e3f13d704a0b220ea7e55d3671e533f4c2f",
+      "aabb_min_m": [
+        -3.1,
+        0.0,
+        -6.1
+      ],
+      "aabb_max_m": [
+        3.1,
+        4.3,
+        6.1
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 4.3,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 380
+      },
+      "scene_path": "res://assets/generated/garden_furniture/near/festival_marquee.tscn",
+      "scene_sha256": "fb764d9fba51651d93e22e1c10b4c3c10a9317bce0253f8f18d67b7704567a0d",
+      "suggested_switch_m": 80
+    },
+    "festival_marquee_far": {
+      "name_ko": "대형 행사 천막",
+      "lod": "far",
+      "file_path": "res://assets/generated/garden_furniture/far/festival_marquee.glb",
+      "triangles": 156,
+      "material_batches": 2,
+      "size_bytes": 12536,
+      "sha256": "9d950ac8c1038081c5b02fdcfbe75b2e22d361b4e8278297ffd59f3052a75077",
+      "aabb_min_m": [
+        -3.0325,
+        0.0,
+        -6.0325
+      ],
+      "aabb_max_m": [
+        3.0325,
+        4.3,
+        6.0325
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 4.3,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 156
+      },
+      "scene_path": "res://assets/generated/garden_furniture/far/festival_marquee.tscn",
+      "scene_sha256": "4250868486b37df3bfcc225ea5c94b592edb5a4c6956724e3ee2537da8a8c265",
+      "suggested_cull_m": 800
+    },
+    "picnic_table_near": {
+      "name_ko": "피크닉 테이블",
+      "lod": "near",
+      "file_path": "res://assets/generated/garden_furniture/near/picnic_table.glb",
+      "triangles": 228,
+      "material_batches": 2,
+      "size_bytes": 17744,
+      "sha256": "b6029e179ececb7d9418e39b875471ac8fe863d247070da7136778c21f7fecbc",
+      "aabb_min_m": [
+        -0.9,
+        0.007932893135493183,
+        -0.81
+      ],
+      "aabb_max_m": [
+        0.9,
+        0.8025,
+        0.81
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.007932893135493183,
+      "max_elevation": 0.8025,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 228
+      },
+      "scene_path": "res://assets/generated/garden_furniture/near/picnic_table.tscn",
+      "scene_sha256": "37e36f8034a330405e909581036dd07f725a05604e08695b5438792c93a6030e",
+      "suggested_switch_m": 35
+    },
+    "picnic_table_far": {
+      "name_ko": "피크닉 테이블",
+      "lod": "far",
+      "file_path": "res://assets/generated/garden_furniture/far/picnic_table.glb",
+      "triangles": 60,
+      "material_batches": 2,
+      "size_bytes": 5612,
+      "sha256": "231195fca7c58ef830b2d3e28360be9b90f6ba6921068f0dea54536e11cff9fa",
+      "aabb_min_m": [
+        -0.9,
+        0.0,
+        -0.795
+      ],
+      "aabb_max_m": [
+        0.9,
+        0.805,
+        0.795
+      ],
+      "bbox": null,
+      "georeferenced": false,
+      "min_elevation": 0.0,
+      "max_elevation": 0.805,
+      "resolution": {
+        "type": "triangle_mesh",
+        "triangles": 60
+      },
+      "scene_path": "res://assets/generated/garden_furniture/far/picnic_table.tscn",
+      "scene_sha256": "81f25f54f45cd598e0a17e7d0febabb0925f7a32a71e0b9837a6a2034e331937",
+      "suggested_cull_m": 250
+    }
+  },
+  "notes": "현장 실측 복제가 아닌 범용 배치용 디자인. 외부 텍스처와 충돌체 없음."
+}

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://assets/generated/garden_furniture/near/korean_pavilion.glb" id="1"]
+[node name="korean_pavilion_near" type="Node3D"]
+metadata/name_ko = "육각 목조 정자 · 근경"
+metadata/units = "meters"
+metadata/triangles = 704
+[node name="Visual" parent="." instance=ExtResource("1")]

@@ -1,0 +1,574 @@
+{
+  "version": 1,
+  "assets": {
+    "sayeon.tscn": {
+      "file_path": "res://assets/generated/ulsan_dams/sayeon.tscn",
+      "sha256": "ea0e24e47269ee334c9e37efe9aa66e5c0728f5efdfc9098b7c007d974b14d47",
+      "size_bytes": 311051,
+      "metadata": {
+        "label_ko": "사연댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "sayeon",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.1930228,
+          "east": 129.1947024,
+          "south": 35.5789414,
+          "north": 35.5810329
+        },
+        "resolution": null,
+        "elevation_min": -46,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 3344,
+        "triangle_count_method": "near_plus_far_stored",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 300,
+        "official_height_m": 46
+      }
+    },
+    "sayeon_near.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/sayeon_near.glb",
+      "sha256": "46951959f4ef12517a9cbd9c947b9e5e0625f4b0c21b2493aca6164e7675544c",
+      "size_bytes": 145064,
+      "metadata": {
+        "label_ko": "사연댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "sayeon",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.1930228,
+          "east": 129.1947024,
+          "south": 35.5789414,
+          "north": 35.5810329
+        },
+        "resolution": null,
+        "elevation_min": -46,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1900,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 300,
+        "official_height_m": 46,
+        "lod": "near",
+        "aabb_min_m": [
+          -150.06,
+          -46.0,
+          -95.0
+        ],
+        "aabb_max_m": [
+          150.06,
+          0.72,
+          104.2
+        ]
+      }
+    },
+    "sayeon_far.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/sayeon_far.glb",
+      "sha256": "bdab000a0f9444263eb230eeb524742f216551c581e20aa6ef38c639dd6e456a",
+      "size_bytes": 117068,
+      "metadata": {
+        "label_ko": "사연댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "sayeon",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.1930228,
+          "east": 129.1947024,
+          "south": 35.5789414,
+          "north": 35.5810329
+        },
+        "resolution": null,
+        "elevation_min": -46,
+        "elevation_max": 0,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1444,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 300,
+        "official_height_m": 46,
+        "lod": "far",
+        "aabb_min_m": [
+          -150.0,
+          -46.0,
+          -95.0
+        ],
+        "aabb_max_m": [
+          150.0,
+          0,
+          104.2
+        ]
+      }
+    },
+    "daegok.tscn": {
+      "file_path": "res://assets/generated/ulsan_dams/daegok.tscn",
+      "sha256": "aee0265227cfef94c565d2405fba7c80f373251b0678b1206483598c4f94f36e",
+      "size_bytes": 223376,
+      "metadata": {
+        "label_ko": "대곡댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "daegok",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.174595,
+          "east": 129.1749907,
+          "south": 35.6177942,
+          "north": 35.6194633
+        },
+        "resolution": null,
+        "elevation_min": -52,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 2332,
+        "triangle_count_method": "near_plus_far_stored",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 190,
+        "official_height_m": 52
+      }
+    },
+    "daegok_near.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/daegok_near.glb",
+      "sha256": "fb716a39310c7f966116eb3de5bb580b9ead5cc1456495354353b70b44f4521c",
+      "size_bytes": 101072,
+      "metadata": {
+        "label_ko": "대곡댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "daegok",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.174595,
+          "east": 129.1749907,
+          "south": 35.6177942,
+          "north": 35.6194633
+        },
+        "resolution": null,
+        "elevation_min": -52,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1340,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 190,
+        "official_height_m": 52,
+        "lod": "near",
+        "aabb_min_m": [
+          -95.06,
+          -52.0,
+          -106.81672654330019
+        ],
+        "aabb_max_m": [
+          95.06,
+          0.72,
+          117.16539919763021
+        ]
+      }
+    },
+    "daegok_far.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/daegok_far.glb",
+      "sha256": "bbc0dc7ad0f74163f5146370ed999c4fa2d3d5e0164787699e867e20aad98f6b",
+      "size_bytes": 79560,
+      "metadata": {
+        "label_ko": "대곡댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "daegok",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.174595,
+          "east": 129.1749907,
+          "south": 35.6177942,
+          "north": 35.6194633
+        },
+        "resolution": null,
+        "elevation_min": -52,
+        "elevation_max": 0,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 992,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 190,
+        "official_height_m": 52,
+        "lod": "far",
+        "aabb_min_m": [
+          -95.0,
+          -52.0,
+          -106.78672654330019
+        ],
+        "aabb_max_m": [
+          95.0,
+          0,
+          117.16539919763021
+        ]
+      }
+    },
+    "daeam.tscn": {
+      "file_path": "res://assets/generated/ulsan_dams/daeam.tscn",
+      "sha256": "7fb46914905fd2d8e806314b72ae8d1beb7435764df2b0d003dfea594b0810ba",
+      "size_bytes": 240346,
+      "metadata": {
+        "label_ko": "대암댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "daeam",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.1826633,
+          "east": 129.1840616,
+          "south": 35.5419782,
+          "north": 35.5443396
+        },
+        "resolution": null,
+        "elevation_min": -27,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 2536,
+        "triangle_count_method": "near_plus_far_stored",
+        "axis_status": "inferred_crest_road_and_imagery",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 318,
+        "official_height_m": 27
+      }
+    },
+    "daeam_near.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/daeam_near.glb",
+      "sha256": "6b293c17041cd7b11344e2ff8e069fc72327ccd86a0bc46338ffa3f7977480e0",
+      "size_bytes": 111172,
+      "metadata": {
+        "label_ko": "대암댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "daeam",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.1826633,
+          "east": 129.1840616,
+          "south": 35.5419782,
+          "north": 35.5443396
+        },
+        "resolution": null,
+        "elevation_min": -27,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1508,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "inferred_crest_road_and_imagery",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 318,
+        "official_height_m": 27,
+        "lod": "near",
+        "aabb_min_m": [
+          -159.06,
+          -27.0,
+          -57.0
+        ],
+        "aabb_max_m": [
+          159.06,
+          0.72,
+          62.400000000000006
+        ]
+      }
+    },
+    "daeam_far.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/daeam_far.glb",
+      "sha256": "fc2610f3e80e46336e4f9c5e2268111d7d52d980bd2079a8681318e6a161d238",
+      "size_bytes": 81736,
+      "metadata": {
+        "label_ko": "대암댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "daeam",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.1826633,
+          "east": 129.1840616,
+          "south": 35.5419782,
+          "north": 35.5443396
+        },
+        "resolution": null,
+        "elevation_min": -27,
+        "elevation_max": 0,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1028,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "inferred_crest_road_and_imagery",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 318,
+        "official_height_m": 27,
+        "lod": "far",
+        "aabb_min_m": [
+          -159.0,
+          -27.0,
+          -57.0
+        ],
+        "aabb_max_m": [
+          159.0,
+          0,
+          62.400000000000006
+        ]
+      }
+    },
+    "seonam.tscn": {
+      "file_path": "res://assets/generated/ulsan_dams/seonam.tscn",
+      "sha256": "0ae2bffc6197ed42b00c7e4ee22c75838f4efe5897766b22fa45562ec5c5e848",
+      "size_bytes": 225623,
+      "metadata": {
+        "label_ko": "선암댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "seonam",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.3315453,
+          "east": 129.3315982,
+          "south": 35.5168119,
+          "north": 35.5190389
+        },
+        "resolution": null,
+        "elevation_min": -22,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 2392,
+        "triangle_count_method": "near_plus_far_stored",
+        "axis_status": "inferred_crest_footway",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 331,
+        "official_height_m": 22
+      }
+    },
+    "seonam_near.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/seonam_near.glb",
+      "sha256": "99220f1432be254c025f366b1c48e56d3bb3e8a8ac897471111d749fea0c9bf2",
+      "size_bytes": 105380,
+      "metadata": {
+        "label_ko": "선암댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "seonam",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.3315453,
+          "east": 129.3315982,
+          "south": 35.5168119,
+          "north": 35.5190389
+        },
+        "resolution": null,
+        "elevation_min": -22,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1436,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "inferred_crest_footway",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 331,
+        "official_height_m": 22,
+        "lod": "near",
+        "aabb_min_m": [
+          -165.56,
+          -22.0,
+          -47.0
+        ],
+        "aabb_max_m": [
+          165.56,
+          0.72,
+          51.400000000000006
+        ]
+      }
+    },
+    "seonam_far.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/seonam_far.glb",
+      "sha256": "66c7408a3115d5f446dc3d98f1717c815517f57dadf37601509c87ebf15aa539",
+      "size_bytes": 75940,
+      "metadata": {
+        "label_ko": "선암댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "seonam",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.3315453,
+          "east": 129.3315982,
+          "south": 35.5168119,
+          "north": 35.5190389
+        },
+        "resolution": null,
+        "elevation_min": -22,
+        "elevation_max": 0,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 956,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "inferred_crest_footway",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 331,
+        "official_height_m": 22,
+        "lod": "far",
+        "aabb_min_m": [
+          -165.5,
+          -22.0,
+          -47.0
+        ],
+        "aabb_max_m": [
+          165.5,
+          0,
+          51.400000000000006
+        ]
+      }
+    },
+    "hoeya.tscn": {
+      "file_path": "res://assets/generated/ulsan_dams/hoeya.tscn",
+      "sha256": "40526f35c054b4c201143efede4e1f7075ecbe2ed2606cc0f6fefa3a64ef4be2",
+      "size_bytes": 284275,
+      "metadata": {
+        "label_ko": "회야댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "hoeya",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.2786208,
+          "east": 129.2824689,
+          "south": 35.4706564,
+          "north": 35.4722296
+        },
+        "resolution": null,
+        "elevation_min": -24.5,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 3040,
+        "triangle_count_method": "near_plus_far_stored",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 424,
+        "official_height_m": 24.5
+      }
+    },
+    "hoeya_near.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/hoeya_near.glb",
+      "sha256": "8ee2d9030b0d760a4e4aab9004c04c148e9d5420e303c1e75d201bafe3889289",
+      "size_bytes": 131688,
+      "metadata": {
+        "label_ko": "회야댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "hoeya",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.2786208,
+          "east": 129.2824689,
+          "south": 35.4706564,
+          "north": 35.4722296
+        },
+        "resolution": null,
+        "elevation_min": -24.5,
+        "elevation_max": 0.72,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1832,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 424,
+        "official_height_m": 24.5,
+        "lod": "near",
+        "aabb_min_m": [
+          -212.06,
+          -24.5,
+          -51.98038312413308
+        ],
+        "aabb_max_m": [
+          212.06,
+          0.72,
+          56.87842143654639
+        ]
+      }
+    },
+    "hoeya_far.glb": {
+      "file_path": "res://assets/generated/ulsan_dams/hoeya_far.glb",
+      "sha256": "e0fb32c0b6c54372447eac2acb4bb2c2efa8611af97c2b158d927fe0fc451d71",
+      "size_bytes": 93608,
+      "metadata": {
+        "label_ko": "회야댐",
+        "detail_profile": "ulsan_dam_low_poly_v1",
+        "model_id": "hoeya",
+        "status": "research_based_simplified",
+        "bbox": null,
+        "axis_bbox": {
+          "west": 129.2786208,
+          "east": 129.2824689,
+          "south": 35.4706564,
+          "north": 35.4722296
+        },
+        "resolution": null,
+        "elevation_min": -24.5,
+        "elevation_max": 0,
+        "elevation_reference": "local_crest",
+        "external_textures": false,
+        "triangles": 1208,
+        "triangle_count_method": "gltf_primitive_indices",
+        "axis_status": "osm_dam_axis",
+        "placement_status": "runtime_map_bbox_and_dem",
+        "official_length_m": 424,
+        "official_height_m": 24.5,
+        "lod": "far",
+        "aabb_min_m": [
+          -212.0,
+          -24.5,
+          -51.98038312413308
+        ],
+        "aabb_max_m": [
+          212.0,
+          0,
+          56.87842143654639
+        ]
+      }
+    },
+    "catalog.json": {
+      "file_path": "res://assets/generated/ulsan_dams/catalog.json",
+      "sha256": "fade4860b09b5c8d93731da2d5fc8e5539d7a09552eea22324b57dc8340c8dd8",
+      "size_bytes": 15735,
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null,
+        "status": "research_based_simplified"
+      }
+    },
+    "README.md": {
+      "file_path": "res://assets/generated/ulsan_dams/README.md",
+      "sha256": "f2ca2f2b2166b5a8709def2b601b9aad4192bbe507acd2d0d201bb05e35551b2",
+      "size_bytes": 1832,
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null,
+        "status": "research_based_simplified"
+      }
+    }
+  }
+}

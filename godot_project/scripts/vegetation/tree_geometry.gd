@@ -55,6 +55,21 @@ static func triangle(st: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, color:
 	for p in [a,b,c]:
 		st.add_vertex(p)
 
+## 닫힌 입체의 면. Godot 앞면(시계 방향)이 바깥을 향하도록 감기 순서를 맞추고 법선은 바깥으로 둔다.
+static func solid_triangle(st: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, color: Color, inside: Vector3) -> void:
+	var cross := (b-a).cross(c-a)
+	if cross.length_squared() < 0.00000001:
+		return
+	if cross.dot((a+b+c)/3.0 - inside) > 0.0:
+		var swap := b
+		b = c
+		c = swap
+		cross = -cross
+	st.set_color(color)
+	st.set_normal(-cross.normalized())
+	for p in [a,b,c]:
+		st.add_vertex(p)
+
 static func cone(st: SurfaceTool, base: Vector3, height: float, radius: float, top: float, segments: int, color: Color) -> void:
 	for i in range(segments):
 		var a := TAU * i / segments
@@ -63,11 +78,12 @@ static func cone(st: SurfaceTool, base: Vector3, height: float, radius: float, t
 		var q := base + Vector3(cos(b)*radius,0,sin(b)*radius)
 		var r := base + Vector3(cos(a)*top,height,sin(a)*top)
 		var s := base + Vector3(cos(b)*top,height,sin(b)*top)
-		triangle(st,p,r,s,color)
-		triangle(st,p,s,q,color)
-		triangle(st,base,p,q,color)
+		var inside := base + Vector3.UP * height * 0.5
+		solid_triangle(st,p,r,s,color,inside)
+		solid_triangle(st,p,s,q,color,inside)
+		solid_triangle(st,base,p,q,color,inside)
 		if top > 0:
-			triangle(st,base+Vector3.UP*height,s,r,color)
+			solid_triangle(st,base+Vector3.UP*height,s,r,color,inside)
 
 static func ellipsoid(st: SurfaceTool, center: Vector3, scale_value: Vector3, segments: int, rings: int, color: Color) -> void:
 	for ring in range(rings):
@@ -77,5 +93,5 @@ static func ellipsoid(st: SurfaceTool, center: Vector3, scale_value: Vector3, se
 				var angle: float = uv.x * TAU / segments
 				var latitude: float = uv.y * PI / rings
 				points.append(center + Vector3(sin(latitude)*cos(angle),cos(latitude),sin(latitude)*sin(angle)) * scale_value)
-			triangle(st,points[0],points[1],points[2],color)
-			triangle(st,points[0],points[2],points[3],color)
+			solid_triangle(st,points[0],points[1],points[2],color,center)
+			solid_triangle(st,points[0],points[2],points[3],color,center)

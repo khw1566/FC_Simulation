@@ -48,8 +48,10 @@ func _process(_delta: float) -> void:
 	_peak_ms = maxf(_peak_ms, seconds * 1000.0)
 	if _elapsed < 0.5:
 		return
-	_label.text = "%.0f FPS | 평균 %.1f ms | 최대 %.1f ms [F3]" % [
-		float(_frames) / _elapsed, _elapsed * 1000.0 / _frames, _peak_ms]
+	_label.text = "%.0f FPS | 평균 %.1f ms | 최대 %.1f ms [F3]\n업로드 최대 %.1f ms | 드로우 %d" % [
+		float(_frames)/_elapsed,_elapsed*1000.0/_frames,_peak_ms,
+		preload("res://scripts/terrain/stream_frame_budget.gd").recent_peak_ms(),
+		int(Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME))]
 	_elapsed = 0.0
 	_frames = 0
 	_peak_ms = 0.0

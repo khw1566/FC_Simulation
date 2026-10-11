@@ -1,0 +1,25 @@
+{
+  "added_models": 109,
+  "total_models": 348,
+  "checked_original_files": 504,
+  "original_files_changed": [],
+  "manifest_entries": 708,
+  "hash_errors": [],
+  "representative_scenes_passed": 10,
+  "runtime_applied": false,
+  "new_module_lines": {
+    "accessories.py": 120,
+    "assembly.py": 71,
+    "cached_mesh.py": 26,
+    "decks.py": 163,
+    "extensions.py": 110,
+    "extension_assembly.py": 69,
+    "generate.py": 170,
+    "junctions.py": 77,
+    "mesh.py": 92,
+    "preview.py": 58,
+    "profiles.py": 92,
+    "surfaces.py": 100,
+    "__init__.py": 2
+  }
+}

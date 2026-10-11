@@ -26,6 +26,8 @@ previews/high_altitude_check/project/
 # 배포 산출물과 독립 프리뷰 캐시
 dist/
 .build/
+build_artifacts/
+source_assets/
 **/*.tmp
 previews/**/project/
 previews/**/live/
@@ -41,3 +43,16 @@ previews/**/roaming/
 previews/**/local/
 previews/**/bin/
 previews/**/obj/
+
+# 원본 백업 및 독립 검증 프로젝트의 복사 자산과 실행 캐시
+data/archives/
+previews/**/assets/
+previews/**/appdata/
+previews/**/localappdata/
+results/**/appdata/
+results/quality_check/project/
+results/prebaked_rail_test/bake_project/
+
+previews/**/user_data/
+**/shader_cache/
+**/app_userdata/

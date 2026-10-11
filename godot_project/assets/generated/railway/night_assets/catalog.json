@@ -8,7 +8,7 @@
       "aabb_max_m": [
         2.45149993896484,
         5.55000019073486,
-        460
+        460.109985351563
       ],
       "aabb_min_m": [
         -2.59999990463257,
@@ -22,7 +22,15 @@
       "light_count": 5,
       "marker_batches": 17,
       "placement_status": "asset_only",
-      "resolution": null
+      "resolution": null,
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 7446,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "collision_shapes": 0,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "donghae_track",
@@ -30,7 +38,7 @@
       "aabb_max_m": [
         2.45149993896484,
         5.55000019073486,
-        460
+        460.109985351563
       ],
       "aabb_min_m": [
         -2.59999990463257,
@@ -44,7 +52,15 @@
       "light_count": 2,
       "marker_batches": 5,
       "placement_status": "asset_only",
-      "resolution": null
+      "resolution": null,
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1854,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "collision_shapes": 0,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "donghae_train",
@@ -88,7 +104,15 @@
       "light_count": 10,
       "marker_batches": 45,
       "placement_status": "asset_only",
-      "resolution": null
+      "resolution": null,
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 25902,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "collision_shapes": 0,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "ktx_track",
@@ -110,7 +134,15 @@
       "light_count": 2,
       "marker_batches": 5,
       "placement_status": "asset_only",
-      "resolution": null
+      "resolution": null,
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1326,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "collision_shapes": 0,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "ktx_train",

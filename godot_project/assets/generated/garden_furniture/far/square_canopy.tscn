@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://assets/generated/garden_furniture/far/square_canopy.glb" id="1"]
+[node name="square_canopy_far" type="Node3D"]
+metadata/name_ko = "소형 천막 · 원경"
+metadata/units = "meters"
+metadata/triangles = 104
+[node name="Visual" parent="." instance=ExtResource("1")]

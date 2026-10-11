@@ -1,0 +1,16 @@
+{
+  "dense_check": {
+    "build_ms": 771,
+    "cached_point_queries_ms": 5.694,
+    "point_bucket_probes": 256,
+    "projected_area_m2": 16384,
+    "segments": 298,
+    "size_m": 128,
+    "triangles": 30062,
+    "vertices": 15514
+  },
+  "render": {
+    "device": "NVIDIA GeForce RTX 4070 SUPER",
+    "renderer": "forward_plus"
+  }
+}

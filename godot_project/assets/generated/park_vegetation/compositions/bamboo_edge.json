@@ -1,0 +1,31 @@
+{
+  "id": "bamboo_edge",
+  "label": "대숲 가장자리",
+  "ground": "bamboo_litter",
+  "plants": [
+    "ornamental_fine",
+    "rock_medium",
+    "grass_sparse"
+  ],
+  "reused": [
+    {
+      "path": "res://assets/generated/bamboo/bamboo_clump_lod0.scn",
+      "position": [
+        -5,
+        0,
+        -5
+      ],
+      "role": "bamboo"
+    },
+    {
+      "path": "res://assets/generated/road_assets/walk_concrete_w3_straight.tscn",
+      "position": [
+        -1,
+        0,
+        -5
+      ],
+      "role": "path"
+    }
+  ],
+  "seed": 177
+}

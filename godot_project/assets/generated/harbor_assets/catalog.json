@@ -1,0 +1,8607 @@
+{
+  "version": 1,
+  "family": "harbor_assets",
+  "config": {
+    "version": 1,
+    "units": "meters",
+    "grid_m": 6,
+    "deck_surface_y_m": 0,
+    "sea_side_local_axis": "+X",
+    "connector_forward_axis": "-Z outward",
+    "detail_profile": "harbor_low_poly_flat_v1",
+    "max_triangles_per_model": 1800,
+    "external_textures": false,
+    "auto_apply": false,
+    "note_ko": "게임용 범용 모듈. 실제 항구 좌표·표고·시설 규격은 지정하지 않음. 지형과 수위 확인 후 독립 부재를 조립한다."
+  },
+  "models": {
+    "breakwater_straight_6m": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_straight_6m.tscn",
+      "label_ko": "콘크리트 방파제 6m",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -0.6,
+        -3.0
+      ],
+      "aabb_max_m": [
+        2.0,
+        1.3,
+        3.0
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -3.0,
+        2.0,
+        3.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 1.3,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            4,
+            0.6,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.65,
+            0.65,
+            0
+          ],
+          "size_m": [
+            0.7,
+            1.3,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 6,
+      "width_m": 4,
+      "foundation_separate": true
+    },
+    "breakwater_straight_12m": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_straight_12m.tscn",
+      "label_ko": "콘크리트 방파제 12m",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -0.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        2.0,
+        1.3,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -6.0,
+        2.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 1.3,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            4,
+            0.6,
+            12
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.65,
+            0.65,
+            0
+          ],
+          "size_m": [
+            0.7,
+            1.3,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "width_m": 4,
+      "foundation_separate": true
+    },
+    "breakwater_straight_24m": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_straight_24m.tscn",
+      "label_ko": "콘크리트 방파제 24m",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -0.6,
+        -12.0
+      ],
+      "aabb_max_m": [
+        2.0,
+        1.3,
+        12.0
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -12.0,
+        2.0,
+        12.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 1.3,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -12.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            12.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            4,
+            0.6,
+            24
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.65,
+            0.65,
+            0
+          ],
+          "size_m": [
+            0.7,
+            1.3,
+            24
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 24,
+      "width_m": 4,
+      "foundation_separate": true
+    },
+    "breakwater_straight_12m_open": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_straight_12m_open.tscn",
+      "label_ko": "콘크리트 방파제 12m 개방형",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -0.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        2.0,
+        0.0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -6.0,
+        2.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 0.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            4,
+            0.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "width_m": 4,
+      "foundation_separate": true
+    },
+    "breakwater_curve_45": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_curve_45.tscn",
+      "label_ko": "방파제 곡선 45도",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 72,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -0.6,
+        -0.03948883514820102
+      ],
+      "aabb_max_m": [
+        4.973313722713578,
+        1.3000000000000003,
+        8.67844591691188
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -0.03948883514820102,
+        4.973313722713578,
+        8.67844591691188
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 1.3000000000000003,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            3.514718625761429,
+            0,
+            8.485281374238571
+          ],
+          "outward_direction": [
+            0.7071067811865476,
+            0,
+            0.7071067811865476
+          ],
+          "rotation_y_rad": -2.356194490192345,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -2.0,
+              0,
+              0.0
+            ],
+            [
+              -2.0,
+              -0.6,
+              0.0
+            ],
+            [
+              -1.5229615680469564,
+              0,
+              3.105828541230249
+            ],
+            [
+              -1.5229615680469564,
+              -0.6,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              -0.6,
+              3.105828541230249
+            ],
+            [
+              2.0,
+              0,
+              0.0
+            ],
+            [
+              2.0,
+              -0.6,
+              0.0
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              1.3,
+              0,
+              0.0
+            ],
+            [
+              1.3,
+              1.3,
+              0.0
+            ],
+            [
+              2.0,
+              0,
+              0.0
+            ],
+            [
+              2.0,
+              1.3,
+              0.0
+            ],
+            [
+              1.6645936587069692,
+              0,
+              3.105828541230249
+            ],
+            [
+              1.6645936587069692,
+              1.3,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              1.3,
+              3.105828541230249
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -1.5229615680469564,
+              0,
+              3.105828541230249
+            ],
+            [
+              -1.5229615680469564,
+              -0.6,
+              3.105828541230249
+            ],
+            [
+              -0.1243556529821419,
+              0,
+              5.999999999999999
+            ],
+            [
+              -0.1243556529821419,
+              -0.6,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              -0.6,
+              5.999999999999999
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              -0.6,
+              3.105828541230249
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              1.6645936587069692,
+              0,
+              3.105828541230249
+            ],
+            [
+              1.6645936587069692,
+              1.3,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              1.3,
+              3.105828541230249
+            ],
+            [
+              2.733528179506506,
+              0,
+              5.999999999999999
+            ],
+            [
+              2.733528179506506,
+              1.3,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              1.3,
+              5.999999999999999
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -0.1243556529821419,
+              0,
+              5.999999999999999
+            ],
+            [
+              -0.1243556529821419,
+              -0.6,
+              5.999999999999999
+            ],
+            [
+              2.1005050633883338,
+              0,
+              8.485281374238571
+            ],
+            [
+              2.1005050633883338,
+              -0.6,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              -0.6,
+              8.485281374238571
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              -0.6,
+              5.999999999999999
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              2.733528179506506,
+              0,
+              5.999999999999999
+            ],
+            [
+              2.733528179506506,
+              1.3,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              1.3,
+              5.999999999999999
+            ],
+            [
+              4.433957441303941,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.433957441303941,
+              1.3,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              1.3,
+              8.485281374238571
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "radius_m": 12,
+      "angle_degrees": 45,
+      "foundation_separate": true
+    },
+    "breakwater_curve_90": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_curve_90.tscn",
+      "label_ko": "방파제 곡선 90도",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 140,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -0.6,
+        -0.03948883514820102
+      ],
+      "aabb_max_m": [
+        12.052812501346798,
+        1.3000000000000003,
+        12.345992542840875
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -0.03948883514820102,
+        12.052812501346798,
+        12.345992542840875
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 1.3000000000000003,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            11.999999999999998,
+            0,
+            12.0
+          ],
+          "outward_direction": [
+            1.0,
+            0,
+            6.123233995736766e-17
+          ],
+          "rotation_y_rad": -1.5707963267948968,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -2.0,
+              0,
+              0.0
+            ],
+            [
+              -2.0,
+              -0.6,
+              0.0
+            ],
+            [
+              -1.5229615680469564,
+              0,
+              3.105828541230249
+            ],
+            [
+              -1.5229615680469564,
+              -0.6,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              -0.6,
+              3.105828541230249
+            ],
+            [
+              2.0,
+              0,
+              0.0
+            ],
+            [
+              2.0,
+              -0.6,
+              0.0
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              1.3,
+              0,
+              0.0
+            ],
+            [
+              1.3,
+              1.3,
+              0.0
+            ],
+            [
+              2.0,
+              0,
+              0.0
+            ],
+            [
+              2.0,
+              1.3,
+              0.0
+            ],
+            [
+              1.6645936587069692,
+              0,
+              3.105828541230249
+            ],
+            [
+              1.6645936587069692,
+              1.3,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              1.3,
+              3.105828541230249
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -1.5229615680469564,
+              0,
+              3.105828541230249
+            ],
+            [
+              -1.5229615680469564,
+              -0.6,
+              3.105828541230249
+            ],
+            [
+              -0.1243556529821419,
+              0,
+              5.999999999999999
+            ],
+            [
+              -0.1243556529821419,
+              -0.6,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              -0.6,
+              5.999999999999999
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              -0.6,
+              3.105828541230249
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              1.6645936587069692,
+              0,
+              3.105828541230249
+            ],
+            [
+              1.6645936587069692,
+              1.3,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              0,
+              3.105828541230249
+            ],
+            [
+              2.340741737109317,
+              1.3,
+              3.105828541230249
+            ],
+            [
+              2.733528179506506,
+              0,
+              5.999999999999999
+            ],
+            [
+              2.733528179506506,
+              1.3,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              1.3,
+              5.999999999999999
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -0.1243556529821419,
+              0,
+              5.999999999999999
+            ],
+            [
+              -0.1243556529821419,
+              -0.6,
+              5.999999999999999
+            ],
+            [
+              2.1005050633883338,
+              0,
+              8.485281374238571
+            ],
+            [
+              2.1005050633883338,
+              -0.6,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              -0.6,
+              8.485281374238571
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              -0.6,
+              5.999999999999999
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              2.733528179506506,
+              0,
+              5.999999999999999
+            ],
+            [
+              2.733528179506506,
+              1.3,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              0,
+              5.999999999999999
+            ],
+            [
+              3.3397459621556127,
+              1.3,
+              5.999999999999999
+            ],
+            [
+              4.433957441303941,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.433957441303941,
+              1.3,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              1.3,
+              8.485281374238571
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              2.1005050633883338,
+              0,
+              8.485281374238571
+            ],
+            [
+              2.1005050633883338,
+              -0.6,
+              8.485281374238571
+            ],
+            [
+              4.999999999999998,
+              0,
+              10.392304845413264
+            ],
+            [
+              4.999999999999998,
+              -0.6,
+              10.392304845413264
+            ],
+            [
+              6.999999999999998,
+              0,
+              10.392304845413264
+            ],
+            [
+              6.999999999999998,
+              -0.6,
+              10.392304845413264
+            ],
+            [
+              4.9289321881345245,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              -0.6,
+              8.485281374238571
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              4.433957441303941,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.433957441303941,
+              1.3,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              0,
+              8.485281374238571
+            ],
+            [
+              4.9289321881345245,
+              1.3,
+              8.485281374238571
+            ],
+            [
+              6.649999999999999,
+              0,
+              10.392304845413264
+            ],
+            [
+              6.649999999999999,
+              1.3,
+              10.392304845413264
+            ],
+            [
+              6.999999999999998,
+              0,
+              10.392304845413264
+            ],
+            [
+              6.999999999999998,
+              1.3,
+              10.392304845413264
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              4.999999999999998,
+              0,
+              10.392304845413264
+            ],
+            [
+              4.999999999999998,
+              -0.6,
+              10.392304845413264
+            ],
+            [
+              8.37653336856471,
+              0,
+              11.59110991546882
+            ],
+            [
+              8.37653336856471,
+              -0.6,
+              11.59110991546882
+            ],
+            [
+              9.411809548974793,
+              0,
+              11.59110991546882
+            ],
+            [
+              9.411809548974793,
+              -0.6,
+              11.59110991546882
+            ],
+            [
+              6.999999999999998,
+              0,
+              10.392304845413264
+            ],
+            [
+              6.999999999999998,
+              -0.6,
+              10.392304845413264
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              6.649999999999999,
+              0,
+              10.392304845413264
+            ],
+            [
+              6.649999999999999,
+              1.3,
+              10.392304845413264
+            ],
+            [
+              6.999999999999998,
+              0,
+              10.392304845413264
+            ],
+            [
+              6.999999999999998,
+              1.3,
+              10.392304845413264
+            ],
+            [
+              9.230636217403028,
+              0,
+              11.59110991546882
+            ],
+            [
+              9.230636217403028,
+              1.3,
+              11.59110991546882
+            ],
+            [
+              9.411809548974793,
+              0,
+              11.59110991546882
+            ],
+            [
+              9.411809548974793,
+              1.3,
+              11.59110991546882
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              8.37653336856471,
+              0,
+              11.59110991546882
+            ],
+            [
+              8.37653336856471,
+              -0.6,
+              11.59110991546882
+            ],
+            [
+              11.999999999999998,
+              0,
+              12.0
+            ],
+            [
+              11.999999999999998,
+              -0.6,
+              12.0
+            ],
+            [
+              11.999999999999998,
+              0,
+              12.0
+            ],
+            [
+              11.999999999999998,
+              -0.6,
+              12.0
+            ],
+            [
+              9.411809548974793,
+              0,
+              11.59110991546882
+            ],
+            [
+              9.411809548974793,
+              -0.6,
+              11.59110991546882
+            ]
+          ]
+        },
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              9.230636217403028,
+              0,
+              11.59110991546882
+            ],
+            [
+              9.230636217403028,
+              1.3,
+              11.59110991546882
+            ],
+            [
+              9.411809548974793,
+              0,
+              11.59110991546882
+            ],
+            [
+              9.411809548974793,
+              1.3,
+              11.59110991546882
+            ],
+            [
+              11.999999999999998,
+              0,
+              12.0
+            ],
+            [
+              11.999999999999998,
+              1.3,
+              12.0
+            ],
+            [
+              11.999999999999998,
+              0,
+              12.0
+            ],
+            [
+              11.999999999999998,
+              1.3,
+              12.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "radius_m": 12,
+      "angle_degrees": 90,
+      "foundation_separate": true
+    },
+    "breakwater_head": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_head.tscn",
+      "label_ko": "방파제 등대 설치 끝단",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 48,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -0.6,
+        -3.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        1.2,
+        3.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -3.0,
+        3.0,
+        3.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 1.2,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -3
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "LighthouseMount",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "facility_base"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            6,
+            0.6,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_separate": true
+    },
+    "breakwater_junction_t": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_junction_t.tscn",
+      "label_ko": "방파제 T 분기",
+      "category": "breakwater",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -0.6,
+        -2.0
+      ],
+      "aabb_max_m": [
+        2.0,
+        1.3,
+        2.0
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -2.0,
+        2.0,
+        2.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 1.3,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "West",
+          "position_m": [
+            -2,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "East",
+          "position_m": [
+            2,
+            0,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "South",
+          "position_m": [
+            0,
+            0,
+            -2
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            4,
+            0.6,
+            4
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "tetrapod_1.5m": {
+      "scene_path": "res://assets/generated/harbor_assets/tetrapod_1.5m.tscn",
+      "label_ko": "테트라포드 단위 1.5m",
+      "category": "armor",
+      "units": "meters",
+      "anchor": "terrain_bottom",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 96,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.4852568176718217,
+        0.0,
+        -0.7139269629267816
+      ],
+      "aabb_max_m": [
+        0.7878364017328627,
+        1.1658378485236653,
+        0.7139269629267817
+      ],
+      "footprint_xz_m": [
+        -0.4852568176718217,
+        -0.7139269629267816,
+        0.7878364017328627,
+        0.7139269629267817
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 1.1658378485236653,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "MassCenter",
+          "position_m": [
+            0,
+            0.36896284852366534,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "armor_center"
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "instancing_recommended": true,
+      "physics_default": false,
+      "rotation_policy": "rotate_then_reanchor_lowest_point",
+      "nominal_size_m": 1.5
+    },
+    "tetrapod_2.5m": {
+      "scene_path": "res://assets/generated/harbor_assets/tetrapod_2.5m.tscn",
+      "label_ko": "테트라포드 단위 2.5m",
+      "category": "armor",
+      "units": "meters",
+      "anchor": "terrain_bottom",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 96,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.8087613627863696,
+        0.0,
+        -1.189878271544636
+      ],
+      "aabb_max_m": [
+        1.3130606695547713,
+        1.9430630808727756,
+        1.189878271544636
+      ],
+      "footprint_xz_m": [
+        -0.8087613627863696,
+        -1.189878271544636,
+        1.3130606695547713,
+        1.189878271544636
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 1.9430630808727756,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "MassCenter",
+          "position_m": [
+            0,
+            0.6149380808727756,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "armor_center"
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "instancing_recommended": true,
+      "physics_default": false,
+      "rotation_policy": "rotate_then_reanchor_lowest_point",
+      "nominal_size_m": 2.5
+    },
+    "tetrapod_4m": {
+      "scene_path": "res://assets/generated/harbor_assets/tetrapod_4m.tscn",
+      "label_ko": "테트라포드 단위 4m",
+      "category": "armor",
+      "units": "meters",
+      "anchor": "terrain_bottom",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 96,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.2940181804581914,
+        0.0,
+        -1.9038052344714176
+      ],
+      "aabb_max_m": [
+        2.100897071287634,
+        3.108900929396441,
+        1.903805234471418
+      ],
+      "footprint_xz_m": [
+        -1.2940181804581914,
+        -1.9038052344714176,
+        2.100897071287634,
+        1.903805234471418
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 3.108900929396441,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "MassCenter",
+          "position_m": [
+            0,
+            0.9839009293964409,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "armor_center"
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "instancing_recommended": true,
+      "physics_default": false,
+      "rotation_policy": "rotate_then_reanchor_lowest_point",
+      "nominal_size_m": 4
+    },
+    "quay_6x12": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_6x12.tscn",
+      "label_ko": "부두 상판 6×12m",
+      "category": "quay",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -0.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        0.0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 0.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "Land",
+          "position_m": [
+            -3.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "Sea",
+          "position_m": [
+            3.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            6,
+            0.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "width_m": 6,
+      "length_m": 12,
+      "finished_surface_y_m": 0,
+      "foundation_separate": true,
+      "sea_edge_side": null
+    },
+    "quay_6x12_sea_edge": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_6x12_sea_edge.tscn",
+      "label_ko": "부두 상판 6×12m 해측 가장자리",
+      "category": "quay",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 48,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -1.3,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        0.03,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -1.3,
+      "elevation_max": 0.03,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "Land",
+          "position_m": [
+            -3.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "Sea",
+          "position_m": [
+            3.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "FenderMount",
+          "position_m": [
+            3.0,
+            -0.8,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "quay_edge"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            6,
+            0.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "width_m": 6,
+      "length_m": 12,
+      "finished_surface_y_m": 0,
+      "foundation_separate": true,
+      "sea_edge_side": "+X"
+    },
+    "quay_12x12": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_12x12.tscn",
+      "label_ko": "부두 상판 12×12m",
+      "category": "quay",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -6.0,
+        -0.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        6.0,
+        0.0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -6.0,
+        -6.0,
+        6.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.6,
+      "elevation_max": 0.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "Land",
+          "position_m": [
+            -6.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "Sea",
+          "position_m": [
+            6.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            12,
+            0.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "width_m": 12,
+      "length_m": 12,
+      "finished_surface_y_m": 0,
+      "foundation_separate": true,
+      "sea_edge_side": null
+    },
+    "quay_12x12_sea_edge": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_12x12_sea_edge.tscn",
+      "label_ko": "부두 상판 12×12m 해측 가장자리",
+      "category": "quay",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 48,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -6.0,
+        -1.3,
+        -6.0
+      ],
+      "aabb_max_m": [
+        6.0,
+        0.03,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -6.0,
+        -6.0,
+        6.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -1.3,
+      "elevation_max": 0.03,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "Land",
+          "position_m": [
+            -6.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "Sea",
+          "position_m": [
+            6.0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "quay_walk",
+          "width_m": 12
+        },
+        {
+          "name": "FenderMount",
+          "position_m": [
+            6.0,
+            -0.8,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "quay_edge"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -0.3,
+            0
+          ],
+          "size_m": [
+            12,
+            0.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "width_m": 12,
+      "length_m": 12,
+      "finished_surface_y_m": 0,
+      "foundation_separate": true,
+      "sea_edge_side": "+X"
+    },
+    "seawall_12m_depth2m": {
+      "scene_path": "res://assets/generated/harbor_assets/seawall_12m_depth2m.tscn",
+      "label_ko": "호안 벽체 12m · 깊이 2m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.65,
+        -2.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        0.65,
+        0.0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -0.65,
+        -6.0,
+        0.65,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -2.0,
+      "elevation_max": 0.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "seawall_1m",
+          "width_m": 1
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "seawall_1m",
+          "width_m": 1
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -1.0,
+            0
+          ],
+          "size_m": [
+            1,
+            2,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 2,
+      "embed_in_terrain_m": 0.25,
+      "terrain_policy": "vertical_embed_keep_deck_level"
+    },
+    "seawall_12m_depth4m": {
+      "scene_path": "res://assets/generated/harbor_assets/seawall_12m_depth4m.tscn",
+      "label_ko": "호안 벽체 12m · 깊이 4m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.65,
+        -4.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        0.65,
+        0.0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -0.65,
+        -6.0,
+        0.65,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -4.0,
+      "elevation_max": 0.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "seawall_1m",
+          "width_m": 1
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "seawall_1m",
+          "width_m": 1
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -2.0,
+            0
+          ],
+          "size_m": [
+            1,
+            4,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 4,
+      "embed_in_terrain_m": 0.25,
+      "terrain_policy": "vertical_embed_keep_deck_level"
+    },
+    "seawall_12m_depth8m": {
+      "scene_path": "res://assets/generated/harbor_assets/seawall_12m_depth8m.tscn",
+      "label_ko": "호안 벽체 12m · 깊이 8m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.65,
+        -8.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        0.65,
+        0.0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -0.65,
+        -6.0,
+        0.65,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -8.0,
+      "elevation_max": 0.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "seawall_1m",
+          "width_m": 1
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "seawall_1m",
+          "width_m": 1
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -4.0,
+            0
+          ],
+          "size_m": [
+            1,
+            8,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 8,
+      "embed_in_terrain_m": 0.25,
+      "terrain_policy": "vertical_embed_keep_deck_level"
+    },
+    "quay_foundation_1m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_foundation_1m.tscn",
+      "label_ko": "부두 매립 기초 · 깊이 1m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -1.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        -0.6000000000000001,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -1.6,
+      "elevation_max": -0.6000000000000001,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "DeckUnderside",
+          "position_m": [
+            0,
+            -0.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_foundation"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -1.1,
+            0
+          ],
+          "size_m": [
+            6,
+            1,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 1,
+      "foundation_top_y_m": -0.6,
+      "embed_in_terrain_m": 0.25,
+      "terrain_policy": "vertical_embed_keep_deck_level"
+    },
+    "quay_foundation_2m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_foundation_2m.tscn",
+      "label_ko": "부두 매립 기초 · 깊이 2m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -2.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        -0.6000000000000001,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -2.6,
+      "elevation_max": -0.6000000000000001,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "DeckUnderside",
+          "position_m": [
+            0,
+            -0.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_foundation"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -1.6,
+            0
+          ],
+          "size_m": [
+            6,
+            2,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 2,
+      "foundation_top_y_m": -0.6,
+      "embed_in_terrain_m": 0.25,
+      "terrain_policy": "vertical_embed_keep_deck_level"
+    },
+    "quay_foundation_4m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_foundation_4m.tscn",
+      "label_ko": "부두 매립 기초 · 깊이 4m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -4.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        -0.6000000000000001,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -4.6,
+      "elevation_max": -0.6000000000000001,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "DeckUnderside",
+          "position_m": [
+            0,
+            -0.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_foundation"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -2.6,
+            0
+          ],
+          "size_m": [
+            6,
+            4,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 4,
+      "foundation_top_y_m": -0.6,
+      "embed_in_terrain_m": 0.25,
+      "terrain_policy": "vertical_embed_keep_deck_level"
+    },
+    "quay_foundation_8m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_foundation_8m.tscn",
+      "label_ko": "부두 매립 기초 · 깊이 8m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -8.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        -0.5999999999999996,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -8.6,
+      "elevation_max": -0.5999999999999996,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "DeckUnderside",
+          "position_m": [
+            0,
+            -0.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_foundation"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -4.6,
+            0
+          ],
+          "size_m": [
+            6,
+            8,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 8,
+      "foundation_top_y_m": -0.6,
+      "embed_in_terrain_m": 0.25,
+      "terrain_policy": "vertical_embed_keep_deck_level"
+    },
+    "pier_pile_4m": {
+      "scene_path": "res://assets/generated/harbor_assets/pier_pile_4m.tscn",
+      "label_ko": "부두 지지말뚝 · 높이 4m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 44,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.8,
+        -4.6,
+        -0.8
+      ],
+      "aabb_max_m": [
+        0.8,
+        -0.6,
+        0.8
+      ],
+      "footprint_xz_m": [
+        -0.8,
+        -0.8,
+        0.8,
+        0.8
+      ],
+      "bbox": null,
+      "elevation_min": -4.6,
+      "elevation_max": -0.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "DeckUnderside",
+          "position_m": [
+            0,
+            -0.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "pile_cap"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -2.6,
+            0
+          ],
+          "size_m": [
+            1,
+            4,
+            1
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 4,
+      "foundation_top_y_m": -0.6,
+      "terrain_policy": "sample_support_point_keep_vertical"
+    },
+    "pier_pile_8m": {
+      "scene_path": "res://assets/generated/harbor_assets/pier_pile_8m.tscn",
+      "label_ko": "부두 지지말뚝 · 높이 8m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 44,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.8,
+        -8.6,
+        -0.8
+      ],
+      "aabb_max_m": [
+        0.8,
+        -0.6,
+        0.8
+      ],
+      "footprint_xz_m": [
+        -0.8,
+        -0.8,
+        0.8,
+        0.8
+      ],
+      "bbox": null,
+      "elevation_min": -8.6,
+      "elevation_max": -0.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "DeckUnderside",
+          "position_m": [
+            0,
+            -0.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "pile_cap"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -4.6,
+            0
+          ],
+          "size_m": [
+            1,
+            8,
+            1
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 8,
+      "foundation_top_y_m": -0.6,
+      "terrain_policy": "sample_support_point_keep_vertical"
+    },
+    "pier_pile_12m": {
+      "scene_path": "res://assets/generated/harbor_assets/pier_pile_12m.tscn",
+      "label_ko": "부두 지지말뚝 · 높이 12m",
+      "category": "foundation",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 44,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.8,
+        -12.6,
+        -0.8
+      ],
+      "aabb_max_m": [
+        0.8,
+        -0.6,
+        0.8
+      ],
+      "footprint_xz_m": [
+        -0.8,
+        -0.8,
+        0.8,
+        0.8
+      ],
+      "bbox": null,
+      "elevation_min": -12.6,
+      "elevation_max": -0.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "DeckUnderside",
+          "position_m": [
+            0,
+            -0.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "pile_cap"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            -6.6,
+            0
+          ],
+          "size_m": [
+            1,
+            12,
+            1
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "foundation_depth_m": 12,
+      "foundation_top_y_m": -0.6,
+      "terrain_policy": "sample_support_point_keep_vertical"
+    },
+    "quay_ramp_rise1m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_ramp_rise1m.tscn",
+      "label_ko": "부두 경사로 +1m",
+      "category": "ramp",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -0.45,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        1,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.45,
+      "elevation_max": 1,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            1,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 6
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -3.0,
+              0,
+              -6.0
+            ],
+            [
+              -3.0,
+              1,
+              6.0
+            ],
+            [
+              3.0,
+              1,
+              6.0
+            ],
+            [
+              3.0,
+              0,
+              -6.0
+            ],
+            [
+              -3.0,
+              -0.45,
+              -6.0
+            ],
+            [
+              -3.0,
+              0.55,
+              6.0
+            ],
+            [
+              3.0,
+              0.55,
+              6.0
+            ],
+            [
+              3.0,
+              -0.45,
+              -6.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "start_surface_y_m": 0,
+      "end_surface_y_m": 1,
+      "grade": 0.08333333333333333,
+      "foundation_separate": true
+    },
+    "quay_ramp_rise2m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_ramp_rise2m.tscn",
+      "label_ko": "부두 경사로 +2m",
+      "category": "ramp",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -0.45,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        2,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -6.0,
+        3.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.45,
+      "elevation_max": 2,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            2,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 6
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -3.0,
+              0,
+              -6.0
+            ],
+            [
+              -3.0,
+              2,
+              6.0
+            ],
+            [
+              3.0,
+              2,
+              6.0
+            ],
+            [
+              3.0,
+              0,
+              -6.0
+            ],
+            [
+              -3.0,
+              -0.45,
+              -6.0
+            ],
+            [
+              -3.0,
+              1.55,
+              6.0
+            ],
+            [
+              3.0,
+              1.55,
+              6.0
+            ],
+            [
+              3.0,
+              -0.45,
+              -6.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "start_surface_y_m": 0,
+      "end_surface_y_m": 2,
+      "grade": 0.16666666666666666,
+      "foundation_separate": true
+    },
+    "slipway_drop2m": {
+      "scene_path": "res://assets/generated/harbor_assets/slipway_drop2m.tscn",
+      "label_ko": "어선 진수 경사로 -2m",
+      "category": "ramp",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -2.45,
+        -6.0
+      ],
+      "aabb_max_m": [
+        2.0,
+        0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -6.0,
+        2.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -2.45,
+      "elevation_max": 0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "slipway_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            -2,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "slipway_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -2.0,
+              0,
+              -6.0
+            ],
+            [
+              -2.0,
+              -2,
+              6.0
+            ],
+            [
+              2.0,
+              -2,
+              6.0
+            ],
+            [
+              2.0,
+              0,
+              -6.0
+            ],
+            [
+              -2.0,
+              -0.45,
+              -6.0
+            ],
+            [
+              -2.0,
+              -2.45,
+              6.0
+            ],
+            [
+              2.0,
+              -2.45,
+              6.0
+            ],
+            [
+              2.0,
+              -0.45,
+              -6.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "start_surface_y_m": 0,
+      "end_surface_y_m": -2,
+      "grade": -0.16666666666666666,
+      "foundation_separate": true
+    },
+    "slipway_drop4m": {
+      "scene_path": "res://assets/generated/harbor_assets/slipway_drop4m.tscn",
+      "label_ko": "어선 진수 경사로 -4m",
+      "category": "ramp",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.0,
+        -4.45,
+        -6.0
+      ],
+      "aabb_max_m": [
+        2.0,
+        0,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -2.0,
+        -6.0,
+        2.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": -4.45,
+      "elevation_max": 0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "slipway_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            -4,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "slipway_4m",
+          "width_m": 4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -2.0,
+              0,
+              -6.0
+            ],
+            [
+              -2.0,
+              -4,
+              6.0
+            ],
+            [
+              2.0,
+              -4,
+              6.0
+            ],
+            [
+              2.0,
+              0,
+              -6.0
+            ],
+            [
+              -2.0,
+              -0.45,
+              -6.0
+            ],
+            [
+              -2.0,
+              -4.45,
+              6.0
+            ],
+            [
+              2.0,
+              -4.45,
+              6.0
+            ],
+            [
+              2.0,
+              -0.45,
+              -6.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "start_surface_y_m": 0,
+      "end_surface_y_m": -4,
+      "grade": -0.3333333333333333,
+      "foundation_separate": true
+    },
+    "quay_width_6to12": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_width_6to12.tscn",
+      "label_ko": "부두 폭 전환 6→12m",
+      "category": "ramp",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -6.0,
+        -0.45,
+        -3.0
+      ],
+      "aabb_max_m": [
+        6.0,
+        0,
+        3.0
+      ],
+      "footprint_xz_m": [
+        -6.0,
+        -3.0,
+        6.0,
+        3.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.45,
+      "elevation_max": 0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 12
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -3.0,
+              0,
+              -3.0
+            ],
+            [
+              -6.0,
+              0,
+              3.0
+            ],
+            [
+              6.0,
+              0,
+              3.0
+            ],
+            [
+              3.0,
+              0,
+              -3.0
+            ],
+            [
+              -3.0,
+              -0.45,
+              -3.0
+            ],
+            [
+              -6.0,
+              -0.45,
+              3.0
+            ],
+            [
+              6.0,
+              -0.45,
+              3.0
+            ],
+            [
+              3.0,
+              -0.45,
+              -3.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 6,
+      "start_surface_y_m": 0,
+      "end_surface_y_m": 0,
+      "grade": 0.0,
+      "foundation_separate": true
+    },
+    "breakwater_quay_adapter": {
+      "scene_path": "res://assets/generated/harbor_assets/breakwater_quay_adapter.tscn",
+      "label_ko": "방파제 4m→부두 6m 전환",
+      "category": "ramp",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -0.45,
+        -3.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        0,
+        3.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -3.0,
+        3.0,
+        3.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.45,
+      "elevation_max": 0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "breakwater_4m",
+          "width_m": 4
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "quay_walk",
+          "width_m": 6
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -2.0,
+              0,
+              -3.0
+            ],
+            [
+              -3.0,
+              0,
+              3.0
+            ],
+            [
+              3.0,
+              0,
+              3.0
+            ],
+            [
+              2.0,
+              0,
+              -3.0
+            ],
+            [
+              -2.0,
+              -0.45,
+              -3.0
+            ],
+            [
+              -3.0,
+              -0.45,
+              3.0
+            ],
+            [
+              3.0,
+              -0.45,
+              3.0
+            ],
+            [
+              2.0,
+              -0.45,
+              -3.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 6,
+      "start_surface_y_m": 0,
+      "end_surface_y_m": 0,
+      "grade": 0.0,
+      "foundation_separate": true
+    },
+    "quay_walk_adapter_3m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_walk_adapter_3m.tscn",
+      "label_ko": "부두→기존 보행로 3m 접속",
+      "category": "ramp",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.0,
+        -0.45,
+        -3.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        0.15,
+        3.0
+      ],
+      "footprint_xz_m": [
+        -3.0,
+        -3.0,
+        3.0,
+        3.0
+      ],
+      "bbox": null,
+      "elevation_min": -0.45,
+      "elevation_max": 0.15,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "quay_walk",
+          "width_m": 6
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0.15,
+            3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "walk",
+          "width_m": 3
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "convex",
+          "points_m": [
+            [
+              -3.0,
+              0,
+              -3.0
+            ],
+            [
+              -1.5,
+              0.15,
+              3.0
+            ],
+            [
+              1.5,
+              0.15,
+              3.0
+            ],
+            [
+              3.0,
+              0,
+              -3.0
+            ],
+            [
+              -3.0,
+              -0.45,
+              -3.0
+            ],
+            [
+              -1.5,
+              -0.30000000000000004,
+              3.0
+            ],
+            [
+              1.5,
+              -0.30000000000000004,
+              3.0
+            ],
+            [
+              3.0,
+              -0.45,
+              -3.0
+            ]
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 6,
+      "start_surface_y_m": 0,
+      "end_surface_y_m": 0.15,
+      "grade": 0.024999999999999998,
+      "foundation_separate": true
+    },
+    "lighthouse_red": {
+      "scene_path": "res://assets/generated/harbor_assets/lighthouse_red.tscn",
+      "label_ko": "적색 원통 등대",
+      "category": "lighthouse",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 296,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.6,
+        0.0,
+        -1.6
+      ],
+      "aabb_max_m": [
+        1.6,
+        10.0,
+        1.6
+      ],
+      "footprint_xz_m": [
+        -1.6,
+        -1.6,
+        1.6,
+        1.6
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 10.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "LightSocket",
+          "position_m": [
+            0,
+            8.55,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "navigation_light"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            4.0,
+            0
+          ],
+          "size_m": [
+            1.8,
+            8.0,
+            1.8
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 10,
+      "navigation_light_color": "lens_red",
+      "light_node_default_enabled": false,
+      "light_range_m": 16,
+      "real_port_light_assignment": "unassigned"
+    },
+    "lighthouse_green": {
+      "scene_path": "res://assets/generated/harbor_assets/lighthouse_green.tscn",
+      "label_ko": "녹색 원통 등대",
+      "category": "lighthouse",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 296,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.6,
+        0.0,
+        -1.6
+      ],
+      "aabb_max_m": [
+        1.6,
+        10.0,
+        1.6
+      ],
+      "footprint_xz_m": [
+        -1.6,
+        -1.6,
+        1.6,
+        1.6
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 10.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "LightSocket",
+          "position_m": [
+            0,
+            8.55,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "navigation_light"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            4.0,
+            0
+          ],
+          "size_m": [
+            1.8,
+            8.0,
+            1.8
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 10,
+      "navigation_light_color": "lens_green",
+      "light_node_default_enabled": false,
+      "light_range_m": 16,
+      "real_port_light_assignment": "unassigned"
+    },
+    "lighthouse_white_tall": {
+      "scene_path": "res://assets/generated/harbor_assets/lighthouse_white_tall.tscn",
+      "label_ko": "백색 높은 등대",
+      "category": "lighthouse",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 296,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.6,
+        0.0,
+        -1.6
+      ],
+      "aabb_max_m": [
+        1.6,
+        16.0,
+        1.6
+      ],
+      "footprint_xz_m": [
+        -1.6,
+        -1.6,
+        1.6,
+        1.6
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 16.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "LightSocket",
+          "position_m": [
+            0,
+            13.350000000000001,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "navigation_light"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            6.4,
+            0
+          ],
+          "size_m": [
+            1.8,
+            12.8,
+            1.8
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 16,
+      "navigation_light_color": "lens_warm",
+      "light_node_default_enabled": false,
+      "light_range_m": 16,
+      "real_port_light_assignment": "unassigned"
+    },
+    "lighthouse_square": {
+      "scene_path": "res://assets/generated/harbor_assets/lighthouse_square.tscn",
+      "label_ko": "사각 등대",
+      "category": "lighthouse",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 236,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.6,
+        0.0,
+        -1.6
+      ],
+      "aabb_max_m": [
+        1.6,
+        12.0,
+        1.6
+      ],
+      "footprint_xz_m": [
+        -1.6,
+        -1.6,
+        1.6,
+        1.6
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 12.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "LightSocket",
+          "position_m": [
+            0,
+            10.150000000000002,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "navigation_light"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            4.800000000000001,
+            0
+          ],
+          "size_m": [
+            1.8,
+            9.600000000000001,
+            1.8
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 12,
+      "navigation_light_color": "lens_warm",
+      "light_node_default_enabled": false,
+      "light_range_m": 16,
+      "real_port_light_assignment": "unassigned"
+    },
+    "lighthouse_lattice": {
+      "scene_path": "res://assets/generated/harbor_assets/lighthouse_lattice.tscn",
+      "label_ko": "골조형 소형 등대",
+      "category": "lighthouse",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 248,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.6,
+        0.0,
+        -1.6
+      ],
+      "aabb_max_m": [
+        1.6,
+        7.0,
+        1.6
+      ],
+      "footprint_xz_m": [
+        -1.6,
+        -1.6,
+        1.6,
+        1.6
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 7.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "LightSocket",
+          "position_m": [
+            0,
+            6.15,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "navigation_light"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            2.8000000000000003,
+            0
+          ],
+          "size_m": [
+            1.8,
+            5.6000000000000005,
+            1.8
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 7,
+      "navigation_light_color": "lens_warm",
+      "light_node_default_enabled": false,
+      "light_range_m": 16,
+      "real_port_light_assignment": "unassigned"
+    },
+    "beacon_short": {
+      "scene_path": "res://assets/generated/harbor_assets/beacon_short.tscn",
+      "label_ko": "짧은 방파제 표지등",
+      "category": "lighthouse",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 248,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.6,
+        0.0,
+        -1.6
+      ],
+      "aabb_max_m": [
+        1.6,
+        4.0,
+        1.6
+      ],
+      "footprint_xz_m": [
+        -1.6,
+        -1.6,
+        1.6,
+        1.6
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 4.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "LightSocket",
+          "position_m": [
+            0,
+            3.75,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "navigation_light"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.6,
+            0
+          ],
+          "size_m": [
+            1.8,
+            3.2,
+            1.8
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 4,
+      "navigation_light_color": "lens_red",
+      "light_node_default_enabled": false,
+      "light_range_m": 16,
+      "real_port_light_assignment": "unassigned"
+    },
+    "fishing_crane_post": {
+      "scene_path": "res://assets/generated/harbor_assets/fishing_crane_post.tscn",
+      "label_ko": "어선 인양 크레인 12m 기둥형",
+      "category": "fishing_crane",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 188,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.7,
+        0.0,
+        -1.4
+      ],
+      "aabb_max_m": [
+        12.0043241137054,
+        10.022080580623317,
+        1.65
+      ],
+      "footprint_xz_m": [
+        -2.7,
+        -1.4,
+        12.0043241137054,
+        1.65
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 10.022080580623317,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Hoist",
+          "position_m": [
+            7.800000000000001,
+            1.5,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "hoist_attachment"
+        },
+        {
+          "name": "BoomTip",
+          "position_m": [
+            12,
+            7.4,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "crane_envelope"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            3.5,
+            0
+          ],
+          "size_m": [
+            1.3,
+            7,
+            1.3
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 10,
+      "boom_reach_m": 12,
+      "clearance_radius_m": 12,
+      "pose": "static",
+      "reference_ko": "첨부 사진의 기둥·수평 지브·상부 지지 케이블·인양장치 참고"
+    },
+    "fishing_crane_compact": {
+      "scene_path": "res://assets/generated/harbor_assets/fishing_crane_compact.tscn",
+      "label_ko": "어선 인양 크레인 8m 기둥형",
+      "category": "fishing_crane",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 188,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.7,
+        0.0,
+        -1.4
+      ],
+      "aabb_max_m": [
+        8.006341437113232,
+        8.021587871023769,
+        1.65
+      ],
+      "footprint_xz_m": [
+        -2.7,
+        -1.4,
+        8.006341437113232,
+        1.65
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 8.021587871023769,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Hoist",
+          "position_m": [
+            5.2,
+            1.5,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "hoist_attachment"
+        },
+        {
+          "name": "BoomTip",
+          "position_m": [
+            8,
+            5.4,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "crane_envelope"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            2.5,
+            0
+          ],
+          "size_m": [
+            1.3,
+            5,
+            1.3
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 8,
+      "boom_reach_m": 8,
+      "clearance_radius_m": 8,
+      "pose": "static",
+      "reference_ko": "첨부 사진의 기둥·수평 지브·상부 지지 케이블·인양장치 참고"
+    },
+    "fishing_crane_hydraulic": {
+      "scene_path": "res://assets/generated/harbor_assets/fishing_crane_hydraulic.tscn",
+      "label_ko": "어선 인양 크레인 6m 유압형",
+      "category": "fishing_crane",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 176,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.4,
+        0.0,
+        -1.4
+      ],
+      "aabb_max_m": [
+        6.091263329519255,
+        6.181034482758621,
+        1.65
+      ],
+      "footprint_xz_m": [
+        -1.4,
+        -1.4,
+        6.091263329519255,
+        1.65
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 6.181034482758621,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Hoist",
+          "position_m": [
+            3.9000000000000004,
+            1.5,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "hoist_attachment"
+        },
+        {
+          "name": "BoomTip",
+          "position_m": [
+            6,
+            4,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "crane_envelope"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            2.0,
+            0
+          ],
+          "size_m": [
+            1.3,
+            4,
+            1.3
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "height_m": 6,
+      "boom_reach_m": 6,
+      "clearance_radius_m": 6,
+      "pose": "static",
+      "reference_ko": "첨부 사진의 기둥·수평 지브·상부 지지 케이블·인양장치 참고"
+    },
+    "container_crane_feeder": {
+      "scene_path": "res://assets/generated/harbor_assets/container_crane_feeder.tscn",
+      "label_ko": "소형 컨테이너 이송 크레인",
+      "category": "container_crane",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 240,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -8.5,
+        0.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        22.012223949152325,
+        33.03279596114038,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -8.5,
+        -6.0,
+        22.012223949152325,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 33.03279596114038,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Spreader",
+          "position_m": [
+            3,
+            5.4,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_lift"
+        },
+        {
+          "name": "RailStart",
+          "position_m": [
+            0,
+            0,
+            -6
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        },
+        {
+          "name": "RailEnd",
+          "position_m": [
+            0,
+            0,
+            6
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -4,
+            12.0,
+            -4.5
+          ],
+          "size_m": [
+            1,
+            24,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            -4,
+            12.0,
+            4.5
+          ],
+          "size_m": [
+            1,
+            24,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            4,
+            12.0,
+            -4.5
+          ],
+          "size_m": [
+            1,
+            24,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            4,
+            12.0,
+            4.5
+          ],
+          "size_m": [
+            1,
+            24,
+            1
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "rail_gauge_m": 8,
+      "boom_reach_m": 22,
+      "height_m": 33,
+      "clearance_height_m": 22,
+      "operating_envelope_xz_m": [
+        -8,
+        -6,
+        22,
+        6
+      ],
+      "pose": "static"
+    },
+    "container_crane_sts": {
+      "scene_path": "res://assets/generated/harbor_assets/container_crane_sts.tscn",
+      "label_ko": "안벽 컨테이너 이송 크레인",
+      "category": "container_crane",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 240,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -8.5,
+        0.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        38.00738269924669,
+        45.03421250870417,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -8.5,
+        -6.0,
+        38.00738269924669,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 45.03421250870417,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Spreader",
+          "position_m": [
+            3,
+            5.4,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_lift"
+        },
+        {
+          "name": "RailStart",
+          "position_m": [
+            0,
+            0,
+            -6
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        },
+        {
+          "name": "RailEnd",
+          "position_m": [
+            0,
+            0,
+            6
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -4,
+            18.0,
+            -4.5
+          ],
+          "size_m": [
+            1,
+            36,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            -4,
+            18.0,
+            4.5
+          ],
+          "size_m": [
+            1,
+            36,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            4,
+            18.0,
+            -4.5
+          ],
+          "size_m": [
+            1,
+            36,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            4,
+            18.0,
+            4.5
+          ],
+          "size_m": [
+            1,
+            36,
+            1
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "rail_gauge_m": 8,
+      "boom_reach_m": 38,
+      "height_m": 45,
+      "clearance_height_m": 34,
+      "operating_envelope_xz_m": [
+        -8,
+        -6,
+        38,
+        6
+      ],
+      "pose": "static"
+    },
+    "container_crane_rtg": {
+      "scene_path": "res://assets/generated/harbor_assets/container_crane_rtg.tscn",
+      "label_ko": "야드 컨테이너 갠트리",
+      "category": "container_crane",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 192,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -8.0,
+        0.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        7.0,
+        17.55,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -8.0,
+        -6.0,
+        7.0,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 17.55,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Spreader",
+          "position_m": [
+            3,
+            5.4,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_lift"
+        },
+        {
+          "name": "RailStart",
+          "position_m": [
+            0,
+            0,
+            -6
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        },
+        {
+          "name": "RailEnd",
+          "position_m": [
+            0,
+            0,
+            6
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -4,
+            8.0,
+            -4.5
+          ],
+          "size_m": [
+            1,
+            16,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            -4,
+            8.0,
+            4.5
+          ],
+          "size_m": [
+            1,
+            16,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            4,
+            8.0,
+            -4.5
+          ],
+          "size_m": [
+            1,
+            16,
+            1
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            4,
+            8.0,
+            4.5
+          ],
+          "size_m": [
+            1,
+            16,
+            1
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "rail_gauge_m": 8,
+      "boom_reach_m": 7,
+      "height_m": 17.5,
+      "clearance_height_m": 14,
+      "operating_envelope_xz_m": [
+        -8,
+        -6,
+        7,
+        6
+      ],
+      "pose": "static"
+    },
+    "container_6m_red": {
+      "scene_path": "res://assets/generated/harbor_assets/container_6m_red.tscn",
+      "label_ko": "컨테이너 6m · 적색",
+      "category": "container",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.2,
+        0.0,
+        -3.0
+      ],
+      "aabb_max_m": [
+        1.2,
+        2.6,
+        3.0525
+      ],
+      "footprint_xz_m": [
+        -1.2,
+        -3.0,
+        1.2,
+        3.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 2.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            2.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_stack_2p4",
+          "width_m": 2.4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.3,
+            0
+          ],
+          "size_m": [
+            2.4,
+            2.6,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 6,
+      "width_m": 2.4,
+      "height_m": 2.6,
+      "stack_pitch_y_m": 2.6,
+      "iso_dimensions": false,
+      "instancing_recommended": true
+    },
+    "container_6m_blue": {
+      "scene_path": "res://assets/generated/harbor_assets/container_6m_blue.tscn",
+      "label_ko": "컨테이너 6m · 청색",
+      "category": "container",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.2,
+        0.0,
+        -3.0
+      ],
+      "aabb_max_m": [
+        1.2,
+        2.6,
+        3.0525
+      ],
+      "footprint_xz_m": [
+        -1.2,
+        -3.0,
+        1.2,
+        3.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 2.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            2.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_stack_2p4",
+          "width_m": 2.4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.3,
+            0
+          ],
+          "size_m": [
+            2.4,
+            2.6,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 6,
+      "width_m": 2.4,
+      "height_m": 2.6,
+      "stack_pitch_y_m": 2.6,
+      "iso_dimensions": false,
+      "instancing_recommended": true
+    },
+    "container_6m_green": {
+      "scene_path": "res://assets/generated/harbor_assets/container_6m_green.tscn",
+      "label_ko": "컨테이너 6m · 녹색",
+      "category": "container",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.2,
+        0.0,
+        -3.0
+      ],
+      "aabb_max_m": [
+        1.2,
+        2.6,
+        3.0525
+      ],
+      "footprint_xz_m": [
+        -1.2,
+        -3.0,
+        1.2,
+        3.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 2.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            2.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_stack_2p4",
+          "width_m": 2.4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.3,
+            0
+          ],
+          "size_m": [
+            2.4,
+            2.6,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 6,
+      "width_m": 2.4,
+      "height_m": 2.6,
+      "stack_pitch_y_m": 2.6,
+      "iso_dimensions": false,
+      "instancing_recommended": true
+    },
+    "container_12m_red": {
+      "scene_path": "res://assets/generated/harbor_assets/container_12m_red.tscn",
+      "label_ko": "컨테이너 12m · 적색",
+      "category": "container",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.2,
+        0.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        1.2,
+        2.6,
+        6.0525
+      ],
+      "footprint_xz_m": [
+        -1.2,
+        -6.0,
+        1.2,
+        6.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 2.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            2.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_stack_2p4",
+          "width_m": 2.4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.3,
+            0
+          ],
+          "size_m": [
+            2.4,
+            2.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "width_m": 2.4,
+      "height_m": 2.6,
+      "stack_pitch_y_m": 2.6,
+      "iso_dimensions": false,
+      "instancing_recommended": true
+    },
+    "container_12m_blue": {
+      "scene_path": "res://assets/generated/harbor_assets/container_12m_blue.tscn",
+      "label_ko": "컨테이너 12m · 청색",
+      "category": "container",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.2,
+        0.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        1.2,
+        2.6,
+        6.0525
+      ],
+      "footprint_xz_m": [
+        -1.2,
+        -6.0,
+        1.2,
+        6.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 2.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            2.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_stack_2p4",
+          "width_m": 2.4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.3,
+            0
+          ],
+          "size_m": [
+            2.4,
+            2.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "width_m": 2.4,
+      "height_m": 2.6,
+      "stack_pitch_y_m": 2.6,
+      "iso_dimensions": false,
+      "instancing_recommended": true
+    },
+    "container_12m_green": {
+      "scene_path": "res://assets/generated/harbor_assets/container_12m_green.tscn",
+      "label_ko": "컨테이너 12m · 녹색",
+      "category": "container",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.2,
+        0.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        1.2,
+        2.6,
+        6.0525
+      ],
+      "footprint_xz_m": [
+        -1.2,
+        -6.0,
+        1.2,
+        6.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 2.6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            2.6,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_stack_2p4",
+          "width_m": 2.4
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.3,
+            0
+          ],
+          "size_m": [
+            2.4,
+            2.6,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "length_m": 12,
+      "width_m": 2.4,
+      "height_m": 2.6,
+      "stack_pitch_y_m": 2.6,
+      "iso_dimensions": false,
+      "instancing_recommended": true
+    },
+    "container_stack_2x1x2": {
+      "scene_path": "res://assets/generated/harbor_assets/container_stack_2x1x2.tscn",
+      "label_ko": "컨테이너 적재 2×1×2",
+      "category": "container_stack",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 240,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.525,
+        0.0,
+        -3.0
+      ],
+      "aabb_max_m": [
+        2.525,
+        5.2,
+        3.0525
+      ],
+      "footprint_xz_m": [
+        -2.525,
+        -3.0,
+        2.525,
+        3.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 5.2,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            5.2,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_group_top"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -1.325,
+            2.6,
+            0.0
+          ],
+          "size_m": [
+            2.4,
+            5.2,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.325,
+            2.6,
+            0.0
+          ],
+          "size_m": [
+            2.4,
+            5.2,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "container_count": 4,
+      "levels": 2,
+      "container_length_m": 6,
+      "instancing_recommended": true,
+      "iso_dimensions": false
+    },
+    "container_stack_2x2x2": {
+      "scene_path": "res://assets/generated/harbor_assets/container_stack_2x2x2.tscn",
+      "label_ko": "컨테이너 적재 2×2×2",
+      "category": "container_stack",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 288,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.525,
+        0.0,
+        -6.15
+      ],
+      "aabb_max_m": [
+        2.525,
+        5.2,
+        6.202500000000001
+      ],
+      "footprint_xz_m": [
+        -2.525,
+        -6.15,
+        2.525,
+        6.202500000000001
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 5.2,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            5.2,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_group_top"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -1.325,
+            2.6,
+            -3.15
+          ],
+          "size_m": [
+            2.4,
+            5.2,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.325,
+            2.6,
+            -3.15
+          ],
+          "size_m": [
+            2.4,
+            5.2,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            -1.325,
+            2.6,
+            3.15
+          ],
+          "size_m": [
+            2.4,
+            5.2,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.325,
+            2.6,
+            3.15
+          ],
+          "size_m": [
+            2.4,
+            5.2,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "container_count": 8,
+      "levels": 2,
+      "container_length_m": 6,
+      "instancing_recommended": true,
+      "iso_dimensions": false
+    },
+    "container_stack_3x2x3": {
+      "scene_path": "res://assets/generated/harbor_assets/container_stack_3x2x3.tscn",
+      "label_ko": "컨테이너 적재 3×2×3",
+      "category": "container_stack",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 648,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.8499999999999996,
+        0.0,
+        -6.15
+      ],
+      "aabb_max_m": [
+        3.8499999999999996,
+        7.8,
+        6.202500000000001
+      ],
+      "footprint_xz_m": [
+        -3.8499999999999996,
+        -6.15,
+        3.8499999999999996,
+        6.202500000000001
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 7.8,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            7.800000000000001,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_group_top"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -2.65,
+            3.9000000000000004,
+            -3.15
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0.0,
+            3.9000000000000004,
+            -3.15
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            2.65,
+            3.9000000000000004,
+            -3.15
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            -2.65,
+            3.9000000000000004,
+            3.15
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0.0,
+            3.9000000000000004,
+            3.15
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            2.65,
+            3.9000000000000004,
+            3.15
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "container_count": 18,
+      "levels": 3,
+      "container_length_m": 6,
+      "instancing_recommended": true,
+      "iso_dimensions": false
+    },
+    "container_stack_2x1x3": {
+      "scene_path": "res://assets/generated/harbor_assets/container_stack_2x1x3.tscn",
+      "label_ko": "컨테이너 적재 2×1×3",
+      "category": "container_stack",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 360,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.525,
+        0.0,
+        -3.0
+      ],
+      "aabb_max_m": [
+        2.525,
+        7.8,
+        3.0525
+      ],
+      "footprint_xz_m": [
+        -2.525,
+        -3.0,
+        2.525,
+        3.0525
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 7.8,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            7.800000000000001,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_group_top"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -1.325,
+            3.9000000000000004,
+            0.0
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.325,
+            3.9000000000000004,
+            0.0
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "container_count": 6,
+      "levels": 3,
+      "container_length_m": 6,
+      "instancing_recommended": true,
+      "iso_dimensions": false
+    },
+    "container_stack_2x1x3_stagger": {
+      "scene_path": "res://assets/generated/harbor_assets/container_stack_2x1x3_stagger.tscn",
+      "label_ko": "컨테이너 적재 2×1×3 엇갈림",
+      "category": "container_stack",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 360,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.525,
+        0.0,
+        -3.0
+      ],
+      "aabb_max_m": [
+        2.525,
+        7.8,
+        3.7025
+      ],
+      "footprint_xz_m": [
+        -2.525,
+        -3.0,
+        2.525,
+        3.7025
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 7.8,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "StackTop",
+          "position_m": [
+            0,
+            7.800000000000001,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "container_group_top"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            -1.325,
+            3.9000000000000004,
+            0.0
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6.65
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            1.325,
+            3.9000000000000004,
+            0.0
+          ],
+          "size_m": [
+            2.4,
+            7.800000000000001,
+            6.65
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "container_count": 6,
+      "levels": 3,
+      "container_length_m": 6,
+      "instancing_recommended": true,
+      "iso_dimensions": false
+    },
+    "mooring_bollard": {
+      "scene_path": "res://assets/generated/harbor_assets/mooring_bollard.tscn",
+      "label_ko": "계류 볼라드",
+      "category": "mooring",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.55,
+        0.0,
+        -0.45
+      ],
+      "aabb_max_m": [
+        0.55,
+        0.835884572681199,
+        0.45
+      ],
+      "footprint_xz_m": [
+        -0.55,
+        -0.45,
+        0.55,
+        0.45
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 0.835884572681199,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "MooringPoint",
+          "position_m": [
+            0,
+            0.8,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "mooring_line"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.45,
+            0
+          ],
+          "size_m": [
+            1,
+            0.9,
+            0.7
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "fender_block": {
+      "scene_path": "res://assets/generated/harbor_assets/fender_block.tscn",
+      "label_ko": "사각 부두 완충재",
+      "category": "fender",
+      "units": "meters",
+      "anchor": "wall_mount",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 12,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.225,
+        -0.75,
+        -0.5
+      ],
+      "aabb_max_m": [
+        0.225,
+        0.75,
+        0.5
+      ],
+      "footprint_xz_m": [
+        -0.225,
+        -0.5,
+        0.225,
+        0.5
+      ],
+      "bbox": null,
+      "elevation_min": -0.75,
+      "elevation_max": 0.75,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "WallMount",
+          "position_m": [
+            -0.23,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "quay_edge"
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "terrain_policy": "use_quay_side_socket",
+      "visual_ring_simplified": true
+    },
+    "fender_tire": {
+      "scene_path": "res://assets/generated/harbor_assets/fender_tire.tscn",
+      "label_ko": "타이어형 부두 완충재",
+      "category": "fender",
+      "units": "meters",
+      "anchor": "wall_mount",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 64,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.18,
+        -0.65,
+        -0.65
+      ],
+      "aabb_max_m": [
+        0.2,
+        0.65,
+        0.65
+      ],
+      "footprint_xz_m": [
+        -0.18,
+        -0.65,
+        0.2,
+        0.65
+      ],
+      "bbox": null,
+      "elevation_min": -0.65,
+      "elevation_max": 0.65,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "WallMount",
+          "position_m": [
+            -0.23,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "quay_edge"
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "terrain_policy": "use_quay_side_socket",
+      "visual_ring_simplified": true
+    },
+    "quay_ladder_3m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_ladder_3m.tscn",
+      "label_ko": "부두 사다리 3m",
+      "category": "access",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 108,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.03,
+        -3.0,
+        -0.32999999999999996
+      ],
+      "aabb_max_m": [
+        0.03,
+        0.5,
+        0.32999999999999996
+      ],
+      "footprint_xz_m": [
+        -0.03,
+        -0.32999999999999996,
+        0.03,
+        0.32999999999999996
+      ],
+      "bbox": null,
+      "elevation_min": -3.0,
+      "elevation_max": 0.5,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "WallMount",
+          "position_m": [
+            -0.15,
+            0,
+            0
+          ],
+          "outward_direction": [
+            -1,
+            0,
+            0
+          ],
+          "rotation_y_rad": 1.5707963267948966,
+          "profile": "quay_edge"
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "climbable_runtime_behavior": false
+    },
+    "quay_stairs_2m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_stairs_2m.tscn",
+      "label_ko": "부두 접근 계단 2m",
+      "category": "access",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 96,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.5,
+        0.0,
+        -2.0
+      ],
+      "aabb_max_m": [
+        1.5,
+        2.0,
+        2.0
+      ],
+      "footprint_xz_m": [
+        -1.5,
+        -2.0,
+        1.5,
+        2.0
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 2.0,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -2
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "walk",
+          "width_m": 3
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            2,
+            2
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "walk",
+          "width_m": 3
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.125,
+            -1.75
+          ],
+          "size_m": [
+            3,
+            0.25,
+            0.5
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.25,
+            -1.25
+          ],
+          "size_m": [
+            3,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.375,
+            -0.75
+          ],
+          "size_m": [
+            3,
+            0.75,
+            0.5
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.5,
+            -0.25
+          ],
+          "size_m": [
+            3,
+            1.0,
+            0.5
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.625,
+            0.25
+          ],
+          "size_m": [
+            3,
+            1.25,
+            0.5
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.75,
+            0.75
+          ],
+          "size_m": [
+            3,
+            1.5,
+            0.5
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.875,
+            1.25
+          ],
+          "size_m": [
+            3,
+            1.75,
+            0.5
+          ]
+        },
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.0,
+            1.75
+          ],
+          "size_m": [
+            3,
+            2.0,
+            0.5
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "crane_rails_12m": {
+      "scene_path": "res://assets/generated/harbor_assets/crane_rails_12m.tscn",
+      "label_ko": "컨테이너 크레인 레일 12m",
+      "category": "crane_rail",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 24,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -4.06,
+        0.0,
+        -6.0
+      ],
+      "aabb_max_m": [
+        4.06,
+        0.14,
+        6.0
+      ],
+      "footprint_xz_m": [
+        -4.06,
+        -6.0,
+        4.06,
+        6.0
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 0.14,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            6.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "crane_rail_8m",
+          "width_m": 8
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "rail_gauge_m": 8,
+      "rail_top_y_m": 0.14
+    },
+    "quay_guardrail_6m": {
+      "scene_path": "res://assets/generated/harbor_assets/quay_guardrail_6m.tscn",
+      "label_ko": "부두 간단 난간 6m",
+      "category": "accessory",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.04,
+        0.0,
+        -3.04
+      ],
+      "aabb_max_m": [
+        0.04,
+        1.135,
+        3.04
+      ],
+      "footprint_xz_m": [
+        -0.04,
+        -3.04,
+        0.04,
+        3.04
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 1.135,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Start",
+          "position_m": [
+            0,
+            0,
+            -3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "guardrail",
+          "width_m": 0.08
+        },
+        {
+          "name": "End",
+          "position_m": [
+            0,
+            0,
+            3.0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "guardrail",
+          "width_m": 0.08
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.55,
+            0
+          ],
+          "size_m": [
+            0.1,
+            1.1,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "fishing_shed": {
+      "scene_path": "res://assets/generated/harbor_assets/fishing_shed.tscn",
+      "label_ko": "소형 어업 창고",
+      "category": "building",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 56,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.4,
+        0.0,
+        -4.9
+      ],
+      "aabb_max_m": [
+        3.4,
+        5.2,
+        4.9
+      ],
+      "footprint_xz_m": [
+        -3.4,
+        -4.9,
+        3.4,
+        4.9
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 5.2,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Entrance",
+          "position_m": [
+            0,
+            0,
+            4.8
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "facility_access",
+          "width_m": 3
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.9000000000000001,
+            0
+          ],
+          "size_m": [
+            6,
+            3.2,
+            9
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "harbor_warehouse": {
+      "scene_path": "res://assets/generated/harbor_assets/harbor_warehouse.tscn",
+      "label_ko": "항구 하역 창고",
+      "category": "building",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 56,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -6.4,
+        0.0,
+        -9.4
+      ],
+      "aabb_max_m": [
+        6.4,
+        7,
+        9.4
+      ],
+      "footprint_xz_m": [
+        -6.4,
+        -9.4,
+        6.4,
+        9.4
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 7,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Entrance",
+          "position_m": [
+            0,
+            0,
+            9.3
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "facility_access",
+          "width_m": 3
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            2.8,
+            0
+          ],
+          "size_m": [
+            12,
+            5,
+            18
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "fish_auction": {
+      "scene_path": "res://assets/generated/harbor_assets/fish_auction.tscn",
+      "label_ko": "소형 어시장 경매장",
+      "category": "building",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 92,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -6.4,
+        0.0,
+        -6.4
+      ],
+      "aabb_max_m": [
+        6.4,
+        6,
+        10.0
+      ],
+      "footprint_xz_m": [
+        -6.4,
+        -6.4,
+        6.4,
+        10.0
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 6,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Entrance",
+          "position_m": [
+            0,
+            0,
+            6.3
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "facility_access",
+          "width_m": 3
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            2.3,
+            0
+          ],
+          "size_m": [
+            12,
+            4,
+            12
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "ice_storage": {
+      "scene_path": "res://assets/generated/harbor_assets/ice_storage.tscn",
+      "label_ko": "어업 얼음 저장고",
+      "category": "building",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 56,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -3.4,
+        0.0,
+        -3.4
+      ],
+      "aabb_max_m": [
+        3.4,
+        5,
+        3.4
+      ],
+      "footprint_xz_m": [
+        -3.4,
+        -3.4,
+        3.4,
+        3.4
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 5,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "Entrance",
+          "position_m": [
+            0,
+            0,
+            3.3
+          ],
+          "outward_direction": [
+            0,
+            0,
+            1
+          ],
+          "rotation_y_rad": 3.141592653589793,
+          "profile": "facility_access",
+          "width_m": 3
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            1.8,
+            0
+          ],
+          "size_m": [
+            6,
+            3,
+            6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "shore_power_water": {
+      "scene_path": "res://assets/generated/harbor_assets/shore_power_water.tscn",
+      "label_ko": "선박 육상 전원·급수 설비",
+      "category": "utility",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 60,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.5,
+        0.0,
+        -0.5
+      ],
+      "aabb_max_m": [
+        0.55,
+        1.5,
+        0.5
+      ],
+      "footprint_xz_m": [
+        -0.5,
+        -0.5,
+        0.55,
+        0.5
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 1.5,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "UtilityOutlet",
+          "position_m": [
+            0.55,
+            0.5,
+            0
+          ],
+          "outward_direction": [
+            1,
+            0,
+            0
+          ],
+          "rotation_y_rad": -1.5707963267948966,
+          "profile": "utility_socket"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.75,
+            0
+          ],
+          "size_m": [
+            0.7,
+            1.5,
+            0.6
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    },
+    "harbor_lamp_6m": {
+      "scene_path": "res://assets/generated/harbor_assets/harbor_lamp_6m.tscn",
+      "label_ko": "항구 조명 기둥 6m",
+      "category": "utility",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 48,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.19999999999999996,
+        0.0,
+        -0.25
+      ],
+      "aabb_max_m": [
+        1.2,
+        6.075,
+        0.25
+      ],
+      "footprint_xz_m": [
+        -0.19999999999999996,
+        -0.25,
+        1.2,
+        0.25
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 6.075,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "LightSocket",
+          "position_m": [
+            0.75,
+            5.8,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "utility_light"
+        }
+      ],
+      "collision_shapes": [],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false,
+      "light_node_default_enabled": false
+    },
+    "fishing_winch": {
+      "scene_path": "res://assets/generated/harbor_assets/fishing_winch.tscn",
+      "label_ko": "소형 어선 인양 윈치",
+      "category": "utility",
+      "units": "meters",
+      "anchor": "deck_surface",
+      "detail_profile": "harbor_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "indexed_geometry": true,
+      "triangles": 80,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -0.9,
+        0.0,
+        -0.7
+      ],
+      "aabb_max_m": [
+        1.225,
+        1.02,
+        0.7
+      ],
+      "footprint_xz_m": [
+        -0.9,
+        -0.7,
+        1.225,
+        0.7
+      ],
+      "bbox": null,
+      "elevation_min": 0.0,
+      "elevation_max": 1.02,
+      "resolution": null,
+      "ports": [
+        {
+          "name": "GroundOrigin",
+          "position_m": [
+            0,
+            0,
+            0
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "terrain_anchor"
+        },
+        {
+          "name": "CableExit",
+          "position_m": [
+            0,
+            0.5,
+            -0.5
+          ],
+          "outward_direction": [
+            0,
+            0,
+            -1
+          ],
+          "rotation_y_rad": 0.0,
+          "profile": "hoist_attachment"
+        }
+      ],
+      "collision_shapes": [
+        {
+          "type": "box",
+          "center_m": [
+            0,
+            0.5,
+            0
+          ],
+          "size_m": [
+            2.2,
+            1,
+            1.4
+          ]
+        }
+      ],
+      "grid_m": 6,
+      "sea_side_local_axis": "+X",
+      "placement_status": "asset_only",
+      "surveyed": false,
+      "georeferenced": false
+    }
+  },
+  "assemblies": {
+    "fishing_harbor_demo": {
+      "label_ko": "소형 어항 조립 예제",
+      "placements": [
+        [
+          "quay_12x12_sea_edge",
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "quay_foundation_4m",
+          [
+            -3,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "quay_foundation_4m",
+          [
+            3,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "fishing_crane_post",
+          [
+            3,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "mooring_bollard",
+          [
+            5,
+            0,
+            -4
+          ],
+          0
+        ],
+        [
+          "mooring_bollard",
+          [
+            5,
+            0,
+            4
+          ],
+          0
+        ],
+        [
+          "fender_block",
+          [
+            6.2,
+            -1,
+            -3
+          ],
+          0
+        ],
+        [
+          "fender_tire",
+          [
+            6.2,
+            -1,
+            3
+          ],
+          0
+        ],
+        [
+          "fishing_shed",
+          [
+            -3,
+            0,
+            -13
+          ],
+          0
+        ],
+        [
+          "shore_power_water",
+          [
+            4,
+            0,
+            4
+          ],
+          0
+        ],
+        [
+          "breakwater_straight_12m",
+          [
+            -9,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "breakwater_head",
+          [
+            -9,
+            0,
+            9
+          ],
+          0
+        ],
+        [
+          "lighthouse_red",
+          [
+            -9,
+            0,
+            9
+          ],
+          0
+        ],
+        [
+          "tetrapod_2.5m",
+          [
+            -6.5,
+            -1,
+            9
+          ],
+          0.3
+        ],
+        [
+          "tetrapod_2.5m",
+          [
+            -6.5,
+            -1,
+            6
+          ],
+          1.1
+        ]
+      ],
+      "connections": [
+        [
+          [
+            "breakwater_straight_12m",
+            0,
+            "End"
+          ],
+          [
+            "breakwater_head",
+            0,
+            "Start"
+          ]
+        ]
+      ],
+      "external_instances": [
+        {
+          "scene": "res://assets/generated/vessels/fishing_boat.tscn",
+          "position_m": [
+            11,
+            -2,
+            0
+          ],
+          "rotation_y_rad": 0,
+          "anchor": "waterline"
+        }
+      ],
+      "assumed_water_y_m": -2,
+      "aabb_min_m": [
+        -12.0,
+        -4.6,
+        -17.9
+      ],
+      "aabb_max_m": [
+        15.0043241137054,
+        10.022080580623317,
+        12.0
+      ],
+      "triangles": 1886
+    },
+    "container_terminal_demo": {
+      "label_ko": "컨테이너 부두 조립 예제",
+      "placements": [
+        [
+          "quay_12x12_sea_edge",
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "quay_12x12_sea_edge",
+          [
+            0,
+            0,
+            12
+          ],
+          0
+        ],
+        [
+          "crane_rails_12m",
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "crane_rails_12m",
+          [
+            0,
+            0,
+            12
+          ],
+          0
+        ],
+        [
+          "container_crane_feeder",
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "container_stack_2x2x2",
+          [
+            -15,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "container_stack_3x2x3",
+          [
+            -25,
+            0,
+            12
+          ],
+          0
+        ],
+        [
+          "harbor_warehouse",
+          [
+            -18,
+            0,
+            -20
+          ],
+          0
+        ]
+      ],
+      "connections": [
+        [
+          [
+            "quay_12x12_sea_edge",
+            0,
+            "End"
+          ],
+          [
+            "quay_12x12_sea_edge",
+            1,
+            "Start"
+          ]
+        ],
+        [
+          [
+            "crane_rails_12m",
+            0,
+            "End"
+          ],
+          [
+            "crane_rails_12m",
+            1,
+            "Start"
+          ]
+        ]
+      ],
+      "aabb_min_m": [
+        -28.85,
+        -1.3,
+        -29.4
+      ],
+      "aabb_max_m": [
+        22.012223949152325,
+        33.03279596114038,
+        18.2025
+      ],
+      "triangles": 1376
+    },
+    "terrain_height_demo": {
+      "label_ko": "수평 상판·지형 높이 전환 예제",
+      "placements": [
+        [
+          "quay_6x12",
+          [
+            0,
+            0,
+            0
+          ],
+          0
+        ],
+        [
+          "quay_ramp_rise2m",
+          [
+            0,
+            0,
+            12
+          ],
+          0
+        ],
+        [
+          "quay_6x12",
+          [
+            0,
+            2,
+            24
+          ],
+          0
+        ],
+        [
+          "pier_pile_4m",
+          [
+            -2,
+            0,
+            -4
+          ],
+          0
+        ],
+        [
+          "pier_pile_8m",
+          [
+            2,
+            0,
+            4
+          ],
+          0
+        ],
+        [
+          "pier_pile_8m",
+          [
+            -2,
+            2,
+            20
+          ],
+          0
+        ],
+        [
+          "pier_pile_12m",
+          [
+            2,
+            2,
+            28
+          ],
+          0
+        ],
+        [
+          "quay_walk_adapter_3m",
+          [
+            0,
+            2,
+            33
+          ],
+          0
+        ]
+      ],
+      "connections": [
+        [
+          [
+            "quay_6x12",
+            0,
+            "End"
+          ],
+          [
+            "quay_ramp_rise2m",
+            0,
+            "Start"
+          ]
+        ],
+        [
+          [
+            "quay_ramp_rise2m",
+            0,
+            "End"
+          ],
+          [
+            "quay_6x12",
+            1,
+            "Start"
+          ]
+        ],
+        [
+          [
+            "quay_6x12",
+            1,
+            "End"
+          ],
+          [
+            "quay_walk_adapter_3m",
+            0,
+            "Start"
+          ]
+        ]
+      ],
+      "aabb_min_m": [
+        -3.0,
+        -10.6,
+        -6.0
+      ],
+      "aabb_max_m": [
+        3.0,
+        2.15,
+        36.0
+      ],
+      "triangles": 224
+    }
+  },
+  "connections_checked": 6
+}

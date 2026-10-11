@@ -1,0 +1,53 @@
+{
+  "description": "원본 보존 도로 노반 선분 생성과 독립 경사면·밀집 구역 검증",
+  "modules": [
+    {
+      "path": "pipeline/processors/road_formation/__init__.py",
+      "lines": 1
+    },
+    {
+      "path": "pipeline/processors/road_formation/build.py",
+      "lines": 98
+    },
+    {
+      "path": "pipeline/processors/road_formation/complete_metadata.py",
+      "lines": 40
+    },
+    {
+      "path": "pipeline/processors/road_formation/preview.py",
+      "lines": 75
+    },
+    {
+      "path": "pipeline/processors/road_formation/profiles.py",
+      "lines": 48
+    },
+    {
+      "path": "pipeline/processors/road_formation/register.py",
+      "lines": 42
+    },
+    {
+      "path": "pipeline/processors/road_formation/report.py",
+      "lines": 70
+    },
+    {
+      "path": "pipeline/processors/road_formation/verify.py",
+      "lines": 119
+    },
+    {
+      "path": "pipeline/processors/road_formation/check.gd",
+      "lines": 127
+    },
+    {
+      "path": "pipeline/processors/road_formation/check_host.gd",
+      "lines": 9
+    },
+    {
+      "path": "pipeline/processors/road_formation/dense_check.gd",
+      "lines": 46
+    },
+    {
+      "path": "pipeline/processors/road_formation/render.gd",
+      "lines": 94
+    }
+  ]
+}

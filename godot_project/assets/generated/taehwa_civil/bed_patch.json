@@ -1,0 +1,33 @@
+{
+  "source_path": "assets/generated/railway/graded_heightmap_16bit.png",
+  "source_sha256": "c953a6efe1ff426265fc36a9bfb916b7db98e776dc1755d8eb1a2fc69b1a3dc4",
+  "source_resolution": [
+    5632,
+    5632
+  ],
+  "pixel_rect": [
+    1908,
+    2487,
+    1646,
+    403
+  ],
+  "height_min": -30.0,
+  "height_max": 1300,
+  "world_rect": [
+    -12892.914224826853,
+    -4667.021843367074,
+    23384.83395489256,
+    5725.448410584265
+  ],
+  "water_bbox": [
+    -12843.08228248216,
+    -4615.684602866605,
+    10427.987923992187,
+    991.7203107656646
+  ],
+  "affected_pixels": 26330,
+  "elevation_min_m": -16.081634521484375,
+  "elevation_max_m": 93.13496398925781,
+  "depth_status": "visual_estimate",
+  "source_modified": false
+}

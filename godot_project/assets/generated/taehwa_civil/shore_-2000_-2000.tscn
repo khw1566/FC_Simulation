@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=4]
+
+[ext_resource type="Shader" path="res://shaders/river_gravel.gdshader" id="1_cuvrp"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l05wa"]
+render_priority = 0
+shader = ExtResource("1_cuvrp")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_a32ru"]
+_surfaces = [{
+"aabb": AABB(243.854, 3.28738, -500, 256.146, 1.09213, 115.945),
+"attribute_data": PackedByteArray("AP8A/5gJikbMvA9CuyRzPxTpNz8A/wD/BgyKRo0oGkK7JHM/FOk3PwD/AP97CIpGZaMdQrskcz8U6Tc/AAAA/xFNikaEuaBBuyRzPxTpNz8AAAD/fWiKRp/DnUG7JHM/FOk3PwD/AP/AeYpG//kVQrskcz8U6Tc/AP8A/3rnika4DRBCuyRzPxTpNz8AAAD/ONaKRg3rkUG7JHM/FOk3PwD/AP/y8IpG34oPQrskcz8U6Tc/AAAA/9I7i0YrHplBxDh4P6vwKz8A/wD/2E2LRpl0F0LEOHg/q/ArPwAAAP9HQItGaHOaQcQ4eD+r8Cs/AP8A/067i0bs0ydCxDh4P6vwKz8AAAD/va2LRg4yu0HEOHg/q/ArPwAAAP8v3otG8OhfwsQ4eD+r8Cs/AAAA/56li0ZNt1XCxDh4P6vwKz8AgAD/KtmLRi5le8LEOHg/q/ArPwD/AP+m24tGeaosQsQ4eD+r8Cs/AD8A/3UVjEYCyPpBxDh4P6vwKz8AAAD/dRWMRvwg3UHEOHg/q/ArPwD/AP91FYxGvmA7QsQ4eD+r8Cs/"),
+"format": 34359742527,
+"index_count": 51,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMABAAFAAMAAQADAAUABgAFAAcABAAHAAUACAAGAAcABwAJAAgACgAIAAkACQALAAoADAAKAA0ACwANAAoADgAPABAADAANABEAEgARABMAEwARAA0AFAARABIA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 21,
+"vertex_data": PackedByteArray("AAB6Q/kDf0AAAPrDAAB6Q8zxiUDqm/jDqtpzQ2TqgUAAAPrDhsCPQzepVUAAAPrDAACWQzepVUD/K/fDAACWQ0FxdED0Su3DAACvQwIljED9+eHDAACvQ7ifVUAJ2+vDRyixQ92Gi0AAAOHDePvGQw5+VUAAAOHDAADIQ0mleUAGqdbDAADIQ5R8VUASiuDDAADhQ33feEAQWMvDAADhQyTJVEAcOdXDAAD6Q8GMVECRV/bDoEfsQ/rWVEAAAPrDAAD6Q/3deEAAAPrDOWPoQ3f1hkAAAMjDAAD6Q4JkUkAAAMjDAAD6Q8GMVEAl6MnDAAD6Q5PLikAaB8DD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+/")
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_froo5"]
+data = PackedVector3Array(250, 3.9846, -500, 250, 4.3108, -497.218, 243.854, 4.0599, -500, 250, 4.3108, -497.218, 250, 3.9846, -500, 287.504, 3.3385, -500, 300, 3.3385, -494.344, 300, 3.8194, -474.586, 287.504, 3.3385, -500, 250, 4.3108, -497.218, 287.504, 3.3385, -500, 300, 3.8194, -474.586, 350, 4.3795, -451.953, 300, 3.8194, -474.586, 350, 3.3379, -471.711, 300, 3.3385, -494.344, 350, 3.3379, -471.711, 300, 3.8194, -474.586, 354.315, 4.3602, -450, 350, 4.3795, -451.953, 350, 3.3379, -471.711, 350, 3.3379, -471.711, 397.965, 3.3358, -450, 354.315, 4.3602, -450, 400, 3.9007, -429.32, 354.315, 4.3602, -450, 397.965, 3.3358, -450, 397.965, 3.3358, -450, 400, 3.3357, -449.079, 400, 3.9007, -429.32, 450, 3.8886, -406.688, 400, 3.9007, -429.32, 450, 3.3248, -426.446, 400, 3.3357, -449.079, 450, 3.3248, -426.446, 400, 3.9007, -429.32, 500, 3.3211, -492.684, 472.56, 3.3256, -500, 500, 3.8885, -500, 450, 3.8886, -406.688, 450, 3.3248, -426.446, 464.775, 4.2175, -400, 500, 3.2874, -400, 464.775, 4.2175, -400, 500, 3.3211, -403.814, 500, 3.3211, -403.814, 464.775, 4.2175, -400, 450, 3.3248, -426.446, 500, 4.3374, -384.055, 464.775, 4.2175, -400, 500, 3.2874, -400)
+
+[node name="shore_-2000_-2000" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1500, 0, -1500)
+
+[node name="Bed" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_l05wa")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_a32ru")
+
+[node name="Bed_col" type="StaticBody3D" parent="Bed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bed/Bed_col"]
+shape = SubResource("ConcavePolygonShape3D_froo5")

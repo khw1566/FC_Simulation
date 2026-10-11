@@ -1,0 +1,82 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/quay_12x12_sea_edge.tscn" id="Model0"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/quay_foundation_4m.tscn" id="Model1"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/fishing_crane_post.tscn" id="Model2"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/mooring_bollard.tscn" id="Model3"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/fender_block.tscn" id="Model4"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/fender_tire.tscn" id="Model5"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/fishing_shed.tscn" id="Model6"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/shore_power_water.tscn" id="Model7"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/breakwater_straight_12m.tscn" id="Model8"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/breakwater_head.tscn" id="Model9"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/lighthouse_red.tscn" id="Model10"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/tetrapod_2.5m.tscn" id="Model11"]
+[ext_resource type="PackedScene" path="res://assets/generated/vessels/fishing_boat.tscn" id="Model12"]
+
+[node name="fishing_harbor_demo" type="Node3D"]
+metadata/placement_status = "synthetic_assembly"
+
+[node name="quay_12x12_sea_edge_0" parent="." instance=ExtResource("Model0")]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="quay_foundation_4m_1" parent="." instance=ExtResource("Model1")]
+position = Vector3(-3.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="quay_foundation_4m_2" parent="." instance=ExtResource("Model1")]
+position = Vector3(3.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="fishing_crane_post_3" parent="." instance=ExtResource("Model2")]
+position = Vector3(3.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="mooring_bollard_4" parent="." instance=ExtResource("Model3")]
+position = Vector3(5.00000000, 0.00000000, -4.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="mooring_bollard_5" parent="." instance=ExtResource("Model3")]
+position = Vector3(5.00000000, 0.00000000, 4.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="fender_block_6" parent="." instance=ExtResource("Model4")]
+position = Vector3(6.20000000, -1.00000000, -3.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="fender_tire_7" parent="." instance=ExtResource("Model5")]
+position = Vector3(6.20000000, -1.00000000, 3.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="fishing_shed_8" parent="." instance=ExtResource("Model6")]
+position = Vector3(-3.00000000, 0.00000000, -13.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="shore_power_water_9" parent="." instance=ExtResource("Model7")]
+position = Vector3(4.00000000, 0.00000000, 4.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="breakwater_straight_12m_10" parent="." instance=ExtResource("Model8")]
+position = Vector3(-9.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="breakwater_head_11" parent="." instance=ExtResource("Model9")]
+position = Vector3(-9.00000000, 0.00000000, 9.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="lighthouse_red_12" parent="." instance=ExtResource("Model10")]
+position = Vector3(-9.00000000, 0.00000000, 9.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="tetrapod_2.5m_13" parent="." instance=ExtResource("Model11")]
+position = Vector3(-6.50000000, -1.00000000, 9.00000000)
+rotation = Vector3(0, 0.30000000, 0)
+
+[node name="tetrapod_2.5m_14" parent="." instance=ExtResource("Model11")]
+position = Vector3(-6.50000000, -1.00000000, 6.00000000)
+rotation = Vector3(0, 1.10000000, 0)
+
+[node name="External0_15" parent="." instance=ExtResource("Model12")]
+position = Vector3(11.00000000, -2.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)

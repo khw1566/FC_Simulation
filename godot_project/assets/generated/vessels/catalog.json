@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "container_ship",
+      "scene_path": "res://assets/generated/vessels/container_ship.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2374,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -14.0,
+        -7,
+        -90.0
+      ],
+      "aabb_max_m": [
+        14.0,
+        20.06,
+        86.39999999999999
+      ],
+      "elevation_min": -7,
+      "elevation_max": 20.06,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "컨테이너선",
+      "indexed_geometry": true
+    },
+    {
+      "id": "tugboat",
+      "scene_path": "res://assets/generated/vessels/tugboat.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1046,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -5.25,
+        -3,
+        -15.0
+      ],
+      "aabb_max_m": [
+        5.25,
+        11.76,
+        14.399999999999999
+      ],
+      "elevation_min": -3,
+      "elevation_max": 11.76,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "예인선",
+      "indexed_geometry": true
+    },
+    {
+      "id": "motor_boat",
+      "scene_path": "res://assets/generated/vessels/motor_boat.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 230,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -1.9,
+        -0.8,
+        -6.0
+      ],
+      "aabb_max_m": [
+        1.9,
+        4.36,
+        6.4
+      ],
+      "elevation_min": -0.8,
+      "elevation_max": 4.36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "보트",
+      "indexed_geometry": true
+    },
+    {
+      "id": "lpg_carrier",
+      "scene_path": "res://assets/generated/vessels/lpg_carrier.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1074,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -12.0,
+        -6,
+        -72.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        19.06,
+        69.6
+      ],
+      "elevation_min": -6,
+      "elevation_max": 19.06,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "LPG선",
+      "indexed_geometry": true
+    },
+    {
+      "id": "oil_tanker",
+      "scene_path": "res://assets/generated/vessels/oil_tanker.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1722,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -17.0,
+        -9,
+        -105.0
+      ],
+      "aabb_max_m": [
+        17.0,
+        20.56,
+        100.8
+      ],
+      "elevation_min": -9,
+      "elevation_max": 20.56,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "유조선",
+      "indexed_geometry": true
+    },
+    {
+      "id": "fishing_boat",
+      "scene_path": "res://assets/generated/vessels/fishing_boat.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 754,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -2.85,
+        -1.5,
+        -9.0
+      ],
+      "aabb_max_m": [
+        2.85,
+        6.659999999999999,
+        8.64
+      ],
+      "elevation_min": -1.5,
+      "elevation_max": 6.659999999999999,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "어업용 소형선박",
+      "indexed_geometry": true
+    }
+  ],
+  "note_ko": "독립 에셋 표현의 경량화, 기존 지리 배치 유지"
+}

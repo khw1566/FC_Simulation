@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mark_cycle_symbol.glb" id="1"]
+
+[node name="mark_cycle_symbol" type="Node3D"]
+metadata/asset_type = "mark_cycle_symbol"
+metadata/procedural = true
+metadata/units = "meters"
+metadata/runtime_applied = false
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]

@@ -1,0 +1,369 @@
+{
+  "assets": {
+    "broadleaf_auto_lod": {
+      "file_path": "res://assets/generated/trees/broadleaf_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "broadleaf",
+        "lod_ranges_m": [
+          [
+            0,
+            100
+          ],
+          [
+            100,
+            350
+          ],
+          [
+            350,
+            3000
+          ]
+        ],
+        "resolution": null,
+        "width_m": 6
+      },
+      "sha256": "7aaa21925de57570f1f32d21f02f1cd7c1d0f002f855513ad37526b5dfab255f",
+      "size_bytes": 714567,
+      "type": "tree_auto_lod"
+    },
+    "broadleaf_lod0": {
+      "file_path": "res://assets/generated/trees/broadleaf_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "broadleaf",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 120,
+        "width_m": 6
+      },
+      "sha256": "c534eedd528bde9b265e09a08d7b263160a3ec260f5d9bb3b768e215057ae056",
+      "size_bytes": 12170,
+      "type": "tree_lod"
+    },
+    "broadleaf_lod1": {
+      "file_path": "res://assets/generated/trees/broadleaf_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "broadleaf",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 20,
+        "width_m": 6
+      },
+      "sha256": "69238df335ee4f073c110370ddd22cda5dc162b61c9c03acbdb952749573756a",
+      "size_bytes": 4970,
+      "type": "tree_lod"
+    },
+    "broadleaf_lod2": {
+      "file_path": "res://assets/generated/trees/broadleaf_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 9,
+        "elevation_min": 0,
+        "height_m": 9,
+        "kind": "broadleaf",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 6
+      },
+      "sha256": "28c907aa9cb8a9e544e874dad1694e57bb0769bb2d6e7c04180b0c7195485c55",
+      "size_bytes": 703406,
+      "type": "tree_lod"
+    },
+    "conifer_auto_lod": {
+      "file_path": "res://assets/generated/trees/conifer_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 12,
+        "elevation_min": 0,
+        "height_m": 12,
+        "kind": "conifer",
+        "lod_ranges_m": [
+          [
+            0,
+            100
+          ],
+          [
+            100,
+            350
+          ],
+          [
+            350,
+            3000
+          ]
+        ],
+        "resolution": null,
+        "width_m": 5
+      },
+      "sha256": "814cc7089e7175f8fc78517d48e02711a3e3c30cb0c1501a6a8e749a87e9d16c",
+      "size_bytes": 711685,
+      "type": "tree_auto_lod"
+    },
+    "conifer_lod0": {
+      "file_path": "res://assets/generated/trees/conifer_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 12,
+        "elevation_min": 0,
+        "height_m": 12,
+        "kind": "conifer",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 72,
+        "width_m": 5
+      },
+      "sha256": "46263ac6273b0d775499b6bc9eeccd143206a32a5640d2faae57ab95e01a3d62",
+      "size_bytes": 8710,
+      "type": "tree_lod"
+    },
+    "conifer_lod1": {
+      "file_path": "res://assets/generated/trees/conifer_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 12,
+        "elevation_min": 0,
+        "height_m": 12,
+        "kind": "conifer",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 28,
+        "width_m": 5
+      },
+      "sha256": "fe125fec2613a3e4dc92c94fa61732b3409f05081cbc58ee1ca772d7d6ee4e35",
+      "size_bytes": 5542,
+      "type": "tree_lod"
+    },
+    "conifer_lod2": {
+      "file_path": "res://assets/generated/trees/conifer_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 12,
+        "elevation_min": 0,
+        "height_m": 12,
+        "kind": "conifer",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 5
+      },
+      "sha256": "a31e1c9da0d95aac9dd0d50be5168d9db820d2852d40ef780774ec11b8d470e1",
+      "size_bytes": 703402,
+      "type": "tree_lod"
+    },
+    "shrub_auto_lod": {
+      "file_path": "res://assets/generated/trees/shrub_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.2,
+        "elevation_min": 0,
+        "height_m": 2.2,
+        "kind": "shrub",
+        "lod_ranges_m": [
+          [
+            0,
+            100
+          ],
+          [
+            100,
+            350
+          ],
+          [
+            350,
+            3000
+          ]
+        ],
+        "resolution": null,
+        "width_m": 2.8
+      },
+      "sha256": "416aa47bb272783c11f240a5e94d58b221c43f3b2c4471f333321613715fb7f8",
+      "size_bytes": 711107,
+      "type": "tree_auto_lod"
+    },
+    "shrub_lod0": {
+      "file_path": "res://assets/generated/trees/shrub_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.2,
+        "elevation_min": 0,
+        "height_m": 2.2,
+        "kind": "shrub",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 72,
+        "width_m": 2.8
+      },
+      "sha256": "7acff60dc2f96ebf143201195bc2529de45f8c3ab75240e5344c14487d8e2ac7",
+      "size_bytes": 8706,
+      "type": "tree_lod"
+    },
+    "shrub_lod1": {
+      "file_path": "res://assets/generated/trees/shrub_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.2,
+        "elevation_min": 0,
+        "height_m": 2.2,
+        "kind": "shrub",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 20,
+        "width_m": 2.8
+      },
+      "sha256": "0b7d929da96590c851426bfc34e1bd30e4e5126d949a2f196ee3251915726b8e",
+      "size_bytes": 4962,
+      "type": "tree_lod"
+    },
+    "shrub_lod2": {
+      "file_path": "res://assets/generated/trees/shrub_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 2.2,
+        "elevation_min": 0,
+        "height_m": 2.2,
+        "kind": "shrub",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 2.8
+      },
+      "sha256": "d2807d1c77236c09afb8a126c1e06bbebb20e596c89df6674fce4cdc0989635c",
+      "size_bytes": 703398,
+      "type": "tree_lod"
+    },
+    "slender_auto_lod": {
+      "file_path": "res://assets/generated/trees/slender_auto_lod.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 11,
+        "elevation_min": 0,
+        "height_m": 11,
+        "kind": "slender",
+        "lod_ranges_m": [
+          [
+            0,
+            100
+          ],
+          [
+            100,
+            350
+          ],
+          [
+            350,
+            3000
+          ]
+        ],
+        "resolution": null,
+        "width_m": 3.8
+      },
+      "sha256": "92feb420a628f0adf28661dac880032f5f2ef27f65ce51338e186fc2ec8e5457",
+      "size_bytes": 712261,
+      "type": "tree_auto_lod"
+    },
+    "slender_lod0": {
+      "file_path": "res://assets/generated/trees/slender_lod0.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 11,
+        "elevation_min": 0,
+        "height_m": 11,
+        "kind": "slender",
+        "lod": 0,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 88,
+        "width_m": 3.8
+      },
+      "sha256": "f3ee2d5c594f20ed65ad57a28ca4d39524f5e68a619f666c1158c947cda9ad07",
+      "size_bytes": 9862,
+      "type": "tree_lod"
+    },
+    "slender_lod1": {
+      "file_path": "res://assets/generated/trees/slender_lod1.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 11,
+        "elevation_min": 0,
+        "height_m": 11,
+        "kind": "slender",
+        "lod": 1,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 20,
+        "width_m": 3.8
+      },
+      "sha256": "7c965d4b487e575551ec6cd33bd37250de8811b245b8fa9e8521810eb79aaad9",
+      "size_bytes": 4966,
+      "type": "tree_lod"
+    },
+    "slender_lod2": {
+      "file_path": "res://assets/generated/trees/slender_lod2.scn",
+      "format": "SCN",
+      "metadata": {
+        "bbox": null,
+        "collision": false,
+        "elevation_max": 11,
+        "elevation_min": 0,
+        "height_m": 11,
+        "kind": "slender",
+        "lod": 2,
+        "resolution": null,
+        "surfaces": 1,
+        "triangles": 4,
+        "width_m": 3.8
+      },
+      "sha256": "7b052e0c1eb8f4a5c93f677fdc8e5d47eae2f7ce96aa15b4521921af41aa9051",
+      "size_bytes": 703402,
+      "type": "tree_lod"
+    }
+  },
+  "version": 1
+}

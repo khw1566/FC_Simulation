@@ -34,12 +34,18 @@
         ],
         "track_count": 2,
         "track_spacing_m": 5.4,
-        "triangles": 19576,
-        "width_m": 12.5
+        "triangles": 6688,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "e5b2dffddfa06ef1da788e33254af37a3b8f708da7a785cae32c5cb64341ab1b",
-      "size_bytes": 1225932,
-      "type": "railway_bridge_model"
+      "sha256": "b3601f5a7223f6f5d78c7c95444a57678361dc14d7c2de9d5a5c5670e7ef3a15",
+      "size_bytes": 426855,
+      "type": "bridge_model"
     },
     "anyang_north_approach": {
       "file_path": "res://assets/generated/railway_bridges/anyang_north_approach.scn",
@@ -75,12 +81,18 @@
         ],
         "track_count": 2,
         "track_spacing_m": 5.4,
-        "triangles": 8992,
-        "width_m": 12.5
+        "triangles": 3040,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "490d55421547c5184f67f1b1f9cebebaff0c0cb45ef62fa20df60bf6e3f9452c",
-      "size_bytes": 568718,
-      "type": "railway_bridge_model"
+      "sha256": "797cf91ace2f2577c06ec42b11171fdc64799e5d58deae156692d25644e2739e",
+      "size_bytes": 199697,
+      "type": "bridge_model"
     },
     "anyang_station_approach": {
       "file_path": "res://assets/generated/railway_bridges/anyang_station_approach.scn",
@@ -116,12 +128,18 @@
         ],
         "track_count": 2,
         "track_spacing_m": 5.4,
-        "triangles": 12018,
-        "width_m": 12.5
+        "triangles": 3882,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "1851342f78a89002d4fd99ff4927504ff31d7f8f7aafb25a1adfdc10be720545",
-      "size_bytes": 756604,
-      "type": "railway_bridge_model"
+      "sha256": "218e99999bde36250cb63960560546570c345a6e1e5b538ba67046118afdaf02",
+      "size_bytes": 252175,
+      "type": "bridge_model"
     },
     "rail_box_girder": {
       "file_path": "res://assets/generated/railway_bridges/rail_box_girder.scn",
@@ -153,12 +171,18 @@
         "source_urls": [],
         "track_count": 2,
         "track_spacing_m": 5,
-        "triangles": 1442,
-        "width_m": 12.5
+        "triangles": 650,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "0aab112d7dcf66c555ee5cfdce42283f67a2cb762d2106ef08b523f197ee1980",
-      "size_bytes": 100215,
-      "type": "railway_bridge_model"
+      "sha256": "17d23bbdb68526b24e324af46473fbd3208cdddf709ee1dbf55c278d34dd00a1",
+      "size_bytes": 51114,
+      "type": "bridge_model"
     },
     "rail_deck_arch": {
       "file_path": "res://assets/generated/railway_bridges/rail_deck_arch.scn",
@@ -190,12 +214,18 @@
         "source_urls": [],
         "track_count": 2,
         "track_spacing_m": 5,
-        "triangles": 5906,
-        "width_m": 12.5
+        "triangles": 1730,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "312d13ff4db1bcdceb87bc2d0068522d64666a51c97ad55c19c4e03e38649725",
-      "size_bytes": 377548,
-      "type": "railway_bridge_model"
+      "sha256": "f5cdcfb4b4e4ec4f54a9de68fbd1919d0f752fc42f63f348e6bf7dfba40d5790",
+      "size_bytes": 118615,
+      "type": "bridge_model"
     },
     "rail_multi_viaduct": {
       "file_path": "res://assets/generated/railway_bridges/rail_multi_viaduct.scn",
@@ -227,12 +257,18 @@
         "source_urls": [],
         "track_count": 2,
         "track_spacing_m": 5,
-        "triangles": 6148,
-        "width_m": 12.5
+        "triangles": 2068,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "01caf628f34c6b3e40908471a4634049005e922ec4329b01c040dd8c5b9fb740",
-      "size_bytes": 392107,
-      "type": "railway_bridge_model"
+      "sha256": "eefd86861efcee969a1165db216c2d7ee9b633e313a529e8537767b607c60306",
+      "size_bytes": 139150,
+      "type": "bridge_model"
     },
     "rail_plate_girder": {
       "file_path": "res://assets/generated/railway_bridges/rail_plate_girder.scn",
@@ -264,12 +300,18 @@
         "source_urls": [],
         "track_count": 1,
         "track_spacing_m": 5,
-        "triangles": 1166,
-        "width_m": 6.5
+        "triangles": 566,
+        "width_m": 6.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "92b857141299d3e96dc5031bda1f2729154c48ae76512c65e518e6f3ebf7d042",
-      "size_bytes": 83362,
-      "type": "railway_bridge_model"
+      "sha256": "2c8e5106925b0ce0a15343ee6b72cf07b5be4c15080381c04c6e9fe7956c34be",
+      "size_bytes": 46141,
+      "type": "bridge_model"
     },
     "rail_through_truss": {
       "file_path": "res://assets/generated/railway_bridges/rail_through_truss.scn",
@@ -301,12 +343,18 @@
         "source_urls": [],
         "track_count": 2,
         "track_spacing_m": 5,
-        "triangles": 3494,
-        "width_m": 12.5
+        "triangles": 1334,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "60753989942bb78423a2ec1b70ab5623d524a36a2e5f329886f21c3df3676c4a",
-      "size_bytes": 228013,
-      "type": "railway_bridge_model"
+      "sha256": "d27ca26b25e3c5b386c51f267975c88ce62d4035394aee0fe4d8b1897baa32a2",
+      "size_bytes": 94072,
+      "type": "bridge_model"
     },
     "ulsan_anyang_connected_set": {
       "file_path": "res://assets/generated/railway_bridges/ulsan_anyang_connected_set.scn",
@@ -362,12 +410,18 @@
         ],
         "track_count": 2,
         "track_spacing_m": 5.4,
-        "triangles": 42028,
-        "width_m": 12.5
+        "triangles": 14188,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "29c30a713d8a647d2f6ec353e333d5ff96498c437a6f4f0293940066938d90f1",
-      "size_bytes": 2639102,
-      "type": "railway_bridge_model"
+      "sha256": "1cab8a2dc38da0ce7a6e1f39f70a8d1683b5febda824ec2d6a91dbfd379d78ee",
+      "size_bytes": 912617,
+      "type": "bridge_model"
     },
     "ulsan_station_interface": {
       "file_path": "res://assets/generated/railway_bridges/ulsan_station_interface.scn",
@@ -403,12 +457,18 @@
         ],
         "track_count": 2,
         "track_spacing_m": 5.4,
-        "triangles": 1622,
-        "width_m": 12.5
+        "triangles": 758,
+        "width_m": 12.5,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "702d88bfe94ba87cf1c74012f32406871f243f1133adad533fcafca79c7d40da",
-      "size_bytes": 112770,
-      "type": "railway_bridge_model"
+      "sha256": "14aebae05086d25c05b2c2c9a1ab4db926882a6d610178f0bf1015d0bc606b08",
+      "size_bytes": 59181,
+      "type": "bridge_model"
     }
   },
   "version": 1

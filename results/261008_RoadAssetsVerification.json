@@ -1,0 +1,32 @@
+{
+  "models": 239,
+  "counts": {
+    "lane_overlay": 24,
+    "road": 79,
+    "walk": 108,
+    "transition": 7,
+    "accessory": 11,
+    "marking": 10
+  },
+  "walk_styles": 24,
+  "glb_files": 239,
+  "scene_files": 240,
+  "asset_bytes": 7170618,
+  "manifest_entries": 485,
+  "missing": [],
+  "hash_mismatch": [],
+  "game_runtime_files_changed": [],
+  "checked_game_files": 25,
+  "module_lines": {
+    "accessories.py": 120,
+    "assembly.py": 71,
+    "generate.py": 166,
+    "mesh.py": 92,
+    "preview.py": 58,
+    "profiles.py": 92,
+    "surfaces.py": 100,
+    "__init__.py": 2
+  },
+  "isolated_godot_scenes_checked": 10,
+  "runtime_applied": false
+}

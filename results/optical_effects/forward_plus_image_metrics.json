@@ -1,0 +1,22 @@
+{
+  "combined": {
+    "mean_rgb_difference_255": 4.542031288146973,
+    "max_rgb_difference_255": 73.0,
+    "changed_pixels": 512701
+  },
+  "rays": {
+    "mean_rgb_difference_255": 4.212906360626221,
+    "max_rgb_difference_255": 40.0,
+    "changed_pixels": 516883
+  },
+  "flare": {
+    "mean_rgb_difference_255": 0.18384002149105072,
+    "max_rgb_difference_255": 54.0,
+    "changed_pixels": 39279
+  },
+  "occluded_flare": {
+    "mean_rgb_difference_255": 0.0,
+    "max_rgb_difference_255": 0.0,
+    "changed_pixels": 0
+  }
+}

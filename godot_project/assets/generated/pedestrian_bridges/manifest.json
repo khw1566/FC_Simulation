@@ -24,11 +24,18 @@
         "placement_status": "asset_only",
         "resolution": null,
         "source_urls": [],
-        "triangles": 6132,
-        "width_m": 3
+        "triangles": 2452,
+        "width_m": 3,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "96c2788b983bd2107de1259618a2a4aca6eba091c164a5855e18ad58ab0579d4",
-      "size_bytes": 420106,
+      "sha256": "3700a6ea402c02813f0f1faf21cd875849fcdb102c894c53a1662c060e339d44",
+      "size_bytes": 182089,
       "type": "bridge_model"
     },
     "gulhwa_daun_crossing": {
@@ -37,7 +44,7 @@
       "metadata": {
         "aabb_max_m": [
           1.29999995231628,
-          0.649999976158142,
+          1.55000007152557,
           51.5
         ],
         "aabb_min_m": [
@@ -48,7 +55,7 @@
         "accuracy": "2023년 보도 길이·폭 기반 근사. 하부 구조 및 높이는 제작 가정이며 현재 상태를 재현한 측량 모델이 아님.",
         "bbox": null,
         "deck_height_m": 0.65,
-        "elevation_max": 0.649999976158142,
+        "elevation_max": 1.55000007152557,
         "elevation_min": -0.35500001907349,
         "label_ko": "굴화리–다운동 도보 징검다리",
         "length_m": 100,
@@ -57,11 +64,18 @@
         "source_urls": [
           "https://www.iusm.co.kr/news/articleView.html?idxno=1027634"
         ],
-        "triangles": 1824,
-        "width_m": 1
+        "triangles": 1984,
+        "width_m": 1,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "faa0d93ae85b195b13dc78c79b1d357ea2a229a5699fdfa5d8471e2ff7ffa9e2",
-      "size_bytes": 141963,
+      "sha256": "64e83fbed57eaad69f376a89d5af0b000ac5061bc3793aa94745cfa784d9d338",
+      "size_bytes": 142062,
       "type": "bridge_model"
     },
     "seonbawi_bridge": {
@@ -71,12 +85,12 @@
         "aabb_max_m": [
           12.4499998092651,
           13.0600004196167,
-          80.0325012207031
+          80.0951080322266
         ],
         "aabb_min_m": [
           -12.4499998092651,
           0,
-          -80.0325012207031
+          -80.0951080322266
         ],
         "accuracy": "공개 제원 및 OSM 선형 길이에 맞춘 직선 근사. 교각 수·높이·차선 구성과 상세 부재는 제작 가정.",
         "bbox": null,
@@ -92,11 +106,18 @@
           "https://www.fnnews.com/news/202003261441461345",
           "https://www.openstreetmap.org/way/153128115"
         ],
-        "triangles": 12960,
-        "width_m": 24.9
+        "triangles": 2400,
+        "width_m": 24.9,
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
       },
-      "sha256": "bf8c33b5f2f42d59587451577ff326e0c7000fb7797e3b00cb915af70cea7014",
-      "size_bytes": 813576,
+      "sha256": "0338783a333be6c1eb9d906822bbd41d76916a8aeda25d55534da69aa4c4be47",
+      "size_bytes": 143991,
       "type": "bridge_model"
     }
   },

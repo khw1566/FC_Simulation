@@ -1,0 +1,82 @@
+{
+  "assets": {
+    "heightmap_c14275644bfbb424_2816.rf32z": {
+      "file_path": "res://assets/generated/terrain_quality/ulsan_metro_80km/light/heightmap_c14275644bfbb424_2816.rf32z",
+      "type": "terrain_quality_heightmap",
+      "quality": "light",
+      "sha256": "f15c3375ef4830598fff6df49ece4faaea45ae8de42a510b736e731e9ad47359",
+      "size_bytes": 16805386,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": [
+        2816,
+        2816
+      ],
+      "metadata": {
+        "source_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+        "source_sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d",
+        "source_size": 28918071,
+        "source_modified": 1791097858,
+        "encoding": "float32_le_normalized_zlib",
+        "resampling": "bilinear",
+        "correction_policy": "원본 보정 유지, 공항은 런타임 재평탄화, 터널 마스크 원본 유지"
+      }
+    },
+    "heightmap_c14275644bfbb424_2816.png": {
+      "file_path": "res://assets/generated/terrain_quality/ulsan_metro_80km/light/heightmap_c14275644bfbb424_2816.png",
+      "type": "terrain_quality_preview",
+      "quality": "light",
+      "sha256": "1c4a960cb0f9c04cc49aad55746d7313180298a74ada5d02219c80f9e0974805",
+      "size_bytes": 7852028,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": [
+        2816,
+        2816
+      ],
+      "metadata": {
+        "source_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+        "source_sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d",
+        "source_size": 28918071,
+        "source_modified": 1791097858,
+        "encoding": "uint16_normalized_png",
+        "resampling": "bilinear",
+        "correction_policy": "원본 보정 유지, 공항은 런타임 재평탄화, 터널 마스크 원본 유지"
+      }
+    },
+    "tunnel_buckets": {
+      "file_path": "res://assets/generated/terrain_quality/ulsan_metro_80km/tunnel_buckets_a5d9228de9c1345c.json",
+      "type": "terrain_collision_spatial_index",
+      "sha256": "1875a85b9d7cdce2aa131adbd47a32a1f0c820e863ecc0228900f1a64ba01b4b",
+      "size_bytes": 11655,
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -30.0,
+      "elevation_max": 1300,
+      "resolution": [
+        5632,
+        5632
+      ],
+      "metadata": {
+        "source_sha256": "a5d9228de9c1345cfef228c944fc59bfbc3393b56d9b02d2c2c4fbbaa755a7ca",
+        "bucket_size_m": 512
+      }
+    }
+  }
+}

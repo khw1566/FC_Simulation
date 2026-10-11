@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "generic_pedestrian_overpass",
+      "scene_path": "res://assets/generated/pedestrian_bridges/generic_pedestrian_overpass.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2452,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1.5349999666214,
+        -0.11883449554443,
+        -26.2000007629395
+      ],
+      "aabb_max_m": [
+        1.5349999666214,
+        7.43499946594238,
+        26.2000007629395
+      ],
+      "elevation_min": -0.11883449554443,
+      "elevation_max": 7.43499946594238,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "gulhwa_daun_crossing",
+      "scene_path": "res://assets/generated/pedestrian_bridges/gulhwa_daun_crossing.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1984,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1.29999995231628,
+        -0.35500001907349,
+        -51.5
+      ],
+      "aabb_max_m": [
+        1.29999995231628,
+        1.55000007152557,
+        51.5
+      ],
+      "elevation_min": -0.35500001907349,
+      "elevation_max": 1.55000007152557,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    },
+    {
+      "id": "seonbawi_bridge",
+      "scene_path": "res://assets/generated/pedestrian_bridges/seonbawi_bridge.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2400,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -12.4499998092651,
+        0,
+        -80.0951080322266
+      ],
+      "aabb_max_m": [
+        12.4499998092651,
+        13.0600004196167,
+        80.0951080322266
+      ],
+      "elevation_min": 0,
+      "elevation_max": 13.0600004196167,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
+    }
+  ]
+}

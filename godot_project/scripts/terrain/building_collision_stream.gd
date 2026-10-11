@@ -6,6 +6,7 @@ class_name BuildingCollisionStream
 ## 렌더링 메시에서 형상을 만들면(create_trimesh_shape) GPU 버퍼를 다시 읽어 메인 스레드가 멈춘다.
 const COLLISION_META := "building_collision"
 const FACES_META := "collision_faces"
+const Budget = preload("res://scripts/terrain/stream_frame_budget.gd")
 # 1,500m 건물 청크 기준으로 플레이어 주변 최소 약 1.2km를 덮는다.
 var create_radius := 2250.0
 var release_radius := 2750.0
@@ -38,7 +39,8 @@ func update(chunks: Dictionary, player_2d: Vector2, clearance: float = 0.0) -> v
 ## 남은 작업을 모두 회수한다. 관리자가 트리에서 빠질 때 호출한다.
 func dispose() -> void:
 	for job in _jobs:
-		WorkerThreadPool.wait_for_task_completion(job.task)
+		if not job.get("collected",false):
+			WorkerThreadPool.wait_for_task_completion(job.task)
 	_jobs.clear()
 
 func _start(chunk_node: Node3D) -> void:
@@ -68,23 +70,33 @@ func _start(chunk_node: Node3D) -> void:
 func _collect_finished() -> void:
 	var running: Array = []
 	for job in _jobs:
-		if not WorkerThreadPool.is_task_completed(job.task):
+		if not job.get("collected",false) and not WorkerThreadPool.is_task_completed(job.task):
 			running.append(job)
 			continue
-		WorkerThreadPool.wait_for_task_completion(job.task)
+		if not job.get("collected",false):
+			WorkerThreadPool.wait_for_task_completion(job.task)
+			job.collected = true
+			job.cursor = 0
 		var node = job.node
 		if not is_instance_valid(node) or node.get_meta(COLLISION_META, -1) != job.serial:
 			continue
-		for index in job.targets.size():
+		while job.cursor<job.targets.size():
+			if not Budget.can_submit():
+				running.append(job)
+				break
+			var index: int = job.cursor
+			job.cursor += 1
 			var target = job.targets[index]
 			if not is_instance_valid(target):
 				continue
+			var started := Time.get_ticks_usec()
 			var body := StaticBody3D.new()
 			body.name = "BuildingCollision"
 			var shape := CollisionShape3D.new()
 			shape.shape = job.shapes[index]
 			body.add_child(shape)
 			target.add_child(body)
+			Budget.record(started)
 	_jobs = running
 
 func _release(chunk_node: Node3D) -> void:

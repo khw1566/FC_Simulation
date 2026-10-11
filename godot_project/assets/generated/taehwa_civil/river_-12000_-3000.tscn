@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=4]
+
+[ext_resource type="Shader" path="res://shaders/river_gravel.gdshader" id="1_xumdn"]
+[ext_resource type="Shader" path="res://shaders/taehwa_flow_water.gdshader" id="2_0iaii"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ne50e"]
+render_priority = 0
+shader = ExtResource("1_xumdn")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ooscn"]
+_surfaces = [{
+"aabb": AABB(-500, 65.3015, 423.12, 177.203, 2.90231, 76.8797),
+"attribute_data": PackedByteArray("Kn4A/6thYkSdkvjBDNdzP95zNj9G/wD/Sk9XRFs7SsE2gHc/UN0tPwMAAP/LlGFExyYXwgzXcz/eczY/AwAA/+HmVET57xbCNoB3P1DdLT9G/wD/dsBnRKcvYUEM13M/3nM2PxxPAP/nyVtEfSkIQgzXcz/eczY/AwAA/4goY0TUEhnCDNdzP95zNj8DAAD/gjRmRFRpGcIM13M/3nM2PwMAAP8pVG9EsGoawsmVcz/f/TY/Rv8A/xYKc0QSBu3AyZVzP9/9Nj9BxwD/t1N+RNwa58EeQ3g/T9QrPwMAAP8XrnREpAEbwsmVcz/f/TY/AwAA//wJfUQ23h7CyZVzP9/9Nj8DAAD/FbWCRKK3HcIeQ3g/T9QrPw=="),
+"format": 34359742527,
+"index_count": 39,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAUABQABAAAAAAACAAYABgAHAAAABAAAAAcACAAJAAQABAAHAAgACgAJAAsACwAMAAoACAALAAkACgAMAA0A"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 14,
+"vertex_data": PackedByteArray("AADhw1e/hUIAAOFDAAD6w6sqhEIAAOFDAADhwx4xiEJDRt1DAAD6w1toiEJnj9NDAADhwy+7g0IAAPpDAAD6w5bBhkIAAPpDUA3ewz4qiEKDa95DDYjYw6wCiEIAAOFDAADIw/+Kh0LZuehDAADIwx8ng0IAAPpDAACvw2CagkIAAPpDxk2+w81Eh0LrQe1DAACvw8SNhkIGAfRDDmahw13WhUIAAPpD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vw==")
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jwvd0"]
+data = PackedVector3Array(-450, 66.8737, 450, -500, 66.0833, 450, -450, 68.0959, 442.549, -500, 68.2038, 423.12, -450, 68.0959, 442.549, -500, 66.0833, 450, -450, 66.8737, 450, -450, 65.8656, 500, -500, 67.3781, 500, -500, 67.3781, 500, -500, 66.0833, 450, -450, 66.8737, 450, -450, 66.8737, 450, -450, 68.0959, 442.549, -444.104, 68.0825, 444.84, -444.104, 68.0825, 444.84, -433.063, 68.0052, 450, -450, 66.8737, 450, -450, 65.8656, 500, -450, 66.8737, 450, -433.063, 68.0052, 450, -400, 67.7715, 465.452, -400, 65.5764, 500, -450, 65.8656, 500, -450, 65.8656, 500, -433.063, 68.0052, 450, -400, 67.7715, 465.452, -350, 65.3015, 500, -400, 65.5764, 500, -380.608, 67.6344, 474.515, -380.608, 67.6344, 474.515, -350, 67.2769, 488.008, -350, 65.3015, 500, -400, 67.7715, 465.452, -380.608, 67.6344, 474.515, -400, 65.5764, 500, -350, 65.3015, 500, -350, 67.2769, 488.008, -322.797, 66.9187, 500)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a1rvo"]
+render_priority = 0
+shader = ExtResource("2_0iaii")
+shader_parameter/compatibility_depth = null
+shader_parameter/flow_speed_mps = 0.65
+shader_parameter/simulation_time = null
+shader_parameter/absorption = null
+shader_parameter/wave_strength = null
+shader_parameter/shallow_tint = null
+shader_parameter/deep_tint = null
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ix3en"]
+_surfaces = [{
+"aabb": AABB(-500, 67.0387, 423.12, 177.203, 1.28514, 76.8797),
+"attribute_data": PackedByteArray("Kn4A/6thYkSdkvjBDNdzP95zNj9G/wD/Sk9XRFs7SsE2gHc/UN0tPwMAAP/LlGFExyYXwgzXcz/eczY/AwAA/+HmVET57xbCNoB3P1DdLT9G/wD/dsBnRKcvYUEM13M/3nM2PxxPAP/nyVtEfSkIQgzXcz/eczY/AwAA/4goY0TUEhnCDNdzP95zNj8DAAD/gjRmRFRpGcIM13M/3nM2PwMAAP8pVG9EsGoawsmVcz/f/TY/Rv8A/xYKc0QSBu3AyZVzP9/9Nj9BxwD/t1N+RNwa58EeQ3g/T9QrPwMAAP8XrnREpAEbwsmVcz/f/TY/AwAA//wJfUQ23h7CyZVzP9/9Nj8DAAD/FbWCRKK3HcIeQ3g/T9QrPw=="),
+"format": 34359742527,
+"index_count": 39,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAAAEAAUABQABAAAAAAACAAYABgAHAAAABAAAAAcACAAJAAQABAAHAAgACgAJAAsACwAMAAoACAALAAkACgAMAA0A"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 14,
+"vertex_data": PackedByteArray("AADhwxJriEIAAOFDAAD6w06biEIAAOFDAADhw45uiEJDRt1DAAD6w8yliEJnj9NDAADhw9IriEIAAPpDAAD6w8uHiEIAAPpDUA3ew69niEKDa95DDYjYwxxAiEIAAOFDAADIw2/Ih0LZuehDAADIw8OXh0IAAPpDAACvwwGvhkIAAPpDxk2+wz6Ch0LrQe1DAACvwzXLhkIGAfRDDmahw84ThkIAAPpD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/vw==")
+}]
+
+[node name="river_-12000_-3000" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11500, 0, -2500)
+
+[node name="Bed" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_ne50e")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_ooscn")
+
+[node name="Bed_col" type="StaticBody3D" parent="Bed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bed/Bed_col"]
+shape = SubResource("ConcavePolygonShape3D_jwvd0")
+
+[node name="Water" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_a1rvo")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_ix3en")

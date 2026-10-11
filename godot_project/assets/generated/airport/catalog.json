@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "ulsan_airport",
+      "scene_path": "res://assets/generated/airport/ulsan_airport.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 3734,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1610.86926269531,
+        -8,
+        -398.672790527344
+      ],
+      "aabb_max_m": [
+        1439.18444824219,
+        31,
+        32
+      ],
+      "elevation_min": -8,
+      "elevation_max": 31,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    }
+  ],
+  "note_ko": "독립 에셋 표현의 경량화, 기존 지리 배치 유지"
+}

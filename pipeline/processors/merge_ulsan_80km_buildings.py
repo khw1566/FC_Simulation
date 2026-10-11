@@ -37,7 +37,12 @@ def _project_road_point(point, source, target):
     return [round((tx - 0.5) * target_size, 2), round(y, 2), round((tz - 0.5) * target_size, 2)]
 
 
-def _load_roads(source_config, target_config, source_path):
+def _load_roads(source_config, target_config, source_path, active_path=None):
+    # 도로 전용 갱신 이후에는 활성 80km 선형을 보존한다.
+    if active_path is not None and active_path.is_file():
+        active = json.loads(active_path.read_text(encoding="utf-8"))
+        if active.get("road_source", {}).get("coverage_complete"):
+            return active.get("roads", []), active.get("tunnels", []), active["road_source"]
     source_data = json.loads(source_path.read_text(encoding="utf-8"))
     roads = source_data.get("roads", [])
     for road in roads:
@@ -45,7 +50,7 @@ def _load_roads(source_config, target_config, source_path):
             _project_road_point(point, source_config, target_config)
             for point in road.get("points", [])
         ]
-    return roads, source_data.get("tunnels", [])
+    return roads, source_data.get("tunnels", []), source_data.get("road_source")
 
 
 def _collect_features(core_cache, outer_cache, expected_outer_cells):
@@ -103,15 +108,16 @@ def merge_ulsan_80km_buildings():
     map_meta = json.loads(map_meta_path.read_text(encoding="utf-8"))
     dem_path = PROJECT_ROOT / map_meta["assets"]["heightmap"].replace("res://", "")
     water_path = PROJECT_ROOT / map_meta["assets"]["watermask"].replace("res://", "")
-    roads, tunnels = _load_roads(
+    roads, tunnels, road_source = _load_roads(
         core_config,
         target_config,
         maps_root / "ulsan_metro_60km/buildings_and_roads.json",
+        PROJECT_ROOT / "godot_project" / map_meta["assets"]["buildings_roads"].replace("res://", ""),
     )
     output_path = maps_root / f"{MAP_ID}/buildings_and_roads.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
-        json.dumps({"roads": roads, "tunnels": tunnels}, ensure_ascii=False),
+        json.dumps({"roads": roads, "tunnels": tunnels, "road_source": road_source}, ensure_ascii=False),
         encoding="utf-8",
     )
 
@@ -152,7 +158,10 @@ def merge_ulsan_80km_buildings():
 
     map_meta["assets"]["buildings_roads"] = f"res://assets/maps/{MAP_ID}/buildings_and_roads.json"
     map_meta["coverage"]["detailed_vectors_source"] = "VWorld LT_C_SPBD: 울산 60km 코어 + 80km 외곽"
-    map_meta["coverage"]["outer_buildings_roads_collected"] = True
+    map_meta["coverage"]["outer_buildings_collected"] = True
+    map_meta["coverage"]["outer_buildings_roads_collected"] = bool(
+        map_meta["coverage"].get("roads", {}).get("coverage_complete", False)
+    )
     map_meta_path.write_text(json.dumps(map_meta, ensure_ascii=False, indent=2), encoding="utf-8")
 
     result = {

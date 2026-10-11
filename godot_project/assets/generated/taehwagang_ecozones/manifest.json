@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "last_updated": "2026-10-10 22:56:32",
+  "assets": {
+    "labels": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_labels_8bit.png",
+      "format": "PNG",
+      "sha256": "8007eedaab0490b48709018e02e3937b50da7b7d218fd6b437b64921c401a3f1",
+      "size_bytes": 31070,
+      "type": "ecozone_label_mask",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "splat_a": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_a_rgba.png",
+      "format": "PNG",
+      "sha256": "193336e2a2e406efe79cbd7f6ef5940c7bffdeef9766cc486ffe8b98b922db90",
+      "size_bytes": 190047,
+      "type": "ecozone_splat",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "splat_b": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_splat_b_rgba.png",
+      "format": "PNG",
+      "sha256": "d3ad0e59f9c2026f409c5b9df337d05431ec9da024e204c105f779a8165a15c7",
+      "size_bytes": 274028,
+      "type": "ecozone_splat",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "preview": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ecozone_preview.png",
+      "format": "PNG",
+      "sha256": "9439dbc428edc3bb1b7e141d0a8f433f6fa0b414f7a340f933d0c23a7843eee8",
+      "size_bytes": 76707,
+      "type": "ecozone_preview",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": [
+          2048,
+          2048
+        ],
+        "elevation_min": null,
+        "elevation_max": null,
+        "pixel_spacing_m": 3.9082
+      }
+    },
+    "scatter": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/scatter_instances.json",
+      "format": "JSON",
+      "sha256": "4c400669b36a757d0dc1e79be1ec4b06c2400b3f5754d5ca0a519fb97a0d77b4",
+      "size_bytes": 923711,
+      "type": "ecozone_scatter",
+      "metadata": {
+        "bbox": {
+          "south": 35.515,
+          "north": 35.5872,
+          "west": 129.2738,
+          "east": 129.3622
+        },
+        "resolution": null,
+        "elevation_min": 1.43,
+        "elevation_max": 14.7,
+        "instances": 24789
+      }
+    },
+    "forest_masses": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/forest_masses.json",
+      "format": "JSON",
+      "sha256": "f693b3f1617ed75c614e97254d1651e5caf0481b36b8629739222f5508169e4c",
+      "size_bytes": 454,
+      "type": "ecozone_forest_mass",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_blend": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground_blend.json",
+      "format": "JSON",
+      "sha256": "4bc273f81345920200578e0f292d7174d1ff9e56c9ad45bf80b47d5cc657d154",
+      "size_bytes": 1308,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_lawn": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/lawn.png",
+      "format": "PNG",
+      "sha256": "b314bacd731e6ffc0cf217ede58434825ef94050c92eda4c8e2c2e1e4169e0af",
+      "size_bytes": 180579,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_silvergrass_ground": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_ground.png",
+      "format": "PNG",
+      "sha256": "eb01f47d804539cfe54021247d0bb193684b7f81eea7651f8b502dc0c62a9ce5",
+      "size_bytes": 239554,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_bamboo_litter": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/bamboo_litter.png",
+      "format": "PNG",
+      "sha256": "8632a32eb90a9da27f95201d2b23f82c16c151f1cb3d4b4b1083b748911e98f9",
+      "size_bytes": 155435,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_reed_mud": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/reed_mud.png",
+      "format": "PNG",
+      "sha256": "2b429fa15dd2117a1b98611c48fe1a54dba490507bcdfc74f4c8c8c447b357ec",
+      "size_bytes": 200777,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_woodland_soil": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/woodland_soil.png",
+      "format": "PNG",
+      "sha256": "9294ce525ff195bb1e620b1d6be27e5ed2521755ea97cb4b2562942c55c5887b",
+      "size_bytes": 138958,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_canopy_bamboo": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/canopy_bamboo.png",
+      "format": "PNG",
+      "sha256": "b6b1e327546ddec865708e3e0071b8cf5910f54441eccf5c23c3ffab21529274",
+      "size_bytes": 166399,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_canopy_broadleaf": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/canopy_broadleaf.png",
+      "format": "PNG",
+      "sha256": "40b49da3a300ef9fb3fee3dc491cc9f9cc6f1adfb8449a4c9a0c0a27f5a45b04",
+      "size_bytes": 82130,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_meadow": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/meadow.png",
+      "format": "PNG",
+      "sha256": "94f96200e832250d392e1816b4f5053501514fa6a6e71bf22e9b594517668e5b",
+      "size_bytes": 187223,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    },
+    "ground_silvergrass_card": {
+      "file_path": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_card.png",
+      "format": "PNG",
+      "sha256": "3c423529f23a77fce930f1d03640a85b4b142d49e0b1917264d6a29e41386d35",
+      "size_bytes": 15382,
+      "type": "ecozone_ground_texture",
+      "metadata": {
+        "bbox": null,
+        "resolution": null,
+        "elevation_min": null,
+        "elevation_max": null
+      }
+    }
+  }
+}

@@ -11,3 +11,12 @@
 재생성: `.venv_campus/Scripts/python.exe pipeline/processors/build_railway_night_assets.py`
 
 독립 1280×720 Compatibility 야간 렌더에서 KTX·동해선 열차와 철로의 약 1.5km 식별을 확인했다. 전체 맵·안개·운행 중 검증은 수행하지 않았다. 캡처는 `previews/asset_browser/railway_night_capture/images`에 있다.
+
+## 철로·교량 경량 표현
+
+단색 재질과 성긴 반복 부재를 사용합니다. 접속점, 광원과 기존 충돌 형상은 보존합니다. 계단과 징검다리의 보행판도 보존합니다. 외부 텍스처는 사용하지 않으며 야간 표시의 내장 그라데이션은 8×8입니다.
+
+- 품질 규약: `rail_bridge_low_poly_v1`
+- 재생성: 프로젝트 루트에서 `.venv_campus/Scripts/python.exe pipeline/processors/rail_bridge_lowpoly/build.py`
+- 생성은 독립 프리뷰 작업 공간에서만 수행합니다. 게임과 지도에 자동 적용하지 않습니다.
+- 기존 PNG 프리뷰는 이전 표현일 수 있습니다. 현재 SCN을 독립 에셋 프리뷰에서 확인하세요.

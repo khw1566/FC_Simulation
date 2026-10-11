@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=4]
+
+[ext_resource type="Shader" path="res://shaders/river_gravel.gdshader" id="1_dr5tc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l10hb"]
+render_priority = 0
+shader = ExtResource("1_dr5tc")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_82370"]
+_surfaces = [{
+"aabb": AABB(439.618, 68.1416, -500, 60.3818, 6.42366, 24.1252),
+"attribute_data": PackedByteArray("AP8A/2IeUERL009CNoB3P1DdLT8A/wD/pXtQREwDX0I2gHc/UN0tPwD/AP8Rsk1EirReQjaAdz9Q3S0/AAAA/9ALWUThABlCNoB3P1DdLT8AAAD/QDZcRELOGUIM13M/3nM2PwD/AP8m811EUEFiQgzXcz/eczY/AP8A/7OsUUT5JF9CNoB3P1DdLT8="),
+"format": 34359742527,
+"index_count": 15,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUAAQAAAAYAAwAFAAYAAwAGAAAA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 7,
+"vertex_data": PackedByteArray("AADhQ/BjkkIAAPrDAADhQ/rxlEJv9/fDIs/bQ2whlUIAAPrD9R/0Q01WiEIAAPrDAAD6Q4JIiEJAo/fDAAD6QzMwkkL67+3DFjjjQ2x3lELlGPfD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78=")
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_dkxwt"]
+data = PackedVector3Array(450, 73.1952, -500, 450, 74.4726, -495.933, 439.618, 74.5653, -500, 488.25, 68.1686, -500, 500, 68.1416, -495.275, 500, 73.0941, -475.875, 450, 74.4726, -495.933, 450, 73.1952, -500, 454.438, 74.2332, -494.194, 488.25, 68.1686, -500, 500, 73.0941, -475.875, 454.438, 74.2332, -494.194, 488.25, 68.1686, -500, 454.438, 74.2332, -494.194, 450, 73.1952, -500)
+
+[node name="shore_-13000_-2000" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12500, 0, -1500)
+
+[node name="Bed" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_l10hb")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_82370")
+
+[node name="Bed_col" type="StaticBody3D" parent="Bed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bed/Bed_col"]
+shape = SubResource("ConcavePolygonShape3D_dkxwt")

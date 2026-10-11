@@ -1,0 +1,8 @@
+{
+  "empty_cells": 318,
+  "mostly_water_empty_cells": 318,
+  "land_empty_cells_for_review": [],
+  "water_mask_sha256": "554cacb14b018cb2194e817fb34009a18bc3206ce5996e2bb3d20f66933b4d4e",
+  "land_fraction_is_mask_estimate": true,
+  "note_ko": "전 범위 OSM 응답에 도로가 없는 셀이다. 현실의 누락 여부는 별도 자료 대조가 필요하며 도로를 추정 생성하지 않았다."
+}

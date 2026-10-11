@@ -3,7 +3,7 @@ class_name RoadTerrainTessellator
 
 # 모든 LOD의 격자선/대각선이 LOD0 격자에 포함된다.
 # 도로를 이 경계에서 자르면 셰이더 높이 보간이 실제 지형 삼각형과 일치한다.
-static func add_quad(surface: SurfaceTool, corners: Array, step: Vector2, origin: Vector2) -> void:
+static func add_quad(surface: SurfaceTool, corners: Array, step: Vector2, origin: Vector2, formed_ground: bool = false) -> void:
 	for triangle in [[corners[0], corners[1], corners[2]], [corners[0], corners[2], corners[3]]]:
 		var low := Vector2(INF, INF)
 		var high := Vector2(-INF, -INF)
@@ -26,7 +26,7 @@ static func add_quad(surface: SurfaceTool, corners: Array, step: Vector2, origin
 							continue
 						for vertex in [polygon[0], polygon[i], polygon[i + 1]]:
 							surface.set_normal(Vector3.UP)
-							surface.set_uv2(Vector2.ZERO)
+							surface.set_uv2(Vector2(1.0 if formed_ground else 0.0, 0.0))
 							surface.add_vertex(vertex)
 
 static func split_edge(a: Vector3, b: Vector3, step: Vector2, origin: Vector2) -> Array[Vector3]:

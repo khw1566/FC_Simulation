@@ -1,0 +1,8 @@
+{
+  "modules": [
+    {
+      "path": "project/verify.gd",
+      "responsibility": "대표 도로 씬과 혼합 조립 예제의 독립 읽기 확인"
+    }
+  ]
+}

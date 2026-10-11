@@ -1,0 +1,69 @@
+{
+  "indexed_at": "2026-09-22 14:40:00",
+  "map_id": "shimonoseki_port_3km",
+  "assets": {
+    "buildings_and_roads.json": {
+      "category": "data",
+      "file_name": "buildings_and_roads.json",
+      "extension": ".json",
+      "size_bytes": 277534,
+      "sha256": "7b5faa358a027b99e787b317cee221db4cf82a5a36bc183f5fd0e962aca20115"
+    },
+    "coastlines_and_waterways.json": {
+      "category": "vector_water",
+      "file_name": "coastlines_and_waterways.json",
+      "extension": ".json",
+      "size_bytes": 33340,
+      "sha256": "df59eeb63df3fc29af0fa75c4147d776508675b7b78e72bf483d2761d9e6fdc7"
+    },
+    "landmarks.json": {
+      "category": "data",
+      "file_name": "landmarks.json",
+      "extension": ".json",
+      "size_bytes": 609,
+      "sha256": "38de9a0d2494406dd2d79653f6a2e685f9e6674d8403874bb975b0f6fae0a36e"
+    },
+    "map_meta.json": {
+      "category": "data",
+      "file_name": "map_meta.json",
+      "extension": ".json",
+      "size_bytes": 1442,
+      "sha256": "1907d689989a86dacc4a90db8cacc871fbf86d39a31d96c696916251984011d1"
+    },
+    "port_heightmap_16bit.png": {
+      "category": "data",
+      "file_name": "port_heightmap_16bit.png",
+      "extension": ".png",
+      "size_bytes": 691286,
+      "sha256": "f801ee690a6cf071211acca43bf206e766df84477563f4dd78c250f9fe3de442"
+    },
+    "port_splatmap_rgba.png": {
+      "category": "data",
+      "file_name": "port_splatmap_rgba.png",
+      "extension": ".png",
+      "size_bytes": 51953,
+      "sha256": "fa516b5eb314c17ff4a33d51f8294182346d113b18eed5a6803069619e4b19b7"
+    },
+    "port_vector_tactical_map.png": {
+      "category": "data",
+      "file_name": "port_vector_tactical_map.png",
+      "extension": ".png",
+      "size_bytes": 268243,
+      "sha256": "042d78502728662102de45ea8c6d4b41d278f1ef067be5b803ea2748a4048b99"
+    },
+    "port_watermask_8bit.png": {
+      "category": "data",
+      "file_name": "port_watermask_8bit.png",
+      "extension": ".png",
+      "size_bytes": 6882,
+      "sha256": "bf8f080474fa239fb99908adca343575ed609a7470267ed0210b192b700ca6aa"
+    },
+    "real_districts.json": {
+      "category": "data",
+      "file_name": "real_districts.json",
+      "extension": ".json",
+      "size_bytes": 92149,
+      "sha256": "62e59b7ff51b48ce90939d55faae0ec97747bf2cd9264dc8b4c89a22a2ee2d58"
+    }
+  }
+}

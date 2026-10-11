@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "model_count": 5,
+  "glb_count": 10,
+  "terrain_source": "godot_project/assets/generated/railway/graded_heightmap_16bit.png",
+  "terrain_source_sha256": "c953a6efe1ff426265fc36a9bfb916b7db98e776dc1755d8eb1a2fc69b1a3dc4",
+  "terrain_source_unchanged": true,
+  "resolution": [
+    5632,
+    5632
+  ],
+  "height_note": "기준 품질 래스터 표본. 실행 중 품질별 래스터·철도 보정과 실제 청크 표면은 별도.",
+  "checks": [
+    {
+      "id": "sayeon",
+      "name_ko": "사연댐",
+      "upstream_orientation": true,
+      "axis_status": "osm_dam_axis",
+      "axis_length_m": 278.0861350767887,
+      "official_length_m": 300,
+      "crest_dem_estimate_m": 64.176,
+      "interior_dem_range_m": [
+        63.116,
+        64.36
+      ]
+    },
+    {
+      "id": "daegok",
+      "name_ko": "대곡댐",
+      "upstream_orientation": true,
+      "axis_status": "osm_dam_axis",
+      "axis_length_m": 189.22323423694485,
+      "official_length_m": 190,
+      "crest_dem_estimate_m": 124.691,
+      "interior_dem_range_m": [
+        117.646,
+        126.814
+      ]
+    },
+    {
+      "id": "daeam",
+      "name_ko": "대암댐",
+      "upstream_orientation": true,
+      "axis_status": "inferred_crest_road_and_imagery",
+      "axis_length_m": 291.7926515963581,
+      "official_length_m": 318,
+      "crest_dem_estimate_m": 54.002,
+      "interior_dem_range_m": [
+        49.336,
+        55.655
+      ]
+    },
+    {
+      "id": "seonam",
+      "name_ko": "선암댐",
+      "upstream_orientation": true,
+      "axis_status": "inferred_crest_footway",
+      "axis_length_m": 247.9559710257834,
+      "official_length_m": 331,
+      "crest_dem_estimate_m": 30.778,
+      "interior_dem_range_m": [
+        29.798,
+        31.247
+      ]
+    },
+    {
+      "id": "hoeya",
+      "name_ko": "회야댐",
+      "upstream_orientation": true,
+      "axis_status": "osm_dam_axis",
+      "axis_length_m": 390.35653225502944,
+      "official_length_m": 424,
+      "crest_dem_estimate_m": 32.403,
+      "interior_dem_range_m": [
+        31.163,
+        32.527
+      ]
+    }
+  ]
+}

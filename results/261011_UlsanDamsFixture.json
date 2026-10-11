@@ -1,0 +1,43 @@
+{
+	"checks": [
+		{
+			"axis_endpoint_error_m": 0,
+			"collision": true,
+			"fitted_crest_ray_hit": true,
+			"id": "sayeon",
+			"lod_count": 2
+		},
+		{
+			"axis_endpoint_error_m": 0.00048828125,
+			"collision": true,
+			"fitted_crest_ray_hit": true,
+			"id": "daegok",
+			"lod_count": 2
+		},
+		{
+			"axis_endpoint_error_m": 0.0000133514404296875,
+			"collision": true,
+			"fitted_crest_ray_hit": true,
+			"id": "daeam",
+			"lod_count": 2
+		},
+		{
+			"axis_endpoint_error_m": 0.000244140625,
+			"collision": true,
+			"fitted_crest_ray_hit": true,
+			"id": "seonam",
+			"lod_count": 2
+		},
+		{
+			"axis_endpoint_error_m": 0.000244140625,
+			"collision": true,
+			"fitted_crest_ray_hit": true,
+			"id": "hoeya",
+			"lod_count": 2
+		}
+	],
+	"idempotent": true,
+	"out_of_bounds_excluded": true,
+	"passed": true,
+	"unrelated_map_excluded": true
+}

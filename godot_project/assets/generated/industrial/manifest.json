@@ -3,8 +3,8 @@
   "assets": {
     "factory_gable.glb": {
       "file_path": "res://assets/generated/industrial/factory_gable.glb",
-      "sha256": "528e126bd07c0067affa1da1f1c78e49f64859538711325b6fd0db7ba6a44065",
-      "size_bytes": 43116,
+      "sha256": "200d895674322b120c51b91c870f8a0f85e8dbffcb2d1d3907eccc17a032cba8",
+      "size_bytes": 24824,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "박공지붕 공장",
@@ -25,7 +25,7 @@
         "elevation_max": 18,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 548
+          "triangles": 356
         },
         "footprint_xz_m": [
           -25.0,
@@ -39,7 +39,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 356,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "factory_gable.tscn": {
@@ -66,7 +75,7 @@
         "elevation_max": 18,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 548
+          "triangles": 356
         },
         "footprint_xz_m": [
           -25.0,
@@ -93,13 +102,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/factory_gable"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 356,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "factory_sawtooth.glb": {
       "file_path": "res://assets/generated/industrial/factory_sawtooth.glb",
-      "sha256": "0da56415d4896a5b9988ee65478c94b1cbc9a65ffe5bd5c7bb61518111f91acc",
-      "size_bytes": 52348,
+      "sha256": "eccefb65b3ce967af3180b8e35fb6486d4dbb3174a92252f3fc85f88bdbf319d",
+      "size_bytes": 30724,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "톱니지붕 공장",
@@ -120,7 +138,7 @@
         "elevation_max": 14.6,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 676
+          "triangles": 460
         },
         "footprint_xz_m": [
           -33.0,
@@ -134,7 +152,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 460,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "factory_sawtooth.tscn": {
@@ -161,7 +188,7 @@
         "elevation_max": 14.6,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 676
+          "triangles": 460
         },
         "footprint_xz_m": [
           -33.0,
@@ -188,13 +215,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/factory_sawtooth"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 460,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "factory_flat.glb": {
       "file_path": "res://assets/generated/industrial/factory_flat.glb",
-      "sha256": "e4c85e973720dd7b39007fff65a6d4a90411c4380295765a23e01fadb27fb7b4",
-      "size_bytes": 41700,
+      "sha256": "4768b925ac622c5fbe035d77e671c14186777e93fafc33f6d9a65aa1bcf62cdd",
+      "size_bytes": 26468,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "평지붕 공장",
@@ -215,7 +251,7 @@
         "elevation_max": 19.200000000000003,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 528
+          "triangles": 384
         },
         "footprint_xz_m": [
           -23.0,
@@ -229,7 +265,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 384,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "factory_flat.tscn": {
@@ -256,7 +301,7 @@
         "elevation_max": 19.200000000000003,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 528
+          "triangles": 384
         },
         "footprint_xz_m": [
           -23.0,
@@ -283,13 +328,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/factory_flat"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 384,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "distillation_tower.glb": {
       "file_path": "res://assets/generated/industrial/distillation_tower.glb",
-      "sha256": "2d56f3f1138979cc1aed0f055792479d4fec0630a12ad4db90484ba2819a653e",
-      "size_bytes": 480364,
+      "sha256": "7d210a40b8017c4632f9152ba6e4b6f6c23648cec3faf5191eb5439bb682fb7a",
+      "size_bytes": 137532,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "증류탑",
@@ -310,7 +364,7 @@
         "elevation_max": 41.0,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 6632
+          "triangles": 2684
         },
         "footprint_xz_m": [
           -7.0,
@@ -324,7 +378,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2684,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "distillation_tower.tscn": {
@@ -351,7 +414,7 @@
         "elevation_max": 41.0,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 6632
+          "triangles": 2684
         },
         "footprint_xz_m": [
           -7.0,
@@ -378,13 +441,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/distillation_tower"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2684,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "industrial_chimney.glb": {
       "file_path": "res://assets/generated/industrial/industrial_chimney.glb",
-      "sha256": "f9b1741ab641e2acb675120ec090381068262f23e1099ac69991c5da53a50f70",
-      "size_bytes": 256808,
+      "sha256": "b4064d3152179870aa8620c28d5d0e78c467b8dd1d3d0b65761ef41437416534",
+      "size_bytes": 61892,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "대형 연통",
@@ -405,7 +477,7 @@
         "elevation_max": 65,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3516
+          "triangles": 1156
         },
         "footprint_xz_m": [
           -7.5,
@@ -419,7 +491,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1156,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "industrial_chimney.tscn": {
@@ -446,7 +527,7 @@
         "elevation_max": 65,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3516
+          "triangles": 1156
         },
         "footprint_xz_m": [
           -7.5,
@@ -473,13 +554,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/industrial_chimney"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1156,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "liquid_storage_tank.glb": {
       "file_path": "res://assets/generated/industrial/liquid_storage_tank.glb",
-      "sha256": "5421a493cb312952dcbd1b8c9ef0f4540ee05cb767a1cb75d344d1297d8b629f",
-      "size_bytes": 160380,
+      "sha256": "136076f5eee09a2e52381f20da9b5e60b00496168e179d2243f15a64e6437932",
+      "size_bytes": 33696,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "원통형 액체저장고",
@@ -500,7 +590,7 @@
         "elevation_max": 19.8,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 2188
+          "triangles": 608
         },
         "footprint_xz_m": [
           -17.0,
@@ -514,7 +604,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 608,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "liquid_storage_tank.tscn": {
@@ -541,7 +640,7 @@
         "elevation_max": 19.8,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 2188
+          "triangles": 608
         },
         "footprint_xz_m": [
           -17.0,
@@ -568,13 +667,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/liquid_storage_tank"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 608,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "lpg_sphere.glb": {
       "file_path": "res://assets/generated/industrial/lpg_sphere.glb",
-      "sha256": "1dc277e9c1058651fa447144e5cfee92759f0c61604083a0421426d6a38498f5",
-      "size_bytes": 143660,
+      "sha256": "c4ea40583d23ead225676573bed45dbcd379b8d133d00c242d4c75a2b94fa656",
+      "size_bytes": 39488,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "구형 LPG저장고",
@@ -595,7 +703,7 @@
         "elevation_max": 23.4,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1956
+          "triangles": 692
         },
         "footprint_xz_m": [
           -12.5,
@@ -609,7 +717,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 692,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "lpg_sphere.tscn": {
@@ -636,7 +753,7 @@
         "elevation_max": 23.4,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1956
+          "triangles": 692
         },
         "footprint_xz_m": [
           -12.5,
@@ -663,13 +780,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/lpg_sphere"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 692,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "pipeline_straight.glb": {
       "file_path": "res://assets/generated/industrial/pipeline_straight.glb",
-      "sha256": "1afa8755e45055fa2d8f51cc8eea4e4e754e9a102cd8f590deaf45d237d8c807",
-      "size_bytes": 19752,
+      "sha256": "22e94a146a9cc51cc5edb36934740ed1483127427f3566143a28af7ab47b80e5",
+      "size_bytes": 12036,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "파이프라인 직선",
@@ -690,7 +816,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 240
+          "triangles": 192
         },
         "footprint_xz_m": [
           -12.0,
@@ -704,7 +830,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 192,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "pipeline_straight.tscn": {
@@ -731,7 +866,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 240
+          "triangles": 192
         },
         "footprint_xz_m": [
           -12.0,
@@ -758,13 +893,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/pipeline_straight"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 192,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "pipeline_elbow.glb": {
       "file_path": "res://assets/generated/industrial/pipeline_elbow.glb",
-      "sha256": "37395f98fc2ce4906ad445189305cd00fc3c6ddad9162dbee8de7e730fa5d058",
-      "size_bytes": 113064,
+      "sha256": "a82d5071a57070da65a10cf8bf6898183093b6dd97efbc36a41e30d68fea4f81",
+      "size_bytes": 31048,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "파이프라인 곡관",
@@ -785,7 +929,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1536
+          "triangles": 576
         },
         "footprint_xz_m": [
           -12.0,
@@ -799,7 +943,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 576,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "pipeline_elbow.tscn": {
@@ -826,7 +979,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1536
+          "triangles": 576
         },
         "footprint_xz_m": [
           -12.0,
@@ -853,13 +1006,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/pipeline_elbow"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 576,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "pipeline_tee.glb": {
       "file_path": "res://assets/generated/industrial/pipeline_tee.glb",
-      "sha256": "d8f54fe01ccd72260ea3426ffa930beb107108df3199f5f8dfaa28076c4d4c1c",
-      "size_bytes": 33580,
+      "sha256": "7e859b962252462b51f1d1e52483e06654ad1393faaa2d448a5eb273a343f58d",
+      "size_bytes": 19672,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "파이프라인 분기",
@@ -880,7 +1042,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 432
+          "triangles": 336
         },
         "footprint_xz_m": [
           -12.0,
@@ -894,7 +1056,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 336,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "pipeline_tee.tscn": {
@@ -921,7 +1092,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 432
+          "triangles": 336
         },
         "footprint_xz_m": [
           -12.0,
@@ -948,25 +1119,34 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/pipeline_tee"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 336,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "transmission_tower.glb": {
       "file_path": "res://assets/generated/industrial/transmission_tower.glb",
-      "sha256": "a7a132050ad191c3212e593d7e1ea0f59d7702117256da12c52b199e4606aafa",
-      "size_bytes": 211180,
+      "sha256": "e295ea66f8f6362458677fe0ccdf7f406ffee36d2d8acef51344092415440d9a",
+      "size_bytes": 83372,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "송전탑",
         "units": "meters",
         "ground_y_m": 0,
         "aabb_min_m": [
-          -12.380422606518062,
+          -12.4,
           -0.06952604524738866,
           -8.5
         ],
         "aabb_max_m": [
-          12.380422606518062,
+          12.4,
           46.031684333108274,
           8.5
         ],
@@ -975,7 +1155,7 @@
         "elevation_max": 46.031684333108274,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 2892
+          "triangles": 1500
         },
         "footprint_xz_m": [
           -12.380422606518062,
@@ -989,7 +1169,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1500,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "transmission_tower.tscn": {
@@ -1002,12 +1191,12 @@
         "units": "meters",
         "ground_y_m": 0,
         "aabb_min_m": [
-          -12.380422606518062,
+          -12.4,
           -0.06952604524738866,
           -8.5
         ],
         "aabb_max_m": [
-          12.380422606518062,
+          12.4,
           46.031684333108274,
           8.5
         ],
@@ -1016,7 +1205,7 @@
         "elevation_max": 46.031684333108274,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 2892
+          "triangles": 1500
         },
         "footprint_xz_m": [
           -12.380422606518062,
@@ -1043,13 +1232,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/transmission_tower"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1500,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "cooling_tower.glb": {
       "file_path": "res://assets/generated/industrial/cooling_tower.glb",
-      "sha256": "bfaf95c2bee273725f969b4c12dead7214a3305f82a836b55bf27668678000d7",
-      "size_bytes": 173348,
+      "sha256": "0ea30862c28f76f89a8e2db9f2c5c80b1604527493cbcc3b4caba78b6ed8f953",
+      "size_bytes": 26792,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "냉각탑",
@@ -1057,7 +1255,7 @@
         "ground_y_m": 0,
         "aabb_min_m": [
           -22.0,
-          0.0,
+          -2.3980817331903383e-15,
           -22.0
         ],
         "aabb_max_m": [
@@ -1066,11 +1264,11 @@
           22.0
         ],
         "bbox": null,
-        "elevation_min": 0.0,
+        "elevation_min": -2.3980817331903383e-15,
         "elevation_max": 50.0,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 2368
+          "triangles": 416
         },
         "footprint_xz_m": [
           -22.0,
@@ -1084,7 +1282,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 416,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "cooling_tower.tscn": {
@@ -1098,7 +1305,7 @@
         "ground_y_m": 0,
         "aabb_min_m": [
           -22.0,
-          0.0,
+          -2.3980817331903383e-15,
           -22.0
         ],
         "aabb_max_m": [
@@ -1107,11 +1314,11 @@
           22.0
         ],
         "bbox": null,
-        "elevation_min": 0.0,
+        "elevation_min": -2.3980817331903383e-15,
         "elevation_max": 50.0,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 2368
+          "triangles": 416
         },
         "footprint_xz_m": [
           -22.0,
@@ -1138,13 +1345,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/cooling_tower"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 416,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "cooling_fan_bank.glb": {
       "file_path": "res://assets/generated/industrial/cooling_fan_bank.glb",
-      "sha256": "589236b1b82f98ec5da848ba64853ad58428944f7c60cc3d8ac7507dd09ff73e",
-      "size_bytes": 102564,
+      "sha256": "9aa06920a6c3b45dd5a1f32eaa9b033612779cb27c26fd09a08e834b88aa1329",
+      "size_bytes": 52748,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "냉각 팬 설비",
@@ -1165,7 +1381,7 @@
         "elevation_max": 6.4,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1380
+          "triangles": 900
         },
         "footprint_xz_m": [
           -14.5,
@@ -1179,7 +1395,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 900,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "cooling_fan_bank.tscn": {
@@ -1206,7 +1431,7 @@
         "elevation_max": 6.4,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1380
+          "triangles": 900
         },
         "footprint_xz_m": [
           -14.5,
@@ -1233,13 +1458,22 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/cooling_fan_bank"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 900,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "shipbuilding_hangar.glb": {
       "file_path": "res://assets/generated/industrial/shipbuilding_hangar.glb",
-      "sha256": "bf9a8828817f06f5a86322ba83ffdaeb9f6f945db395f607142148b0bbcdcfe6",
-      "size_bytes": 37456,
+      "sha256": "dcd31953cb3d1bf2c31111f7852adb8c2a70455ed8c939b568324d11af03ac55",
+      "size_bytes": 16976,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "조선용 대형 격납고",
@@ -1260,7 +1494,7 @@
         "elevation_max": 52,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 476
+          "triangles": 236
         },
         "footprint_xz_m": [
           -52.0,
@@ -1274,7 +1508,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 236,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "shipbuilding_hangar.tscn": {
@@ -1301,7 +1544,7 @@
         "elevation_max": 52,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 476
+          "triangles": 236
         },
         "footprint_xz_m": [
           -52.0,
@@ -1328,25 +1571,34 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/shipbuilding_hangar"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 236,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "tower_crane.glb": {
       "file_path": "res://assets/generated/industrial/tower_crane.glb",
-      "sha256": "52c1f8f8a9265fde27032ca34eb54a345229fab86f733320f7a102fdd3c37adb",
-      "size_bytes": 242140,
+      "sha256": "d7e728a0bddaf021dcb3aff6394ef4c534aac20deab25c56ac76958c9adbfeb4",
+      "size_bytes": 134636,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "타워 크레인",
         "units": "meters",
         "ground_y_m": 0,
         "aabb_min_m": [
-          -18.057616595969805,
+          -18.03098386676966,
           0.0,
           -5.0
         ],
         "aabb_max_m": [
-          60.057616595969805,
+          60.01699626542851,
           65.06826708557621,
           5.0
         ],
@@ -1355,7 +1607,7 @@
         "elevation_max": 65.06826708557621,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3312
+          "triangles": 2352
         },
         "footprint_xz_m": [
           -18.057616595969805,
@@ -1369,7 +1621,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2352,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "tower_crane.tscn": {
@@ -1382,12 +1643,12 @@
         "units": "meters",
         "ground_y_m": 0,
         "aabb_min_m": [
-          -18.057616595969805,
+          -18.03098386676966,
           0.0,
           -5.0
         ],
         "aabb_max_m": [
-          60.057616595969805,
+          60.01699626542851,
           65.06826708557621,
           5.0
         ],
@@ -1396,7 +1657,7 @@
         "elevation_max": 65.06826708557621,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3312
+          "triangles": 2352
         },
         "footprint_xz_m": [
           -18.057616595969805,
@@ -1423,25 +1684,34 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/tower_crane"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2352,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "gantry_crane.glb": {
       "file_path": "res://assets/generated/industrial/gantry_crane.glb",
-      "sha256": "40da7b00d1bc58356065a4c91c58c71529a4ae3ce0ef649f217e49c51ab997a4",
-      "size_bytes": 248112,
+      "sha256": "1aa35430c161b445d67ecf28fa340bfdbc20246054cf4673467d1dd8a4be2bb5",
+      "size_bytes": 68004,
       "type": "industrial_asset",
       "metadata": {
         "label_ko": "갠트리 크레인",
         "units": "meters",
         "ground_y_m": 0,
         "aabb_min_m": [
-          -48.072,
+          -48.02846049894151,
           0.0,
           -17.0
         ],
         "aabb_max_m": [
-          48.072,
+          48.02846049894151,
           56.125,
           17.0
         ],
@@ -1450,7 +1720,7 @@
         "elevation_max": 56.125,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3396
+          "triangles": 1092
         },
         "footprint_xz_m": [
           -48.072,
@@ -1464,7 +1734,16 @@
           1.15
         ],
         "georeferenced": false,
-        "surveyed": false
+        "surveyed": false,
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1092,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "gantry_crane.tscn": {
@@ -1477,12 +1756,12 @@
         "units": "meters",
         "ground_y_m": 0,
         "aabb_min_m": [
-          -48.072,
+          -48.02846049894151,
           0.0,
           -17.0
         ],
         "aabb_max_m": [
-          48.072,
+          48.02846049894151,
           56.125,
           17.0
         ],
@@ -1491,7 +1770,7 @@
         "elevation_max": 56.125,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3396
+          "triangles": 1092
         },
         "footprint_xz_m": [
           -48.072,
@@ -1518,7 +1797,16 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial/gantry_crane"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1092,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       }
     },
     "catalog.json": {

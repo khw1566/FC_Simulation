@@ -1,0 +1,165 @@
+{
+  "id": "prebaked_rail_test",
+  "name_ko": "울산 철로 사전 보정 테스트",
+  "world_size_meters": 2003.1965903036762,
+  "source_center": [
+    7004.084532054701,
+    3693.837684247912
+  ],
+  "bbox": {
+    "south": 35.50219412182561,
+    "north": 35.52024292310424,
+    "west": 129.32196753092998,
+    "east": 129.3441495945066
+  },
+  "camera_position": [
+    -519.4835320547018,
+    114.4524,
+    317.4623157520882
+  ],
+  "camera_target": [
+    -17.967532054701223,
+    34.422,
+    10.624315752088023
+  ],
+  "collision_probe": [
+    -619.4835320547018,
+    24.4524,
+    167.46231575208822
+  ],
+  "default_quality": "light",
+  "sources": [
+    {
+      "file_path": "res://assets/generated/railway/alignment.json",
+      "sha256": "f6afcf66453fb7471c4195342bf0b0d6f0de8f55c23dbfe61b86cd66033c32e7"
+    },
+    {
+      "file_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+      "sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d"
+    },
+    {
+      "file_path": "res://assets/generated/railway/tunnel_void.png",
+      "sha256": "e922b121149b04f14efc3109980fdff6759715d6be0db58c41265f74c281722b"
+    },
+    {
+      "file_path": "res://assets/generated/railway/services.json",
+      "sha256": "fecd1b418438a455decbd343fed584eeef49d8a0b3813adf7a232dfd57e03057"
+    }
+  ],
+  "bake": {
+    "bake_ms": 3426,
+    "collision_triangles": 46309,
+    "runtime_geometry_generation": false,
+    "terrain": {
+      "high": {
+        "grid_resolution": 128,
+        "rail_edge_m": 10,
+        "triangles": 48560
+      },
+      "light": {
+        "grid_resolution": 32,
+        "rail_edge_m": 10,
+        "triangles": 19298
+      },
+      "standard": {
+        "grid_resolution": 64,
+        "rail_edge_m": 10,
+        "triangles": 25058
+      }
+    },
+    "track_sections": 22,
+    "tunnel_sections": 5
+  },
+  "runtime_policy": "사전 생성 씬 읽기 및 배치만 수행. 원본 래스터·철도 JSON·생성기는 실행 프로젝트에 포함하지 않음.",
+  "views": [
+    {
+      "name_ko": "선로 가까이",
+      "position": [
+        -607.4835320547018,
+        30.4524,
+        182.46231575208822
+      ],
+      "target": [
+        -619.4835320547018,
+        24.4524,
+        167.46231575208822
+      ]
+    },
+    {
+      "name_ko": "터널 입구",
+      "position": [
+        -72.41642650552744,
+        42.54602742400867,
+        18.341217016772973
+      ],
+      "target": [
+        1.8320659274173998,
+        37.740535482178664,
+        7.818169837657132
+      ]
+    },
+    {
+      "name_ko": "전체 구역",
+      "position": [
+        -519.4835320547018,
+        114.4524,
+        317.4623157520882
+      ],
+      "target": [
+        -17.967532054701223,
+        34.422,
+        10.624315752088023
+      ]
+    }
+  ],
+  "generator_sources": [
+    {
+      "file_path": "pipeline/processors/build_prebaked_rail_test.py",
+      "sha256": "7ef44ac3947d2672b1c7cdca117fb116abb35573ddd8846db98f024502eb0d96"
+    },
+    {
+      "file_path": "godot_project/scripts/testing/prebaked_rail_baker.gd",
+      "sha256": "275abd5cbd52a61cdc145985bc68c7eba3440820854f98fa44b5a00aaf4de41f"
+    },
+    {
+      "file_path": "godot_project/scripts/testing/prebaked_rail_sampler.gd",
+      "sha256": "5a144d435bf977330e6ed70dc48d866983407386fa05313871470e5c4eb9494a"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/bridge_geometry.gd",
+      "sha256": "0322eafd1f121a24c7c9f3deeacadeffcebceb5169f8edf36d29bcdf01ab1111"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/railway_formation_builder.gd",
+      "sha256": "6d3f91c5519b5c295f7ee7b05d1fdecc79f7b84362ed41d57229cd641a8acd29"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/railway_night_lighting.gd",
+      "sha256": "640ff27f1200fe29246029f497a8f844a718e178213c775be867e644ee3e5927"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/railway_route.gd",
+      "sha256": "d360f0c6cac9e6a0445c870e2daf3edabffa72b6940c6da7bc7466abd5706d7a"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/railway_terrain_grader.gd",
+      "sha256": "2128ff2fd1ae5c6d55a947c3d74888e962be564687bd7105e4f808f2e6208cd0"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/railway_terrain_void.gd",
+      "sha256": "6843e8a9f2f433dca3c4c8506b25e34762d0c3ee81d63d36bc3d533cedd9b179"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/railway_track_builder.gd",
+      "sha256": "1041329d320742f095b4ee7cdc0721f9f36124573864411fac3a2cf47a28317e"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/railway_tunnel_geometry.gd",
+      "sha256": "33093045a0644b106e11626f88612ce9df0c55eef954a4a7133f1196ee1f5475"
+    },
+    {
+      "file_path": "godot_project/scripts/terrain/terrain_chunk.gd",
+      "sha256": "7b98b92005468b3af3c7369f2549430b25c08f414c01f0cf24f8f9693fd0aaf3"
+    }
+  ]
+}

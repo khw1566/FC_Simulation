@@ -10,6 +10,7 @@ const MAJOR_HEIGHT_THRESHOLD: float = 18.0
 const COLLISION_FACES_META := "collision_faces"
 const CampusPolicy = preload("res://scripts/terrain/campus_building_policy.gd")
 const CampusArchitecture = preload("res://scripts/terrain/campus_architecture_builder.gd")
+const ShadowPolicy = preload("res://scripts/terrain/building_shadow_policy.gd")
 
 static func build_chunk_buildings_mesh(chunk_buildings: Array, chunk_node: Node3D, mat: Material, sample_ground: Callable) -> void:
 	apply_arrays(compute_arrays(chunk_buildings, sample_ground), chunk_node, mat, sample_ground)
@@ -17,6 +18,16 @@ static func build_chunk_buildings_mesh(chunk_buildings: Array, chunk_node: Node3
 ## 메시 배열만 계산한다. 노드와 렌더링 자원을 만들지 않으므로 작업 스레드에서 실행할 수 있다.
 ## 캠퍼스 건축 상세는 노드를 만들기 때문에 작업 목록으로 돌려주고 apply_arrays()에서 처리한다.
 static func compute_arrays(chunk_buildings: Array, sample_ground: Callable) -> Dictionary:
+	var groups := ShadowPolicy.split(chunk_buildings)
+	var result := _compute_geometry(groups.regular, sample_ground)
+	var dense := _compute_geometry(groups.dense, sample_ground)
+	result["dense_major"] = dense.major
+	result["dense_minor"] = dense.minor
+	result["shadow_skipped_buildings"] = groups.dense.size()
+	result.campus.append_array(dense.campus)
+	return result
+
+static func _compute_geometry(chunk_buildings: Array, sample_ground: Callable) -> Dictionary:
 	var result := {"major": [], "minor": [], "campus": []}
 	var major_st := SurfaceTool.new()
 	major_st.begin(Mesh.PRIMITIVE_TRIANGLES)
@@ -228,24 +239,55 @@ static func _commit_arrays(st: SurfaceTool, target: Array) -> void:
 
 ## 계산된 배열로 대형/소형 건물 노드를 만든다. 메인 스레드에서 호출한다.
 static func apply_arrays(result: Dictionary, chunk_node: Node3D, mat: Material, sample_ground: Callable) -> void:
+	var containers := _containers(chunk_node)
+	for job in result.campus:
+		CampusArchitecture.build(containers[0], job[0], job[1], job[2], sample_ground)
+	for pair in _pairs(result,containers):
+		for arrays in pair[0]:
+			_apply_mesh(arrays,pair[1],mat,pair[2])
+	chunk_node.set_meta("shadow_skipped_buildings", result.get("shadow_skipped_buildings", 0))
+
+static func apply_arrays_streamed(result: Dictionary, chunk_node: Node3D, mat: Material, sample_ground: Callable) -> void:
+	var budget = preload("res://scripts/terrain/stream_frame_budget.gd")
+	var containers := _containers(chunk_node)
+	for job in result.campus:
+		if not await budget.wait(chunk_node):
+			return
+		var started := Time.get_ticks_usec()
+		CampusArchitecture.build(containers[0],job[0],job[1],job[2],sample_ground)
+		budget.record(started)
+	for pair in _pairs(result,containers):
+		for arrays in pair[0]:
+			if not await budget.wait(chunk_node):
+				return
+			var started := Time.get_ticks_usec()
+			_apply_mesh(arrays,pair[1],mat,pair[2])
+			budget.record(started)
+	chunk_node.set_meta("shadow_skipped_buildings",result.get("shadow_skipped_buildings",0))
+
+static func _containers(chunk_node: Node3D) -> Array:
 	var major_container := Node3D.new()
 	major_container.name = "MajorBuildings"
 	chunk_node.add_child(major_container)
 	var minor_container := Node3D.new()
 	minor_container.name = "MinorBuildings"
 	chunk_node.add_child(minor_container)
-	for job in result.campus:
-		CampusArchitecture.build(major_container, job[0], job[1], job[2], sample_ground)
-	for pair in [[result.major, major_container], [result.minor, minor_container]]:
-		for arrays in pair[0]:
-			var mesh := ArrayMesh.new()
-			mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, arrays)
-			var mi := MeshInstance3D.new()
-			mi.mesh = mesh
-			mi.material_override = mat
-			# 충돌 형상은 이 삼각형 정점으로 만든다. 렌더링 메시를 다시 읽으면 GPU 동기화로 프레임이 멈춘다.
-			mi.set_meta(COLLISION_FACES_META, arrays[Mesh.ARRAY_VERTEX])
-			pair[1].add_child(mi)
+	return [major_container,minor_container]
+
+static func _pairs(result: Dictionary, containers: Array) -> Array:
+	return [[result.major,containers[0],false],[result.minor,containers[1],false],
+		[result.get("dense_major",[]),containers[0],true],[result.get("dense_minor",[]),containers[1],true]]
+
+static func _apply_mesh(arrays: Array, parent: Node3D, mat: Material, no_shadow: bool) -> void:
+	var mesh := ArrayMesh.new()
+	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES,arrays)
+	var mi := MeshInstance3D.new()
+	mi.mesh = mesh
+	mi.material_override = mat
+	if no_shadow:
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	mi.set_meta(COLLISION_FACES_META,arrays[Mesh.ARRAY_VERTEX])
+	parent.add_child(mi)
 
 static func _add_quad(st: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, d: Vector3, normal: Vector3) -> void:
 	st.set_normal(normal)

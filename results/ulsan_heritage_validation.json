@@ -1,17 +1,8 @@
 {
   "maps": [
     {
-      "expected": 2,
+      "expected": 1,
       "landmarks": [
-        {
-          "collision_bodies": 5,
-          "gate_floor_collision": true,
-          "gate_passage_clear": true,
-          "id": "ulsan_waeseong",
-          "mesh_batches": 5,
-          "terrain_fit": true,
-          "wall_ray_hit": true
-        },
         {
           "collision_bodies": 9,
           "gate_floor_collision": true,
@@ -22,48 +13,13 @@
           "wall_ray_hit": true
         }
       ],
-      "loaded": 2,
-      "map": "ulsan_metro_60km",
-      "passed": true
-    },
-    {
-      "expected": 2,
-      "landmarks": [
-        {
-          "collision_bodies": 5,
-          "gate_floor_collision": true,
-          "gate_passage_clear": true,
-          "id": "ulsan_waeseong",
-          "mesh_batches": 5,
-          "terrain_fit": true,
-          "wall_ray_hit": true
-        },
-        {
-          "collision_bodies": 9,
-          "gate_floor_collision": true,
-          "gate_passage_clear": true,
-          "id": "eonyang_eupseong",
-          "mesh_batches": 12,
-          "terrain_fit": true,
-          "wall_ray_hit": true
-        }
-      ],
-      "loaded": 2,
+      "loaded": 1,
       "map": "ulsan_metro_80km",
       "passed": true
     },
     {
-      "expected": 2,
+      "expected": 1,
       "landmarks": [
-        {
-          "collision_bodies": 5,
-          "gate_floor_collision": true,
-          "gate_passage_clear": true,
-          "id": "ulsan_waeseong",
-          "mesh_batches": 5,
-          "terrain_fit": true,
-          "wall_ray_hit": true
-        },
         {
           "collision_bodies": 9,
           "gate_floor_collision": true,
@@ -74,7 +30,7 @@
           "wall_ray_hit": true
         }
       ],
-      "loaded": 2,
+      "loaded": 1,
       "map": "southeast_mega_140km",
       "passed": true
     },

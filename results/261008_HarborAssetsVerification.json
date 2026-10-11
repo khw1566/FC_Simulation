@@ -1,0 +1,25 @@
+{
+  "models": 69,
+  "assemblies": 3,
+  "triangles_total": 7084,
+  "triangles_max": 648,
+  "model_files_bytes": 557004,
+  "external_textures": false,
+  "pending": [],
+  "connections_checked": 6,
+  "godot_check": {
+    "assemblies": 3,
+    "colliders": 107,
+    "glbs": 70,
+    "markers": 183,
+    "models": 69
+  },
+  "terrain_fit_cases_checked": 6,
+  "asset_index": {
+    "files_total": 39947,
+    "harbor_files": 146,
+    "pending": [],
+    "harbor_hashes_checked": 146
+  },
+  "assembly_bounds_checked": 3
+}

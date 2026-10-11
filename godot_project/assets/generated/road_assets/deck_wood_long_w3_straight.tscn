@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_wood_long_w3_straight.glb" id="1"]
+
+[node name="deck_wood_long_w3_straight" type="Node3D"]
+metadata/asset_type = "deck_wood_long_w3_straight"
+metadata/procedural = true
+metadata/units = "meters"
+metadata/runtime_applied = false
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]
+
+[node name="Start" type="Marker3D" parent="."]
+position = Vector3(0, 0.15, -6.0)
+rotation = Vector3(0, 0.0, 0)
+metadata/profile = "walk_w3.00_h0.15"
+metadata/width_m = 3
+metadata/surface_y_m = 0.15
+metadata/lane_count = 0
+
+[node name="End" type="Marker3D" parent="."]
+position = Vector3(0, 0.15, 6.0)
+rotation = Vector3(0, -3.141592653589793, 0)
+metadata/profile = "walk_w3.00_h0.15"
+metadata/width_m = 3
+metadata/surface_y_m = 0.15
+metadata/lane_count = 0

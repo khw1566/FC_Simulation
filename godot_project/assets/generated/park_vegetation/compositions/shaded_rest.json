@@ -1,0 +1,41 @@
+{
+  "id": "shaded_rest",
+  "label": "그늘 쉼터",
+  "ground": "soil",
+  "plants": [
+    "flower_low_edge",
+    "hedge_corner",
+    "hedge_end",
+    "rock_small"
+  ],
+  "reused": [
+    {
+      "path": "res://assets/generated/trees/broadleaf_lod0.scn",
+      "position": [
+        -5,
+        0,
+        -5
+      ],
+      "role": "tree"
+    },
+    {
+      "path": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "position": [
+        -1,
+        0,
+        -5
+      ],
+      "role": "bench"
+    },
+    {
+      "path": "res://assets/generated/road_assets/walk_concrete_w3_straight.tscn",
+      "position": [
+        3,
+        0,
+        -5
+      ],
+      "role": "path"
+    }
+  ],
+  "seed": 175
+}

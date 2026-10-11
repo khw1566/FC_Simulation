@@ -21,6 +21,9 @@
     "shipping_routes": "#4aa373"
   },
   "road_types": ["motorway", "trunk", "primary", "secondary"],
+  "road_types_by_map": {
+    "ulsan_metro_80km": ["motorway", "trunk", "primary", "secondary", "tertiary", "unclassified", "residential", "living_street", "service", "pedestrian", "footway", "path", "steps", "cycleway", "track", "bridleway", "road", "busway", "raceway", "escape"]
+  },
   "unclassified_major_min_width_m": 14,
   "harbors_geojson": "data/raw/navigation/{map_id}/harbors.geojson",
   "shipping_routes_geojson": "data/raw/navigation/{map_id}/shipping_routes.geojson",

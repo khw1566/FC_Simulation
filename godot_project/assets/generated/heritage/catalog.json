@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "eonyang_eupseong",
+      "scene_path": "res://assets/generated/heritage/eonyang_eupseong.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 6004,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -190.25,
+        -0.58250004053116,
+        -189.649993896484
+      ],
+      "aabb_max_m": [
+        190.25,
+        10.1499996185303,
+        226.125213623047
+      ],
+      "elevation_min": -0.58250004053116,
+      "elevation_max": 10.1499996185303,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "ulsan_waeseong",
+      "scene_path": "res://assets/generated/heritage/ulsan_waeseong.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 3984,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -87.1737289428711,
+        -0.58250004053116,
+        -81.481689453125
+      ],
+      "aabb_max_m": [
+        133.546264648438,
+        4.58249998092651,
+        151.438751220703
+      ],
+      "elevation_min": -0.58250004053116,
+      "elevation_max": 4.58249998092651,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    }
+  ],
+  "note_ko": "독립 에셋 표현의 경량화, 기존 지리 배치 유지"
+}

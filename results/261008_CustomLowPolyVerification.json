@@ -1,0 +1,1744 @@
+{
+  "profile": "custom_low_poly_flat_v1",
+  "model_count": 61,
+  "files_registered": 101,
+  "totals": {
+    "before_triangles": 385294,
+    "after_triangles": 113486,
+    "before_bytes": 26809206,
+    "after_bytes": 6964573
+  },
+  "assets": [
+    {
+      "path": "assets/generated/industrial/factory_gable.glb",
+      "label_ko": "박공지붕 공장",
+      "before": {
+        "triangles": 548,
+        "size_bytes": 43116
+      },
+      "after": {
+        "triangles": 356,
+        "size_bytes": 24824,
+        "aabb_min_m": [
+          -25.0,
+          0.0,
+          -37.0
+        ],
+        "aabb_max_m": [
+          25.0,
+          18,
+          40.2
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/factory_sawtooth.glb",
+      "label_ko": "톱니지붕 공장",
+      "before": {
+        "triangles": 676,
+        "size_bytes": 52348
+      },
+      "after": {
+        "triangles": 460,
+        "size_bytes": 30724,
+        "aabb_min_m": [
+          -33.0,
+          0.0,
+          -45.0
+        ],
+        "aabb_max_m": [
+          33.0,
+          14.6,
+          48.2
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/factory_flat.glb",
+      "label_ko": "평지붕 공장",
+      "before": {
+        "triangles": 528,
+        "size_bytes": 41700
+      },
+      "after": {
+        "triangles": 384,
+        "size_bytes": 26468,
+        "aabb_min_m": [
+          -23.0,
+          0.0,
+          -31.0
+        ],
+        "aabb_max_m": [
+          23.0,
+          19.200000000000003,
+          34.2
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/distillation_tower.glb",
+      "label_ko": "증류탑",
+      "before": {
+        "triangles": 6632,
+        "size_bytes": 480364
+      },
+      "after": {
+        "triangles": 2684,
+        "size_bytes": 137532,
+        "aabb_min_m": [
+          -7.0,
+          0.0,
+          -7.0
+        ],
+        "aabb_max_m": [
+          7.0,
+          41.0,
+          7.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/industrial_chimney.glb",
+      "label_ko": "대형 연통",
+      "before": {
+        "triangles": 3516,
+        "size_bytes": 256808
+      },
+      "after": {
+        "triangles": 1156,
+        "size_bytes": 61892,
+        "aabb_min_m": [
+          -7.5,
+          0.0,
+          -7.5
+        ],
+        "aabb_max_m": [
+          7.5,
+          65,
+          7.5
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/liquid_storage_tank.glb",
+      "label_ko": "원통형 액체저장고",
+      "before": {
+        "triangles": 2188,
+        "size_bytes": 160380
+      },
+      "after": {
+        "triangles": 608,
+        "size_bytes": 33696,
+        "aabb_min_m": [
+          -17.0,
+          0.0,
+          -17.0
+        ],
+        "aabb_max_m": [
+          19.0,
+          19.8,
+          17.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/lpg_sphere.glb",
+      "label_ko": "구형 LPG저장고",
+      "before": {
+        "triangles": 1956,
+        "size_bytes": 143660
+      },
+      "after": {
+        "triangles": 692,
+        "size_bytes": 39488,
+        "aabb_min_m": [
+          -12.5,
+          0.0,
+          -12.5
+        ],
+        "aabb_max_m": [
+          12.5,
+          23.4,
+          12.5
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/pipeline_straight.glb",
+      "label_ko": "파이프라인 직선",
+      "before": {
+        "triangles": 240,
+        "size_bytes": 19752
+      },
+      "after": {
+        "triangles": 192,
+        "size_bytes": 12036,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          2.5
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/pipeline_elbow.glb",
+      "label_ko": "파이프라인 곡관",
+      "before": {
+        "triangles": 1536,
+        "size_bytes": 113064
+      },
+      "after": {
+        "triangles": 576,
+        "size_bytes": 31048,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          2.5,
+          5.32,
+          12.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/pipeline_tee.glb",
+      "label_ko": "파이프라인 분기",
+      "before": {
+        "triangles": 432,
+        "size_bytes": 33580
+      },
+      "after": {
+        "triangles": 336,
+        "size_bytes": 19672,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          12.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/transmission_tower.glb",
+      "label_ko": "송전탑",
+      "before": {
+        "triangles": 2892,
+        "size_bytes": 211180
+      },
+      "after": {
+        "triangles": 1500,
+        "size_bytes": 83372,
+        "aabb_min_m": [
+          -12.4,
+          -0.06952604524738866,
+          -8.5
+        ],
+        "aabb_max_m": [
+          12.4,
+          46.031684333108274,
+          8.5
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/cooling_tower.glb",
+      "label_ko": "냉각탑",
+      "before": {
+        "triangles": 2368,
+        "size_bytes": 173348
+      },
+      "after": {
+        "triangles": 416,
+        "size_bytes": 26792,
+        "aabb_min_m": [
+          -22.0,
+          -2.3980817331903383e-15,
+          -22.0
+        ],
+        "aabb_max_m": [
+          22.0,
+          50.0,
+          22.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/cooling_fan_bank.glb",
+      "label_ko": "냉각 팬 설비",
+      "before": {
+        "triangles": 1380,
+        "size_bytes": 102564
+      },
+      "after": {
+        "triangles": 900,
+        "size_bytes": 52748,
+        "aabb_min_m": [
+          -14.5,
+          0.0,
+          -8.5
+        ],
+        "aabb_max_m": [
+          14.5,
+          6.4,
+          8.5
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/shipbuilding_hangar.glb",
+      "label_ko": "조선용 대형 격납고",
+      "before": {
+        "triangles": 476,
+        "size_bytes": 37456
+      },
+      "after": {
+        "triangles": 236,
+        "size_bytes": 16976,
+        "aabb_min_m": [
+          -52.0,
+          0.0,
+          -92.0
+        ],
+        "aabb_max_m": [
+          52.0,
+          52,
+          92.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/tower_crane.glb",
+      "label_ko": "타워 크레인",
+      "before": {
+        "triangles": 3312,
+        "size_bytes": 242140
+      },
+      "after": {
+        "triangles": 2352,
+        "size_bytes": 134636,
+        "aabb_min_m": [
+          -18.03098386676966,
+          0.0,
+          -5.0
+        ],
+        "aabb_max_m": [
+          60.01699626542851,
+          65.06826708557621,
+          5.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial/gantry_crane.glb",
+      "label_ko": "갠트리 크레인",
+      "before": {
+        "triangles": 3396,
+        "size_bytes": 248112
+      },
+      "after": {
+        "triangles": 1092,
+        "size_bytes": 68004,
+        "aabb_min_m": [
+          -48.02846049894151,
+          0.0,
+          -17.0
+        ],
+        "aabb_max_m": [
+          48.02846049894151,
+          56.125,
+          17.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/stack_concrete.glb",
+      "label_ko": "고층 표식 연통",
+      "before": {
+        "triangles": 4232,
+        "size_bytes": 308320
+      },
+      "after": {
+        "triangles": 1440,
+        "size_bytes": 76524,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -8.0
+        ],
+        "aabb_max_m": [
+          8.0,
+          90,
+          8.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/stack_steel.glb",
+      "label_ko": "슬림 강철 연통",
+      "before": {
+        "triangles": 6272,
+        "size_bytes": 454812
+      },
+      "after": {
+        "triangles": 2352,
+        "size_bytes": 121052,
+        "aabb_min_m": [
+          -12.0,
+          -0.04807619738204116,
+          -8.0
+        ],
+        "aabb_max_m": [
+          8.0,
+          55,
+          8.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/stack_triple.glb",
+      "label_ko": "3구 집합 연통",
+      "before": {
+        "triangles": 4808,
+        "size_bytes": 349376
+      },
+      "after": {
+        "triangles": 1552,
+        "size_bytes": 82932,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -8.0
+        ],
+        "aabb_max_m": [
+          8.0,
+          62,
+          8.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/flare_lattice.glb",
+      "label_ko": "격자 지지 플레어 탑",
+      "before": {
+        "triangles": 3008,
+        "size_bytes": 219804
+      },
+      "after": {
+        "triangles": 2288,
+        "size_bytes": 125816,
+        "aabb_min_m": [
+          -12.0,
+          -0.06810140896210047,
+          -8.0
+        ],
+        "aabb_max_m": [
+          8.0,
+          72,
+          8.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/process_column.glb",
+      "label_ko": "다단 정유 공정 탑",
+      "before": {
+        "triangles": 8216,
+        "size_bytes": 594420
+      },
+      "after": {
+        "triangles": 3380,
+        "size_bytes": 172468,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -8.0
+        ],
+        "aabb_max_m": [
+          8.0,
+          51.0,
+          8.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/scrubber_tower.glb",
+      "label_ko": "습식 세정·배기 탑",
+      "before": {
+        "triangles": 5292,
+        "size_bytes": 384212
+      },
+      "after": {
+        "triangles": 2128,
+        "size_bytes": 110820,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -8.0
+        ],
+        "aabb_max_m": [
+          8.0,
+          38,
+          8.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/rack_straight.glb",
+      "label_ko": "배관 랙 직선",
+      "before": {
+        "triangles": 240,
+        "size_bytes": 19748
+      },
+      "after": {
+        "triangles": 192,
+        "size_bytes": 12032,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          2.5
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/rack_elbow.glb",
+      "label_ko": "배관 랙 곡관",
+      "before": {
+        "triangles": 1536,
+        "size_bytes": 113060
+      },
+      "after": {
+        "triangles": 576,
+        "size_bytes": 31044,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          2.5,
+          5.32,
+          12.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/rack_tee.glb",
+      "label_ko": "배관 랙 분기",
+      "before": {
+        "triangles": 432,
+        "size_bytes": 33576
+      },
+      "after": {
+        "triangles": 336,
+        "size_bytes": 19668,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          12.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/rack_cross.glb",
+      "label_ko": "배관 랙 교차",
+      "before": {
+        "triangles": 432,
+        "size_bytes": 33200
+      },
+      "after": {
+        "triangles": 336,
+        "size_bytes": 19048,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -12.0
+        ],
+        "aabb_max_m": [
+          12.0,
+          5.32,
+          12.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/rack_riser.glb",
+      "label_ko": "배관 랙 높이 전환",
+      "before": {
+        "triangles": 504,
+        "size_bytes": 38384
+      },
+      "after": {
+        "triangles": 360,
+        "size_bytes": 19480,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.1
+        ],
+        "aabb_max_m": [
+          12.0,
+          9.32,
+          2.1
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/industrial_plant/rack_double.glb",
+      "label_ko": "배관 랙 2층",
+      "before": {
+        "triangles": 384,
+        "size_bytes": 29744
+      },
+      "after": {
+        "triangles": 288,
+        "size_bytes": 16168,
+        "aabb_min_m": [
+          -12.0,
+          0.0,
+          -2.1
+        ],
+        "aabb_max_m": [
+          12.0,
+          9.32,
+          2.1
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/vessels/container_ship.glb",
+      "label_ko": "컨테이너선",
+      "before": {
+        "triangles": 6262,
+        "size_bytes": 456944
+      },
+      "after": {
+        "triangles": 2374,
+        "size_bytes": 145628,
+        "aabb_min_m": [
+          -14.0,
+          -7,
+          -90.0
+        ],
+        "aabb_max_m": [
+          14.0,
+          20.06,
+          86.39999999999999
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/vessels/tugboat.glb",
+      "label_ko": "예인선",
+      "before": {
+        "triangles": 1478,
+        "size_bytes": 111304
+      },
+      "after": {
+        "triangles": 1046,
+        "size_bytes": 59264,
+        "aabb_min_m": [
+          -5.25,
+          -3,
+          -15.0
+        ],
+        "aabb_max_m": [
+          5.25,
+          11.76,
+          14.399999999999999
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/vessels/motor_boat.glb",
+      "label_ko": "보트",
+      "before": {
+        "triangles": 230,
+        "size_bytes": 20580
+      },
+      "after": {
+        "triangles": 230,
+        "size_bytes": 17004,
+        "aabb_min_m": [
+          -1.9,
+          -0.8,
+          -6.0
+        ],
+        "aabb_max_m": [
+          1.9,
+          4.36,
+          6.4
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/vessels/lpg_carrier.glb",
+      "label_ko": "LPG선",
+      "before": {
+        "triangles": 1610,
+        "size_bytes": 121516
+      },
+      "after": {
+        "triangles": 1074,
+        "size_bytes": 62584,
+        "aabb_min_m": [
+          -12.0,
+          -6,
+          -72.5
+        ],
+        "aabb_max_m": [
+          12.0,
+          19.06,
+          69.6
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/vessels/oil_tanker.glb",
+      "label_ko": "유조선",
+      "before": {
+        "triangles": 2242,
+        "size_bytes": 167028
+      },
+      "after": {
+        "triangles": 1722,
+        "size_bytes": 91728,
+        "aabb_min_m": [
+          -17.0,
+          -9,
+          -105.0
+        ],
+        "aabb_max_m": [
+          17.0,
+          20.56,
+          100.8
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/vessels/fishing_boat.glb",
+      "label_ko": "어업용 소형선박",
+      "before": {
+        "triangles": 1106,
+        "size_bytes": 85244
+      },
+      "after": {
+        "triangles": 754,
+        "size_bytes": 45456,
+        "aabb_min_m": [
+          -2.85,
+          -1.5,
+          -9.0
+        ],
+        "aabb_max_m": [
+          2.85,
+          6.659999999999999,
+          8.64
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/taehwagang/station.glb",
+      "label_ko": "태화강역",
+      "before": {
+        "triangles": 1836,
+        "size_bytes": 135548
+      },
+      "after": {
+        "triangles": 924,
+        "size_bytes": 57412,
+        "aabb_min_m": [
+          -59.0,
+          0.0,
+          -39.5
+        ],
+        "aabb_max_m": [
+          59.0,
+          26.034317178054977,
+          34.00524109043984
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/taehwagang/rail_yard.glb",
+      "label_ko": "역 승강장",
+      "before": {
+        "triangles": 9396,
+        "size_bytes": 680972
+      },
+      "after": {
+        "triangles": 4596,
+        "size_bytes": 269376,
+        "aabb_min_m": [
+          -55.06,
+          0.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          55.06,
+          8.049143609346716,
+          -22.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/taehwagang/forecourt.glb",
+      "label_ko": "역 광장",
+      "before": {
+        "triangles": 3656,
+        "size_bytes": 267648
+      },
+      "after": {
+        "triangles": 3592,
+        "size_bytes": 212204,
+        "aabb_min_m": [
+          -147.0,
+          0.0,
+          22.0
+        ],
+        "aabb_max_m": [
+          229.0,
+          10.3,
+          176.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/taehwagang/district.glb",
+      "label_ko": "역전 구역",
+      "before": {
+        "triangles": 7648,
+        "size_bytes": 555064
+      },
+      "after": {
+        "triangles": 7648,
+        "size_bytes": 443208,
+        "aabb_min_m": [
+          -240.0,
+          -2.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          240.0,
+          22.099999999999998,
+          290.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/taehwagang/taehwagang_complete.glb",
+      "label_ko": "태화강역 조립",
+      "before": {
+        "triangles": 22536,
+        "size_bytes": 1627456
+      },
+      "after": {
+        "triangles": 16760,
+        "size_bytes": 970552,
+        "aabb_min_m": [
+          -240.0,
+          -2.0,
+          -290.0
+        ],
+        "aabb_max_m": [
+          240.0,
+          26.034317178054977,
+          290.0
+        ]
+      }
+    },
+    {
+      "path": "assets/generated/wolsong/wolsong_npp.glb",
+      "label_ko": "월성 발전소",
+      "before": {
+        "triangles": 6552,
+        "size_bytes": 476132
+      },
+      "after": {
+        "triangles": 2048,
+        "size_bytes": 123396,
+        "aabb_min_m": [
+          -165.0,
+          -3.0,
+          -360.0
+        ],
+        "aabb_max_m": [
+          165.0,
+          58.0,
+          360.0
+        ]
+      }
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          190.25,
+          10.1499996185303,
+          226.125213623047
+        ],
+        "aabb_min_m": [
+          -190.25,
+          -0.58250004053116,
+          -189.649993896484
+        ],
+        "collisions": 0,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 6004
+      },
+      "after_bytes": 379355,
+      "before": {
+        "aabb_max_m": [
+          190.25,
+          10.1499996185303,
+          226.125213623047
+        ],
+        "aabb_min_m": [
+          -190.25,
+          -0.58249998092651,
+          -189.649993896484
+        ],
+        "collisions": 0,
+        "instances": 11,
+        "mesh_nodes": 11,
+        "triangles": 62440
+      },
+      "before_bytes": 3880664,
+      "path": "assets/generated/heritage/eonyang_eupseong.scn",
+      "sha256": "d33d249d707b065a8674ce3856f289ff3bc171dff4c91428a76cd2b2b017a4d1"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          133.546264648438,
+          4.58249998092651,
+          151.438751220703
+        ],
+        "aabb_min_m": [
+          -87.1737289428711,
+          -0.58250004053116,
+          -81.481689453125
+        ],
+        "collisions": 0,
+        "instances": 1,
+        "mesh_nodes": 1,
+        "triangles": 3984
+      },
+      "after_bytes": 250839,
+      "before": {
+        "aabb_max_m": [
+          133.546264648438,
+          4.58249998092651,
+          151.438735961914
+        ],
+        "aabb_min_m": [
+          -87.1737289428711,
+          -0.58249998092651,
+          -81.481689453125
+        ],
+        "collisions": 0,
+        "instances": 5,
+        "mesh_nodes": 5,
+        "triangles": 44088
+      },
+      "before_bytes": 2739492,
+      "path": "assets/generated/heritage/ulsan_waeseong.scn",
+      "sha256": "0c49c492abb5b4c34ca36fef3e3d186214923a9eee5c677ed1d1d093163a6f8b"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1439.18444824219,
+          31,
+          32
+        ],
+        "aabb_min_m": [
+          -1610.86926269531,
+          -8,
+          -398.672790527344
+        ],
+        "collisions": 7,
+        "instances": 297,
+        "mesh_nodes": 15,
+        "triangles": 3734
+      },
+      "after_bytes": 240094,
+      "before": {
+        "aabb_max_m": [
+          1439.18444824219,
+          31,
+          32
+        ],
+        "aabb_min_m": [
+          -1610.86926269531,
+          -8,
+          -398.672790527344
+        ],
+        "collisions": 7,
+        "instances": 297,
+        "mesh_nodes": 15,
+        "triangles": 6514
+      },
+      "before_bytes": 408055,
+      "path": "assets/generated/airport/ulsan_airport.scn",
+      "sha256": "a932b553b7b90818777c42b1596a4ffe81214ddad47a56e8a43381b3c7182175"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          727.223083496094,
+          36,
+          602.992004394531
+        ],
+        "aabb_min_m": [
+          -727.223083496094,
+          -2,
+          -451.990417480469
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 876
+      },
+      "after_bytes": 67346,
+      "before": {
+        "aabb_max_m": [
+          727.223083496094,
+          36,
+          602.992004394531
+        ],
+        "aabb_min_m": [
+          -727.223083496094,
+          -2,
+          -451.990417480469
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 4372
+      },
+      "before_bytes": 322407,
+      "path": "assets/generated/japan_airports/JP-0007.scn",
+      "sha256": "ddc2ed229a30a76f9821342c74457629a326f2c4126d220186267f88bf65e751"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          720.372985839844,
+          36,
+          675.144287109375
+        ],
+        "aabb_min_m": [
+          -833.834777832031,
+          -2,
+          -634.631958007813
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 900
+      },
+      "after_bytes": 68663,
+      "before": {
+        "aabb_max_m": [
+          720.372985839844,
+          36,
+          675.144287109375
+        ],
+        "aabb_min_m": [
+          -833.834777832031,
+          -2,
+          -634.631958007813
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 4864
+      },
+      "before_bytes": 359068,
+      "path": "assets/generated/japan_airports/RJDA.scn",
+      "sha256": "a6f8a15a06f435c698734143c49108feb8c88a380b203dc3d1456843082430bf"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          694.306030273438,
+          36,
+          990.89599609375
+        ],
+        "aabb_min_m": [
+          -345,
+          -2,
+          -1012.97802734375
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1008
+      },
+      "after_bytes": 76703,
+      "before": {
+        "aabb_max_m": [
+          694.306030273438,
+          36,
+          990.89599609375
+        ],
+        "aabb_min_m": [
+          -345,
+          -2,
+          -1012.97802734375
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 6668
+      },
+      "before_bytes": 493764,
+      "path": "assets/generated/japan_airports/RJDB.scn",
+      "sha256": "96606e4dcd92315c8718525792b4a56b9741864bc8bb9f14729160658c00bf6b"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1465.06665039063,
+          36,
+          980.577331542969
+        ],
+        "aabb_min_m": [
+          -1462.17797851563,
+          -2,
+          -931.835021972656
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1452
+      },
+      "after_bytes": 103727,
+      "before": {
+        "aabb_max_m": [
+          1465.06665039063,
+          36,
+          980.577331542969
+        ],
+        "aabb_min_m": [
+          -1462.17797851563,
+          -2,
+          -931.835021972656
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 6152
+      },
+      "before_bytes": 440548,
+      "path": "assets/generated/japan_airports/RJDC.scn",
+      "sha256": "94d649c8c68c4288a580deef3634495184123269ef8f177652aeecbb961602fe"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1184.97399902344,
+          36,
+          792.57275390625
+        ],
+        "aabb_min_m": [
+          -1001.96984863281,
+          -2,
+          -664.650024414063
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1128
+      },
+      "after_bytes": 83471,
+      "before": {
+        "aabb_max_m": [
+          1184.97399902344,
+          36,
+          792.57275390625
+        ],
+        "aabb_min_m": [
+          -1001.96984863281,
+          -2,
+          -664.650024414063
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 6132
+      },
+      "before_bytes": 449108,
+      "path": "assets/generated/japan_airports/RJFA.scn",
+      "sha256": "a7b5b25d20db161289a5e768669ce03cf80f52193fd86c8ee318308b275b2fb5"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1037.61352539063,
+          36,
+          1573.20495605469
+        ],
+        "aabb_min_m": [
+          -1267.05297851563,
+          -2,
+          -1584.70300292969
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 3456
+      },
+      "after_bytes": 235415,
+      "before": {
+        "aabb_max_m": [
+          1037.61352539063,
+          36,
+          1573.20495605469
+        ],
+        "aabb_min_m": [
+          -1267.05297851563,
+          -2,
+          -1584.70300292969
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 15480
+      },
+      "before_bytes": 1088708,
+      "path": "assets/generated/japan_airports/RJFF.scn",
+      "sha256": "a008955ebdb9416df5270a36e16a9fd2202d851515db054c42e44107c6310c80"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1110.89392089844,
+          36,
+          1662.61145019531
+        ],
+        "aabb_min_m": [
+          -1145.58581542969,
+          -2,
+          -1655.41198730469
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1776
+      },
+      "after_bytes": 123479,
+      "before": {
+        "aabb_max_m": [
+          1110.89392089844,
+          36,
+          1662.61145019531
+        ],
+        "aabb_min_m": [
+          -1145.58581542969,
+          -2,
+          -1655.41198730469
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 7044
+      },
+      "before_bytes": 497140,
+      "path": "assets/generated/japan_airports/RJFK.scn",
+      "sha256": "2631423349b69bc095863cc56b857a8007d85b488b00aa496290eaf47715b0c2"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1581.9599609375,
+          36,
+          464.239990234375
+        ],
+        "aabb_min_m": [
+          -1677.13598632813,
+          -2,
+          -603.036010742188
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1536
+      },
+      "after_bytes": 109103,
+      "before": {
+        "aabb_max_m": [
+          1581.9599609375,
+          36,
+          464.239990234375
+        ],
+        "aabb_min_m": [
+          -1677.13598632813,
+          -2,
+          -603.036010742188
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 7120
+      },
+      "before_bytes": 511316,
+      "path": "assets/generated/japan_airports/RJFM.scn",
+      "sha256": "d5d531b301626b06fbe5b820ed7bfe4618e1962d832b1f3221e1d5f2cb8b67c3"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1767.72302246094,
+          36,
+          654.334533691406
+        ],
+        "aabb_min_m": [
+          -1579.18395996094,
+          -2,
+          -653.664001464844
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1452
+      },
+      "after_bytes": 103895,
+      "before": {
+        "aabb_max_m": [
+          1767.72302246094,
+          36,
+          654.334533691406
+        ],
+        "aabb_min_m": [
+          -1579.18395996094,
+          -2,
+          -653.664001464844
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 7124
+      },
+      "before_bytes": 516044,
+      "path": "assets/generated/japan_airports/RJFN.scn",
+      "sha256": "77c2d6bcb6167942a360e0f51d9b62698a4910fcc18a3166ab2af0e8aafef19b"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          353,
+          36,
+          1844.80297851563
+        ],
+        "aabb_min_m": [
+          -600,
+          -2,
+          -1866.88500976563
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1656
+      },
+      "after_bytes": 115871,
+      "before": {
+        "aabb_max_m": [
+          353,
+          36,
+          1844.80297851563
+        ],
+        "aabb_min_m": [
+          -600,
+          -2,
+          -1866.88500976563
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 6828
+      },
+      "before_bytes": 486100,
+      "path": "assets/generated/japan_airports/RJFO.scn",
+      "sha256": "bc3a09bbf7a12dbfed92a13ee19887626a92ebc6e08dd9df9df3e391a4ec62df"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          568.764953613281,
+          36,
+          1633.05603027344
+        ],
+        "aabb_min_m": [
+          -611.851013183594,
+          -2,
+          -1555.91101074219
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1452
+      },
+      "after_bytes": 103895,
+      "before": {
+        "aabb_max_m": [
+          568.764953613281,
+          36,
+          1633.05603027344
+        ],
+        "aabb_min_m": [
+          -611.851013183594,
+          -2,
+          -1555.91101074219
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 7960
+      },
+      "before_bytes": 577732,
+      "path": "assets/generated/japan_airports/RJFR.scn",
+      "sha256": "b0d1b8122a24b4bdae5c3d90596245bb33d16ba840758cacb21a7a6e4dd01548"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1377.86596679688,
+          36,
+          602.93310546875
+        ],
+        "aabb_min_m": [
+          -1284.01293945313,
+          -2,
+          -519.406982421875
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1284
+      },
+      "after_bytes": 92639,
+      "before": {
+        "aabb_max_m": [
+          1377.86596679688,
+          36,
+          602.93310546875
+        ],
+        "aabb_min_m": [
+          -1284.01293945313,
+          -2,
+          -519.406982421875
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 5236
+      },
+      "before_bytes": 375972,
+      "path": "assets/generated/japan_airports/RJFS.scn",
+      "sha256": "53d7f39c6b2efc4f9278921975d54227aa789d690f9974fa8b6828da2e651958"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1755.90612792969,
+          36,
+          998.432983398438
+        ],
+        "aabb_min_m": [
+          -1663.15979003906,
+          -2,
+          -1038.16186523438
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1704
+      },
+      "after_bytes": 119351,
+      "before": {
+        "aabb_max_m": [
+          1755.90612792969,
+          36,
+          998.432983398438
+        ],
+        "aabb_min_m": [
+          -1663.15979003906,
+          -2,
+          -1038.16186523438
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 6740
+      },
+      "before_bytes": 477004,
+      "path": "assets/generated/japan_airports/RJFT.scn",
+      "sha256": "7ae7c99776395e64e7cb6ab756f85806295e62c44cd59d2c42cf066464647506"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1294.51708984375,
+          36,
+          1486.22290039063
+        ],
+        "aabb_min_m": [
+          -1408.189453125,
+          -2,
+          -1484.51293945313
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1692
+      },
+      "after_bytes": 118103,
+      "before": {
+        "aabb_max_m": [
+          1294.51708984375,
+          36,
+          1486.22290039063
+        ],
+        "aabb_min_m": [
+          -1408.189453125,
+          -2,
+          -1484.51293945313
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 5988
+      },
+      "before_bytes": 419684,
+      "path": "assets/generated/japan_airports/RJFU.scn",
+      "sha256": "832e5d6a0cf9cb1c21d8764454182fe9ea26bcca5b8d276e9dd8c64262771f89"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1511.44897460938,
+          36,
+          601.26416015625
+        ],
+        "aabb_min_m": [
+          -1474.97094726563,
+          -2,
+          -670.635009765625
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1932
+      },
+      "after_bytes": 141383,
+      "before": {
+        "aabb_max_m": [
+          1511.44897460938,
+          36,
+          601.26416015625
+        ],
+        "aabb_min_m": [
+          -1474.97094726563,
+          -2,
+          -670.635009765625
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 16656
+      },
+      "before_bytes": 1230172,
+      "path": "assets/generated/japan_airports/RJFY.scn",
+      "sha256": "f01b3692787d2396ef1ebcc5e4ed6f49113f1fc49d4adf454dc38e43aaf64320"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          1557.25305175781,
+          36,
+          751.377563476563
+        ],
+        "aabb_min_m": [
+          -1370.62902832031,
+          -2,
+          -809.118041992188
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1344
+      },
+      "after_bytes": 97031,
+      "before": {
+        "aabb_max_m": [
+          1557.25305175781,
+          36,
+          751.377563476563
+        ],
+        "aabb_min_m": [
+          -1370.62902832031,
+          -2,
+          -809.118041992188
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 5864
+      },
+      "before_bytes": 422692,
+      "path": "assets/generated/japan_airports/RJFZ.scn",
+      "sha256": "d2a202d9e1398cd1d8b8a85fb977ac1099138367bb45a79d6cd66a7a25fc0a37"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          655.631103515625,
+          36,
+          1177.64892578125
+        ],
+        "aabb_min_m": [
+          -1433.07299804688,
+          -2,
+          -722.035034179688
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1680
+      },
+      "after_bytes": 120383,
+      "before": {
+        "aabb_max_m": [
+          655.631103515625,
+          36,
+          1177.64892578125
+        ],
+        "aabb_min_m": [
+          -1433.07299804688,
+          -2,
+          -722.035034179688
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 10716
+      },
+      "before_bytes": 785620,
+      "path": "assets/generated/japan_airports/RJOF.scn",
+      "sha256": "933d22f5be682a0c073ff88defc4350e67b143e1acb5f84b3acd4cca75939459"
+    },
+    {
+      "after": {
+        "aabb_max_m": [
+          999.01904296875,
+          36,
+          653.705932617188
+        ],
+        "aabb_min_m": [
+          -786.02099609375,
+          -2,
+          -1429.29699707031
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 1500
+      },
+      "after_bytes": 109055,
+      "before": {
+        "aabb_max_m": [
+          999.01904296875,
+          36,
+          653.705932617188
+        ],
+        "aabb_min_m": [
+          -786.02099609375,
+          -2,
+          -1429.29699707031
+        ],
+        "collisions": 2,
+        "instances": 7,
+        "mesh_nodes": 7,
+        "triangles": 9324
+      },
+      "before_bytes": 684252,
+      "path": "assets/generated/japan_airports/RJOZ.scn",
+      "sha256": "80f87c9f354f06d7b594d0aae6a44feecf39c8ab7bf31c96a36c3702e6a38f45"
+    }
+  ],
+  "pending": [],
+  "unchanged_assembly_scenes": [
+    "assets/generated/vessels/container_ship.tscn",
+    "assets/generated/vessels/fishing_boat.tscn",
+    "assets/generated/vessels/lpg_carrier.tscn",
+    "assets/generated/vessels/motor_boat.tscn",
+    "assets/generated/vessels/oil_tanker.tscn",
+    "assets/generated/vessels/tugboat.tscn",
+    "assets/generated/industrial/cooling_fan_bank.tscn",
+    "assets/generated/industrial/cooling_tower.tscn",
+    "assets/generated/industrial/distillation_tower.tscn",
+    "assets/generated/industrial/factory_flat.tscn",
+    "assets/generated/industrial/factory_gable.tscn",
+    "assets/generated/industrial/factory_sawtooth.tscn",
+    "assets/generated/industrial/gantry_crane.tscn",
+    "assets/generated/industrial/industrial_chimney.tscn",
+    "assets/generated/industrial/liquid_storage_tank.tscn",
+    "assets/generated/industrial/lpg_sphere.tscn",
+    "assets/generated/industrial/pipeline_elbow.tscn",
+    "assets/generated/industrial/pipeline_straight.tscn",
+    "assets/generated/industrial/pipeline_tee.tscn",
+    "assets/generated/industrial/shipbuilding_hangar.tscn",
+    "assets/generated/industrial/tower_crane.tscn",
+    "assets/generated/industrial/transmission_tower.tscn",
+    "assets/generated/industrial_plant/flare_lattice.tscn",
+    "assets/generated/industrial_plant/plant_assembly_demo.tscn",
+    "assets/generated/industrial_plant/process_column.tscn",
+    "assets/generated/industrial_plant/rack_cross.tscn",
+    "assets/generated/industrial_plant/rack_double.tscn",
+    "assets/generated/industrial_plant/rack_elbow.tscn",
+    "assets/generated/industrial_plant/rack_riser.tscn",
+    "assets/generated/industrial_plant/rack_straight.tscn",
+    "assets/generated/industrial_plant/rack_tee.tscn",
+    "assets/generated/industrial_plant/scrubber_tower.tscn",
+    "assets/generated/industrial_plant/smoke_dark.tscn",
+    "assets/generated/industrial_plant/smoke_gray.tscn",
+    "assets/generated/industrial_plant/stack_concrete.tscn",
+    "assets/generated/industrial_plant/stack_steel.tscn",
+    "assets/generated/industrial_plant/stack_triple.tscn",
+    "assets/generated/industrial_plant/steam_white.tscn",
+    "assets/generated/taehwagang/district.tscn",
+    "assets/generated/taehwagang/forecourt.tscn",
+    "assets/generated/taehwagang/rail_yard.tscn",
+    "assets/generated/taehwagang/station.tscn",
+    "assets/generated/taehwagang/taehwagang_complete.tscn",
+    "assets/generated/wolsong/wolsong_npp.tscn"
+  ],
+  "gltf_document_read_models": 40,
+  "asset_index": {
+    "files": 39801,
+    "pending": [],
+    "updated_utc": "2026-10-08T03:34:15.708017+00:00"
+  }
+}

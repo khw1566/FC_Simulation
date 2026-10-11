@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/fish_auction.glb" id="Visual"]
+
+[sub_resource type="BoxShape3D" id="Collision0"]
+size = Vector3(12.00000000, 4.00000000, 12.00000000)
+
+[node name="fish_auction" type="Node3D"]
+metadata/units = "meters"
+metadata/detail_profile = "harbor_low_poly_flat_v1"
+metadata/anchor = "deck_surface"
+
+[node name="Visual" parent="." instance=ExtResource("Visual")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+metadata/profile = "terrain_anchor"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, -1.00000000)
+
+[node name="Entrance" type="Marker3D" parent="."]
+position = Vector3(0.00000000, 0.00000000, 6.30000000)
+rotation = Vector3(0, 3.14159265, 0)
+metadata/profile = "facility_access"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, 1.00000000)
+metadata/width_m = 3
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 1
+collision_mask = 1
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision0")
+position = Vector3(0.00000000, 2.30000000, 0.00000000)

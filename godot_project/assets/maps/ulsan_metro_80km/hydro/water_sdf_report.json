@@ -1,0 +1,20 @@
+{
+  "generated": "2026-10-10 21:52:38",
+  "map": "ulsan_metro_80km",
+  "resolution": 5632,
+  "meters_per_pixel": 14.207,
+  "encoding": {
+    "center": 128,
+    "clamp_m": 40.0,
+    "inside": "negative"
+  },
+  "min_line_width_m": 16.0,
+  "supersample": 4,
+  "features": 3732,
+  "inland_water_components_before": 30206,
+  "inland_water_components_after": 1761,
+  "inland_water_pixels_before": 543534,
+  "inland_water_pixels_after": 587171,
+  "seconds": 9.2,
+  "sha256": "8875c372858eb195d8c8f2f865b085176ab0efb2753797e7f4dec7dbcb0300b2"
+}

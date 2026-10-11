@@ -11,14 +11,14 @@
   "assets": {
     "wolsong_npp_glb": {
       "file_path": "res://assets/generated/wolsong/wolsong_npp.glb",
-      "sha256": "69f11e196dbcd84d63592fa67c36f9fd2892321a20fdc2314757388a2880e81e",
-      "size_bytes": 476132,
+      "sha256": "2e282bcb9d8a742768bf7c1df41cedca7e4ebb6bac8ce45746b1bd6225370230",
+      "size_bytes": 123396,
       "bbox": null,
       "min_elevation": -3.0,
       "max_elevation": 58.0,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 6552
+        "triangles": 2048
       },
       "aabb_min_m": [
         -165.0,
@@ -30,7 +30,31 @@
         58.0,
         360.0
       ],
-      "surveyed": false
+      "surveyed": false,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2048,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -165.0,
+          -3.0,
+          -360.0
+        ],
+        "aabb_max_m": [
+          165.0,
+          58.0,
+          360.0
+        ],
+        "elevation_min": -3.0,
+        "elevation_max": 58.0,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "월성 발전소",
+        "indexed_geometry": true
+      }
     },
     "wolsong_npp_tscn": {
       "file_path": "res://assets/generated/wolsong/wolsong_npp.tscn",
@@ -41,7 +65,7 @@
       "max_elevation": 58.0,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 6552
+        "triangles": 2048
       },
       "aabb_min_m": [
         -165.0,
@@ -53,7 +77,31 @@
         58.0,
         360.0
       ],
-      "surveyed": false
+      "surveyed": false,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2048,
+        "triangle_count_method": "gltf_primitive_indices",
+        "aabb_min_m": [
+          -165.0,
+          -3.0,
+          -360.0
+        ],
+        "aabb_max_m": [
+          165.0,
+          58.0,
+          360.0
+        ],
+        "elevation_min": -3.0,
+        "elevation_max": 58.0,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "label_ko": "월성 발전소",
+        "indexed_geometry": true
+      }
     }
   }
 }

@@ -33,13 +33,16 @@ def layers(meta,config):
         road_sources.append((resolve(additional['assets']['buildings_roads']),additional))
     for road_path,road_meta in road_sources:
         for road in array(road_path,'roads'):
-            major=road.get('type','').removesuffix('_link') in config['road_types']
+            types=config.get('road_types_by_map',{}).get(meta['id'],config['road_types'])
+            major=road.get('type','').removesuffix('_link') in types
             wide=road.get('width',0)>=config['unclassified_major_min_width_m']
             if not major and not wide: continue
             points=[local(p,road_meta,meta,n) for p in road.get('points',[])]
             if len(points)>1:
+                detail=meta['id']=='ulsan_metro_80km' and road.get('type','').removesuffix('_link') not in ('motorway','trunk','primary','secondary','tertiary')
                 result['roads'].append({'geometry':{'type':'LineString','coordinates':points},
-                                        'width':max(1.4,road.get('width',12)/meta['world_size_meters']*n)})
+                                        'width':max(.3 if detail else 1.4,road.get('width',12)/meta['world_size_meters']*n),
+                                        'opacity':.6 if detail else 1})
     if meta['world_size_meters'] <= config['building_max_world_size_m']:
         for building in array(path,'buildings'):
             polygon = building.get('polygon',[])

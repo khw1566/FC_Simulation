@@ -1,0 +1,16 @@
+{
+  "zones": 37,
+  "roads": 829,
+  "assets": 12651,
+  "blocks": 756,
+  "assets_by_district": {
+    "factory": 3478,
+    "logistics": 948,
+    "utility": 1311,
+    "process": 5318,
+    "tank_farm": 1302,
+    "link": 247,
+    "shipyard": 47
+  },
+  "method": "OSM 산업 용지 구역, 기존 도로+재귀 분할 도로로 블록 분할, 기존 건물 단서 기반 용도 지정, 용도별 줄 배치, 저장고-공정 파이프랙·송전 연결"
+}

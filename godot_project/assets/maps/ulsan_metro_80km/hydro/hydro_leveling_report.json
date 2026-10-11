@@ -1,0 +1,243 @@
+{
+  "generated": "2026-10-10 00:00:00",
+  "settings": {
+    "lake": {
+      "level_percentile": 10.0,
+      "keep_above_m": 4.0,
+      "depth_m": 1.0,
+      "shore_rise_m": 0.6,
+      "shore_blend_m": 30.0,
+      "shore_max_cut_m": 3.0,
+      "report_range_m": 5.0
+    },
+    "river": {
+      "floor_radius_m": 30.0,
+      "smooth_m": 45.0,
+      "carve_max_m": 6.0,
+      "channel_depth_m": 0.6,
+      "bank_rise_m": 0.8,
+      "bank_blend_m": 45.0,
+      "max_visible_grade": 0.08
+    },
+    "rail_edit_threshold_m": 0.25
+  },
+  "lakes": {
+    "lakes": 1425,
+    "lakes_over_report_range": 846,
+    "slope_pixels_removed_from_lakes": 25540,
+    "worst": [
+      {
+        "component": 487,
+        "pixels": 662,
+        "level_m": 142.48,
+        "range_before_m": 104.8,
+        "center_px": [
+          655,
+          797
+        ]
+      },
+      {
+        "component": 396,
+        "pixels": 1117,
+        "level_m": 149.46,
+        "range_before_m": 59.9,
+        "center_px": [
+          1669,
+          641
+        ]
+      },
+      {
+        "component": 1161,
+        "pixels": 239,
+        "level_m": 21.74,
+        "range_before_m": 51.4,
+        "center_px": [
+          2961,
+          3910
+        ]
+      },
+      {
+        "component": 427,
+        "pixels": 182,
+        "level_m": 269.03,
+        "range_before_m": 51.2,
+        "center_px": [
+          1713,
+          670
+        ]
+      },
+      {
+        "component": 1333,
+        "pixels": 341,
+        "level_m": 75.88,
+        "range_before_m": 43.6,
+        "center_px": [
+          899,
+          4985
+        ]
+      },
+      {
+        "component": 1398,
+        "pixels": 40,
+        "level_m": 81.51,
+        "range_before_m": 38.4,
+        "center_px": [
+          1450,
+          5416
+        ]
+      },
+      {
+        "component": 387,
+        "pixels": 193,
+        "level_m": 174.78,
+        "range_before_m": 33.3,
+        "center_px": [
+          3098,
+          619
+        ]
+      },
+      {
+        "component": 1328,
+        "pixels": 252,
+        "level_m": 1.33,
+        "range_before_m": 31.9,
+        "center_px": [
+          2687,
+          4972
+        ]
+      },
+      {
+        "component": 811,
+        "pixels": 216,
+        "level_m": 229.19,
+        "range_before_m": 31.8,
+        "center_px": [
+          1924,
+          2205
+        ]
+      },
+      {
+        "component": 435,
+        "pixels": 163,
+        "level_m": 128.79,
+        "range_before_m": 31.7,
+        "center_px": [
+          1898,
+          680
+        ]
+      },
+      {
+        "component": 953,
+        "pixels": 49,
+        "level_m": 124.63,
+        "range_before_m": 30.8,
+        "center_px": [
+          2175,
+          2678
+        ]
+      },
+      {
+        "component": 407,
+        "pixels": 81,
+        "level_m": 166.11,
+        "range_before_m": 29.4,
+        "center_px": [
+          3049,
+          639
+        ]
+      },
+      {
+        "component": 1198,
+        "pixels": 41,
+        "level_m": 213.92,
+        "range_before_m": 27.1,
+        "center_px": [
+          2372,
+          4143
+        ]
+      },
+      {
+        "component": 1010,
+        "pixels": 704,
+        "level_m": 26.49,
+        "range_before_m": 26.5,
+        "center_px": [
+          3884,
+          3011
+        ]
+      },
+      {
+        "component": 918,
+        "pixels": 17,
+        "level_m": 17.64,
+        "range_before_m": 25.6,
+        "center_px": [
+          2502,
+          2560
+        ]
+      },
+      {
+        "component": 1399,
+        "pixels": 29,
+        "level_m": 74.05,
+        "range_before_m": 25.4,
+        "center_px": [
+          1442,
+          5415
+        ]
+      },
+      {
+        "component": 723,
+        "pixels": 316,
+        "level_m": 152.36,
+        "range_before_m": 24.4,
+        "center_px": [
+          3406,
+          1668
+        ]
+      },
+      {
+        "component": 1244,
+        "pixels": 36,
+        "level_m": 38.27,
+        "range_before_m": 24.3,
+        "center_px": [
+          169,
+          4473
+        ]
+      },
+      {
+        "component": 512,
+        "pixels": 499,
+        "level_m": 291.84,
+        "range_before_m": 24.0,
+        "center_px": [
+          768,
+          874
+        ]
+      },
+      {
+        "component": 657,
+        "pixels": 15,
+        "level_m": 268.18,
+        "range_before_m": 23.7,
+        "center_px": [
+          1434,
+          1305
+        ]
+      }
+    ]
+  },
+  "rivers": {
+    "river_pixels": 374327,
+    "visible_pixels": 359047,
+    "removed_slope_pixels": 14343,
+    "removed_steep_pixels": 937,
+    "max_lowered_m": 18.26
+  },
+  "max_lowered_m": 18.26,
+  "max_raised_m": 0.0,
+  "changed_pixels_over_0_5m": 861407,
+  "rail_edited_pixels_kept": 2411,
+  "backup": "data/archives/hydro_leveling_backup_20261010_000003"
+}

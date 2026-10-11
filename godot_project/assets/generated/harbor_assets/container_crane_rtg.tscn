@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/container_crane_rtg.glb" id="Visual"]
+
+[sub_resource type="BoxShape3D" id="Collision0"]
+size = Vector3(1.00000000, 16.00000000, 1.00000000)
+
+[sub_resource type="BoxShape3D" id="Collision1"]
+size = Vector3(1.00000000, 16.00000000, 1.00000000)
+
+[sub_resource type="BoxShape3D" id="Collision2"]
+size = Vector3(1.00000000, 16.00000000, 1.00000000)
+
+[sub_resource type="BoxShape3D" id="Collision3"]
+size = Vector3(1.00000000, 16.00000000, 1.00000000)
+
+[node name="container_crane_rtg" type="Node3D"]
+metadata/units = "meters"
+metadata/detail_profile = "harbor_low_poly_flat_v1"
+metadata/anchor = "deck_surface"
+
+[node name="Visual" parent="." instance=ExtResource("Visual")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+metadata/profile = "terrain_anchor"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, -1.00000000)
+
+[node name="Spreader" type="Marker3D" parent="."]
+position = Vector3(3.00000000, 5.40000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+metadata/profile = "container_lift"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, -1.00000000)
+
+[node name="RailStart" type="Marker3D" parent="."]
+position = Vector3(0.00000000, 0.00000000, -6.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+metadata/profile = "crane_rail_8m"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, -1.00000000)
+metadata/width_m = 8
+
+[node name="RailEnd" type="Marker3D" parent="."]
+position = Vector3(0.00000000, 0.00000000, 6.00000000)
+rotation = Vector3(0, 3.14159265, 0)
+metadata/profile = "crane_rail_8m"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, 1.00000000)
+metadata/width_m = 8
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 1
+collision_mask = 1
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision0")
+position = Vector3(-4.00000000, 8.00000000, -4.50000000)
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision1")
+position = Vector3(-4.00000000, 8.00000000, 4.50000000)
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision2")
+position = Vector3(4.00000000, 8.00000000, -4.50000000)
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision3")
+position = Vector3(4.00000000, 8.00000000, 4.50000000)

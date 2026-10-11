@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "station",
+      "scene_path": "res://assets/generated/taehwagang/station.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 924,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -59.0,
+        0.0,
+        -39.5
+      ],
+      "aabb_max_m": [
+        59.0,
+        26.034317178054977,
+        34.00524109043984
+      ],
+      "elevation_min": 0.0,
+      "elevation_max": 26.034317178054977,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "태화강역",
+      "indexed_geometry": true
+    },
+    {
+      "id": "rail_yard",
+      "scene_path": "res://assets/generated/taehwagang/rail_yard.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 4596,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -55.06,
+        0.0,
+        -290.0
+      ],
+      "aabb_max_m": [
+        55.06,
+        8.049143609346716,
+        -22.0
+      ],
+      "elevation_min": 0.0,
+      "elevation_max": 8.049143609346716,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "역 승강장",
+      "indexed_geometry": true
+    },
+    {
+      "id": "forecourt",
+      "scene_path": "res://assets/generated/taehwagang/forecourt.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 3592,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -147.0,
+        0.0,
+        22.0
+      ],
+      "aabb_max_m": [
+        229.0,
+        10.3,
+        176.0
+      ],
+      "elevation_min": 0.0,
+      "elevation_max": 10.3,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "역 광장",
+      "indexed_geometry": true
+    },
+    {
+      "id": "district",
+      "scene_path": "res://assets/generated/taehwagang/district.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 7648,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -240.0,
+        -2.0,
+        -290.0
+      ],
+      "aabb_max_m": [
+        240.0,
+        22.099999999999998,
+        290.0
+      ],
+      "elevation_min": -2.0,
+      "elevation_max": 22.099999999999998,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "역전 구역",
+      "indexed_geometry": true
+    },
+    {
+      "id": "taehwagang_complete",
+      "scene_path": "res://assets/generated/taehwagang/taehwagang_complete.tscn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 16760,
+      "triangle_count_method": "gltf_primitive_indices",
+      "aabb_min_m": [
+        -240.0,
+        -2.0,
+        -290.0
+      ],
+      "aabb_max_m": [
+        240.0,
+        26.034317178054977,
+        290.0
+      ],
+      "elevation_min": -2.0,
+      "elevation_max": 26.034317178054977,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "label_ko": "태화강역 조립",
+      "indexed_geometry": true
+    }
+  ],
+  "note_ko": "독립 에셋 표현의 경량화, 기존 지리 배치 유지"
+}

@@ -61,6 +61,9 @@ def publish(meta_path, original, folder, index):
                               'navigation_status':'입력 GeoJSON이 없는 항구·항로는 빈 마스크',
                               'source_policy':'최신 로컬 원본을 수동으로 합성'}
     meta.setdefault('tactical_atlas',{})['legend']=LEGEND+' | 좌클릭: 위치 이동 · 우클릭 드래그: 이동 · 휠: 확대'
+    meta['tactical_atlas']['road_count']=index['counts'].get('roads',0)
+    if meta['id']=='ulsan_metro_80km' and meta.get('coverage',{}).get('roads',{}).get('coverage_complete'):
+        meta['tactical_atlas']['detail_note']='80km 전체 OSM 도로 수집분. 생활도로·보행로는 얇은 선으로 표시한다.'
     if meta_path.read_bytes()!=original: raise RuntimeError('지도 설정 동시 변경 감지')
     atomic(meta_path,meta)
     # 기존 메타 자산의 해시도 함께 갱신한다.

@@ -1,0 +1,54 @@
+{
+  "id": "ulsan_metro_60km",
+  "name_ko": "울산광역시 광역권 (60km x 60km)",
+  "name_en": "Ulsan Metropolitan Wide Area (60km x 60km)",
+  "description_ko": "울산대학교를 중심으로 영남알프스 가지산/신불산, 동해 해안선, 방어진 조선단지 및 온산공단을 아우르는 60km 정밀 광역 비행 지형입니다.",
+  "description_en": "Wide 60km flight terrain centered on Ulsan University, encompassing Yeongnam Alps, East Sea coastline, and heavy industrial complexes.",
+  "administrative_boundaries": {
+    "hierarchy": [
+      "시도",
+      "시군구",
+      "읍면동",
+      "리"
+    ],
+    "data_date": "2026-07",
+    "source": "통계청 SGIS, 행정안전부; mapcn-kr / vuski-admdongkor",
+    "source_url": "https://github.com/DevMinGeonPark/mapcn-kr",
+    "license": "CC BY 4.0"
+  },
+  "preview_image": "res://assets/maps/ulsan_metro_60km/ulsan_metro_60km_tactical_map.png",
+  "world_size_meters": 60000.0,
+  "min_elevation": -30.0,
+  "max_elevation": 1250.0,
+  "sea_level": 0.0,
+  "spawn_position": [
+    0.0,
+    600.0,
+    0.0
+  ],
+  "bbox": {
+    "south": 35.2742,
+    "north": 35.8148,
+    "west": 128.9233,
+    "east": 129.5877
+  },
+  "assets": {
+    "airport_placement": "res://assets/maps/ulsan_metro_60km/airport/placement.json",
+    "heightmap": "res://assets/maps/ulsan_metro_60km/hydro/coastal_heightmap_16bit.png",
+    "watermask": "res://assets/maps/ulsan_metro_60km/hydro/water_mask.png",
+    "tactical_map": "res://assets/maps/ulsan_metro_60km/tactical_atlas.png",
+    "districts": "res://assets/maps/ulsan_metro_60km/real_districts.json",
+    "buildings_roads": "res://assets/maps/ulsan_metro_60km/buildings_and_roads.json",
+    "sea_mask": "res://assets/maps/ulsan_metro_60km/hydro/sea_mask.png",
+    "river_mask": "res://assets/maps/ulsan_metro_60km/hydro/river_mask.png",
+    "lake_mask": "res://assets/maps/ulsan_metro_60km/hydro/lake_mask.png"
+  },
+  "tactical_atlas": {
+    "contour_interval_m": 50,
+    "road_count": 6614,
+    "water_source": "res://assets/maps/ulsan_metro_60km/hydro/water_mask.png",
+    "detail_note": "도로는 기존 수집 범위에 한함"
+  },
+  "hydro_source_heightmap": "res://assets/maps/ulsan_metro_60km/ulsan_metro_60km_heightmap_16bit.png",
+  "coastal_heightmap_corrected": true
+}

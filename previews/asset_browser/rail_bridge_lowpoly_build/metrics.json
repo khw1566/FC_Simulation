@@ -1,0 +1,952 @@
+[
+  {
+    "after": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        234.300003051758
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 11,
+      "mesh_nodes": 11,
+      "triangles": 6688
+    },
+    "after_bytes": 426855,
+    "before": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        234.300003051758
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 11,
+      "mesh_nodes": 11,
+      "triangles": 19576
+    },
+    "before_bytes": 1225932,
+    "path": "assets/generated/railway_bridges/anyang_main_bridge.scn",
+    "sha256": "b3601f5a7223f6f5d78c7c95444a57678361dc14d7c2de9d5a5c5670e7ef3a15"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        237.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 3040
+    },
+    "after_bytes": 199697,
+    "before": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        237.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 8992
+    },
+    "before_bytes": 568718,
+    "path": "assets/generated/railway_bridges/anyang_north_approach.scn",
+    "sha256": "797cf91ace2f2577c06ec42b11171fdc64799e5d58deae156692d25644e2739e"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        322.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 11,
+      "mesh_nodes": 11,
+      "triangles": 3882
+    },
+    "after_bytes": 252175,
+    "before": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        322.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 11,
+      "mesh_nodes": 11,
+      "triangles": 12018
+    },
+    "before_bytes": 756604,
+    "path": "assets/generated/railway_bridges/anyang_station_approach.scn",
+    "sha256": "218e99999bde36250cb63960560546570c345a6e1e5b538ba67046118afdaf02"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        34.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -12,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 9,
+      "mesh_nodes": 9,
+      "triangles": 650
+    },
+    "after_bytes": 51114,
+    "before": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        34.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -12,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 9,
+      "mesh_nodes": 9,
+      "triangles": 1442
+    },
+    "before_bytes": 100215,
+    "path": "assets/generated/railway_bridges/rail_box_girder.scn",
+    "sha256": "17d23bbdb68526b24e324af46473fbd3208cdddf709ee1dbf55c278d34dd00a1"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        122.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -20,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 1730
+    },
+    "after_bytes": 118615,
+    "before": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        122.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -20,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 5906
+    },
+    "before_bytes": 377548,
+    "path": "assets/generated/railway_bridges/rail_deck_arch.scn",
+    "sha256": "f5cdcfb4b4e4ec4f54a9de68fbd1919d0f752fc42f63f348e6bf7dfba40d5790"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        162.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -18,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 2068
+    },
+    "after_bytes": 139150,
+    "before": {
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        162.5
+      ],
+      "aabb_min_m": [
+        -6.25,
+        -18,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 6148
+    },
+    "before_bytes": 392107,
+    "path": "assets/generated/railway_bridges/rail_multi_viaduct.scn",
+    "sha256": "eefd86861efcee969a1165db216c2d7ee9b633e313a529e8537767b607c60306"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        3.25,
+        6.69999980926514,
+        26.5
+      ],
+      "aabb_min_m": [
+        -3.25,
+        -8,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 566
+    },
+    "after_bytes": 46141,
+    "before": {
+      "aabb_max_m": [
+        3.25,
+        6.69999980926514,
+        26.5
+      ],
+      "aabb_min_m": [
+        -3.25,
+        -8,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 1166
+    },
+    "before_bytes": 83362,
+    "path": "assets/generated/railway_bridges/rail_plate_girder.scn",
+    "sha256": "2c8e5106925b0ce0a15343ee6b72cf07b5be4c15080381c04c6e9fe7956c34be"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        6.34999990463257,
+        8.17499923706055,
+        74.5
+      ],
+      "aabb_min_m": [
+        -6.34999990463257,
+        -14,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 1334
+    },
+    "after_bytes": 94072,
+    "before": {
+      "aabb_max_m": [
+        6.34999990463257,
+        8.17499923706055,
+        74.5
+      ],
+      "aabb_min_m": [
+        -6.34999990463257,
+        -14,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 3494
+    },
+    "before_bytes": 228013,
+    "path": "assets/generated/railway_bridges/rail_through_truss.scn",
+    "sha256": "d27ca26b25e3c5b386c51f267975c88ce62d4035394aee0fe4d8b1897baa32a2"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        8.75,
+        6.70000076293945,
+        837.299987792969
+      ],
+      "aabb_min_m": [
+        -8.75,
+        -24,
+        -2.5
+      ],
+      "collisions": 4,
+      "instances": 43,
+      "mesh_nodes": 43,
+      "triangles": 14188
+    },
+    "after_bytes": 912617,
+    "before": {
+      "aabb_max_m": [
+        8.75,
+        6.70000076293945,
+        837.299987792969
+      ],
+      "aabb_min_m": [
+        -8.75,
+        -24,
+        -2.5
+      ],
+      "collisions": 4,
+      "instances": 43,
+      "mesh_nodes": 43,
+      "triangles": 42028
+    },
+    "before_bytes": 2639102,
+    "path": "assets/generated/railway_bridges/ulsan_anyang_connected_set.scn",
+    "sha256": "1cab8a2dc38da0ce7a6e1f39f70a8d1683b5febda824ec2d6a91dbfd379d78ee"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        8.75,
+        6.70000076293945,
+        50.5
+      ],
+      "aabb_min_m": [
+        -8.75,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 11,
+      "mesh_nodes": 11,
+      "triangles": 758
+    },
+    "after_bytes": 59181,
+    "before": {
+      "aabb_max_m": [
+        8.75,
+        6.70000076293945,
+        50.5
+      ],
+      "aabb_min_m": [
+        -8.75,
+        -24,
+        -2.5
+      ],
+      "collisions": 1,
+      "instances": 11,
+      "mesh_nodes": 11,
+      "triangles": 1622
+    },
+    "before_bytes": 112770,
+    "path": "assets/generated/railway_bridges/ulsan_station_interface.scn",
+    "sha256": "14aebae05086d25c05b2c2c9a1ab4db926882a6d610178f0bf1015d0bc606b08"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        2856.94213867188,
+        203.387451171875,
+        231.498992919922
+      ],
+      "aabb_min_m": [
+        -5.16802978515625,
+        -8,
+        -320.304290771484
+      ],
+      "collisions": 1,
+      "instances": 19,
+      "mesh_nodes": 19,
+      "triangles": 9884
+    },
+    "after_bytes": 708177,
+    "before": {
+      "aabb_max_m": [
+        2856.94213867188,
+        203.385833740234,
+        231.632995605469
+      ],
+      "aabb_min_m": [
+        -5.16802978515625,
+        -8,
+        -320.53369140625
+      ],
+      "collisions": 1,
+      "instances": 19,
+      "mesh_nodes": 19,
+      "triangles": 28148
+    },
+    "before_bytes": 1840458,
+    "path": "assets/generated/bridges/bridge_00.scn",
+    "sha256": "9706af4264dca9b76e92464de9b9e57da6cd12abcd6bc2b8360e29490ddf834c"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        158.083694458008,
+        31.3347911834717,
+        3.54920101165771
+      ],
+      "aabb_min_m": [
+        -0.10771587491035,
+        0.200000017881393,
+        -4.30391550064087
+      ],
+      "collisions": 1,
+      "instances": 6,
+      "mesh_nodes": 6,
+      "triangles": 924
+    },
+    "after_bytes": 58173,
+    "before": {
+      "aabb_max_m": [
+        158.083694458008,
+        31.3986434936523,
+        3.54920148849487
+      ],
+      "aabb_min_m": [
+        -0.10771587491035,
+        0.200000017881393,
+        -4.30391550064087
+      ],
+      "collisions": 1,
+      "instances": 6,
+      "mesh_nodes": 6,
+      "triangles": 2856
+    },
+    "before_bytes": 177870,
+    "path": "assets/generated/bridges/bridge_01.scn",
+    "sha256": "658d3275b6b5d246a31fb3720a4568c727b7ff8c5afd4272ff61a11edc1c11ed"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        118.157218933105,
+        2.30000019073486,
+        2.65036010742188
+      ],
+      "aabb_min_m": [
+        -5.41790533065796,
+        -3,
+        -235.536041259766
+      ],
+      "collisions": 1,
+      "instances": 6,
+      "mesh_nodes": 6,
+      "triangles": 1076
+    },
+    "after_bytes": 68132,
+    "before": {
+      "aabb_max_m": [
+        118.157218933105,
+        2.30000019073486,
+        2.65036010742188
+      ],
+      "aabb_min_m": [
+        -5.41790533065796,
+        -3,
+        -235.536041259766
+      ],
+      "collisions": 1,
+      "instances": 6,
+      "mesh_nodes": 6,
+      "triangles": 2396
+    },
+    "before_bytes": 149873,
+    "path": "assets/generated/bridges/bridge_02.scn",
+    "sha256": "750a8c8512f8517504d1b4e2c9fb49366aa9555796fd9a4f525d7da8df6cc0ec"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        12.7459201812744,
+        2.30000019073486,
+        1.23143005371094
+      ],
+      "aabb_min_m": [
+        -8.05770874023438,
+        -3,
+        -230.891067504883
+      ],
+      "collisions": 1,
+      "instances": 5,
+      "mesh_nodes": 5,
+      "triangles": 1596
+    },
+    "after_bytes": 103608,
+    "before": {
+      "aabb_max_m": [
+        12.7459192276001,
+        2.30000019073486,
+        1.26686096191406
+      ],
+      "aabb_min_m": [
+        -8.65008068084717,
+        -3,
+        -230.891067504883
+      ],
+      "collisions": 1,
+      "instances": 5,
+      "mesh_nodes": 5,
+      "triangles": 5916
+    },
+    "before_bytes": 371349,
+    "path": "assets/generated/bridges/bridge_03.scn",
+    "sha256": "e86420aa014e9caacf3bbabd45efa65088cc29e7f95175dd131df286ebb887f3"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        3.20028686523438,
+        2.30000019073486,
+        247.115386962891
+      ],
+      "aabb_min_m": [
+        -392.721649169922,
+        -3,
+        -5.11762475967407
+      ],
+      "collisions": 1,
+      "instances": 7,
+      "mesh_nodes": 7,
+      "triangles": 1744
+    },
+    "after_bytes": 115829,
+    "before": {
+      "aabb_max_m": [
+        3.20028686523438,
+        2.30000019073486,
+        247.11540222168
+      ],
+      "aabb_min_m": [
+        -392.721649169922,
+        -3,
+        -5.11762523651123
+      ],
+      "collisions": 1,
+      "instances": 7,
+      "mesh_nodes": 7,
+      "triangles": 4024
+    },
+    "before_bytes": 257090,
+    "path": "assets/generated/bridges/bridge_04.scn",
+    "sha256": "d3049c79de921d04e6dbb72e7e4eb7d50e9351f2ae5f1c77bc6342da1d28ceba"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        391.795135498047,
+        2.30000019073486,
+        5.12094116210938
+      ],
+      "aabb_min_m": [
+        -3.19490242004395,
+        -3,
+        -245.975555419922
+      ],
+      "collisions": 1,
+      "instances": 7,
+      "mesh_nodes": 7,
+      "triangles": 1744
+    },
+    "after_bytes": 115829,
+    "before": {
+      "aabb_max_m": [
+        391.795104980469,
+        2.30000019073486,
+        5.12094116210938
+      ],
+      "aabb_min_m": [
+        -3.19490242004395,
+        -3,
+        -245.975540161133
+      ],
+      "collisions": 1,
+      "instances": 7,
+      "mesh_nodes": 7,
+      "triangles": 4024
+    },
+    "before_bytes": 257090,
+    "path": "assets/generated/bridges/bridge_05.scn",
+    "sha256": "001bdfd938e9a088d211bd7d635755016fcc3c0c8ab99ecb5c33540b97063402"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        6,
+        2.30000019073486,
+        120.095108032227
+      ],
+      "aabb_min_m": [
+        -6,
+        -3,
+        -0.09510565549135
+      ],
+      "collisions": 1,
+      "instances": 4,
+      "mesh_nodes": 4,
+      "triangles": 496
+    },
+    "after_bytes": 33453,
+    "before": {
+      "aabb_max_m": [
+        6,
+        2.30000019073486,
+        120.095108032227
+      ],
+      "aabb_min_m": [
+        -6,
+        -3,
+        -0.09510565549135
+      ],
+      "collisions": 1,
+      "instances": 4,
+      "mesh_nodes": 4,
+      "triangles": 1096
+    },
+    "before_bytes": 70554,
+    "path": "assets/generated/bridges/bridge_06.scn",
+    "sha256": "febb3415547ef938059e623b0889b5f0003ffd65014cffbdea96a8d2ed115b9c"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        0.645105600357056,
+        1.14999997615814,
+        60.5
+      ],
+      "aabb_min_m": [
+        -0.625,
+        -0.39999997615814,
+        -0.5
+      ],
+      "collisions": 1,
+      "instances": 3,
+      "mesh_nodes": 3,
+      "triangles": 604
+    },
+    "after_bytes": 49107,
+    "before": {
+      "aabb_max_m": [
+        0.645105600357056,
+        1.14999997615814,
+        60.5
+      ],
+      "aabb_min_m": [
+        -0.625,
+        -0.39999997615814,
+        -0.5
+      ],
+      "collisions": 1,
+      "instances": 3,
+      "mesh_nodes": 3,
+      "triangles": 604
+    },
+    "before_bytes": 48996,
+    "path": "assets/generated/bridges/bridge_07.scn",
+    "sha256": "007ab47266c7004a7b121bf1da326e4f3d8d01aef5a5ec6bb8e8a0ddaef54eda"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        1.5349999666214,
+        7.43499946594238,
+        26.2000007629395
+      ],
+      "aabb_min_m": [
+        -1.5349999666214,
+        -0.11883449554443,
+        -26.2000007629395
+      ],
+      "collisions": 1,
+      "instances": 6,
+      "mesh_nodes": 6,
+      "triangles": 2452
+    },
+    "after_bytes": 182089,
+    "before": {
+      "aabb_max_m": [
+        1.5349999666214,
+        7.43499946594238,
+        26.2000007629395
+      ],
+      "aabb_min_m": [
+        -1.5349999666214,
+        -0.11883449554443,
+        -26.2000007629395
+      ],
+      "collisions": 1,
+      "instances": 6,
+      "mesh_nodes": 6,
+      "triangles": 6292
+    },
+    "before_bytes": 420106,
+    "path": "assets/generated/pedestrian_bridges/generic_pedestrian_overpass.scn",
+    "sha256": "3700a6ea402c02813f0f1faf21cd875849fcdb102c894c53a1662c060e339d44"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        1.29999995231628,
+        1.55000007152557,
+        51.5
+      ],
+      "aabb_min_m": [
+        -1.29999995231628,
+        -0.35500001907349,
+        -51.5
+      ],
+      "collisions": 1,
+      "instances": 4,
+      "mesh_nodes": 4,
+      "triangles": 1984
+    },
+    "after_bytes": 142062,
+    "before": {
+      "aabb_max_m": [
+        1.29999995231628,
+        1.55000007152557,
+        51.5
+      ],
+      "aabb_min_m": [
+        -1.29999995231628,
+        -0.35500001907349,
+        -51.5
+      ],
+      "collisions": 1,
+      "instances": 4,
+      "mesh_nodes": 4,
+      "triangles": 1984
+    },
+    "before_bytes": 141963,
+    "path": "assets/generated/pedestrian_bridges/gulhwa_daun_crossing.scn",
+    "sha256": "64e83fbed57eaad69f376a89d5af0b000ac5061bc3793aa94745cfa784d9d338"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        12.4499998092651,
+        13.0600004196167,
+        80.0951080322266
+      ],
+      "aabb_min_m": [
+        -12.4499998092651,
+        0,
+        -80.0951080322266
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 2400
+    },
+    "after_bytes": 143991,
+    "before": {
+      "aabb_max_m": [
+        12.4499998092651,
+        13.0600004196167,
+        80.0951080322266
+      ],
+      "aabb_min_m": [
+        -12.4499998092651,
+        0,
+        -80.0951080322266
+      ],
+      "collisions": 1,
+      "instances": 10,
+      "mesh_nodes": 10,
+      "triangles": 13200
+    },
+    "before_bytes": 813576,
+    "path": "assets/generated/pedestrian_bridges/seonbawi_bridge.scn",
+    "sha256": "0338783a333be6c1eb9d906822bbd41d76916a8aeda25d55534da69aa4c4be47"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460.109985351563
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 349,
+      "mesh_nodes": 199,
+      "triangles": 7446
+    },
+    "after_bytes": 58720,
+    "before": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 912,
+      "mesh_nodes": 199,
+      "triangles": 14202
+    },
+    "before_bytes": 85525,
+    "path": "assets/generated/railway/night_assets/donghae_night_scene.scn",
+    "sha256": "2ae762780d87bd4d7a4021b9b935062fd129bcd1e113a0df44852e344237829c"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460.109985351563
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 161,
+      "mesh_nodes": 11,
+      "triangles": 1854
+    },
+    "after_bytes": 16657,
+    "before": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 724,
+      "mesh_nodes": 11,
+      "triangles": 8610
+    },
+    "before_bytes": 43309,
+    "path": "assets/generated/railway/night_assets/donghae_track.scn",
+    "sha256": "f08594edea68d119188b9a78f0a8c43563301651037b55a50c0c640f7d8c41e6"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 759,
+      "mesh_nodes": 653,
+      "triangles": 25902
+    },
+    "after_bytes": 153584,
+    "before": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 1106,
+      "mesh_nodes": 653,
+      "triangles": 30066
+    },
+    "before_bytes": 169860,
+    "path": "assets/generated/railway/night_assets/ktx_night_scene.scn",
+    "sha256": "3c9be584560d11903a17c69994e8c862331bfb59855bb5478f550934fcf61b29"
+  },
+  {
+    "after": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 117,
+      "mesh_nodes": 11,
+      "triangles": 1326
+    },
+    "after_bytes": 14550,
+    "before": {
+      "aabb_max_m": [
+        2.45149993896484,
+        5.55000019073486,
+        460
+      ],
+      "aabb_min_m": [
+        -2.59999990463257,
+        -0.14999985694885,
+        -60.1100006103516
+      ],
+      "collisions": 0,
+      "instances": 464,
+      "mesh_nodes": 11,
+      "triangles": 5490
+    },
+    "before_bytes": 30826,
+    "path": "assets/generated/railway/night_assets/ktx_track.scn",
+    "sha256": "082ee691db1b83af375e0d28a41171908c7a7299b83dde9308fdbed240116b2b"
+  }
+]

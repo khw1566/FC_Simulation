@@ -25,7 +25,7 @@
             "get_terrain_elevation()",
             "get_water_mask()"
           ],
-          "lines": 393
+          "lines": 450
         },
         {
           "class_name": "TerrainChunk",
@@ -37,7 +37,7 @@
             "_rebuild_mesh()",
             "_sample_bilinear()"
           ],
-          "lines": 185
+          "lines": 189
         },
         {
           "class_name": "CoastlineWaterCarver",
@@ -60,7 +60,7 @@
             "_render_roads_and_tunnels_batched()",
             "is_point_in_tunnel()"
           ],
-          "lines": 588
+          "lines": 485
         },
         {
           "class_name": "RoadMeshBuilder",
@@ -74,7 +74,7 @@
             "build_bridge_pier()",
             "build_tunnel_portal()"
           ],
-          "lines": 304
+          "lines": 307
         },
         {
           "class_name": "BuildingMeshBuilder",
@@ -85,7 +85,7 @@
             "_add_quad()",
             "_round_polygon()"
           ],
-          "lines": 240
+          "lines": 300
         },
         {
           "class_name": "BreakwaterLighthouseRenderer",
@@ -180,7 +180,7 @@
           "path": "godot_project/shaders/road_surface.gdshader",
           "responsibility": "현재 지형 LOD의 삼각형 표면과 도로 높이를 GPU에서 동기화",
           "name": "road_surface.gdshader",
-          "lines": 51
+          "lines": 55
         },
         {
           "path": "godot_project/scripts/terrain/road_render_regression.gd",
@@ -699,7 +699,7 @@
         {
           "path": "godot_project/scripts/views/performance_hud.gd",
           "responsibility": "FPS 및 실제 평균·최대 프레임 시간 표시, F3 토글",
-          "lines": 56
+          "lines": 58
         },
         {
           "path": "godot_project/scripts/core/map_catalog_smoke.gd",
@@ -775,21 +775,31 @@
       "description": "게임 내 커스텀 오브젝트 열람"
     },
     "procedural_clouds": {
-      "description": "기상별 절차적 구름 혼합과 고정 성능 예산",
+      "description": "화면 1패스 레이마칭 구름층(지평선 70km), 기상 혼합·고도풍·태양광 연동과 품질 예산",
       "modules": [
         {
           "path": "godot_project/scripts/weather/procedural_cloud_manager.gd",
-          "description": "현재 메인 월드 구름 관리자, 혼합 및 품질 상한",
-          "lines": 120
+          "description": "메인 월드 구름 관리자: 기상 비율을 유형별 덮임·고도로 변환, 고도풍 이동, 태양·안개 동기화, 품질 단계",
+          "lines": 197
+        },
+        {
+          "path": "godot_project/scripts/weather/cloud_layer_factory.gd",
+          "description": "화면 고정 쿼드 1개와 기상도 2D·형상 3D 노이즈 텍스처 생성",
+          "lines": 64
+        },
+        {
+          "path": "godot_project/shaders/sky_cloud_layer.gdshader",
+          "description": "적운·층운·적란운 슬래브와 권운 평면 레이마칭, 구간 세분 적분, 태양광 감쇠·위상함수·대기 원근",
+          "lines": 238
         },
         {
           "path": "godot_project/scripts/weather/cloud_pool_factory.gd",
-          "description": "유형별 볼륨 풀과 공유 노이즈 초기 생성",
+          "description": "(미사용) 이전 상자 볼륨 풀 생성기",
           "lines": 51
         },
         {
           "path": "godot_project/shaders/procedural_cloud_volume.gdshader",
-          "description": "유형별 밀도 함수, 전처리 지시문 없는 깊이 가림 및 볼륨 적분",
+          "description": "(미사용) 이전 상자 볼륨 셰이더",
           "lines": 113
         }
       ]
@@ -861,7 +871,7 @@
         {
           "path": "godot_project/scripts/terrain/vector_data_stream.gd",
           "responsibility": "주변 구역 이동 스트리밍, 작업 스레드 병렬 배치 준비, 원거리 건물·도로 해제, 실행 중 2ms 노드 생성 예산, 캐시 무결성 검사",
-          "lines": 296
+          "lines": 299
         },
         {
           "path": "godot_project/scripts/services/map_image_preloader.gd",
@@ -881,13 +891,13 @@
         {
           "path": "godot_project/scripts/terrain/building_collision_stream.gd",
           "responsibility": "플레이어 주변 건물 청크에만 충돌체 생성·해제(보관 정점으로 작업 스레드 형상 생성, 고고도 생략)",
-          "lines": 96
+          "lines": 108
         },
         {
           "class_name": "RoadBatchBuilder",
           "path": "godot_project/scripts/terrain/road_batch_builder.gd",
           "responsibility": "스트리밍 도로 배치의 메타데이터 보정·중복 키 계산·메시 배열과 교량 충돌 형상 작업 스레드 계산, 메인 스레드 노드 조립",
-          "lines": 155
+          "lines": 204
         },
         {
           "class_name": "ThreadedSceneCache",
@@ -1508,6 +1518,18 @@
           "path": "godot_project/scripts/models/render_quality_profile.gd",
           "responsibility": "지도 시작 품질 정책",
           "lines": 48
+        },
+        {
+          "class_name": "AtmosphereStateModel",
+          "path": "godot_project/scripts/models/atmosphere_state_model.gd",
+          "responsibility": "지상 기후값을 고도별 기온·기압·밀도·습도·바람 및 비행 역학 값으로 변환",
+          "lines": 116
+        },
+        {
+          "class_name": "SurfaceClimateModel",
+          "path": "godot_project/scripts/models/surface_climate_model.gd",
+          "responsibility": "울산 평년값 기반 계절·시각·날씨 상태별 지상 기온·이슬점·습도·풍향풍속·해면기압 산출",
+          "lines": 158
         }
       ]
     },
@@ -1584,7 +1606,7 @@
         },
         {
           "path": "pipeline/processors/simple_maps/vectors.py",
-          "lines": 90,
+          "lines": 93,
           "responsibility": "도로·철도·건물·수계 및 작업 중 항만 계층의 벡터 어댑터."
         },
         {
@@ -1999,7 +2021,7 @@
           "class_name": "PrebakedRailBaker",
           "path": "godot_project/scripts/testing/prebaked_rail_baker.gd",
           "responsibility": "사전 보정 지형 3품질 및 고정 충돌, 선로·노반·터널 씬 저장",
-          "lines": 129
+          "lines": 135
         },
         {
           "class_name": "PrebakedRailSampler",
@@ -2285,6 +2307,644 @@
         {
           "path": "pipeline/processors/trees/capture.gd",
           "lines": 61
+        }
+      ]
+    },
+    "bamboo": {
+      "description": "경량 대나무 군집과 숲, 3단계 LOD 및 MultiMesh 청크 배치",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/bamboo_geometry.gd",
+          "lines": 68
+        },
+        {
+          "path": "godot_project/scripts/vegetation/bamboo_batch_factory.gd",
+          "lines": 38
+        },
+        {
+          "path": "pipeline/processors/bamboo/generate.py",
+          "lines": 99
+        },
+        {
+          "path": "pipeline/processors/bamboo/export_bamboo.gd",
+          "lines": 43
+        },
+        {
+          "path": "pipeline/processors/bamboo/capture.gd",
+          "lines": 61
+        }
+      ]
+    },
+    "silvergrass": {
+      "description": "경량 억새 군집·억새 군락·갈대 군락, 3단계 LOD와 계열 공통 MultiMesh 묶음기",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_geometry.gd",
+          "lines": 82
+        },
+        {
+          "path": "godot_project/scripts/vegetation/vegetation_batch_factory.gd",
+          "lines": 43
+        },
+        {
+          "path": "pipeline/processors/silvergrass/generate.py",
+          "lines": 101
+        },
+        {
+          "path": "pipeline/processors/silvergrass/silvergrass_geometry.gd",
+          "lines": 82
+        },
+        {
+          "path": "pipeline/processors/silvergrass/export_silvergrass.gd",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/silvergrass/capture.gd",
+          "lines": 61
+        }
+      ]
+    },
+    "forest_trees": {
+      "description": "공통 숲 수목 12형태(활엽 낙엽수·소나무형·관목·대나무 각 3) × 3 LOD, 정점 색 알파 흔들림 가중치",
+      "modules": [
+        {
+          "path": "godot_project/scripts/vegetation/forest_tree_geometry.gd",
+          "lines": 206
+        },
+        {
+          "path": "pipeline/processors/forest_trees/forest_tree_geometry.gd",
+          "lines": 206
+        },
+        {
+          "path": "pipeline/processors/forest_trees/generate.py",
+          "lines": 79
+        },
+        {
+          "path": "pipeline/processors/forest_trees/export_forest_trees.gd",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/forest_trees/capture.gd",
+          "lines": 62
+        }
+      ]
+    },
+    "taehwagang_ecozones": {
+      "description": "태화강 둔치 생태 구역(대숲·억새·수변 갈대·수림·잔디·들풀) 분할, 근경 개체 배치(흔들림), 숲 수관 덩어리 메시, 지형 셰이더 바닥 혼합",
+      "modules": [
+        {
+          "path": "config/taehwagang_ecozones.json",
+          "lines": 115
+        },
+        {
+          "path": "pipeline/collectors/ecozone_landcover_collector.py",
+          "lines": 48
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/generate.py",
+          "lines": 93
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/source_masks.py",
+          "lines": 61
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/geo_raster.py",
+          "lines": 138
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/mask_repair.py",
+          "lines": 63
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/obstacle_mask.py",
+          "lines": 143
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/zone_classifier.py",
+          "lines": 60
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/scatter_planner.py",
+          "lines": 138
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/ground_textures.py",
+          "lines": 80
+        },
+        {
+          "path": "pipeline/processors/taehwagang_ecozones/zone_exporter.py",
+          "lines": 199
+        },
+        {
+          "path": "godot_project/scripts/vegetation/ecozone_scatter.gd",
+          "lines": 176
+        },
+        {
+          "path": "godot_project/scripts/vegetation/forest_mass_builder.gd",
+          "lines": 136
+        },
+        {
+          "path": "godot_project/scripts/vegetation/ecozone_ground_binder.gd",
+          "lines": 56
+        },
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_field.gd",
+          "lines": 79
+        },
+        {
+          "path": "godot_project/scripts/vegetation/silvergrass_tuft.gd",
+          "lines": 43
+        },
+        {
+          "path": "godot_project/shaders/silvergrass_field.gdshader",
+          "lines": 79
+        },
+        {
+          "path": "godot_project/shaders/terrain_height.gdshaderinc",
+          "lines": 50
+        },
+        {
+          "path": "godot_project/shaders/vegetation_sway.gdshader",
+          "lines": 55
+        },
+        {
+          "path": "godot_project/shaders/forest_mass.gdshader",
+          "lines": 45
+        },
+        {
+          "path": "godot_project/shaders/ecozone_ground.gdshaderinc",
+          "lines": 62
+        }
+      ]
+    },
+    "ulsan_80km_roads": {
+      "description": "전체 도로 수집·변환·리비전 게시·경량 검증",
+      "modules": [
+        {
+          "path": "pipeline/processors/ulsan_roads/__init__.py",
+          "lines": 3,
+          "responsibility": "울산 80km 도로 변환·전 범위 감사·안전한 게시 모듈."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/audit.py",
+          "lines": 124,
+          "responsibility": "전체 조사 격자의 선분 길이 집계와 흑백 SVG 비교도."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/build.py",
+          "lines": 107,
+          "responsibility": "완료된 원본을 전용 리비전에 변환하고 기존 건물을 보존한다."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/geometry.py",
+          "lines": 110,
+          "responsibility": "도로 좌표 변환, 직사각형 선분 클리핑, 원본 폭 해석."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/map_check.py",
+          "lines": 31,
+          "responsibility": "활성 SVG 도로 계층과 확대 타일의 산출물을 확인한다."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/preview.py",
+          "lines": 110,
+          "responsibility": "전체 맵 대신 대표 6개 도로의 독립 메시 생성만 확인한다."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/publish.py",
+          "lines": 126,
+          "responsibility": "검증된 리비전을 배치하고 지도 참조를 마지막에 전환한다."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/register.py",
+          "lines": 37,
+          "responsibility": "도로 전용 도구와 경량 확인 모듈을 기존 색인에 병합한다."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/report.py",
+          "lines": 103,
+          "responsibility": "실제 산출물과 검증 기록에서 한국어 완료 보고서를 작성한다."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/test_geometry.py",
+          "lines": 61,
+          "responsibility": "경계 통과·재진입 및 속성 보존의 짧은 회귀 확인."
+        },
+        {
+          "path": "pipeline/processors/ulsan_roads/verify.py",
+          "lines": 60,
+          "responsibility": "도로 조각 추적, 건물 보존, 공간 배치 해시를 전 범위 확인한다."
+        },
+        {
+          "path": "pipeline/collectors/ulsan_roads/__init__.py",
+          "lines": 1,
+          "responsibility": "울산 80km 도로 원본 수집 패키지."
+        },
+        {
+          "path": "pipeline/collectors/ulsan_roads/collect.py",
+          "lines": 117,
+          "responsibility": "전체 경계 일괄 수집과 분할 재개 수집. 런타임 자산은 변경하지 않는다."
+        }
+      ]
+    },
+    "optical_effects": {
+      "description": "공유 구름 밀도 기반 지면 그림자·안개 광선·깊이 가림 플레어와 소형 밀집 건물 그림자 제외",
+      "modules": [
+        {
+          "path": "godot_project/scripts/weather/optical_effects_controller.gd",
+          "lines": 89
+        },
+        {
+          "path": "godot_project/scripts/weather/cloud_layer_factory.gd",
+          "lines": 64
+        },
+        {
+          "path": "godot_project/scripts/weather/procedural_cloud_manager.gd",
+          "lines": 197
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_shadow_policy.gd",
+          "lines": 72
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_mesh_builder.gd",
+          "lines": 300
+        },
+        {
+          "path": "godot_project/shaders/sky_cloud_layer.gdshader",
+          "lines": 238
+        },
+        {
+          "path": "godot_project/shaders/optics/atmospheric_light.gdshader",
+          "lines": 54
+        },
+        {
+          "path": "godot_project/shaders/optics/cloud_field.gdshaderinc",
+          "lines": 147
+        },
+        {
+          "path": "godot_project/shaders/optics/cloud_ground_shadow.gdshader",
+          "lines": 21
+        },
+        {
+          "path": "godot_project/shaders/optics/cloud_transmission.gdshaderinc",
+          "lines": 34
+        },
+        {
+          "path": "godot_project/shaders/optics/lens_flare.gdshaderinc",
+          "lines": 23
+        },
+        {
+          "path": "godot_project/shaders/optics/optical_depth.gdshaderinc",
+          "lines": 13
+        },
+        {
+          "path": "pipeline/processors/optical_effects/__init__.py",
+          "lines": 1
+        },
+        {
+          "path": "pipeline/processors/optical_effects/image_metrics.py",
+          "lines": 24
+        },
+        {
+          "path": "pipeline/processors/optical_effects/register.py",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/optical_effects/report.py",
+          "lines": 60
+        },
+        {
+          "path": "pipeline/processors/optical_effects/verify.py",
+          "lines": 98
+        },
+        {
+          "path": "pipeline/processors/optical_effects/preview.gd",
+          "lines": 176
+        },
+        {
+          "path": "pipeline/processors/optical_effects/preview_cycle.gd",
+          "lines": 2
+        },
+        {
+          "path": "pipeline/processors/optical_effects/preview_weather.gd",
+          "lines": 5
+        }
+      ]
+    },
+    "ulsan_dams": {
+      "description": "울산 용수댐 조사·경량 모델·좌표 배치",
+      "modules": [
+        {
+          "path": "pipeline/processors/ulsan_dams/__init__.py",
+          "lines": 2
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/bake.gd",
+          "lines": 49
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/check.py",
+          "lines": 102
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/fixture.gd",
+          "lines": 52
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/generate.py",
+          "lines": 60
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/geometry.py",
+          "lines": 53
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/preview.gd",
+          "lines": 84
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/publish.py",
+          "lines": 87
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/research.py",
+          "lines": 58
+        },
+        {
+          "path": "pipeline/processors/ulsan_dams/terrain_fixture.gd",
+          "lines": 13
+        },
+        {
+          "path": "godot_project/scripts/terrain/dam_landmark_manager.gd",
+          "responsibility": "댐 지리 축선 및 DEM 배치"
+        },
+        {
+          "path": "godot_project/scripts/terrain/dam_terrain_fit.gd",
+          "responsibility": "제방 표면과 충돌의 DEM 맞춤"
+        }
+      ]
+    },
+    "road_formation": {
+      "description": "도로 횡단 노반 절토·성토와 폭별 공간 배치·거리 컬링",
+      "modules": [
+        {
+          "path": "godot_project/scripts/terrain/road_formation_grader.gd",
+          "lines": 154
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_formation_field.gd",
+          "lines": 32
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_earthwork_mesher.gd",
+          "lines": 108
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_visibility_policy.gd",
+          "lines": 46
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_chunk_manager.gd",
+          "lines": 450
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_chunk.gd",
+          "lines": 189
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_chunk_mesher.gd",
+          "lines": 101
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_batch_builder.gd",
+          "lines": 204
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_mesh_builder.gd",
+          "lines": 307
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_terrain_tessellator.gd",
+          "lines": 68
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_road_manager.gd",
+          "lines": 485
+        },
+        {
+          "path": "godot_project/shaders/road_surface.gdshader",
+          "lines": 55
+        },
+        {
+          "path": "pipeline/processors/road_formation/__init__.py",
+          "lines": 1
+        },
+        {
+          "path": "pipeline/processors/road_formation/build.py",
+          "lines": 98
+        },
+        {
+          "path": "pipeline/processors/road_formation/complete_metadata.py",
+          "lines": 40
+        },
+        {
+          "path": "pipeline/processors/road_formation/preview.py",
+          "lines": 75
+        },
+        {
+          "path": "pipeline/processors/road_formation/profiles.py",
+          "lines": 48
+        },
+        {
+          "path": "pipeline/processors/road_formation/register.py",
+          "lines": 42
+        },
+        {
+          "path": "pipeline/processors/road_formation/report.py",
+          "lines": 70
+        },
+        {
+          "path": "pipeline/processors/road_formation/verify.py",
+          "lines": 119
+        },
+        {
+          "path": "pipeline/processors/road_formation/check.gd",
+          "lines": 127
+        },
+        {
+          "path": "pipeline/processors/road_formation/check_host.gd",
+          "lines": 9
+        },
+        {
+          "path": "pipeline/processors/road_formation/dense_check.gd",
+          "lines": 46
+        },
+        {
+          "path": "pipeline/processors/road_formation/render.gd",
+          "lines": 94
+        }
+      ]
+    },
+    "taehwa_civil": {
+      "description": "태화강 토목시설 및 투명 유향 수면·하상",
+      "modules": [
+        {
+          "path": "pipeline/processors/taehwa_civil/__init__.py",
+          "lines": 2
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/bake.gd",
+          "lines": 91
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/fixture.gd",
+          "lines": 67
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/generate.py",
+          "lines": 72
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/geometry.py",
+          "lines": 76
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/hydro.py",
+          "lines": 134
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/preview.gd",
+          "lines": 100
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/publish.py",
+          "lines": 127
+        },
+        {
+          "path": "pipeline/processors/taehwa_civil/survey.py",
+          "lines": 104
+        },
+        {
+          "path": "godot_project/scripts/water/river_bed_grade.gd"
+        },
+        {
+          "path": "godot_project/scripts/water/taehwa_water_manager.gd"
+        },
+        {
+          "path": "godot_project/scripts/terrain/taehwa_civil_manager.gd"
+        },
+        {
+          "path": "godot_project/shaders/taehwa_flow_water.gdshader"
+        },
+        {
+          "path": "godot_project/shaders/river_gravel.gdshader"
+        }
+      ]
+    },
+    "streaming_performance": {
+      "description": "공유 프레임 예산과 지형 페이지 업로드·이동 구역 끊김 개선",
+      "modules": [
+        {
+          "path": "godot_project/scripts/terrain/stream_frame_budget.gd",
+          "lines": 41
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_upload_pages.gd",
+          "lines": 37
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_mesh_upload.gd",
+          "lines": 40
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_chunk.gd",
+          "lines": 189
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_chunk_mesher.gd",
+          "lines": 101
+        },
+        {
+          "path": "godot_project/scripts/terrain/terrain_chunk_manager.gd",
+          "lines": 450
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_earthwork_detail.gd",
+          "lines": 50
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_earthwork_mesher.gd",
+          "lines": 108
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_formation_grader.gd",
+          "lines": 154
+        },
+        {
+          "path": "godot_project/scripts/terrain/road_batch_builder.gd",
+          "lines": 204
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_road_manager.gd",
+          "lines": 485
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_mesh_builder.gd",
+          "lines": 300
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_batch_assembler.gd",
+          "lines": 106
+        },
+        {
+          "path": "godot_project/scripts/terrain/building_collision_stream.gd",
+          "lines": 108
+        },
+        {
+          "path": "godot_project/scripts/terrain/vector_data_stream.gd",
+          "lines": 299
+        },
+        {
+          "path": "godot_project/scripts/views/performance_hud.gd",
+          "lines": 58
+        },
+        {
+          "path": "godot_project/scripts/testing/prebaked_rail_baker.gd",
+          "lines": 135
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/__init__.py",
+          "lines": 1
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/register.py",
+          "lines": 41
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/run.py",
+          "lines": 109
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/validate.py",
+          "lines": 40
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/detail_field.gd",
+          "lines": 4
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/measure.gd",
+          "lines": 110
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/state_check.gd",
+          "lines": 149
+        },
+        {
+          "path": "pipeline/processors/streaming_performance/state_host.gd",
+          "lines": 12
         }
       ]
     }

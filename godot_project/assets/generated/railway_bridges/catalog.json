@@ -4,61 +4,291 @@
       "id": "rail_box_girder",
       "length_m": 32,
       "name_ko": "복선 콘크리트 박스거더교",
-      "scene_path": "res://assets/generated/railway_bridges/rail_box_girder.scn"
+      "scene_path": "res://assets/generated/railway_bridges/rail_box_girder.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 650,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6.25,
+        -12,
+        -2.5
+      ],
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        34.5
+      ],
+      "elevation_min": -12,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "rail_plate_girder",
       "length_m": 24,
       "name_ko": "단선 강판거더교",
-      "scene_path": "res://assets/generated/railway_bridges/rail_plate_girder.scn"
+      "scene_path": "res://assets/generated/railway_bridges/rail_plate_girder.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 566,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -3.25,
+        -8,
+        -2.5
+      ],
+      "aabb_max_m": [
+        3.25,
+        6.69999980926514,
+        26.5
+      ],
+      "elevation_min": -8,
+      "elevation_max": 6.69999980926514,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "rail_through_truss",
       "length_m": 72,
       "name_ko": "복선 강재 트러스교",
-      "scene_path": "res://assets/generated/railway_bridges/rail_through_truss.scn"
+      "scene_path": "res://assets/generated/railway_bridges/rail_through_truss.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1334,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6.34999990463257,
+        -14,
+        -2.5
+      ],
+      "aabb_max_m": [
+        6.34999990463257,
+        8.17499923706055,
+        74.5
+      ],
+      "elevation_min": -14,
+      "elevation_max": 8.17499923706055,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "rail_deck_arch",
       "length_m": 120,
       "name_ko": "복선 상로 아치교",
-      "scene_path": "res://assets/generated/railway_bridges/rail_deck_arch.scn"
+      "scene_path": "res://assets/generated/railway_bridges/rail_deck_arch.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1730,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6.25,
+        -20,
+        -2.5
+      ],
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        122.5
+      ],
+      "elevation_min": -20,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "rail_multi_viaduct",
       "length_m": 160,
       "name_ko": "복선 다경간 고가교",
-      "scene_path": "res://assets/generated/railway_bridges/rail_multi_viaduct.scn"
+      "scene_path": "res://assets/generated/railway_bridges/rail_multi_viaduct.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 2068,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6.25,
+        -18,
+        -2.5
+      ],
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        162.5
+      ],
+      "elevation_min": -18,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "anyang_north_approach",
       "length_m": 235,
       "name_ko": "안양교 북측 접근 고가교",
-      "scene_path": "res://assets/generated/railway_bridges/anyang_north_approach.scn"
+      "scene_path": "res://assets/generated/railway_bridges/anyang_north_approach.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 3040,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        237.5
+      ],
+      "elevation_min": -24,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "anyang_main_bridge",
       "length_m": 231.8,
       "name_ko": "안양교 병렬 상로 아치 본체",
-      "scene_path": "res://assets/generated/railway_bridges/anyang_main_bridge.scn"
+      "scene_path": "res://assets/generated/railway_bridges/anyang_main_bridge.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 6688,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        234.300003051758
+      ],
+      "elevation_min": -24,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "anyang_station_approach",
       "length_m": 320,
       "name_ko": "울산역 방향 접근 고가교",
-      "scene_path": "res://assets/generated/railway_bridges/anyang_station_approach.scn"
+      "scene_path": "res://assets/generated/railway_bridges/anyang_station_approach.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 3882,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -6.25,
+        -24,
+        -2.5
+      ],
+      "aabb_max_m": [
+        6.25,
+        6.70000076293945,
+        322.5
+      ],
+      "elevation_min": -24,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "ulsan_station_interface",
       "length_m": 48,
       "name_ko": "울산역 연결부",
-      "scene_path": "res://assets/generated/railway_bridges/ulsan_station_interface.scn"
+      "scene_path": "res://assets/generated/railway_bridges/ulsan_station_interface.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 758,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -8.75,
+        -24,
+        -2.5
+      ],
+      "aabb_max_m": [
+        8.75,
+        6.70000076293945,
+        50.5
+      ],
+      "elevation_min": -24,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 1,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     },
     {
       "id": "ulsan_anyang_connected_set",
       "length_m": 834.8,
       "name_ko": "안양교–울산역 연결 세트",
-      "scene_path": "res://assets/generated/railway_bridges/ulsan_anyang_connected_set.scn"
+      "scene_path": "res://assets/generated/railway_bridges/ulsan_anyang_connected_set.scn",
+      "detail_profile": "rail_bridge_low_poly_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 14188,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -8.75,
+        -24,
+        -2.5
+      ],
+      "aabb_max_m": [
+        8.75,
+        6.70000076293945,
+        837.299987792969
+      ],
+      "elevation_min": -24,
+      "elevation_max": 6.70000076293945,
+      "bbox": null,
+      "resolution": null,
+      "placement_status": "asset_only",
+      "collision_shapes": 4,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true
     }
   ],
   "version": 1

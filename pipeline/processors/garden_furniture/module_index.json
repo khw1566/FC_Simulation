@@ -1,0 +1,6 @@
+{
+  "mesh": "mesh.GardenMesh",
+  "designs": "designs.build",
+  "generate": "generate.main",
+  "preview": "preview.render"
+}

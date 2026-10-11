@@ -7,27 +7,307 @@
     "east": 129.69843333333336
   },
   "world_size_meters": 80000,
-  "source_sha256": "7f8f98a76ae85f136da1671f7bc7c4595061e4c300f8396e43be03fdfd351110",
+  "source_sha256": "8844875cb88ce715653c9ef0f6198d5e6bff9e9dce70c697d7b81d6037962519",
   "zones": [
     {
       "zone_id": 1,
-      "name_ko": "울산 본항 주변 절차 공단",
+      "name_ko": "남양유업 경주공장 공단",
       "profile": "general_factory",
       "seed": 42018,
       "status": "confirmed",
-      "mask_pixels": 3906
+      "mask_pixels": 1548
     },
     {
       "zone_id": 2,
-      "name_ko": "온산항 주변 절차 공단",
-      "profile": "petrochemical",
+      "name_ko": "경산1-1일반산업단지 공단",
+      "profile": "general_factory",
       "seed": 42019,
       "status": "confirmed",
-      "mask_pixels": 3844
+      "mask_pixels": 14164
+    },
+    {
+      "zone_id": 3,
+      "name_ko": "자인공단 공단",
+      "profile": "general_factory",
+      "seed": 42020,
+      "status": "confirmed",
+      "mask_pixels": 1224
+    },
+    {
+      "zone_id": 4,
+      "name_ko": "명계3일반산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42021,
+      "status": "confirmed",
+      "mask_pixels": 2193
+    },
+    {
+      "zone_id": 5,
+      "name_ko": "산업 용지 5 공단",
+      "profile": "general_factory",
+      "seed": 42022,
+      "status": "confirmed",
+      "mask_pixels": 4580
+    },
+    {
+      "zone_id": 6,
+      "name_ko": "문산공단 공단",
+      "profile": "general_factory",
+      "seed": 42023,
+      "status": "confirmed",
+      "mask_pixels": 4484
+    },
+    {
+      "zone_id": 7,
+      "name_ko": "이화일반산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42024,
+      "status": "confirmed",
+      "mask_pixels": 1650
+    },
+    {
+      "zone_id": 8,
+      "name_ko": "매곡2일반산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42025,
+      "status": "confirmed",
+      "mask_pixels": 1396
+    },
+    {
+      "zone_id": 9,
+      "name_ko": "달천농공단지 공단",
+      "profile": "general_factory",
+      "seed": 42026,
+      "status": "confirmed",
+      "mask_pixels": 1294
+    },
+    {
+      "zone_id": 10,
+      "name_ko": "길천일반산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42027,
+      "status": "confirmed",
+      "mask_pixels": 5377
+    },
+    {
+      "zone_id": 11,
+      "name_ko": "대원그린 연료전지 공단",
+      "profile": "petrochemical",
+      "seed": 42028,
+      "status": "confirmed",
+      "mask_pixels": 22000
+    },
+    {
+      "zone_id": 12,
+      "name_ko": "현대중공업 공단",
+      "profile": "shipbuilding",
+      "seed": 42029,
+      "status": "confirmed",
+      "mask_pixels": 11581
+    },
+    {
+      "zone_id": 13,
+      "name_ko": "삼성SDI 울산사업장 공단",
+      "profile": "general_factory",
+      "seed": 42030,
+      "status": "confirmed",
+      "mask_pixels": 1684
+    },
+    {
+      "zone_id": 14,
+      "name_ko": "영남파워 공단",
+      "profile": "general_factory",
+      "seed": 42031,
+      "status": "confirmed",
+      "mask_pixels": 1300
+    },
+    {
+      "zone_id": 15,
+      "name_ko": "현대모비스수출 제2물류센터 공단",
+      "profile": "logistics",
+      "seed": 42032,
+      "status": "confirmed",
+      "mask_pixels": 2461
+    },
+    {
+      "zone_id": 16,
+      "name_ko": "울산알루미늄 공단",
+      "profile": "general_factory",
+      "seed": 42033,
+      "status": "confirmed",
+      "mask_pixels": 25032
+    },
+    {
+      "zone_id": 17,
+      "name_ko": "현대중공업 제2공장 공단",
+      "profile": "shipbuilding",
+      "seed": 42034,
+      "status": "confirmed",
+      "mask_pixels": 2722
+    },
+    {
+      "zone_id": 18,
+      "name_ko": "산업 용지 18 공단",
+      "profile": "general_factory",
+      "seed": 42035,
+      "status": "confirmed",
+      "mask_pixels": 1127
+    },
+    {
+      "zone_id": 19,
+      "name_ko": "산업 용지 19 공단",
+      "profile": "general_factory",
+      "seed": 42036,
+      "status": "confirmed",
+      "mask_pixels": 3763
+    },
+    {
+      "zone_id": 20,
+      "name_ko": "산업 용지 20 공단",
+      "profile": "general_factory",
+      "seed": 42037,
+      "status": "confirmed",
+      "mask_pixels": 1954
+    },
+    {
+      "zone_id": 21,
+      "name_ko": "S-oil 공단",
+      "profile": "petrochemical",
+      "seed": 42038,
+      "status": "confirmed",
+      "mask_pixels": 14916
+    },
+    {
+      "zone_id": 22,
+      "name_ko": "밀양용전일반산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42039,
+      "status": "confirmed",
+      "mask_pixels": 1393
+    },
+    {
+      "zone_id": 23,
+      "name_ko": "소주공업지구 공단",
+      "profile": "general_factory",
+      "seed": 42040,
+      "status": "confirmed",
+      "mask_pixels": 4327
+    },
+    {
+      "zone_id": 24,
+      "name_ko": "양산석계산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42041,
+      "status": "confirmed",
+      "mask_pixels": 2709
+    },
+    {
+      "zone_id": 25,
+      "name_ko": "산업 용지 25 공단",
+      "profile": "general_factory",
+      "seed": 42042,
+      "status": "confirmed",
+      "mask_pixels": 1664
+    },
+    {
+      "zone_id": 26,
+      "name_ko": "산업 용지 26 공단",
+      "profile": "general_factory",
+      "seed": 42043,
+      "status": "confirmed",
+      "mask_pixels": 6656
+    },
+    {
+      "zone_id": 27,
+      "name_ko": "양산 바이오가스화시설 공단",
+      "profile": "general_factory",
+      "seed": 42044,
+      "status": "confirmed",
+      "mask_pixels": 9272
+    },
+    {
+      "zone_id": 28,
+      "name_ko": "산업 용지 28 공단",
+      "profile": "general_factory",
+      "seed": 42045,
+      "status": "confirmed",
+      "mask_pixels": 1269
+    },
+    {
+      "zone_id": 29,
+      "name_ko": "덕계경동스마트밸리 일반산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42046,
+      "status": "confirmed",
+      "mask_pixels": 1513
+    },
+    {
+      "zone_id": 30,
+      "name_ko": "양산 매곡 그린공단 공단",
+      "profile": "general_factory",
+      "seed": 42047,
+      "status": "confirmed",
+      "mask_pixels": 1379
+    },
+    {
+      "zone_id": 31,
+      "name_ko": "산업 용지 31 공단",
+      "profile": "general_factory",
+      "seed": 42048,
+      "status": "confirmed",
+      "mask_pixels": 3421
+    },
+    {
+      "zone_id": 32,
+      "name_ko": "산업 용지 32 공단",
+      "profile": "general_factory",
+      "seed": 42049,
+      "status": "confirmed",
+      "mask_pixels": 1258
+    },
+    {
+      "zone_id": 33,
+      "name_ko": "산업 용지 33 공단",
+      "profile": "general_factory",
+      "seed": 42050,
+      "status": "confirmed",
+      "mask_pixels": 4503
+    },
+    {
+      "zone_id": 34,
+      "name_ko": "고려제강 공단",
+      "profile": "general_factory",
+      "seed": 42051,
+      "status": "confirmed",
+      "mask_pixels": 2785
+    },
+    {
+      "zone_id": 35,
+      "name_ko": "정관일반산업단지 공단",
+      "profile": "petrochemical",
+      "seed": 42052,
+      "status": "confirmed",
+      "mask_pixels": 2102
+    },
+    {
+      "zone_id": 36,
+      "name_ko": "산업 용지 36 공단",
+      "profile": "logistics",
+      "seed": 42053,
+      "status": "confirmed",
+      "mask_pixels": 2026
+    },
+    {
+      "zone_id": 37,
+      "name_ko": "서김해일반산업단지 공단",
+      "profile": "general_factory",
+      "seed": 42054,
+      "status": "confirmed",
+      "mask_pixels": 1111
     }
   ],
   "state": "masked",
-  "allowed_pixels": 5441,
+  "allowed_pixels": 115929,
   "road_generation_enabled": true,
-  "note_ko": "확정 구역에서 수계·급경사·기존 건물·도로·철도·공항·문화유산을 제외한 배치 허용 영역"
+  "note_ko": "OSM 산업 용지 구역에서 수계·급경사·철도·공항·문화유산을 제외한 배치 허용 영역"
 }

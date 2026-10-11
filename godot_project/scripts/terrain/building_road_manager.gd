@@ -8,6 +8,8 @@ const RoadClassifier = preload("res://scripts/terrain/road_segment_classifier.gd
 const RoadBatchBuilder = preload("res://scripts/terrain/road_batch_builder.gd")
 const BridgeManager = preload("res://scripts/terrain/bridge_landmark_manager.gd")
 const HeritageManager = preload("res://scripts/terrain/heritage_landmark_manager.gd")
+const DamManager = preload("res://scripts/terrain/dam_landmark_manager.gd")
+const CivilManager = preload("res://scripts/terrain/taehwa_civil_manager.gd")
 const RailwayManager = preload("res://scripts/terrain/railway_world_manager.gd")
 
 var _heritage_manager: Node3D
@@ -89,6 +91,8 @@ func _initialize_async() -> void:
 	if not is_inside_tree():
 		return
 	_load_heritage_landmarks()
+	_load_dam_landmarks()
+	_load_taehwa_civil()
 	await get_tree().process_frame
 	if not is_inside_tree():
 		return
@@ -107,6 +111,24 @@ func _load_railways() -> void:
 	await manager.setup(service.selected_map, terrain_manager, player_node)
 	if not manager.load_error.is_empty():
 		push_warning(manager.load_error)
+
+func _load_dam_landmarks() -> void:
+	var service := get_node_or_null("/root/MapSelectionService")
+	if service == null or service.selected_map == null:
+		return
+	var manager := DamManager.new()
+	manager.name = "UlsanDams"
+	add_child(manager)
+	manager.setup(service.selected_map, terrain_manager)
+
+func _load_taehwa_civil() -> void:
+	var service := get_node_or_null("/root/MapSelectionService")
+	if service == null or service.selected_map == null:
+		return
+	var manager := CivilManager.new()
+	manager.name = "TaehwaCivilFacilities"
+	add_child(manager)
+	manager.setup(service.selected_map)
 
 func _load_heritage_landmarks() -> void:
 	var service := get_node_or_null("/root/MapSelectionService")
@@ -365,22 +387,26 @@ func _render_roads_and_tunnels_batched(roads: Array, threaded: bool = false, bat
 		terrain_origin = Vector2.ONE * -size * 0.5
 	var ground := threaded_ground_sampler()
 	var water := threaded_water_sampler()
+	var formed_ground: bool = terrain_manager != null and terrain_manager._road_grader.enabled
 	var result: Dictionary
 	if threaded:
 		var holder := [null]
-		var task := WorkerThreadPool.add_task(func(): holder[0] = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin), false, "도로 배치 준비")
+		var task := WorkerThreadPool.add_task(func(): holder[0] = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin, formed_ground), false, "도로 배치 준비")
 		while not WorkerThreadPool.is_task_completed(task):
 			await get_tree().process_frame
 		WorkerThreadPool.wait_for_task_completion(task)
 		result = holder[0]
 	else:
-		result = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin)
+		result = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin, formed_ground)
 	if not is_inside_tree():
 		return record
 	for segment in result.tunnel_segments:
 		segment["batch"] = batch
 		tunnel_segments.append(segment)
-	record.container = RoadBatchBuilder.attach(self, result)
+	if threaded:
+		record.container = await RoadBatchBuilder.attach_streamed(self,result)
+	else:
+		record.container = RoadBatchBuilder.attach(self,result)
 	return record
 
 ## 멀어진 도로 배치를 해제하고 중복 판정 키와 터널 구간을 되돌린다.
@@ -396,6 +422,8 @@ func release_road_batch(record: Dictionary) -> void:
 
 func _configure_road_bounds(mesh_instance: MeshInstance3D) -> void:
 	mesh_instance.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	if mesh_instance.get_meta("formed_ground", false):
+		return
 	if terrain_manager == null or not road_material is ShaderMaterial:
 		return
 	var bounds := mesh_instance.mesh.get_aabb()

@@ -17,8 +17,11 @@ var heightmap_image: Image
 var elev_min: float
 var elev_max: float
 var railway_grader: RefCounted
+var road_grader: RefCounted
 var base_resolution := 128
 const Mesher = preload("res://scripts/terrain/terrain_chunk_mesher.gd")
+const Upload = preload("res://scripts/terrain/terrain_mesh_upload.gd")
+var _upload: RefCounted
 var _task_id := -1
 # 저사양 CPU에서 여러 청크를 동시에 계산하면 메인·렌더 스레드가 밀려 끊기므로 동시 계산 수를 제한한다.
 # 로딩 화면에서는 관리자가 값을 올려 첫 메시를 병렬로 만든다.
@@ -49,15 +52,16 @@ func init_chunk(coord: Vector2i, size: float, center_pos: Vector3, img: Image, m
 ## 캐시에 있으면 즉시 바꾸고, 없으면 작업 스레드에 메시 계산을 맡긴다.
 ## 계산이 끝날 때까지 기존 메시를 유지하며 poll_build()가 결과를 적용한다.
 func update_lod(target_lod: int, shader_mat: Material) -> void:
-	if target_lod == (_pending_lod if _pending_lod >= 0 else current_lod):
+	if target_lod == (_pending_lod if is_building() else current_lod):
+		if is_building():
+			_requested_lod = -1
+		return
+	if is_building():
+		_requested_lod = target_lod
 		return
 	if not LOD_RESOLUTIONS.has(target_lod) or _lod_mesh_cache.has(target_lod):
 		current_lod = target_lod
 		_apply_cached(shader_mat)
-		return
-	if _task_id >= 0:
-		# 다른 LOD를 계산 중이면 끝난 뒤 다시 요청한다.
-		_requested_lod = target_lod
 		return
 	if _active_builds >= max_concurrent_builds:
 		# 계산 자리가 없으면 다음 LOD 갱신 주기에 다시 요청된다.
@@ -67,27 +71,31 @@ func update_lod(target_lod: int, shader_mat: Material) -> void:
 ## 검사·베이크 도구용: 결과가 나올 때까지 기다려 즉시 적용한다.
 func update_lod_now(target_lod: int, shader_mat: Material) -> void:
 	update_lod(target_lod, shader_mat)
-	while _task_id >= 0:
+	while is_building():
 		# 작업 ID는 poll_build()가 회수하므로 여기서는 완료만 기다린다.
-		while not WorkerThreadPool.is_task_completed(_task_id):
+		while _task_id>=0 and not WorkerThreadPool.is_task_completed(_task_id):
 			OS.delay_usec(200)
-		poll_build(shader_mat)
+		poll_build(shader_mat,true)
 
 func is_building() -> bool:
-	return _task_id >= 0
+	return _task_id >= 0 or _upload!=null
 
 ## 계산이 끝났으면 메시를 적용하고 true를 반환한다.
-func poll_build(shader_mat: Material) -> bool:
-	if _task_id < 0 or not WorkerThreadPool.is_task_completed(_task_id):
+func poll_build(shader_mat: Material, immediate: bool = false) -> bool:
+	if _upload==null:
+		if _task_id<0 or not WorkerThreadPool.is_task_completed(_task_id):
+			return false
+		WorkerThreadPool.wait_for_task_completion(_task_id)
+		_task_id = -1
+		_upload = Upload.new()
+		_upload.begin(self,_result.pages,shader_mat)
+	if not _upload.step(immediate):
 		return false
-	WorkerThreadPool.wait_for_task_completion(_task_id)
-	_task_id = -1
-	_active_builds -= 1
 	var lod := _pending_lod
 	_pending_lod = -1
-	var mesh := ArrayMesh.new()
-	mesh.add_surface_from_arrays(Mesh.PRIMITIVE_TRIANGLES, _result.arrays)
-	_lod_mesh_cache[lod] = mesh
+	_lod_mesh_cache[lod] = _upload.container
+	_upload = null
+	_active_builds -= 1
 	if _result.has("heights"):
 		var shape := HeightMapShape3D.new()
 		shape.map_width = int(_result.grid_res) + 1
@@ -110,24 +118,26 @@ func _start_build(lod: int) -> void:
 	_active_builds += 1
 	var request := {"image": heightmap_image, "grid_res": base_resolution >> lod, "size": chunk_world_size, "center": chunk_center,
 		"elev_min": elev_min, "elev_max": elev_max, "grader": railway_grader if lod == 0 else null,
+		"road_grader": road_grader if lod == 0 else null,
+		"upload_pages": true,
 		"collision": lod == 0 and _collision_shape_resource == null}
 	_task_id = WorkerThreadPool.add_task(func(): _result = Mesher.compute(request), false, "지형 청크 LOD")
 
 func _apply_cached(shader_mat: Material) -> void:
 	if not LOD_RESOLUTIONS.has(current_lod):
 		# 범위 밖 (너무 먼 거리)일 경우 메쉬 제거
-		if mesh_instance:
-			mesh_instance.visible = false
+		for container in _lod_mesh_cache.values():
+			container.visible = false
 		if collision_shape:
 			collision_shape.disabled = true
 		return
-	if not mesh_instance:
-		mesh_instance = MeshInstance3D.new()
-		mesh_instance.name = "ChunkMesh"
-		add_child(mesh_instance)
-	mesh_instance.mesh = _lod_mesh_cache[current_lod]
-	mesh_instance.material_override = shader_mat
-	mesh_instance.visible = true
+	for lod in _lod_mesh_cache:
+		var container: Node3D = _lod_mesh_cache[lod]
+		container.visible = lod==current_lod
+		if lod==current_lod:
+			for child: MeshInstance3D in container.get_children():
+				child.material_override = shader_mat
+	mesh_instance = _lod_mesh_cache[current_lod].get_child(0)
 	# LOD 0(최근접 청크)에서만 정밀 물리 충돌체를 사용한다.
 	if current_lod == 0 and _collision_shape_resource != null:
 		if not collision_body:
@@ -144,10 +154,17 @@ func _apply_cached(shader_mat: Material) -> void:
 		collision_shape.disabled = true
 
 func _exit_tree() -> void:
+	var building := is_building()
 	if _task_id >= 0:
 		WorkerThreadPool.wait_for_task_completion(_task_id)
 		_task_id = -1
+	if building:
 		_active_builds -= 1
+	_upload = null
+
+## 사전 베이크 도구는 모든 렌더 메시를 읽어 대형 청크의 추가 페이지도 보존한다.
+func get_render_meshes() -> Array:
+	return _lod_mesh_cache[current_lod].get_children() if _lod_mesh_cache.has(current_lod) else []
 
 # 높이맵 픽셀 계단현상(Aliasing / Blockiness) 방지를 위한 3차 에르미트(Smoothstep Cubic) 보간 함수
 func get_surface_height(world_x: float, world_z: float) -> float:
@@ -164,6 +181,8 @@ func get_surface_height(world_x: float, world_z: float) -> float:
 	var d := _sample_bilinear((cell.x+1)/resolution,(cell.y+1)/resolution,w,h)
 	var value := a+f.x*(b-a)+f.y*(c-a) if f.x+f.y<=1 else d+(1-f.x)*(c-d)+(1-f.y)*(b-d)
 	var height := elev_min+value*(elev_max-elev_min)
+	if road_grader and current_lod == 0:
+		height = road_grader.corrected_height(Vector3(world_x,height,world_z))
 	return railway_grader.corrected_height(Vector3(world_x,height,world_z)) if railway_grader and current_lod == 0 else height
 
 func _sample_bilinear(u: float, v: float, w: int, h: int) -> float:

@@ -1,0 +1,23 @@
+{
+  "id": "naturalist_bed",
+  "label": "자연형 화단",
+  "ground": "meadow",
+  "plants": [
+    "perennial_upright",
+    "perennial_dry",
+    "ornamental_seedhead",
+    "rock_cluster"
+  ],
+  "reused": [
+    {
+      "path": "res://assets/generated/trees/shrub_lod0.scn",
+      "position": [
+        -5,
+        0,
+        -5
+      ],
+      "role": "shrub"
+    }
+  ],
+  "seed": 176
+}

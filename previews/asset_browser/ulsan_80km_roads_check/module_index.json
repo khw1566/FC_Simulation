@@ -1,0 +1,1 @@
+{"modules":[{"path":"check.gd","responsibility":"대표 6종 도로 메시 생성 확인"}],"dependencies":["road_batch_builder.gd","road_mesh_builder.gd","road_segment_classifier.gd","road_terrain_tessellator.gd"]}

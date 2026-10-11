@@ -1,38 +1,67 @@
 # 전체 에셋 인덱스
 수동 갱신 결과. 상세 경로·SHA256·원본 매니페스트 메타데이터는 `asset_index.json`을 참조한다.
 
-총 23,226개 파일. 쓰기 중 보류 0개. 지도 리비전은 보존된 자료이며 활성 여부를 추정하지 않는다.
+총 77,085개 파일. 쓰기 중 보류 0개. 지도 리비전은 보존된 자료이며 활성 여부를 추정하지 않는다.
 
 | 분류 | 파일 수 | 구성 |
 |---|---:|---|
-| 공항 (airport) | 2 | 데이터·메타데이터 1, 씬 1 |
+| 공항 (airport) | 5 | 데이터·메타데이터 3, 문서 1, 씬 1 |
 | 공통 에셋 메타데이터 (asset_metadata) | 2 | 데이터·메타데이터 2 |
-| 교량 (bridges) | 8 | 씬 8 |
-| 문화유산 (heritage) | 3 | 씬 2, 데이터·메타데이터 1 |
+| 대나무 군집 및 숲 LOD (bamboo) | 19 | 씬 12, 이미지 4, 데이터·메타데이터 2, 문서 1 |
+| 교량 (bridges) | 33 | 씬 17, 데이터·메타데이터 4, 문서 2, 모델 9, 이미지 1 |
+| 공통 숲 수목 LOD (forest_trees) | 52 | 씬 48, 데이터·메타데이터 2, 이미지 1, 문서 1 |
+| 기타 (garden_furniture) | 27 | 모델 12, 씬 12, 데이터·메타데이터 1, 이미지 1, 문서 1 |
+| 모듈형 항구·방파제·등대·하역시설 (harbor_assets) | 146 | 이미지 2, 모델 69, 씬 72, 데이터·메타데이터 2, 문서 1 |
+| 문화유산 (heritage) | 6 | 데이터·메타데이터 3, 씬 2, 문서 1 |
 | 원경 (horizon) | 5 | 데이터·메타데이터 2, 문서 1, 고도 래스터 1, 이미지 1 |
 | 산업·공단 (industrial) | 36 | 데이터·메타데이터 2, 모델 16, 씬 16, 이미지 1, 문서 1 |
 | 공단 야간 조명 (industrial_lighting) | 31 | 데이터·메타데이터 2, 씬 28, 문서 1 |
+| 공단 원경·초원경 LOD (industrial_lod) | 147 | 데이터·메타데이터 2, 기타 파일 2, 씬 84, 모델 56, 이미지 2, 문서 1 |
 | 플랜트 탑·배관·연기 (industrial_plant) | 32 | 데이터·메타데이터 2, 모델 12, 씬 16, 이미지 1, 문서 1 |
-| 공단 구역 마스크 (industrial_zones) | 11 | 이미지 5, 데이터·메타데이터 5, 문서 1 |
-| 일본 공항 (japan_airports) | 19 | 씬 18, 데이터·메타데이터 1 |
-| 지도 (maps) | 22,929 | 데이터·메타데이터 17876, 이미지 242, 벡터 이미지 4808, 지리 데이터 3 |
-| 보행교 (pedestrian_bridges) | 10 | 이미지 4, 씬 3, 데이터·메타데이터 2, 문서 1 |
+| 공단 구역 마스크 (industrial_zones) | 12 | 이미지 5, 데이터·메타데이터 6, 문서 1 |
+| 일본 공항 (japan_airports) | 22 | 데이터·메타데이터 3, 씬 18, 문서 1 |
+| 지도 (maps) | 75,345 | 데이터·메타데이터 55646, 이미지 268, 벡터 이미지 5075, 씬 1, 지리 데이터 8, 도로 노반 선분 14347 |
+| 공원·정원 공용 군락·바닥·조립 예제 (park_vegetation) | 69 | 기타 파일 2, 데이터·메타데이터 8, 씬 5, 모델 46, 셰이더 2, 리소스 5, 문서 1 |
+| 보행교 (pedestrian_bridges) | 11 | 이미지 4, 데이터·메타데이터 3, 씬 3, 문서 1 |
+| 철로 사전 보정 테스트 자산 (prebaked_rail_test) | 8 | 데이터·메타데이터 2, 씬 5, 문서 1 |
 | 철도 (railway) | 16 | 데이터·메타데이터 7, 이미지 2, 씬 6, 문서 1 |
 | 철도교 (railway_bridges) | 24 | 씬 10, 이미지 11, 데이터·메타데이터 2, 문서 1 |
 | 철도터널 (railway_tunnels) | 13 | 데이터·메타데이터 2, 씬 10, 문서 1 |
-| 셰이더 (shaders) | 16 | 셰이더 16 |
-| 역사·역세권 (taehwagang) | 14 | 모델 5, 씬 5, 이미지 2, 데이터·메타데이터 1, 문서 1 |
+| 기타 (riverside_trial) | 7 | 데이터·메타데이터 4, 이미지 2, 문서 1 |
+| 모듈형 도로·보행로·교차로·데크 (road_assets) | 709 | 모델 348, 씬 350, 데이터·메타데이터 2, 문서 2, 이미지 7 |
+| 셰이더 (shaders) | 31 | 셰이더 31 |
+| 억새·갈대 군락 LOD (silvergrass) | 19 | 데이터·메타데이터 2, 문서 1, 씬 12, 이미지 4 |
+| 기타 (taehwa_bridge_trial) | 1 | 데이터·메타데이터 1 |
+| 태화강 보·유수지·배수문 및 투명 수면·하상 (taehwa_civil) | 119 | 모델 5, 씬 106, 이미지 2, 데이터·메타데이터 3, 고도 래스터 1, 지리 데이터 1, 문서 1 |
+| 역사·역세권 (taehwagang) | 15 | 데이터·메타데이터 2, 모델 5, 씬 5, 이미지 2, 문서 1 |
+| 태화강 둔치 생태 구역·식생 배치 (taehwagang_ecozones) | 19 | 데이터·메타데이터 5, 이미지 13, 문서 1 |
 | 지형·지도 기반 (terrain) | 11 | 벡터 이미지 2, 데이터·메타데이터 5, 이미지 4 |
+| 품질별 지형 파생 자산 (terrain_quality) | 5 | 이미지 1, 고도 래스터 1, 데이터·메타데이터 3 |
 | 지형 타일 (tiles) | 17 | 이미지 16, 데이터·메타데이터 1 |
+| 수목 및 원경 LOD (trees) | 24 | 씬 16, 이미지 5, 데이터·메타데이터 2, 문서 1 |
 | UI (ui) | 6 | 이미지 3, 벡터 이미지 3 |
-| 선박 (vessels) | 16 | 모델 6, 씬 6, 이미지 1, 데이터·메타데이터 2, 문서 1 |
-| 발전소 (wolsong) | 5 | 데이터·메타데이터 1, 이미지 1, 문서 1, 모델 1, 씬 1 |
+| 울산 용수댐·조사 기반 제방 모델 및 지리 배치 (ulsan_dams) | 18 | 데이터·메타데이터 2, 씬 5, 모델 10, 문서 1 |
+| 선박 (vessels) | 17 | 데이터·메타데이터 3, 모델 6, 씬 6, 이미지 1, 문서 1 |
+| 발전소 (wolsong) | 6 | 데이터·메타데이터 2, 이미지 1, 문서 1, 모델 1, 씬 1 |
 
 ## 모델 및 씬 목록
 같은 이름의 GLB와 씬은 같은 에셋의 표현 파일이며 별도 모델 종류로 중복 계산하지 않는다.
 
 ### 공항
 - `godot_project/assets/generated/airport/ulsan_airport.scn`
+### 대나무 군집 및 숲 LOD
+- `godot_project/assets/generated/bamboo/bamboo_clump_auto_lod.scn`
+- `godot_project/assets/generated/bamboo/bamboo_clump_lod0.scn`
+- `godot_project/assets/generated/bamboo/bamboo_clump_lod1.scn`
+- `godot_project/assets/generated/bamboo/bamboo_clump_lod2.scn`
+- `godot_project/assets/generated/bamboo/bamboo_grove_auto_lod.scn`
+- `godot_project/assets/generated/bamboo/bamboo_grove_lod0.scn`
+- `godot_project/assets/generated/bamboo/bamboo_grove_lod1.scn`
+- `godot_project/assets/generated/bamboo/bamboo_grove_lod2.scn`
+- `godot_project/assets/generated/bamboo/bamboo_single_auto_lod.scn`
+- `godot_project/assets/generated/bamboo/bamboo_single_lod0.scn`
+- `godot_project/assets/generated/bamboo/bamboo_single_lod1.scn`
+- `godot_project/assets/generated/bamboo/bamboo_single_lod2.scn`
 ### 교량
 - `godot_project/assets/generated/bridges/bridge_00.scn`
 - `godot_project/assets/generated/bridges/bridge_01.scn`
@@ -42,6 +71,240 @@
 - `godot_project/assets/generated/bridges/bridge_05.scn`
 - `godot_project/assets/generated/bridges/bridge_06.scn`
 - `godot_project/assets/generated/bridges/bridge_07.scn`
+- 번영교 초안 — `godot_project/assets/generated/bridges/research_20261009/beonyeong_bridge_draft.glb`
+- `godot_project/assets/generated/bridges/research_20261009/beonyeong_bridge_draft.tscn`
+- 구영교 초안 — `godot_project/assets/generated/bridges/research_20261009/guyeong_bridge_draft.glb`
+- `godot_project/assets/generated/bridges/research_20261009/guyeong_bridge_draft.tscn`
+- 학성교 초안 — `godot_project/assets/generated/bridges/research_20261009/hakseong_bridge_draft.glb`
+- `godot_project/assets/generated/bridges/research_20261009/hakseong_bridge_draft.tscn`
+- 망성교 초안 — `godot_project/assets/generated/bridges/research_20261009/mangseong_bridge_draft.glb`
+- `godot_project/assets/generated/bridges/research_20261009/mangseong_bridge_draft.tscn`
+- 명촌교 초안 — `godot_project/assets/generated/bridges/research_20261009/myeongchon_bridge_draft.glb`
+- `godot_project/assets/generated/bridges/research_20261009/myeongchon_bridge_draft.tscn`
+- 선바위교 도로교 수정 초안 — `godot_project/assets/generated/bridges/research_20261009/seonbawi_road_revision.glb`
+- `godot_project/assets/generated/bridges/research_20261009/seonbawi_road_revision.tscn`
+- 태화교 초안 — `godot_project/assets/generated/bridges/research_20261009/taehwa_bridge_draft.glb`
+- `godot_project/assets/generated/bridges/research_20261009/taehwa_bridge_draft.tscn`
+- 울산대교 수정 초안 — `godot_project/assets/generated/bridges/research_20261009/ulsan_grand_revision.glb`
+- `godot_project/assets/generated/bridges/research_20261009/ulsan_grand_revision.tscn`
+- 울산교 보행교 초안 — `godot_project/assets/generated/bridges/research_20261009/ulsan_pedestrian_draft.glb`
+- `godot_project/assets/generated/bridges/research_20261009/ulsan_pedestrian_draft.tscn`
+### 공통 숲 수목 LOD
+- `godot_project/assets/generated/forest_trees/bamboo_a_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_a_lod0.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_a_lod1.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_a_lod2.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_b_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_b_lod0.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_b_lod1.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_b_lod2.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_c_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_c_lod0.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_c_lod1.scn`
+- `godot_project/assets/generated/forest_trees/bamboo_c_lod2.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_a_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_a_lod0.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_a_lod1.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_a_lod2.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_b_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_b_lod0.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_b_lod1.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_b_lod2.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_c_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_c_lod0.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_c_lod1.scn`
+- `godot_project/assets/generated/forest_trees/deciduous_c_lod2.scn`
+- `godot_project/assets/generated/forest_trees/pine_a_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/pine_a_lod0.scn`
+- `godot_project/assets/generated/forest_trees/pine_a_lod1.scn`
+- `godot_project/assets/generated/forest_trees/pine_a_lod2.scn`
+- `godot_project/assets/generated/forest_trees/pine_b_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/pine_b_lod0.scn`
+- `godot_project/assets/generated/forest_trees/pine_b_lod1.scn`
+- `godot_project/assets/generated/forest_trees/pine_b_lod2.scn`
+- `godot_project/assets/generated/forest_trees/pine_c_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/pine_c_lod0.scn`
+- `godot_project/assets/generated/forest_trees/pine_c_lod1.scn`
+- `godot_project/assets/generated/forest_trees/pine_c_lod2.scn`
+- `godot_project/assets/generated/forest_trees/shrub_a_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/shrub_a_lod0.scn`
+- `godot_project/assets/generated/forest_trees/shrub_a_lod1.scn`
+- `godot_project/assets/generated/forest_trees/shrub_a_lod2.scn`
+- `godot_project/assets/generated/forest_trees/shrub_b_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/shrub_b_lod0.scn`
+- `godot_project/assets/generated/forest_trees/shrub_b_lod1.scn`
+- `godot_project/assets/generated/forest_trees/shrub_b_lod2.scn`
+- `godot_project/assets/generated/forest_trees/shrub_c_auto_lod.scn`
+- `godot_project/assets/generated/forest_trees/shrub_c_lod0.scn`
+- `godot_project/assets/generated/forest_trees/shrub_c_lod1.scn`
+- `godot_project/assets/generated/forest_trees/shrub_c_lod2.scn`
+### garden_furniture
+- `godot_project/assets/generated/garden_furniture/far/backless_bench.glb`
+- `godot_project/assets/generated/garden_furniture/far/backless_bench.tscn`
+- `godot_project/assets/generated/garden_furniture/far/festival_marquee.glb`
+- `godot_project/assets/generated/garden_furniture/far/festival_marquee.tscn`
+- `godot_project/assets/generated/garden_furniture/far/korean_pavilion.glb`
+- `godot_project/assets/generated/garden_furniture/far/korean_pavilion.tscn`
+- `godot_project/assets/generated/garden_furniture/far/park_bench.glb`
+- `godot_project/assets/generated/garden_furniture/far/park_bench.tscn`
+- `godot_project/assets/generated/garden_furniture/far/picnic_table.glb`
+- `godot_project/assets/generated/garden_furniture/far/picnic_table.tscn`
+- `godot_project/assets/generated/garden_furniture/far/square_canopy.glb`
+- `godot_project/assets/generated/garden_furniture/far/square_canopy.tscn`
+- `godot_project/assets/generated/garden_furniture/near/backless_bench.glb`
+- `godot_project/assets/generated/garden_furniture/near/backless_bench.tscn`
+- `godot_project/assets/generated/garden_furniture/near/festival_marquee.glb`
+- `godot_project/assets/generated/garden_furniture/near/festival_marquee.tscn`
+- `godot_project/assets/generated/garden_furniture/near/korean_pavilion.glb`
+- `godot_project/assets/generated/garden_furniture/near/korean_pavilion.tscn`
+- `godot_project/assets/generated/garden_furniture/near/park_bench.glb`
+- `godot_project/assets/generated/garden_furniture/near/park_bench.tscn`
+- `godot_project/assets/generated/garden_furniture/near/picnic_table.glb`
+- `godot_project/assets/generated/garden_furniture/near/picnic_table.tscn`
+- `godot_project/assets/generated/garden_furniture/near/square_canopy.glb`
+- `godot_project/assets/generated/garden_furniture/near/square_canopy.tscn`
+### 모듈형 항구·방파제·등대·하역시설
+- 짧은 방파제 표지등 — `godot_project/assets/generated/harbor_assets/beacon_short.glb`
+- 짧은 방파제 표지등 — `godot_project/assets/generated/harbor_assets/beacon_short.tscn`
+- 방파제 곡선 45도 — `godot_project/assets/generated/harbor_assets/breakwater_curve_45.glb`
+- 방파제 곡선 45도 — `godot_project/assets/generated/harbor_assets/breakwater_curve_45.tscn`
+- 방파제 곡선 90도 — `godot_project/assets/generated/harbor_assets/breakwater_curve_90.glb`
+- 방파제 곡선 90도 — `godot_project/assets/generated/harbor_assets/breakwater_curve_90.tscn`
+- 방파제 등대 설치 끝단 — `godot_project/assets/generated/harbor_assets/breakwater_head.glb`
+- 방파제 등대 설치 끝단 — `godot_project/assets/generated/harbor_assets/breakwater_head.tscn`
+- 방파제 T 분기 — `godot_project/assets/generated/harbor_assets/breakwater_junction_t.glb`
+- 방파제 T 분기 — `godot_project/assets/generated/harbor_assets/breakwater_junction_t.tscn`
+- 방파제 4m→부두 6m 전환 — `godot_project/assets/generated/harbor_assets/breakwater_quay_adapter.glb`
+- 방파제 4m→부두 6m 전환 — `godot_project/assets/generated/harbor_assets/breakwater_quay_adapter.tscn`
+- 콘크리트 방파제 12m — `godot_project/assets/generated/harbor_assets/breakwater_straight_12m.glb`
+- 콘크리트 방파제 12m — `godot_project/assets/generated/harbor_assets/breakwater_straight_12m.tscn`
+- 콘크리트 방파제 12m 개방형 — `godot_project/assets/generated/harbor_assets/breakwater_straight_12m_open.glb`
+- 콘크리트 방파제 12m 개방형 — `godot_project/assets/generated/harbor_assets/breakwater_straight_12m_open.tscn`
+- 콘크리트 방파제 24m — `godot_project/assets/generated/harbor_assets/breakwater_straight_24m.glb`
+- 콘크리트 방파제 24m — `godot_project/assets/generated/harbor_assets/breakwater_straight_24m.tscn`
+- 콘크리트 방파제 6m — `godot_project/assets/generated/harbor_assets/breakwater_straight_6m.glb`
+- 콘크리트 방파제 6m — `godot_project/assets/generated/harbor_assets/breakwater_straight_6m.tscn`
+- 컨테이너 12m · 청색 — `godot_project/assets/generated/harbor_assets/container_12m_blue.glb`
+- 컨테이너 12m · 청색 — `godot_project/assets/generated/harbor_assets/container_12m_blue.tscn`
+- 컨테이너 12m · 녹색 — `godot_project/assets/generated/harbor_assets/container_12m_green.glb`
+- 컨테이너 12m · 녹색 — `godot_project/assets/generated/harbor_assets/container_12m_green.tscn`
+- 컨테이너 12m · 적색 — `godot_project/assets/generated/harbor_assets/container_12m_red.glb`
+- 컨테이너 12m · 적색 — `godot_project/assets/generated/harbor_assets/container_12m_red.tscn`
+- 컨테이너 6m · 청색 — `godot_project/assets/generated/harbor_assets/container_6m_blue.glb`
+- 컨테이너 6m · 청색 — `godot_project/assets/generated/harbor_assets/container_6m_blue.tscn`
+- 컨테이너 6m · 녹색 — `godot_project/assets/generated/harbor_assets/container_6m_green.glb`
+- 컨테이너 6m · 녹색 — `godot_project/assets/generated/harbor_assets/container_6m_green.tscn`
+- 컨테이너 6m · 적색 — `godot_project/assets/generated/harbor_assets/container_6m_red.glb`
+- 컨테이너 6m · 적색 — `godot_project/assets/generated/harbor_assets/container_6m_red.tscn`
+- 소형 컨테이너 이송 크레인 — `godot_project/assets/generated/harbor_assets/container_crane_feeder.glb`
+- 소형 컨테이너 이송 크레인 — `godot_project/assets/generated/harbor_assets/container_crane_feeder.tscn`
+- 야드 컨테이너 갠트리 — `godot_project/assets/generated/harbor_assets/container_crane_rtg.glb`
+- 야드 컨테이너 갠트리 — `godot_project/assets/generated/harbor_assets/container_crane_rtg.tscn`
+- 안벽 컨테이너 이송 크레인 — `godot_project/assets/generated/harbor_assets/container_crane_sts.glb`
+- 안벽 컨테이너 이송 크레인 — `godot_project/assets/generated/harbor_assets/container_crane_sts.tscn`
+- 컨테이너 적재 2×1×2 — `godot_project/assets/generated/harbor_assets/container_stack_2x1x2.glb`
+- 컨테이너 적재 2×1×2 — `godot_project/assets/generated/harbor_assets/container_stack_2x1x2.tscn`
+- 컨테이너 적재 2×1×3 — `godot_project/assets/generated/harbor_assets/container_stack_2x1x3.glb`
+- 컨테이너 적재 2×1×3 — `godot_project/assets/generated/harbor_assets/container_stack_2x1x3.tscn`
+- 컨테이너 적재 2×1×3 엇갈림 — `godot_project/assets/generated/harbor_assets/container_stack_2x1x3_stagger.glb`
+- 컨테이너 적재 2×1×3 엇갈림 — `godot_project/assets/generated/harbor_assets/container_stack_2x1x3_stagger.tscn`
+- 컨테이너 적재 2×2×2 — `godot_project/assets/generated/harbor_assets/container_stack_2x2x2.glb`
+- 컨테이너 적재 2×2×2 — `godot_project/assets/generated/harbor_assets/container_stack_2x2x2.tscn`
+- 컨테이너 적재 3×2×3 — `godot_project/assets/generated/harbor_assets/container_stack_3x2x3.glb`
+- 컨테이너 적재 3×2×3 — `godot_project/assets/generated/harbor_assets/container_stack_3x2x3.tscn`
+- 컨테이너 부두 조립 예제 — `godot_project/assets/generated/harbor_assets/container_terminal_demo.tscn`
+- 컨테이너 크레인 레일 12m — `godot_project/assets/generated/harbor_assets/crane_rails_12m.glb`
+- 컨테이너 크레인 레일 12m — `godot_project/assets/generated/harbor_assets/crane_rails_12m.tscn`
+- 사각 부두 완충재 — `godot_project/assets/generated/harbor_assets/fender_block.glb`
+- 사각 부두 완충재 — `godot_project/assets/generated/harbor_assets/fender_block.tscn`
+- 타이어형 부두 완충재 — `godot_project/assets/generated/harbor_assets/fender_tire.glb`
+- 타이어형 부두 완충재 — `godot_project/assets/generated/harbor_assets/fender_tire.tscn`
+- 소형 어시장 경매장 — `godot_project/assets/generated/harbor_assets/fish_auction.glb`
+- 소형 어시장 경매장 — `godot_project/assets/generated/harbor_assets/fish_auction.tscn`
+- 어선 인양 크레인 8m 기둥형 — `godot_project/assets/generated/harbor_assets/fishing_crane_compact.glb`
+- 어선 인양 크레인 8m 기둥형 — `godot_project/assets/generated/harbor_assets/fishing_crane_compact.tscn`
+- 어선 인양 크레인 6m 유압형 — `godot_project/assets/generated/harbor_assets/fishing_crane_hydraulic.glb`
+- 어선 인양 크레인 6m 유압형 — `godot_project/assets/generated/harbor_assets/fishing_crane_hydraulic.tscn`
+- 어선 인양 크레인 12m 기둥형 — `godot_project/assets/generated/harbor_assets/fishing_crane_post.glb`
+- 어선 인양 크레인 12m 기둥형 — `godot_project/assets/generated/harbor_assets/fishing_crane_post.tscn`
+- 소형 어항 조립 예제 — `godot_project/assets/generated/harbor_assets/fishing_harbor_demo.tscn`
+- 소형 어업 창고 — `godot_project/assets/generated/harbor_assets/fishing_shed.glb`
+- 소형 어업 창고 — `godot_project/assets/generated/harbor_assets/fishing_shed.tscn`
+- 소형 어선 인양 윈치 — `godot_project/assets/generated/harbor_assets/fishing_winch.glb`
+- 소형 어선 인양 윈치 — `godot_project/assets/generated/harbor_assets/fishing_winch.tscn`
+- 항구 조명 기둥 6m — `godot_project/assets/generated/harbor_assets/harbor_lamp_6m.glb`
+- 항구 조명 기둥 6m — `godot_project/assets/generated/harbor_assets/harbor_lamp_6m.tscn`
+- 항구 하역 창고 — `godot_project/assets/generated/harbor_assets/harbor_warehouse.glb`
+- 항구 하역 창고 — `godot_project/assets/generated/harbor_assets/harbor_warehouse.tscn`
+- 어업 얼음 저장고 — `godot_project/assets/generated/harbor_assets/ice_storage.glb`
+- 어업 얼음 저장고 — `godot_project/assets/generated/harbor_assets/ice_storage.tscn`
+- 녹색 원통 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_green.glb`
+- 녹색 원통 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_green.tscn`
+- 골조형 소형 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_lattice.glb`
+- 골조형 소형 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_lattice.tscn`
+- 적색 원통 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_red.glb`
+- 적색 원통 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_red.tscn`
+- 사각 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_square.glb`
+- 사각 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_square.tscn`
+- 백색 높은 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_white_tall.glb`
+- 백색 높은 등대 — `godot_project/assets/generated/harbor_assets/lighthouse_white_tall.tscn`
+- 계류 볼라드 — `godot_project/assets/generated/harbor_assets/mooring_bollard.glb`
+- 계류 볼라드 — `godot_project/assets/generated/harbor_assets/mooring_bollard.tscn`
+- 부두 지지말뚝 · 높이 12m — `godot_project/assets/generated/harbor_assets/pier_pile_12m.glb`
+- 부두 지지말뚝 · 높이 12m — `godot_project/assets/generated/harbor_assets/pier_pile_12m.tscn`
+- 부두 지지말뚝 · 높이 4m — `godot_project/assets/generated/harbor_assets/pier_pile_4m.glb`
+- 부두 지지말뚝 · 높이 4m — `godot_project/assets/generated/harbor_assets/pier_pile_4m.tscn`
+- 부두 지지말뚝 · 높이 8m — `godot_project/assets/generated/harbor_assets/pier_pile_8m.glb`
+- 부두 지지말뚝 · 높이 8m — `godot_project/assets/generated/harbor_assets/pier_pile_8m.tscn`
+- 부두 상판 12×12m — `godot_project/assets/generated/harbor_assets/quay_12x12.glb`
+- 부두 상판 12×12m — `godot_project/assets/generated/harbor_assets/quay_12x12.tscn`
+- 부두 상판 12×12m 해측 가장자리 — `godot_project/assets/generated/harbor_assets/quay_12x12_sea_edge.glb`
+- 부두 상판 12×12m 해측 가장자리 — `godot_project/assets/generated/harbor_assets/quay_12x12_sea_edge.tscn`
+- 부두 상판 6×12m — `godot_project/assets/generated/harbor_assets/quay_6x12.glb`
+- 부두 상판 6×12m — `godot_project/assets/generated/harbor_assets/quay_6x12.tscn`
+- 부두 상판 6×12m 해측 가장자리 — `godot_project/assets/generated/harbor_assets/quay_6x12_sea_edge.glb`
+- 부두 상판 6×12m 해측 가장자리 — `godot_project/assets/generated/harbor_assets/quay_6x12_sea_edge.tscn`
+- 부두 매립 기초 · 깊이 1m — `godot_project/assets/generated/harbor_assets/quay_foundation_1m.glb`
+- 부두 매립 기초 · 깊이 1m — `godot_project/assets/generated/harbor_assets/quay_foundation_1m.tscn`
+- 부두 매립 기초 · 깊이 2m — `godot_project/assets/generated/harbor_assets/quay_foundation_2m.glb`
+- 부두 매립 기초 · 깊이 2m — `godot_project/assets/generated/harbor_assets/quay_foundation_2m.tscn`
+- 부두 매립 기초 · 깊이 4m — `godot_project/assets/generated/harbor_assets/quay_foundation_4m.glb`
+- 부두 매립 기초 · 깊이 4m — `godot_project/assets/generated/harbor_assets/quay_foundation_4m.tscn`
+- 부두 매립 기초 · 깊이 8m — `godot_project/assets/generated/harbor_assets/quay_foundation_8m.glb`
+- 부두 매립 기초 · 깊이 8m — `godot_project/assets/generated/harbor_assets/quay_foundation_8m.tscn`
+- 부두 간단 난간 6m — `godot_project/assets/generated/harbor_assets/quay_guardrail_6m.glb`
+- 부두 간단 난간 6m — `godot_project/assets/generated/harbor_assets/quay_guardrail_6m.tscn`
+- 부두 사다리 3m — `godot_project/assets/generated/harbor_assets/quay_ladder_3m.glb`
+- 부두 사다리 3m — `godot_project/assets/generated/harbor_assets/quay_ladder_3m.tscn`
+- 부두 경사로 +1m — `godot_project/assets/generated/harbor_assets/quay_ramp_rise1m.glb`
+- 부두 경사로 +1m — `godot_project/assets/generated/harbor_assets/quay_ramp_rise1m.tscn`
+- 부두 경사로 +2m — `godot_project/assets/generated/harbor_assets/quay_ramp_rise2m.glb`
+- 부두 경사로 +2m — `godot_project/assets/generated/harbor_assets/quay_ramp_rise2m.tscn`
+- 부두 접근 계단 2m — `godot_project/assets/generated/harbor_assets/quay_stairs_2m.glb`
+- 부두 접근 계단 2m — `godot_project/assets/generated/harbor_assets/quay_stairs_2m.tscn`
+- 부두→기존 보행로 3m 접속 — `godot_project/assets/generated/harbor_assets/quay_walk_adapter_3m.glb`
+- 부두→기존 보행로 3m 접속 — `godot_project/assets/generated/harbor_assets/quay_walk_adapter_3m.tscn`
+- 부두 폭 전환 6→12m — `godot_project/assets/generated/harbor_assets/quay_width_6to12.glb`
+- 부두 폭 전환 6→12m — `godot_project/assets/generated/harbor_assets/quay_width_6to12.tscn`
+- 호안 벽체 12m · 깊이 2m — `godot_project/assets/generated/harbor_assets/seawall_12m_depth2m.glb`
+- 호안 벽체 12m · 깊이 2m — `godot_project/assets/generated/harbor_assets/seawall_12m_depth2m.tscn`
+- 호안 벽체 12m · 깊이 4m — `godot_project/assets/generated/harbor_assets/seawall_12m_depth4m.glb`
+- 호안 벽체 12m · 깊이 4m — `godot_project/assets/generated/harbor_assets/seawall_12m_depth4m.tscn`
+- 호안 벽체 12m · 깊이 8m — `godot_project/assets/generated/harbor_assets/seawall_12m_depth8m.glb`
+- 호안 벽체 12m · 깊이 8m — `godot_project/assets/generated/harbor_assets/seawall_12m_depth8m.tscn`
+- 선박 육상 전원·급수 설비 — `godot_project/assets/generated/harbor_assets/shore_power_water.glb`
+- 선박 육상 전원·급수 설비 — `godot_project/assets/generated/harbor_assets/shore_power_water.tscn`
+- 어선 진수 경사로 -2m — `godot_project/assets/generated/harbor_assets/slipway_drop2m.glb`
+- 어선 진수 경사로 -2m — `godot_project/assets/generated/harbor_assets/slipway_drop2m.tscn`
+- 어선 진수 경사로 -4m — `godot_project/assets/generated/harbor_assets/slipway_drop4m.glb`
+- 어선 진수 경사로 -4m — `godot_project/assets/generated/harbor_assets/slipway_drop4m.tscn`
+- 수평 상판·지형 높이 전환 예제 — `godot_project/assets/generated/harbor_assets/terrain_height_demo.tscn`
+- 테트라포드 단위 1.5m — `godot_project/assets/generated/harbor_assets/tetrapod_1.5m.glb`
+- 테트라포드 단위 1.5m — `godot_project/assets/generated/harbor_assets/tetrapod_1.5m.tscn`
+- 테트라포드 단위 2.5m — `godot_project/assets/generated/harbor_assets/tetrapod_2.5m.glb`
+- 테트라포드 단위 2.5m — `godot_project/assets/generated/harbor_assets/tetrapod_2.5m.tscn`
+- 테트라포드 단위 4m — `godot_project/assets/generated/harbor_assets/tetrapod_4m.glb`
+- 테트라포드 단위 4m — `godot_project/assets/generated/harbor_assets/tetrapod_4m.tscn`
 ### 문화유산
 - `godot_project/assets/generated/heritage/eonyang_eupseong.scn`
 - `godot_project/assets/generated/heritage/ulsan_waeseong.scn`
@@ -107,6 +370,147 @@
 - `godot_project/assets/generated/industrial_lighting/industrial_plant--stack_concrete.tscn`
 - `godot_project/assets/generated/industrial_lighting/industrial_plant--stack_steel.tscn`
 - `godot_project/assets/generated/industrial_lighting/industrial_plant--stack_triple.tscn`
+### 공단 원경·초원경 LOD
+- `godot_project/assets/generated/industrial_lod/industrial/cooling_fan_bank_auto_lod.tscn`
+- 냉각 팬 설비 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/cooling_fan_bank_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/cooling_fan_bank_lod1.tscn`
+- 냉각 팬 설비 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/cooling_fan_bank_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/cooling_fan_bank_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/cooling_tower_auto_lod.tscn`
+- 냉각탑 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/cooling_tower_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/cooling_tower_lod1.tscn`
+- 냉각탑 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/cooling_tower_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/cooling_tower_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/distillation_tower_auto_lod.tscn`
+- 증류탑 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/distillation_tower_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/distillation_tower_lod1.tscn`
+- 증류탑 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/distillation_tower_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/distillation_tower_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_flat_auto_lod.tscn`
+- 평지붕 공장 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/factory_flat_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_flat_lod1.tscn`
+- 평지붕 공장 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/factory_flat_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_flat_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_gable_auto_lod.tscn`
+- 박공지붕 공장 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/factory_gable_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_gable_lod1.tscn`
+- 박공지붕 공장 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/factory_gable_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_gable_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_sawtooth_auto_lod.tscn`
+- 톱니지붕 공장 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/factory_sawtooth_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_sawtooth_lod1.tscn`
+- 톱니지붕 공장 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/factory_sawtooth_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/factory_sawtooth_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/gantry_crane_auto_lod.tscn`
+- 갠트리 크레인 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/gantry_crane_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/gantry_crane_lod1.tscn`
+- 갠트리 크레인 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/gantry_crane_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/gantry_crane_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/industrial_chimney_auto_lod.tscn`
+- 대형 연통 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/industrial_chimney_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/industrial_chimney_lod1.tscn`
+- 대형 연통 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/industrial_chimney_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/industrial_chimney_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/liquid_storage_tank_auto_lod.tscn`
+- 원통형 액체저장고 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/liquid_storage_tank_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/liquid_storage_tank_lod1.tscn`
+- 원통형 액체저장고 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/liquid_storage_tank_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/liquid_storage_tank_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/lpg_sphere_auto_lod.tscn`
+- 구형 LPG저장고 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/lpg_sphere_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/lpg_sphere_lod1.tscn`
+- 구형 LPG저장고 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/lpg_sphere_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/lpg_sphere_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_elbow_auto_lod.tscn`
+- 파이프라인 곡관 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/pipeline_elbow_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_elbow_lod1.tscn`
+- 파이프라인 곡관 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/pipeline_elbow_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_elbow_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_straight_auto_lod.tscn`
+- 파이프라인 직선 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/pipeline_straight_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_straight_lod1.tscn`
+- 파이프라인 직선 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/pipeline_straight_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_straight_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_tee_auto_lod.tscn`
+- 파이프라인 분기 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/pipeline_tee_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_tee_lod1.tscn`
+- 파이프라인 분기 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/pipeline_tee_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/pipeline_tee_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/shipbuilding_hangar_auto_lod.tscn`
+- 조선용 대형 격납고 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/shipbuilding_hangar_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/shipbuilding_hangar_lod1.tscn`
+- 조선용 대형 격납고 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/shipbuilding_hangar_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/shipbuilding_hangar_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/tower_crane_auto_lod.tscn`
+- 타워 크레인 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/tower_crane_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/tower_crane_lod1.tscn`
+- 타워 크레인 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/tower_crane_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/tower_crane_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial/transmission_tower_auto_lod.tscn`
+- 송전탑 LOD1 — `godot_project/assets/generated/industrial_lod/industrial/transmission_tower_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/transmission_tower_lod1.tscn`
+- 송전탑 LOD2 — `godot_project/assets/generated/industrial_lod/industrial/transmission_tower_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial/transmission_tower_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/flare_lattice_auto_lod.tscn`
+- 격자 지지 플레어 탑 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/flare_lattice_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/flare_lattice_lod1.tscn`
+- 격자 지지 플레어 탑 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/flare_lattice_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/flare_lattice_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/process_column_auto_lod.tscn`
+- 다단 정유 공정 탑 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/process_column_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/process_column_lod1.tscn`
+- 다단 정유 공정 탑 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/process_column_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/process_column_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_cross_auto_lod.tscn`
+- 배관 랙 교차 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_cross_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_cross_lod1.tscn`
+- 배관 랙 교차 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_cross_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_cross_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_double_auto_lod.tscn`
+- 배관 랙 2층 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_double_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_double_lod1.tscn`
+- 배관 랙 2층 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_double_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_double_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_elbow_auto_lod.tscn`
+- 배관 랙 곡관 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_elbow_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_elbow_lod1.tscn`
+- 배관 랙 곡관 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_elbow_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_elbow_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_riser_auto_lod.tscn`
+- 배관 랙 높이 전환 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_riser_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_riser_lod1.tscn`
+- 배관 랙 높이 전환 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_riser_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_riser_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_straight_auto_lod.tscn`
+- 배관 랙 직선 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_straight_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_straight_lod1.tscn`
+- 배관 랙 직선 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_straight_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_straight_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_tee_auto_lod.tscn`
+- 배관 랙 분기 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_tee_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_tee_lod1.tscn`
+- 배관 랙 분기 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/rack_tee_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/rack_tee_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/scrubber_tower_auto_lod.tscn`
+- 습식 세정·배기 탑 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/scrubber_tower_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/scrubber_tower_lod1.tscn`
+- 습식 세정·배기 탑 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/scrubber_tower_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/scrubber_tower_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_concrete_auto_lod.tscn`
+- 고층 표식 연통 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/stack_concrete_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_concrete_lod1.tscn`
+- 고층 표식 연통 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/stack_concrete_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_concrete_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_steel_auto_lod.tscn`
+- 슬림 강철 연통 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/stack_steel_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_steel_lod1.tscn`
+- 슬림 강철 연통 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/stack_steel_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_steel_lod2.tscn`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_triple_auto_lod.tscn`
+- 3구 집합 연통 LOD1 — `godot_project/assets/generated/industrial_lod/industrial_plant/stack_triple_lod1.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_triple_lod1.tscn`
+- 3구 집합 연통 LOD2 — `godot_project/assets/generated/industrial_lod/industrial_plant/stack_triple_lod2.glb`
+- `godot_project/assets/generated/industrial_lod/industrial_plant/stack_triple_lod2.tscn`
 ### 플랜트 탑·배관·연기
 - 격자 지지 플레어 탑 — `godot_project/assets/generated/industrial_plant/flare_lattice.glb`
 - 격자 지지 플레어 탑 — `godot_project/assets/generated/industrial_plant/flare_lattice.tscn`
@@ -155,10 +559,70 @@
 - `godot_project/assets/generated/japan_airports/RJFZ.scn`
 - `godot_project/assets/generated/japan_airports/RJOF.scn`
 - `godot_project/assets/generated/japan_airports/RJOZ.scn`
+### 지도
+- `godot_project/assets/maps/ulsan_metro_60km/airport/ulsan_airport.scn`
+### 공원·정원 공용 군락·바닥·조립 예제
+- `godot_project/assets/generated/park_vegetation/compositions/bamboo_edge.tscn`
+- `godot_project/assets/generated/park_vegetation/compositions/flower_path.tscn`
+- `godot_project/assets/generated/park_vegetation/compositions/lawn_plaza.tscn`
+- `godot_project/assets/generated/park_vegetation/compositions/naturalist_bed.tscn`
+- `godot_project/assets/generated/park_vegetation/compositions/shaded_rest.tscn`
+- `godot_project/assets/generated/park_vegetation/flower_low_edge_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/flower_low_edge_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/flower_low_edge_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/flower_low_round_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/flower_low_round_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/flower_low_round_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/grass_dense_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/grass_dense_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/grass_sparse_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/grass_sparse_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_1m_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_1m_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_1m_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_2m_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_2m_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_2m_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_4m_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_4m_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_4m_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_corner_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_corner_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_corner_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_end_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_end_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/hedge_end_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/ornamental_fine_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/ornamental_fine_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/ornamental_fine_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/ornamental_seedhead_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/ornamental_seedhead_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/ornamental_seedhead_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/perennial_dry_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/perennial_dry_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/perennial_dry_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/perennial_upright_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/perennial_upright_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/perennial_upright_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/rock_cluster_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/rock_cluster_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/rock_cluster_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/rock_medium_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/rock_medium_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/rock_medium_lod2.glb`
+- `godot_project/assets/generated/park_vegetation/rock_small_lod0.glb`
+- `godot_project/assets/generated/park_vegetation/rock_small_lod1.glb`
+- `godot_project/assets/generated/park_vegetation/rock_small_lod2.glb`
 ### 보행교
 - 범용 보행 육교 — `godot_project/assets/generated/pedestrian_bridges/generic_pedestrian_overpass.scn`
 - 굴화리–다운동 도보 징검다리 — `godot_project/assets/generated/pedestrian_bridges/gulhwa_daun_crossing.scn`
 - 선바위교 — `godot_project/assets/generated/pedestrian_bridges/seonbawi_bridge.scn`
+### 철로 사전 보정 테스트 자산
+- `godot_project/assets/generated/prebaked_rail_test/collision.scn`
+- `godot_project/assets/generated/prebaked_rail_test/railway.scn`
+- `godot_project/assets/generated/prebaked_rail_test/terrain_high.scn`
+- `godot_project/assets/generated/prebaked_rail_test/terrain_light.scn`
+- `godot_project/assets/generated/prebaked_rail_test/terrain_standard.scn`
 ### 철도
 - 동해선 광역전철 야간 조명 조립 예제 — `godot_project/assets/generated/railway/night_assets/donghae_night_scene.scn`
 - 동해선 광역전철 야간 식별 철로 — `godot_project/assets/generated/railway/night_assets/donghae_track.scn`
@@ -188,30 +652,887 @@
 - 고속철도용 복선 터널 출구 — `godot_project/assets/generated/railway_tunnels/hsr_tunnel_exit.scn`
 - 고속철도용 복선 터널 내부 구조 확인용 — `godot_project/assets/generated/railway_tunnels/hsr_tunnel_inspection.scn`
 - 고속철도용 복선 터널 연결 세트 — `godot_project/assets/generated/railway_tunnels/hsr_tunnel_set.scn`
+### 모듈형 도로·보행로·교차로·데크
+- 보행 분리 볼라드 — `godot_project/assets/generated/road_assets/addon_bollards.glb`
+- 보행 분리 볼라드 — `godot_project/assets/generated/road_assets/addon_bollards.tscn`
+- 배수구 경계석 — `godot_project/assets/generated/road_assets/addon_curb_drain.glb`
+- 배수구 경계석 — `godot_project/assets/generated/road_assets/addon_curb_drain.tscn`
+- 낮은 경계석 — `godot_project/assets/generated/road_assets/addon_curb_mountable.glb`
+- 낮은 경계석 — `godot_project/assets/generated/road_assets/addon_curb_mountable.tscn`
+- 일반 경계석 — `godot_project/assets/generated/road_assets/addon_curb_straight.glb`
+- 일반 경계석 — `godot_project/assets/generated/road_assets/addon_curb_straight.tscn`
+- 선형 배수 덮개 — `godot_project/assets/generated/road_assets/addon_drain_channel.glb`
+- 선형 배수 덮개 — `godot_project/assets/generated/road_assets/addon_drain_channel.tscn`
+- 차량 방호울타리 — `godot_project/assets/generated/road_assets/addon_guardrail.glb`
+- 차량 방호울타리 — `godot_project/assets/generated/road_assets/addon_guardrail.tscn`
+- 녹지 띠 — `godot_project/assets/generated/road_assets/addon_planter_strip.glb`
+- 녹지 띠 — `godot_project/assets/generated/road_assets/addon_planter_strip.tscn`
+- 보행 난간 — `godot_project/assets/generated/road_assets/addon_railing.glb`
+- 보행 난간 — `godot_project/assets/generated/road_assets/addon_railing.tscn`
+- 보행 계단 — `godot_project/assets/generated/road_assets/addon_steps.glb`
+- 보행 계단 — `godot_project/assets/generated/road_assets/addon_steps.tscn`
+- 점자 유도블록 — `godot_project/assets/generated/road_assets/addon_tactile_guide.glb`
+- 점자 유도블록 — `godot_project/assets/generated/road_assets/addon_tactile_guide.tscn`
+- 점자 경고블록 — `godot_project/assets/generated/road_assets/addon_tactile_warning.glb`
+- 점자 경고블록 — `godot_project/assets/generated/road_assets/addon_tactile_warning.tscn`
+- 케이블 / 1.5m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_1.5m.glb`
+- 케이블 / 1.5m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_1.5m.tscn`
+- 케이블 / 3m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_3m.glb`
+- 케이블 / 3m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_3m.tscn`
+- 케이블 / 6m 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_6m.glb`
+- 케이블 / 6m 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_6m.tscn`
+- 케이블 / 경사 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_rise1m.glb`
+- 케이블 / 경사 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_rise1m.tscn`
+- 케이블 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve45_left.glb`
+- 케이블 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve45_left.tscn`
+- 케이블 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve45_right.glb`
+- 케이블 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve45_right.tscn`
+- 케이블 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve90_left.glb`
+- 케이블 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve90_left.tscn`
+- 케이블 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve90_right.glb`
+- 케이블 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_cable_w3_curve90_right.tscn`
+- 강철 / 1.5m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_1.5m.glb`
+- 강철 / 1.5m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_1.5m.tscn`
+- 강철 / 3m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_3m.glb`
+- 강철 / 3m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_3m.tscn`
+- 강철 / 6m 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_6m.glb`
+- 강철 / 6m 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_6m.tscn`
+- 강철 / 경사 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_rise1m.glb`
+- 강철 / 경사 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_rise1m.tscn`
+- 강철 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve45_left.glb`
+- 강철 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve45_left.tscn`
+- 강철 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve45_right.glb`
+- 강철 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve45_right.tscn`
+- 강철 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve90_left.glb`
+- 강철 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve90_left.tscn`
+- 강철 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve90_right.glb`
+- 강철 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_steel_w3_curve90_right.tscn`
+- 목재 / 1.5m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_1.5m.glb`
+- 목재 / 1.5m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_1.5m.tscn`
+- 목재 / 3m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_3m.glb`
+- 목재 / 3m 마감 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_3m.tscn`
+- 목재 / 6m 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_6m.glb`
+- 목재 / 6m 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_6m.tscn`
+- 목재 / 경사 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_rise1m.glb`
+- 목재 / 경사 데크 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_rise1m.tscn`
+- 목재 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve45_left.glb`
+- 목재 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve45_left.tscn`
+- 목재 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve45_right.glb`
+- 목재 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve45_right.tscn`
+- 목재 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve90_left.glb`
+- 목재 / 곡선 left 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve90_left.tscn`
+- 목재 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve90_right.glb`
+- 목재 / 곡선 right 난간 — `godot_project/assets/generated/road_assets/deck_rail_wood_w3_curve90_right.tscn`
+- 폭 1.5m / 높이 1m 전환 데크 — `godot_project/assets/generated/road_assets/deck_ramp_w1.5_rise1m.glb`
+- 폭 1.5m / 높이 1m 전환 데크 — `godot_project/assets/generated/road_assets/deck_ramp_w1.5_rise1m.tscn`
+- 폭 3m / 높이 1m 전환 데크 — `godot_project/assets/generated/road_assets/deck_ramp_w3_rise1m.glb`
+- 폭 3m / 높이 1m 전환 데크 — `godot_project/assets/generated/road_assets/deck_ramp_w3_rise1m.tscn`
+- 폭 4.5m / 높이 1m 전환 데크 — `godot_project/assets/generated/road_assets/deck_ramp_w4.5_rise1m.glb`
+- 폭 4.5m / 높이 1m 전환 데크 — `godot_project/assets/generated/road_assets/deck_ramp_w4.5_rise1m.tscn`
+- 석판 데크 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_stone_plaza_12m.glb`
+- 석판 데크 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_stone_plaza_12m.tscn`
+- 석판 데크 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_stone_plaza_6m.glb`
+- 석판 데크 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_stone_plaza_6m.tscn`
+- 석판 데크 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_stone_w1.5_straight.glb`
+- 석판 데크 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_stone_w1.5_straight.tscn`
+- 석판 데크 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_stone_w3_cross.glb`
+- 석판 데크 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_stone_w3_cross.tscn`
+- 석판 데크 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_stone_w3_curve45.glb`
+- 석판 데크 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_stone_w3_curve45.tscn`
+- 석판 데크 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_stone_w3_curve90.glb`
+- 석판 데크 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_stone_w3_curve90.tscn`
+- 석판 데크 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_stone_w3_straight.glb`
+- 석판 데크 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_stone_w3_straight.tscn`
+- 석판 데크 / T자 분기 — `godot_project/assets/generated/road_assets/deck_stone_w3_tee.glb`
+- 석판 데크 / T자 분기 — `godot_project/assets/generated/road_assets/deck_stone_w3_tee.tscn`
+- 석판 데크 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_stone_w4.5_straight.glb`
+- 석판 데크 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_stone_w4.5_straight.tscn`
+- 폭 3m / 높이 1.5m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w3_h1.5.glb`
+- 폭 3m / 높이 1.5m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w3_h1.5.tscn`
+- 폭 3m / 높이 3m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w3_h3.glb`
+- 폭 3m / 높이 3m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w3_h3.tscn`
+- 폭 3m / 높이 6m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w3_h6.glb`
+- 폭 3m / 높이 6m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w3_h6.tscn`
+- 폭 4.5m / 높이 1.5m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w4.5_h1.5.glb`
+- 폭 4.5m / 높이 1.5m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w4.5_h1.5.tscn`
+- 폭 4.5m / 높이 3m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w4.5_h3.glb`
+- 폭 4.5m / 높이 3m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w4.5_h3.tscn`
+- 폭 4.5m / 높이 6m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w4.5_h6.glb`
+- 폭 4.5m / 높이 6m 지지대 — `godot_project/assets/generated/road_assets/deck_support_w4.5_h6.tscn`
+- 풍화 목재 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_weathered_plaza_12m.glb`
+- 풍화 목재 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_weathered_plaza_12m.tscn`
+- 풍화 목재 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_weathered_plaza_6m.glb`
+- 풍화 목재 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_weathered_plaza_6m.tscn`
+- 풍화 목재 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w1.5_straight.glb`
+- 풍화 목재 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w1.5_straight.tscn`
+- 풍화 목재 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_weathered_w3_cross.glb`
+- 풍화 목재 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_weathered_w3_cross.tscn`
+- 풍화 목재 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w3_curve45.glb`
+- 풍화 목재 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w3_curve45.tscn`
+- 풍화 목재 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w3_curve90.glb`
+- 풍화 목재 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w3_curve90.tscn`
+- 풍화 목재 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w3_straight.glb`
+- 풍화 목재 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w3_straight.tscn`
+- 풍화 목재 / T자 분기 — `godot_project/assets/generated/road_assets/deck_weathered_w3_tee.glb`
+- 풍화 목재 / T자 분기 — `godot_project/assets/generated/road_assets/deck_weathered_w3_tee.tscn`
+- 풍화 목재 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w4.5_straight.glb`
+- 풍화 목재 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_weathered_w4.5_straight.tscn`
+- 횡방향 목재 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_wood_cross_plaza_12m.glb`
+- 횡방향 목재 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_wood_cross_plaza_12m.tscn`
+- 횡방향 목재 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_wood_cross_plaza_6m.glb`
+- 횡방향 목재 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_wood_cross_plaza_6m.tscn`
+- 횡방향 목재 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w1.5_straight.glb`
+- 횡방향 목재 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w1.5_straight.tscn`
+- 횡방향 목재 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_cross.glb`
+- 횡방향 목재 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_cross.tscn`
+- 횡방향 목재 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_curve45.glb`
+- 횡방향 목재 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_curve45.tscn`
+- 횡방향 목재 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_curve90.glb`
+- 횡방향 목재 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_curve90.tscn`
+- 횡방향 목재 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_straight.glb`
+- 횡방향 목재 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_straight.tscn`
+- 횡방향 목재 / T자 분기 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_tee.glb`
+- 횡방향 목재 / T자 분기 — `godot_project/assets/generated/road_assets/deck_wood_cross_w3_tee.tscn`
+- 횡방향 목재 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w4.5_straight.glb`
+- 횡방향 목재 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_cross_w4.5_straight.tscn`
+- 종방향 목재 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_wood_long_plaza_12m.glb`
+- 종방향 목재 / 12m 광장 — `godot_project/assets/generated/road_assets/deck_wood_long_plaza_12m.tscn`
+- 종방향 목재 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_wood_long_plaza_6m.glb`
+- 종방향 목재 / 6m 광장 — `godot_project/assets/generated/road_assets/deck_wood_long_plaza_6m.tscn`
+- 종방향 목재 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w1.5_straight.glb`
+- 종방향 목재 / 폭 1.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w1.5_straight.tscn`
+- 종방향 목재 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_cross.glb`
+- 종방향 목재 / 십자 분기 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_cross.tscn`
+- 종방향 목재 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_curve45.glb`
+- 종방향 목재 / 45도 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_curve45.tscn`
+- 종방향 목재 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_curve90.glb`
+- 종방향 목재 / 90도 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_curve90.tscn`
+- 종방향 목재 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_straight.glb`
+- 종방향 목재 / 폭 3m 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_straight.tscn`
+- 종방향 목재 / T자 분기 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_tee.glb`
+- 종방향 목재 / T자 분기 — `godot_project/assets/generated/road_assets/deck_wood_long_w3_tee.tscn`
+- 종방향 목재 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w4.5_straight.glb`
+- 종방향 목재 / 폭 4.5m 데크 — `godot_project/assets/generated/road_assets/deck_wood_long_w4.5_straight.tscn`
+- 1차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_1l_curve45.glb`
+- 1차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_1l_curve45.tscn`
+- 1차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_1l_curve90.glb`
+- 1차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_1l_curve90.tscn`
+- 1차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_1l_straight.glb`
+- 1차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_1l_straight.tscn`
+- 2차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_2l_curve45.glb`
+- 2차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_2l_curve45.tscn`
+- 2차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_2l_curve90.glb`
+- 2차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_2l_curve90.tscn`
+- 2차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_2l_straight.glb`
+- 2차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_2l_straight.tscn`
+- 3차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_3l_curve45.glb`
+- 3차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_3l_curve45.tscn`
+- 3차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_3l_curve90.glb`
+- 3차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_3l_curve90.tscn`
+- 3차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_3l_straight.glb`
+- 3차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_3l_straight.tscn`
+- 4차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_4l_curve45.glb`
+- 4차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_4l_curve45.tscn`
+- 4차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_4l_curve90.glb`
+- 4차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_4l_curve90.tscn`
+- 4차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_4l_straight.glb`
+- 4차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_4l_straight.tscn`
+- 5차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_5l_curve45.glb`
+- 5차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_5l_curve45.tscn`
+- 5차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_5l_curve90.glb`
+- 5차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_5l_curve90.tscn`
+- 5차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_5l_straight.glb`
+- 5차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_5l_straight.tscn`
+- 6차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_6l_curve45.glb`
+- 6차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_6l_curve45.tscn`
+- 6차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_6l_curve90.glb`
+- 6차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_6l_curve90.tscn`
+- 6차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_6l_straight.glb`
+- 6차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_6l_straight.tscn`
+- 7차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_7l_curve45.glb`
+- 7차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_7l_curve45.tscn`
+- 7차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_7l_curve90.glb`
+- 7차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_7l_curve90.tscn`
+- 7차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_7l_straight.glb`
+- 7차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_7l_straight.tscn`
+- 8차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_8l_curve45.glb`
+- 8차선 표시 / curve45 — `godot_project/assets/generated/road_assets/lane_overlay_8l_curve45.tscn`
+- 8차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_8l_curve90.glb`
+- 8차선 표시 / curve90 — `godot_project/assets/generated/road_assets/lane_overlay_8l_curve90.tscn`
+- 8차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_8l_straight.glb`
+- 8차선 표시 / straight — `godot_project/assets/generated/road_assets/lane_overlay_8l_straight.tscn`
+- 직진 화살표 — `godot_project/assets/generated/road_assets/mark_arrow_forward.glb`
+- 직진 화살표 — `godot_project/assets/generated/road_assets/mark_arrow_forward.tscn`
+- 직진·좌회전 화살표 — `godot_project/assets/generated/road_assets/mark_arrow_left.glb`
+- 직진·좌회전 화살표 — `godot_project/assets/generated/road_assets/mark_arrow_left.tscn`
+- 직진·우회전 화살표 — `godot_project/assets/generated/road_assets/mark_arrow_right.glb`
+- 직진·우회전 화살표 — `godot_project/assets/generated/road_assets/mark_arrow_right.tscn`
+- 자전거 표시 — `godot_project/assets/generated/road_assets/mark_cycle_symbol.glb`
+- 자전거 표시 — `godot_project/assets/generated/road_assets/mark_cycle_symbol.tscn`
+- 백색 점선 — `godot_project/assets/generated/road_assets/mark_dashed_white.glb`
+- 백색 점선 — `godot_project/assets/generated/road_assets/mark_dashed_white.tscn`
+- 황색 이중선 — `godot_project/assets/generated/road_assets/mark_double_yellow.glb`
+- 황색 이중선 — `godot_project/assets/generated/road_assets/mark_double_yellow.tscn`
+- 백색 실선 — `godot_project/assets/generated/road_assets/mark_solid_white.glb`
+- 백색 실선 — `godot_project/assets/generated/road_assets/mark_solid_white.tscn`
+- 황색 실선 — `godot_project/assets/generated/road_assets/mark_solid_yellow.glb`
+- 황색 실선 — `godot_project/assets/generated/road_assets/mark_solid_yellow.tscn`
+- 정지선 — `godot_project/assets/generated/road_assets/mark_stop_line.glb`
+- 정지선 — `godot_project/assets/generated/road_assets/mark_stop_line.tscn`
+- 횡단보도 — `godot_project/assets/generated/road_assets/mark_zebra_crossing.glb`
+- 횡단보도 — `godot_project/assets/generated/road_assets/mark_zebra_crossing.tscn`
+- 2차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_2l_asphalt.glb`
+- 2차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_2l_asphalt.tscn`
+- 2차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_2l_concrete.glb`
+- 2차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_2l_concrete.tscn`
+- 2차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_2l_markings.glb`
+- 2차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_2l_markings.tscn`
+- 2차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_2l_paver_gray.glb`
+- 2차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_2l_paver_gray.tscn`
+- 4차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_4l_asphalt.glb`
+- 4차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_4l_asphalt.tscn`
+- 4차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_4l_concrete.glb`
+- 4차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_4l_concrete.tscn`
+- 4차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_4l_markings.glb`
+- 4차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_4l_markings.tscn`
+- 4차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_4l_paver_gray.glb`
+- 4차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_4l_paver_gray.tscn`
+- 6차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_6l_asphalt.glb`
+- 6차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_6l_asphalt.tscn`
+- 6차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_6l_concrete.glb`
+- 6차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_6l_concrete.tscn`
+- 6차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_6l_markings.glb`
+- 6차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_6l_markings.tscn`
+- 6차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_6l_paver_gray.glb`
+- 6차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_6l_paver_gray.tscn`
+- 8차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_8l_asphalt.glb`
+- 8차선 / 아스팔트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_8l_asphalt.tscn`
+- 8차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_8l_concrete.glb`
+- 8차선 / 콘크리트 진입부 — `godot_project/assets/generated/road_assets/mix_approach_8l_concrete.tscn`
+- 8차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_8l_markings.glb`
+- 8차선 진입부 / 표시 — `godot_project/assets/generated/road_assets/mix_approach_8l_markings.tscn`
+- 8차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_8l_paver_gray.glb`
+- 8차선 / 블록 진입부 — `godot_project/assets/generated/road_assets/mix_approach_8l_paver_gray.tscn`
+- 2차선×2차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_cross_core.glb`
+- 2차선×2차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_cross_core.tscn`
+- 2·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_cross_crossings.glb`
+- 2·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_cross_crossings.tscn`
+- 2차선×2차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_tee_core.glb`
+- 2차선×2차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_tee_core.tscn`
+- 2·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_tee_crossings.glb`
+- 2·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_2l_2l_tee_crossings.tscn`
+- 4차선×2차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_cross_core.glb`
+- 4차선×2차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_cross_core.tscn`
+- 4·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_cross_crossings.glb`
+- 4·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_cross_crossings.tscn`
+- 4차선×2차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_tee_core.glb`
+- 4차선×2차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_tee_core.tscn`
+- 4·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_tee_crossings.glb`
+- 4·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_2l_tee_crossings.tscn`
+- 4차선×4차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_cross_core.glb`
+- 4차선×4차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_cross_core.tscn`
+- 4·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_cross_crossings.glb`
+- 4·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_cross_crossings.tscn`
+- 4차선×4차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_tee_core.glb`
+- 4차선×4차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_tee_core.tscn`
+- 4·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_tee_crossings.glb`
+- 4·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_4l_4l_tee_crossings.tscn`
+- 6차선×2차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_cross_core.glb`
+- 6차선×2차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_cross_core.tscn`
+- 6·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_cross_crossings.glb`
+- 6·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_cross_crossings.tscn`
+- 6차선×2차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_tee_core.glb`
+- 6차선×2차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_tee_core.tscn`
+- 6·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_tee_crossings.glb`
+- 6·2차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_2l_tee_crossings.tscn`
+- 6차선×4차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_cross_core.glb`
+- 6차선×4차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_cross_core.tscn`
+- 6·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_cross_crossings.glb`
+- 6·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_cross_crossings.tscn`
+- 6차선×4차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_tee_core.glb`
+- 6차선×4차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_tee_core.tscn`
+- 6·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_tee_crossings.glb`
+- 6·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_6l_4l_tee_crossings.tscn`
+- 8차선×4차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_cross_core.glb`
+- 8차선×4차선 / 십자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_cross_core.tscn`
+- 8·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_cross_crossings.glb`
+- 8·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_cross_crossings.tscn`
+- 8차선×4차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_tee_core.glb`
+- 8차선×4차선 / T자 중앙부 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_tee_core.tscn`
+- 8·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_tee_crossings.glb`
+- 8·4차선 교차로 / 횡단 표시 — `godot_project/assets/generated/road_assets/mix_junction_8l_4l_tee_crossings.tscn`
+- `godot_project/assets/generated/road_assets/mixed_intersection_deck_demo.tscn`
+- 콘크리트 차도 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_concrete_2l_curve45.glb`
+- 콘크리트 차도 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_concrete_2l_curve45.tscn`
+- 콘크리트 차도 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_concrete_2l_curve90.glb`
+- 콘크리트 차도 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_concrete_2l_curve90.tscn`
+- 콘크리트 차도 2차선 / straight — `godot_project/assets/generated/road_assets/road_concrete_2l_straight.glb`
+- 콘크리트 차도 2차선 / straight — `godot_project/assets/generated/road_assets/road_concrete_2l_straight.tscn`
+- 콘크리트 차도 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_concrete_4l_curve45.glb`
+- 콘크리트 차도 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_concrete_4l_curve45.tscn`
+- 콘크리트 차도 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_concrete_4l_curve90.glb`
+- 콘크리트 차도 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_concrete_4l_curve90.tscn`
+- 콘크리트 차도 4차선 / straight — `godot_project/assets/generated/road_assets/road_concrete_4l_straight.glb`
+- 콘크리트 차도 4차선 / straight — `godot_project/assets/generated/road_assets/road_concrete_4l_straight.tscn`
+- 비포장 차량도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_gravel_1l_curve45.glb`
+- 비포장 차량도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_gravel_1l_curve45.tscn`
+- 비포장 차량도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_gravel_1l_curve90.glb`
+- 비포장 차량도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_gravel_1l_curve90.tscn`
+- 비포장 차량도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_gravel_1l_straight.glb`
+- 비포장 차량도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_gravel_1l_straight.tscn`
+- 비포장 차량도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_gravel_2l_curve45.glb`
+- 비포장 차량도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_gravel_2l_curve45.tscn`
+- 비포장 차량도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_gravel_2l_curve90.glb`
+- 비포장 차량도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_gravel_2l_curve90.tscn`
+- 비포장 차량도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_gravel_2l_straight.glb`
+- 비포장 차량도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_gravel_2l_straight.tscn`
+- 고속도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_2l_curve45.glb`
+- 고속도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_2l_curve45.tscn`
+- 고속도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_2l_curve90.glb`
+- 고속도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_2l_curve90.tscn`
+- 고속도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_highway_2l_straight.glb`
+- 고속도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_highway_2l_straight.tscn`
+- 고속도로 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_4l_curve45.glb`
+- 고속도로 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_4l_curve45.tscn`
+- 고속도로 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_4l_curve90.glb`
+- 고속도로 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_4l_curve90.tscn`
+- 고속도로 4차선 / straight — `godot_project/assets/generated/road_assets/road_highway_4l_straight.glb`
+- 고속도로 4차선 / straight — `godot_project/assets/generated/road_assets/road_highway_4l_straight.tscn`
+- 고속도로 6차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_6l_curve45.glb`
+- 고속도로 6차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_6l_curve45.tscn`
+- 고속도로 6차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_6l_curve90.glb`
+- 고속도로 6차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_6l_curve90.tscn`
+- 고속도로 6차선 / straight — `godot_project/assets/generated/road_assets/road_highway_6l_straight.glb`
+- 고속도로 6차선 / straight — `godot_project/assets/generated/road_assets/road_highway_6l_straight.tscn`
+- 고속도로 8차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_8l_curve45.glb`
+- 고속도로 8차선 / curve45 — `godot_project/assets/generated/road_assets/road_highway_8l_curve45.tscn`
+- 고속도로 8차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_8l_curve90.glb`
+- 고속도로 8차선 / curve90 — `godot_project/assets/generated/road_assets/road_highway_8l_curve90.tscn`
+- 고속도로 8차선 / straight — `godot_project/assets/generated/road_assets/road_highway_8l_straight.glb`
+- 고속도로 8차선 / straight — `godot_project/assets/generated/road_assets/road_highway_8l_straight.tscn`
+- 공단 도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_1l_curve45.glb`
+- 공단 도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_1l_curve45.tscn`
+- 공단 도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_1l_curve90.glb`
+- 공단 도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_1l_curve90.tscn`
+- 공단 도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_1l_straight.glb`
+- 공단 도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_1l_straight.tscn`
+- 공단 도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_2l_curve45.glb`
+- 공단 도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_2l_curve45.tscn`
+- 공단 도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_2l_curve90.glb`
+- 공단 도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_2l_curve90.tscn`
+- 공단 도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_2l_straight.glb`
+- 공단 도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_2l_straight.tscn`
+- 공단 도로 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_4l_curve45.glb`
+- 공단 도로 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_4l_curve45.tscn`
+- 공단 도로 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_4l_curve90.glb`
+- 공단 도로 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_4l_curve90.tscn`
+- 공단 도로 4차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_4l_straight.glb`
+- 공단 도로 4차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_4l_straight.tscn`
+- 공단 도로 6차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_6l_curve45.glb`
+- 공단 도로 6차선 / curve45 — `godot_project/assets/generated/road_assets/road_industrial_6l_curve45.tscn`
+- 공단 도로 6차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_6l_curve90.glb`
+- 공단 도로 6차선 / curve90 — `godot_project/assets/generated/road_assets/road_industrial_6l_curve90.tscn`
+- 공단 도로 6차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_6l_straight.glb`
+- 공단 도로 6차선 / straight — `godot_project/assets/generated/road_assets/road_industrial_6l_straight.tscn`
+- 1→2차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_1_to_2.glb`
+- 1→2차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_1_to_2.tscn`
+- 2→4차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_2_to_4.glb`
+- 2→4차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_2_to_4.tscn`
+- 4→6차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_4_to_6.glb`
+- 4→6차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_4_to_6.tscn`
+- 6→8차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_6_to_8.glb`
+- 6→8차선 전환부 — `godot_project/assets/generated/road_assets/road_lanes_6_to_8.tscn`
+- 주거 공유도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_residential_1l_curve45.glb`
+- 주거 공유도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_residential_1l_curve45.tscn`
+- 주거 공유도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_residential_1l_curve90.glb`
+- 주거 공유도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_residential_1l_curve90.tscn`
+- 주거 공유도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_residential_1l_straight.glb`
+- 주거 공유도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_residential_1l_straight.tscn`
+- 주거 공유도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_residential_2l_curve45.glb`
+- 주거 공유도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_residential_2l_curve45.tscn`
+- 주거 공유도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_residential_2l_curve90.glb`
+- 주거 공유도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_residential_2l_curve90.tscn`
+- 주거 공유도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_residential_2l_straight.glb`
+- 주거 공유도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_residential_2l_straight.tscn`
+- 일반 지방도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_rural_1l_curve45.glb`
+- 일반 지방도로 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_rural_1l_curve45.tscn`
+- 일반 지방도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_rural_1l_curve90.glb`
+- 일반 지방도로 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_rural_1l_curve90.tscn`
+- 일반 지방도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_rural_1l_straight.glb`
+- 일반 지방도로 1차선 / straight — `godot_project/assets/generated/road_assets/road_rural_1l_straight.tscn`
+- 일반 지방도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_rural_2l_curve45.glb`
+- 일반 지방도로 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_rural_2l_curve45.tscn`
+- 일반 지방도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_rural_2l_curve90.glb`
+- 일반 지방도로 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_rural_2l_curve90.tscn`
+- 일반 지방도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_rural_2l_straight.glb`
+- 일반 지방도로 2차선 / straight — `godot_project/assets/generated/road_assets/road_rural_2l_straight.tscn`
+- 일반 지방도로 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_rural_4l_curve45.glb`
+- 일반 지방도로 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_rural_4l_curve45.tscn`
+- 일반 지방도로 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_rural_4l_curve90.glb`
+- 일반 지방도로 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_rural_4l_curve90.tscn`
+- 일반 지방도로 4차선 / straight — `godot_project/assets/generated/road_assets/road_rural_4l_straight.glb`
+- 일반 지방도로 4차선 / straight — `godot_project/assets/generated/road_assets/road_rural_4l_straight.tscn`
+- 도시 아스팔트 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_1l_curve45.glb`
+- 도시 아스팔트 1차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_1l_curve45.tscn`
+- 도시 아스팔트 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_1l_curve90.glb`
+- 도시 아스팔트 1차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_1l_curve90.tscn`
+- 도시 아스팔트 1차선 / straight — `godot_project/assets/generated/road_assets/road_urban_1l_straight.glb`
+- 도시 아스팔트 1차선 / straight — `godot_project/assets/generated/road_assets/road_urban_1l_straight.tscn`
+- 도시 2차선 cross 교차로 — `godot_project/assets/generated/road_assets/road_urban_2l_cross.glb`
+- 도시 2차선 cross 교차로 — `godot_project/assets/generated/road_assets/road_urban_2l_cross.tscn`
+- 도시 아스팔트 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_2l_curve45.glb`
+- 도시 아스팔트 2차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_2l_curve45.tscn`
+- 도시 아스팔트 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_2l_curve90.glb`
+- 도시 아스팔트 2차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_2l_curve90.tscn`
+- 도시 아스팔트 2차선 / straight — `godot_project/assets/generated/road_assets/road_urban_2l_straight.glb`
+- 도시 아스팔트 2차선 / straight — `godot_project/assets/generated/road_assets/road_urban_2l_straight.tscn`
+- 도시 2차선 tee 교차로 — `godot_project/assets/generated/road_assets/road_urban_2l_tee.glb`
+- 도시 2차선 tee 교차로 — `godot_project/assets/generated/road_assets/road_urban_2l_tee.tscn`
+- 도시 아스팔트 3차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_3l_curve45.glb`
+- 도시 아스팔트 3차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_3l_curve45.tscn`
+- 도시 아스팔트 3차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_3l_curve90.glb`
+- 도시 아스팔트 3차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_3l_curve90.tscn`
+- 도시 아스팔트 3차선 / straight — `godot_project/assets/generated/road_assets/road_urban_3l_straight.glb`
+- 도시 아스팔트 3차선 / straight — `godot_project/assets/generated/road_assets/road_urban_3l_straight.tscn`
+- 도시 4차선 cross 교차로 — `godot_project/assets/generated/road_assets/road_urban_4l_cross.glb`
+- 도시 4차선 cross 교차로 — `godot_project/assets/generated/road_assets/road_urban_4l_cross.tscn`
+- 도시 아스팔트 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_4l_curve45.glb`
+- 도시 아스팔트 4차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_4l_curve45.tscn`
+- 도시 아스팔트 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_4l_curve90.glb`
+- 도시 아스팔트 4차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_4l_curve90.tscn`
+- 도시 아스팔트 4차선 / straight — `godot_project/assets/generated/road_assets/road_urban_4l_straight.glb`
+- 도시 아스팔트 4차선 / straight — `godot_project/assets/generated/road_assets/road_urban_4l_straight.tscn`
+- 도시 4차선 tee 교차로 — `godot_project/assets/generated/road_assets/road_urban_4l_tee.glb`
+- 도시 4차선 tee 교차로 — `godot_project/assets/generated/road_assets/road_urban_4l_tee.tscn`
+- 도시 아스팔트 5차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_5l_curve45.glb`
+- 도시 아스팔트 5차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_5l_curve45.tscn`
+- 도시 아스팔트 5차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_5l_curve90.glb`
+- 도시 아스팔트 5차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_5l_curve90.tscn`
+- 도시 아스팔트 5차선 / straight — `godot_project/assets/generated/road_assets/road_urban_5l_straight.glb`
+- 도시 아스팔트 5차선 / straight — `godot_project/assets/generated/road_assets/road_urban_5l_straight.tscn`
+- 도시 아스팔트 6차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_6l_curve45.glb`
+- 도시 아스팔트 6차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_6l_curve45.tscn`
+- 도시 아스팔트 6차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_6l_curve90.glb`
+- 도시 아스팔트 6차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_6l_curve90.tscn`
+- 도시 아스팔트 6차선 / straight — `godot_project/assets/generated/road_assets/road_urban_6l_straight.glb`
+- 도시 아스팔트 6차선 / straight — `godot_project/assets/generated/road_assets/road_urban_6l_straight.tscn`
+- 도시 아스팔트 7차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_7l_curve45.glb`
+- 도시 아스팔트 7차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_7l_curve45.tscn`
+- 도시 아스팔트 7차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_7l_curve90.glb`
+- 도시 아스팔트 7차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_7l_curve90.tscn`
+- 도시 아스팔트 7차선 / straight — `godot_project/assets/generated/road_assets/road_urban_7l_straight.glb`
+- 도시 아스팔트 7차선 / straight — `godot_project/assets/generated/road_assets/road_urban_7l_straight.tscn`
+- 도시 아스팔트 8차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_8l_curve45.glb`
+- 도시 아스팔트 8차선 / curve45 — `godot_project/assets/generated/road_assets/road_urban_8l_curve45.tscn`
+- 도시 아스팔트 8차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_8l_curve90.glb`
+- 도시 아스팔트 8차선 / curve90 — `godot_project/assets/generated/road_assets/road_urban_8l_curve90.tscn`
+- 도시 아스팔트 8차선 / straight — `godot_project/assets/generated/road_assets/road_urban_8l_straight.glb`
+- 도시 아스팔트 8차선 / straight — `godot_project/assets/generated/road_assets/road_urban_8l_straight.tscn`
+- `godot_project/assets/generated/road_assets/road_walk_mix_demo.tscn`
+- 아스팔트 보행로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_asphalt_w1.5_straight.glb`
+- 아스팔트 보행로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_asphalt_w1.5_straight.tscn`
+- 아스팔트 보행로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_asphalt_w3_curve90.glb`
+- 아스팔트 보행로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_asphalt_w3_curve90.tscn`
+- 아스팔트 보행로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_asphalt_w3_straight.glb`
+- 아스팔트 보행로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_asphalt_w3_straight.tscn`
+- 아스팔트 보행로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_asphalt_w4.5_straight.glb`
+- 아스팔트 보행로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_asphalt_w4.5_straight.tscn`
+- 해안 목재 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_boardwalk_w1.5_straight.glb`
+- 해안 목재 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_boardwalk_w1.5_straight.tscn`
+- 해안 목재 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_boardwalk_w3_curve90.glb`
+- 해안 목재 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_boardwalk_w3_curve90.tscn`
+- 해안 목재 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_boardwalk_w3_straight.glb`
+- 해안 목재 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_boardwalk_w3_straight.tscn`
+- 해안 목재 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_boardwalk_w4.5_straight.glb`
+- 해안 목재 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_boardwalk_w4.5_straight.tscn`
+- 엇갈린 사선 벽돌 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w1.5_straight.glb`
+- 엇갈린 사선 벽돌 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w1.5_straight.tscn`
+- 엇갈린 사선 벽돌 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w3_curve90.glb`
+- 엇갈린 사선 벽돌 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w3_curve90.tscn`
+- 엇갈린 사선 벽돌 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w3_straight.glb`
+- 엇갈린 사선 벽돌 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w3_straight.tscn`
+- 엇갈린 사선 벽돌 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w4.5_straight.glb`
+- 엇갈린 사선 벽돌 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_brick_herringbone_w4.5_straight.tscn`
+- 줄눈 벽돌 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_brick_running_w1.5_straight.glb`
+- 줄눈 벽돌 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_brick_running_w1.5_straight.tscn`
+- 줄눈 벽돌 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_brick_running_w3_cross.glb`
+- 줄눈 벽돌 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_brick_running_w3_cross.tscn`
+- 줄눈 벽돌 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_brick_running_w3_curve90.glb`
+- 줄눈 벽돌 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_brick_running_w3_curve90.tscn`
+- 줄눈 벽돌 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_brick_running_w3_straight.glb`
+- 줄눈 벽돌 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_brick_running_w3_straight.tscn`
+- 줄눈 벽돌 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_brick_running_w3_tee.glb`
+- 줄눈 벽돌 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_brick_running_w3_tee.tscn`
+- 줄눈 벽돌 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_brick_running_w4.5_straight.glb`
+- 줄눈 벽돌 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_brick_running_w4.5_straight.tscn`
+- 불규칙 돌포장 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_cobblestone_w1.5_straight.glb`
+- 불규칙 돌포장 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_cobblestone_w1.5_straight.tscn`
+- 불규칙 돌포장 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_cobblestone_w3_curve90.glb`
+- 불규칙 돌포장 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_cobblestone_w3_curve90.tscn`
+- 불규칙 돌포장 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_cobblestone_w3_straight.glb`
+- 불규칙 돌포장 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_cobblestone_w3_straight.tscn`
+- 불규칙 돌포장 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_cobblestone_w4.5_straight.glb`
+- 불규칙 돌포장 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_cobblestone_w4.5_straight.tscn`
+- 일반 콘크리트 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_concrete_w1.5_straight.glb`
+- 일반 콘크리트 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_concrete_w1.5_straight.tscn`
+- 일반 콘크리트 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_concrete_w3_cross.glb`
+- 일반 콘크리트 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_concrete_w3_cross.tscn`
+- 일반 콘크리트 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_concrete_w3_curve90.glb`
+- 일반 콘크리트 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_concrete_w3_curve90.tscn`
+- 일반 콘크리트 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_concrete_w3_straight.glb`
+- 일반 콘크리트 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_concrete_w3_straight.tscn`
+- 일반 콘크리트 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_concrete_w3_tee.glb`
+- 일반 콘크리트 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_concrete_w3_tee.tscn`
+- 일반 콘크리트 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_concrete_w4.5_straight.glb`
+- 일반 콘크리트 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_concrete_w4.5_straight.tscn`
+- 노후 콘크리트 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_concrete_worn_w1.5_straight.glb`
+- 노후 콘크리트 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_concrete_worn_w1.5_straight.tscn`
+- 노후 콘크리트 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_concrete_worn_w3_curve90.glb`
+- 노후 콘크리트 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_concrete_worn_w3_curve90.tscn`
+- 노후 콘크리트 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_concrete_worn_w3_straight.glb`
+- 노후 콘크리트 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_concrete_worn_w3_straight.tscn`
+- 노후 콘크리트 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_concrete_worn_w4.5_straight.glb`
+- 노후 콘크리트 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_concrete_worn_w4.5_straight.tscn`
+- 보도 턱 낮춤 경사로 — `godot_project/assets/generated/road_assets/walk_curb_ramp_w3.glb`
+- 보도 턱 낮춤 경사로 — `godot_project/assets/generated/road_assets/walk_curb_ramp_w3.tscn`
+- 다진 흙길 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_earth_w1.5_straight.glb`
+- 다진 흙길 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_earth_w1.5_straight.tscn`
+- 다진 흙길 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_earth_w3_curve90.glb`
+- 다진 흙길 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_earth_w3_curve90.tscn`
+- 다진 흙길 / 폭 3m — `godot_project/assets/generated/road_assets/walk_earth_w3_straight.glb`
+- 다진 흙길 / 폭 3m — `godot_project/assets/generated/road_assets/walk_earth_w3_straight.tscn`
+- 다진 흙길 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_earth_w4.5_straight.glb`
+- 다진 흙길 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_earth_w4.5_straight.tscn`
+- 숲속 오솔길 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_forest_w1.5_straight.glb`
+- 숲속 오솔길 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_forest_w1.5_straight.tscn`
+- 숲속 오솔길 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_forest_w3_curve90.glb`
+- 숲속 오솔길 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_forest_w3_curve90.tscn`
+- 숲속 오솔길 / 폭 3m — `godot_project/assets/generated/road_assets/walk_forest_w3_straight.glb`
+- 숲속 오솔길 / 폭 3m — `godot_project/assets/generated/road_assets/walk_forest_w3_straight.tscn`
+- 숲속 오솔길 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_forest_w4.5_straight.glb`
+- 숲속 오솔길 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_forest_w4.5_straight.tscn`
+- 밝은 화강석 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_granite_w1.5_straight.glb`
+- 밝은 화강석 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_granite_w1.5_straight.tscn`
+- 밝은 화강석 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_granite_w3_curve90.glb`
+- 밝은 화강석 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_granite_w3_curve90.tscn`
+- 밝은 화강석 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_granite_w3_straight.glb`
+- 밝은 화강석 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_granite_w3_straight.tscn`
+- 밝은 화강석 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_granite_w4.5_straight.glb`
+- 밝은 화강석 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_granite_w4.5_straight.tscn`
+- 자갈 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_gravel_w1.5_straight.glb`
+- 자갈 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_gravel_w1.5_straight.tscn`
+- 자갈 산책로 / cross 분기 — `godot_project/assets/generated/road_assets/walk_gravel_w3_cross.glb`
+- 자갈 산책로 / cross 분기 — `godot_project/assets/generated/road_assets/walk_gravel_w3_cross.tscn`
+- 자갈 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_gravel_w3_curve90.glb`
+- 자갈 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_gravel_w3_curve90.tscn`
+- 자갈 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_gravel_w3_straight.glb`
+- 자갈 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_gravel_w3_straight.tscn`
+- 자갈 산책로 / tee 분기 — `godot_project/assets/generated/road_assets/walk_gravel_w3_tee.glb`
+- 자갈 산책로 / tee 분기 — `godot_project/assets/generated/road_assets/walk_gravel_w3_tee.tscn`
+- 자갈 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_gravel_w4.5_straight.glb`
+- 자갈 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_gravel_w4.5_straight.tscn`
+- 회색 인터로킹 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_paver_gray_w1.5_straight.glb`
+- 회색 인터로킹 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_paver_gray_w1.5_straight.tscn`
+- 회색 인터로킹 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_cross.glb`
+- 회색 인터로킹 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_cross.tscn`
+- 회색 인터로킹 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_curve90.glb`
+- 회색 인터로킹 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_curve90.tscn`
+- 회색 인터로킹 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_straight.glb`
+- 회색 인터로킹 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_straight.tscn`
+- 회색 인터로킹 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_tee.glb`
+- 회색 인터로킹 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_paver_gray_w3_tee.tscn`
+- 회색 인터로킹 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_paver_gray_w4.5_straight.glb`
+- 회색 인터로킹 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_paver_gray_w4.5_straight.tscn`
+- 적갈색 인터로킹 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_paver_red_w1.5_straight.glb`
+- 적갈색 인터로킹 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_paver_red_w1.5_straight.tscn`
+- 적갈색 인터로킹 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_paver_red_w3_curve90.glb`
+- 적갈색 인터로킹 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_paver_red_w3_curve90.tscn`
+- 적갈색 인터로킹 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_paver_red_w3_straight.glb`
+- 적갈색 인터로킹 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_paver_red_w3_straight.tscn`
+- 적갈색 인터로킹 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_paver_red_w4.5_straight.glb`
+- 적갈색 인터로킹 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_paver_red_w4.5_straight.tscn`
+- 모래색 인터로킹 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_paver_sand_w1.5_straight.glb`
+- 모래색 인터로킹 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_paver_sand_w1.5_straight.tscn`
+- 모래색 인터로킹 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_paver_sand_w3_curve90.glb`
+- 모래색 인터로킹 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_paver_sand_w3_curve90.tscn`
+- 모래색 인터로킹 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_paver_sand_w3_straight.glb`
+- 모래색 인터로킹 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_paver_sand_w3_straight.tscn`
+- 모래색 인터로킹 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_paver_sand_w4.5_straight.glb`
+- 모래색 인터로킹 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_paver_sand_w4.5_straight.tscn`
+- 투수블록 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_permeable_w1.5_straight.glb`
+- 투수블록 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_permeable_w1.5_straight.tscn`
+- 투수블록 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_permeable_w3_curve90.glb`
+- 투수블록 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_permeable_w3_curve90.tscn`
+- 투수블록 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_permeable_w3_straight.glb`
+- 투수블록 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_permeable_w3_straight.tscn`
+- 투수블록 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_permeable_w4.5_straight.glb`
+- 투수블록 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_permeable_w4.5_straight.tscn`
+- 탄성포장 보행로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_rubber_w1.5_straight.glb`
+- 탄성포장 보행로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_rubber_w1.5_straight.tscn`
+- 탄성포장 보행로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_rubber_w3_curve90.glb`
+- 탄성포장 보행로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_rubber_w3_curve90.tscn`
+- 탄성포장 보행로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_rubber_w3_straight.glb`
+- 탄성포장 보행로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_rubber_w3_straight.tscn`
+- 탄성포장 보행로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_rubber_w4.5_straight.glb`
+- 탄성포장 보행로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_rubber_w4.5_straight.tscn`
+- 모래 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_sand_w1.5_straight.glb`
+- 모래 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_sand_w1.5_straight.tscn`
+- 모래 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_sand_w3_curve90.glb`
+- 모래 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_sand_w3_curve90.tscn`
+- 모래 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_sand_w3_straight.glb`
+- 모래 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_sand_w3_straight.tscn`
+- 모래 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_sand_w4.5_straight.glb`
+- 모래 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_sand_w4.5_straight.tscn`
+- 보행·자전거 공유길 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_shared_cycle_w1.5_straight.glb`
+- 보행·자전거 공유길 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_shared_cycle_w1.5_straight.tscn`
+- 보행·자전거 공유길 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_shared_cycle_w3_curve90.glb`
+- 보행·자전거 공유길 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_shared_cycle_w3_curve90.tscn`
+- 보행·자전거 공유길 / 폭 3m — `godot_project/assets/generated/road_assets/walk_shared_cycle_w3_straight.glb`
+- 보행·자전거 공유길 / 폭 3m — `godot_project/assets/generated/road_assets/walk_shared_cycle_w3_straight.tscn`
+- 보행·자전거 공유길 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_shared_cycle_w4.5_straight.glb`
+- 보행·자전거 공유길 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_shared_cycle_w4.5_straight.tscn`
+- 대형 석판 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_stone_large_w1.5_straight.glb`
+- 대형 석판 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_stone_large_w1.5_straight.tscn`
+- 대형 석판 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_stone_large_w3_cross.glb`
+- 대형 석판 보도 / cross 분기 — `godot_project/assets/generated/road_assets/walk_stone_large_w3_cross.tscn`
+- 대형 석판 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_stone_large_w3_curve90.glb`
+- 대형 석판 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_stone_large_w3_curve90.tscn`
+- 대형 석판 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_stone_large_w3_straight.glb`
+- 대형 석판 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_stone_large_w3_straight.tscn`
+- 대형 석판 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_stone_large_w3_tee.glb`
+- 대형 석판 보도 / tee 분기 — `godot_project/assets/generated/road_assets/walk_stone_large_w3_tee.tscn`
+- 대형 석판 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_stone_large_w4.5_straight.glb`
+- 대형 석판 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_stone_large_w4.5_straight.tscn`
+- 소형 석재 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_stone_small_w1.5_straight.glb`
+- 소형 석재 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_stone_small_w1.5_straight.tscn`
+- 소형 석재 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_stone_small_w3_curve90.glb`
+- 소형 석재 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_stone_small_w3_curve90.tscn`
+- 소형 석재 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_stone_small_w3_straight.glb`
+- 소형 석재 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_stone_small_w3_straight.tscn`
+- 소형 석재 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_stone_small_w4.5_straight.glb`
+- 소형 석재 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_stone_small_w4.5_straight.tscn`
+- 점자 유도블록 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_tactile_guided_w1.5_straight.glb`
+- 점자 유도블록 보도 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_tactile_guided_w1.5_straight.tscn`
+- 점자 유도블록 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_tactile_guided_w3_curve90.glb`
+- 점자 유도블록 보도 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_tactile_guided_w3_curve90.tscn`
+- 점자 유도블록 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_tactile_guided_w3_straight.glb`
+- 점자 유도블록 보도 / 폭 3m — `godot_project/assets/generated/road_assets/walk_tactile_guided_w3_straight.tscn`
+- 점자 유도블록 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_tactile_guided_w4.5_straight.glb`
+- 점자 유도블록 보도 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_tactile_guided_w4.5_straight.tscn`
+- 수변 석판 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_waterside_w1.5_straight.glb`
+- 수변 석판 산책로 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_waterside_w1.5_straight.tscn`
+- 수변 석판 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_waterside_w3_curve90.glb`
+- 수변 석판 산책로 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_waterside_w3_curve90.tscn`
+- 수변 석판 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_waterside_w3_straight.glb`
+- 수변 석판 산책로 / 폭 3m — `godot_project/assets/generated/road_assets/walk_waterside_w3_straight.tscn`
+- 수변 석판 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_waterside_w4.5_straight.glb`
+- 수변 석판 산책로 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_waterside_w4.5_straight.tscn`
+- 보행로 폭 1.5→3m 전환부 — `godot_project/assets/generated/road_assets/walk_width_1.5_to_3.glb`
+- 보행로 폭 1.5→3m 전환부 — `godot_project/assets/generated/road_assets/walk_width_1.5_to_3.tscn`
+- 보행로 폭 3→4.5m 전환부 — `godot_project/assets/generated/road_assets/walk_width_3_to_4.5.glb`
+- 보행로 폭 3→4.5m 전환부 — `godot_project/assets/generated/road_assets/walk_width_3_to_4.5.tscn`
+- 횡방향 목재 데크 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_wood_cross_w1.5_straight.glb`
+- 횡방향 목재 데크 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_wood_cross_w1.5_straight.tscn`
+- 횡방향 목재 데크 / cross 분기 — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_cross.glb`
+- 횡방향 목재 데크 / cross 분기 — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_cross.tscn`
+- 횡방향 목재 데크 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_curve90.glb`
+- 횡방향 목재 데크 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_curve90.tscn`
+- 횡방향 목재 데크 / 폭 3m — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_straight.glb`
+- 횡방향 목재 데크 / 폭 3m — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_straight.tscn`
+- 횡방향 목재 데크 / tee 분기 — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_tee.glb`
+- 횡방향 목재 데크 / tee 분기 — `godot_project/assets/generated/road_assets/walk_wood_cross_w3_tee.tscn`
+- 횡방향 목재 데크 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_wood_cross_w4.5_straight.glb`
+- 횡방향 목재 데크 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_wood_cross_w4.5_straight.tscn`
+- 종방향 목재 데크 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_wood_long_w1.5_straight.glb`
+- 종방향 목재 데크 / 폭 1.5m — `godot_project/assets/generated/road_assets/walk_wood_long_w1.5_straight.tscn`
+- 종방향 목재 데크 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_wood_long_w3_curve90.glb`
+- 종방향 목재 데크 / 90도 곡선 — `godot_project/assets/generated/road_assets/walk_wood_long_w3_curve90.tscn`
+- 종방향 목재 데크 / 폭 3m — `godot_project/assets/generated/road_assets/walk_wood_long_w3_straight.glb`
+- 종방향 목재 데크 / 폭 3m — `godot_project/assets/generated/road_assets/walk_wood_long_w3_straight.tscn`
+- 종방향 목재 데크 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_wood_long_w4.5_straight.glb`
+- 종방향 목재 데크 / 폭 4.5m — `godot_project/assets/generated/road_assets/walk_wood_long_w4.5_straight.tscn`
+### 억새·갈대 군락 LOD
+- `godot_project/assets/generated/silvergrass/reed_patch_auto_lod.scn`
+- `godot_project/assets/generated/silvergrass/reed_patch_lod0.scn`
+- `godot_project/assets/generated/silvergrass/reed_patch_lod1.scn`
+- `godot_project/assets/generated/silvergrass/reed_patch_lod2.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_clump_auto_lod.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_clump_lod0.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_clump_lod1.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_clump_lod2.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_patch_auto_lod.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_patch_lod0.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_patch_lod1.scn`
+- `godot_project/assets/generated/silvergrass/silvergrass_patch_lod2.scn`
+### 태화강 보·유수지·배수문 및 투명 수면·하상
+- 반천 부근 보와 어도 — `godot_project/assets/generated/taehwa_civil/bancheon_weir.glb`
+- 반천 부근 보와 어도 — `godot_project/assets/generated/taehwa_civil/bancheon_weir.tscn`
+- basin0_8000_0 — `godot_project/assets/generated/taehwa_civil/basin0_8000_0.tscn`
+- basin0_9000_0 — `godot_project/assets/generated/taehwa_civil/basin0_9000_0.tscn`
+- basin1_9000_0 — `godot_project/assets/generated/taehwa_civil/basin1_9000_0.tscn`
+- 배수 암거·토출구 모듈 — `godot_project/assets/generated/taehwa_civil/drain_outlet.glb`
+- 배수 암거·토출구 모듈 — `godot_project/assets/generated/taehwa_civil/drain_outlet.tscn`
+- 사석 호안·관리로 모듈 — `godot_project/assets/generated/taehwa_civil/revetment_segment.glb`
+- 사석 호안·관리로 모듈 — `godot_project/assets/generated/taehwa_civil/revetment_segment.tscn`
+- river_-10000_-1000 — `godot_project/assets/generated/taehwa_civil/river_-10000_-1000.tscn`
+- river_-1000_-2000 — `godot_project/assets/generated/taehwa_civil/river_-1000_-2000.tscn`
+- river_-1000_-3000 — `godot_project/assets/generated/taehwa_civil/river_-1000_-3000.tscn`
+- river_-11000_-1000 — `godot_project/assets/generated/taehwa_civil/river_-11000_-1000.tscn`
+- river_-11000_-2000 — `godot_project/assets/generated/taehwa_civil/river_-11000_-2000.tscn`
+- river_-12000_-2000 — `godot_project/assets/generated/taehwa_civil/river_-12000_-2000.tscn`
+- river_-12000_-3000 — `godot_project/assets/generated/taehwa_civil/river_-12000_-3000.tscn`
+- river_-13000_-2000 — `godot_project/assets/generated/taehwa_civil/river_-13000_-2000.tscn`
+- river_-13000_-3000 — `godot_project/assets/generated/taehwa_civil/river_-13000_-3000.tscn`
+- river_-2000_-2000 — `godot_project/assets/generated/taehwa_civil/river_-2000_-2000.tscn`
+- river_-2000_-3000 — `godot_project/assets/generated/taehwa_civil/river_-2000_-3000.tscn`
+- river_-2000_-4000 — `godot_project/assets/generated/taehwa_civil/river_-2000_-4000.tscn`
+- river_-2000_-5000 — `godot_project/assets/generated/taehwa_civil/river_-2000_-5000.tscn`
+- river_-3000_-4000 — `godot_project/assets/generated/taehwa_civil/river_-3000_-4000.tscn`
+- river_-3000_-5000 — `godot_project/assets/generated/taehwa_civil/river_-3000_-5000.tscn`
+- river_-4000_-4000 — `godot_project/assets/generated/taehwa_civil/river_-4000_-4000.tscn`
+- river_-4000_-5000 — `godot_project/assets/generated/taehwa_civil/river_-4000_-5000.tscn`
+- river_-5000_-3000 — `godot_project/assets/generated/taehwa_civil/river_-5000_-3000.tscn`
+- river_-5000_-4000 — `godot_project/assets/generated/taehwa_civil/river_-5000_-4000.tscn`
+- river_-6000_-1000 — `godot_project/assets/generated/taehwa_civil/river_-6000_-1000.tscn`
+- river_-6000_-2000 — `godot_project/assets/generated/taehwa_civil/river_-6000_-2000.tscn`
+- river_-6000_-3000 — `godot_project/assets/generated/taehwa_civil/river_-6000_-3000.tscn`
+- river_-7000_-1000 — `godot_project/assets/generated/taehwa_civil/river_-7000_-1000.tscn`
+- river_-7000_-2000 — `godot_project/assets/generated/taehwa_civil/river_-7000_-2000.tscn`
+- river_-7000_-3000 — `godot_project/assets/generated/taehwa_civil/river_-7000_-3000.tscn`
+- river_-8000_-1000 — `godot_project/assets/generated/taehwa_civil/river_-8000_-1000.tscn`
+- river_-8000_0 — `godot_project/assets/generated/taehwa_civil/river_-8000_0.tscn`
+- river_-9000_-1000 — `godot_project/assets/generated/taehwa_civil/river_-9000_-1000.tscn`
+- river_-9000_0 — `godot_project/assets/generated/taehwa_civil/river_-9000_0.tscn`
+- river_0_-2000 — `godot_project/assets/generated/taehwa_civil/river_0_-2000.tscn`
+- river_0_-3000 — `godot_project/assets/generated/taehwa_civil/river_0_-3000.tscn`
+- river_10000_-1000 — `godot_project/assets/generated/taehwa_civil/river_10000_-1000.tscn`
+- river_10000_0 — `godot_project/assets/generated/taehwa_civil/river_10000_0.tscn`
+- river_1000_-1000 — `godot_project/assets/generated/taehwa_civil/river_1000_-1000.tscn`
+- river_1000_-2000 — `godot_project/assets/generated/taehwa_civil/river_1000_-2000.tscn`
+- river_2000_-1000 — `godot_project/assets/generated/taehwa_civil/river_2000_-1000.tscn`
+- river_2000_-2000 — `godot_project/assets/generated/taehwa_civil/river_2000_-2000.tscn`
+- river_3000_-1000 — `godot_project/assets/generated/taehwa_civil/river_3000_-1000.tscn`
+- river_3000_0 — `godot_project/assets/generated/taehwa_civil/river_3000_0.tscn`
+- river_4000_-1000 — `godot_project/assets/generated/taehwa_civil/river_4000_-1000.tscn`
+- river_4000_-2000 — `godot_project/assets/generated/taehwa_civil/river_4000_-2000.tscn`
+- river_5000_-1000 — `godot_project/assets/generated/taehwa_civil/river_5000_-1000.tscn`
+- river_6000_-1000 — `godot_project/assets/generated/taehwa_civil/river_6000_-1000.tscn`
+- river_7000_-1000 — `godot_project/assets/generated/taehwa_civil/river_7000_-1000.tscn`
+- river_8000_-1000 — `godot_project/assets/generated/taehwa_civil/river_8000_-1000.tscn`
+- river_9000_-1000 — `godot_project/assets/generated/taehwa_civil/river_9000_-1000.tscn`
+- river_9000_0 — `godot_project/assets/generated/taehwa_civil/river_9000_0.tscn`
+- shore_-10000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_-10000_-1000.tscn`
+- shore_-1000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_-1000_-2000.tscn`
+- shore_-1000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-1000_-3000.tscn`
+- shore_-11000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_-11000_-1000.tscn`
+- shore_-11000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_-11000_-2000.tscn`
+- shore_-12000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_-12000_-2000.tscn`
+- shore_-12000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-12000_-3000.tscn`
+- shore_-13000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_-13000_-2000.tscn`
+- shore_-13000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-13000_-3000.tscn`
+- shore_-2000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_-2000_-2000.tscn`
+- shore_-2000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-2000_-3000.tscn`
+- shore_-2000_-4000 — `godot_project/assets/generated/taehwa_civil/shore_-2000_-4000.tscn`
+- shore_-2000_-5000 — `godot_project/assets/generated/taehwa_civil/shore_-2000_-5000.tscn`
+- shore_-3000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-3000_-3000.tscn`
+- shore_-3000_-4000 — `godot_project/assets/generated/taehwa_civil/shore_-3000_-4000.tscn`
+- shore_-3000_-5000 — `godot_project/assets/generated/taehwa_civil/shore_-3000_-5000.tscn`
+- shore_-4000_-4000 — `godot_project/assets/generated/taehwa_civil/shore_-4000_-4000.tscn`
+- shore_-4000_-5000 — `godot_project/assets/generated/taehwa_civil/shore_-4000_-5000.tscn`
+- shore_-5000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-5000_-3000.tscn`
+- shore_-5000_-4000 — `godot_project/assets/generated/taehwa_civil/shore_-5000_-4000.tscn`
+- shore_-6000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_-6000_-1000.tscn`
+- shore_-6000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_-6000_-2000.tscn`
+- shore_-6000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-6000_-3000.tscn`
+- shore_-7000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_-7000_-1000.tscn`
+- shore_-7000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_-7000_-2000.tscn`
+- shore_-7000_-3000 — `godot_project/assets/generated/taehwa_civil/shore_-7000_-3000.tscn`
+- shore_-8000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_-8000_-1000.tscn`
+- shore_-8000_0 — `godot_project/assets/generated/taehwa_civil/shore_-8000_0.tscn`
+- shore_-9000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_-9000_-1000.tscn`
+- shore_-9000_0 — `godot_project/assets/generated/taehwa_civil/shore_-9000_0.tscn`
+- shore_0_-2000 — `godot_project/assets/generated/taehwa_civil/shore_0_-2000.tscn`
+- shore_0_-3000 — `godot_project/assets/generated/taehwa_civil/shore_0_-3000.tscn`
+- shore_10000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_10000_-1000.tscn`
+- shore_10000_0 — `godot_project/assets/generated/taehwa_civil/shore_10000_0.tscn`
+- shore_1000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_1000_-1000.tscn`
+- shore_1000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_1000_-2000.tscn`
+- shore_2000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_2000_-1000.tscn`
+- shore_2000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_2000_-2000.tscn`
+- shore_3000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_3000_-1000.tscn`
+- shore_3000_0 — `godot_project/assets/generated/taehwa_civil/shore_3000_0.tscn`
+- shore_4000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_4000_-1000.tscn`
+- shore_4000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_4000_-2000.tscn`
+- shore_5000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_5000_-1000.tscn`
+- shore_6000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_6000_-1000.tscn`
+- shore_7000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_7000_-1000.tscn`
+- shore_8000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_8000_-1000.tscn`
+- shore_8000_-2000 — `godot_project/assets/generated/taehwa_civil/shore_8000_-2000.tscn`
+- shore_8000_0 — `godot_project/assets/generated/taehwa_civil/shore_8000_0.tscn`
+- shore_9000_-1000 — `godot_project/assets/generated/taehwa_civil/shore_9000_-1000.tscn`
+- shore_9000_0 — `godot_project/assets/generated/taehwa_civil/shore_9000_0.tscn`
+- shore_9000_1000 — `godot_project/assets/generated/taehwa_civil/shore_9000_1000.tscn`
+- 여천 유수지 호안 — `godot_project/assets/generated/taehwa_civil/yeocheon_basin.glb`
+- 여천 유수지 호안 — `godot_project/assets/generated/taehwa_civil/yeocheon_basin.tscn`
+- 여천 유수지 배수문 — `godot_project/assets/generated/taehwa_civil/yeocheon_gate.glb`
+- 여천 유수지 배수문 — `godot_project/assets/generated/taehwa_civil/yeocheon_gate.tscn`
 ### 역사·역세권
-- `godot_project/assets/generated/taehwagang/district.glb`
-- `godot_project/assets/generated/taehwagang/district.tscn`
-- `godot_project/assets/generated/taehwagang/forecourt.glb`
-- `godot_project/assets/generated/taehwagang/forecourt.tscn`
-- `godot_project/assets/generated/taehwagang/rail_yard.glb`
-- `godot_project/assets/generated/taehwagang/rail_yard.tscn`
-- `godot_project/assets/generated/taehwagang/station.glb`
-- `godot_project/assets/generated/taehwagang/station.tscn`
-- `godot_project/assets/generated/taehwagang/taehwagang_complete.glb`
-- `godot_project/assets/generated/taehwagang/taehwagang_complete.tscn`
+- 역전 구역 — `godot_project/assets/generated/taehwagang/district.glb`
+- 역전 구역 — `godot_project/assets/generated/taehwagang/district.tscn`
+- 역 광장 — `godot_project/assets/generated/taehwagang/forecourt.glb`
+- 역 광장 — `godot_project/assets/generated/taehwagang/forecourt.tscn`
+- 역 승강장 — `godot_project/assets/generated/taehwagang/rail_yard.glb`
+- 역 승강장 — `godot_project/assets/generated/taehwagang/rail_yard.tscn`
+- 태화강역 — `godot_project/assets/generated/taehwagang/station.glb`
+- 태화강역 — `godot_project/assets/generated/taehwagang/station.tscn`
+- 태화강역 조립 — `godot_project/assets/generated/taehwagang/taehwagang_complete.glb`
+- 태화강역 조립 — `godot_project/assets/generated/taehwagang/taehwagang_complete.tscn`
+### 수목 및 원경 LOD
+- `godot_project/assets/generated/trees/broadleaf_auto_lod.scn`
+- `godot_project/assets/generated/trees/broadleaf_lod0.scn`
+- `godot_project/assets/generated/trees/broadleaf_lod1.scn`
+- `godot_project/assets/generated/trees/broadleaf_lod2.scn`
+- `godot_project/assets/generated/trees/conifer_auto_lod.scn`
+- `godot_project/assets/generated/trees/conifer_lod0.scn`
+- `godot_project/assets/generated/trees/conifer_lod1.scn`
+- `godot_project/assets/generated/trees/conifer_lod2.scn`
+- `godot_project/assets/generated/trees/shrub_auto_lod.scn`
+- `godot_project/assets/generated/trees/shrub_lod0.scn`
+- `godot_project/assets/generated/trees/shrub_lod1.scn`
+- `godot_project/assets/generated/trees/shrub_lod2.scn`
+- `godot_project/assets/generated/trees/slender_auto_lod.scn`
+- `godot_project/assets/generated/trees/slender_lod0.scn`
+- `godot_project/assets/generated/trees/slender_lod1.scn`
+- `godot_project/assets/generated/trees/slender_lod2.scn`
+### 울산 용수댐·조사 기반 제방 모델 및 지리 배치
+- 대암댐 — `godot_project/assets/generated/ulsan_dams/daeam.tscn`
+- 대암댐 — `godot_project/assets/generated/ulsan_dams/daeam_far.glb`
+- 대암댐 — `godot_project/assets/generated/ulsan_dams/daeam_near.glb`
+- 대곡댐 — `godot_project/assets/generated/ulsan_dams/daegok.tscn`
+- 대곡댐 — `godot_project/assets/generated/ulsan_dams/daegok_far.glb`
+- 대곡댐 — `godot_project/assets/generated/ulsan_dams/daegok_near.glb`
+- 회야댐 — `godot_project/assets/generated/ulsan_dams/hoeya.tscn`
+- 회야댐 — `godot_project/assets/generated/ulsan_dams/hoeya_far.glb`
+- 회야댐 — `godot_project/assets/generated/ulsan_dams/hoeya_near.glb`
+- 사연댐 — `godot_project/assets/generated/ulsan_dams/sayeon.tscn`
+- 사연댐 — `godot_project/assets/generated/ulsan_dams/sayeon_far.glb`
+- 사연댐 — `godot_project/assets/generated/ulsan_dams/sayeon_near.glb`
+- 선암댐 — `godot_project/assets/generated/ulsan_dams/seonam.tscn`
+- 선암댐 — `godot_project/assets/generated/ulsan_dams/seonam_far.glb`
+- 선암댐 — `godot_project/assets/generated/ulsan_dams/seonam_near.glb`
 ### 선박
 - 컨테이너선 — `godot_project/assets/generated/vessels/container_ship.glb`
-- `godot_project/assets/generated/vessels/container_ship.tscn`
+- 컨테이너선 — `godot_project/assets/generated/vessels/container_ship.tscn`
 - 어업용 소형선박 — `godot_project/assets/generated/vessels/fishing_boat.glb`
-- `godot_project/assets/generated/vessels/fishing_boat.tscn`
+- 어업용 소형선박 — `godot_project/assets/generated/vessels/fishing_boat.tscn`
 - LPG선 — `godot_project/assets/generated/vessels/lpg_carrier.glb`
-- `godot_project/assets/generated/vessels/lpg_carrier.tscn`
+- LPG선 — `godot_project/assets/generated/vessels/lpg_carrier.tscn`
 - 보트 — `godot_project/assets/generated/vessels/motor_boat.glb`
-- `godot_project/assets/generated/vessels/motor_boat.tscn`
+- 보트 — `godot_project/assets/generated/vessels/motor_boat.tscn`
 - 유조선 — `godot_project/assets/generated/vessels/oil_tanker.glb`
-- `godot_project/assets/generated/vessels/oil_tanker.tscn`
+- 유조선 — `godot_project/assets/generated/vessels/oil_tanker.tscn`
 - 예인선 — `godot_project/assets/generated/vessels/tugboat.glb`
-- `godot_project/assets/generated/vessels/tugboat.tscn`
+- 예인선 — `godot_project/assets/generated/vessels/tugboat.tscn`
 ### 발전소
-- `godot_project/assets/generated/wolsong/wolsong_npp.glb`
-- `godot_project/assets/generated/wolsong/wolsong_npp.tscn`
+- 월성 발전소 — `godot_project/assets/generated/wolsong/wolsong_npp.glb`
+- 월성 발전소 — `godot_project/assets/generated/wolsong/wolsong_npp.tscn`

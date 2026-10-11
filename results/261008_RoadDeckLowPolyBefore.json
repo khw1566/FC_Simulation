@@ -1,0 +1,4222 @@
+{
+  "mix_junction_2l_2l_tee_core": {
+    "triangles": 12,
+    "bytes": 1660,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          3.75,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_2l_2l_tee_crossings": {
+    "triangles": 42,
+    "bytes": 3844,
+    "ports": []
+  },
+  "mix_junction_2l_2l_cross_core": {
+    "triangles": 12,
+    "bytes": 1660,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          3.75,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -3.75,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_2l_2l_cross_crossings": {
+    "triangles": 56,
+    "bytes": 4840,
+    "ports": []
+  },
+  "mix_junction_4l_2l_tee_core": {
+    "triangles": 12,
+    "bytes": 1656,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.0,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_4l_2l_tee_crossings": {
+    "triangles": 70,
+    "bytes": 5860,
+    "ports": []
+  },
+  "mix_junction_4l_2l_cross_core": {
+    "triangles": 12,
+    "bytes": 1660,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.0,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -7.0,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_4l_2l_cross_crossings": {
+    "triangles": 84,
+    "bytes": 6856,
+    "ports": []
+  },
+  "mix_junction_4l_4l_tee_core": {
+    "triangles": 12,
+    "bytes": 1656,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.0,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_4l_4l_tee_crossings": {
+    "triangles": 84,
+    "bytes": 6864,
+    "ports": []
+  },
+  "mix_junction_4l_4l_cross_core": {
+    "triangles": 12,
+    "bytes": 1656,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.0,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -7.0,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_4l_4l_cross_crossings": {
+    "triangles": 112,
+    "bytes": 8868,
+    "ports": []
+  },
+  "mix_junction_6l_2l_tee_core": {
+    "triangles": 12,
+    "bytes": 1660,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          10.25,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_6l_2l_tee_crossings": {
+    "triangles": 98,
+    "bytes": 7876,
+    "ports": []
+  },
+  "mix_junction_6l_2l_cross_core": {
+    "triangles": 12,
+    "bytes": 1664,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          3.75
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          10.25,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -10.25,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_6l_2l_cross_crossings": {
+    "triangles": 112,
+    "bytes": 8876,
+    "ports": []
+  },
+  "mix_junction_6l_4l_tee_core": {
+    "triangles": 12,
+    "bytes": 1660,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          10.25,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_6l_4l_tee_crossings": {
+    "triangles": 112,
+    "bytes": 8884,
+    "ports": []
+  },
+  "mix_junction_6l_4l_cross_core": {
+    "triangles": 12,
+    "bytes": 1660,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          10.25,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -10.25,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_6l_4l_cross_crossings": {
+    "triangles": 140,
+    "bytes": 10888,
+    "ports": []
+  },
+  "mix_junction_8l_4l_tee_core": {
+    "triangles": 12,
+    "bytes": 1656,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          13.5,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_8l_4l_tee_crossings": {
+    "triangles": 140,
+    "bytes": 10912,
+    "ports": []
+  },
+  "mix_junction_8l_4l_cross_core": {
+    "triangles": 12,
+    "bytes": 1660,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0,
+          -7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0,
+          7.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          13.5,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -13.5,
+          0,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_junction_8l_4l_cross_crossings": {
+    "triangles": 168,
+    "bytes": 12932,
+    "ports": []
+  },
+  "mix_approach_2l_asphalt": {
+    "triangles": 12,
+    "bytes": 1652,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_2l_concrete": {
+    "triangles": 12,
+    "bytes": 1652,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_2l_paver_gray": {
+    "triangles": 512,
+    "bytes": 38788,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w7.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 7.5,
+          "surface_y_m": 0,
+          "lane_count": 2,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_2l_markings": {
+    "triangles": 8,
+    "bytes": 1368,
+    "ports": []
+  },
+  "mix_approach_4l_asphalt": {
+    "triangles": 12,
+    "bytes": 1648,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_4l_concrete": {
+    "triangles": 12,
+    "bytes": 1652,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_4l_paver_gray": {
+    "triangles": 952,
+    "bytes": 70476,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w14.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 14.0,
+          "surface_y_m": 0,
+          "lane_count": 4,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_4l_markings": {
+    "triangles": 16,
+    "bytes": 1944,
+    "ports": []
+  },
+  "mix_approach_6l_asphalt": {
+    "triangles": 12,
+    "bytes": 1652,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_6l_concrete": {
+    "triangles": 12,
+    "bytes": 1656,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_6l_paver_gray": {
+    "triangles": 1372,
+    "bytes": 100720,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w20.50_h0.00",
+          "kind": "vehicle",
+          "width_m": 20.5,
+          "surface_y_m": 0,
+          "lane_count": 6,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_6l_markings": {
+    "triangles": 24,
+    "bytes": 2520,
+    "ports": []
+  },
+  "mix_approach_8l_asphalt": {
+    "triangles": 12,
+    "bytes": 1652,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_8l_concrete": {
+    "triangles": 12,
+    "bytes": 1652,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_8l_paver_gray": {
+    "triangles": 1812,
+    "bytes": 132384,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0,
+          -3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0,
+          3
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "vehicle_w27.00_h0.00",
+          "kind": "vehicle",
+          "width_m": 27.0,
+          "surface_y_m": 0,
+          "lane_count": 8,
+          "lane_width_m": 3.25
+        }
+      }
+    ]
+  },
+  "mix_approach_8l_markings": {
+    "triangles": 32,
+    "bytes": 3100,
+    "ports": []
+  },
+  "deck_wood_long_w1.5_straight": {
+    "triangles": 228,
+    "bytes": 19360,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_w3_straight": {
+    "triangles": 312,
+    "bytes": 25436,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_w4.5_straight": {
+    "triangles": 396,
+    "bytes": 31532,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_w3_curve45": {
+    "triangles": 630,
+    "bytes": 48468,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          3.514718625761429,
+          0.15,
+          2.4852813742385713
+        ],
+        "outward_direction": [
+          0.7071067811865476,
+          0,
+          0.7071067811865476
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_w3_curve90": {
+    "triangles": 1206,
+    "bytes": 89928,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          11.999999999999998,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          1.0,
+          0,
+          6.123233995736766e-17
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_plaza_6m": {
+    "triangles": 264,
+    "bytes": 21936,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_plaza_12m": {
+    "triangles": 852,
+    "bytes": 64284,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_w3_tee": {
+    "triangles": 648,
+    "bytes": 49612,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_long_w3_cross": {
+    "triangles": 828,
+    "bytes": 62604,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_w1.5_straight": {
+    "triangles": 228,
+    "bytes": 19348,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_w3_straight": {
+    "triangles": 228,
+    "bytes": 19344,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_w4.5_straight": {
+    "triangles": 228,
+    "bytes": 19348,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_w3_curve45": {
+    "triangles": 556,
+    "bytes": 43140,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          3.514718625761429,
+          0.15,
+          2.4852813742385713
+        ],
+        "outward_direction": [
+          0.7071067811865476,
+          0,
+          0.7071067811865476
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_w3_curve90": {
+    "triangles": 1086,
+    "bytes": 81280,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          11.999999999999998,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          1.0,
+          0,
+          6.123233995736766e-17
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_plaza_6m": {
+    "triangles": 132,
+    "bytes": 12408,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_plaza_12m": {
+    "triangles": 228,
+    "bytes": 19340,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_w3_tee": {
+    "triangles": 432,
+    "bytes": 34044,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_wood_cross_w3_cross": {
+    "triangles": 516,
+    "bytes": 40140,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_w1.5_straight": {
+    "triangles": 228,
+    "bytes": 19420,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_w3_straight": {
+    "triangles": 228,
+    "bytes": 19416,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_w4.5_straight": {
+    "triangles": 228,
+    "bytes": 19420,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_w3_curve45": {
+    "triangles": 556,
+    "bytes": 43212,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          3.514718625761429,
+          0.15,
+          2.4852813742385713
+        ],
+        "outward_direction": [
+          0.7071067811865476,
+          0,
+          0.7071067811865476
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_w3_curve90": {
+    "triangles": 1086,
+    "bytes": 81352,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          11.999999999999998,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          1.0,
+          0,
+          6.123233995736766e-17
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_plaza_6m": {
+    "triangles": 132,
+    "bytes": 12480,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_plaza_12m": {
+    "triangles": 228,
+    "bytes": 19412,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_w3_tee": {
+    "triangles": 432,
+    "bytes": 34116,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_weathered_w3_cross": {
+    "triangles": 516,
+    "bytes": 40208,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_w1.5_straight": {
+    "triangles": 148,
+    "bytes": 13040,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_w3_straight": {
+    "triangles": 164,
+    "bytes": 14184,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_w4.5_straight": {
+    "triangles": 180,
+    "bytes": 15348,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0.0,
+          0,
+          1.0
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_w3_curve45": {
+    "triangles": 504,
+    "bytes": 38796,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          3.514718625761429,
+          0.15,
+          2.4852813742385713
+        ],
+        "outward_direction": [
+          0.7071067811865476,
+          0,
+          0.7071067811865476
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_w3_curve90": {
+    "triangles": 988,
+    "bytes": 74196,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          -0.0,
+          0,
+          -1.0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          11.999999999999998,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          1.0,
+          0,
+          6.123233995736766e-17
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_plaza_6m": {
+    "triangles": 116,
+    "bytes": 10684,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          3.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -3.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_plaza_12m": {
+    "triangles": 260,
+    "bytes": 21712,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          6.0
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -6.0,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_w3_tee": {
+    "triangles": 344,
+    "bytes": 27164,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_stone_w3_cross": {
+    "triangles": 420,
+    "bytes": 32668,
+    "ports": [
+      {
+        "name": "North",
+        "position_m": [
+          0.0,
+          0.15,
+          -7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "South",
+        "position_m": [
+          0.0,
+          0.15,
+          7.5
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "East",
+        "position_m": [
+          7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "West",
+        "position_m": [
+          -7.5,
+          0.15,
+          0.0
+        ],
+        "outward_direction": [
+          -1,
+          0,
+          0
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_ramp_w1.5_rise1m": {
+    "triangles": 612,
+    "bytes": 45972,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w1.50_h0.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          1.15,
+          6
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w1.50_h1.15",
+          "kind": "walk",
+          "width_m": 1.5,
+          "surface_y_m": 1.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_ramp_w3_rise1m": {
+    "triangles": 612,
+    "bytes": 45992,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h0.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          1.15,
+          6
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w3.00_h1.15",
+          "kind": "walk",
+          "width_m": 3,
+          "surface_y_m": 1.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_ramp_w4.5_rise1m": {
+    "triangles": 612,
+    "bytes": 45972,
+    "ports": [
+      {
+        "name": "Start",
+        "position_m": [
+          0,
+          0.15,
+          -6
+        ],
+        "outward_direction": [
+          0,
+          0,
+          -1
+        ],
+        "profile": {
+          "id": "walk_w4.50_h0.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 0.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      },
+      {
+        "name": "End",
+        "position_m": [
+          0,
+          1.15,
+          6
+        ],
+        "outward_direction": [
+          0,
+          0,
+          1
+        ],
+        "profile": {
+          "id": "walk_w4.50_h1.15",
+          "kind": "walk",
+          "width_m": 4.5,
+          "surface_y_m": 1.15,
+          "lane_count": 0,
+          "lane_width_m": null
+        }
+      }
+    ]
+  },
+  "deck_rail_wood_6m": {
+    "triangles": 336,
+    "bytes": 24984,
+    "ports": []
+  },
+  "deck_rail_steel_6m": {
+    "triangles": 336,
+    "bytes": 24992,
+    "ports": []
+  },
+  "deck_rail_cable_6m": {
+    "triangles": 132,
+    "bytes": 10296,
+    "ports": []
+  },
+  "deck_rail_wood_1.5m": {
+    "triangles": 120,
+    "bytes": 9428,
+    "ports": []
+  },
+  "deck_rail_wood_3m": {
+    "triangles": 192,
+    "bytes": 14612,
+    "ports": []
+  },
+  "deck_rail_steel_1.5m": {
+    "triangles": 120,
+    "bytes": 9436,
+    "ports": []
+  },
+  "deck_rail_steel_3m": {
+    "triangles": 192,
+    "bytes": 14616,
+    "ports": []
+  },
+  "deck_rail_cable_1.5m": {
+    "triangles": 132,
+    "bytes": 10300,
+    "ports": []
+  },
+  "deck_rail_cable_3m": {
+    "triangles": 132,
+    "bytes": 10296,
+    "ports": []
+  },
+  "deck_rail_wood_w3_curve45_left": {
+    "triangles": 480,
+    "bytes": 35400,
+    "ports": []
+  },
+  "deck_rail_wood_w3_curve45_right": {
+    "triangles": 480,
+    "bytes": 35408,
+    "ports": []
+  },
+  "deck_rail_wood_w3_curve90_left": {
+    "triangles": 936,
+    "bytes": 68228,
+    "ports": []
+  },
+  "deck_rail_wood_w3_curve90_right": {
+    "triangles": 936,
+    "bytes": 68232,
+    "ports": []
+  },
+  "deck_rail_wood_rise1m": {
+    "triangles": 84,
+    "bytes": 6852,
+    "ports": []
+  },
+  "deck_rail_steel_w3_curve45_left": {
+    "triangles": 480,
+    "bytes": 35404,
+    "ports": []
+  },
+  "deck_rail_steel_w3_curve45_right": {
+    "triangles": 480,
+    "bytes": 35416,
+    "ports": []
+  },
+  "deck_rail_steel_w3_curve90_left": {
+    "triangles": 936,
+    "bytes": 68236,
+    "ports": []
+  },
+  "deck_rail_steel_w3_curve90_right": {
+    "triangles": 936,
+    "bytes": 68236,
+    "ports": []
+  },
+  "deck_rail_steel_rise1m": {
+    "triangles": 84,
+    "bytes": 6856,
+    "ports": []
+  },
+  "deck_rail_cable_w3_curve45_left": {
+    "triangles": 1056,
+    "bytes": 76876,
+    "ports": []
+  },
+  "deck_rail_cable_w3_curve45_right": {
+    "triangles": 1056,
+    "bytes": 76888,
+    "ports": []
+  },
+  "deck_rail_cable_w3_curve90_left": {
+    "triangles": 2088,
+    "bytes": 151180,
+    "ports": []
+  },
+  "deck_rail_cable_w3_curve90_right": {
+    "triangles": 2088,
+    "bytes": 151180,
+    "ports": []
+  },
+  "deck_rail_cable_rise1m": {
+    "triangles": 120,
+    "bytes": 9448,
+    "ports": []
+  },
+  "deck_support_w3_h1.5": {
+    "triangles": 72,
+    "bytes": 6508,
+    "ports": []
+  },
+  "deck_support_w3_h3": {
+    "triangles": 72,
+    "bytes": 6508,
+    "ports": []
+  },
+  "deck_support_w3_h6": {
+    "triangles": 72,
+    "bytes": 6520,
+    "ports": []
+  },
+  "deck_support_w4.5_h1.5": {
+    "triangles": 72,
+    "bytes": 6488,
+    "ports": []
+  },
+  "deck_support_w4.5_h3": {
+    "triangles": 72,
+    "bytes": 6484,
+    "ports": []
+  },
+  "deck_support_w4.5_h6": {
+    "triangles": 72,
+    "bytes": 6496,
+    "ports": []
+  }
+}

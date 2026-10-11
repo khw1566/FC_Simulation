@@ -8,7 +8,12 @@
       "anchor_basis": "울산 중구 학성공원 공식 안내 좌표. 석축 윤곽과 높이는 지형에 맞춘 근사값.",
       "id": "ulsan_waeseong",
       "name_ko": "울산왜성",
+      "placement_enabled": false,
       "scene_path": "res://assets/generated/heritage/ulsan_waeseong.scn",
+      "suppress_building_names": [
+        "학성공원"
+      ],
+      "suppress_radius_m": 200,
       "walls": [
         {
           "height": 5.2,

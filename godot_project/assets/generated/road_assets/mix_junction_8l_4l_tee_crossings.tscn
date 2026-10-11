@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mix_junction_8l_4l_tee_crossings.glb" id="1"]
+
+[node name="mix_junction_8l_4l_tee_crossings" type="Node3D"]
+metadata/asset_type = "mix_junction_8l_4l_tee_crossings"
+metadata/procedural = true
+metadata/units = "meters"
+metadata/runtime_applied = false
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]

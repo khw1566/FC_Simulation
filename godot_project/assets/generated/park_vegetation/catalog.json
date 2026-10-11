@@ -1,0 +1,2017 @@
+{
+  "version": 1,
+  "units": "metres",
+  "up_axis": "Y",
+  "origin": "ground",
+  "models": [
+    {
+      "id": "grass_sparse",
+      "label": "성긴 짧은 풀",
+      "kind": "grass",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/grass_sparse_lod0.glb",
+          "family": "grass",
+          "model_id": "grass_sparse",
+          "lod_level": 0,
+          "triangles": 48,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.24522140843453477,
+            0,
+            -0.3436109841165083
+          ],
+          "aabb_max_m": [
+            0.27311637668342076,
+            0.3079091812942385,
+            0.2078009509616741
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.3079091812942385,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 20,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/grass_sparse_lod1.glb",
+          "family": "grass",
+          "model_id": "grass_sparse",
+          "lod_level": 1,
+          "triangles": 16,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.2082869506982193,
+            0,
+            -0.17621481506391196
+          ],
+          "aabb_max_m": [
+            0.07323701003059453,
+            0.27870660416153686,
+            0.2078009509616741
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.27870660416153686,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 20,
+          "visibility_end_m": 60,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "grass_dense",
+      "label": "조밀한 짧은 풀",
+      "kind": "grass",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/grass_dense_lod0.glb",
+          "family": "grass",
+          "model_id": "grass_dense",
+          "lod_level": 0,
+          "triangles": 80,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.414389207995738,
+            0,
+            -0.3062679899435713
+          ],
+          "aabb_max_m": [
+            0.39686667544485327,
+            0.307934999158517,
+            0.3796592332941341
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.307934999158517,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 20,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/grass_dense_lod1.glb",
+          "family": "grass",
+          "model_id": "grass_dense",
+          "lod_level": 1,
+          "triangles": 24,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.2273132289668646,
+            0,
+            -0.28109984127419324
+          ],
+          "aabb_max_m": [
+            0.35755329753020054,
+            0.2843189095686663,
+            0.331770421254786
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.2843189095686663,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 20,
+          "visibility_end_m": 60,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "flower_low_round",
+      "label": "낮은 꽃무리",
+      "kind": "flower",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/flower_low_round_lod0.glb",
+          "family": "flower",
+          "model_id": "flower_low_round",
+          "lod_level": 0,
+          "triangles": 168,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.5327725352123809,
+            0.0,
+            -0.43634466146705575
+          ],
+          "aabb_max_m": [
+            0.4020686491091977,
+            0.4393897650622591,
+            0.530264958114008
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.4393897650622591,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 35,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/flower_low_round_lod1.glb",
+          "family": "flower",
+          "model_id": "flower_low_round",
+          "lod_level": 1,
+          "triangles": 72,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.4943737357563096,
+            0.0,
+            -0.16951019449838411
+          ],
+          "aabb_max_m": [
+            0.3200119953943503,
+            0.4347421864244903,
+            0.530264958114008
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.4347421864244903,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 35,
+          "visibility_end_m": 100,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/flower_low_round_lod2.glb",
+          "family": "flower",
+          "model_id": "flower_low_round",
+          "lod_level": 2,
+          "triangles": 16,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.4943737357563096,
+            0.16518332807796302,
+            0.011569942539732148
+          ],
+          "aabb_max_m": [
+            0.2800119953943503,
+            0.31080256516467525,
+            0.5156296005447445
+          ],
+          "elevation_min": 0.16518332807796302,
+          "elevation_max": 0.31080256516467525,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 100,
+          "visibility_end_m": 250,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "flower_low_edge",
+      "label": "꽃길 가장자리 군락",
+      "kind": "flower",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/flower_low_edge_lod0.glb",
+          "family": "flower",
+          "model_id": "flower_low_edge",
+          "lod_level": 0,
+          "triangles": 168,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.5715433747369114,
+            0.0,
+            -0.1193143553667001
+          ],
+          "aabb_max_m": [
+            0.5726849261917618,
+            0.4237572595346373,
+            0.3529995743183958
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.4237572595346373,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 35,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/flower_low_edge_lod1.glb",
+          "family": "flower",
+          "model_id": "flower_low_edge",
+          "lod_level": 1,
+          "triangles": 72,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3043721646131581,
+            0.0,
+            0.012699811026675112
+          ],
+          "aabb_max_m": [
+            0.5726849261917618,
+            0.35157744165709487,
+            0.3529995743183958
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.35157744165709487,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 35,
+          "visibility_end_m": 100,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/flower_low_edge_lod2.glb",
+          "family": "flower",
+          "model_id": "flower_low_edge",
+          "lod_level": 2,
+          "triangles": 16,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.04144246859438472,
+            0.1824353409447061,
+            0.012699811026675112
+          ],
+          "aabb_max_m": [
+            0.5726849261917618,
+            0.34827884492567573,
+            0.3227519710076666
+          ],
+          "elevation_min": 0.1824353409447061,
+          "elevation_max": 0.34827884492567573,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 100,
+          "visibility_end_m": 250,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "perennial_upright",
+      "label": "직립 초화 군락",
+      "kind": "perennial",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/perennial_upright_lod0.glb",
+          "family": "perennial",
+          "model_id": "perennial_upright",
+          "lod_level": 0,
+          "triangles": 140,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.6426744664912208,
+            0.0,
+            -0.5063930598103964
+          ],
+          "aabb_max_m": [
+            0.23252349809783154,
+            1.0769224993436162,
+            0.10031137023479189
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 1.0769224993436162,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 40,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/perennial_upright_lod1.glb",
+          "family": "perennial",
+          "model_id": "perennial_upright",
+          "lod_level": 1,
+          "triangles": 48,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.41106834635005446,
+            0.0,
+            -0.41468081520372363
+          ],
+          "aabb_max_m": [
+            0.23252349809783154,
+            0.8638498185803113,
+            -0.10455618752106025
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.8638498185803113,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 40,
+          "visibility_end_m": 120,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/perennial_upright_lod2.glb",
+          "family": "perennial",
+          "model_id": "perennial_upright",
+          "lod_level": 2,
+          "triangles": 8,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.41106834635005446,
+            0.5413193809630789,
+            -0.41468081520372363
+          ],
+          "aabb_max_m": [
+            -0.28106834635005445,
+            0.7613193809630788,
+            -0.2846808152037236
+          ],
+          "elevation_min": 0.5413193809630789,
+          "elevation_max": 0.7613193809630788,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 120,
+          "visibility_end_m": 350,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "perennial_dry",
+      "label": "마른 꽃대 군락",
+      "kind": "perennial",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/perennial_dry_lod0.glb",
+          "family": "perennial",
+          "model_id": "perennial_dry",
+          "lod_level": 0,
+          "triangles": 140,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.6999402425663186,
+            0.0,
+            -0.5234351876593711
+          ],
+          "aabb_max_m": [
+            0.18234681979726194,
+            0.8587481184573862,
+            0.4400481352428261
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.8587481184573862,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 40,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/perennial_dry_lod1.glb",
+          "family": "perennial",
+          "model_id": "perennial_dry",
+          "lod_level": 1,
+          "triangles": 48,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.1676406743500558,
+            0.0,
+            -0.47005477286194264
+          ],
+          "aabb_max_m": [
+            0.18234681979726194,
+            0.8378057453837453,
+            -0.012483101916738959
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.8378057453837453,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 40,
+          "visibility_end_m": 120,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/perennial_dry_lod2.glb",
+          "family": "perennial",
+          "model_id": "perennial_dry",
+          "lod_level": 2,
+          "triangles": 8,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.1676406743500558,
+            0.5476307184022182,
+            -0.14248310191673896
+          ],
+          "aabb_max_m": [
+            -0.0376406743500558,
+            0.7676307184022182,
+            -0.012483101916738959
+          ],
+          "elevation_min": 0.5476307184022182,
+          "elevation_max": 0.7676307184022182,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 120,
+          "visibility_end_m": 350,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "ornamental_fine",
+      "label": "가는 잎 관상용 풀",
+      "kind": "ornamental",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/ornamental_fine_lod0.glb",
+          "family": "ornamental",
+          "model_id": "ornamental_fine",
+          "lod_level": 0,
+          "triangles": 80,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.4498247524356432,
+            0,
+            -0.46610979951034925
+          ],
+          "aabb_max_m": [
+            0.5237777712609046,
+            0.8263673380031591,
+            0.4912074979685544
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.8263673380031591,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 40,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/ornamental_fine_lod1.glb",
+          "family": "ornamental",
+          "model_id": "ornamental_fine",
+          "lod_level": 1,
+          "triangles": 32,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3412620169056034,
+            0,
+            -0.43890994319119486
+          ],
+          "aabb_max_m": [
+            0.5237777712609046,
+            0.8263673380031591,
+            0.4619819879226516
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.8263673380031591,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 40,
+          "visibility_end_m": 120,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/ornamental_fine_lod2.glb",
+          "family": "ornamental",
+          "model_id": "ornamental_fine",
+          "lod_level": 2,
+          "triangles": 12,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            0.009729720498983806,
+            0,
+            -0.43890994319119486
+          ],
+          "aabb_max_m": [
+            0.5237777712609046,
+            0.8263673380031591,
+            0.026778138247581233
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.8263673380031591,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 120,
+          "visibility_end_m": 350,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "ornamental_seedhead",
+      "label": "이삭형 관상용 풀",
+      "kind": "ornamental",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/ornamental_seedhead_lod0.glb",
+          "family": "ornamental",
+          "model_id": "ornamental_seedhead",
+          "lod_level": 0,
+          "triangles": 120,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.41846505826742186,
+            0,
+            -0.515058048482365
+          ],
+          "aabb_max_m": [
+            0.5468611698580852,
+            0.8315200436757637,
+            0.5197207967313601
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.8315200436757637,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 40,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/ornamental_seedhead_lod1.glb",
+          "family": "ornamental",
+          "model_id": "ornamental_seedhead",
+          "lod_level": 1,
+          "triangles": 32,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.2618342927047501,
+            0,
+            -0.515058048482365
+          ],
+          "aabb_max_m": [
+            0.5333989891630285,
+            0.7886393527709066,
+            0.31318330822891316
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.7886393527709066,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 40,
+          "visibility_end_m": 120,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/ornamental_seedhead_lod2.glb",
+          "family": "ornamental",
+          "model_id": "ornamental_seedhead",
+          "lod_level": 2,
+          "triangles": 12,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.2618342927047501,
+            0,
+            -0.1470018179810971
+          ],
+          "aabb_max_m": [
+            0.09451970769174428,
+            0.7886393527709066,
+            0.3038096218392967
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.7886393527709066,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 120,
+          "visibility_end_m": 350,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "hedge_1m",
+      "label": "생울타리 1m",
+      "kind": "hedge",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_1m_lod0.glb",
+          "family": "hedge",
+          "model_id": "hedge_1m",
+          "lod_level": 0,
+          "triangles": 60,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -0.5
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0272789228047705,
+            0.5
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1.0272789228047705,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -0.5
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                0.5
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_1m_lod1.glb",
+          "family": "hedge",
+          "model_id": "hedge_1m",
+          "lod_level": 1,
+          "triangles": 20,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -0.5
+          ],
+          "aabb_max_m": [
+            0.3,
+            1,
+            0.5
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -0.5
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                0.5
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_1m_lod2.glb",
+          "family": "hedge",
+          "model_id": "hedge_1m",
+          "lod_level": 2,
+          "triangles": 12,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0.0,
+            -0.5
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0,
+            0.5
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 1.0,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 500,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -0.5
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                0.5
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": [
+        {
+          "position": [
+            0,
+            0,
+            -0.5
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "profile": "park_hedge_w060_h100"
+        },
+        {
+          "position": [
+            0,
+            0,
+            0.5
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "profile": "park_hedge_w060_h100"
+        }
+      ]
+    },
+    {
+      "id": "hedge_2m",
+      "label": "생울타리 2m",
+      "kind": "hedge",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_2m_lod0.glb",
+          "family": "hedge",
+          "model_id": "hedge_2m",
+          "lod_level": 0,
+          "triangles": 60,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -1.0
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0272789228047705,
+            1.0
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1.0272789228047705,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                1.0
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_2m_lod1.glb",
+          "family": "hedge",
+          "model_id": "hedge_2m",
+          "lod_level": 1,
+          "triangles": 20,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -1.0
+          ],
+          "aabb_max_m": [
+            0.3,
+            1,
+            1.0
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                1.0
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_2m_lod2.glb",
+          "family": "hedge",
+          "model_id": "hedge_2m",
+          "lod_level": 2,
+          "triangles": 12,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0.0,
+            -1.0
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0,
+            1.0
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 1.0,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 500,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                1.0
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": [
+        {
+          "position": [
+            0,
+            0,
+            -1.0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "profile": "park_hedge_w060_h100"
+        },
+        {
+          "position": [
+            0,
+            0,
+            1.0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "profile": "park_hedge_w060_h100"
+        }
+      ]
+    },
+    {
+      "id": "hedge_4m",
+      "label": "생울타리 4m",
+      "kind": "hedge",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_4m_lod0.glb",
+          "family": "hedge",
+          "model_id": "hedge_4m",
+          "lod_level": 0,
+          "triangles": 60,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -2.0
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0272789228047705,
+            2.0
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1.0272789228047705,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -2.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                2.0
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_4m_lod1.glb",
+          "family": "hedge",
+          "model_id": "hedge_4m",
+          "lod_level": 1,
+          "triangles": 20,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -2.0
+          ],
+          "aabb_max_m": [
+            0.3,
+            1,
+            2.0
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -2.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                2.0
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_4m_lod2.glb",
+          "family": "hedge",
+          "model_id": "hedge_4m",
+          "lod_level": 2,
+          "triangles": 12,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0.0,
+            -2.0
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0,
+            2.0
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 1.0,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 500,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -2.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                0,
+                0,
+                2.0
+              ],
+              "direction": [
+                0,
+                0,
+                1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": [
+        {
+          "position": [
+            0,
+            0,
+            -2.0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "profile": "park_hedge_w060_h100"
+        },
+        {
+          "position": [
+            0,
+            0,
+            2.0
+          ],
+          "direction": [
+            0,
+            0,
+            1
+          ],
+          "profile": "park_hedge_w060_h100"
+        }
+      ]
+    },
+    {
+      "id": "hedge_corner",
+      "label": "생울타리 모서리",
+      "kind": "hedge",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_corner_lod0.glb",
+          "family": "hedge",
+          "model_id": "hedge_corner",
+          "lod_level": 0,
+          "triangles": 72,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.30000000000000004,
+            0,
+            -1.0
+          ],
+          "aabb_max_m": [
+            1.3,
+            1.0272789228047705,
+            1.0
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1.0272789228047705,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                1.3,
+                0,
+                0.7
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_corner_lod1.glb",
+          "family": "hedge",
+          "model_id": "hedge_corner",
+          "lod_level": 1,
+          "triangles": 32,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.30000000000000004,
+            0,
+            -1.0
+          ],
+          "aabb_max_m": [
+            1.3,
+            1,
+            1.0
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                1.3,
+                0,
+                0.7
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_corner_lod2.glb",
+          "family": "hedge",
+          "model_id": "hedge_corner",
+          "lod_level": 2,
+          "triangles": 24,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.30000000000000004,
+            0.0,
+            -1.0
+          ],
+          "aabb_max_m": [
+            1.3,
+            1.0,
+            1.0
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 1.0,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 500,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -1.0
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            },
+            {
+              "position": [
+                1.3,
+                0,
+                0.7
+              ],
+              "direction": [
+                1,
+                0,
+                0
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": [
+        {
+          "position": [
+            0,
+            0,
+            -1.0
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "profile": "park_hedge_w060_h100"
+        },
+        {
+          "position": [
+            1.3,
+            0,
+            0.7
+          ],
+          "direction": [
+            1,
+            0,
+            0
+          ],
+          "profile": "park_hedge_w060_h100"
+        }
+      ]
+    },
+    {
+      "id": "hedge_end",
+      "label": "생울타리 끝단",
+      "kind": "hedge",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_end_lod0.glb",
+          "family": "hedge",
+          "model_id": "hedge_end",
+          "lod_level": 0,
+          "triangles": 60,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -0.5
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0272789228047705,
+            0.5
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1.0272789228047705,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -0.5
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_end_lod1.glb",
+          "family": "hedge",
+          "model_id": "hedge_end",
+          "lod_level": 1,
+          "triangles": 20,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0,
+            -0.5
+          ],
+          "aabb_max_m": [
+            0.3,
+            1,
+            0.5
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -0.5
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/hedge_end_lod2.glb",
+          "family": "hedge",
+          "model_id": "hedge_end",
+          "lod_level": 2,
+          "triangles": 12,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3,
+            0.0,
+            -0.5
+          ],
+          "aabb_max_m": [
+            0.3,
+            1.0,
+            0.5
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 1.0,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 500,
+          "connection_ports": [
+            {
+              "position": [
+                0,
+                0,
+                -0.5
+              ],
+              "direction": [
+                0,
+                0,
+                -1
+              ],
+              "profile": "park_hedge_w060_h100"
+            }
+          ],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": [
+        {
+          "position": [
+            0,
+            0,
+            -0.5
+          ],
+          "direction": [
+            0,
+            0,
+            -1
+          ],
+          "profile": "park_hedge_w060_h100"
+        }
+      ]
+    },
+    {
+      "id": "rock_small",
+      "label": "작은 조경석",
+      "kind": "rock",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/rock_small_lod0.glb",
+          "family": "rock",
+          "model_id": "rock_small",
+          "lod_level": 0,
+          "triangles": 48,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.3382148913725066,
+            0.0,
+            -0.30000000000000004
+          ],
+          "aabb_max_m": [
+            0.375,
+            0.48750000000000004,
+            0.30000000000000004
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.48750000000000004,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/rock_small_lod1.glb",
+          "family": "rock",
+          "model_id": "rock_small",
+          "lod_level": 1,
+          "triangles": 24,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.41137086790669075,
+            0.0,
+            -0.2598076211353316
+          ],
+          "aabb_max_m": [
+            0.375,
+            0.48750000000000004,
+            0.2598076211353316
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.48750000000000004,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/rock_small_lod2.glb",
+          "family": "rock",
+          "model_id": "rock_small",
+          "lod_level": 2,
+          "triangles": 8,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.375,
+            0,
+            -0.30000000000000004
+          ],
+          "aabb_max_m": [
+            0.375,
+            0.48750000000000004,
+            0.30000000000000004
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.48750000000000004,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 400,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "rock_medium",
+      "label": "중간 조경석",
+      "kind": "rock",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/rock_medium_lod0.glb",
+          "family": "rock",
+          "model_id": "rock_medium",
+          "lod_level": 0,
+          "triangles": 48,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.6764297827450132,
+            0.0,
+            -0.6000000000000001
+          ],
+          "aabb_max_m": [
+            0.75,
+            0.9750000000000001,
+            0.6000000000000001
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.9750000000000001,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/rock_medium_lod1.glb",
+          "family": "rock",
+          "model_id": "rock_medium",
+          "lod_level": 1,
+          "triangles": 24,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.8227417358133815,
+            0.0,
+            -0.5196152422706632
+          ],
+          "aabb_max_m": [
+            0.75,
+            0.9750000000000001,
+            0.5196152422706632
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.9750000000000001,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/rock_medium_lod2.glb",
+          "family": "rock",
+          "model_id": "rock_medium",
+          "lod_level": 2,
+          "triangles": 8,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -0.75,
+            0,
+            -0.6000000000000001
+          ],
+          "aabb_max_m": [
+            0.75,
+            0.9750000000000001,
+            0.6000000000000001
+          ],
+          "elevation_min": 0,
+          "elevation_max": 0.9750000000000001,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 400,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    },
+    {
+      "id": "rock_cluster",
+      "label": "조경석 군락",
+      "kind": "rock",
+      "lods": [
+        {
+          "path": "res://assets/generated/park_vegetation/rock_cluster_lod0.glb",
+          "family": "rock",
+          "model_id": "rock_cluster",
+          "lod_level": 0,
+          "triangles": 144,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -1.1358904476401968,
+            0.0,
+            -0.7076
+          ],
+          "aabb_max_m": [
+            1.244011812814429,
+            0.7436000000000001,
+            0.7076
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.7436000000000001,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 0,
+          "visibility_end_m": 60,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/rock_cluster_lod1.glb",
+          "family": "rock",
+          "model_id": "rock_cluster",
+          "lod_level": 1,
+          "triangles": 72,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -1.247477697180339,
+            0.0,
+            -0.6462932247717592
+          ],
+          "aabb_max_m": [
+            1.244011812814429,
+            0.7436000000000001,
+            0.6462932247717592
+          ],
+          "elevation_min": 0.0,
+          "elevation_max": 0.7436000000000001,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 60,
+          "visibility_end_m": 180,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        },
+        {
+          "path": "res://assets/generated/park_vegetation/rock_cluster_lod2.glb",
+          "family": "rock",
+          "model_id": "rock_cluster",
+          "lod_level": 2,
+          "triangles": 8,
+          "surfaces": 1,
+          "bbox": null,
+          "resolution": null,
+          "aabb_min_m": [
+            -1.1,
+            0,
+            -0.8800000000000001
+          ],
+          "aabb_max_m": [
+            1.1,
+            1.4300000000000002,
+            0.8800000000000001
+          ],
+          "elevation_min": 0,
+          "elevation_max": 1.4300000000000002,
+          "placement_status": "asset_only",
+          "detail_profile": "park_opaque_vertex_v1",
+          "visibility_begin_m": 180,
+          "visibility_end_m": 400,
+          "connection_ports": [],
+          "species_status": "generic_procedural",
+          "external_textures": false,
+          "collision_shapes": 0
+        }
+      ],
+      "connection_ports": []
+    }
+  ],
+  "ground_profiles": [
+    "lawn",
+    "meadow",
+    "soil",
+    "gravel",
+    "bamboo_litter"
+  ],
+  "batch": {
+    "cell_size_m": 32,
+    "shadows": false,
+    "lod_policy": "per_instance_distance_range"
+  },
+  "status": "generic_procedural_not_site_survey"
+}

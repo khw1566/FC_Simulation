@@ -1,0 +1,125 @@
+{
+  "accuracy": "공식 공항도에서 판독한 근사 배치와 공개 외관 사진에 기초한 외관 모델. 측량·준공 모델이 아님.",
+  "airfield": {
+    "approach_18_m": 330,
+    "approach_36_m": 720,
+    "edge_light_spacing_m": 60,
+    "length_m": 2000,
+    "notes": "활주로 치수·시단 좌표·표고·가장자리 등 간격은 AIP 기준. 유도로 곡선·계류장 외곽·등기구 개별 위치·진입등 배열은 공항도 기반 근사 표현. 중심선은 도색만 적용하며 중심선등은 없음.",
+    "taxi_light_spacing_m": 30,
+    "taxiway_width_m": 30,
+    "threshold_18": {
+      "elevation_m": 13,
+      "lat": 35.6024694444444,
+      "lon": 129.350983333333
+    },
+    "threshold_36": {
+      "elevation_m": 8.5,
+      "lat": 35.5844861111111,
+      "lon": 129.352486111111
+    },
+    "width_m": 45
+  },
+  "anchor": {
+    "lat": 35.59273,
+    "lon": 129.35592
+  },
+  "asset_license_note": "형상과 재질은 본 프로젝트에서 직접 작성. 참고 사진·공식 공항도는 모델에 텍스처로 포함하지 않음.",
+  "buildings": [
+    {
+      "center_xz": [
+        0,
+        0
+      ],
+      "height": 11.8,
+      "id": "terminal",
+      "name_ko": "여객청사",
+      "size_xz": [
+        80,
+        44
+      ]
+    },
+    {
+      "center_xz": [
+        43,
+        -6
+      ],
+      "height": 9,
+      "id": "office",
+      "name_ko": "청사 북측 부속동",
+      "size_xz": [
+        26,
+        28
+      ]
+    },
+    {
+      "center_xz": [
+        196,
+        -10
+      ],
+      "height": 7,
+      "id": "fire_station",
+      "name_ko": "소방대",
+      "size_xz": [
+        30,
+        23
+      ]
+    },
+    {
+      "center_xz": [
+        106,
+        8
+      ],
+      "height": 6,
+      "id": "power_station",
+      "name_ko": "전력시설",
+      "size_xz": [
+        26,
+        20
+      ]
+    }
+  ],
+  "dimensions_are_estimates": true,
+  "id": "ulsan_airport",
+  "name_ko": "울산공항",
+  "position_uncertainty_m": 30,
+  "reference_elevation_m": 9,
+  "revision": "2026-09-29",
+  "rotation_y_degrees": 94,
+  "scene_path": "res://assets/maps/ulsan_metro_60km/airport/ulsan_airport.scn",
+  "sources": [
+    {
+      "title": "국토교통부 RKPU 공항도, 2026-07-08 발효",
+      "url": "https://aim.koca.go.kr/eaipPub/Package/2026-07-08-AIRAC/pdf/AD/RKPU/(2-1)%20AD%20CHART.pdf",
+      "used_for": "청사·관제탑·소방대·전력시설의 상대 위치, 주기장 표고 9m, 축 방향"
+    },
+    {
+      "title": "한국공항공사 울산공항 개요",
+      "url": "https://www.airport.co.kr/ulsaneng/cms/frCon/index.do?MENU_ID=210",
+      "used_for": "공항 식별, 여객청사 설명"
+    },
+    {
+      "title": "울산매일 울산공항 전경 사진",
+      "url": "https://www.iusm.co.kr/news/articleView.html?idxno=772218",
+      "used_for": "유리 커튼월, 흰색 프레임, 저층 청사와 관제탑 외관 참고. 사진 자체는 텍스처로 사용하지 않음."
+    },
+    {
+      "title": "국토교통부 RKPU AD 2.12·2.14·2.15",
+      "url": "https://aim.koca.go.kr/eaipPub/Package/2026-08-05-AIRAC/html/eAIP/KR-AD-2.RKPU-en-GB.html",
+      "used_for": "시단 좌표, 활주로·유도로 폭, 가장자리·시단·종단 등화, 진입등 길이"
+    }
+  ],
+  "terminal": {
+    "depth": 44,
+    "height": 11.8,
+    "width": 80
+  },
+  "tower": {
+    "center_xz": [
+      32,
+      -4
+    ],
+    "height": 31,
+    "note": "높이는 외관 비례를 이용한 추정값이며 안테나 포함. 공식 실측값으로 취급하지 않음."
+  }
+}

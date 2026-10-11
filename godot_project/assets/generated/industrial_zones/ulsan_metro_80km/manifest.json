@@ -3,32 +3,48 @@
   "assets": {
     "industrial_zones/ulsan_metro_80km/allowed.png": {
       "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/allowed.png",
-      "sha256": "29dde00a77419fe45a82bb8428994681b7088d4dc74398bea8d98ad638acc33c",
+      "sha256": "a0e4d186fbe89d3ca37b3a91ac9f7376922ba14e0a4e1abaa08a28a9a40f1fe6",
       "bbox": {
         "south": 35.1841,
         "north": 35.9049,
         "west": 128.81256666666667,
         "east": 129.69843333333336
       },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
       "resolution": {
         "width": 4096,
         "height": 4096
       },
       "type": "industrial_zone_layout"
     },
-    "industrial_zones/ulsan_metro_80km/excluded_all.png": {
-      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/excluded_all.png",
-      "sha256": "26301c476979fe2a65088065ae066742e369eeef352b444fbf2e4ea53f187866",
+    "industrial_zones/ulsan_metro_80km/building_suppression.json": {
+      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/building_suppression.json",
+      "sha256": "0f9a0c7caf8f092951e5e376012ce180789a1c1773d9f199e9173e7d83e25009",
       "bbox": {
         "south": 35.1841,
         "north": 35.9049,
         "west": 128.81256666666667,
         "east": 129.69843333333336
       },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
+      "resolution": {
+        "type": "procedural_layout"
+      },
+      "type": "industrial_zone_layout"
+    },
+    "industrial_zones/ulsan_metro_80km/excluded_all.png": {
+      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/excluded_all.png",
+      "sha256": "8e0688365e1b7023c0210ac378f3d0b4349a9143149f6bfc4e66a38c8a2a4eed",
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
       "resolution": {
         "width": 4096,
         "height": 4096
@@ -44,8 +60,8 @@
         "west": 128.81256666666667,
         "east": 129.69843333333336
       },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
       "resolution": {
         "width": 4096,
         "height": 4096
@@ -54,32 +70,32 @@
     },
     "industrial_zones/ulsan_metro_80km/layout_preview.png": {
       "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/layout_preview.png",
-      "sha256": "ae0b15d842f5c6c9ac0b896e2a0bb35517c08cc6ee62c8ebdea39bd1336fa4b7",
+      "sha256": "8a54a11522255d0b538e27af00121f21362a8320034a0779658d5c2dff06f46b",
       "bbox": {
         "south": 35.1841,
         "north": 35.9049,
         "west": 128.81256666666667,
         "east": 129.69843333333336
       },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
       "resolution": {
-        "width": 1800,
-        "height": 940
+        "width": 3600,
+        "height": 4200
       },
       "type": "industrial_zone_layout"
     },
     "industrial_zones/ulsan_metro_80km/parcels.json": {
       "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/parcels.json",
-      "sha256": "32af1b59805cee4793397f55c4c5a3a3b3e6918c538d13acf45fba9233299af1",
+      "sha256": "86a69e21e8af211c4e0a483bf29110fe3abdfd0e4350093be63e4062f8bafb19",
       "bbox": {
         "south": 35.1841,
         "north": 35.9049,
         "west": 128.81256666666667,
         "east": 129.69843333333336
       },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
       "resolution": {
         "type": "procedural_layout"
       },
@@ -87,66 +103,17 @@
     },
     "industrial_zones/ulsan_metro_80km/placements.json": {
       "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/placements.json",
-      "sha256": "ad71a1c88d5af1289b9ab36bdc24ee2129581fcf90a85ae59ba450abb4088a95",
+      "sha256": "dac0933f8b361264d1bccdd93010d0b3251ae5ce0dccff92c5524eb941438ebe",
       "bbox": {
         "south": 35.1841,
         "north": 35.9049,
         "west": 128.81256666666667,
         "east": 129.69843333333336
       },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
       "resolution": {
         "type": "procedural_layout"
-      },
-      "type": "industrial_zone_layout"
-    },
-    "industrial_zones/ulsan_metro_80km/regions.json": {
-      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/regions.json",
-      "sha256": "6225e4df4dafeb4abfc419d371f4923a5b68b17f445b48be47e4f7d2bc4e2985",
-      "bbox": {
-        "south": 35.1841,
-        "north": 35.9049,
-        "west": 128.81256666666667,
-        "east": 129.69843333333336
-      },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
-      "resolution": {
-        "type": "procedural_layout"
-      },
-      "type": "industrial_zone_layout"
-    },
-    "industrial_zones/ulsan_metro_80km/roads.json": {
-      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/roads.json",
-      "sha256": "343a03bab87e268273991c9378a055c3b8ca10bf6d307f7ac4d670613c179022",
-      "bbox": {
-        "south": 35.1841,
-        "north": 35.9049,
-        "west": 128.81256666666667,
-        "east": 129.69843333333336
-      },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
-      "resolution": {
-        "type": "procedural_layout"
-      },
-      "type": "industrial_zone_layout"
-    },
-    "industrial_zones/ulsan_metro_80km/zone_ids.png": {
-      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/zone_ids.png",
-      "sha256": "6968f29e284a0514f3228a882c16a1cbda3893646c6f289495dffc4e37b3c67d",
-      "bbox": {
-        "south": 35.1841,
-        "north": 35.9049,
-        "west": 128.81256666666667,
-        "east": 129.69843333333336
-      },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
-      "resolution": {
-        "width": 4096,
-        "height": 4096
       },
       "type": "industrial_zone_layout"
     },
@@ -159,10 +126,59 @@
         "west": 128.81256666666667,
         "east": 129.69843333333336
       },
-      "elevation_min": 0.496,
-      "elevation_max": 99.0,
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
       "resolution": {
-        "type": "documentation"
+        "type": "procedural_layout"
+      },
+      "type": "industrial_zone_layout"
+    },
+    "industrial_zones/ulsan_metro_80km/regions.json": {
+      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/regions.json",
+      "sha256": "beb8bc75e99725ea129ba2077a826016d82fe876d80d80998119069cdf7567f8",
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
+      "resolution": {
+        "type": "procedural_layout"
+      },
+      "type": "industrial_zone_layout"
+    },
+    "industrial_zones/ulsan_metro_80km/roads.json": {
+      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/roads.json",
+      "sha256": "735ea2c8a22f02ad4e86446e340f878ab8606dc0945aa29d45f2db1a86b9ee55",
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
+      "resolution": {
+        "type": "procedural_layout"
+      },
+      "type": "industrial_zone_layout"
+    },
+    "industrial_zones/ulsan_metro_80km/zone_ids.png": {
+      "file_path": "res://assets/generated/industrial_zones/ulsan_metro_80km/zone_ids.png",
+      "sha256": "7aa1ed83b37038fdd58b083e1eec37149bffffc320c922d1b3d8e6997c8cb730",
+      "bbox": {
+        "south": 35.1841,
+        "north": 35.9049,
+        "west": 128.81256666666667,
+        "east": 129.69843333333336
+      },
+      "elevation_min": -12.025,
+      "elevation_max": 290.852,
+      "resolution": {
+        "width": 4096,
+        "height": 4096
       },
       "type": "industrial_zone_layout"
     }

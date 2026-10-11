@@ -1,0 +1,260 @@
+{
+  "assets": {
+    "bridge_00": {
+      "file_path": "res://assets/generated/bridges/bridge_00.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "9706af4264dca9b76e92464de9b9e57da6cd12abcd6bc2b8360e29490ddf834c",
+      "size_bytes": 708177,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 9884,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -5.16802978515625,
+          -8,
+          -320.304290771484
+        ],
+        "aabb_max_m": [
+          2856.94213867188,
+          203.387451171875,
+          231.498992919922
+        ],
+        "elevation_min": -8,
+        "elevation_max": 203.387451171875,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    },
+    "bridge_01": {
+      "file_path": "res://assets/generated/bridges/bridge_01.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "658d3275b6b5d246a31fb3720a4568c727b7ff8c5afd4272ff61a11edc1c11ed",
+      "size_bytes": 58173,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 924,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -0.10771587491035,
+          0.200000017881393,
+          -4.30391550064087
+        ],
+        "aabb_max_m": [
+          158.083694458008,
+          31.3347911834717,
+          3.54920101165771
+        ],
+        "elevation_min": 0.200000017881393,
+        "elevation_max": 31.3347911834717,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    },
+    "bridge_02": {
+      "file_path": "res://assets/generated/bridges/bridge_02.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "750a8c8512f8517504d1b4e2c9fb49366aa9555796fd9a4f525d7da8df6cc0ec",
+      "size_bytes": 68132,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1076,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -5.41790533065796,
+          -3,
+          -235.536041259766
+        ],
+        "aabb_max_m": [
+          118.157218933105,
+          2.30000019073486,
+          2.65036010742188
+        ],
+        "elevation_min": -3,
+        "elevation_max": 2.30000019073486,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    },
+    "bridge_03": {
+      "file_path": "res://assets/generated/bridges/bridge_03.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "e86420aa014e9caacf3bbabd45efa65088cc29e7f95175dd131df286ebb887f3",
+      "size_bytes": 103608,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1596,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -8.05770874023438,
+          -3,
+          -230.891067504883
+        ],
+        "aabb_max_m": [
+          12.7459201812744,
+          2.30000019073486,
+          1.23143005371094
+        ],
+        "elevation_min": -3,
+        "elevation_max": 2.30000019073486,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    },
+    "bridge_04": {
+      "file_path": "res://assets/generated/bridges/bridge_04.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "d3049c79de921d04e6dbb72e7e4eb7d50e9351f2ae5f1c77bc6342da1d28ceba",
+      "size_bytes": 115829,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1744,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -392.721649169922,
+          -3,
+          -5.11762475967407
+        ],
+        "aabb_max_m": [
+          3.20028686523438,
+          2.30000019073486,
+          247.115386962891
+        ],
+        "elevation_min": -3,
+        "elevation_max": 2.30000019073486,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    },
+    "bridge_05": {
+      "file_path": "res://assets/generated/bridges/bridge_05.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "001bdfd938e9a088d211bd7d635755016fcc3c0c8ab99ecb5c33540b97063402",
+      "size_bytes": 115829,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1744,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -3.19490242004395,
+          -3,
+          -245.975555419922
+        ],
+        "aabb_max_m": [
+          391.795135498047,
+          2.30000019073486,
+          5.12094116210938
+        ],
+        "elevation_min": -3,
+        "elevation_max": 2.30000019073486,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    },
+    "bridge_06": {
+      "file_path": "res://assets/generated/bridges/bridge_06.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "febb3415547ef938059e623b0889b5f0003ffd65014cffbdea96a8d2ed115b9c",
+      "size_bytes": 33453,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 496,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -6,
+          -3,
+          -0.09510565549135
+        ],
+        "aabb_max_m": [
+          6,
+          2.30000019073486,
+          120.095108032227
+        ],
+        "elevation_min": -3,
+        "elevation_max": 2.30000019073486,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    },
+    "bridge_07": {
+      "file_path": "res://assets/generated/bridges/bridge_07.scn",
+      "format": "SCN",
+      "type": "bridge_model",
+      "sha256": "007ab47266c7004a7b121bf1da326e4f3d8d01aef5a5ec6bb8e8a0ddaef54eda",
+      "size_bytes": 49107,
+      "metadata": {
+        "detail_profile": "rail_bridge_low_poly_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 604,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -0.625,
+          -0.39999997615814,
+          -0.5
+        ],
+        "aabb_max_m": [
+          0.645105600357056,
+          1.14999997615814,
+          60.5
+        ],
+        "elevation_min": -0.39999997615814,
+        "elevation_max": 1.14999997615814,
+        "bbox": null,
+        "resolution": null,
+        "placement_status": "asset_only",
+        "collision_shapes": 1,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "assets": {
+    "ulsan_airport.scn": {
+      "bbox": {
+        "east": 129.36,
+        "north": 35.606,
+        "south": 35.584,
+        "west": 129.35
+      },
+      "elevation": {
+        "max_meters": 31,
+        "min_meters": -8
+      },
+      "file_path": "res://assets/generated/airport/ulsan_airport.scn",
+      "resolution": {
+        "type": "procedural_landmark",
+        "units": "meters"
+      },
+      "sha256": "a932b553b7b90818777c42b1596a4ffe81214ddad47a56e8a43381b3c7182175",
+      "size_bytes": 240094,
+      "metadata": {
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 3734,
+        "triangle_count_method": "mesh_faces_times_instances",
+        "aabb_min_m": [
+          -1610.86926269531,
+          -8,
+          -398.672790527344
+        ],
+        "aabb_max_m": [
+          1439.18444824219,
+          31,
+          32
+        ],
+        "elevation_min": -8,
+        "elevation_max": 31,
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": false
+      }
+    }
+  }
+}

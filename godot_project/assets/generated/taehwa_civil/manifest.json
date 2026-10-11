@@ -1,0 +1,2924 @@
+{
+  "version": 1,
+  "assets": {
+    "bancheon_weir.glb": {
+      "file_path": "res://assets/generated/taehwa_civil/bancheon_weir.glb",
+      "sha256": "d9b65febeb5fa28de483f9f9bf305e130ae0c838221c2eef8dc2758d2e5b2980",
+      "size_bytes": 11156,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -1.445,
+        "elevation_max": 0.19999999999999996,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "map_80km_research_estimate",
+        "triangles": 160,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "반천 부근 보와 어도",
+        "status": "osm_axis_imagery_simplified",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -50.83829608598275,
+          -1.445,
+          -3.0
+        ],
+        "aabb_max_m": [
+          50.83829608598275,
+          0.19999999999999996,
+          12.0
+        ],
+        "axis_lonlat": [
+          [
+            129.1422256,
+            35.5526841
+          ],
+          [
+            129.1433315,
+            35.552856
+          ]
+        ],
+        "depth_status": "visual_estimate"
+      }
+    },
+    "bancheon_weir.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/bancheon_weir.tscn",
+      "sha256": "28fe8d67ed4adfc5d42516b150c3ca7e12cfe8ca0495795b1c243021cc67435e",
+      "size_bytes": 18721,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -1.445,
+        "elevation_max": 0.19999999999999996,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "map_80km_research_estimate",
+        "triangles": 160,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "반천 부근 보와 어도",
+        "status": "osm_axis_imagery_simplified",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -50.83829608598275,
+          -1.445,
+          -3.0
+        ],
+        "aabb_max_m": [
+          50.83829608598275,
+          0.19999999999999996,
+          12.0
+        ],
+        "axis_lonlat": [
+          [
+            129.1422256,
+            35.5526841
+          ],
+          [
+            129.1433315,
+            35.552856
+          ]
+        ],
+        "depth_status": "visual_estimate"
+      }
+    },
+    "basin0_8000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/basin0_8000_0.tscn",
+      "sha256": "dd86a2b0472dfaaca22c1fc593b7dfb8a4e984ac531e9088d11fe0d997981905",
+      "size_bytes": 4097,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.15,
+        "elevation_max": 0.6,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 20,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "basin0_8000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "basin0_9000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/basin0_9000_0.tscn",
+      "sha256": "615fe8017773ed1209272c54738cc64e3124651b969e45e3262691e7882e6d37",
+      "size_bytes": 35766,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.15,
+        "elevation_max": 0.6,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 390,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "basin0_9000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "basin1_9000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/basin1_9000_0.tscn",
+      "sha256": "2b7e68ad7e6cc6f78b8e9bf5e016438357ddbac9b282d9e61c4192b4db289220",
+      "size_bytes": 6709,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.15,
+        "elevation_max": 0.6,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 50,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "basin1_9000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "bed_mask.png": {
+      "file_path": "res://assets/generated/taehwa_civil/bed_mask.png",
+      "sha256": "7e89bc1e4c56116cfd651985967ee1e4214d7899613ac1c532c8eb7524d87b04",
+      "size_bytes": 8285,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": null,
+        "elevation_max": null,
+        "resolution": [
+          1646,
+          403
+        ],
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": null,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "bed_mask"
+      }
+    },
+    "bed_patch.json": {
+      "file_path": "res://assets/generated/taehwa_civil/bed_patch.json",
+      "sha256": "8b534b39a3694652ba266b678d0b1eb6ec6dfbeab1a11e849f0c1a795db4db2c",
+      "size_bytes": 757,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": null,
+        "elevation_max": null,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": null,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "bed_patch"
+      }
+    },
+    "bed_patch.rf32z": {
+      "file_path": "res://assets/generated/taehwa_civil/bed_patch.rf32z",
+      "sha256": "dd70f16fa744f2a7c2f9d9f7b91e453400c989be45dedd13f7f61fccdecaf706",
+      "size_bytes": 62504,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -16.081634521484375,
+        "elevation_max": 93.13496398925781,
+        "resolution": [
+          1646,
+          403
+        ],
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": null,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "bed_patch",
+        "elevation_reference": "estimated_visual_bed_m"
+      }
+    },
+    "catalog.json": {
+      "file_path": "res://assets/generated/taehwa_civil/catalog.json",
+      "sha256": "27c599d3ca7a4fec49863675441688ecaa24290519c673049add2d1adeecd98f",
+      "size_bytes": 86807,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": null,
+        "elevation_max": null,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": null,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "catalog"
+      }
+    },
+    "drain_outlet.glb": {
+      "file_path": "res://assets/generated/taehwa_civil/drain_outlet.glb",
+      "sha256": "e39440c5cb4bd345a0199b2275994aab3b928fd86ee10340375a23f7ab383d18",
+      "size_bytes": 20156,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -0.6,
+        "elevation_max": 3.4,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "unplaced",
+        "triangles": 300,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "배수 암거·토출구 모듈",
+        "status": "reusable_unplaced",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -5.0,
+          -0.6,
+          -4.0
+        ],
+        "aabb_max_m": [
+          5.0,
+          3.4,
+          4.0
+        ],
+        "axis_lonlat": null,
+        "depth_status": "visual_estimate"
+      }
+    },
+    "drain_outlet.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/drain_outlet.tscn",
+      "sha256": "bfd461c1f1196892d9c27ff45f4a6cd5baa02edea10b504c44ca00b0279a9bbc",
+      "size_bytes": 31422,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -0.6,
+        "elevation_max": 3.4,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "unplaced",
+        "triangles": 300,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "배수 암거·토출구 모듈",
+        "status": "reusable_unplaced",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -5.0,
+          -0.6,
+          -4.0
+        ],
+        "aabb_max_m": [
+          5.0,
+          3.4,
+          4.0
+        ],
+        "axis_lonlat": null,
+        "depth_status": "visual_estimate"
+      }
+    },
+    "hydro_boundary.geojson": {
+      "file_path": "res://assets/generated/taehwa_civil/hydro_boundary.geojson",
+      "sha256": "e85d02429603e11f88f3a4237be390bf328cdb865c3062dc4df8569504827197",
+      "size_bytes": 40832,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": null,
+        "elevation_max": null,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": null,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "hydro_boundary"
+      }
+    },
+    "overlay_mask.png": {
+      "file_path": "res://assets/generated/taehwa_civil/overlay_mask.png",
+      "sha256": "1a2eb8812d986ec653d414a17ccdbc55dce81898c73324a54213b522fbec2189",
+      "size_bytes": 12704,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": null,
+        "elevation_max": null,
+        "resolution": [
+          3292,
+          806
+        ],
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": null,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "overlay_mask"
+      }
+    },
+    "README.md": {
+      "file_path": "res://assets/generated/taehwa_civil/README.md",
+      "sha256": "036b1ec2226d163e1ae4cad06cd5b7be3a644adff66322ed55379ab8b4255d2d",
+      "size_bytes": 2005,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": null,
+        "elevation_max": null,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": null,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "README"
+      }
+    },
+    "revetment_segment.glb": {
+      "file_path": "res://assets/generated/taehwa_civil/revetment_segment.glb",
+      "sha256": "95ded23eddb2f5151515f7d9d727c07ff085adbb4ddf8609be11168525ddd000",
+      "size_bytes": 7280,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -3,
+        "elevation_max": 1.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "unplaced",
+        "triangles": 86,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "사석 호안·관리로 모듈",
+        "status": "reusable_unplaced",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -10,
+          -3,
+          -5.0
+        ],
+        "aabb_max_m": [
+          10,
+          1.35,
+          4
+        ],
+        "axis_lonlat": null,
+        "depth_status": "visual_estimate"
+      }
+    },
+    "revetment_segment.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/revetment_segment.tscn",
+      "sha256": "90d2df82d4d141b488867802a9f82ac9700cf30b3fae6d8c20e780f56a3017d3",
+      "size_bytes": 10282,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -3,
+        "elevation_max": 1.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "unplaced",
+        "triangles": 86,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "사석 호안·관리로 모듈",
+        "status": "reusable_unplaced",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -10,
+          -3,
+          -5.0
+        ],
+        "aabb_max_m": [
+          10,
+          1.35,
+          4
+        ],
+        "axis_lonlat": null,
+        "depth_status": "visual_estimate"
+      }
+    },
+    "river_-10000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-10000_-1000.tscn",
+      "sha256": "ede888476e7e0d71e3abc1fb87e3c2bd5d7465bc476f531929095382848fbd47",
+      "size_bytes": 31154,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 41.22317033615342,
+        "elevation_max": 50.252096661159186,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 356,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-10000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-1000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-1000_-2000.tscn",
+      "sha256": "19d2fd700c1d2bf2f1ea4a3247742d9a6f536adbe3e91bbda0e41e6403df3ae2",
+      "size_bytes": 19432,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -0.13396687564208287,
+        "elevation_max": 3.441090842826905,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 210,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-1000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-1000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-1000_-3000.tscn",
+      "sha256": "9161afe5bbfc9f77ae31f8e71a4535a919073f9db33c0e54a52a4f0c644e9c87",
+      "size_bytes": 3858,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -0.13396687564208287,
+        "elevation_max": 2.258013796278386,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 16,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-1000_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-11000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-11000_-1000.tscn",
+      "sha256": "22511b9cefe41038ce812c516bf3c5bf7ed56f2d5295fc0934da3a7608ab8fd4",
+      "size_bytes": 14382,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 47.505454065347294,
+        "elevation_max": 53.06169328329741,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 144,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-11000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-11000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-11000_-2000.tscn",
+      "sha256": "c78094af321f5329ed44a7545b112fb38dae814f9436bc3293881c16d036b507",
+      "size_bytes": 25989,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 50.58225283692721,
+        "elevation_max": 60.0501364882722,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 286,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-11000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-12000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-12000_-2000.tscn",
+      "sha256": "335854d52615299869d89b7232b081cb04a5523152496e9efe508a72b4b14304",
+      "size_bytes": 29194,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 57.27125465712052,
+        "elevation_max": 68.26521954296719,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 320,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-12000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-12000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-12000_-3000.tscn",
+      "sha256": "fae7ccc7fbb99d14db892c54d6a9c5b489de39673b8ae17dfd45261a735fd487",
+      "size_bytes": 4732,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 65.30151563728121,
+        "elevation_max": 68.32382209476403,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 26,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-12000_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-13000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-13000_-2000.tscn",
+      "sha256": "df74bf07a4f357d62b30635eee7f53c0d1f0611ec21c0684cf91ef39922899bf",
+      "size_bytes": 3256,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 67.37809995269325,
+        "elevation_max": 68.28855679080392,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 2,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-13000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-13000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-13000_-3000.tscn",
+      "sha256": "7a51cf585bee97700a752ab0fdf46b6c54c8f1040eea6ae39d637ae6fb40457a",
+      "size_bytes": 21188,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 66.08333271347082,
+        "elevation_max": 79.21647637227028,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 226,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-13000_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-2000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-2000_-2000.tscn",
+      "sha256": "6b7f7b2a8d4820d9857afcb6373a82c58a87eac40e6f08121eca28faf78f44c9",
+      "size_bytes": 5114,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 1.221090842826905,
+        "elevation_max": 3.4584529370111508,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 32,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-2000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-2000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-2000_-3000.tscn",
+      "sha256": "8f6895ba0a05c3ed5c837922b8321e2cfa4055134f2866bf6f4e94e09cc8a512",
+      "size_bytes": 30988,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 1.236435719738711,
+        "elevation_max": 4.17413464124471,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 362,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-2000_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-2000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-2000_-4000.tscn",
+      "sha256": "70c041e32d775d79d7d6af44e71114461a8cff2e32861602c5df913d736b96f4",
+      "size_bytes": 21815,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 1.95413464124471,
+        "elevation_max": 6.149229971590444,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 238,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-2000_-4000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-2000_-5000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-2000_-5000.tscn",
+      "sha256": "d8ce7df7713ba52842b78fdc4a6c64c9e7af6f7e719aba37d03d8d8500a45df5",
+      "size_bytes": 15998,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 3.9292299715904435,
+        "elevation_max": 7.690235834732493,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 160,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-2000_-5000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-3000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-3000_-4000.tscn",
+      "sha256": "b27f71efb4aec50f0e997e49ab01e1d3ef7bf196bd2ca477ccda7710a418b76e",
+      "size_bytes": 4586,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 1.95413464124471,
+        "elevation_max": 4.17413464124471,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 24,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-3000_-4000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-3000_-5000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-3000_-5000.tscn",
+      "sha256": "37c3bb4f85df886d2ad35dcabbfec98fe97b513e45a319fbf223478d0a328a4f",
+      "size_bytes": 29754,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 5.838829303859507,
+        "elevation_max": 9.423119275869018,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 356,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-3000_-5000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-4000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-4000_-4000.tscn",
+      "sha256": "1d1b999aabf7bd853afdc23d9681e900ac1171e708fc87b9a00cea5e7c14a688",
+      "size_bytes": 28238,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 7.923250545707637,
+        "elevation_max": 12.65197455453803,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 316,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-4000_-4000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-4000_-5000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-4000_-5000.tscn",
+      "sha256": "03314735381aa3e1739c60b70983d2fc49c318b411d79010c270e58423de7520",
+      "size_bytes": 17552,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 7.185609274280196,
+        "elevation_max": 10.14829574260848,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 196,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-4000_-5000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-5000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-5000_-3000.tscn",
+      "sha256": "ba268dd09ba7f7488d57c7e115ab198e36ed3ef289d2ec1581385533dc546c35",
+      "size_bytes": 21086,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 13.922158206553808,
+        "elevation_max": 19.358323783324455,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 224,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-5000_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-5000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-5000_-4000.tscn",
+      "sha256": "75b3ea8dff8d5417448195cd2f703996a23975d99961e565a0f2e3ea573659b7",
+      "size_bytes": 23708,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 10.417059320703274,
+        "elevation_max": 16.1582803719109,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 264,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-5000_-4000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-6000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-6000_-1000.tscn",
+      "sha256": "0d72b6ed965d4832368528b563e8cae6cfe6e6ac157dd0b29512edfc52f0dae5",
+      "size_bytes": 7729,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 20.890740958320087,
+        "elevation_max": 23.992135638913926,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 60,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-6000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-6000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-6000_-2000.tscn",
+      "sha256": "82df75cdaf59769e62a75e54d831f93083b699f1a2c63bdeeb333bbcf3033318",
+      "size_bytes": 26314,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 20.154570274655935,
+        "elevation_max": 23.744317235656904,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 284,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-6000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-6000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-6000_-3000.tscn",
+      "sha256": "de54b9aa3965b7e3ddf0facbd36cdee7733fbf17e9e1398aa75fcb679fe006e1",
+      "size_bytes": 29287,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 17.119024672911387,
+        "elevation_max": 22.374570274655934,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 324,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-6000_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-7000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-7000_-1000.tscn",
+      "sha256": "a14b004443b3c277c189475507e6633df716ff5e4b7bd709dd01519716ad1f60",
+      "size_bytes": 31115,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 21.757857366347082,
+        "elevation_max": 30.364290100518968,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 344,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-7000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-7000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-7000_-2000.tscn",
+      "sha256": "365cb8fe584fa95884f8fa164038318c4113e8f86583c61c19c44246409711fb",
+      "size_bytes": 3127,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 20.154570274655935,
+        "elevation_max": 22.374570274655934,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 8,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-7000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-7000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-7000_-3000.tscn",
+      "sha256": "fe4bda2d83cda5893f9e8913be5bbf030ecd9305a83154265cda21cb4d572e9a",
+      "size_bytes": 4439,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 20.154570274655935,
+        "elevation_max": 22.374570274655934,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 22,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-7000_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-8000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-8000_-1000.tscn",
+      "sha256": "71171564361904d78e1ce3a18cd319252c0792c6fa7c34b36947a946786d2003",
+      "size_bytes": 23715,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 27.99734093593826,
+        "elevation_max": 33.524584361830286,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 256,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-8000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-8000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-8000_0.tscn",
+      "sha256": "935561a9efd9360253b8aebdced387bb7a49ad91a7b9967aa2b17d16c45bc506",
+      "size_bytes": 7250,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 31.304584361830287,
+        "elevation_max": 33.524584361830286,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 54,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-8000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-9000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-9000_-1000.tscn",
+      "sha256": "b0e52c84732c648a8be0a3466d58759c3824c5b23b7d6232ae1d351030076586",
+      "size_bytes": 17092,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 38.67427039469356,
+        "elevation_max": 43.5311027050247,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 176,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-9000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_-9000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_-9000_0.tscn",
+      "sha256": "38eb159d3a3007084002457757a2851890b01012e83e208ee9567d0b2f53044f",
+      "size_bytes": 17829,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 31.304584361830287,
+        "elevation_max": 41.63905061192358,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 186,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_-9000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_0_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_0_-2000.tscn",
+      "sha256": "a224e986617548c4b0c9d12a7c173ebe00fafdb190d9a745fed65b0ec8774f69",
+      "size_bytes": 39639,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.194495060762386,
+        "elevation_max": 2.098750484474519,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 468,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_0_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_0_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_0_-3000.tscn",
+      "sha256": "5cffbaae26602e52d94298624cf27c8e358c3cbe9ae9f241bc5c4355f64219bc",
+      "size_bytes": 4800,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -0.3194695555441571,
+        "elevation_max": 2.0860331243579173,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 26,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_0_-3000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_10000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_10000_-1000.tscn",
+      "sha256": "57cbee30ecc361aa638a70bbfeeb575334320dac3d8c50128e95bc0f7c98c4b1",
+      "size_bytes": 8796,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 72,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_10000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_10000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_10000_0.tscn",
+      "sha256": "4426836865007788524fc92376d740d1e35bb6cdeaf90c04c3e586668a09d853",
+      "size_bytes": 29295,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 354,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_10000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_1000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_1000_-1000.tscn",
+      "sha256": "80c2d0902c477d55ccfffe0f76c30065ec845565e5f2d0008a9aa15b5bf0f296",
+      "size_bytes": 8506,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.7404334089549722,
+        "elevation_max": 0.5079154426719144,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 72,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_1000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_1000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_1000_-2000.tscn",
+      "sha256": "0393b2645aeb048a806fbc558fe12eb27f8c72ceea05c7f4fd139caec87e2940",
+      "size_bytes": 48038,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.730193314120372,
+        "elevation_max": 1.1248349495232537,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 572,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_1000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_2000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_2000_-1000.tscn",
+      "sha256": "c9ba2723df4ba62f24c33cf7572f52520f2a5cbfaa568157a5fb49a183984991",
+      "size_bytes": 31153,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.769274007565157,
+        "elevation_max": 0.4898066858796282,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 372,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_2000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_2000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_2000_-2000.tscn",
+      "sha256": "6405aecf8c115a16d4ae0b34153f34435a4da57ba2446b80ad309530f5e90303",
+      "size_bytes": 5653,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.769274007565157,
+        "elevation_max": 0.49924211406212393,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 34,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_2000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_3000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_3000_-1000.tscn",
+      "sha256": "a884d963953eb3e7dbee4e77a448672f0acf1c1d1838b0f660e0b1d7c2316686",
+      "size_bytes": 40230,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.769274007565157,
+        "elevation_max": 0.45072599243484324,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 460,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_3000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_3000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_3000_0.tscn",
+      "sha256": "0ba035df4d6b24aceb558d0c6968e413098a55e8c4c80f89c59bf36388ecab0d",
+      "size_bytes": 3692,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.769274007565157,
+        "elevation_max": 0.45072599243484324,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 14,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_3000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_4000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_4000_-1000.tscn",
+      "sha256": "7c50f879d35d2fb8e2564eb9df8d8e2acbf43d30a25350928407fbef0730f940",
+      "size_bytes": 56729,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.45072599243484324,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 674,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_4000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_4000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_4000_-2000.tscn",
+      "sha256": "0a3250115eb121877313e50bf1dec60248f0d182ebfb31a1ade8c2e29f24b243",
+      "size_bytes": 5470,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 34,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_4000_-2000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_5000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_5000_-1000.tscn",
+      "sha256": "0a1ef478d237be4a68a8d373454077945a5de4262887890e7aa32af9741fda81",
+      "size_bytes": 34915,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 448,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_5000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_6000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_6000_-1000.tscn",
+      "sha256": "be71a088383464ad8ecf73f38b024d3952d63cf79784656462c9ca06af36fef4",
+      "size_bytes": 37074,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 476,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_6000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_7000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_7000_-1000.tscn",
+      "sha256": "6ce38df19eb583c8816adcb351990c0f2ba91fe1894dcb6bd2d145593c7050e9",
+      "size_bytes": 38395,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 502,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_7000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_8000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_8000_-1000.tscn",
+      "sha256": "8c22409b98f54097a61ba9fe1477faa2df7f0ff1e558e8aa5941fbaa66186ca0",
+      "size_bytes": 87562,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 1088,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_8000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_9000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_9000_-1000.tscn",
+      "sha256": "182daba3decafed8dd7b6092f7116f6bf13b02839f6e1e13a2de6b5114f9731c",
+      "size_bytes": 49965,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 618,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_9000_-1000",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "river_9000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/river_9000_0.tscn",
+      "sha256": "4eb741ed6956eeb560284c75035f10592be89807831965453606f1807cfec877",
+      "size_bytes": 47066,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -1.87,
+        "elevation_max": 0.35,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 584,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "river_9000_0",
+        "bed_only": false,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-10000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-10000_-1000.tscn",
+      "sha256": "11ac234f7f75c19ce3ad214468d439ad4bf0893524434e7d98ce1cbe0daa2d28",
+      "size_bytes": 30546,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 43.290314524529286,
+        "elevation_max": 64.13903563578978,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 227,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-10000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-1000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-1000_-2000.tscn",
+      "sha256": "1c31ce6e97ff0914ea7a721579d727da3184555e11198e8c1504dd64ca598d7f",
+      "size_bytes": 19084,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 1.978750484474519,
+        "elevation_max": 6.03186419098684,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 142,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-1000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-1000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-1000_-3000.tscn",
+      "sha256": "8b465977706e1cba1b169beb97d45a2ceeb624cdae0203bed422ef12278916e2",
+      "size_bytes": 3598,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 1.9626568269571179,
+        "elevation_max": 12.019043045215767,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 17,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-1000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-11000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-11000_-1000.tscn",
+      "sha256": "1a80e1ba9d3a150c2629b9302cac8d71febeb535c368b47dfae114904ab1bb9e",
+      "size_bytes": 12931,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 49.52000077507518,
+        "elevation_max": 61.19476645082579,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 87,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-11000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-11000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-11000_-2000.tscn",
+      "sha256": "c153374a5f26e56f952202dac27bb303c158ebb34ad138a811325ee809e68f6c",
+      "size_bytes": 27419,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 52.64154590327034,
+        "elevation_max": 67.13090684272746,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 202,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-11000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-12000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-12000_-2000.tscn",
+      "sha256": "da057267ae00ce2d2f2ae6c5fdea21faf6ea3ec7dcd501fde443fe9057d1cb5c",
+      "size_bytes": 28725,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 59.083325844809764,
+        "elevation_max": 73.09413554744934,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 206,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-12000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-12000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-12000_-3000.tscn",
+      "sha256": "cd0a2ede0040553566aaf8b25663b97c76e041a23ec070455f2f4aa333ffc539",
+      "size_bytes": 3920,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 66.91868034381532,
+        "elevation_max": 74.9714578508251,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 20,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-12000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-13000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-13000_-2000.tscn",
+      "sha256": "41449b48d11fc6ca1523b70ea41d1cebf26437be6423b1c3c8942d4dc02385f9",
+      "size_bytes": 1931,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 68.14161813801483,
+        "elevation_max": 74.56527494379337,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 5,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-13000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-13000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-13000_-3000.tscn",
+      "sha256": "2099a72bbf2d975fc388033c8792b6ef20e8ed4a7eab3af1e746b294d50a2861",
+      "size_bytes": 27431,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 68.16855679080392,
+        "elevation_max": 88.52267774165469,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 200,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-13000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-2000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-2000_-2000.tscn",
+      "sha256": "bec63aea78376c602a02a5967da13f29c60cae6c0db902e75b73c6eba4ca7728",
+      "size_bytes": 3561,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 3.2873844551806277,
+        "elevation_max": 4.379517761574455,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 17,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-2000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-2000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-2000_-3000.tscn",
+      "sha256": "f35fe4b3d75cf900c3e72f5a688476a3a71751b87b516b1ffabd67b2a5c9e754",
+      "size_bytes": 28886,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 3.3256210866052083,
+        "elevation_max": 7.674943390895599,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 220,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-2000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-2000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-2000_-4000.tscn",
+      "sha256": "aa043cf6b0f3a8783b7f720146d5774733694ad30eee3fa55e245f7b2be067d9",
+      "size_bytes": 20630,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 3.9930200701687655,
+        "elevation_max": 11.860722541995285,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 153,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-2000_-4000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-2000_-5000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-2000_-5000.tscn",
+      "sha256": "6341b065efb89695721e304d48a99e60061e0ac5705b50f0dcc7fe186c51be24",
+      "size_bytes": 20188,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 5.996286127800614,
+        "elevation_max": 42.90312072645354,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 147,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-2000_-5000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-3000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-3000_-3000.tscn",
+      "sha256": "ad93ed20df619bb31f805a3dd4934f65e590f742d5fde5bb9e509c51f2942e62",
+      "size_bytes": 1740,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 4.8010949929982605,
+        "elevation_max": 7.572329572268005,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 1,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-3000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-3000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-3000_-4000.tscn",
+      "sha256": "ab26d8262e55c144a6bb73bc116e03a8cbc87af5de69fdaf57bbe7780f278f23",
+      "size_bytes": 5130,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 4.054134641244687,
+        "elevation_max": 8.287199571491279,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 30,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-3000_-4000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-3000_-5000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-3000_-5000.tscn",
+      "sha256": "faad4cb423c4d7c2fd305f8d102a136a3f508645a3cab884507eb5c7ca8bea40",
+      "size_bytes": 32781,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 7.547523147766998,
+        "elevation_max": 37.43233052555995,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 244,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-3000_-5000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-4000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-4000_-4000.tscn",
+      "sha256": "e8a53549b975d33b23c9dcffb3ada7c2773065d410947594eb55110c10ce474c",
+      "size_bytes": 29339,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 10.02241950699976,
+        "elevation_max": 20.887267283535465,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 213,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-4000_-4000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-4000_-5000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-4000_-5000.tscn",
+      "sha256": "fec462a82fa050fa68c12c3d73b6d1ee85b4fd8043b376c200216d64be0b215e",
+      "size_bytes": 18528,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 9.282987313790928,
+        "elevation_max": 55.815268278923696,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 135,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-4000_-5000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-5000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-5000_-3000.tscn",
+      "sha256": "837175e49d4e0ce9bba472f2121334bc4201526b24bddbcf5d675c03ad96852a",
+      "size_bytes": 22475,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 15.997968277645418,
+        "elevation_max": 68.11201715891346,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 156,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-5000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-5000_-4000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-5000_-4000.tscn",
+      "sha256": "3bd7a2b263c52877154f8c91084192428b99755588c3d636a7b728bda4c0246d",
+      "size_bytes": 24016,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 12.51433972511252,
+        "elevation_max": 26.50780146905951,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 175,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-5000_-4000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-6000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-6000_-1000.tscn",
+      "sha256": "ba88924fc096d8fdfe25f3ba2f9871ccd8962a7658227ae5df6ba7074e44797c",
+      "size_bytes": 7084,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 22.62630489396906,
+        "elevation_max": 53.830529628871105,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 42,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-6000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-6000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-6000_-2000.tscn",
+      "sha256": "fa59ba363c961c9e8170d5ff6519b6215508d8ebe20797265e167fa5d2d61f09",
+      "size_bytes": 27878,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 22.254570274655933,
+        "elevation_max": 88.30595851470231,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 202,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-6000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-6000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-6000_-3000.tscn",
+      "sha256": "becd1da906441677dc0e20c390e216c155f8e42007503473d191655095ff88b8",
+      "size_bytes": 29382,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 19.18280063586615,
+        "elevation_max": 42.97362748175218,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 220,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-6000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-7000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-7000_-1000.tscn",
+      "sha256": "8999f3df54856c6499618f7cc4b3bde7aec5a4f298a8174993611e7a61f1b98c",
+      "size_bytes": 33624,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 23.85533690958327,
+        "elevation_max": 90.44260798173843,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 247,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-7000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-7000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-7000_-2000.tscn",
+      "sha256": "be44b72bfa8ea92f111911ce0ba5654b1ed966514053ca93755a90f71dd44ede",
+      "size_bytes": 3180,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 22.254570274655933,
+        "elevation_max": 26.440724727871256,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 14,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-7000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-7000_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-7000_-3000.tscn",
+      "sha256": "a2a277b12085cf2e69199fc6efeda591de44d274acd3db349802f07b9c3c6e10",
+      "size_bytes": 5431,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 22.254570274655933,
+        "elevation_max": 27.016373754243553,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 33,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-7000_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-8000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-8000_-1000.tscn",
+      "sha256": "a1039b850933e90cf7ecc278c63ddc3ae6183534baacf44028a2a124221ef891",
+      "size_bytes": 22089,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 30.053020467463217,
+        "elevation_max": 55.48628001103221,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 161,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-8000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-8000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-8000_0.tscn",
+      "sha256": "92fa5f4cefe1a7874f4020acc67c746586c05582e334a37f9f70dc7d87451ac7",
+      "size_bytes": 6478,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 33.40458436183029,
+        "elevation_max": 82.22616245682461,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 38,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-8000_0",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-9000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-9000_-1000.tscn",
+      "sha256": "09fabfbead1423d63dc139182c16eeb66a160657fb25eeb5bb67b5b982fef1d9",
+      "size_bytes": 17811,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 35.783244950702205,
+        "elevation_max": 51.720133572637906,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 126,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-9000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_-9000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_-9000_0.tscn",
+      "sha256": "3de3a8387c3002c5a5c3201b9af41ae9587ba632cf92ada4cab7c4b88f3b37bd",
+      "size_bytes": 17693,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 33.40458436183029,
+        "elevation_max": 103.00560439844752,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 122,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_-9000_0",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_0_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_0_-2000.tscn",
+      "sha256": "0b6202affa93831a97203e482160e04f7161579fecc20d89bf99332950d71d63",
+      "size_bytes": 38917,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.8662362794141124,
+        "elevation_max": 21.574029971207935,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 287,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_0_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_0_-3000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_0_-3000.tscn",
+      "sha256": "f339cf073665cb8ec4fbe68c2e20557d797f5f0a48bc44a296d77c602d461924",
+      "size_bytes": 5283,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 1.7547041537501396,
+        "elevation_max": 19.33477606935601,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 30,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_0_-3000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_10000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_10000_-1000.tscn",
+      "sha256": "7cf559bf808b94cde3a6e4358e96f03e5d0c5e1e54130b02fc0bf42960fa8f13",
+      "size_bytes": 27012,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.022317462148678528,
+        "elevation_max": 0.22999999999999998,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 190,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_10000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_10000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_10000_0.tscn",
+      "sha256": "e53c187e31ad702a0c1ff97ea01c258694a0172fe5d080caae44044ba5019eae",
+      "size_bytes": 41386,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -20.01510643167772,
+        "elevation_max": 0.22999999999999998,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 292,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_10000_0",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_1000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_1000_-1000.tscn",
+      "sha256": "a88ca58fce03209e13e46012018beb519b32ed143da9512d8e7bd1a748507cb0",
+      "size_bytes": 13772,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.34910400557392146,
+        "elevation_max": 4.1600518011446335,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 92,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_1000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_1000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_1000_-2000.tscn",
+      "sha256": "cb25540b21c1c09bd61b66f8fee6dc024896dce9488da1c914f6a48b3f3eaffc",
+      "size_bytes": 55875,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.37924211406212516,
+        "elevation_max": 10.05649087173515,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 414,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_1000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_2000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_2000_-1000.tscn",
+      "sha256": "0712bd12995635feaf3713072357ae68843f3324f8ae66a7224ab306e1f3f8fe",
+      "size_bytes": 21061,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.33072599243477396,
+        "elevation_max": 4.923529710997627,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 155,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_2000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_2000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_2000_-2000.tscn",
+      "sha256": "f1a6087c892e624ff9fc0e97d407188736811416b56fbc96add7bd9c987ab771",
+      "size_bytes": 12298,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.33072599243484324,
+        "elevation_max": 4.4741470181666685,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 82,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_2000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_3000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_3000_-1000.tscn",
+      "sha256": "a8ff7736a2908187cc43b5e3e60ce5d28f4d039b6f4a4a0ef1f04faf796a3456",
+      "size_bytes": 37050,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.33072599243484324,
+        "elevation_max": 10.22675910682169,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 273,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_3000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_3000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_3000_0.tscn",
+      "sha256": "0a11b3c0eab273d60a70a5a9ae5adad6d30addd2e5ccde393c7e774c10fb8f2b",
+      "size_bytes": 6221,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.33072599243484324,
+        "elevation_max": 13.922708417419479,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 36,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_3000_0",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_4000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_4000_-1000.tscn",
+      "sha256": "40cad9531baa0d5c6f092e7b41e6427ac057f6cd5e7ed8e7e1d25626594a0fd2",
+      "size_bytes": 69133,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.17626731062553083,
+        "elevation_max": 6.5014593045899325,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 517,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_4000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_4000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_4000_-2000.tscn",
+      "sha256": "8b616e78f7e0296240bfee61064e44718353934c97189f34a7d8ab35c9d37ce7",
+      "size_bytes": 8620,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.22999999999999998,
+        "elevation_max": 8.265436939427405,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 58,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_4000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_5000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_5000_-1000.tscn",
+      "sha256": "82d05e6750fc7829a6ada2957ac9f836d07b94a3d3426af525cba4a654d5d424",
+      "size_bytes": 28479,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.22999999999992443,
+        "elevation_max": 3.336570720354083,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 216,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_5000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_6000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_6000_-1000.tscn",
+      "sha256": "021e116b772b2c95c47afff6c2e5c2be9bdb81fc7bafbaae23631a37119687a2",
+      "size_bytes": 27438,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.2097760746578687,
+        "elevation_max": 3.06783214409851,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 206,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_6000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_7000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_7000_-1000.tscn",
+      "sha256": "1e542c03f54e4b85f4dcd121d84a88a7003468c3189d348c4e436e51e6aa5b90",
+      "size_bytes": 27425,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.21543745258411912,
+        "elevation_max": 3.051021403564663,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 208,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_7000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_8000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_8000_-1000.tscn",
+      "sha256": "26cc7552cb9303788af5a85533ed3404d7b3e5f23528a5207d6cd8f39560888b",
+      "size_bytes": 84581,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.09969889453656222,
+        "elevation_max": 2.7389480930236716,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 654,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_8000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_8000_-2000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_8000_-2000.tscn",
+      "sha256": "8ef20ead66849d9b46fbb317e4800e2ad8e67a96b6ee47da2857c14d09c192bd",
+      "size_bytes": 3410,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.6169231757409767,
+        "elevation_max": 2.2023258365611227,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 16,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_8000_-2000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_8000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_8000_0.tscn",
+      "sha256": "330fcaceab73b1dfe5c0b9f5d0ecac2730912709db96bb8cc872f24e4c73bbf0",
+      "size_bytes": 8837,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 0.4799999999999701,
+        "elevation_max": 6.624020756576492,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 59,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_8000_0",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_9000_-1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_9000_-1000.tscn",
+      "sha256": "c3067ac0962925fd810da5ec268b63e9db84c528d1829d6ab583f4fdc13ae8d5",
+      "size_bytes": 65483,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -0.06561379415579438,
+        "elevation_max": 1.7090500126833454,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 480,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_9000_-1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_9000_0.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_9000_0.tscn",
+      "sha256": "b4d2373a3a63c3952df8103214ae224581a9264b9e35ee9920597e36b9a06500",
+      "size_bytes": 154324,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": -0.06355578274406266,
+        "elevation_max": 62.34356205457865,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 1150,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_9000_0",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "shore_9000_1000.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/shore_9000_1000.tscn",
+      "sha256": "5c8bcd9e410ff6d025cbb36cdbbdb5bb3208ffbd7a996e154703f68324f6a632",
+      "size_bytes": 3910,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": {
+          "west": 129.11308495783783,
+          "east": 129.37117190627845,
+          "south": 35.53540242307931,
+          "north": 35.58624943711585
+        },
+        "elevation_min": 11.34738961287649,
+        "elevation_max": 16.988560474366615,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "visual_hydro_estimate",
+        "triangles": 18,
+        "coordinate_reference": "map_80km_world_m",
+        "label_ko": "shore_9000_1000",
+        "bed_only": true,
+        "triangle_count_method": "stored_bed_plus_water"
+      }
+    },
+    "yeocheon_basin.glb": {
+      "file_path": "res://assets/generated/taehwa_civil/yeocheon_basin.glb",
+      "sha256": "dc363f13bc746eb322a1e3815988cc57bfd9c2d4f2282b96b040ae0b6167c8b8",
+      "size_bytes": 22532,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -1.55,
+        "elevation_max": 48.200821906252635,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "map_80km_research_estimate",
+        "triangles": 304,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "여천 유수지 호안",
+        "status": "osm_boundary_imagery_simplified",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -519.0660657719035,
+          -1.55,
+          -324.38671032514327
+        ],
+        "aabb_max_m": [
+          362.19639637355675,
+          48.200821906252635,
+          404.3249051178553
+        ],
+        "axis_lonlat": null,
+        "depth_status": "visual_estimate"
+      }
+    },
+    "yeocheon_basin.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/yeocheon_basin.tscn",
+      "sha256": "2ab5821f02ccecee9fe656e3ad192cc3b3c747c9f448a2ae404547ba73d7ccc0",
+      "size_bytes": 39464,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -1.55,
+        "elevation_max": 48.200821906252635,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "map_80km_research_estimate",
+        "triangles": 304,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "여천 유수지 호안",
+        "status": "osm_boundary_imagery_simplified",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -519.0660657719035,
+          -1.55,
+          -324.38671032514327
+        ],
+        "aabb_max_m": [
+          362.19639637355675,
+          48.200821906252635,
+          404.3249051178553
+        ],
+        "axis_lonlat": null,
+        "depth_status": "visual_estimate"
+      }
+    },
+    "yeocheon_gate.glb": {
+      "file_path": "res://assets/generated/taehwa_civil/yeocheon_gate.glb",
+      "sha256": "5239d04c08089242e0f3e33dd86ac4045d073df306333bacbe12ad5205d7d3a0",
+      "size_bytes": 36036,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -1.6,
+        "elevation_max": 4.6499999999999995,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "map_80km_research_estimate",
+        "triangles": 564,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "여천 유수지 배수문",
+        "status": "imagery_boundary_axis_estimate",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -21.613766285442896,
+          -1.6,
+          -4.0
+        ],
+        "aabb_max_m": [
+          21.613766285442896,
+          4.6499999999999995,
+          4.0
+        ],
+        "axis_lonlat": [
+          [
+            129.3631887,
+            35.5406415
+          ],
+          [
+            129.3635644,
+            35.5408189
+          ]
+        ],
+        "depth_status": "visual_estimate"
+      }
+    },
+    "yeocheon_gate.tscn": {
+      "file_path": "res://assets/generated/taehwa_civil/yeocheon_gate.tscn",
+      "sha256": "09b3422bd6e7176f67b7db50557ec530dd52c6d1d412795f640baa135ea4b367",
+      "size_bytes": 63332,
+      "metadata": {
+        "detail_profile": "taehwa_civil_research_v1",
+        "bbox": null,
+        "elevation_min": -1.6,
+        "elevation_max": 4.6499999999999995,
+        "resolution": null,
+        "surveyed": false,
+        "placement_status": "map_80km_research_estimate",
+        "triangles": 564,
+        "coordinate_reference": "local_model_m",
+        "label_ko": "여천 유수지 배수문",
+        "status": "imagery_boundary_axis_estimate",
+        "elevation_reference": "local_anchor",
+        "aabb_min_m": [
+          -21.613766285442896,
+          -1.6,
+          -4.0
+        ],
+        "aabb_max_m": [
+          21.613766285442896,
+          4.6499999999999995,
+          4.0
+        ],
+        "axis_lonlat": [
+          [
+            129.3631887,
+            35.5406415
+          ],
+          [
+            129.3635644,
+            35.5408189
+          ]
+        ],
+        "depth_status": "visual_estimate"
+      }
+    }
+  }
+}

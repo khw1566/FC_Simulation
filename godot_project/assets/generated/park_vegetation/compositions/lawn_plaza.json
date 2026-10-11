@@ -1,0 +1,32 @@
+{
+  "id": "lawn_plaza",
+  "label": "잔디 광장",
+  "ground": "lawn",
+  "plants": [
+    "grass_sparse",
+    "grass_dense",
+    "hedge_2m",
+    "rock_small"
+  ],
+  "reused": [
+    {
+      "path": "res://assets/generated/trees/broadleaf_lod0.scn",
+      "position": [
+        -5,
+        0,
+        -5
+      ],
+      "role": "tree"
+    },
+    {
+      "path": "res://assets/generated/garden_furniture/near/park_bench.tscn",
+      "position": [
+        -1,
+        0,
+        -5
+      ],
+      "role": "bench"
+    }
+  ],
+  "seed": 175
+}

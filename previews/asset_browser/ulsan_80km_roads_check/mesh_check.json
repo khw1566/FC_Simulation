@@ -1,0 +1,52 @@
+{
+  "cases": [
+    {
+      "label": "residential",
+      "osm_id": 782135744,
+      "triangles": 539
+    },
+    {
+      "label": "path",
+      "osm_id": 1194541125,
+      "triangles": 426
+    },
+    {
+      "label": "track",
+      "osm_id": 1342047604,
+      "triangles": 164
+    },
+    {
+      "label": "bridge",
+      "osm_id": 1006699716,
+      "triangles": 14
+    },
+    {
+      "label": "tunnel",
+      "osm_id": 1002524733,
+      "triangles": 24
+    },
+    {
+      "label": "outer",
+      "osm_id": 909252504,
+      "triangles": 106
+    },
+    {
+      "label": "paved_cycleway",
+      "osm_id": null,
+      "triangles": 15
+    },
+    {
+      "label": "paved_track",
+      "osm_id": null,
+      "triangles": 15
+    },
+    {
+      "label": "gravel_service",
+      "osm_id": null,
+      "triangles": 15
+    }
+  ],
+  "full_world_run": false,
+  "ground_basis": "source DEM point mean",
+  "passed": true
+}

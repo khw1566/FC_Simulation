@@ -62,19 +62,45 @@ static func attach(host: Node3D, results: Dictionary) -> Node3D:
 	container.name = "BuildingsContainer"
 	host.add_child(container)
 	host._batch_serial += 1
+	var serial: int = host._batch_serial
 	for coord in results:
 		var chunk_node := Node3D.new()
 		chunk_node.name = "Chunk_%d_%d" % [coord.x, coord.y]
 		container.add_child(chunk_node)
 		var chunk_center := Vector2((float(coord.x) + 0.5) * host.chunk_size, (float(coord.y) + 0.5) * host.chunk_size)
 		BuildingMeshBuilder.apply_arrays(results[coord], chunk_node, host.building_material, host._sample_ground_height)
-		# 가시성 갱신 때 노드 경로 조회를 반복하지 않도록 소형 건물 노드를 함께 보관한다.
-		var chunk_info := {"node": chunk_node, "center_2d": chunk_center, "minor": chunk_node.get_node_or_null("MinorBuildings")}
-		host._building_chunk_nodes[Vector3i(coord.x, coord.y, host._batch_serial)] = chunk_info
-		# 생성 직후 한 프레임이라도 원거리 블록이 보였다가 사라지는 깜박임을 막는다.
-		var player: Node3D = host.player_node
-		if player:
-			chunk_node.visible = false
-			host._apply_chunk_visibility(chunk_info, Vector2(player.global_position.x, player.global_position.z), player.global_position.y >= host._high_cull_altitude)
+		_register(host,chunk_node,coord,chunk_center,serial)
 	host._last_cull_check_pos = Vector3.INF
 	return container
+
+static func attach_streamed(host: Node3D, results: Dictionary) -> Node3D:
+	if results.is_empty():
+		return null
+	var container := Node3D.new()
+	container.name = "BuildingsContainer"
+	host.add_child(container)
+	host._batch_serial += 1
+	var serial: int = host._batch_serial
+	for coord in results:
+		if not is_instance_valid(container) or not container.is_inside_tree():
+			return null
+		var chunk_node := Node3D.new()
+		chunk_node.name = "Chunk_%d_%d" % [coord.x,coord.y]
+		chunk_node.visible = false
+		container.add_child(chunk_node)
+		await BuildingMeshBuilder.apply_arrays_streamed(results[coord],chunk_node,host.building_material,host._sample_ground_height)
+		if not is_instance_valid(chunk_node) or not chunk_node.is_inside_tree():
+			return null
+		var center := Vector2((float(coord.x)+.5)*host.chunk_size,(float(coord.y)+.5)*host.chunk_size)
+		_register(host,chunk_node,coord,center,serial)
+		chunk_node.visible = true if host.player_node==null else chunk_node.visible
+	host._last_cull_check_pos = Vector3.INF
+	return container
+
+static func _register(host: Node3D, node: Node3D, coord: Vector2i, center: Vector2, serial: int) -> void:
+	var info := {"node":node,"center_2d":center,"minor":node.get_node_or_null("MinorBuildings")}
+	host._building_chunk_nodes[Vector3i(coord.x,coord.y,serial)] = info
+	var player: Node3D = host.player_node
+	if player:
+		node.visible = false
+		host._apply_chunk_visibility(info,Vector2(player.global_position.x,player.global_position.z),player.global_position.y>=host._high_cull_altitude)

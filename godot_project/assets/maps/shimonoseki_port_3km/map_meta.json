@@ -1,0 +1,28 @@
+{
+  "id": "shimonoseki_port_3km",
+  "name_ko": "시모노세키항 및 여객 터미널 권역 (3km² 정밀)",
+  "name_en": "Shimonoseki Port & Terminal Area (3km² Ultra-Dense)",
+  "description_ko": "시모노세키 국제 여객선 터미널, 카이쿄 유메 타워, JR 역세권 일대를 정밀 포용하는 3km x 3km 정사각형 고밀도 항만 지형입니다.",
+  "description_en": "Ultra-dense 3km x 3km square area covering Shimonoseki International Port, Kaikyo Yume Tower, and JR Station.",
+  "preview_image": "res://assets/maps/shimonoseki_port_3km/port_vector_tactical_map.png",
+  "world_size_meters": 3000.0,
+  "min_elevation": -50.0,
+  "max_elevation": 750.0,
+  "sea_level": 0.0,
+  "spawn_position": [0.0, 70.0, 0.0],
+  "bbox": {
+    "south": 33.9351,
+    "north": 33.9619,
+    "west": 130.9099,
+    "east": 130.9421
+  },
+  "assets": {
+    "heightmap": "res://assets/maps/shimonoseki_port_3km/port_heightmap_16bit.png",
+    "watermask": "res://assets/maps/shimonoseki_port_3km/port_watermask_8bit.png",
+    "splatmap": "res://assets/maps/shimonoseki_port_3km/port_splatmap_rgba.png",
+    "tactical_map": "res://assets/maps/shimonoseki_port_3km/port_vector_tactical_map.png",
+    "districts": "res://assets/maps/shimonoseki_port_3km/real_districts.json",
+    "buildings_roads": "res://assets/maps/shimonoseki_port_3km/buildings_and_roads.json",
+    "landmarks": "res://assets/maps/shimonoseki_port_3km/landmarks.json"
+  }
+}

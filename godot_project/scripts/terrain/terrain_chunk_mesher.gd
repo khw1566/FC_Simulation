@@ -1,5 +1,6 @@
 extends RefCounted
 class_name TerrainChunkMesher
+const Earthwork = preload("res://scripts/terrain/road_earthwork_mesher.gd")
 
 ## 지형 청크 LOD 메시 배열과 충돌면을 계산한다.
 ## 장면 트리·렌더링 서버에 접근하지 않으므로 작업 스레드에서 실행할 수 있다.
@@ -12,11 +13,18 @@ static func compute(request: Dictionary) -> Dictionary:
 	var elev_min: float = request.elev_min
 	var elev_range: float = request.elev_max - request.elev_min
 	var grader: RefCounted = request.grader
+	var road_grader: RefCounted = request.get("road_grader")
 	var step := size / float(grid_res)
 	var half_size := size * 0.5
 	var img_w := image.get_width()
 	var img_h := image.get_height()
 	var railway_cells := {}
+	var road_cells := {}
+	if road_grader:
+		road_cells = road_grader.cells(Vector2(center.x-half_size,center.z-half_size),size,grid_res)
+		var field := preload("res://scripts/terrain/road_formation_field.gd").new()
+		field.configure(road_grader,road_cells)
+		road_grader = field
 	if grader:
 		railway_cells = grader.cells(Vector2(center.x - half_size, center.z - half_size), size, grid_res)
 	var vertices := PackedVector3Array()
@@ -39,6 +47,11 @@ static func compute(request: Dictionary) -> Dictionary:
 			var i2 := (y + 1) * (grid_res + 1) + x
 			var i3 := i2 + 1
 			var segments: Array = railway_cells.get(Vector2i(x, y), [])
+			var roads: Array = road_cells.get(Vector2i(x,y), [])
+			if not roads.is_empty():
+				Earthwork.add_triangle(surface,vertices[i0],vertices[i1],vertices[i2],center,roads,road_grader,grader,segments,size)
+				Earthwork.add_triangle(surface,vertices[i1],vertices[i3],vertices[i2],center,roads,road_grader,grader,segments,size)
+				continue
 			if not segments.is_empty():
 				grader.add_triangle(surface, vertices[i0], vertices[i1], vertices[i2], center, segments, size)
 				grader.add_triangle(surface, vertices[i1], vertices[i3], vertices[i2], center, segments, size)
@@ -51,6 +64,10 @@ static func compute(request: Dictionary) -> Dictionary:
 	surface.index()
 	var arrays := surface.commit_to_arrays()
 	var result := {"arrays": arrays}
+	if request.get("upload_pages",false):
+		result["pages"] = preload("res://scripts/terrain/terrain_upload_pages.gd").split(arrays)
+		if not request.get("keep_arrays",false):
+			result.erase("arrays")
 	if request.collision:
 		# 삼각형 충돌체는 BVH 생성 중 물리 서버가 메인 스레드까지 멈추게 해 100ms 안팎의 끊김을 만든다.
 		# 격자 높이 충돌체용 높이만 계산하고, 철도 절토 보정 높이를 격자점에 반영한다.
@@ -58,7 +75,10 @@ static func compute(request: Dictionary) -> Dictionary:
 		heights.resize(vertices.size())
 		for index in vertices.size():
 			var vertex := vertices[index]
-			heights[index] = grader.corrected_height(vertex + center) if grader else vertex.y
+			var point := vertex + center
+			if road_grader:
+				point.y = road_grader.corrected_height(point)
+			heights[index] = grader.corrected_height(point) if grader else point.y
 		result["heights"] = heights
 		result["grid_res"] = grid_res
 		result["step"] = step

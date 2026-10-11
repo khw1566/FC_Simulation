@@ -5,7 +5,15 @@ import json
 from pathlib import Path
 
 CATEGORIES = {
+    'taehwa_civil':'태화강 보·유수지·배수문 및 투명 수면·하상',
+    'ulsan_dams':'울산 용수댐·조사 기반 제방 모델 및 지리 배치',
+    'park_vegetation':'공원·정원 공용 군락·바닥·조립 예제',
+    'industrial_lod':'공단 원경·초원경 LOD',
+    'bamboo':'대나무 군집 및 숲 LOD',
     'trees':'수목 및 원경 LOD',
+    'silvergrass':'억새·갈대 군락 LOD',
+    'forest_trees':'공통 숲 수목 LOD',
+    'taehwagang_ecozones':'태화강 둔치 생태 구역·식생 배치',
     'prebaked_rail_test':'철로 사전 보정 테스트 자산',
     'terrain_quality':'품질별 지형 파생 자산',
     'industrial_zones':'공단 구역 마스크',
@@ -71,9 +79,9 @@ def collect(root, previous):
             entry=metadata.get(relative,{})
             details=entry.get('metadata',{})
             files.append({'path':relative,'category':category,'category_ko':CATEGORIES.get(category,'기타'),
-                          'role':ROLES.get(path.suffix,'기타 파일'), 'sha256':digest,
+                          'role':'도로 노반 선분' if 'road_formation' in parts and path.suffix=='.f32' else ROLES.get(path.suffix,'기타 파일'), 'sha256':digest,
                           'size_bytes':after.st_size,'mtime_ns':after.st_mtime_ns,
-                          'revision':parts[parts.index('revisions')+1] if 'revisions' in parts and len(parts)>parts.index('revisions')+1 else None,
+                          'revision':next((parts[parts.index(key)+1] for key in ('revisions','road_revisions') if key in parts and len(parts)>parts.index(key)+1),None),
                           'bbox':entry.get('bbox',details.get('bbox')),
                           'elevation_min':entry.get('elevation_min',details.get('elevation_min')),
                           'elevation_max':entry.get('elevation_max',details.get('elevation_max')),

@@ -47,7 +47,7 @@ static func subdivide_polyline(pts: Array) -> Array[Vector3]:
 	return result
 
 ## 1. 지형 밀착 도로 (연속 마이터 리본 메쉬: 급커브 파편화/틈새 100% 제거 및 공유 버텍스 최적화)
-static func build_surface_road(st: SurfaceTool, pts: Array[Vector3], ground_y: Array[float], width: float, sample_func: Callable, terrain_step: Vector2 = Vector2.ZERO, terrain_origin: Vector2 = Vector2.ZERO, clearance: float = 0.85) -> void:
+static func build_surface_road(st: SurfaceTool, pts: Array[Vector3], ground_y: Array[float], width: float, sample_func: Callable, terrain_step: Vector2 = Vector2.ZERO, terrain_origin: Vector2 = Vector2.ZERO, clearance: float = 0.85, formed_ground: bool = false, context: Dictionary = {}) -> void:
 	var n_pts := pts.size()
 	if n_pts < 2:
 		return
@@ -70,20 +70,23 @@ static func build_surface_road(st: SurfaceTool, pts: Array[Vector3], ground_y: A
 		var tangent: Vector3
 		var miter_scale: float = 1.0
 
-		if i == 0:
-			tangent = seg_dirs[0]
-		elif i == n_pts - 1:
-			tangent = seg_dirs[n_pts - 2]
+		var d_prev := seg_dirs[maxi(0,i-1)]
+		var d_next := seg_dirs[mini(n_pts-2,i)]
+		if i == 0 and context.has("before"):
+			d_prev = pts[0]-Vector3(context.before)
+			d_prev.y = 0.0
+			d_prev = d_prev.normalized()
+		if i == n_pts-1 and context.has("after"):
+			d_next = Vector3(context.after)-pts[-1]
+			d_next.y = 0.0
+			d_next = d_next.normalized()
+		tangent = d_prev+d_next
+		if tangent.is_zero_approx():
+			tangent = d_prev
 		else:
-			var d_prev := seg_dirs[i - 1]
-			var d_next := seg_dirs[i]
-			tangent = d_prev + d_next
-			if tangent.is_zero_approx():
-				tangent = d_prev
-			else:
-				tangent = tangent.normalized()
-			var cos_half := d_prev.dot(tangent)
-			miter_scale = clampf(1.0 / maxf(cos_half, 0.5), 1.0, 1.8)
+			tangent = tangent.normalized()
+		var cos_half := d_prev.dot(tangent)
+		miter_scale = clampf(1.0/maxf(cos_half,.5),1.0,1.8)
 
 		var normal_side := tangent.cross(Vector3.UP).normalized()
 		sides[i] = normal_side * (half_w * miter_scale)
@@ -118,9 +121,9 @@ static func build_surface_road(st: SurfaceTool, pts: Array[Vector3], ground_y: A
 		var c := right_pts[i + 1]
 		var d := left_pts[i + 1]
 
-		st.set_uv2(Vector2.ZERO)
+		st.set_uv2(Vector2(1.0 if formed_ground else 0.0, 0.0))
 		if terrain_step.x > 0 and terrain_step.y > 0:
-			TerrainTessellator.add_quad(st, [a, b, c, d], terrain_step, terrain_origin)
+			TerrainTessellator.add_quad(st, [a, b, c, d], terrain_step, terrain_origin, formed_ground)
 		else:
 			add_quad(st, a, b, c, d, Vector3.UP)
 
@@ -130,13 +133,13 @@ static func build_surface_road(st: SurfaceTool, pts: Array[Vector3], ground_y: A
 			if terrain_step.x > 0 and terrain_step.y > 0:
 				edge = TerrainTessellator.split_edge(pair[0], pair[1], terrain_step, terrain_origin)
 			for j in range(edge.size() - 1):
-				_add_road_skirt(st, edge[j], edge[j + 1], skirt_depth, pair[2])
+				_add_road_skirt(st, edge[j], edge[j + 1], skirt_depth, pair[2], formed_ground)
 
-static func _add_road_skirt(st: SurfaceTool, a: Vector3, b: Vector3, depth: float, normal: Vector3) -> void:
+static func _add_road_skirt(st: SurfaceTool, a: Vector3, b: Vector3, depth: float, normal: Vector3, formed_ground: bool = false) -> void:
 	var positions := [a, b, b + Vector3.DOWN * depth, a, b + Vector3.DOWN * depth, a + Vector3.DOWN * depth]
 	for i in range(6):
 		st.set_normal(normal)
-		st.set_uv2(Vector2(0, -depth if i in [2, 4, 5] else 0.0))
+		st.set_uv2(Vector2(1.0 if formed_ground else 0.0, -depth if i in [2, 4, 5] else 0.0))
 		st.add_vertex(positions[i])
 	st.set_uv2(Vector2.ZERO)
 

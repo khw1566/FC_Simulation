@@ -29,21 +29,27 @@ func _bake() -> void:
 		chunk.update_lod_now(0,material)
 		var terrain := Node3D.new()
 		terrain.name = "BakedTerrain"
-		var visible_mesh := MeshInstance3D.new()
-		visible_mesh.mesh = chunk.mesh_instance.mesh
-		visible_mesh.material_override = material
-		terrain.add_child(visible_mesh)
+		var triangles := 0
+		for source: MeshInstance3D in chunk.get_render_meshes():
+			var visible_mesh := MeshInstance3D.new()
+			visible_mesh.mesh = source.mesh
+			visible_mesh.material_override = material
+			terrain.add_child(visible_mesh)
+			triangles += source.mesh.get_faces().size()/3
 		_save(terrain,"terrain_"+quality+".scn")
-		report.terrain[quality] = {"triangles":visible_mesh.mesh.get_faces().size()/3,"grid_resolution":chunk.base_resolution,"rail_edge_m":sampler.grader.edge_limit}
+		report.terrain[quality] = {"triangles":triangles,"grid_resolution":chunk.base_resolution,"rail_edge_m":sampler.grader.edge_limit}
 		if quality=="high":
 			var physics := Node3D.new()
 			physics.name = "BakedCollision"
-			var body := StaticBody3D.new()
-			var shape := CollisionShape3D.new()
-			shape.shape = sampler.collision(visible_mesh.mesh)
-			report["collision_triangles"] = shape.shape.get_faces().size()/3
-			body.add_child(shape)
-			physics.add_child(body)
+			var collision_triangles := 0
+			for source: MeshInstance3D in chunk.get_render_meshes():
+				var body := StaticBody3D.new()
+				var shape := CollisionShape3D.new()
+				shape.shape = sampler.collision(source.mesh)
+				collision_triangles += shape.shape.get_faces().size()/3
+				body.add_child(shape)
+				physics.add_child(body)
+			report["collision_triangles"] = collision_triangles
 			_save(physics,"collision.scn")
 		chunk.queue_free()
 	var infrastructure := Node3D.new()

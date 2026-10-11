@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Shader" path="res://shaders/river_gravel.gdshader" id="1_el281"]
+[ext_resource type="Shader" path="res://shaders/taehwa_flow_water.gdshader" id="2_euu03"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uhh2j"]
+render_priority = 0
+shader = ExtResource("1_el281")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gbbd1"]
+_surfaces = [{
+"aabb": AABB(488.25, 67.3781, -500, 11.7503, 0.790459, 4.72461),
+"attribute_data": PackedByteArray(3, 0, 0, 255, 64, 54, 92, 68, 66, 206, 25, 66, 12, 215, 115, 63, 222, 115, 54, 63, 3, 0, 0, 255, 208, 11, 89, 68, 225, 0, 25, 66, 54, 128, 119, 63, 80, 221, 45, 63, 28, 79, 0, 255, 231, 201, 91, 68, 125, 41, 8, 66, 12, 215, 115, 63, 222, 115, 54, 63),
+"format": 34359742527,
+"index_count": 3,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 3,
+"vertex_data": PackedByteArray(0, 0, 250, 67, 130, 72, 136, 66, 64, 163, 247, 195, 245, 31, 244, 67, 77, 86, 136, 66, 0, 0, 250, 195, 0, 0, 250, 67, 150, 193, 134, 66, 0, 0, 250, 195, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191)
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2julx"]
+data = PackedVector3Array(500, 68.1416, -495.275, 488.25, 68.1686, -500, 500, 67.3781, -500)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vb05f"]
+render_priority = 0
+shader = ExtResource("2_euu03")
+shader_parameter/compatibility_depth = null
+shader_parameter/flow_speed_mps = 0.65
+shader_parameter/simulation_time = null
+shader_parameter/absorption = null
+shader_parameter/wave_strength = null
+shader_parameter/shallow_tint = null
+shader_parameter/deep_tint = null
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_8roxu"]
+_surfaces = [{
+"aabb": AABB(488.25, 68.2616, -500, 11.7503, 0.0269394, 4.72461),
+"attribute_data": PackedByteArray(3, 0, 0, 255, 64, 54, 92, 68, 66, 206, 25, 66, 12, 215, 115, 63, 222, 115, 54, 63, 3, 0, 0, 255, 208, 11, 89, 68, 225, 0, 25, 66, 54, 128, 119, 63, 80, 221, 45, 63, 28, 79, 0, 255, 231, 201, 91, 68, 125, 41, 8, 66, 12, 215, 115, 63, 222, 115, 54, 63),
+"format": 34359742527,
+"index_count": 3,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 3,
+"vertex_data": PackedByteArray(0, 0, 250, 67, 243, 133, 136, 66, 64, 163, 247, 195, 245, 31, 244, 67, 190, 147, 136, 66, 0, 0, 250, 195, 0, 0, 250, 67, 203, 135, 136, 66, 0, 0, 250, 195, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191, 255, 127, 255, 255, 0, 0, 255, 191)
+}]
+
+[node name="river_-13000_-2000" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12500, 0, -1500)
+
+[node name="Bed" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_uhh2j")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_gbbd1")
+
+[node name="Bed_col" type="StaticBody3D" parent="Bed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bed/Bed_col"]
+shape = SubResource("ConcavePolygonShape3D_2julx")
+
+[node name="Water" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_vb05f")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_8roxu")

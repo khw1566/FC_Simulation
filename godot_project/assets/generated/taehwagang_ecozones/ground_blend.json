@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "source_bbox": {
+    "south": 35.515,
+    "north": 35.5872,
+    "west": 129.2738,
+    "east": 129.3622
+  },
+  "source_world_size_m": 8000.0,
+  "splat_a": "res://assets/generated/taehwagang_ecozones/ecozone_splat_a_rgba.png",
+  "splat_b": "res://assets/generated/taehwagang_ecozones/ecozone_splat_b_rgba.png",
+  "textures": {
+    "lawn": "res://assets/generated/taehwagang_ecozones/ground/lawn.png",
+    "silvergrass_ground": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_ground.png",
+    "bamboo_litter": "res://assets/generated/taehwagang_ecozones/ground/bamboo_litter.png",
+    "reed_mud": "res://assets/generated/taehwagang_ecozones/ground/reed_mud.png",
+    "woodland_soil": "res://assets/generated/taehwagang_ecozones/ground/woodland_soil.png",
+    "meadow": "res://assets/generated/taehwagang_ecozones/ground/meadow.png",
+    "canopy_bamboo": "res://assets/generated/taehwagang_ecozones/ground/canopy_bamboo.png",
+    "canopy_broadleaf": "res://assets/generated/taehwagang_ecozones/ground/canopy_broadleaf.png",
+    "silvergrass_card": "res://assets/generated/taehwagang_ecozones/ground/silvergrass_card.png"
+  },
+  "tile_m": 6.0,
+  "fade_distance_m": 6000.0,
+  "flat_near_m": 150.0,
+  "flat_far_m": 450.0,
+  "silvergrass_field": null
+}

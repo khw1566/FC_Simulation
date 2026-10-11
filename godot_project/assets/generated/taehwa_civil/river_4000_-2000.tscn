@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=4]
+
+[ext_resource type="Shader" path="res://shaders/river_gravel.gdshader" id="1_v318s"]
+[ext_resource type="Shader" path="res://shaders/taehwa_flow_water.gdshader" id="2_r0qtc"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gkmjb"]
+render_priority = 0
+shader = ExtResource("1_v318s")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_l4koy"]
+_surfaces = [{
+"aabb": AABB(-62.2028, -1.87, 452.542, 205.452, 2.1, 47.4584),
+"attribute_data": PackedByteArray("AwAA/5EcwEYeJcTCEWd2P7i9nj4shQD/kBXARnMYs8IRZ3Y/uL2ePgMAAP/9/r9GG168whFndj+4vZ4+AwAA/5sjwEYU/8XCEWd2P7i9nj4DAAD//nTARgC+ysIRZ3Y/uL2ePkb/AP8RcsBGlcWKwhFndj+4vZ4+AwAA//50wEYCgMvCEWd2P7i9nj5G/wD/vZvARtH5gsJq6H8/G9sEPwMAAP/+dMBGikXSwhFndj+4vZ4+AwAA/92OwEbqeOHCauh/PxvbBD8DAAD/SJjARi8C3sJq6H8/G9sEPwMAAP92osBGiEPawmrofz8b2wQ/AwAA/0qzwEYbBNXCauh/PxvbBD8DAAD/Z/3ARldPwsJq6H8/G9sEP0b/AP+q/8BG/sSGwmrofz8b2wQ/AwAA/z7LwEZG2MDCauh/PxvbBD8DAAD/vg/BRnTYwsJq6H8/G9sEPwMAAP/3KsFGaTmuwgVKcz8InDc/AwAA//cqwUaa84/CBUpzPwicNz8="),
+"format": 34359742527,
+"index_count": 51,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMABAAFAAMAAQADAAUABAAGAAUABwAFAAgACQAKAAgABgAIAAUABwAIAAoACwAMAAcABwAKAAsADQAOAA8ADwAHAAwABwAPAA4ADgANABAAEQASAA4ADgAQABEA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 19,
+"vertex_data": PackedByteArray("AABIwvOEaz5jZPVDAABIwudKh78AAPpDo894wv+Eaz4AAPpDZ2E8wtmEaz6US/RDAAAAAPOEaz4RYOlDAAAAAClc778AAPpDozusPw2Faz4yEOlDAABIQilc778AAPpDxCvsQfGEaz4W1+RD5nE1QhKFaz5UReJDAABIQvmEaz62OeNDaQ9cQgCFaz7rQeRDD0t9QhqFaz5juuVDAADIQvSEaz6rGutDAADIQilc778AAPpDw9GVQhKFaz6U/upDKVjaQhWFaz7wJOtDA176QgKFaz6j9O9D0z8PQ/qEaz4AAPpD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78=")
+}]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_hrjx8"]
+data = PackedVector3Array(-50, 0.23, 490.784, -50, -1.057, 500, -62.2028, 0.23, 500, -50, -1.057, 500, -50, 0.23, 490.784, -47.0951, 0.23, 488.59, 0, 0.23, 466.75, 0, -1.87, 500, -47.0951, 0.23, 488.59, -50, -1.057, 500, -47.0951, 0.23, 488.59, 0, -1.87, 500, 0, 0.23, 466.75, 1.3456, 0.23, 466.126, 0, -1.87, 500, 50, -1.87, 500, 0, -1.87, 500, 29.5214, 0.23, 457.68, 45.3612, 0.23, 452.542, 50, 0.23, 454.451, 29.5214, 0.23, 457.68, 1.3456, 0.23, 466.126, 29.5214, 0.23, 457.68, 0, -1.87, 500, 50, -1.87, 500, 29.5214, 0.23, 457.68, 50, 0.23, 454.451, 55.0151, 0.23, 456.515, 63.3233, 0.23, 459.456, 50, -1.87, 500, 50, -1.87, 500, 50, 0.23, 454.451, 55.0151, 0.23, 456.515, 100, 0.23, 470.208, 100, -1.87, 500, 74.9097, 0.23, 469.989, 74.9097, 0.23, 469.989, 50, -1.87, 500, 63.3233, 0.23, 459.456, 50, -1.87, 500, 74.9097, 0.23, 469.989, 100, -1.87, 500, 100, -1.87, 500, 100, 0.23, 470.208, 109.172, 0.23, 470.289, 125.184, 0.23, 479.911, 143.249, 0.23, 500, 100, -1.87, 500, 100, -1.87, 500, 109.172, 0.23, 470.289, 125.184, 0.23, 479.911)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2lgq0"]
+render_priority = 0
+shader = ExtResource("2_r0qtc")
+shader_parameter/compatibility_depth = null
+shader_parameter/flow_speed_mps = 0.65
+shader_parameter/simulation_time = null
+shader_parameter/absorption = null
+shader_parameter/wave_strength = null
+shader_parameter/shallow_tint = null
+shader_parameter/deep_tint = null
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ol4vh"]
+_surfaces = [{
+"aabb": AABB(-62.2028, 0.35, 452.542, 205.452, 1e-05, 47.4584),
+"attribute_data": PackedByteArray("AwAA/5EcwEYeJcTCEWd2P7i9nj4shQD/kBXARnMYs8IRZ3Y/uL2ePgMAAP/9/r9GG168whFndj+4vZ4+AwAA/5sjwEYU/8XCEWd2P7i9nj4DAAD//nTARgC+ysIRZ3Y/uL2ePkb/AP8RcsBGlcWKwhFndj+4vZ4+AwAA//50wEYCgMvCEWd2P7i9nj5G/wD/vZvARtH5gsJq6H8/G9sEPwMAAP/+dMBGikXSwhFndj+4vZ4+AwAA/92OwEbqeOHCauh/PxvbBD8DAAD/SJjARi8C3sJq6H8/G9sEPwMAAP92osBGiEPawmrofz8b2wQ/AwAA/0qzwEYbBNXCauh/PxvbBD8DAAD/Z/3ARldPwsJq6H8/G9sEP0b/AP+q/8BG/sSGwmrofz8b2wQ/AwAA/z7LwEZG2MDCauh/PxvbBD8DAAD/vg/BRnTYwsJq6H8/G9sEPwMAAP/3KsFGaTmuwgVKcz8InDc/AwAA//cqwUaa84/CBUpzPwicNz8="),
+"format": 34359742527,
+"index_count": 51,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMABAAFAAMAAQADAAUABAAGAAUABwAFAAgACQAKAAgABgAIAAUABwAIAAoACwAMAAcABwAKAAsADQAOAA8ADwAHAAwABwAPAA4ADgANABAAEQASAA4ADgAQABEA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 19,
+"vertex_data": PackedByteArray("AABIwjMzsz5jZPVDAABIwjMzsz4AAPpDo894wjMzsz4AAPpDZ2E8wjMzsz6US/RDAAAAADMzsz4RYOlDAAAAADMzsz4AAPpDozusPzMzsz4yEOlDAABIQjMzsz4AAPpDxCvsQTMzsz4W1+RD5nE1QjMzsz5UReJDAABIQjMzsz62OeNDaQ9cQjMzsz7rQeRDD0t9QjMzsz5juuVDAADIQjMzsz6rGutDAADIQjMzsz4AAPpDw9GVQjMzsz6U/upDKVjaQjMzsz7wJOtDA176QjMzsz6j9O9D0z8PQzMzsz4AAPpD/3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/7//f///AAD/v/9///8AAP+//3///wAA/78=")
+}]
+
+[node name="river_4000_-2000" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4500, 0, -1500)
+
+[node name="Bed" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_gkmjb")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_l4koy")
+
+[node name="Bed_col" type="StaticBody3D" parent="Bed"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bed/Bed_col"]
+shape = SubResource("ConcavePolygonShape3D_hrjx8")
+
+[node name="Water" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_2lgq0")
+cast_shadow = 0
+mesh = SubResource("ArrayMesh_ol4vh")

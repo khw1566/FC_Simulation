@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "facility_models": [
+    {
+      "id": "bancheon_weir",
+      "triangles": 160,
+      "status": "map_80km_research_estimate"
+    },
+    {
+      "id": "yeocheon_basin",
+      "triangles": 304,
+      "status": "map_80km_research_estimate"
+    },
+    {
+      "id": "yeocheon_gate",
+      "triangles": 564,
+      "status": "map_80km_research_estimate"
+    },
+    {
+      "id": "drain_outlet",
+      "triangles": 300,
+      "status": "unplaced"
+    },
+    {
+      "id": "revetment_segment",
+      "triangles": 86,
+      "status": "unplaced"
+    }
+  ],
+  "placed_facilities": 3,
+  "hydro_chunks": 101,
+  "water_triangles": 6400,
+  "shore_triangles": 9235,
+  "bed_triangles": 15635,
+  "water_area_m2": 4175549.612277587,
+  "expected_area_m2": 4175549.733179268,
+  "flow_changed_pixel_fraction": 0.20418092105263158,
+  "source_dem_unchanged": true,
+  "published_assets": 118,
+  "pending": [],
+  "non_target_entries_preserved": 8238,
+  "fixture": {
+    "changed_pixels_512": 222,
+    "checks": {
+      "all_hydro_chunks": true,
+      "bed_collisions": true,
+      "bed_ray_matches_surface": true,
+      "civil_other_map_excluded": true,
+      "height_range_guard": true,
+      "local_patch_only": true,
+      "other_map_excluded": true,
+      "outside_preserved": true,
+      "patch_applied": true,
+      "placement_idempotent": true,
+      "sea_overlay_bound": true,
+      "three_placements": true,
+      "transparent_material": true
+    },
+    "chunks": 101,
+    "passed": true
+  },
+  "asset_index": {
+    "files": 77085,
+    "family_files": 119,
+    "pending": 0,
+    "family_hashes_verified": 119
+  },
+  "renderers_checked": [
+    "Compatibility",
+    "Forward+"
+  ],
+  "integration_parse_checked": [
+    "TerrainChunkManager",
+    "BuildingRoadManager",
+    "KanmonWaterManager"
+  ]
+}

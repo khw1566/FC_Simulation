@@ -1,0 +1,31 @@
+{
+  "id": "flower_path",
+  "label": "꽃길",
+  "ground": "lawn",
+  "plants": [
+    "flower_low_round",
+    "flower_low_edge",
+    "hedge_1m"
+  ],
+  "reused": [
+    {
+      "path": "res://assets/generated/trees/shrub_lod0.scn",
+      "position": [
+        -5,
+        0,
+        -5
+      ],
+      "role": "shrub"
+    },
+    {
+      "path": "res://assets/generated/road_assets/walk_concrete_w3_straight.tscn",
+      "position": [
+        -1,
+        0,
+        -5
+      ],
+      "role": "path"
+    }
+  ],
+  "seed": 172
+}

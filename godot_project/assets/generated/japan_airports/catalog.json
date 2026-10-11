@@ -1,0 +1,456 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "JP-0007",
+      "scene_path": "res://assets/generated/japan_airports/JP-0007.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 876,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -727.223083496094,
+        -2,
+        -451.990417480469
+      ],
+      "aabb_max_m": [
+        727.223083496094,
+        36,
+        602.992004394531
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJDA",
+      "scene_path": "res://assets/generated/japan_airports/RJDA.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 900,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -833.834777832031,
+        -2,
+        -634.631958007813
+      ],
+      "aabb_max_m": [
+        720.372985839844,
+        36,
+        675.144287109375
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJDB",
+      "scene_path": "res://assets/generated/japan_airports/RJDB.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1008,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -345,
+        -2,
+        -1012.97802734375
+      ],
+      "aabb_max_m": [
+        694.306030273438,
+        36,
+        990.89599609375
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJDC",
+      "scene_path": "res://assets/generated/japan_airports/RJDC.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1452,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1462.17797851563,
+        -2,
+        -931.835021972656
+      ],
+      "aabb_max_m": [
+        1465.06665039063,
+        36,
+        980.577331542969
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFA",
+      "scene_path": "res://assets/generated/japan_airports/RJFA.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1128,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1001.96984863281,
+        -2,
+        -664.650024414063
+      ],
+      "aabb_max_m": [
+        1184.97399902344,
+        36,
+        792.57275390625
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFF",
+      "scene_path": "res://assets/generated/japan_airports/RJFF.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 3456,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1267.05297851563,
+        -2,
+        -1584.70300292969
+      ],
+      "aabb_max_m": [
+        1037.61352539063,
+        36,
+        1573.20495605469
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFK",
+      "scene_path": "res://assets/generated/japan_airports/RJFK.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1776,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1145.58581542969,
+        -2,
+        -1655.41198730469
+      ],
+      "aabb_max_m": [
+        1110.89392089844,
+        36,
+        1662.61145019531
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFM",
+      "scene_path": "res://assets/generated/japan_airports/RJFM.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1536,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1677.13598632813,
+        -2,
+        -603.036010742188
+      ],
+      "aabb_max_m": [
+        1581.9599609375,
+        36,
+        464.239990234375
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFN",
+      "scene_path": "res://assets/generated/japan_airports/RJFN.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1452,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1579.18395996094,
+        -2,
+        -653.664001464844
+      ],
+      "aabb_max_m": [
+        1767.72302246094,
+        36,
+        654.334533691406
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFO",
+      "scene_path": "res://assets/generated/japan_airports/RJFO.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1656,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -600,
+        -2,
+        -1866.88500976563
+      ],
+      "aabb_max_m": [
+        353,
+        36,
+        1844.80297851563
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFR",
+      "scene_path": "res://assets/generated/japan_airports/RJFR.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1452,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -611.851013183594,
+        -2,
+        -1555.91101074219
+      ],
+      "aabb_max_m": [
+        568.764953613281,
+        36,
+        1633.05603027344
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFS",
+      "scene_path": "res://assets/generated/japan_airports/RJFS.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1284,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1284.01293945313,
+        -2,
+        -519.406982421875
+      ],
+      "aabb_max_m": [
+        1377.86596679688,
+        36,
+        602.93310546875
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFT",
+      "scene_path": "res://assets/generated/japan_airports/RJFT.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1704,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1663.15979003906,
+        -2,
+        -1038.16186523438
+      ],
+      "aabb_max_m": [
+        1755.90612792969,
+        36,
+        998.432983398438
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFU",
+      "scene_path": "res://assets/generated/japan_airports/RJFU.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1692,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1408.189453125,
+        -2,
+        -1484.51293945313
+      ],
+      "aabb_max_m": [
+        1294.51708984375,
+        36,
+        1486.22290039063
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFY",
+      "scene_path": "res://assets/generated/japan_airports/RJFY.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1932,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1474.97094726563,
+        -2,
+        -670.635009765625
+      ],
+      "aabb_max_m": [
+        1511.44897460938,
+        36,
+        601.26416015625
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJFZ",
+      "scene_path": "res://assets/generated/japan_airports/RJFZ.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1344,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1370.62902832031,
+        -2,
+        -809.118041992188
+      ],
+      "aabb_max_m": [
+        1557.25305175781,
+        36,
+        751.377563476563
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJOF",
+      "scene_path": "res://assets/generated/japan_airports/RJOF.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1680,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -1433.07299804688,
+        -2,
+        -722.035034179688
+      ],
+      "aabb_max_m": [
+        655.631103515625,
+        36,
+        1177.64892578125
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    },
+    {
+      "id": "RJOZ",
+      "scene_path": "res://assets/generated/japan_airports/RJOZ.scn",
+      "detail_profile": "custom_low_poly_flat_v1",
+      "material_style": "flat_color",
+      "external_textures": false,
+      "triangles": 1500,
+      "triangle_count_method": "mesh_faces_times_instances",
+      "aabb_min_m": [
+        -786.02099609375,
+        -2,
+        -1429.29699707031
+      ],
+      "aabb_max_m": [
+        999.01904296875,
+        36,
+        653.705932617188
+      ],
+      "elevation_min": -2,
+      "elevation_max": 36,
+      "connections_preserved": true,
+      "collision_geometry_preserved": true,
+      "runtime_placement_changed": false,
+      "indexed_geometry": false
+    }
+  ],
+  "note_ko": "독립 에셋 표현의 경량화, 기존 지리 배치 유지"
+}

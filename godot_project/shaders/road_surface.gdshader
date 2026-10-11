@@ -25,6 +25,8 @@ float sample_corner(vec2 uv, ivec2 origin, ivec2 span) {
 }
 
 void vertex() {
+	// 보정된 노반 위의 도로는 CPU가 만든 수평 단면을 보존한다.
+	if (UV2.x < 0.5) {
 	vec3 world = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
 	vec2 map_uv = clamp(world.xz / world_size + vec2(0.5), vec2(0.0), vec2(0.999999));
 	vec2 tile_uv = map_uv * chunk_counts;
@@ -44,6 +46,7 @@ void vertex() {
 	float d = sample_corner((cell + vec2(1, 1)) / resolution, origin, span);
 	float h = (f.x + f.y <= 1.0) ? a + f.x * (b - a) + f.y * (c - a) : d + (1.0 - f.x) * (c - d) + (1.0 - f.y) * (b - d);
 	VERTEX.y = min_elevation + h * (max_elevation - min_elevation) + clearance + UV2.y;
+	}
 }
 
 void fragment() {

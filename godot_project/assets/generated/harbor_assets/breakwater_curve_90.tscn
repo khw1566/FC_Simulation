@@ -1,0 +1,106 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/breakwater_curve_90.glb" id="Visual"]
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision0"]
+points = PackedVector3Array(-2.00000000, 0.00000000, 0.00000000, -2.00000000, -0.60000000, 0.00000000, -1.52296157, 0.00000000, 3.10582854, -1.52296157, -0.60000000, 3.10582854, 2.34074174, 0.00000000, 3.10582854, 2.34074174, -0.60000000, 3.10582854, 2.00000000, 0.00000000, 0.00000000, 2.00000000, -0.60000000, 0.00000000)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision1"]
+points = PackedVector3Array(1.30000000, 0.00000000, 0.00000000, 1.30000000, 1.30000000, 0.00000000, 2.00000000, 0.00000000, 0.00000000, 2.00000000, 1.30000000, 0.00000000, 1.66459366, 0.00000000, 3.10582854, 1.66459366, 1.30000000, 3.10582854, 2.34074174, 0.00000000, 3.10582854, 2.34074174, 1.30000000, 3.10582854)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision2"]
+points = PackedVector3Array(-1.52296157, 0.00000000, 3.10582854, -1.52296157, -0.60000000, 3.10582854, -0.12435565, 0.00000000, 6.00000000, -0.12435565, -0.60000000, 6.00000000, 3.33974596, 0.00000000, 6.00000000, 3.33974596, -0.60000000, 6.00000000, 2.34074174, 0.00000000, 3.10582854, 2.34074174, -0.60000000, 3.10582854)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision3"]
+points = PackedVector3Array(1.66459366, 0.00000000, 3.10582854, 1.66459366, 1.30000000, 3.10582854, 2.34074174, 0.00000000, 3.10582854, 2.34074174, 1.30000000, 3.10582854, 2.73352818, 0.00000000, 6.00000000, 2.73352818, 1.30000000, 6.00000000, 3.33974596, 0.00000000, 6.00000000, 3.33974596, 1.30000000, 6.00000000)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision4"]
+points = PackedVector3Array(-0.12435565, 0.00000000, 6.00000000, -0.12435565, -0.60000000, 6.00000000, 2.10050506, 0.00000000, 8.48528137, 2.10050506, -0.60000000, 8.48528137, 4.92893219, 0.00000000, 8.48528137, 4.92893219, -0.60000000, 8.48528137, 3.33974596, 0.00000000, 6.00000000, 3.33974596, -0.60000000, 6.00000000)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision5"]
+points = PackedVector3Array(2.73352818, 0.00000000, 6.00000000, 2.73352818, 1.30000000, 6.00000000, 3.33974596, 0.00000000, 6.00000000, 3.33974596, 1.30000000, 6.00000000, 4.43395744, 0.00000000, 8.48528137, 4.43395744, 1.30000000, 8.48528137, 4.92893219, 0.00000000, 8.48528137, 4.92893219, 1.30000000, 8.48528137)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision6"]
+points = PackedVector3Array(2.10050506, 0.00000000, 8.48528137, 2.10050506, -0.60000000, 8.48528137, 5.00000000, 0.00000000, 10.39230485, 5.00000000, -0.60000000, 10.39230485, 7.00000000, 0.00000000, 10.39230485, 7.00000000, -0.60000000, 10.39230485, 4.92893219, 0.00000000, 8.48528137, 4.92893219, -0.60000000, 8.48528137)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision7"]
+points = PackedVector3Array(4.43395744, 0.00000000, 8.48528137, 4.43395744, 1.30000000, 8.48528137, 4.92893219, 0.00000000, 8.48528137, 4.92893219, 1.30000000, 8.48528137, 6.65000000, 0.00000000, 10.39230485, 6.65000000, 1.30000000, 10.39230485, 7.00000000, 0.00000000, 10.39230485, 7.00000000, 1.30000000, 10.39230485)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision8"]
+points = PackedVector3Array(5.00000000, 0.00000000, 10.39230485, 5.00000000, -0.60000000, 10.39230485, 8.37653337, 0.00000000, 11.59110992, 8.37653337, -0.60000000, 11.59110992, 9.41180955, 0.00000000, 11.59110992, 9.41180955, -0.60000000, 11.59110992, 7.00000000, 0.00000000, 10.39230485, 7.00000000, -0.60000000, 10.39230485)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision9"]
+points = PackedVector3Array(6.65000000, 0.00000000, 10.39230485, 6.65000000, 1.30000000, 10.39230485, 7.00000000, 0.00000000, 10.39230485, 7.00000000, 1.30000000, 10.39230485, 9.23063622, 0.00000000, 11.59110992, 9.23063622, 1.30000000, 11.59110992, 9.41180955, 0.00000000, 11.59110992, 9.41180955, 1.30000000, 11.59110992)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision10"]
+points = PackedVector3Array(8.37653337, 0.00000000, 11.59110992, 8.37653337, -0.60000000, 11.59110992, 12.00000000, 0.00000000, 12.00000000, 12.00000000, -0.60000000, 12.00000000, 12.00000000, 0.00000000, 12.00000000, 12.00000000, -0.60000000, 12.00000000, 9.41180955, 0.00000000, 11.59110992, 9.41180955, -0.60000000, 11.59110992)
+
+[sub_resource type="ConvexPolygonShape3D" id="Collision11"]
+points = PackedVector3Array(9.23063622, 0.00000000, 11.59110992, 9.23063622, 1.30000000, 11.59110992, 9.41180955, 0.00000000, 11.59110992, 9.41180955, 1.30000000, 11.59110992, 12.00000000, 0.00000000, 12.00000000, 12.00000000, 1.30000000, 12.00000000, 12.00000000, 0.00000000, 12.00000000, 12.00000000, 1.30000000, 12.00000000)
+
+[node name="breakwater_curve_90" type="Node3D"]
+metadata/units = "meters"
+metadata/detail_profile = "harbor_low_poly_flat_v1"
+metadata/anchor = "deck_surface"
+
+[node name="Visual" parent="." instance=ExtResource("Visual")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+metadata/profile = "terrain_anchor"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, -1.00000000)
+
+[node name="Start" type="Marker3D" parent="."]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+metadata/profile = "breakwater_4m"
+metadata/outward_direction = Vector3(0.00000000, 0.00000000, -1.00000000)
+metadata/width_m = 4
+
+[node name="End" type="Marker3D" parent="."]
+position = Vector3(12.00000000, 0.00000000, 12.00000000)
+rotation = Vector3(0, -1.57079633, 0)
+metadata/profile = "breakwater_4m"
+metadata/outward_direction = Vector3(1.00000000, 0.00000000, 0.00000000)
+metadata/width_m = 4
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_layer = 1
+collision_mask = 1
+
+[node name="Shape0" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision0")
+
+[node name="Shape1" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision1")
+
+[node name="Shape2" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision2")
+
+[node name="Shape3" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision3")
+
+[node name="Shape4" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision4")
+
+[node name="Shape5" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision5")
+
+[node name="Shape6" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision6")
+
+[node name="Shape7" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision7")
+
+[node name="Shape8" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision8")
+
+[node name="Shape9" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision9")
+
+[node name="Shape10" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision10")
+
+[node name="Shape11" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("Collision11")

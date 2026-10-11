@@ -10,6 +10,8 @@ var base_resolution := 128
 const LOD_HYSTERESIS := 600.0
 var startup_timings: Dictionary = {}
 var _height_texture: ImageTexture
+var _water_sdf_texture: ImageTexture = null
+var _river_bed_applied := false
 
 var airport_floor_y: float = NAN
 var _airport_placement_path: String = ""
@@ -18,6 +20,7 @@ var _road_lod_image: Image
 var _road_lod_texture: ImageTexture
 var _coastal_corrected: bool = false
 var _railway_grader: RefCounted
+var _road_grader := preload("res://scripts/terrain/road_formation_grader.gd").new()
 var _sea_mask_path: String = ""
 var _lake_mask_path: String = ""
 
@@ -79,6 +82,11 @@ func _initialize_async() -> void:
 	if not is_inside_tree():
 		return
 	_build_subsurface_bed()
+	if _river_bed_applied:
+		var water := preload("res://scripts/water/taehwa_water_manager.gd").new()
+		water.name = "TaehwaFlowingWater"
+		add_child(water)
+		await water.setup("ulsan_metro_80km", terrain_material as ShaderMaterial)
 	load_complete = true
 
 func _init_from_map_selection() -> void:
@@ -190,6 +198,14 @@ func _init_shader_material() -> void:
 				var mask_tex := ImageTexture.create_from_image(render_mask)
 				mat.set_shader_parameter("water_mask_texture", mask_tex)
 				print("[TerrainChunkManager] Loaded water mask texture: ", mask_path)
+			# 렌더링 전용 수계 거리장: 마스크 해상도보다 좁은 하천의 픽셀화·끊김을 막는다.
+			var sdf_path := mask_path.get_base_dir().path_join("water_sdf.png")
+			if FileAccess.file_exists(sdf_path):
+				var sdf_img := MapImages.read(sdf_path)
+				if sdf_img:
+					_water_sdf_texture = ImageTexture.create_from_image(sdf_img)
+					mat.set_shader_parameter("water_sdf_texture", _water_sdf_texture)
+					mat.set_shader_parameter("has_water_sdf", true)
 
 		# 4채널 지표 피복 스플랫맵 (산림, 농경지/논밭, 도회지, 하천/수계)
 		var splat_path := splatmap_override_path
@@ -211,6 +227,7 @@ func _init_shader_material() -> void:
 func _load_heightmap() -> void:
 	var height_started := Time.get_ticks_msec()
 	var raw_path := heightmap_override_path
+	_road_grader.configure(buildings_roads_override_path)
 	if raw_path.is_empty() or not FileAccess.file_exists(raw_path):
 		raw_path = "res://assets/maps/kanmon_straits/kanmon_heightmap_16bit.png"
 	if not FileAccess.file_exists(raw_path):
@@ -244,10 +261,16 @@ func _load_heightmap() -> void:
 					airport_floor_y = AirfieldGrader.apply(_full_heightmap_image, airport_spec, _airport_map_meta, min_elevation, max_elevation)
 			elif airport_spec is Dictionary and airport_spec.has("airports"):
 				preload("res://scripts/terrain/regional_airport_grader.gd").apply(_full_heightmap_image, airport_spec, _airport_map_meta, min_elevation, max_elevation)
+		var river_selection := get_node_or_null("/root/MapSelectionService")
+		if river_selection and river_selection.selected_map:
+			_river_bed_applied = preload("res://scripts/water/river_bed_grade.gd").apply(
+				_full_heightmap_image, str(river_selection.selected_map.id), min_elevation, max_elevation, terrain_material as ShaderMaterial)
 		if terrain_material is ShaderMaterial and _full_watermask_image != null:
 			_height_texture = ImageTexture.create_from_image(_full_heightmap_image)
 			terrain_material.set_shader_parameter("coast_height_texture", _height_texture)
 			terrain_material.set_shader_parameter("has_coast_height", true)
+			get_tree().call_group("sea_water_plane", "set_water_source", _height_texture,
+				terrain_material.get_shader_parameter("water_mask_texture"), min_elevation, max_elevation, terrain_material, _water_sdf_texture)
 		print("[TerrainChunkManager] Successfully loaded and carved heightmap: ", raw_path)
 		startup_timings["height_prepare_ms"] = Time.get_ticks_msec() - height_started
 	else:
@@ -285,6 +308,7 @@ func _build_all_chunks() -> void:
 			var chunk_node := TerrainChunkClass.new()
 			chunk_node.name = "Chunk_%d_%d" % [cx, cy]
 			chunk_node.init_chunk(coord, chunk_size_x, center_pos, sub_img, min_elevation, max_elevation)
+			chunk_node.road_grader = _road_grader if _road_grader.enabled else null
 			chunk_node.railway_grader = _railway_grader
 			chunk_node.base_resolution = base_resolution
 			add_child(chunk_node)
@@ -352,7 +376,7 @@ func _update_chunks_lod() -> int:
 		elif dist <= lod1_distance or (chunk.current_lod == 1 and dist <= lod1_distance + LOD_HYSTERESIS):
 			target_lod = 1
 
-		if chunk.current_lod != target_lod:
+		if chunk.current_lod != target_lod or chunk.is_building():
 			chunk.update_lod(target_lod, terrain_material)
 			# 캐시된 LOD는 즉시 바뀌므로 도로 LOD도 함께 맞춘다.
 			lod_changed = lod_changed or chunk.current_lod == target_lod
@@ -393,6 +417,7 @@ func _sync_road_lods() -> void:
 ## 특정 월드 좌표(world_x, world_z)에서의 지형 표고(Y)를 높이맵 이미지로부터 바이리니어 보간 샘플링
 func get_terrain_elevation(world_x: float, world_z: float) -> float:
 	var height := CoastlineWaterCarver.sample_elevation_bilinear(_full_heightmap_image, world_x, world_z, terrain_world_size, min_elevation, max_elevation)
+	height = _road_grader.corrected_height(Vector3(world_x,height,world_z))
 	return _railway_grader.corrected_height(Vector3(world_x,height,world_z)) if _railway_grader else height
 
 func get_navigation_floor(point: Vector3) -> float:

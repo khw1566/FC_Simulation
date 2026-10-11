@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/lane_overlay_6l_straight.glb" id="1"]
+
+[node name="lane_overlay_6l_straight" type="Node3D"]
+metadata/asset_type = "lane_overlay_6l_straight"
+metadata/procedural = true
+metadata/units = "meters"
+metadata/runtime_applied = false
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]

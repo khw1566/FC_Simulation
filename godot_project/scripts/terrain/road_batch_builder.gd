@@ -6,8 +6,9 @@ class_name RoadBatchBuilder
 ## 교량 충돌 형상도 계산 단계에서 만들어 렌더링 메시를 다시 읽지 않는다.
 const RoadMeshBuilder = preload("res://scripts/terrain/road_mesh_builder.gd")
 const RoadClassifier = preload("res://scripts/terrain/road_segment_classifier.gd")
+const VisibilityPolicy = preload("res://scripts/terrain/road_visibility_policy.gd")
+const FrameBudget = preload("res://scripts/terrain/stream_frame_budget.gd")
 const WALKING_TYPES := ["footway", "path", "steps", "pedestrian", "bridleway", "corridor"]
-const UNPAVED_TYPES := ["track", "cycleway"]
 const SURFACE_SPLIT := 1500
 # 벡터 스트림의 이탈 해제 여유 거리와 같은 값
 const PAVED_EXTRA_RANGE := 4500.0
@@ -33,10 +34,12 @@ static func attach_geometry_keys(roads: Array) -> void:
 		road["_geometry_key"] = RoadClassifier.geometry_key(road)
 
 ## 도로 목록의 메시 배열을 계산한다. sample_ground(x, z, fallback), sample_water(x, z)는 스레드 안전해야 한다.
-static func compute(roads: Array, sample_ground: Callable, sample_water: Callable, terrain_step: Vector2, terrain_origin: Vector2) -> Dictionary:
+static func compute(roads: Array, sample_ground: Callable, sample_water: Callable, terrain_step: Vector2, terrain_origin: Vector2, formed_ground: bool = false) -> Dictionary:
 	var result := {"paved": [], "walking": [], "unpaved": [], "tunnel": [], "bridge": [], "bridge_shapes": [], "tunnel_segments": []}
-	var surfaces := {"paved": _begin(), "walking": _begin(), "unpaved": _begin()}
-	var counts := {"paved": 0, "walking": 0, "unpaved": 0}
+	result["surface_groups"] = {}
+	result["formed_ground"] = formed_ground
+	var surfaces: Dictionary = {}
+	var counts: Dictionary = {}
 	var tunnel_st := _begin()
 	var bridge_st := _begin()
 	var tunnel_count := 0
@@ -71,10 +74,23 @@ static func compute(roads: Array, sample_ground: Callable, sample_water: Callabl
 				section_ground.append(ground_y_list[index])
 			if kind == 0:
 				var road_type := str(r.get("type", ""))
-				var key := "walking" if road_type in WALKING_TYPES else ("unpaved" if road_type in UNPAVED_TYPES else "paved")
+				var surface := str(r.get("surface", ""))
+				var loose := surface in ["unpaved", "gravel", "fine_gravel", "dirt", "ground", "sand", "grass", "mud", "compacted"]
+				var sealed := surface in ["asphalt", "concrete", "concrete:plates", "paved", "paving_stones", "sett"]
+				var key := "walking" if road_type in WALKING_TYPES else ("unpaved" if loose or (road_type == "track" and not sealed) else "paved")
 				var clearance: float = 0.24 if key == "walking" else (0.32 if key == "unpaved" else 0.85)
-				RoadMeshBuilder.build_surface_road(surfaces[key], section, section_ground, width, sample_ground, terrain_step, terrain_origin, clearance)
-				counts[key] += 1
+				var tier_name := VisibilityPolicy.tier(r)
+				for piece in VisibilityPolicy.pieces(section, section_ground):
+					var group := "%s:%s:%d:%d" % [key,tier_name,piece.cell.x,piece.cell.y]
+					if not surfaces.has(group):
+						surfaces[group] = _begin()
+						counts[group] = 0
+						result.surface_groups[group] = {"kind":key,"tier":tier_name,"arrays":[]}
+					RoadMeshBuilder.build_surface_road(surfaces[group], piece.points, piece.heights, width, sample_ground, terrain_step, terrain_origin, clearance, formed_ground, piece)
+					counts[group] += 1
+					if counts[group] >= SURFACE_SPLIT:
+						_flush(surfaces[group], counts[group], result.surface_groups[group].arrays)
+						counts[group] = 0
 			elif kind == 1:
 				RoadMeshBuilder.build_universal_bridge(bridge_st, section, section_ground, width)
 				bridge_count += 1
@@ -89,13 +105,10 @@ static func compute(roads: Array, sample_ground: Callable, sample_water: Callabl
 				RoadMeshBuilder.build_mountain_tunnel(tunnel_st, section, width, tunnel_segments)
 				tunnel_count += 1
 			first = last
-		# 한 메시가 지나치게 커지지 않도록 일정 수마다 분할한다.
-		if counts.paved + counts.walking + counts.unpaved >= SURFACE_SPLIT:
-			for key in surfaces:
-				_flush(surfaces[key], counts[key], result[key])
-				counts[key] = 0
-	for key in surfaces:
-		_flush(surfaces[key], counts[key], result[key])
+	for group in surfaces:
+		var info: Dictionary = result.surface_groups[group]
+		_flush(surfaces[group], counts[group], info.arrays)
+		result[info.kind].append_array(info.arrays)
 	_flush(tunnel_st, tunnel_count, result.tunnel)
 	_flush(bridge_st, bridge_count, result.bridge)
 	for arrays in result.bridge:
@@ -110,14 +123,10 @@ static func attach(host: Node3D, result: Dictionary) -> Node3D:
 	var container := Node3D.new()
 	container.name = "RoadsContainer"
 	host.add_child(container)
-	# 포장도로는 스트림 해제 반경까지 그려 고고도 원경에서도 유지하고, 보행로·비포장로는 건물 표시 거리까지만 그린다.
-	var paved_range: float = host.max_view_distance + PAVED_EXTRA_RANGE
-	for item in [["paved", host.road_material, "PavedRoads", paved_range], ["walking", host.walking_path_material, "WalkingPaths", host.max_view_distance],
-			["unpaved", host.unpaved_road_material, "UnpavedAndCycleways", host.max_view_distance]]:
-		for arrays in result[item[0]]:
-			var instance := _instance(container, arrays, item[1], item[2])
-			instance.visibility_range_end = item[3]
-			host._configure_road_bounds(instance)
+	var materials := {"paved":host.road_material,"walking":host.walking_path_material,"unpaved":host.unpaved_road_material}
+	for info in result.get("surface_groups", {}).values():
+		for arrays in info.arrays:
+			_surface(host,container,arrays,materials[info.kind],info,result)
 	for arrays in result.tunnel:
 		_instance(container, arrays, host.tunnel_wall_material, "Tunnels")
 	for index in result.bridge.size():
@@ -128,6 +137,46 @@ static func attach(host: Node3D, result: Dictionary) -> Node3D:
 		body.add_child(shape)
 		bridge.add_child(body)
 	return container
+
+## 이동 중에는 각 메시 사이에 공유 예산을 확인해 일괄 업로드를 피한다.
+static func attach_streamed(host: Node3D, result: Dictionary) -> Node3D:
+	var container := Node3D.new()
+	container.name = "RoadsContainer"
+	host.add_child(container)
+	var materials := {"paved":host.road_material,"walking":host.walking_path_material,"unpaved":host.unpaved_road_material}
+	for info in result.get("surface_groups",{}).values():
+		for arrays in info.arrays:
+			if not await FrameBudget.wait(container):
+				return null
+			var start := Time.get_ticks_usec()
+			_surface(host,container,arrays,materials[info.kind],info,result)
+			FrameBudget.record(start)
+	for arrays in result.tunnel:
+		if not await FrameBudget.wait(container):
+			return null
+		var start := Time.get_ticks_usec()
+		_instance(container,arrays,host.tunnel_wall_material,"Tunnels")
+		FrameBudget.record(start)
+	for index in result.bridge.size():
+		if not await FrameBudget.wait(container):
+			return null
+		var start := Time.get_ticks_usec()
+		var bridge := _instance(container,result.bridge[index],host.bridge_truss_material,"Bridges")
+		var body := StaticBody3D.new()
+		var shape := CollisionShape3D.new()
+		shape.shape = result.bridge_shapes[index]
+		body.add_child(shape)
+		bridge.add_child(body)
+		FrameBudget.record(start)
+	return container
+
+static func _surface(host: Node3D, container: Node3D, arrays: Array, material: Material, info: Dictionary, result: Dictionary) -> void:
+	var instance := _instance(container,arrays,material,"%s_%s" % [info.kind,info.tier])
+	instance.visibility_range_end = VisibilityPolicy.distance(info.tier,host.max_view_distance)
+	instance.visibility_range_end_margin = 200.0
+	instance.set_meta("road_visibility_tier",info.tier)
+	instance.set_meta("formed_ground",result.get("formed_ground",false))
+	host._configure_road_bounds(instance)
 
 static func _instance(container: Node3D, arrays: Array, material: Material, node_name: String) -> MeshInstance3D:
 	var mesh := ArrayMesh.new()

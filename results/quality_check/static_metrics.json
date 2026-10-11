@@ -1,0 +1,42 @@
+{
+  "2000": {
+    "buildings": {
+      "batches": 147,
+      "items": 9061
+    },
+    "roads": {
+      "batches": 60,
+      "items": 439
+    }
+  },
+  "3500": {
+    "buildings": {
+      "batches": 255,
+      "items": 15208
+    },
+    "roads": {
+      "batches": 115,
+      "items": 810
+    }
+  },
+  "5000": {
+    "buildings": {
+      "batches": 463,
+      "items": 27977
+    },
+    "roads": {
+      "batches": 184,
+      "items": 1287
+    }
+  },
+  "9500": {
+    "buildings": {
+      "batches": 1067,
+      "items": 63866
+    },
+    "roads": {
+      "batches": 409,
+      "items": 2792
+    }
+  }
+}

@@ -140,7 +140,10 @@ func _build_entry(entry: Dictionary) -> void:
 		await yield_if_budget_used()
 		if not _alive():
 			return
-		loaded[entry.file] = {"entry": entry, "node": BatchAssembler.attach(host, results)}
+		var node: Node3D = await BatchAssembler.attach_streamed(host,results)
+		if not _alive():
+			return
+		loaded[entry.file] = {"entry":entry,"node":node}
 		resident_buildings += int(entry.count)
 		building_build_submit_usec += Time.get_ticks_usec() - build_started
 	elif kind == "roads":

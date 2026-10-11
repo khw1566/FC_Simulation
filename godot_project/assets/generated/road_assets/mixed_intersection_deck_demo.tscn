@@ -1,0 +1,208 @@
+[gd_scene load_steps=24 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mix_junction_4l_2l_cross_core.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mix_approach_4l_asphalt.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/road_urban_4l_straight.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mix_approach_2l_concrete.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/road_concrete_2l_straight.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/mix_junction_4l_2l_cross_crossings.tscn" id="6"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_stone_plaza_6m.tscn" id="7"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/walk_paver_gray_w3_straight.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_wood_long_w3_straight.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_weathered_w3_straight.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_ramp_w3_rise1m.tscn" id="11"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/walk_stone_large_w3_straight.tscn" id="12"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_wood_cross_w3_curve90.tscn" id="13"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/walk_concrete_w3_straight.tscn" id="14"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_rail_wood_6m.tscn" id="15"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_rail_cable_6m.tscn" id="16"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_rail_cable_rise1m.tscn" id="17"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_rail_steel_w3_curve90_left.tscn" id="18"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_rail_steel_w3_curve90_right.tscn" id="19"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_support_w3_h1.5.tscn" id="20"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_rail_steel_1.5m.tscn" id="21"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_support_w4.5_h1.5.tscn" id="22"]
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/walk_curb_ramp_w3.tscn" id="23"]
+
+[node name="MixedIntersectionDeckDemo" type="Node3D"]
+metadata/runtime_applied = false
+
+[node name="Part0_mix_junction_4l_2l_cross_core" parent="." instance=ExtResource("1")]
+position = Vector3(0, 0, 0)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part1_mix_approach_4l_asphalt" parent="." instance=ExtResource("2")]
+position = Vector3(0, 0, -6.75)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part2_road_urban_4l_straight" parent="." instance=ExtResource("3")]
+position = Vector3(0, 0, -15.75)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part3_mix_approach_2l_concrete" parent="." instance=ExtResource("4")]
+position = Vector3(-10.0, 0, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part4_road_concrete_2l_straight" parent="." instance=ExtResource("5")]
+position = Vector3(-19.0, 0, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part5_mix_approach_4l_asphalt" parent="." instance=ExtResource("2")]
+position = Vector3(0, 0, 6.75)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part6_road_urban_4l_straight" parent="." instance=ExtResource("3")]
+position = Vector3(0, 0, 15.75)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part7_mix_approach_2l_concrete" parent="." instance=ExtResource("4")]
+position = Vector3(10.0, 0, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part8_road_concrete_2l_straight" parent="." instance=ExtResource("5")]
+position = Vector3(19.0, 0, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part9_mix_junction_4l_2l_cross_crossings" parent="." instance=ExtResource("6")]
+position = Vector3(0, 0, 0)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part10_deck_stone_plaza_6m" parent="." instance=ExtResource("7")]
+position = Vector3(52, 0, 0)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part11_walk_paver_gray_w3_straight" parent="." instance=ExtResource("8")]
+position = Vector3(43, 0, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part12_deck_wood_long_w3_straight" parent="." instance=ExtResource("9")]
+position = Vector3(52, 0, -9)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part13_deck_weathered_w3_straight" parent="." instance=ExtResource("10")]
+position = Vector3(52, 0, 9)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part14_deck_ramp_w3_rise1m" parent="." instance=ExtResource("11")]
+position = Vector3(52, 0, 21)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part15_walk_stone_large_w3_straight" parent="." instance=ExtResource("12")]
+position = Vector3(52, 1, 33)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part16_deck_wood_cross_w3_curve90" parent="." instance=ExtResource("13")]
+position = Vector3(61, 0, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part17_walk_concrete_w3_straight" parent="." instance=ExtResource("14")]
+position = Vector3(67, 0, -18)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part18_deck_rail_wood_6m" parent="." instance=ExtResource("15")]
+position = Vector3(50.56, 0.15, -12)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part19_deck_rail_wood_6m" parent="." instance=ExtResource("15")]
+position = Vector3(50.56, 0.15, -6)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part20_deck_rail_cable_6m" parent="." instance=ExtResource("16")]
+position = Vector3(50.56, 0.15, 6)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part21_deck_rail_cable_6m" parent="." instance=ExtResource("16")]
+position = Vector3(50.56, 0.15, 12)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part22_deck_rail_cable_rise1m" parent="." instance=ExtResource("17")]
+position = Vector3(50.56, 0.15, 21)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part23_deck_rail_steel_w3_curve90_left" parent="." instance=ExtResource("18")]
+position = Vector3(61, 0.15, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part24_deck_rail_wood_6m" parent="." instance=ExtResource("15")]
+position = Vector3(53.44, 0.15, -12)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part25_deck_rail_wood_6m" parent="." instance=ExtResource("15")]
+position = Vector3(53.44, 0.15, -6)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part26_deck_rail_cable_6m" parent="." instance=ExtResource("16")]
+position = Vector3(53.44, 0.15, 6)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part27_deck_rail_cable_6m" parent="." instance=ExtResource("16")]
+position = Vector3(53.44, 0.15, 12)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part28_deck_rail_cable_rise1m" parent="." instance=ExtResource("17")]
+position = Vector3(53.44, 0.15, 21)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part29_deck_rail_steel_w3_curve90_right" parent="." instance=ExtResource("19")]
+position = Vector3(61, 0.15, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part30_deck_support_w3_h1.5" parent="." instance=ExtResource("20")]
+position = Vector3(52, -0.2, -12)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part31_deck_support_w3_h1.5" parent="." instance=ExtResource("20")]
+position = Vector3(52, -0.2, -6)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part32_deck_support_w3_h1.5" parent="." instance=ExtResource("20")]
+position = Vector3(52, -0.2, 6)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part33_deck_support_w3_h1.5" parent="." instance=ExtResource("20")]
+position = Vector3(52, -0.2, 12)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part34_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(49.75, 0.15, -2.94)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part35_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(49.06, 0.15, -2.25)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part36_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(54.25, 0.15, -2.94)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part37_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(49.06, 0.15, 2.25)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part38_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(49.75, 0.15, 2.94)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part39_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(54.94, 0.15, -2.25)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part40_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(54.25, 0.15, 2.94)
+rotation = Vector3(0, 1.5707963267948966, 0)
+
+[node name="Part41_deck_rail_steel_1.5m" parent="." instance=ExtResource("21")]
+position = Vector3(54.94, 0.15, 2.25)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part42_deck_support_w4.5_h1.5" parent="." instance=ExtResource("22")]
+position = Vector3(52, -0.2, -2)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part43_deck_support_w4.5_h1.5" parent="." instance=ExtResource("22")]
+position = Vector3(52, -0.2, 2)
+rotation = Vector3(0, 0, 0)
+
+[node name="Part44_walk_curb_ramp_w3" parent="." instance=ExtResource("23")]
+position = Vector3(31, 0, 0)
+rotation = Vector3(0, 1.5707963267948966, 0)

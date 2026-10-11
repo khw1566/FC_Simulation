@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/road_assets/deck_support_w4.5_h1.5.glb" id="1"]
+
+[node name="deck_support_w4.5_h1.5" type="Node3D"]
+metadata/asset_type = "deck_support_w4.5_h1.5"
+metadata/procedural = true
+metadata/units = "meters"
+metadata/runtime_applied = false
+
+[node name="Visual" parent="." instance=ExtResource("1")]
+
+[node name="GroundOrigin" type="Marker3D" parent="."]

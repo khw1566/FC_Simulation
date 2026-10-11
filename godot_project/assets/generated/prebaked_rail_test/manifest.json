@@ -1,0 +1,244 @@
+{
+  "assets": {
+    "collision.scn": {
+      "file_path": "res://assets/generated/prebaked_rail_test/collision.scn",
+      "type": "prebaked_rail_test",
+      "sha256": "b443df7c126f8fabafebfb06f94f2c6d05ae2716adb7facb9ab97e70c21e1aeb",
+      "size_bytes": 442216,
+      "bbox": {
+        "south": 35.50219412182561,
+        "north": 35.52024292310424,
+        "west": 129.32196753092998,
+        "east": 129.3441495945066
+      },
+      "elevation_min": -30,
+      "elevation_max": 1300,
+      "resolution": {
+        "source_raster": [
+          142,
+          142
+        ],
+        "terrain_grids": [
+          32,
+          64,
+          128
+        ],
+        "rail_edge_m": 10
+      },
+      "metadata": {
+        "source_hashes": [
+          {
+            "file_path": "res://assets/generated/railway/alignment.json",
+            "sha256": "f6afcf66453fb7471c4195342bf0b0d6f0de8f55c23dbfe61b86cd66033c32e7"
+          },
+          {
+            "file_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+            "sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d"
+          },
+          {
+            "file_path": "res://assets/generated/railway/tunnel_void.png",
+            "sha256": "e922b121149b04f14efc3109980fdff6759715d6be0db58c41265f74c281722b"
+          },
+          {
+            "file_path": "res://assets/generated/railway/services.json",
+            "sha256": "fecd1b418438a455decbd343fed584eeef49d8a0b3813adf7a232dfd57e03057"
+          }
+        ],
+        "godot_version": "4.3",
+        "collision_quality": "고품질 고정, 품질 변경 시 재계산 없음"
+      }
+    },
+    "railway.scn": {
+      "file_path": "res://assets/generated/prebaked_rail_test/railway.scn",
+      "type": "prebaked_rail_test",
+      "sha256": "d982ca0ec88d82f3435ba282e8dc732b58c52e0ef7280e1cb01cde3b9f4c9394",
+      "size_bytes": 182098,
+      "bbox": {
+        "south": 35.50219412182561,
+        "north": 35.52024292310424,
+        "west": 129.32196753092998,
+        "east": 129.3441495945066
+      },
+      "elevation_min": -30,
+      "elevation_max": 1300,
+      "resolution": {
+        "source_raster": [
+          142,
+          142
+        ],
+        "terrain_grids": [
+          32,
+          64,
+          128
+        ],
+        "rail_edge_m": 10
+      },
+      "metadata": {
+        "source_hashes": [
+          {
+            "file_path": "res://assets/generated/railway/alignment.json",
+            "sha256": "f6afcf66453fb7471c4195342bf0b0d6f0de8f55c23dbfe61b86cd66033c32e7"
+          },
+          {
+            "file_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+            "sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d"
+          },
+          {
+            "file_path": "res://assets/generated/railway/tunnel_void.png",
+            "sha256": "e922b121149b04f14efc3109980fdff6759715d6be0db58c41265f74c281722b"
+          },
+          {
+            "file_path": "res://assets/generated/railway/services.json",
+            "sha256": "fecd1b418438a455decbd343fed584eeef49d8a0b3813adf7a232dfd57e03057"
+          }
+        ],
+        "godot_version": "4.3",
+        "collision_quality": "고품질 고정, 품질 변경 시 재계산 없음"
+      }
+    },
+    "terrain_high.scn": {
+      "file_path": "res://assets/generated/prebaked_rail_test/terrain_high.scn",
+      "type": "prebaked_rail_test",
+      "sha256": "ca02740a17e8402f2c11369c3a09035e617e5a2c61b95e993b6f64fcdfe8591c",
+      "size_bytes": 1107739,
+      "bbox": {
+        "south": 35.50219412182561,
+        "north": 35.52024292310424,
+        "west": 129.32196753092998,
+        "east": 129.3441495945066
+      },
+      "elevation_min": -30,
+      "elevation_max": 1300,
+      "resolution": {
+        "source_raster": [
+          142,
+          142
+        ],
+        "terrain_grids": [
+          32,
+          64,
+          128
+        ],
+        "rail_edge_m": 10
+      },
+      "metadata": {
+        "source_hashes": [
+          {
+            "file_path": "res://assets/generated/railway/alignment.json",
+            "sha256": "f6afcf66453fb7471c4195342bf0b0d6f0de8f55c23dbfe61b86cd66033c32e7"
+          },
+          {
+            "file_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+            "sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d"
+          },
+          {
+            "file_path": "res://assets/generated/railway/tunnel_void.png",
+            "sha256": "e922b121149b04f14efc3109980fdff6759715d6be0db58c41265f74c281722b"
+          },
+          {
+            "file_path": "res://assets/generated/railway/services.json",
+            "sha256": "fecd1b418438a455decbd343fed584eeef49d8a0b3813adf7a232dfd57e03057"
+          }
+        ],
+        "godot_version": "4.3",
+        "collision_quality": "고품질 고정, 품질 변경 시 재계산 없음"
+      }
+    },
+    "terrain_light.scn": {
+      "file_path": "res://assets/generated/prebaked_rail_test/terrain_light.scn",
+      "type": "prebaked_rail_test",
+      "sha256": "f748b17215ff2b1d8bc3b3195439f690a6309dd67392a824bb8c223e0a7d5e82",
+      "size_bytes": 395842,
+      "bbox": {
+        "south": 35.50219412182561,
+        "north": 35.52024292310424,
+        "west": 129.32196753092998,
+        "east": 129.3441495945066
+      },
+      "elevation_min": -30,
+      "elevation_max": 1300,
+      "resolution": {
+        "source_raster": [
+          142,
+          142
+        ],
+        "terrain_grids": [
+          32,
+          64,
+          128
+        ],
+        "rail_edge_m": 10
+      },
+      "metadata": {
+        "source_hashes": [
+          {
+            "file_path": "res://assets/generated/railway/alignment.json",
+            "sha256": "f6afcf66453fb7471c4195342bf0b0d6f0de8f55c23dbfe61b86cd66033c32e7"
+          },
+          {
+            "file_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+            "sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d"
+          },
+          {
+            "file_path": "res://assets/generated/railway/tunnel_void.png",
+            "sha256": "e922b121149b04f14efc3109980fdff6759715d6be0db58c41265f74c281722b"
+          },
+          {
+            "file_path": "res://assets/generated/railway/services.json",
+            "sha256": "fecd1b418438a455decbd343fed584eeef49d8a0b3813adf7a232dfd57e03057"
+          }
+        ],
+        "godot_version": "4.3",
+        "collision_quality": "고품질 고정, 품질 변경 시 재계산 없음"
+      }
+    },
+    "terrain_standard.scn": {
+      "file_path": "res://assets/generated/prebaked_rail_test/terrain_standard.scn",
+      "type": "prebaked_rail_test",
+      "sha256": "1843d9f21a9ad47972229f18c086064b1f94a2e5e9cdc609bc1e92c4b0a84e66",
+      "size_bytes": 539842,
+      "bbox": {
+        "south": 35.50219412182561,
+        "north": 35.52024292310424,
+        "west": 129.32196753092998,
+        "east": 129.3441495945066
+      },
+      "elevation_min": -30,
+      "elevation_max": 1300,
+      "resolution": {
+        "source_raster": [
+          142,
+          142
+        ],
+        "terrain_grids": [
+          32,
+          64,
+          128
+        ],
+        "rail_edge_m": 10
+      },
+      "metadata": {
+        "source_hashes": [
+          {
+            "file_path": "res://assets/generated/railway/alignment.json",
+            "sha256": "f6afcf66453fb7471c4195342bf0b0d6f0de8f55c23dbfe61b86cd66033c32e7"
+          },
+          {
+            "file_path": "res://assets/generated/railway/graded_heightmap_16bit.png",
+            "sha256": "c14275644bfbb42444e3f207d8051771fce58cd7150ca5d37352c2a66bd4311d"
+          },
+          {
+            "file_path": "res://assets/generated/railway/tunnel_void.png",
+            "sha256": "e922b121149b04f14efc3109980fdff6759715d6be0db58c41265f74c281722b"
+          },
+          {
+            "file_path": "res://assets/generated/railway/services.json",
+            "sha256": "fecd1b418438a455decbd343fed584eeef49d8a0b3813adf7a232dfd57e03057"
+          }
+        ],
+        "godot_version": "4.3",
+        "collision_quality": "고품질 고정, 품질 변경 시 재계산 없음"
+      }
+    }
+  }
+}

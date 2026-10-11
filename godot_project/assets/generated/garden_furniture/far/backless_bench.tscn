@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="PackedScene" path="res://assets/generated/garden_furniture/far/backless_bench.glb" id="1"]
+[node name="backless_bench_far" type="Node3D"]
+metadata/name_ko = "평벤치 · 원경"
+metadata/units = "meters"
+metadata/triangles = 36
+[node name="Visual" parent="." instance=ExtResource("1")]

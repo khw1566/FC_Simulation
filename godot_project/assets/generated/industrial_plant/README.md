@@ -52,3 +52,12 @@ var connected = helper.snap(
 독립 확인이 필요할 때만 `pipeline/processors/industrial_plant/verify_preview.py`를 실행한다. 원본 Godot 프로젝트 대신 `previews/industrial_plant_check/project` 복사본에서 임포트·연결·렌더를 확인한다. `preview.png`는 메시 투영이며 연기 렌더는 독립 확인의 `capture.png`에 있다.
 
 GPU 파티클 구성은 [Godot GPUParticles3D](https://docs.godotengine.org/en/4.3/classes/class_gpuparticles3d.html) 및 [ParticleProcessMaterial](https://docs.godotengine.org/en/4.3/classes/class_particleprocessmaterial.html)의 공정 재질·색상·확대 곡선을 사용한다. 충돌·실내·실제 설비 동작과 게임 월드 자동 배치는 포함하지 않았다.
+
+## 커스텀 에셋 경량 표현
+
+외형과 조립 규격을 유지하며 곡면과 반복 장식을 단순화합니다. GLB는 중복 정점을 공유하고 무광 단색 재질을 사용합니다. 기존 조립 씬·연결점·조명·연기 설정과 충돌 형상은 보존합니다.
+
+- 규약: `custom_low_poly_flat_v1`
+- 재생성: `.venv_campus/Scripts/python.exe pipeline/processors/custom_lowpoly/build.py`
+- 게임·지도·실행 생성기 변경 없음. 원본 프로젝트에서 임포터를 실행하지 않습니다.
+- 이전 PNG는 과거 표현일 수 있습니다. 최신 모델은 독립 에셋 프리뷰에서 확인하세요.

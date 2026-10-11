@@ -14,8 +14,8 @@
     },
     "flare_lattice.glb": {
       "file_path": "res://assets/generated/industrial_plant/flare_lattice.glb",
-      "sha256": "a23bd91fae1c16aa77dd0728a9ba245ff65c0611710c240ba2f67a67c6f0bf8e",
-      "size_bytes": 219804,
+      "sha256": "a999a6b72d7c1028f2a9404532dde25155d2e79d46259d2991363d161415c929",
+      "size_bytes": 125816,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "격자 지지 플레어 탑",
@@ -35,7 +35,7 @@
         "elevation_max": 72,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3008
+          "triangles": 2288
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -63,14 +63,23 @@
           ]
         ],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/flare_lattice.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/flare_lattice.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2288,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": -0.06810140896210047,
       "elevation_max": 72,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 3008
+        "triangles": 2288
       }
     },
     "flare_lattice.tscn": {
@@ -96,7 +105,7 @@
         "elevation_max": 72,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 3008
+          "triangles": 2288
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -137,14 +146,23 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/flare_lattice"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2288,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": -0.06810140896210047,
       "elevation_max": 72,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 3008
+        "triangles": 2288
       }
     },
     "plant_assembly_demo.tscn": {
@@ -174,8 +192,8 @@
     },
     "process_column.glb": {
       "file_path": "res://assets/generated/industrial_plant/process_column.glb",
-      "sha256": "fb397f9c02ad11509f324cd47b47a7a1ae4e2cfeb8f015a5959b40a8b08bbd89",
-      "size_bytes": 594420,
+      "sha256": "944b7fcfd751af9d089a2da30ae3b72b1d8037ec52407994d65cc8073fd49064",
+      "size_bytes": 172468,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "다단 정유 공정 탑",
@@ -195,7 +213,7 @@
         "elevation_max": 51.0,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 8216
+          "triangles": 3380
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -217,14 +235,23 @@
         ],
         "smoke_outlets_m": [],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/process_column.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/process_column.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 3380,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 51.0,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 8216
+        "triangles": 3380
       }
     },
     "process_column.tscn": {
@@ -250,7 +277,7 @@
         "elevation_max": 51.0,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 8216
+          "triangles": 3380
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -285,20 +312,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/process_column"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 3380,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 51.0,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 8216
+        "triangles": 3380
       }
     },
     "rack_cross.glb": {
       "file_path": "res://assets/generated/industrial_plant/rack_cross.glb",
-      "sha256": "e3523bbde1e9ca13f1394739dd24cdedd9967aac5aa5e0528b7f1667fa0c6f18",
-      "size_bytes": 33200,
+      "sha256": "7d74aea2b1c2fabbc2bc1a2da8c1fd6d2fd01beb2dba7346e87def063a7b3be8",
+      "size_bytes": 19048,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "배관 랙 교차",
@@ -318,7 +354,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 432
+          "triangles": 336
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -370,14 +406,23 @@
         ],
         "smoke_outlets_m": [],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/rack_cross.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/rack_cross.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 336,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 432
+        "triangles": 336
       }
     },
     "rack_cross.tscn": {
@@ -403,7 +448,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 432
+          "triangles": 336
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -468,20 +513,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/rack_cross"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 336,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 432
+        "triangles": 336
       }
     },
     "rack_double.glb": {
       "file_path": "res://assets/generated/industrial_plant/rack_double.glb",
-      "sha256": "642aca3cff0ff63eb7904073dd81d54e2d64f2bfb1b8910710b0fe81b321587d",
-      "size_bytes": 29744,
+      "sha256": "c8687e445b9597e6815bb7972aeb53f4902ad17a9219d2afa119c77107711985",
+      "size_bytes": 16168,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "배관 랙 2층",
@@ -501,7 +555,7 @@
         "elevation_max": 9.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 384
+          "triangles": 288
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -553,14 +607,23 @@
         ],
         "smoke_outlets_m": [],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/rack_double.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/rack_double.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 288,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 9.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 384
+        "triangles": 288
       }
     },
     "rack_double.tscn": {
@@ -586,7 +649,7 @@
         "elevation_max": 9.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 384
+          "triangles": 288
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -651,20 +714,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/rack_double"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 288,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 9.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 384
+        "triangles": 288
       }
     },
     "rack_elbow.glb": {
       "file_path": "res://assets/generated/industrial_plant/rack_elbow.glb",
-      "sha256": "e40cbef9e6819f315d7161b67b3e0bfd0417f6e3217d07a23b07d505f5bae06a",
-      "size_bytes": 113060,
+      "sha256": "32749f363291908b976a62205c81bef65b2d6dc21f74f8c05b66a2694822e5e4",
+      "size_bytes": 31044,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "배관 랙 곡관",
@@ -684,7 +756,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1536
+          "triangles": 576
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -716,14 +788,23 @@
         ],
         "smoke_outlets_m": [],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/rack_elbow.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/rack_elbow.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 576,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 1536
+        "triangles": 576
       }
     },
     "rack_elbow.tscn": {
@@ -749,7 +830,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 1536
+          "triangles": 576
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -794,20 +875,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/rack_elbow"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 576,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 1536
+        "triangles": 576
       }
     },
     "rack_riser.glb": {
       "file_path": "res://assets/generated/industrial_plant/rack_riser.glb",
-      "sha256": "da4b6dab7f984bb6791c5a694753dc3f8422691ba797bea6c404ca970aadb459",
-      "size_bytes": 38384,
+      "sha256": "e220f393178572ef7963c38dd5e3ec4b3e4079254a138150cb7394e12abafba8",
+      "size_bytes": 19480,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "배관 랙 높이 전환",
@@ -827,7 +917,7 @@
         "elevation_max": 9.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 504
+          "triangles": 360
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -859,14 +949,23 @@
         ],
         "smoke_outlets_m": [],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/rack_riser.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/rack_riser.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 360,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 9.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 504
+        "triangles": 360
       }
     },
     "rack_riser.tscn": {
@@ -892,7 +991,7 @@
         "elevation_max": 9.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 504
+          "triangles": 360
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -937,20 +1036,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/rack_riser"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 360,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 9.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 504
+        "triangles": 360
       }
     },
     "rack_straight.glb": {
       "file_path": "res://assets/generated/industrial_plant/rack_straight.glb",
-      "sha256": "0a1822675ad1762642ce9b90b78c73ca1765cb4596bef1a6bbf5c17d5ed2c5ab",
-      "size_bytes": 19748,
+      "sha256": "9e4549b58da988f640b2fdf6d17295e4cccde321f057a0419782ba0c740c8e14",
+      "size_bytes": 12032,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "배관 랙 직선",
@@ -970,7 +1078,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 240
+          "triangles": 192
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1002,14 +1110,23 @@
         ],
         "smoke_outlets_m": [],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/rack_straight.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/rack_straight.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 192,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 240
+        "triangles": 192
       }
     },
     "rack_straight.tscn": {
@@ -1035,7 +1152,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 240
+          "triangles": 192
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1080,20 +1197,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/rack_straight"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 192,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 240
+        "triangles": 192
       }
     },
     "rack_tee.glb": {
       "file_path": "res://assets/generated/industrial_plant/rack_tee.glb",
-      "sha256": "9687d6f0ff21d5b25667065fd9129ea4a229ef155dc47a2a3a629a182b27f4a8",
-      "size_bytes": 33576,
+      "sha256": "0e46b6d09526f79968c1f46c1a2b8ba5447e38095573df89ef5e863500d5f5a8",
+      "size_bytes": 19668,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "배관 랙 분기",
@@ -1113,7 +1239,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 432
+          "triangles": 336
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1155,14 +1281,23 @@
         ],
         "smoke_outlets_m": [],
         "default_plume": null,
-        "scene_path": "res://assets/generated/industrial_plant/rack_tee.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/rack_tee.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 336,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 432
+        "triangles": 336
       }
     },
     "rack_tee.tscn": {
@@ -1188,7 +1323,7 @@
         "elevation_max": 5.32,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 432
+          "triangles": 336
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1243,14 +1378,23 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/rack_tee"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 336,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 5.32,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 432
+        "triangles": 336
       }
     },
     "README.md": {
@@ -1266,8 +1410,8 @@
     },
     "scrubber_tower.glb": {
       "file_path": "res://assets/generated/industrial_plant/scrubber_tower.glb",
-      "sha256": "d0c1b68c8eae9c92adae672adf9f09c1eb717e418d470eada4cdcef019563cf5",
-      "size_bytes": 384212,
+      "sha256": "4c27ffb8366e7003ca5c7ee75dcc758bceb377c8195da7e935aaa3c7ca415a9d",
+      "size_bytes": 110820,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "습식 세정·배기 탑",
@@ -1287,7 +1431,7 @@
         "elevation_max": 38,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 5292
+          "triangles": 2128
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1315,14 +1459,23 @@
           ]
         ],
         "default_plume": "steam_white",
-        "scene_path": "res://assets/generated/industrial_plant/scrubber_tower.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/scrubber_tower.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2128,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 38,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 5292
+        "triangles": 2128
       }
     },
     "scrubber_tower.tscn": {
@@ -1348,7 +1501,7 @@
         "elevation_max": 38,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 5292
+          "triangles": 2128
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1389,14 +1542,23 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/scrubber_tower"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2128,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 38,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 5292
+        "triangles": 2128
       }
     },
     "smoke_dark.tscn": {
@@ -1423,8 +1585,8 @@
     },
     "stack_concrete.glb": {
       "file_path": "res://assets/generated/industrial_plant/stack_concrete.glb",
-      "sha256": "f83b3c4b467ec12a40418f38d2439335337a55fe661fef78d7d7f96c5bbd72ba",
-      "size_bytes": 308320,
+      "sha256": "48bcb9add3fe0e188df112b5af641704e1552ead14afa231d6fe1e1161ea9cba",
+      "size_bytes": 76524,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "고층 표식 연통",
@@ -1444,7 +1606,7 @@
         "elevation_max": 90,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 4232
+          "triangles": 1440
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1472,14 +1634,23 @@
           ]
         ],
         "default_plume": "smoke_gray",
-        "scene_path": "res://assets/generated/industrial_plant/stack_concrete.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/stack_concrete.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1440,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 90,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 4232
+        "triangles": 1440
       }
     },
     "stack_concrete.tscn": {
@@ -1505,7 +1676,7 @@
         "elevation_max": 90,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 4232
+          "triangles": 1440
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1546,20 +1717,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/stack_concrete"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1440,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 90,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 4232
+        "triangles": 1440
       }
     },
     "stack_steel.glb": {
       "file_path": "res://assets/generated/industrial_plant/stack_steel.glb",
-      "sha256": "18f2eb97c3bf06a02387746743d6e56abf0906d94212da298ee300b813f1ff7b",
-      "size_bytes": 454812,
+      "sha256": "b4c6a2215e6b403e864921bea3447d4bc6c2bea854931b9a936a29a99d1eb1f1",
+      "size_bytes": 121052,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "슬림 강철 연통",
@@ -1579,7 +1759,7 @@
         "elevation_max": 55,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 6272
+          "triangles": 2352
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1607,14 +1787,23 @@
           ]
         ],
         "default_plume": "smoke_gray",
-        "scene_path": "res://assets/generated/industrial_plant/stack_steel.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/stack_steel.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2352,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": -0.04807619738204116,
       "elevation_max": 55,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 6272
+        "triangles": 2352
       }
     },
     "stack_steel.tscn": {
@@ -1640,7 +1829,7 @@
         "elevation_max": 55,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 6272
+          "triangles": 2352
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1681,20 +1870,29 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/stack_steel"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 2352,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": -0.04807619738204116,
       "elevation_max": 55,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 6272
+        "triangles": 2352
       }
     },
     "stack_triple.glb": {
       "file_path": "res://assets/generated/industrial_plant/stack_triple.glb",
-      "sha256": "9ff46f11b00bedfa8231f980fe39f983e60beb8489b35237b93af278c73912bb",
-      "size_bytes": 349376,
+      "sha256": "38a7fb12673b809ec8e7a5d5e03929e280025954608105850ad597d46baf1b4b",
+      "size_bytes": 82932,
       "type": "industrial_plant_asset",
       "metadata": {
         "label_ko": "3구 집합 연통",
@@ -1714,7 +1912,7 @@
         "elevation_max": 62,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 4808
+          "triangles": 1552
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1752,14 +1950,23 @@
           ]
         ],
         "default_plume": "smoke_gray",
-        "scene_path": "res://assets/generated/industrial_plant/stack_triple.tscn"
+        "scene_path": "res://assets/generated/industrial_plant/stack_triple.tscn",
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1552,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 62,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 4808
+        "triangles": 1552
       }
     },
     "stack_triple.tscn": {
@@ -1785,7 +1992,7 @@
         "elevation_max": 62,
         "resolution": {
           "type": "triangle_mesh",
-          "triangles": 4808
+          "triangles": 1552
         },
         "ground_y_m": 0,
         "surveyed": false,
@@ -1836,14 +2043,23 @@
           "automatic_time": true,
           "fallback_night_factor": 1.0,
           "source_asset": "industrial_plant/stack_triple"
-        }
+        },
+        "detail_profile": "custom_low_poly_flat_v1",
+        "material_style": "flat_color",
+        "external_textures": false,
+        "triangles": 1552,
+        "triangle_count_method": "gltf_primitive_indices",
+        "connections_preserved": true,
+        "collision_geometry_preserved": true,
+        "runtime_placement_changed": false,
+        "indexed_geometry": true
       },
       "bbox": null,
       "elevation_min": 0.0,
       "elevation_max": 62,
       "resolution": {
         "type": "triangle_mesh",
-        "triangles": 4808
+        "triangles": 1552
       }
     },
     "steam_white.tscn": {

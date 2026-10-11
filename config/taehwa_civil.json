@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "map_id": "ulsan_metro_80km",
+  "detail_profile": "taehwa_civil_research_v1",
+  "surveyed": false,
+  "sources": [
+    {"url":"https://www.openstreetmap.org/way/1540924116","role":"반천 부근 무명 보 축선, ODbL-1.0"},
+    {"url":"https://www.openstreetmap.org/way/187657447","role":"여천 유수지 수역 경계, ODbL-1.0"},
+    {"url":"https://www.openstreetmap.org/way/187657448","role":"여천 배수문 전면 수역, ODbL-1.0"},
+    {"url":"https://www.ulsan.go.kr/u/metro/transfer/alimi/normal/view.ulsan?mId=001008008002001000&nttNo=218","role":"여천배수장 유입수로 공사 위치 확인. 진행 공사는 완공 시설로 만들지 않음"},
+    {"url":"https://www.ulsan.go.kr/u/rep/bbs/view.do?bbsId=BBS_0000000000000027&dataId=166762&mId=001004003001000000","role":"여천 유수지 준설 및 배수펌프 사업 확인"},
+    {"url":"https://www.bukgu.ulsan.kr/download.do?uuid=441a5607-fc3f-4be4-bf75-dd430f083db2.pdf","role":"태화강 하천기본계획 변경 초안. 계획 시설과 현존 시설 구분"},
+    {"url":"https://www.codil.or.kr/filebank/original/RK/OTKCRK230687/OTKCRK230687.pdf","role":"태화강 방사보 2006년 완전 철거 확인"},
+    {"url":"https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer","role":"형상 교차 확인. Esri, Vantor, Earthstar Geographics, GIS User Community. 촬영시점 미확인"}
+  ],
+  "river_policy": {"start_lon":129.113,"end_lon":129.370,"sample_step_m":70,"mesh_cell_m":50,"minimum_level_m":0.35,"depth_m_estimate":2.1,"flow_speed_mps_visual":0.65},
+  "facilities": [
+    {"id":"bancheon_weir","name_ko":"반천 부근 보와 어도","kind":"weir","osm_id":1540924116,"axis_lonlat":[[129.1422256,35.5526841],[129.1433315,35.5528560]],"height_m_estimate":1.2,"crest_width_m_estimate":2.4,"fishway_width_m_estimate":3.2,"status":"osm_axis_imagery_simplified","name_status":"위치 설명용 명칭, 공식 보 명칭 미확인"},
+    {"id":"yeocheon_basin","name_ko":"여천 유수지 호안","kind":"basin","osm_ids":[187657447,187657448],"depth_m_estimate":1.6,"status":"osm_boundary_imagery_simplified"},
+    {"id":"yeocheon_gate","name_ko":"여천 유수지 배수문","kind":"gate","axis_lonlat":[[129.3631887,35.5406415],[129.3635644,35.5408189]],"height_m_estimate":4.0,"status":"imagery_boundary_axis_estimate"},
+    {"id":"drain_outlet","name_ko":"배수 암거·토출구 모듈","kind":"outlet","length_m_estimate":8,"status":"reusable_unplaced"},
+    {"id":"revetment_segment","name_ko":"사석 호안·관리로 모듈","kind":"revetment","length_m_estimate":20,"status":"reusable_unplaced"}
+  ],
+  "exclusions_ko":["철거된 방사보","삼산 유수지 상부 운동시설을 열린 수역으로 바꾸는 작업","위치 미확인 보와 배수장","공사 중 우수토실의 완공 추정"],
+  "limits_ko":"수위·수심·유속·단면과 배수문 세부 형상은 시각화용 추정이며 측량·수리 해석 결과가 아니다. 실제 수문 운전 및 홍수 시뮬레이션은 포함하지 않는다."
+}

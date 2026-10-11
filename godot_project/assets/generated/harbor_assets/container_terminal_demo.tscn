@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/quay_12x12_sea_edge.tscn" id="Model0"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/crane_rails_12m.tscn" id="Model1"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/container_crane_feeder.tscn" id="Model2"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/container_stack_2x2x2.tscn" id="Model3"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/container_stack_3x2x3.tscn" id="Model4"]
+[ext_resource type="PackedScene" path="res://assets/generated/harbor_assets/harbor_warehouse.tscn" id="Model5"]
+
+[node name="container_terminal_demo" type="Node3D"]
+metadata/placement_status = "synthetic_assembly"
+
+[node name="quay_12x12_sea_edge_0" parent="." instance=ExtResource("Model0")]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="quay_12x12_sea_edge_1" parent="." instance=ExtResource("Model0")]
+position = Vector3(0.00000000, 0.00000000, 12.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="crane_rails_12m_2" parent="." instance=ExtResource("Model1")]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="crane_rails_12m_3" parent="." instance=ExtResource("Model1")]
+position = Vector3(0.00000000, 0.00000000, 12.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="container_crane_feeder_4" parent="." instance=ExtResource("Model2")]
+position = Vector3(0.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="container_stack_2x2x2_5" parent="." instance=ExtResource("Model3")]
+position = Vector3(-15.00000000, 0.00000000, 0.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="container_stack_3x2x3_6" parent="." instance=ExtResource("Model4")]
+position = Vector3(-25.00000000, 0.00000000, 12.00000000)
+rotation = Vector3(0, 0.00000000, 0)
+
+[node name="harbor_warehouse_7" parent="." instance=ExtResource("Model5")]
+position = Vector3(-18.00000000, 0.00000000, -20.00000000)
+rotation = Vector3(0, 0.00000000, 0)

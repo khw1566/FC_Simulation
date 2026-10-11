@@ -1,0 +1,882 @@
+[
+  {
+    "path": "assets/generated/industrial/factory_gable.glb",
+    "label_ko": "박공지붕 공장",
+    "before": {
+      "triangles": 548,
+      "size_bytes": 43116
+    },
+    "after": {
+      "triangles": 356,
+      "size_bytes": 24824,
+      "aabb_min_m": [
+        -25.0,
+        0.0,
+        -37.0
+      ],
+      "aabb_max_m": [
+        25.0,
+        18,
+        40.2
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/factory_sawtooth.glb",
+    "label_ko": "톱니지붕 공장",
+    "before": {
+      "triangles": 676,
+      "size_bytes": 52348
+    },
+    "after": {
+      "triangles": 460,
+      "size_bytes": 30724,
+      "aabb_min_m": [
+        -33.0,
+        0.0,
+        -45.0
+      ],
+      "aabb_max_m": [
+        33.0,
+        14.6,
+        48.2
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/factory_flat.glb",
+    "label_ko": "평지붕 공장",
+    "before": {
+      "triangles": 528,
+      "size_bytes": 41700
+    },
+    "after": {
+      "triangles": 384,
+      "size_bytes": 26468,
+      "aabb_min_m": [
+        -23.0,
+        0.0,
+        -31.0
+      ],
+      "aabb_max_m": [
+        23.0,
+        19.200000000000003,
+        34.2
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/distillation_tower.glb",
+    "label_ko": "증류탑",
+    "before": {
+      "triangles": 6632,
+      "size_bytes": 480364
+    },
+    "after": {
+      "triangles": 2684,
+      "size_bytes": 137532,
+      "aabb_min_m": [
+        -7.0,
+        0.0,
+        -7.0
+      ],
+      "aabb_max_m": [
+        7.0,
+        41.0,
+        7.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/industrial_chimney.glb",
+    "label_ko": "대형 연통",
+    "before": {
+      "triangles": 3516,
+      "size_bytes": 256808
+    },
+    "after": {
+      "triangles": 1156,
+      "size_bytes": 61892,
+      "aabb_min_m": [
+        -7.5,
+        0.0,
+        -7.5
+      ],
+      "aabb_max_m": [
+        7.5,
+        65,
+        7.5
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/liquid_storage_tank.glb",
+    "label_ko": "원통형 액체저장고",
+    "before": {
+      "triangles": 2188,
+      "size_bytes": 160380
+    },
+    "after": {
+      "triangles": 608,
+      "size_bytes": 33696,
+      "aabb_min_m": [
+        -17.0,
+        0.0,
+        -17.0
+      ],
+      "aabb_max_m": [
+        19.0,
+        19.8,
+        17.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/lpg_sphere.glb",
+    "label_ko": "구형 LPG저장고",
+    "before": {
+      "triangles": 1956,
+      "size_bytes": 143660
+    },
+    "after": {
+      "triangles": 692,
+      "size_bytes": 39488,
+      "aabb_min_m": [
+        -12.5,
+        0.0,
+        -12.5
+      ],
+      "aabb_max_m": [
+        12.5,
+        23.4,
+        12.5
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/pipeline_straight.glb",
+    "label_ko": "파이프라인 직선",
+    "before": {
+      "triangles": 240,
+      "size_bytes": 19752
+    },
+    "after": {
+      "triangles": 192,
+      "size_bytes": 12036,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        2.5
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/pipeline_elbow.glb",
+    "label_ko": "파이프라인 곡관",
+    "before": {
+      "triangles": 1536,
+      "size_bytes": 113064
+    },
+    "after": {
+      "triangles": 576,
+      "size_bytes": 31048,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        2.5,
+        5.32,
+        12.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/pipeline_tee.glb",
+    "label_ko": "파이프라인 분기",
+    "before": {
+      "triangles": 432,
+      "size_bytes": 33580
+    },
+    "after": {
+      "triangles": 336,
+      "size_bytes": 19672,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        12.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/transmission_tower.glb",
+    "label_ko": "송전탑",
+    "before": {
+      "triangles": 2892,
+      "size_bytes": 211180
+    },
+    "after": {
+      "triangles": 1500,
+      "size_bytes": 83372,
+      "aabb_min_m": [
+        -12.4,
+        -0.06952604524738866,
+        -8.5
+      ],
+      "aabb_max_m": [
+        12.4,
+        46.031684333108274,
+        8.5
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/cooling_tower.glb",
+    "label_ko": "냉각탑",
+    "before": {
+      "triangles": 2368,
+      "size_bytes": 173348
+    },
+    "after": {
+      "triangles": 416,
+      "size_bytes": 26792,
+      "aabb_min_m": [
+        -22.0,
+        -2.3980817331903383e-15,
+        -22.0
+      ],
+      "aabb_max_m": [
+        22.0,
+        50.0,
+        22.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/cooling_fan_bank.glb",
+    "label_ko": "냉각 팬 설비",
+    "before": {
+      "triangles": 1380,
+      "size_bytes": 102564
+    },
+    "after": {
+      "triangles": 900,
+      "size_bytes": 52748,
+      "aabb_min_m": [
+        -14.5,
+        0.0,
+        -8.5
+      ],
+      "aabb_max_m": [
+        14.5,
+        6.4,
+        8.5
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/shipbuilding_hangar.glb",
+    "label_ko": "조선용 대형 격납고",
+    "before": {
+      "triangles": 476,
+      "size_bytes": 37456
+    },
+    "after": {
+      "triangles": 236,
+      "size_bytes": 16976,
+      "aabb_min_m": [
+        -52.0,
+        0.0,
+        -92.0
+      ],
+      "aabb_max_m": [
+        52.0,
+        52,
+        92.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/tower_crane.glb",
+    "label_ko": "타워 크레인",
+    "before": {
+      "triangles": 3312,
+      "size_bytes": 242140
+    },
+    "after": {
+      "triangles": 2352,
+      "size_bytes": 134636,
+      "aabb_min_m": [
+        -18.03098386676966,
+        0.0,
+        -5.0
+      ],
+      "aabb_max_m": [
+        60.01699626542851,
+        65.06826708557621,
+        5.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial/gantry_crane.glb",
+    "label_ko": "갠트리 크레인",
+    "before": {
+      "triangles": 3396,
+      "size_bytes": 248112
+    },
+    "after": {
+      "triangles": 1092,
+      "size_bytes": 68004,
+      "aabb_min_m": [
+        -48.02846049894151,
+        0.0,
+        -17.0
+      ],
+      "aabb_max_m": [
+        48.02846049894151,
+        56.125,
+        17.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/stack_concrete.glb",
+    "label_ko": "고층 표식 연통",
+    "before": {
+      "triangles": 4232,
+      "size_bytes": 308320
+    },
+    "after": {
+      "triangles": 1440,
+      "size_bytes": 76524,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        90,
+        8.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/stack_steel.glb",
+    "label_ko": "슬림 강철 연통",
+    "before": {
+      "triangles": 6272,
+      "size_bytes": 454812
+    },
+    "after": {
+      "triangles": 2352,
+      "size_bytes": 121052,
+      "aabb_min_m": [
+        -12.0,
+        -0.04807619738204116,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        55,
+        8.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/stack_triple.glb",
+    "label_ko": "3구 집합 연통",
+    "before": {
+      "triangles": 4808,
+      "size_bytes": 349376
+    },
+    "after": {
+      "triangles": 1552,
+      "size_bytes": 82932,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        62,
+        8.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/flare_lattice.glb",
+    "label_ko": "격자 지지 플레어 탑",
+    "before": {
+      "triangles": 3008,
+      "size_bytes": 219804
+    },
+    "after": {
+      "triangles": 2288,
+      "size_bytes": 125816,
+      "aabb_min_m": [
+        -12.0,
+        -0.06810140896210047,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        72,
+        8.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/process_column.glb",
+    "label_ko": "다단 정유 공정 탑",
+    "before": {
+      "triangles": 8216,
+      "size_bytes": 594420
+    },
+    "after": {
+      "triangles": 3380,
+      "size_bytes": 172468,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        51.0,
+        8.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/scrubber_tower.glb",
+    "label_ko": "습식 세정·배기 탑",
+    "before": {
+      "triangles": 5292,
+      "size_bytes": 384212
+    },
+    "after": {
+      "triangles": 2128,
+      "size_bytes": 110820,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -8.0
+      ],
+      "aabb_max_m": [
+        8.0,
+        38,
+        8.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/rack_straight.glb",
+    "label_ko": "배관 랙 직선",
+    "before": {
+      "triangles": 240,
+      "size_bytes": 19748
+    },
+    "after": {
+      "triangles": 192,
+      "size_bytes": 12032,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        2.5
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/rack_elbow.glb",
+    "label_ko": "배관 랙 곡관",
+    "before": {
+      "triangles": 1536,
+      "size_bytes": 113060
+    },
+    "after": {
+      "triangles": 576,
+      "size_bytes": 31044,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        2.5,
+        5.32,
+        12.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/rack_tee.glb",
+    "label_ko": "배관 랙 분기",
+    "before": {
+      "triangles": 432,
+      "size_bytes": 33576
+    },
+    "after": {
+      "triangles": 336,
+      "size_bytes": 19668,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        12.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/rack_cross.glb",
+    "label_ko": "배관 랙 교차",
+    "before": {
+      "triangles": 432,
+      "size_bytes": 33200
+    },
+    "after": {
+      "triangles": 336,
+      "size_bytes": 19048,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -12.0
+      ],
+      "aabb_max_m": [
+        12.0,
+        5.32,
+        12.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/rack_riser.glb",
+    "label_ko": "배관 랙 높이 전환",
+    "before": {
+      "triangles": 504,
+      "size_bytes": 38384
+    },
+    "after": {
+      "triangles": 360,
+      "size_bytes": 19480,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.1
+      ],
+      "aabb_max_m": [
+        12.0,
+        9.32,
+        2.1
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/industrial_plant/rack_double.glb",
+    "label_ko": "배관 랙 2층",
+    "before": {
+      "triangles": 384,
+      "size_bytes": 29744
+    },
+    "after": {
+      "triangles": 288,
+      "size_bytes": 16168,
+      "aabb_min_m": [
+        -12.0,
+        0.0,
+        -2.1
+      ],
+      "aabb_max_m": [
+        12.0,
+        9.32,
+        2.1
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/vessels/container_ship.glb",
+    "label_ko": "컨테이너선",
+    "before": {
+      "triangles": 6262,
+      "size_bytes": 456944
+    },
+    "after": {
+      "triangles": 2374,
+      "size_bytes": 145628,
+      "aabb_min_m": [
+        -14.0,
+        -7,
+        -90.0
+      ],
+      "aabb_max_m": [
+        14.0,
+        20.06,
+        86.39999999999999
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/vessels/tugboat.glb",
+    "label_ko": "예인선",
+    "before": {
+      "triangles": 1478,
+      "size_bytes": 111304
+    },
+    "after": {
+      "triangles": 1046,
+      "size_bytes": 59264,
+      "aabb_min_m": [
+        -5.25,
+        -3,
+        -15.0
+      ],
+      "aabb_max_m": [
+        5.25,
+        11.76,
+        14.399999999999999
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/vessels/motor_boat.glb",
+    "label_ko": "보트",
+    "before": {
+      "triangles": 230,
+      "size_bytes": 20580
+    },
+    "after": {
+      "triangles": 230,
+      "size_bytes": 17004,
+      "aabb_min_m": [
+        -1.9,
+        -0.8,
+        -6.0
+      ],
+      "aabb_max_m": [
+        1.9,
+        4.36,
+        6.4
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/vessels/lpg_carrier.glb",
+    "label_ko": "LPG선",
+    "before": {
+      "triangles": 1610,
+      "size_bytes": 121516
+    },
+    "after": {
+      "triangles": 1074,
+      "size_bytes": 62584,
+      "aabb_min_m": [
+        -12.0,
+        -6,
+        -72.5
+      ],
+      "aabb_max_m": [
+        12.0,
+        19.06,
+        69.6
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/vessels/oil_tanker.glb",
+    "label_ko": "유조선",
+    "before": {
+      "triangles": 2242,
+      "size_bytes": 167028
+    },
+    "after": {
+      "triangles": 1722,
+      "size_bytes": 91728,
+      "aabb_min_m": [
+        -17.0,
+        -9,
+        -105.0
+      ],
+      "aabb_max_m": [
+        17.0,
+        20.56,
+        100.8
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/vessels/fishing_boat.glb",
+    "label_ko": "어업용 소형선박",
+    "before": {
+      "triangles": 1106,
+      "size_bytes": 85244
+    },
+    "after": {
+      "triangles": 754,
+      "size_bytes": 45456,
+      "aabb_min_m": [
+        -2.85,
+        -1.5,
+        -9.0
+      ],
+      "aabb_max_m": [
+        2.85,
+        6.659999999999999,
+        8.64
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/taehwagang/station.glb",
+    "label_ko": "태화강역",
+    "before": {
+      "triangles": 1836,
+      "size_bytes": 135548
+    },
+    "after": {
+      "triangles": 924,
+      "size_bytes": 57412,
+      "aabb_min_m": [
+        -59.0,
+        0.0,
+        -39.5
+      ],
+      "aabb_max_m": [
+        59.0,
+        26.034317178054977,
+        34.00524109043984
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/taehwagang/rail_yard.glb",
+    "label_ko": "역 승강장",
+    "before": {
+      "triangles": 9396,
+      "size_bytes": 680972
+    },
+    "after": {
+      "triangles": 4596,
+      "size_bytes": 269376,
+      "aabb_min_m": [
+        -55.06,
+        0.0,
+        -290.0
+      ],
+      "aabb_max_m": [
+        55.06,
+        8.049143609346716,
+        -22.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/taehwagang/forecourt.glb",
+    "label_ko": "역 광장",
+    "before": {
+      "triangles": 3656,
+      "size_bytes": 267648
+    },
+    "after": {
+      "triangles": 3592,
+      "size_bytes": 212204,
+      "aabb_min_m": [
+        -147.0,
+        0.0,
+        22.0
+      ],
+      "aabb_max_m": [
+        229.0,
+        10.3,
+        176.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/taehwagang/district.glb",
+    "label_ko": "역전 구역",
+    "before": {
+      "triangles": 7648,
+      "size_bytes": 555064
+    },
+    "after": {
+      "triangles": 7648,
+      "size_bytes": 443208,
+      "aabb_min_m": [
+        -240.0,
+        -2.0,
+        -290.0
+      ],
+      "aabb_max_m": [
+        240.0,
+        22.099999999999998,
+        290.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/taehwagang/taehwagang_complete.glb",
+    "label_ko": "태화강역 조립",
+    "before": {
+      "triangles": 22536,
+      "size_bytes": 1627456
+    },
+    "after": {
+      "triangles": 16760,
+      "size_bytes": 970552,
+      "aabb_min_m": [
+        -240.0,
+        -2.0,
+        -290.0
+      ],
+      "aabb_max_m": [
+        240.0,
+        26.034317178054977,
+        290.0
+      ]
+    }
+  },
+  {
+    "path": "assets/generated/wolsong/wolsong_npp.glb",
+    "label_ko": "월성 발전소",
+    "before": {
+      "triangles": 6552,
+      "size_bytes": 476132
+    },
+    "after": {
+      "triangles": 2048,
+      "size_bytes": 123396,
+      "aabb_min_m": [
+        -165.0,
+        -3.0,
+        -360.0
+      ],
+      "aabb_max_m": [
+        165.0,
+        58.0,
+        360.0
+      ]
+    }
+  }
+]

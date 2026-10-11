@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "defaults": {"gauge_m": 1.435, "track_spacing_m": 5.0, "rail_top_y_m": 0.12, "catenary_height_m": 5.5, "catenary_spacing_m": 32.0},
+  "generic": [
+    {"id": "rail_box_girder", "name_ko": "복선 콘크리트 박스거더교", "kind": "box", "length_m": 32.0, "width_m": 12.5, "track_count": 2, "pier_height_m": 12.0},
+    {"id": "rail_plate_girder", "name_ko": "단선 강판거더교", "kind": "plate", "length_m": 24.0, "width_m": 6.5, "track_count": 1, "pier_height_m": 8.0},
+    {"id": "rail_through_truss", "name_ko": "복선 강재 트러스교", "kind": "truss", "length_m": 72.0, "width_m": 12.5, "track_count": 2, "pier_height_m": 14.0},
+    {"id": "rail_deck_arch", "name_ko": "복선 상로 아치교", "kind": "arch", "length_m": 120.0, "width_m": 12.5, "track_count": 2, "pier_height_m": 20.0, "arch_rise_m": 13.0},
+    {"id": "rail_multi_viaduct", "name_ko": "복선 다경간 고가교", "kind": "viaduct", "length_m": 160.0, "width_m": 12.5, "track_count": 2, "pier_height_m": 18.0, "span_m": 32.0}
+  ],
+  "ulsan_set": {
+    "id": "ulsan_anyang_connected_set", "name_ko": "안양교–울산역 연결 세트", "width_m": 12.5, "track_count": 2, "track_spacing_m": 5.4, "pier_height_m": 24.0,
+    "main_length_m": 231.8, "main_span_m": 70.4, "arch_rise_m": 10.0,
+    "north_approach_length_m": 235.0, "south_approach_length_m": 320.0, "station_interface_length_m": 48.0,
+    "accuracy": "안양교/언양고가 아치부 문헌 기반 게임용 근사. 아치부 총길이 231.8m·중앙경간 70.4m·아치 높이 10m와 병렬 상하행 구조를 반영. 양쪽 아치 길이 배분, 접근부 길이·높이·방향·역 접속부는 제작 가정이며 지도 배치나 전체 울산역 모델이 아님.",
+    "source_urls": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC5981442/", "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002322862", "https://www.openstreetmap.org/way/128255609"]
+  }
+}

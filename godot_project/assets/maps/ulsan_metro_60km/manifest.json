@@ -1,0 +1,375 @@
+{
+  "assets": {
+    "airport/placement.json": {
+      "accuracy": "공식 공항도에서 판독한 근사 배치와 공개 외관 사진에 기초한 외관 모델. 측량·준공 모델이 아님.",
+      "bbox": {
+        "east": 129.356838280456,
+        "north": 35.6056443456689,
+        "south": 35.5779979437647,
+        "west": 129.350404208796
+      },
+      "category": "landmark_placement",
+      "elevation": {
+        "max_meters": 31,
+        "min_meters": -8,
+        "reference": "건물 바닥 기준 상대 높이. 배치 고도는 지형 샘플링으로 결정."
+      },
+      "extension": ".json",
+      "file_name": "placement.json",
+      "file_path": "res://assets/maps/ulsan_metro_60km/airport/placement.json",
+      "position_uncertainty_m": 30,
+      "resolution": {
+        "lamp_count": 287,
+        "material_batches": 15,
+        "triangles": 6514,
+        "type": "procedural_mesh",
+        "units": "meters"
+      },
+      "sha256": "5ca3da581193803c3521820f1edd2a42168c213150e25e892af50aae2f7648cb",
+      "size_bytes": 3573
+    },
+    "airport/ulsan_airport.scn": {
+      "accuracy": "공식 공항도에서 판독한 근사 배치와 공개 외관 사진에 기초한 외관 모델. 측량·준공 모델이 아님.",
+      "bbox": {
+        "east": 129.356838280456,
+        "north": 35.6056443456689,
+        "south": 35.5779979437647,
+        "west": 129.350404208796
+      },
+      "category": "landmark_model",
+      "elevation": {
+        "max_meters": 31,
+        "min_meters": -8,
+        "reference": "건물 바닥 기준 상대 높이. 배치 고도는 지형 샘플링으로 결정."
+      },
+      "extension": ".scn",
+      "file_name": "ulsan_airport.scn",
+      "file_path": "res://assets/maps/ulsan_metro_60km/airport/ulsan_airport.scn",
+      "position_uncertainty_m": 30,
+      "resolution": {
+        "lamp_count": 287,
+        "material_batches": 15,
+        "triangles": 6514,
+        "type": "procedural_mesh",
+        "units": "meters"
+      },
+      "sha256": "cc11453db3a42567218ee167e3fd7500c447367df8fdca007143894bbc235ea0",
+      "size_bytes": 408055
+    },
+    "buildings_and_roads.json": {
+      "category": "buildings_and_roads",
+      "extension": ".json",
+      "file_name": "buildings_and_roads.json",
+      "sha256": "5102d14d361fa4f2d725092a2a698d6de8c6e0fae8cd80a137e76fd691b65ec2",
+      "size_bytes": 105174944
+    },
+    "map_meta.json": {
+      "category": "metadata",
+      "extension": ".json",
+      "file_name": "map_meta.json",
+      "file_path": "res://assets/maps/ulsan_metro_60km/map_meta.json",
+      "sha256": "06ef4f7b1fe3d1b349aa534d1ecae6dd5cf504f0564e8497c2568145bb32c79e",
+      "size_bytes": 2343
+    },
+    "real_districts.json": {
+      "category": "districts",
+      "extension": ".json",
+      "file_name": "real_districts.json",
+      "sha256": "910626f620493ed06387628576610549428a2871bcb57293ff6971e85e2d7e36",
+      "size_bytes": 638580
+    },
+    "road_metadata.json": {
+      "bbox": {
+        "east": 129.5877,
+        "north": 35.8148,
+        "south": 35.2742,
+        "west": 128.9233
+      },
+      "category": "road_metadata",
+      "elevation": {
+        "max_meters": 1250,
+        "min_meters": -30
+      },
+      "file_name": "road_metadata.json",
+      "resolution": {
+        "record_count": 8878,
+        "type": "road_attributes"
+      },
+      "sha256": "e8858f588ae5952ed2bbb3f155398373551f0e3c8e6ba157125c784b460ec01b",
+      "size_bytes": 2330831,
+      "file_path": "res://assets/maps/ulsan_metro_60km/road_metadata.json"
+    },
+    "ulsan_metro_60km_heightmap_16bit.png": {
+      "category": "heightmap",
+      "extension": ".png",
+      "file_name": "ulsan_metro_60km_heightmap_16bit.png",
+      "sha256": "d65aed1eb06b82f4f55ee02d2beeb07b66955381816f7be15cdaa2b572274276",
+      "size_bytes": 17361941
+    },
+    "ulsan_metro_60km_tactical_map.png": {
+      "category": "tactical_map",
+      "extension": ".png",
+      "file_name": "ulsan_metro_60km_tactical_map.png",
+      "sha256": "bc3df744a88c80f6ca122654cdf260dd00bb620e37c29ce2d27cdacf34f59798",
+      "size_bytes": 327292
+    },
+    "ulsan_metro_60km_watermask_8bit.png": {
+      "category": "watermask",
+      "extension": ".png",
+      "file_name": "ulsan_metro_60km_watermask_8bit.png",
+      "sha256": "c9ce94a71fb63967826ffcba07c3c54ab646835d41b7ae4db3b9bc699f244fa8",
+      "size_bytes": 189076
+    },
+    "tactical_atlas.png": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/tactical_atlas.png",
+      "sha256": "7b509500e9bae718166b11c0347924f0fbcb7d68d50e013a431be7e6e5640ef1",
+      "size_bytes": 5285767,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      },
+      "resolution": {
+        "width": 3072,
+        "height": 3072
+      },
+      "metadata": {
+        "contour_interval_m": 50,
+        "road_count": 6614,
+        "water_source": "res://assets/maps/ulsan_metro_60km/hydro/water_mask.png",
+        "detail_note": "도로는 기존 수집 범위에 한함"
+      }
+    },
+    "ulsan_metro_60km/hydro/coastal_heightmap_16bit.png": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/coastal_heightmap_16bit.png",
+      "sha256": "2a2d188299aab55730a00009884d3d1782c6e8c627c66bd4e355b3037c01f94f",
+      "size_bytes": 17405899,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "width": 4096,
+        "height": 4096
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/coastline.geojson": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/coastline.geojson",
+      "sha256": "6bb6a14ef7d4766875a8462eaecd5b9e558899c941174cc310befef30481fb15",
+      "size_bytes": 702502,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "type": "vector_or_report"
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/coastline_mask.png": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/coastline_mask.png",
+      "sha256": "0a1b8907fbe50612be08e2fa8568bb5a94809c334a2a9ddb7a4849e87ee4fdac",
+      "size_bytes": 39089,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "width": 4096,
+        "height": 4096
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/lake.geojson": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/lake.geojson",
+      "sha256": "f6f9ed23824663aa0aa592cc23e9dd6d67ee33d1251d30e51eaa51c6b8366e80",
+      "size_bytes": 3976297,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "type": "vector_or_report"
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/lake_mask.png": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/lake_mask.png",
+      "sha256": "ed37a34b202f8d868d43e5a4d165325843c3471ca7b03ab5d8c88e1666647a7a",
+      "size_bytes": 53403,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "width": 4096,
+        "height": 4096
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/processing_report.json": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/processing_report.json",
+      "sha256": "8ac9a5eba9f64c4cfd3e67f1c7ba6c90cbca947876c8ee419ea721f46bba1de4",
+      "size_bytes": 480,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "type": "vector_or_report"
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/river.geojson": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/river.geojson",
+      "sha256": "d891ec701e83fbaef957765d62ade51cbe02c13501418e050dd9e45b801ad5b6",
+      "size_bytes": 6721973,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "type": "vector_or_report"
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/river_mask.png": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/river_mask.png",
+      "sha256": "765639d6151059adc2ae64c32827e555d763976f312c431f97de496e28603a58",
+      "size_bytes": 143334,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "width": 4096,
+        "height": 4096
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/sea_mask.png": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/sea_mask.png",
+      "sha256": "2d0b5a3670239bc4ab4b02ed80c8f9fc6e00033d6fad57b4dee3dea357f002a2",
+      "size_bytes": 40202,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "width": 4096,
+        "height": 4096
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km/hydro/water_mask.png": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/hydro/water_mask.png",
+      "sha256": "2039d36c1aed349b0d662ebd928725f3fcc9f322fa274b33ac69e7d99b377023",
+      "size_bytes": 178562,
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "resolution": {
+        "width": 4096,
+        "height": 4096
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      }
+    },
+    "ulsan_metro_60km_vector_stream": {
+      "file_path": "res://assets/maps/ulsan_metro_60km/vector_stream/index.json",
+      "sha256": "eed1359f701c3e99e686222164ec970aa1ba08fccf241961d7b07b5066b60df7",
+      "bbox": {
+        "south": 35.2742,
+        "north": 35.8148,
+        "west": 128.9233,
+        "east": 129.5877
+      },
+      "elevation": {
+        "min_meters": -30.0,
+        "max_meters": 1250.0
+      },
+      "resolution": {
+        "type": "spatial_vector_batches",
+        "batches": 3732,
+        "counts": {
+          "buildings": 128851,
+          "roads": 8878
+        }
+      },
+      "metadata": {
+        "source_sha256": "e5d67df7c961d3376bea4291c7bb494789acb6b450630dfa9398c5b9ac64892a",
+        "batch_hashes": "각 배치의 SHA-256은 인덱스에 기록"
+      }
+    }
+  },
+  "bbox": {
+    "east": 129.5877,
+    "north": 35.8148,
+    "south": 35.2742,
+    "west": 128.9233
+  },
+  "indexed_at": "2026-09-29T12:05:12",
+  "map_id": "ulsan_metro_60km",
+  "max_elevation": 1250,
+  "min_elevation": -30,
+  "name_en": "Ulsan Metropolitan Wide Area (60km x 60km)",
+  "name_ko": "울산광역시 광역권 (60km x 60km)",
+  "sea_level": 0,
+  "world_size_meters": 60000
+}
