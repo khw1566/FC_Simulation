@@ -3,6 +3,7 @@ class_name VesselWake
 
 ## 선미가 지나간 세계 좌표를 보존하는 유한 길이의 거품 항적.
 const FOAM_SHADER = preload("res://shaders/vessel_wake.gdshader")
+const RenderOrderScript := preload("res://scripts/core/render_order.gd")
 var _samples: Array = []
 var _clock := 0.0
 var _accumulator := 0.0
@@ -18,7 +19,8 @@ func configure(entry: Dictionary, settings: Dictionary) -> void:
 	_lifetime = clampf(_length * 0.22 + 12.0, 15.0, float(settings.get("wake_max_lifetime_seconds", 65.0)))
 	var material := ShaderMaterial.new()
 	material.shader = FOAM_SHADER
-	material.render_priority = 2
+	# 수면 위 항적: 수면 다음, 구름층보다 먼저(RenderOrder)
+	material.render_priority = RenderOrderScript.WATER_DETAIL
 	material_override = material
 	cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 

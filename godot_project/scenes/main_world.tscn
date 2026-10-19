@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://cql1v4mx67f8r"]
+[gd_scene load_steps=42 format=3 uid="uid://cql1v4mx67f8r"]
 
 [ext_resource type="Script" path="res://scripts/terrain/terrain_chunk_manager.gd" id="1_terrain"]
 [ext_resource type="Script" path="res://scripts/water/kanmon_water_manager.gd" id="2_water"]
@@ -38,6 +38,8 @@
 [ext_resource type="Script" path="res://scripts/terrain/riverside_trial_placer.gd" id="34_riverside_trial"]
 [ext_resource type="Script" path="res://scripts/terrain/bridge_trial_placer.gd" id="35_bridge_trial"]
 [ext_resource type="Script" path="res://scripts/vegetation/ecozone_scatter.gd" id="36_ecozone_scatter"]
+[ext_resource type="Script" path="res://scripts/nuclear/nuclear_explosion_manager.gd" id="37_nuclear"]
+[ext_resource type="Script" path="res://scripts/weather/wind_field_service.gd" id="38_wind_field"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_night_sky"]
 shader = ExtResource("28_night_sky")
@@ -184,6 +186,9 @@ rain_controller = NodePath("RainParticleController")
 lightning_controller = NodePath("LightningController")
 day_night_service = NodePath("../DayNightCycleService")
 
+[node name="WindField" type="Node" parent="WeatherManager"]
+script = ExtResource("38_wind_field")
+
 [node name="CloudClusterManager" type="Node3D" parent="WeatherManager" node_paths=PackedStringArray("player_node")]
 script = ExtResource("18_cloud_mgr")
 player_node = NodePath("../../Player")
@@ -239,3 +244,14 @@ terrain_manager = NodePath("../TerrainManager")
 [node name="EcozoneScatter" type="Node3D" parent="." node_paths=PackedStringArray("terrain_manager")]
 script = ExtResource("36_ecozone_scatter")
 terrain_manager = NodePath("../TerrainManager")
+
+[node name="NuclearExplosionManager" type="Node3D" parent="." node_paths=PackedStringArray("player_node", "terrain_manager", "weather_manager", "cloud_manager", "sun_light", "world_environment", "day_night_service", "wind_field")]
+script = ExtResource("37_nuclear")
+player_node = NodePath("../Player")
+terrain_manager = NodePath("../TerrainManager")
+weather_manager = NodePath("../WeatherManager")
+cloud_manager = NodePath("../WeatherManager/CloudClusterManager")
+sun_light = NodePath("../DirectionalLight3D")
+world_environment = NodePath("../WorldEnvironment")
+day_night_service = NodePath("../DayNightCycleService")
+wind_field = NodePath("../WeatherManager/WindField")

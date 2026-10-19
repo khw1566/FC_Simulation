@@ -1,4 +1,6 @@
 // 구름 렌더링·지면 그림자·광선이 공유하는 월드 밀도장.
+#include "blast_field.gdshaderinc"
+#include "wind_field.gdshaderinc"
 uniform sampler2D weather_noise : repeat_enable, filter_linear_mipmap;
 uniform sampler3D base_noise : repeat_enable, filter_linear;
 uniform sampler3D detail_noise : repeat_enable, filter_linear;
@@ -75,8 +77,16 @@ vec4 weather_at(vec2 xz, float stride) {
 }
 
 // 3D 밀도. hfrac에는 지배 유형 기준 상대 높이를 돌려준다.
-float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
+// 국지 바람으로 밀린 위치의 기상도. 밀도장 호출 전에 이것으로 기상도를 읽는다.
+vec4 cloud_weather(vec3 p, float stride) {
+	return weather_at(cloud_warp(p).xz + wind_offset, stride);
+}
+
+// p_world는 실제 월드 위치. 형상 표본은 국지 바람 변위(cloud_warp)를 적용한 위치에서 읽고,
+// 폭발 소산·충격파 효과는 실제 위치 기준으로 계산한다.
+float density_at(vec3 p_world, vec4 w, float dist, bool detailed, out float hfrac) {
 	hfrac = 0.0;
+	vec3 p = cloud_warp(p_world);
 	float h_cu = (p.y - cu_base) / (cu_top - cu_base);
 	// 평평한 밑면과 위로 갈수록 좁아지는 돔(콜리플라워) 윤곽
 	float prof_cu = smoothstep(0.0, 0.07, h_cu) * (1.0 - smoothstep(0.0, w.w, h_cu) * 0.85);
@@ -108,21 +118,25 @@ float density_at(vec3 p, vec4 w, float dist, bool detailed, out float hfrac) {
 		c_cb = max(max(tower, anvil), overshoot);
 	}
 
-	float c = max(max(c_cu, c_as), max(c_st, c_cb));
+	float c_type = max(max(c_cu, c_as), max(c_st, c_cb));
+	float c = c_type;
+	if (blast_count > 0 && c > 0.002) {
+		c = min(c * blast_density_scale(p_world), 1.5);
+	}
 	if (c <= 0.002) {
 		return 0.0;
 	}
 	float type_scale = 1.0;
 	hfrac = clamp(h_cu, 0.0, 1.0);
-	if (c_st >= c) {
+	if (c_st >= c_type) {
 		type_scale = 0.6;
 		hfrac = clamp(h_st, 0.0, 1.0);
 	}
-	if (c_as >= c) {
+	if (c_as >= c_type) {
 		type_scale = 0.45;
 		hfrac = clamp(h_as, 0.0, 1.0);
 	}
-	if (c_cb >= c) {
+	if (c_cb >= c_type) {
 		type_scale = 2.5;
 		hfrac = clamp(h_cb, 0.0, 1.0);
 	}

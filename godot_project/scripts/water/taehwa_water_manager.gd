@@ -2,6 +2,7 @@ extends Node3D
 class_name TaehwaWaterManager
 
 const BASE := "res://assets/generated/taehwa_civil/"
+const RenderOrderScript := preload("res://scripts/core/render_order.gd")
 var water_material: ShaderMaterial
 var loaded_chunks := 0
 
@@ -16,6 +17,8 @@ func setup(map_id: String, terrain_material: ShaderMaterial) -> void:
     var catalog: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(BASE+"catalog.json"))
     water_material = ShaderMaterial.new()
     water_material.shader = load("res://shaders/taehwa_flow_water.gdshader")
+    # 반투명 수면은 화면 전체 구름층보다 먼저 그려야 구름 뒤에서 비쳐 보이지 않는다.
+    water_material.render_priority = RenderOrderScript.WATER_SURFACE
     water_material.set_shader_parameter("compatibility_depth",RenderingServer.get_rendering_device()==null)
     water_material.set_shader_parameter("flow_speed_mps",float(catalog.river_policy.flow_speed_mps_visual))
     for spec in catalog.hydro_chunks:

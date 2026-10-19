@@ -4,11 +4,15 @@ class_name OpticalEffectsController
 ## 기존 구름의 동일 밀도장·바람·주야간·안개 설정을 두 광학 패스로 전달한다.
 const ShadowShader = preload("res://shaders/optics/cloud_ground_shadow.gdshader")
 const LightShader = preload("res://shaders/optics/atmospheric_light.gdshader")
+const RenderOrderScript := preload("res://scripts/core/render_order.gd")
 const SHARED := ["weather_noise", "base_noise", "detail_noise", "wind_offset", "cirrus_offset",
 	"cirrus_wind_dir", "evolve", "cu_coverage", "cu_base", "cu_top", "st_coverage", "st_base",
 	"st_top", "cb_coverage", "cb_base", "cb_top", "as_coverage", "as_base", "as_top",
 	"ci_coverage", "ci_altitude", "slab_bottom", "slab_top", "detail_distance", "extinction",
-	"sun_direction", "sun_color", "haze_density"]
+	"sun_direction", "sun_color", "haze_density",
+	"blast_count", "blast_a", "blast_b", "blast_c", "blast_d", "blast_e",
+	"wind_field_prev", "wind_field_curr", "wind_field_active", "wind_field_origin", "wind_field_cell",
+	"wind_field_dims", "wind_field_blend", "wind_warp_seconds", "wind_layer_low", "wind_layer_high"]
 const RAY_STEPS := [8, 6, 4, 2]
 @export_range(0.0, 1.0) var cloud_shadow_strength := 0.32
 @export_range(0.0, 2.0) var ray_strength := 0.75
@@ -25,8 +29,8 @@ var _idle_sync := 0.0
 
 func _ready() -> void:
 	_cloud = get_parent()
-	_shadow = _make_pass("CloudGroundShadow", ShadowShader, -128)
-	_light = _make_pass("AtmosphericLight", LightShader, -126)
+	_shadow = _make_pass("CloudGroundShadow", ShadowShader, RenderOrderScript.CLOUD_SHADOW)
+	_light = _make_pass("AtmosphericLight", LightShader, RenderOrderScript.LIGHT_RAYS)
 	_shadow_material = _shadow.material_override as ShaderMaterial
 	_light_material = _light.material_override as ShaderMaterial
 

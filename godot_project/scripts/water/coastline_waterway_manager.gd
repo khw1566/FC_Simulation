@@ -1,5 +1,6 @@
 extends Node3D
 class_name CoastlineWaterwayManager
+const RenderOrderScript := preload("res://scripts/core/render_order.gd")
 
 ## 벡터 해안선 및 하천/하구 지형 정밀 렌더러
 ## OSM 실측 벡터 데이터를 활용하여 해안선 완충대와 하천 수로 리본을 생성하고,
@@ -51,6 +52,8 @@ func _init_materials() -> void:
 	shoreline_material.metallic_specular = 0.5
 	shoreline_material.cull_mode = BaseMaterial3D.CULL_DISABLED
 	shoreline_material.depth_draw_mode = BaseMaterial3D.DEPTH_DRAW_ALWAYS
+	# 반투명 수면·쇄파대는 화면 전체 구름층보다 먼저 그려야 구름 뒤에서 비쳐 보이지 않는다.
+	shoreline_material.render_priority = RenderOrderScript.WATER_DETAIL
 
 	# 2. 하천/수로 리본 수면 (청록색 흐르는 물결 톤)
 	river_water_material = StandardMaterial3D.new()
@@ -60,6 +63,7 @@ func _init_materials() -> void:
 	river_water_material.metallic_specular = 0.8
 	river_water_material.cull_mode = BaseMaterial3D.CULL_DISABLED
 	river_water_material.depth_draw_mode = BaseMaterial3D.DEPTH_DRAW_ALWAYS
+	river_water_material.render_priority = RenderOrderScript.WATER_SURFACE
 
 func load_and_render_vectors() -> void:
 	if coastlines_waterways_path.is_empty() or not FileAccess.file_exists(coastlines_waterways_path):

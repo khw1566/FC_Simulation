@@ -61,7 +61,12 @@ func _set_korean_content() -> void:
   F1             도움말 오버레이 토글
   F2             맵 선택 메인 메뉴로 복귀
   F9             커스텀 오브젝트 열람 (회전·확대·부재 선택)
-  F10            화면 중앙 대상 및 좌표 디버그"""
+  F10            화면 중앙 대상 및 좌표 디버그
+
+[핵폭발 시뮬레이션]
+  B              위력 순환 (10kt / 50kt / 500kt / 1Mt / 10Mt)
+  V              조준점(시선-지형 교차) 상공에서 투하
+  K              모든 폭발·낙하 중 폭탄 제거"""
 	if close_hint_label:
 		close_hint_label.text = "F1 - 닫기"
 
@@ -92,6 +97,11 @@ func _set_english_content() -> void:
   F1             Toggle this Help Overlay
   F2             Return to Map Selection Menu
   F9             Custom Object Inspector
-  F10            World Object Debug Overlay"""
+  F10            World Object Debug Overlay
+
+[NUCLEAR DETONATION]
+  B              Cycle Yield (10kt / 50kt / 500kt / 1Mt / 10Mt)
+  V              Drop on Aim Point (view ray / terrain)
+  K              Clear All Detonations and Bombs"""
 	if close_hint_label:
 		close_hint_label.text = "F1 - Close"

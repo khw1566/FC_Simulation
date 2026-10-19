@@ -20,7 +20,7 @@ float cloud_transmission(vec3 origin) {
 		float height = mix(lo, hi, 0.42);
 		vec3 p = origin + sun_direction * ((height - origin.y) / sun_direction.y);
 		float hfrac;
-		vec4 weather = weather_at(p.xz + wind_offset, max(80.0, thickness / 4.0));
+		vec4 weather = cloud_weather(p, max(80.0, thickness / 4.0));
 		float density = density_at(p, weather, 14000.0, false, hfrac);
 		// 층이 중복될 때 불투명도가 과도해지지 않도록 제한한다.
 		optical_depth += density * min(thickness / sun_direction.y, 4500.0) * extinction * 0.14;

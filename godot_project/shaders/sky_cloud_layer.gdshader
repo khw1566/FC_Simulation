@@ -6,6 +6,8 @@ render_mode unshaded, blend_premul_alpha, depth_draw_never, depth_test_disabled,
 #include "optics/cloud_field.gdshaderinc"
 uniform sampler2D scene_depth : hint_depth_texture, repeat_disable, filter_nearest;
 uniform bool compatibility_depth = false;
+// 0: 전체, 1: 핵폭발 뒤쪽 구간, 2: 핵폭발 앞쪽 구간
+uniform int blast_split_mode = 0;
 
 // 품질 예산
 uniform int step_count = 32;
@@ -119,7 +121,15 @@ vec3 shade(vec3 p, vec4 w, float d, float hfrac, float dist, float phase) {
 	// 날씨 팔레트는 그늘(환경광)에만 강하게 적용: 폭풍 구름도 햇빛 받는 꼭대기는 희다.
 	vec3 sun = sun_color * mix(vec3(1.0), cloud_top_color.rgb, 0.3) * sunlit * phase;
 	vec3 color = ambient * 0.72 + sun * 0.85;
-	return mix(cloud_shadow_color.rgb * ambient_scale, color, clamp(sunlit * 1.4 + hfrac * 0.4, 0.0, 1.0));
+	color = mix(cloud_shadow_color.rgb * ambient_scale, color, clamp(sunlit * 1.4 + hfrac * 0.4, 0.0, 1.0));
+	// 핵폭발 섬광과 잔열 발광은 그늘 없이 구름 전체를 비춘다(밑면이 더 강하게 받는다).
+	if (blast_count > 0) {
+		color += blast_light(p) * mix(1.0, 0.6, hfrac);
+		// 충격파 응결 테: 순간 응결한 미세 물방울이 그늘 없이 하얗게 빛난다.
+		float cond = blast_condensation(p);
+		color = mix(color, vec3(1.15) * max(ambient_scale, 0.15) + sun_color * 0.35, cond * 0.85);
+	}
+	return color;
 }
 
 void fragment() {
@@ -138,6 +148,19 @@ void fragment() {
 	if (!is_sky) {
 		vec4 vp = INV_PROJECTION_MATRIX * vec4(ndc, 1.0);
 		opaque = length(vp.xyz / vp.w);
+	}
+	// 핵폭발이 있으면 구름층을 버섯구름 경계 진입 거리에서 둘로 나눈다(RenderOrder 참고).
+	// 1: 뒤쪽 패스(폭발 볼륨보다 먼저) = 분할 거리 이후만, 2: 앞쪽 패스(폭발 볼륨보다 나중) = 분할 거리 이전만.
+	float split_near = 0.0;
+	float split_far = 1.0e9;
+	if (blast_count > 0 && blast_split_mode != 0) {
+		float split = blast_split_distance(cam, dir);
+		if (blast_split_mode == 1) {
+			if (split >= opaque) { discard; }
+			split_near = split;
+		} else {
+			split_far = split;
+		}
 	}
 
 	float transmit = 1.0;
@@ -160,7 +183,8 @@ void fragment() {
 	} else if (cam.y > slab_bottom && cam.y < slab_top) {
 		t1 = max_distance;
 	}
-	t1 = min(t1, min(opaque, max_distance));
+	t0 = max(t0, split_near);
+	t1 = min(min(t1, split_far), min(opaque, max_distance));
 	if (t1 > t0 && slab_top > slab_bottom) {
 		float span = t1 - t0;
 		// 지평선 쪽 긴 광선(화면의 작은 띠)에만 표본을 최대 2배까지 더 준다.
@@ -175,7 +199,7 @@ void fragment() {
 			float t = t0 + span * s0 * s0;
 			float ds = span * (s1 * s1 - s0 * s0);
 			vec3 pm = cam + dir * (t + ds * 0.5);
-			vec4 w = weather_at(pm.xz + wind_offset, max(ds * 0.25, refine_stride));
+			vec4 w = cloud_weather(pm, max(ds * 0.25, refine_stride));
 			float hf_probe;
 			bool hit = density_at(pm, w, t, false, hf_probe) > 0.002;
 			if (!hit && !prev_hit) { continue; }
@@ -210,7 +234,7 @@ void fragment() {
 			int idx = (cam.y < ci_altitude - 700.0) ? 1 - layer : layer;
 			float alt = idx == 0 ? ci_altitude : ci_altitude - 1400.0;
 			float tc = (alt - cam.y) / dir.y;
-			if (tc <= 0.0 || tc >= opaque || tc >= max_distance * 1.5) { continue; }
+			if (tc <= 0.0 || tc >= opaque || tc >= max_distance * 1.5 || tc < split_near || tc >= split_far) { continue; }
 			vec2 xz = (cam + dir * tc).xz + cirrus_offset * (idx == 0 ? 1.0 : 0.85);
 			// 원경일수록 밉을 올려 가는 결이 깜빡이지 않게 한다.
 			float lod_c = clamp(log2(max(tc, 1.0) / 5000.0) + 1.0, 0.0, 6.0);
@@ -219,6 +243,9 @@ void fragment() {
 			if (a < 0.002) { continue; }
 			// 얼음 결정: 태양 쪽 전방 산란이 강하고 그늘이 거의 없다.
 			vec3 col = mix(vec3(1.0), cloud_top_color.rgb, 0.25) * (sun_color * (0.45 + phase * 0.55) + vec3(0.5) * ambient_scale);
+			if (blast_count > 0) {
+				col += blast_light(cam + dir * tc);
+			}
 			col = mix(col, haze_color * ambient_scale, 1.0 - exp(-tc * haze_density * 0.4));
 			if (cam.y < alt) {
 				acc += transmit * a * col;

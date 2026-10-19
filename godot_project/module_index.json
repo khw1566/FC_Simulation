@@ -25,7 +25,7 @@
             "get_terrain_elevation()",
             "get_water_mask()"
           ],
-          "lines": 450
+          "lines": 465
         },
         {
           "class_name": "TerrainChunk",
@@ -37,7 +37,7 @@
             "_rebuild_mesh()",
             "_sample_bilinear()"
           ],
-          "lines": 189
+          "lines": 191
         },
         {
           "class_name": "CoastlineWaterCarver",
@@ -60,7 +60,7 @@
             "_render_roads_and_tunnels_batched()",
             "is_point_in_tunnel()"
           ],
-          "lines": 485
+          "lines": 495
         },
         {
           "class_name": "RoadMeshBuilder",
@@ -750,7 +750,7 @@
         {
           "path": "godot_project/scripts/weather/procedural_cloud_manager.gd",
           "description": "현재 메인 월드 구름 관리자, 혼합 및 품질 상한",
-          "lines": 197
+          "lines": 279
         },
         {
           "path": "godot_project/scripts/weather/cloud_pool_factory.gd",
@@ -867,7 +867,7 @@
           "class_name": "RoadBatchBuilder",
           "path": "godot_project/scripts/terrain/road_batch_builder.gd",
           "responsibility": "스트리밍 도로 배치의 메타데이터 보정·중복 키 계산·메시 배열과 교량 충돌 형상 작업 스레드 계산, 메인 스레드 노드 조립",
-          "lines": 204
+          "lines": 214
         },
         {
           "class_name": "ThreadedSceneCache",
@@ -1454,6 +1454,15 @@
           "path": "godot_project/scripts/core/atmosphere_horizon_check.gd",
           "responsibility": "고도별 하늘과 원경 경량 검증",
           "lines": 105
+        },
+        {
+          "class_name": "RenderOrder",
+          "path": "godot_project/scripts/core/render_order.gd",
+          "responsibility": "반투명 그리기 순서 단일 정의: 수면·항적 → 구름 그림자 → 뒤쪽 구름 → 폭발 볼륨 칸 → 앞쪽 구름 → 빛줄기",
+          "key_methods": [
+            "nuclear_slot()"
+          ],
+          "lines": 25
         }
       ]
     },
@@ -1487,7 +1496,7 @@
           "class_name": "RenderQualityProfile",
           "path": "godot_project/scripts/models/render_quality_profile.gd",
           "responsibility": "지도 시작 품질 정책",
-          "lines": 48
+          "lines": 50
         }
       ]
     },
@@ -2298,15 +2307,15 @@
       "modules": [
         {
           "path": "godot_project/scripts/weather/optical_effects_controller.gd",
-          "lines": 89
+          "lines": 93
         },
         {
           "path": "godot_project/scripts/weather/cloud_layer_factory.gd",
-          "lines": 64
+          "lines": 86
         },
         {
           "path": "godot_project/scripts/weather/procedural_cloud_manager.gd",
-          "lines": 197
+          "lines": 279
         },
         {
           "path": "godot_project/scripts/terrain/building_shadow_policy.gd",
@@ -2436,15 +2445,19 @@
       "modules": [
         {
           "path": "godot_project/scripts/terrain/road_formation_grader.gd",
-          "lines": 154
+          "lines": 189
         },
         {
           "path": "godot_project/scripts/terrain/road_formation_field.gd",
           "lines": 32
         },
         {
+          "path": "godot_project/scripts/terrain/terrain_surface_model.gd",
+          "lines": 56
+        },
+        {
           "path": "godot_project/scripts/terrain/road_earthwork_mesher.gd",
-          "lines": 108
+          "lines": 53
         },
         {
           "path": "godot_project/scripts/terrain/road_visibility_policy.gd",
@@ -2452,19 +2465,19 @@
         },
         {
           "path": "godot_project/scripts/terrain/terrain_chunk_manager.gd",
-          "lines": 450
+          "lines": 465
         },
         {
           "path": "godot_project/scripts/terrain/terrain_chunk.gd",
-          "lines": 189
+          "lines": 191
         },
         {
           "path": "godot_project/scripts/terrain/terrain_chunk_mesher.gd",
-          "lines": 101
+          "lines": 102
         },
         {
           "path": "godot_project/scripts/terrain/road_batch_builder.gd",
-          "lines": 204
+          "lines": 214
         },
         {
           "path": "godot_project/scripts/terrain/road_mesh_builder.gd",
@@ -2476,7 +2489,7 @@
         },
         {
           "path": "godot_project/scripts/terrain/building_road_manager.gd",
-          "lines": 485
+          "lines": 495
         },
         {
           "path": "godot_project/shaders/road_surface.gdshader",
@@ -2605,35 +2618,35 @@
         },
         {
           "path": "godot_project/scripts/terrain/terrain_chunk.gd",
-          "lines": 189
+          "lines": 191
         },
         {
           "path": "godot_project/scripts/terrain/terrain_chunk_mesher.gd",
-          "lines": 101
+          "lines": 102
         },
         {
           "path": "godot_project/scripts/terrain/terrain_chunk_manager.gd",
-          "lines": 450
+          "lines": 465
         },
         {
           "path": "godot_project/scripts/terrain/road_earthwork_detail.gd",
-          "lines": 50
+          "lines": 52
         },
         {
           "path": "godot_project/scripts/terrain/road_earthwork_mesher.gd",
-          "lines": 108
+          "lines": 53
         },
         {
           "path": "godot_project/scripts/terrain/road_formation_grader.gd",
-          "lines": 154
+          "lines": 189
         },
         {
           "path": "godot_project/scripts/terrain/road_batch_builder.gd",
-          "lines": 204
+          "lines": 214
         },
         {
           "path": "godot_project/scripts/terrain/building_road_manager.gd",
-          "lines": 485
+          "lines": 495
         },
         {
           "path": "godot_project/scripts/terrain/building_mesh_builder.gd",
@@ -2690,6 +2703,227 @@
         {
           "path": "pipeline/processors/streaming_performance/state_host.gd",
           "lines": 12
+        }
+      ]
+    },
+    "nuclear_detonation": {
+      "description": "핵폭발 시각화: 이중 섬광, 화구 냉각, 충격파·윌슨 응결운, 지면 먼지, 버섯구름 대류 순환, 기존 구름층 상호작용(메인 월드 B/V/K)",
+      "modules": [
+        {
+          "class_name": "NuclearExplosionManager",
+          "path": "godot_project/scripts/nuclear/nuclear_explosion_manager.gd",
+          "responsibility": "핵폭발 오케스트레이터: 위력 선택, 조준·투하, 동시 4건 폭발 수명, 구름 상호작용·화면 효과·HUD 같은 프레임 갱신",
+          "key_methods": [
+            "cycle_yield()",
+            "drop_selected()",
+            "detonate()",
+            "clear_all()"
+          ],
+          "lines": 195
+        },
+        {
+          "class_name": "NuclearDetonation",
+          "path": "godot_project/scripts/nuclear/nuclear_detonation.gd",
+          "responsibility": "폭발 한 건의 볼륨·응결운·섬광 광원 갱신, 고도별 바람에 따른 기둥 굽힘, 바람장 대류 교란 등록과 구름 셰이더 행 제공",
+          "key_methods": [
+            "setup()",
+            "advance()",
+            "cloud_uniform_row()",
+            "shock_arrival_at()"
+          ],
+          "lines": 245
+        },
+        {
+          "class_name": "NuclearTimeline",
+          "path": "godot_project/scripts/nuclear/nuclear_timeline.gd",
+          "responsibility": "경과 시간별 섬광 곡선·화구 냉각·부력 상승·토러스 순환·충격파·먼지·응결운 규모 계산(대류만 배속)",
+          "key_methods": [
+            "evaluate()",
+            "heat_color()"
+          ],
+          "lines": 136
+        },
+        {
+          "class_name": "NuclearWindPerturbation",
+          "path": "godot_project/scripts/nuclear/nuclear_wind_perturbation.gd",
+          "responsibility": "핵폭발 대류가 바람장에 더하는 기둥 상승류·지면 유입풍·갓 고도 유출 벡터",
+          "key_methods": [
+            "bounds()",
+            "vector_at()"
+          ],
+          "lines": 52
+        },
+        {
+          "class_name": "NuclearBlastWaveModel",
+          "path": "godot_project/scripts/nuclear/nuclear_blast_wave_model.gd",
+          "responsibility": "Kinney-Graham 과압과 랭킨-위고니오 전면 속도로 충격파 반경-시간 표 적분",
+          "key_methods": [
+            "overpressure_ratio()",
+            "radius_at()",
+            "arrival_time()",
+            "radius_for_overpressure()"
+          ],
+          "lines": 90
+        },
+        {
+          "class_name": "NuclearYieldCatalog",
+          "path": "godot_project/scripts/nuclear/nuclear_yield_catalog.gd",
+          "responsibility": "10kt·50kt·500kt·1Mt·10Mt 프리셋과 화구 반경·열복사 극대·폭발 고도 환산식",
+          "key_methods": [
+            "get_preset()",
+            "fireball_max_radius()",
+            "thermal_peak_time()"
+          ],
+          "lines": 44
+        },
+        {
+          "class_name": "NuclearEnvironmentProbe",
+          "path": "godot_project/scripts/nuclear/nuclear_environment_probe.gd",
+          "responsibility": "태양·환경광·안개·습도·고도풍·기존 구름 덮개 수집",
+          "key_methods": [
+            "refresh()",
+            "humidity_at()",
+            "wind_at()",
+            "cloud_decks()"
+          ],
+          "lines": 70
+        },
+        {
+          "class_name": "NuclearVisualFactory",
+          "path": "godot_project/scripts/nuclear/nuclear_visual_factory.gd",
+          "responsibility": "통합 볼륨 패스·윌슨 껍질·섬광 광원·공유 잡음 생성, 품질별 표본 수와 거리순 그리기 칸 배정",
+          "key_methods": [
+            "create_mushroom()",
+            "create_surge()",
+            "create_wilson_shell()",
+            "apply_quality()"
+          ],
+          "lines": 112
+        },
+        {
+          "class_name": "NuclearCloudInteraction",
+          "path": "godot_project/scripts/nuclear/nuclear_cloud_interaction.gd",
+          "responsibility": "활성 폭발 상태를 기존 구름층 blast_* 배열로 전달",
+          "key_methods": [
+            "push()"
+          ],
+          "lines": 35
+        },
+        {
+          "class_name": "NuclearScreenEffects",
+          "path": "godot_project/scripts/nuclear/nuclear_screen_effects.gd",
+          "responsibility": "섬광 백화·화구 눈부심·충격파 굴절 고리 합성과 충격파 도달 카메라 진동",
+          "key_methods": [
+            "refresh()"
+          ],
+          "lines": 113
+        },
+        {
+          "class_name": "NuclearBombBody",
+          "path": "godot_project/scripts/nuclear/nuclear_bomb_body.gd",
+          "responsibility": "조준점 상공 투하 폭탄의 낙하와 폭발 고도 도달 신호",
+          "key_methods": [
+            "setup()",
+            "time_to_burst()"
+          ],
+          "lines": 71
+        },
+        {
+          "class_name": "NuclearTargetLocator",
+          "path": "godot_project/scripts/nuclear/nuclear_target_locator.gd",
+          "responsibility": "높이맵 표본 시선-지형 교차, 수면 판정, 화구 가림 확인",
+          "key_methods": [
+            "locate()",
+            "is_water()",
+            "line_clear()"
+          ],
+          "lines": 61
+        },
+        {
+          "class_name": "NuclearStrikeController",
+          "path": "godot_project/scripts/controllers/nuclear_strike_controller.gd",
+          "responsibility": "B 위력 순환, V 투하, K 전체 제거 입력",
+          "key_methods": [
+            "_unhandled_input()"
+          ],
+          "lines": 24
+        },
+        {
+          "class_name": "NuclearStrikeHudView",
+          "path": "godot_project/scripts/views/nuclear_strike_hud_view.gd",
+          "responsibility": "흑백 상태 패널: 선택 위력, 낙하·경과, 충격파 도달",
+          "key_methods": [
+            "show_status()"
+          ],
+          "lines": 39
+        },
+        {
+          "path": "godot_project/shaders/nuclear/nuclear_mushroom_volume.gdshader",
+          "responsibility": "화구·토러스 갓·바람에 굽는 기둥·얼음 모자·응결 고리·지면 먼지 파도·지형 충격파 먼지 띠를 한 패스로 레이마칭(겹침 깜박임 방지)",
+          "lines": 363
+        },
+        {
+          "path": "godot_project/shaders/nuclear/nuclear_wilson_shell.gdshader",
+          "responsibility": "충격파 뒤 감압 응결 반구 껍질",
+          "lines": 34
+        },
+        {
+          "path": "godot_project/shaders/nuclear/nuclear_screen_post.gdshader",
+          "responsibility": "충격파 굴절·화구 눈부심·섬광 백화 화면 합성",
+          "lines": 59
+        },
+        {
+          "path": "godot_project/shaders/nuclear/nuclear_volume_common.gdshaderinc",
+          "responsibility": "볼륨 공통 깊이 복원·상자 교차·발광색·화구 조명",
+          "lines": 91
+        },
+        {
+          "path": "godot_project/shaders/optics/blast_field.gdshaderinc",
+          "responsibility": "기존 구름 밀도장의 폭발 소산 구멍, 충격파 응결 테와 통과 후 증발·재생, 섬광 조명, 버섯구름 앞·뒤 구름 패스 분할 거리",
+          "lines": 156
+        }
+      ]
+    },
+    "wind_field": {
+      "description": "3차원 펄린 노이즈 바람장과 이벤트 국지 교란(벡터 덧셈) 합성, 구름층·핵폭발 공용",
+      "modules": [
+        {
+          "class_name": "WindFieldService",
+          "path": "godot_project/scripts/weather/wind_field_service.gd",
+          "responsibility": "3차원 바람장: 고도별 대기 단면 + 펄린 노이즈 3성분 편차 + 국지 교란 덧셈 합성(작업 스레드), CPU 표본과 구름용 3D 텍스처 제공",
+          "key_methods": [
+            "sample()",
+            "register_perturbation()",
+            "update_perturbation()",
+            "remove_perturbation()",
+            "shader_state()"
+          ],
+          "lines": 210
+        },
+        {
+          "class_name": "WindFieldGrid",
+          "path": "godot_project/scripts/weather/wind_field_grid.gd",
+          "responsibility": "160km×37.5km 바람 격자 색인·삼선형 보간·RGBA 반정밀 3D 텍스처 변환",
+          "key_methods": [
+            "sample()",
+            "to_images()"
+          ],
+          "lines": 67
+        },
+        {
+          "class_name": "WindPerturbation",
+          "path": "godot_project/scripts/weather/wind_perturbation.gd",
+          "responsibility": "바람장 국지 교란 공통 형식(영향 범위, 위치별 덧셈 벡터)",
+          "key_methods": [
+            "bounds()",
+            "vector_at()"
+          ],
+          "lines": 12
+        },
+        {
+          "path": "godot_project/shaders/optics/wind_field.gdshaderinc",
+          "responsibility": "구름 밀도장의 국지 바람 편차 변위(cloud_warp)",
+          "lines": 32
         }
       ]
     }

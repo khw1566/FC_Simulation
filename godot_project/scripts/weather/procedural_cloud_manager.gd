@@ -43,12 +43,25 @@ var _offset_low := Vector2.ZERO
 var _offset_high := Vector2.ZERO
 var _evolve := 0.0
 var _sync_timer := 0.0
+# 3차원 바람장(WeatherManager/WindField). 없으면 대기 상태 모델의 두 고도 바람을 쓴다.
+var _wind_field: Node
+# 핵폭발이 있을 때만 켜는 뒤쪽 구간 구름 패스(버섯구름보다 먼 구름)
+var _behind_layer: MeshInstance3D
+var _behind_material: ShaderMaterial
+var _uniform_names := PackedStringArray()
 
 func _ready() -> void:
 	var built := Factory.create(self)
 	_layer = built.node
 	_material = built.material
+	var behind := Factory.create_behind(self, built)
+	_behind_layer = behind.node
+	_behind_material = behind.material
+	for entry in _material.shader.get_shader_uniform_list():
+		if str(entry.name) != "blast_split_mode":
+			_uniform_names.append(str(entry.name))
 	_weather_manager = get_parent()
+	_wind_field = get_node_or_null("../WindField")
 	if not day_night_service:
 		day_night_service = get_node_or_null("../../DayNightCycleService")
 	_target_wind_low = wind_velocity
@@ -70,6 +83,7 @@ func _process(delta: float) -> void:
 	_shadow = _shadow.lerp(_target_shadow, blend)
 	if _target == Vector4.ZERO and _ratios.length_squared() < 0.000001:
 		_layer.visible = false
+		_behind_layer.visible = false
 		set_process(false)
 		return
 	_layer.visible = true
@@ -91,7 +105,30 @@ func _process(delta: float) -> void:
 	var high_dir := Vector2(_wind_high.x, _wind_high.z)
 	if high_dir.length_squared() > 0.01:
 		_material.set_shader_parameter("cirrus_wind_dir", high_dir.normalized())
+	_apply_wind_field()
 	_apply_composition()
+	_sync_behind_pass()
+
+## 핵폭발이 있으면 구름층을 버섯구름 앞·뒤 두 구간 패스로 나눈다. 뒤쪽 패스에 같은 유니폼을 복사한다.
+func _sync_behind_pass() -> void:
+	var count = _material.get_shader_parameter("blast_count")
+	var split := count != null and int(count) > 0 and _layer.visible
+	_material.set_shader_parameter("blast_split_mode", 2 if split else 0)
+	_behind_layer.visible = split
+	if not split:
+		return
+	for key in _uniform_names:
+		_behind_material.set_shader_parameter(key, _material.get_shader_parameter(key))
+
+## 바람장 격자 텍스처와 층 평균 바람을 전달한다. 밀도장은 그 차이(국지 편차)만큼 구름을 밀어낸다.
+func _apply_wind_field() -> void:
+	if not _wind_field or not _wind_field.has_method("shader_state"):
+		return
+	var state: Dictionary = _wind_field.shader_state()
+	for key in state:
+		_material.set_shader_parameter(key, state[key])
+	_material.set_shader_parameter("wind_layer_low", _wind_low)
+	_material.set_shader_parameter("wind_layer_high", _wind_high)
 
 ## 기상 비율을 유형별 덮임·고도로 변환한다. 비·뇌우일수록 층운 밑면이 낮고 두꺼워진다.
 func _apply_composition() -> void:
@@ -149,7 +186,14 @@ func _sync_environment() -> void:
 		var fog := env.fog_light_color
 		_material.set_shader_parameter("haze_color", Vector3(fog.r, fog.g, fog.b))
 		_material.set_shader_parameter("haze_density", env.fog_density if env.fog_enabled else 0.0)
-	if _weather_manager and "current_weather" in _weather_manager:
+	if _wind_field and _wind_field.has_method("is_field_ready") and _wind_field.is_field_ready():
+		# 구름층 전체 이동은 관측자 부근의 바람장 수평 성분을 따른다(지역에 따라 풍향이 달라진다).
+		var here := _wind_anchor()
+		var low_v: Vector3 = _wind_field.sample(Vector3(here.x, LOW_WIND_ALTITUDE, here.z))
+		var high_v: Vector3 = _wind_field.sample(Vector3(here.x, HIGH_WIND_ALTITUDE, here.z))
+		_target_wind_low = Vector3(low_v.x, 0.0, low_v.z)
+		_target_wind_high = Vector3(high_v.x, 0.0, high_v.z)
+	elif _weather_manager and "current_weather" in _weather_manager:
 		var weather_type := int(_weather_manager.get("current_weather"))
 		var hour: float = SurfaceClimateModelClass.resolve_hour(_weather_manager)
 		var low = AtmosphereStateModelClass.calculate_at_altitude(LOW_WIND_ALTITUDE, 0.0, weather_type, hour)
@@ -170,6 +214,43 @@ func configure_composition(cumulus_ratio: float, strato_ratio: float, cirrus_rat
 	_target_bottom = bottom
 	_target_shadow = shadow
 	_refresh_enabled()
+
+## 핵폭발 상호작용 유니폼(blast_*)을 구름층에 전달한다. 광학 패스는 SHARED 복사로 함께 받는다.
+func set_blast_uniforms(values: Dictionary) -> void:
+	if not _material:
+		return
+	for key in values:
+		_material.set_shader_parameter(key, values[key])
+
+func _wind_anchor() -> Vector3:
+	return player_node.global_position if player_node else Vector3.ZERO
+
+func get_cloud_quality() -> int:
+	return _current_quality
+
+## 고도별 바람(m/s): 저층(1.8km)과 고층(9km) 바람 사이를 보간한다.
+func sample_wind(altitude: float) -> Vector3:
+	if _wind_field and _wind_field.has_method("sample"):
+		var here := _wind_anchor()
+		return _wind_field.sample(Vector3(here.x, altitude, here.z))
+	var k := clampf((altitude - LOW_WIND_ALTITUDE) / (HIGH_WIND_ALTITUDE - LOW_WIND_ALTITUDE), 0.0, 1.0)
+	return _wind_low.lerp(_wind_high, k)
+
+## 현재 보이는 저·중층 구름 덮개: [Vector3(중간 고도, 반두께, 덮임)] (응결 고리 배치용)
+func get_cloud_decks() -> Array:
+	var decks: Array = []
+	if not _material or not _layer or not _layer.visible:
+		return decks
+	var cu := float(_material.get_shader_parameter("cu_coverage"))
+	var st := float(_material.get_shader_parameter("st_coverage"))
+	var alto := float(_material.get_shader_parameter("as_coverage"))
+	if cu > 0.02 or st > 0.02:
+		var lo := 1100.0 if cu >= st else float(_material.get_shader_parameter("st_base"))
+		var hi := 2700.0 if cu >= st else float(_material.get_shader_parameter("st_top"))
+		decks.append(Vector3((lo + hi) * 0.5, (hi - lo) * 0.35, maxf(cu, st)))
+	if alto > 0.02:
+		decks.append(Vector3(4750.0, 400.0, alto))
+	return decks
 
 func set_cloud_quality(level: int) -> void:
 	_current_quality = clampi(level, 0, 4)
@@ -195,3 +276,4 @@ func _refresh_enabled() -> void:
 	set_process(visible)
 	if _layer and not visible:
 		_layer.visible = false
+		_behind_layer.visible = false
