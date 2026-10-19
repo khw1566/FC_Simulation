@@ -19,6 +19,7 @@ var elev_max: float
 var railway_grader: RefCounted
 var road_grader: RefCounted
 var base_resolution := 128
+var road_terrain_edge := 12.0
 const Mesher = preload("res://scripts/terrain/terrain_chunk_mesher.gd")
 const Upload = preload("res://scripts/terrain/terrain_mesh_upload.gd")
 var _upload: RefCounted
@@ -119,6 +120,7 @@ func _start_build(lod: int) -> void:
 	var request := {"image": heightmap_image, "grid_res": base_resolution >> lod, "size": chunk_world_size, "center": chunk_center,
 		"elev_min": elev_min, "elev_max": elev_max, "grader": railway_grader if lod == 0 else null,
 		"road_grader": road_grader if lod == 0 else null,
+		"road_terrain_edge": road_terrain_edge,
 		"upload_pages": true,
 		"collision": lod == 0 and _collision_shape_resource == null}
 	_task_id = WorkerThreadPool.add_task(func(): _result = Mesher.compute(request), false, "지형 청크 LOD")

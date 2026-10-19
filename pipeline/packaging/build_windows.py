@@ -50,6 +50,10 @@ class WindowsPackageBuilder:
         (self.project / 'assets/maps/.gdignore').write_text('', encoding='utf-8')
         print('격리 프로젝트 복사 완료. 임포트 시작.', flush=True)
         self.run_engine(['--editor', '--import'], 'import.log')
+        self.package()
+
+    def package(self, reuse_pck=False, map_check=None):
+        """임포트가 완료된 격리 복사본을 패키징한다."""
         files = []
         for path in self.project.rglob('*'):
             if not path.is_file():
@@ -63,21 +67,28 @@ class WindowsPackageBuilder:
         listing = self.work / 'pack_files.json'
         listing.write_text(json.dumps(sorted(files)), encoding='utf-8')
         pck = self.output / 'FC_Simulation.pck'
-        self.run_engine(['--script', str(ROOT / 'pipeline/packaging/pack_project.gd'),
-                         '--', str(listing), str(pck)], 'pack.log')
+        if not reuse_pck:
+            self.run_engine(['--script', str(ROOT / 'pipeline/packaging/pack_project.gd'),
+                             '--', str(listing), str(pck)], 'pack.log')
         if not pck.exists() or pck.stat().st_size == 0:
             raise RuntimeError('PCK 산출물이 없습니다.')
         shutil.copy2(self.engine, self.output / 'FC_Simulation.exe')
         launcher = '@echo off\r\ncd /d "%~dp0"\r\nstart "" "FC_Simulation.exe" --main-pack "FC_Simulation.pck"\r\n'
         (self.output / '실행.bat').write_bytes(launcher.encode('ascii'))
+        compatibility = launcher.replace('--main-pack', '--rendering-method gl_compatibility --main-pack')
+        (self.output / '호환모드.bat').write_bytes(compatibility.encode('ascii'))
         (self.output / 'README.md').write_text(
             '# FC Simulation Windows 패키지\n'
             '전체 폴더를 함께 보관하고 `실행.bat` 또는 `FC_Simulation.exe`를 실행하세요.\n\n'
             '- Godot 4.3 엔진을 포함하므로 별도 엔진 설치가 필요 없습니다.\n'
             '- 기본 그래픽은 Forward Plus입니다. 호환 모드는 실행 명령에 '
-            '`--rendering-method gl_compatibility`를 추가하세요.\n'
+            '`--rendering-method gl_compatibility`를 추가하거나 `호환모드.bat`를 실행하세요.\n'
+            '- 초기 로딩 속도는 지도 선택 화면에서 경량 품질을 선택해 확인하세요. '
+            '저장된 고품질 설정은 자동 변경하지 않습니다.\n'
             '- 원본 이미지·GLB·JSON과 임포트 결과를 함께 PCK에 넣어 런타임 직접 읽기를 보존했습니다.\n'
-            '- 지도 선택 메뉴까지만 경량 확인했으며 전체 지도 로딩과 장시간 실행은 미검증입니다.\n',
+            + ('- 울산 80km 맵의 경량 품질 초기 로딩을 실제 렌더러로 확인했습니다. '
+             '전체 지역 이동과 장시간 실행은 미검증입니다.\n' if map_check else
+             '- 지도 선택 메뉴까지만 경량 확인했으며 전체 지도 로딩과 장시간 실행은 미검증입니다.\n'),
             encoding='utf-8')
         # 지도 선택 메뉴에서 종료한다. 전체 지도는 로딩하지 않는다.
         with (self.work / 'startup.log').open('w', encoding='utf-8') as stream:
@@ -90,7 +101,7 @@ class WindowsPackageBuilder:
         manifest = {'version': self.version, 'created': datetime.now().isoformat(),
                     'engine': 'Godot 4.3 stable Windows x86_64',
                     'packaged_files': len(files), 'startup_menu_check': 'passed',
-                    'full_map_check': 'not_run', 'files': {}}
+                    'full_map_check': 'not_run', 'map_loading_check': map_check or 'not_run', 'files': {}}
         for path in self.output.iterdir():
             if path.is_file():
                 digest = hashlib.file_digest(path.open('rb'), 'sha256').hexdigest()
@@ -107,8 +118,9 @@ class WindowsPackageBuilder:
         report = {'folder': str(self.output), 'archive': str(archive),
                   'archive_bytes': archive.stat().st_size,
                   'archive_sha256': hashlib.file_digest(archive.open('rb'), 'sha256').hexdigest(),
-                  'packaged_files': len(files), 'startup_menu_check': 'passed'}
-        (ROOT / 'results' / '261005_WindowsPackaging.json').write_text(
+                  'packaged_files': len(files), 'startup_menu_check': 'passed',
+                  'map_loading_check': map_check or 'not_run'}
+        (ROOT / 'results' / f'{self.version}_WindowsPackaging.json').write_text(
             json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
         print(json.dumps(report, ensure_ascii=False), flush=True)
 

@@ -9,7 +9,8 @@ func _initialize() -> void:
 		return
 	var files = JSON.parse_string(FileAccess.get_file_as_string(arguments[0]))
 	var packer := PCKPacker.new()
-	if packer.pck_start(arguments[1]) != OK:
+	# Godot 4.3의 정렬 계산은 2GB 경계에서 int 범위를 넘는다.
+	if packer.pck_start(arguments[1], 1) != OK:
 		quit(1)
 		return
 	for relative in files:

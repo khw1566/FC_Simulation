@@ -1,0 +1,27 @@
+{
+  "folder": "C:\\Users\\work\\Desktop\\FC_Simulation\\build_artifacts\\releases\\FC_Simulation_20261012_windows_x64_v2",
+  "archive": "C:\\Users\\work\\Desktop\\FC_Simulation\\build_artifacts\\releases\\FC_Simulation_20261012_windows_x64_v2.zip",
+  "archive_bytes": 929190720,
+  "archive_sha256": "cf9b7f9a0800b94b82554a91428eb3ac5d4bfcfd642a77ab2d16c87a25e791b9",
+  "packaged_files": 79450,
+  "startup_menu_check": "passed",
+  "map_loading_check": {
+    "map_id": "ulsan_metro_80km",
+    "quality": "light",
+    "renderer": "Forward Plus Vulkan",
+    "result": "passed",
+    "timings": {
+      "images_ms": 2174,
+      "quality": "light",
+      "scene_read_ms": 618,
+      "terrain": {
+        "chunks_ms": 17014,
+        "height_prepare_ms": 890
+      },
+      "total_ms": 35452
+    },
+    "compatibility_initial_ms": 31447,
+    "full_region_traversal": "not_run",
+    "shutdown_warning": "ObjectDB instances leaked at exit"
+  }
+}

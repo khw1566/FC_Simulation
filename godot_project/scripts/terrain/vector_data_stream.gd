@@ -3,6 +3,7 @@ class_name VectorDataStream
 
 const BatchAssembler = preload("res://scripts/terrain/building_batch_assembler.gd")
 const RoadBatchBuilder = preload("res://scripts/terrain/road_batch_builder.gd")
+const CacheSource = preload("res://scripts/terrain/cache_source_validator.gd")
 
 var host: Node3D
 var folder := ""
@@ -62,7 +63,7 @@ func run(manager: Node3D, source: String) -> void:
 	if not index is Dictionary or source_file == null:
 		error = "지도 분할 인덱스를 읽을 수 없습니다."
 		return
-	if int(index.get("source_size", -1)) != source_file.get_length() or int(index.get("source_modified", -1)) != FileAccess.get_modified_time(source):
+	if not CacheSource.matches(source, index):
 		error = "지도 자료가 변경되어 분할 캐시 재생성이 필요합니다."
 		return
 	source_file.close()

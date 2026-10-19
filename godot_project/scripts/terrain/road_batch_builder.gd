@@ -8,6 +8,7 @@ const RoadMeshBuilder = preload("res://scripts/terrain/road_mesh_builder.gd")
 const RoadClassifier = preload("res://scripts/terrain/road_segment_classifier.gd")
 const VisibilityPolicy = preload("res://scripts/terrain/road_visibility_policy.gd")
 const FrameBudget = preload("res://scripts/terrain/stream_frame_budget.gd")
+const Formation = preload("res://scripts/terrain/road_formation_grader.gd")
 const WALKING_TYPES := ["footway", "path", "steps", "pedestrian", "bridleway", "corridor"]
 const SURFACE_SPLIT := 1500
 # 벡터 스트림의 이탈 해제 여유 거리와 같은 값
@@ -34,7 +35,9 @@ static func attach_geometry_keys(roads: Array) -> void:
 		road["_geometry_key"] = RoadClassifier.geometry_key(road)
 
 ## 도로 목록의 메시 배열을 계산한다. sample_ground(x, z, fallback), sample_water(x, z)는 스레드 안전해야 한다.
-static func compute(roads: Array, sample_ground: Callable, sample_water: Callable, terrain_step: Vector2, terrain_origin: Vector2, formed_ground: bool = false) -> Dictionary:
+## sample_formed는 노반 도로가 놓일 화면 지형 표면 고도이며, 없으면 sample_ground를 쓴다.
+## 노반 대상 폭이 아닌 보행로·소로는 지형 보정에서 빠지므로 셰이더가 지형 메시에 밀착시킨다.
+static func compute(roads: Array, sample_ground: Callable, sample_water: Callable, terrain_step: Vector2, terrain_origin: Vector2, formed_ground: bool = false, sample_formed: Callable = Callable()) -> Dictionary:
 	var result := {"paved": [], "walking": [], "unpaved": [], "tunnel": [], "bridge": [], "bridge_shapes": [], "tunnel_segments": []}
 	result["surface_groups"] = {}
 	result["formed_ground"] = formed_ground
@@ -80,13 +83,20 @@ static func compute(roads: Array, sample_ground: Callable, sample_water: Callabl
 				var key := "walking" if road_type in WALKING_TYPES else ("unpaved" if loose or (road_type == "track" and not sealed) else "paved")
 				var clearance: float = 0.24 if key == "walking" else (0.32 if key == "unpaved" else 0.85)
 				var tier_name := VisibilityPolicy.tier(r)
+				var formed := formed_ground and Formation.forms_ground(width)
+				var sampler := sample_ground
+				if formed and sample_formed.is_valid():
+					sampler = sample_formed
+					for index in section.size():
+						section_ground[index] = float(sampler.call(section[index].x, section[index].z, section_ground[index]))
 				for piece in VisibilityPolicy.pieces(section, section_ground):
-					var group := "%s:%s:%d:%d" % [key,tier_name,piece.cell.x,piece.cell.y]
+					# 노반·지형 밀착 도로는 시야 경계 처리가 달라 같은 메시에 섞지 않는다.
+					var group := "%s:%s:%d:%d:%d" % [key,tier_name,piece.cell.x,piece.cell.y,int(formed)]
 					if not surfaces.has(group):
 						surfaces[group] = _begin()
 						counts[group] = 0
-						result.surface_groups[group] = {"kind":key,"tier":tier_name,"arrays":[]}
-					RoadMeshBuilder.build_surface_road(surfaces[group], piece.points, piece.heights, width, sample_ground, terrain_step, terrain_origin, clearance, formed_ground, piece)
+						result.surface_groups[group] = {"kind":key,"tier":tier_name,"formed":formed,"arrays":[]}
+					RoadMeshBuilder.build_surface_road(surfaces[group], piece.points, piece.heights, width, sampler, terrain_step, terrain_origin, clearance, formed, piece)
 					counts[group] += 1
 					if counts[group] >= SURFACE_SPLIT:
 						_flush(surfaces[group], counts[group], result.surface_groups[group].arrays)
@@ -175,7 +185,7 @@ static func _surface(host: Node3D, container: Node3D, arrays: Array, material: M
 	instance.visibility_range_end = VisibilityPolicy.distance(info.tier,host.max_view_distance)
 	instance.visibility_range_end_margin = 200.0
 	instance.set_meta("road_visibility_tier",info.tier)
-	instance.set_meta("formed_ground",result.get("formed_ground",false))
+	instance.set_meta("formed_ground",info.get("formed",result.get("formed_ground",false)))
 	host._configure_road_bounds(instance)
 
 static func _instance(container: Node3D, arrays: Array, material: Material, node_name: String) -> MeshInstance3D:

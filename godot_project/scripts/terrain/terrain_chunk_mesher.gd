@@ -20,6 +20,8 @@ static func compute(request: Dictionary) -> Dictionary:
 	var img_h := image.get_height()
 	var railway_cells := {}
 	var road_cells := {}
+	# 노반 칸 균일 분할 수. 품질별 목표 변 길이로 정하며 모든 청크가 같은 값을 써야 경계가 맞는다.
+	var road_split := maxi(1, ceili(step / maxf(1.0, float(request.get("road_terrain_edge", 12.0)))))
 	if road_grader:
 		road_cells = road_grader.cells(Vector2(center.x-half_size,center.z-half_size),size,grid_res)
 		var field := preload("res://scripts/terrain/road_formation_field.gd").new()
@@ -49,8 +51,7 @@ static func compute(request: Dictionary) -> Dictionary:
 			var segments: Array = railway_cells.get(Vector2i(x, y), [])
 			var roads: Array = road_cells.get(Vector2i(x,y), [])
 			if not roads.is_empty():
-				Earthwork.add_triangle(surface,vertices[i0],vertices[i1],vertices[i2],center,roads,road_grader,grader,segments,size)
-				Earthwork.add_triangle(surface,vertices[i1],vertices[i3],vertices[i2],center,roads,road_grader,grader,segments,size)
+				Earthwork.add_cell(surface,[vertices[i0],vertices[i1],vertices[i2],vertices[i3]],center,road_grader,road_split,grader,segments,size)
 				continue
 			if not segments.is_empty():
 				grader.add_triangle(surface, vertices[i0], vertices[i1], vertices[i2], center, segments, size)

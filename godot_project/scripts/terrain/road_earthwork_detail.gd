@@ -2,6 +2,8 @@ extends RefCounted
 class_name RoadEarthworkDetail
 
 ## 밀집 노반 높이 오차를 검사해 평탄한 삼각형의 균일 세분화를 생략한다.
+## 2026-10-19부터 지형 메시 생성은 road_earthwork_mesher.gd의 균일 칸 세분화를 쓰며 이 모듈을 호출하지 않는다.
+## 과거 스트리밍 검증 도구(pipeline/processors/streaming_performance/state_check.gd)의 참조용으로만 남긴다.
 const MAX_EDGE := 16.0
 const MIN_EDGE := 2.0
 const HEIGHT_ERROR := 0.12

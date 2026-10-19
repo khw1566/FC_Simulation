@@ -1,108 +1,53 @@
 extends RefCounted
 class_name RoadEarthworkMesher
 
-## 원래 지형 삼각형을 노반 경계에서 절단한다. 균일 고밀도 격자 없이 좁은 수평 단면을 만든다.
-const PIECE_LIMIT := 4096
-const Detail = preload("res://scripts/terrain/road_earthwork_detail.gd")
+## 노반이 닿는 지형 격자 칸을 품질별 고정 분할 수로 균일 세분화하고 정점 고도만 노반으로 보정한다.
+## 모든 노반 칸과 이웃 청크가 같은 분할 수를 쓰므로 공유 변의 정점이 일치해 틈·T자 균열이 생기지 않는다.
+## 도로 단면 절단·적응 세분화를 하지 않아 밀집 도심에서도 칸당 비용이 일정하다.
+## 보정량이 허용치보다 작은 칸은 원래 두 삼각형을 그대로 출력한다.
+const FLAT_TOLERANCE := 0.05
 
-static func add_triangle(surface: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, center: Vector3,
-	candidates: Array, road_grader: RefCounted, rail_grader: RefCounted, rail_segments: Array, size: float, dense: bool = false) -> void:
-	var lower := Vector2(a.x,a.z).min(Vector2(b.x,b.z)).min(Vector2(c.x,c.z))+Vector2(center.x,center.z)
-	var upper := Vector2(a.x,a.z).max(Vector2(b.x,b.z)).max(Vector2(c.x,c.z))+Vector2(center.x,center.z)
-	var nearby: Array = []
-	for s in candidates:
-		if s.lower.x<=upper.x and s.upper.x>=lower.x and s.lower.y<=upper.y and s.upper.y>=lower.y:
-			nearby.append(s)
-	# 밀집 구간은 작은 국소 문제로 나눠 여러 도로의 절단선 조합이 증가하지 않게 한다.
-	var edge := maxf(Vector2(a.x-b.x,a.z-b.z).length(),maxf(Vector2(a.x-c.x,a.z-c.z).length(),Vector2(b.x-c.x,b.z-c.z).length()))
-	dense = dense or nearby.size()>12
-	if dense and not nearby.is_empty() and Detail.needs_split(a+center,b+center,c+center,road_grader,nearby,edge):
-		var ab := (a+b)*.5
-		var bc := (b+c)*.5
-		var ca := (c+a)*.5
-		for triangle in [[a,ab,ca],[ab,b,bc],[ca,bc,c],[ab,bc,ca]]:
-			add_triangle(surface,triangle[0],triangle[1],triangle[2],center,nearby,road_grader,rail_grader,rail_segments,size,true)
+## corners: 지형 격자 칸의 (x,y), (x+1,y), (x,y+1), (x+1,y+1) 정점(청크 국소 좌표).
+static func add_cell(surface: SurfaceTool, corners: Array, center: Vector3, field: RefCounted, split: int,
+	rail_grader: RefCounted, rail_segments: Array, size: float) -> void:
+	var v0: Vector3 = corners[0]
+	var v1: Vector3 = corners[1]
+	var v2: Vector3 = corners[2]
+	var v3: Vector3 = corners[3]
+	var n := maxi(1, split)
+	var points := PackedVector3Array()
+	points.resize((n + 1) * (n + 1))
+	var changed := false
+	for j in range(n + 1):
+		var fz := float(j) / n
+		for i in range(n + 1):
+			var fx := float(i) / n
+			# 원래 칸의 (x+1,y)-(x,y+1) 대각선 삼각형 보간을 따라 세분화 정점의 원지형 고도를 정한다.
+			var y := v0.y + fx * (v1.y - v0.y) + fz * (v2.y - v0.y) if fx + fz <= 1.0 else v3.y + (1.0 - fx) * (v2.y - v3.y) + (1.0 - fz) * (v1.y - v3.y)
+			var p := Vector3(lerpf(v0.x, v1.x, fx), y, lerpf(v0.z, v2.z, fz))
+			var corrected: float = field.corrected_height(p + center)
+			changed = changed or absf(corrected - y) > FLAT_TOLERANCE
+			p.y = corrected
+			points[j * (n + 1) + i] = p
+	if not changed:
+		_emit(surface, v0, v1, v2, center, rail_grader, rail_segments, size)
+		_emit(surface, v1, v3, v2, center, rail_grader, rail_segments, size)
 		return
-	candidates = nearby
-	var pieces: Array = [[a+center,b+center,c+center]]
-	# 밀집 구역은 높이 오차 표본에 따라 2~16m로 세분화하여 교차 절단 조합을 피한다.
-	for s in ([] if dense else candidates):
-		var from := Vector2(s.a.x,s.a.z)
-		var to := Vector2(s.b.x,s.b.z)
-		var along := (to-from).normalized()
-		var across := Vector2(-along.y,along.x)
-		var width: float = s.half
-		var outer: float = s.half+s.blend
-		var limits := [[from+across*outer,-across], [from-across*outer,across],
-			[from-along*outer,along], [to+along*outer,-along]]
-		var core := [[from+across*width,across], [from-across*width,across], [from,along], [to,along]]
-		var updated: Array = []
-		for polygon in pieces:
-			var lo := Vector2(INF,INF)
-			var hi := Vector2(-INF,-INF)
-			for p: Vector3 in polygon:
-				lo = lo.min(Vector2(p.x,p.z))
-				hi = hi.max(Vector2(p.x,p.z))
-			if hi.x < s.lower.x or lo.x > s.upper.x or hi.y < s.lower.y or lo.y > s.upper.y or pieces.size() >= PIECE_LIMIT:
-				updated.append(polygon)
-				continue
-			# 노반 사각형 밖은 더 나누지 않는다. 절단선이 다른 도로까지 뻗는 조합 폭증을 막는다.
-			var inside: Array = polygon
-			for plane in limits:
-				if inside.size()<3:
-					break
-				var halves := _split(inside,plane[0],plane[1])
-				if halves[1].size()>=3:
-					updated.append(halves[1])
-				inside = halves[0]
-			if inside.size()<3:
-				continue
-			var divided: Array = [inside]
-			for plane in core:
-				var next: Array = []
-				for part in divided:
-					for side in _split(part,plane[0],plane[1]):
-						if side.size() >= 3:
-							next.append(side)
-				divided = next
-			updated.append_array(divided)
-		pieces = updated
-	for polygon in pieces:
-		for i in range(1,polygon.size()-1):
-			var vertices: Array[Vector3] = []
-			for original: Vector3 in [polygon[0],polygon[i],polygon[i+1]]:
-				var p := original
-				p.y = road_grader.corrected_height(p,candidates)
-				vertices.append(p-center)
-			if (vertices[1]-vertices[0]).cross(vertices[2]-vertices[0]).length_squared() < .000001:
-				continue
-			if rail_grader and not rail_segments.is_empty():
-				rail_grader.add_triangle(surface,vertices[0],vertices[1],vertices[2],center,rail_segments,size)
-			else:
-				for p in vertices:
-					surface.set_uv(Vector2(p.x,p.z)/size+Vector2(.5,.5))
-					surface.add_vertex(p)
+	# 세분화 사각형도 같은 방향 대각선을 써서 원래 칸의 대각선과 경계가 일치한다.
+	for j in range(n):
+		for i in range(n):
+			var q0 := points[j * (n + 1) + i]
+			var q1 := points[j * (n + 1) + i + 1]
+			var q2 := points[(j + 1) * (n + 1) + i]
+			var q3 := points[(j + 1) * (n + 1) + i + 1]
+			_emit(surface, q0, q1, q2, center, rail_grader, rail_segments, size)
+			_emit(surface, q1, q3, q2, center, rail_grader, rail_segments, size)
 
-static func _split(polygon: Array, origin: Vector2, normal: Vector2) -> Array:
-	var positive: Array = []
-	var negative: Array = []
-	var previous: Vector3 = polygon[-1]
-	var pd := (Vector2(previous.x,previous.z)-origin).dot(normal)
-	var all_on_plane := true
-	for current: Vector3 in polygon:
-		var d := (Vector2(current.x,current.z)-origin).dot(normal)
-		all_on_plane = all_on_plane and absf(d)<=.00001
-		if (d > .00001 and pd < -.00001) or (d < -.00001 and pd > .00001):
-			var cut := previous.lerp(current,pd/(pd-d))
-			positive.append(cut)
-			negative.append(cut)
-		if d >= -.00001:
-			positive.append(current)
-		if d <= .00001:
-			negative.append(current)
-		previous = current
-		pd = d
-	# 경계 위의 다각형을 양쪽에 중복 출력하지 않는다.
-	if all_on_plane:
-		return [polygon, []]
-	return [positive,negative]
+static func _emit(surface: SurfaceTool, a: Vector3, b: Vector3, c: Vector3, center: Vector3,
+	rail_grader: RefCounted, rail_segments: Array, size: float) -> void:
+	if rail_grader and not rail_segments.is_empty():
+		rail_grader.add_triangle(surface, a, b, c, center, rail_segments, size)
+		return
+	for p in [a, b, c]:
+		surface.set_uv(Vector2(p.x, p.z) / size + Vector2(0.5, 0.5))
+		surface.add_vertex(p)

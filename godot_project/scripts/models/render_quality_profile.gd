@@ -1,13 +1,15 @@
 extends RefCounted
 class_name RenderQualityProfile
+const CacheSource = preload("res://scripts/terrain/cache_source_validator.gd")
 
 ## 지도 로딩과 표시가 공유하는 품질 정책. 지리적 범위는 변경하지 않는다.
 const IDS := ["light", "standard", "high"]
 const PROFILES := {
-	"light": {"initial_radius": 2000.0, "view_distance": 5000.0, "prefetch": 1500.0, "minor_distance": 2000.0, "base_resolution": 64, "height_width": 2816, "rail_edge": 40.0, "rail_detail": 1500.0},
-	"standard": {"initial_radius": 3500.0, "view_distance": 7000.0, "prefetch": 2000.0, "minor_distance": 3000.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 20.0, "rail_detail": 2000.0},
-	"high": {"initial_radius": 5000.0, "view_distance": 9000.0, "prefetch": 2500.0, "minor_distance": 4500.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 10.0, "rail_detail": 3500.0}
+	"light": {"initial_radius": 2000.0, "view_distance": 5000.0, "prefetch": 1500.0, "minor_distance": 2000.0, "base_resolution": 64, "height_width": 2816, "rail_edge": 40.0, "rail_detail": 1500.0, "road_terrain_edge": 24.0},
+	"standard": {"initial_radius": 3500.0, "view_distance": 7000.0, "prefetch": 2000.0, "minor_distance": 3000.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 20.0, "rail_detail": 2000.0, "road_terrain_edge": 12.0},
+	"high": {"initial_radius": 5000.0, "view_distance": 9000.0, "prefetch": 2500.0, "minor_distance": 4500.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 10.0, "rail_detail": 3500.0, "road_terrain_edge": 8.0}
 }
+## road_terrain_edge: 노반 지형 칸 균일 세분화의 목표 변 길이(m). 작을수록 도로 단면이 정밀하고 첫 메시 생성이 느려진다.
 
 static func normalize(value: String) -> String:
 	return value if value in IDS else "light"
@@ -40,7 +42,7 @@ static func heightmap_path(config) -> String:
 		if record.get("type", "") != "terrain_quality_heightmap":
 			continue
 		var meta: Dictionary = record.get("metadata", {})
-		if meta.get("source_path", "") != path or int(meta.get("source_modified", -1)) != FileAccess.get_modified_time(path):
+		if meta.get("source_path", "") != path or not CacheSource.matches(path, meta):
 			continue
 		var file := FileAccess.open(path, FileAccess.READ)
 		if file and file.get_length() == int(meta.get("source_size", -1)) and FileAccess.file_exists(record.file_path):

@@ -21,6 +21,7 @@ var _road_lod_texture: ImageTexture
 var _coastal_corrected: bool = false
 var _railway_grader: RefCounted
 var _road_grader := preload("res://scripts/terrain/road_formation_grader.gd").new()
+var _surface_model: RefCounted
 var _sea_mask_path: String = ""
 var _lake_mask_path: String = ""
 
@@ -265,6 +266,11 @@ func _load_heightmap() -> void:
 		if river_selection and river_selection.selected_map:
 			_river_bed_applied = preload("res://scripts/water/river_bed_grade.gd").apply(
 				_full_heightmap_image, str(river_selection.selected_map.id), min_elevation, max_elevation, terrain_material as ShaderMaterial)
+		# 모든 높이 보정이 끝난 높이맵의 LOD0 메시 표면에 도로 노반 중심 고도를 맞춘다.
+		_surface_model = preload("res://scripts/terrain/terrain_surface_model.gd").new(_full_heightmap_image, terrain_world_size,
+			Vector2i(grid_chunks_x, grid_chunks_y), base_resolution, min_elevation, max_elevation)
+		if _road_grader.enabled:
+			_road_grader.bind_surface(_surface_model)
 		if terrain_material is ShaderMaterial and _full_watermask_image != null:
 			_height_texture = ImageTexture.create_from_image(_full_heightmap_image)
 			terrain_material.set_shader_parameter("coast_height_texture", _height_texture)
@@ -311,6 +317,7 @@ func _build_all_chunks() -> void:
 			chunk_node.road_grader = _road_grader if _road_grader.enabled else null
 			chunk_node.railway_grader = _railway_grader
 			chunk_node.base_resolution = base_resolution
+			chunk_node.road_terrain_edge = float(Quality.current().get("road_terrain_edge", 12.0))
 			add_child(chunk_node)
 			
 			active_chunks[coord] = chunk_node
@@ -417,6 +424,14 @@ func _sync_road_lods() -> void:
 ## 특정 월드 좌표(world_x, world_z)에서의 지형 표고(Y)를 높이맵 이미지로부터 바이리니어 보간 샘플링
 func get_terrain_elevation(world_x: float, world_z: float) -> float:
 	var height := CoastlineWaterCarver.sample_elevation_bilinear(_full_heightmap_image, world_x, world_z, terrain_world_size, min_elevation, max_elevation)
+	height = _road_grader.corrected_height(Vector3(world_x,height,world_z))
+	return _railway_grader.corrected_height(Vector3(world_x,height,world_z)) if _railway_grader else height
+
+## 노반 도로 메시용: 화면 LOD0 지형 메시 표면에 노반·철도 보정을 더한 고도. 작업 스레드에서 호출된다.
+func get_formed_road_elevation(world_x: float, world_z: float) -> float:
+	if _surface_model == null:
+		return get_terrain_elevation(world_x, world_z)
+	var height: float = _surface_model.height(world_x, world_z)
 	height = _road_grader.corrected_height(Vector3(world_x,height,world_z))
 	return _railway_grader.corrected_height(Vector3(world_x,height,world_z)) if _railway_grader else height
 

@@ -1,0 +1,16 @@
+{
+  "modules": {
+    "cache_source_validator": {
+      "path": "cache_source_validator.gd",
+      "purpose": "디스크 및 PCK 내부 원본과 파생 캐시의 일치 여부 검증"
+    },
+    "terrain_surface_model": {
+      "path": "terrain_surface_model.gd",
+      "purpose": "화면 LOD0 지형 메시와 같은 격자 보간으로 표면 고도 계산(도로 노반 중심 고도 기준)"
+    },
+    "road_earthwork_mesher": {
+      "path": "road_earthwork_mesher.gd",
+      "purpose": "노반 지형 칸 품질별 균일 세분화와 정점 고도 보정(틈 없는 경계)"
+    }
+  }
+}

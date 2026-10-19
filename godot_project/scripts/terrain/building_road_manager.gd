@@ -343,6 +343,15 @@ func threaded_ground_sampler() -> Callable:
 		var elevation: float = terrain.get_terrain_elevation(x, z)
 		return elevation if elevation > -90.0 else fallback
 
+## 작업 스레드용 노반 도로 고도 샘플러. 화면 LOD0 지형 메시 표면과 같은 노반 고도를 돌려준다.
+func threaded_formed_road_sampler() -> Callable:
+	var terrain := terrain_manager
+	if terrain == null or not terrain.has_method("get_formed_road_elevation"):
+		return Callable()
+	return func(x: float, z: float, fallback: float) -> float:
+		var elevation: float = terrain.get_formed_road_elevation(x, z)
+		return elevation if elevation > -90.0 else fallback
+
 ## 작업 스레드용 수계 마스크 샘플러. 장면 트리를 조회하지 않는다.
 func threaded_water_sampler() -> Callable:
 	var terrain := terrain_manager
@@ -388,16 +397,17 @@ func _render_roads_and_tunnels_batched(roads: Array, threaded: bool = false, bat
 	var ground := threaded_ground_sampler()
 	var water := threaded_water_sampler()
 	var formed_ground: bool = terrain_manager != null and terrain_manager._road_grader.enabled
+	var formed := threaded_formed_road_sampler()
 	var result: Dictionary
 	if threaded:
 		var holder := [null]
-		var task := WorkerThreadPool.add_task(func(): holder[0] = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin, formed_ground), false, "도로 배치 준비")
+		var task := WorkerThreadPool.add_task(func(): holder[0] = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin, formed_ground, formed), false, "도로 배치 준비")
 		while not WorkerThreadPool.is_task_completed(task):
 			await get_tree().process_frame
 		WorkerThreadPool.wait_for_task_completion(task)
 		result = holder[0]
 	else:
-		result = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin, formed_ground)
+		result = RoadBatchBuilder.compute(accepted, ground, water, terrain_step, terrain_origin, formed_ground, formed)
 	if not is_inside_tree():
 		return record
 	for segment in result.tunnel_segments:

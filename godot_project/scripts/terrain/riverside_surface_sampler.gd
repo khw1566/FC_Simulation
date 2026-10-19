@@ -26,6 +26,9 @@ func height(world_x: float, world_z: float) -> float:
 	var d: float = chunk._sample_bilinear((cell.x + 1) / resolution, (cell.y + 1) / resolution, w, h)
 	var value: float = a + f.x * (b - a) + f.y * (c - a) if f.x + f.y <= 1.0 else d + (1.0 - f.x) * (c - d) + (1.0 - f.y) * (b - d)
 	var surface: float = chunk.elev_min + value * (chunk.elev_max - chunk.elev_min)
+	# 넓은 도로의 노반 어깨가 둔치까지 닿으면 지형 메시도 보정되므로 같은 보정을 따른다.
+	if chunk.road_grader:
+		surface = chunk.road_grader.corrected_height(Vector3(world_x, surface, world_z))
 	if chunk.railway_grader:
 		surface = chunk.railway_grader.corrected_height(Vector3(world_x, surface, world_z))
 	return surface

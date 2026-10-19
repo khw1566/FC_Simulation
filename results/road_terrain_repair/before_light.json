@@ -1,0 +1,128 @@
+{
+  "chunks": [
+    {
+      "coord": [
+        4,
+        4
+      ],
+      "dev_max_m": 42.5106964111328,
+      "dev_over_3m": 4659,
+      "dev_p99_m": 21.7222633361816,
+      "ms": 7449,
+      "open_interior_edges": 246029,
+      "triangles": 421203,
+      "vertices": 289282
+    },
+    {
+      "coord": [
+        5,
+        4
+      ],
+      "dev_max_m": 45.7914199829102,
+      "dev_over_3m": 5360,
+      "dev_p99_m": 23.5523281097412,
+      "ms": 10081,
+      "open_interior_edges": 378198,
+      "triangles": 553502,
+      "vertices": 400790
+    },
+    {
+      "coord": [
+        6,
+        4
+      ],
+      "dev_max_m": 24.2609062194824,
+      "dev_over_3m": 2610,
+      "dev_p99_m": 12.4451665878296,
+      "ms": 17046,
+      "open_interior_edges": 372408,
+      "triangles": 956261,
+      "vertices": 586406
+    },
+    {
+      "coord": [
+        4,
+        5
+      ],
+      "dev_max_m": 32.8503150939941,
+      "dev_over_3m": 4740,
+      "dev_p99_m": 22.6988773345947,
+      "ms": 8674,
+      "open_interior_edges": 272414,
+      "triangles": 467129,
+      "vertices": 323535
+    },
+    {
+      "coord": [
+        5,
+        5
+      ],
+      "dev_max_m": 40.2855072021484,
+      "dev_over_3m": 3855,
+      "dev_p99_m": 16.6508445739746,
+      "ms": 16672,
+      "open_interior_edges": 381645,
+      "triangles": 934244,
+      "vertices": 583415
+    },
+    {
+      "coord": [
+        6,
+        5
+      ],
+      "dev_max_m": 22.8263034820557,
+      "dev_over_3m": 1492,
+      "dev_p99_m": 8.02734088897705,
+      "ms": 19067,
+      "open_interior_edges": 388325,
+      "triangles": 1122497,
+      "vertices": 678443
+    },
+    {
+      "coord": [
+        4,
+        6
+      ],
+      "dev_max_m": 38.5016937255859,
+      "dev_over_3m": 4243,
+      "dev_p99_m": 19.0879573822021,
+      "ms": 8323,
+      "open_interior_edges": 280722,
+      "triangles": 449970,
+      "vertices": 315359
+    },
+    {
+      "coord": [
+        5,
+        6
+      ],
+      "dev_max_m": 33.1262283325195,
+      "dev_over_3m": 4683,
+      "dev_p99_m": 17.4067192077637,
+      "ms": 7538,
+      "open_interior_edges": 224784,
+      "triangles": 394502,
+      "vertices": 272779
+    },
+    {
+      "coord": [
+        6,
+        6
+      ],
+      "dev_max_m": 20.6719818115234,
+      "dev_over_3m": 2013,
+      "dev_p99_m": 9.69333744049072,
+      "ms": 9983,
+      "open_interior_edges": 307518,
+      "triangles": 548554,
+      "vertices": 379427
+    }
+  ],
+  "detail": 16,
+  "image_ms": 748,
+  "res": 64,
+  "split": 2,
+  "threads": 12,
+  "triangles": 5847862,
+  "wall_ms": 36736
+}

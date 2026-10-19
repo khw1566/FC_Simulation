@@ -1,0 +1,159 @@
+{
+  "chunks": [
+    {
+      "coord": [
+        4,
+        4
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 5.22363090515137,
+      "dev_over_3m": 41,
+      "dev_p99_m": 1.77581644058228,
+      "ms": 1235,
+      "open_interior_edges": 18615,
+      "triangles": 231218,
+      "vertices": 123859
+    },
+    {
+      "coord": [
+        5,
+        4
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 6.96761322021484,
+      "dev_over_3m": 96,
+      "dev_p99_m": 2.19543838500977,
+      "ms": 1371,
+      "open_interior_edges": 24250,
+      "triangles": 269396,
+      "vertices": 145184
+    },
+    {
+      "coord": [
+        6,
+        4
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 4.68378829956055,
+      "dev_over_3m": 6,
+      "dev_p99_m": 1.12138175964355,
+      "ms": 3783,
+      "open_interior_edges": 46616,
+      "triangles": 667430,
+      "vertices": 353085
+    },
+    {
+      "coord": [
+        4,
+        5
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 9.97057151794434,
+      "dev_over_3m": 114,
+      "dev_p99_m": 2.25148749351501,
+      "ms": 1772,
+      "open_interior_edges": 26019,
+      "triangles": 326600,
+      "vertices": 174492
+    },
+    {
+      "coord": [
+        5,
+        5
+      ],
+      "crack": {
+        "edges_checked": 41528,
+        "gaps_over_0_1m": 0,
+        "max_gap_m": 0.0466232299804688,
+        "open_edges": 41528,
+        "t_vertices": 30961
+      },
+      "dev_max_m": 6.84023666381836,
+      "dev_over_3m": 44,
+      "dev_p99_m": 1.71965718269348,
+      "ms": 3501,
+      "open_interior_edges": 40085,
+      "triangles": 647900,
+      "vertices": 340851
+    },
+    {
+      "coord": [
+        6,
+        5
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 3.28743410110474,
+      "dev_over_3m": 1,
+      "dev_p99_m": 0.862450778484344,
+      "ms": 4712,
+      "open_interior_edges": 51180,
+      "triangles": 812330,
+      "vertices": 427781
+    },
+    {
+      "coord": [
+        4,
+        6
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 9.46654510498047,
+      "dev_over_3m": 190,
+      "dev_p99_m": 2.78695917129517,
+      "ms": 1202,
+      "open_interior_edges": 21898,
+      "triangles": 248606,
+      "vertices": 133693
+    },
+    {
+      "coord": [
+        5,
+        6
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 7.65673160552979,
+      "dev_over_3m": 200,
+      "dev_p99_m": 2.90553069114685,
+      "ms": 1732,
+      "open_interior_edges": 25824,
+      "triangles": 333278,
+      "vertices": 177787
+    },
+    {
+      "coord": [
+        6,
+        6
+      ],
+      "crack": {
+
+      },
+      "dev_max_m": 3.61995220184326,
+      "dev_over_3m": 2,
+      "dev_p99_m": 1.05804455280304,
+      "ms": 1898,
+      "open_interior_edges": 31365,
+      "triangles": 365030,
+      "vertices": 195831
+    }
+  ],
+  "detail": 2,
+  "edge": 8,
+  "image_ms": 683,
+  "res": 128,
+  "threads": 12,
+  "triangles": 3901788,
+  "wall_ms": 7719
+}

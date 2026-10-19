@@ -2,10 +2,16 @@ extends RefCounted
 class_name RoadFormationGrader
 
 ## 읽기 전용 공간 타일의 중심 고도로 절토·성토한다. 교량·터널·수계는 생성 시 제외한다.
+const CacheSource = preload("res://scripts/terrain/cache_source_validator.gd")
 const CELL := 512.0
-const CACHE_LIMIT := 96
+# 소형 도로 선분을 걸러 타일당 메모리가 절반 이하로 줄어든 만큼 보관 타일 수를 늘려 반복 읽기를 줄인다.
+const CACHE_LIMIT := 192
 const POINT_CELL := 16.0
+## 폭 4m 이하 보행로·소로는 57~114m 지형 격자보다 훨씬 좁아 노반 절토·성토 대상에서 제외한다.
+## 해당 도로는 셰이더가 화면 지형 메시에 그대로 얹는다.
+const MIN_FORMED_HALF := 2.0
 var enabled := false
+var _surface: RefCounted
 var _folder := ""
 var _tiles: Dictionary = {}
 var _cache: Dictionary = {}
@@ -44,8 +50,24 @@ func _matches(path: String, length: int, expected_size: int, expected_time: int,
 	if length != expected_size:
 		return false
 	var modified := FileAccess.get_modified_time(path)
-	# PCK 내부 파일은 수정 시각이 0이다. 이 경우 원본 해시로 비교한다.
-	return modified == expected_time if modified > 0 else (not expected_hash.is_empty() and FileAccess.get_sha256(path)==expected_hash)
+	# PCK 내부 파일은 수정 시각이 0이다. 이 경우 원본 해시로 비교한다. 같은 원본의 반복 해시는 공유 캐시를 쓴다.
+	return modified == expected_time if modified > 0 else (not expected_hash.is_empty() and CacheSource.sha256(path)==expected_hash)
+
+## 노반 대상 도로 폭. 도로 메시도 같은 기준으로 CPU 노반 단면과 셰이더 지형 밀착을 나눈다.
+static func forms_ground(width: float) -> bool:
+	return clampf(width, 1.0, 40.0) * 0.5 > MIN_FORMED_HALF
+
+## 노반 중심 고도를 화면 LOD0 지형 메시 표면으로 다시 맞춘다. 원해상도 DEM 중심 고도를 그대로 쓰면
+## 거친 지형 메시를 계곡·능선에서 최대 수십 m 끌어내리거나 올려 지형이 뚫리거나 솟는다.
+## 해안·하상·공항 보정이 끝난 높이맵을 받으므로 보정 전 DEM과의 차이도 함께 없앤다.
+func bind_surface(surface: RefCounted) -> void:
+	_mutex.lock()
+	_surface = surface
+	_cache.clear()
+	_mutex.unlock()
+
+func surface_height(world_x: float, world_z: float, fallback: float) -> float:
+	return _surface.height(world_x, world_z) if _surface else fallback
 
 func _tile(key: String) -> PackedFloat32Array:
 	return _entry(key).data
@@ -66,7 +88,7 @@ func _entry(key: String) -> Dictionary:
 		context.start(HashingContext.HASH_SHA256)
 		context.update(bytes)
 		if bytes.size() == int(entry.count) * 36 and context.finish().hex_encode() == entry.sha256:
-			result = bytes.to_float32_array()
+			result = _formed_records(bytes.to_float32_array())
 			for offset in range(0,result.size(),9):
 				var s := _decode(result,offset)
 				for z in range(floori(s.lower.y/POINT_CELL),floori(s.upper.y/POINT_CELL)+1):
@@ -85,6 +107,19 @@ func _entry(key: String) -> Dictionary:
 		_cache[key] = loaded
 	_mutex.unlock()
 	return loaded
+
+## 노반 대상 선분만 남기고 중심 고도를 화면 지형 표면에 맞춘다. 원본 타일 파일은 바꾸지 않는다.
+func _formed_records(data: PackedFloat32Array) -> PackedFloat32Array:
+	var kept := PackedFloat32Array()
+	for offset in range(0,data.size(),9):
+		if data[offset+6] <= MIN_FORMED_HALF:
+			continue
+		var start := kept.size()
+		kept.append_array(data.slice(offset,offset+9))
+		if _surface:
+			kept[start+2] = _surface.height(data[offset],data[offset+1])
+			kept[start+5] = _surface.height(data[offset+3],data[offset+4])
+	return kept
 
 func _decode(data: PackedFloat32Array, offset: int) -> Dictionary:
 	var a := Vector3(data[offset],data[offset+2],data[offset+1])
