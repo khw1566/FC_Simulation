@@ -1,6 +1,7 @@
 extends RefCounted
 class_name RailwayTerrainVoid
 
+const SourceSignature = preload("res://scripts/terrain/source_signature.gd")
 const PATH = "res://assets/generated/railway/tunnel_void.png"
 static var _image: Image
 static var _bounds: Dictionary = {}
@@ -24,7 +25,7 @@ static func configure_bounds(_data: Dictionary) -> void:
 	if not index is Dictionary or int(index.get("bucket_size", 0)) != int(BUCKET_SIZE):
 		return
 	var source := FileAccess.open(PATH, FileAccess.READ)
-	if source == null or source.get_length() != int(index.get("source_size", -1)) or FileAccess.get_modified_time(PATH) != int(index.get("source_modified", -1)):
+	if source == null or not SourceSignature.matches(PATH, source.get_length(), int(index.get("source_size", -1)), int(index.get("source_modified", -1)), str(index.get("source_sha256", ""))):
 		return
 	for bucket in index.get("buckets", []):
 		_bounds[Vector2i(int(bucket[0]), int(bucket[1]))] = true

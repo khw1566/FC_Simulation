@@ -955,7 +955,7 @@
         },
         {
           "class_name": "prepare_japan_road_metadata",
-          "lines": 26,
+          "lines": 25,
           "path": "pipeline/processors/prepare_japan_road_metadata.gd",
           "responsibility": "일본 공항 모델 생성·배치·지반 보정 및 도로 좌표·구조 메타데이터 검증"
         }
@@ -2021,7 +2021,7 @@
         },
         {
           "path": "pipeline/processors/road_assets/cached_mesh.py",
-          "lines": 26,
+          "lines": 25,
           "responsibility": "기존 도로 GLB를 읽기 전용 프리뷰 메시로 변환."
         },
         {
@@ -2436,7 +2436,12 @@
       "modules": [
         {
           "path": "godot_project/scripts/terrain/road_formation_grader.gd",
-          "lines": 154
+          "lines": 151
+        },
+        {
+          "path": "godot_project/scripts/terrain/source_signature.gd",
+          "lines": 25,
+          "responsibility": "분할 캐시 원본 일치 판정(크기·수정 시각, 불일치 시 SHA-256 재확인)"
         },
         {
           "path": "godot_project/scripts/terrain/road_formation_field.gd",
@@ -2625,7 +2630,7 @@
         },
         {
           "path": "godot_project/scripts/terrain/road_formation_grader.gd",
-          "lines": 154
+          "lines": 151
         },
         {
           "path": "godot_project/scripts/terrain/road_batch_builder.gd",

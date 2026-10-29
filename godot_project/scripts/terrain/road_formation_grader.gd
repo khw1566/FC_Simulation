@@ -2,6 +2,7 @@ extends RefCounted
 class_name RoadFormationGrader
 
 ## 읽기 전용 공간 타일의 중심 고도로 절토·성토한다. 교량·터널·수계는 생성 시 제외한다.
+const SourceSignature = preload("res://scripts/terrain/source_signature.gd")
 const CELL := 512.0
 const CACHE_LIMIT := 96
 const POINT_CELL := 16.0
@@ -41,11 +42,7 @@ func configure(source: String) -> void:
 	enabled = true
 
 func _matches(path: String, length: int, expected_size: int, expected_time: int, expected_hash: String) -> bool:
-	if length != expected_size:
-		return false
-	var modified := FileAccess.get_modified_time(path)
-	# PCK 내부 파일은 수정 시각이 0이다. 이 경우 원본 해시로 비교한다.
-	return modified == expected_time if modified > 0 else (not expected_hash.is_empty() and FileAccess.get_sha256(path)==expected_hash)
+	return SourceSignature.matches(path, length, expected_size, expected_time, expected_hash)
 
 func _tile(key: String) -> PackedFloat32Array:
 	return _entry(key).data

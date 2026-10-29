@@ -2,6 +2,7 @@ extends RefCounted
 class_name RenderQualityProfile
 
 ## 지도 로딩과 표시가 공유하는 품질 정책. 지리적 범위는 변경하지 않는다.
+const SourceSignature = preload("res://scripts/terrain/source_signature.gd")
 const IDS := ["light", "standard", "high"]
 const PROFILES := {
 	"light": {"initial_radius": 2000.0, "view_distance": 5000.0, "prefetch": 1500.0, "minor_distance": 2000.0, "base_resolution": 64, "height_width": 2816, "rail_edge": 40.0, "rail_detail": 1500.0},
@@ -40,9 +41,9 @@ static func heightmap_path(config) -> String:
 		if record.get("type", "") != "terrain_quality_heightmap":
 			continue
 		var meta: Dictionary = record.get("metadata", {})
-		if meta.get("source_path", "") != path or int(meta.get("source_modified", -1)) != FileAccess.get_modified_time(path):
+		if meta.get("source_path", "") != path:
 			continue
 		var file := FileAccess.open(path, FileAccess.READ)
-		if file and file.get_length() == int(meta.get("source_size", -1)) and FileAccess.file_exists(record.file_path):
+		if file and SourceSignature.matches(path, file.get_length(), int(meta.get("source_size", -1)), int(meta.get("source_modified", -1)), str(meta.get("source_sha256", ""))) and FileAccess.file_exists(record.file_path):
 			return str(record.file_path)
 	return path
