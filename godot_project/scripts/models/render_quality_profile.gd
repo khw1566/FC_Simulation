@@ -5,9 +5,9 @@ class_name RenderQualityProfile
 const SourceSignature = preload("res://scripts/terrain/source_signature.gd")
 const IDS := ["light", "standard", "high"]
 const PROFILES := {
-	"light": {"initial_radius": 2000.0, "view_distance": 5000.0, "prefetch": 1500.0, "minor_distance": 2000.0, "base_resolution": 64, "height_width": 2816, "rail_edge": 40.0, "rail_detail": 1500.0},
-	"standard": {"initial_radius": 3500.0, "view_distance": 7000.0, "prefetch": 2000.0, "minor_distance": 3000.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 20.0, "rail_detail": 2000.0},
-	"high": {"initial_radius": 5000.0, "view_distance": 9000.0, "prefetch": 2500.0, "minor_distance": 4500.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 10.0, "rail_detail": 3500.0}
+	"light": {"initial_radius": 2000.0, "view_distance": 5000.0, "prefetch": 1500.0, "minor_distance": 2000.0, "base_resolution": 64, "height_width": 2816, "rail_edge": 40.0, "rail_detail": 1500.0, "road_earthwork": false},
+	"standard": {"initial_radius": 3500.0, "view_distance": 7000.0, "prefetch": 2000.0, "minor_distance": 3000.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 20.0, "rail_detail": 2000.0, "road_earthwork": true},
+	"high": {"initial_radius": 5000.0, "view_distance": 9000.0, "prefetch": 2500.0, "minor_distance": 4500.0, "base_resolution": 128, "height_width": 5632, "rail_edge": 10.0, "rail_detail": 3500.0, "road_earthwork": true}
 }
 
 static func normalize(value: String) -> String:

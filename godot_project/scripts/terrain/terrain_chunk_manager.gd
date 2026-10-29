@@ -21,6 +21,7 @@ var _road_lod_texture: ImageTexture
 var _coastal_corrected: bool = false
 var _railway_grader: RefCounted
 var _road_grader := preload("res://scripts/terrain/road_formation_grader.gd").new()
+const ROAD_EARTHWORK_MIN_MEMORY := 12 * 1024 * 1024 * 1024
 var _sea_mask_path: String = ""
 var _lake_mask_path: String = ""
 
@@ -227,7 +228,10 @@ func _init_shader_material() -> void:
 func _load_heightmap() -> void:
 	var height_started := Time.get_ticks_msec()
 	var raw_path := heightmap_override_path
-	_road_grader.configure(buildings_roads_override_path)
+	# 도로 노반 절토 메시는 도심 청크 하나에서도 수 GB를 쓴다. 경량 품질이나 RAM 12GB 미만에서는 원지형을 유지한다.
+	var physical_memory := int(OS.get_memory_info().get("physical", 0))
+	if bool(Quality.current().get("road_earthwork", false)) and (physical_memory <= 0 or physical_memory >= ROAD_EARTHWORK_MIN_MEMORY):
+		_road_grader.configure(buildings_roads_override_path)
 	if raw_path.is_empty() or not FileAccess.file_exists(raw_path):
 		raw_path = "res://assets/maps/kanmon_straits/kanmon_heightmap_16bit.png"
 	if not FileAccess.file_exists(raw_path):
